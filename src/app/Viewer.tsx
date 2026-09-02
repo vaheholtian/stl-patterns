@@ -14,6 +14,7 @@ export default function Viewer({ onPick, onReady }: Props) {
   const bodies = useStore((s) => s.bodies)
   const activeBodyId = useStore((s) => s.activeBodyId)
   const selection = useStore((s) => s.selection)
+  const pickMode = useStore((s) => s.pickMode)
 
   useEffect(() => {
     const sm = new SceneManager(canvasRef.current!)
@@ -47,7 +48,7 @@ export default function Viewer({ onPick, onReady }: Props) {
   return (
     <div className="viewport">
       <canvas ref={canvasRef} />
-      <div className="hint">drag: orbit · wheel: zoom · right-drag: pan · click: select region · shift: add · alt: remove</div>
+      <div className="hint">{pickMode === 'origin' ? 'click on the selected region to place the pattern origin' : 'drag: orbit · wheel: zoom · right-drag: pan · click: select region · shift: add · alt: remove'}</div>
     </div>
   )
 }

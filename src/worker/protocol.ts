@@ -1,5 +1,6 @@
 // Request/response types shared by the main thread and the geometry worker.
 import type { TriMesh } from '../geom/manifold'
+import type { FlattenedRegion } from '../geom/regionFlatten'
 
 export interface VoronoiParams {
   cellSize: number       // mm, target mean cell size
@@ -35,6 +36,7 @@ export type Request =
   | { id: number; type: 'check'; mesh: TriMesh }
   | { id: number; type: 'voronoi'; mesh: TriMesh; region: Uint32Array; params: VoronoiParams }
   | { id: number; type: 'tile'; mesh: TriMesh; params: TileParams }
+  | { id: number; type: 'flatten'; mesh: TriMesh; region: Uint32Array; origin: [number, number, number] }
 
 export interface OpResult {
   mesh: TriMesh
@@ -47,7 +49,8 @@ export type RequestBody = Request extends infer R ? (R extends Request ? Omit<R,
 
 export interface CheckResponse { id: number; ok: true; type: 'check'; manifold: boolean; status: string; volume: number; area: number }
 export interface OpResponse { id: number; ok: true; type: 'voronoi' | 'tile'; result: OpResult }
+export interface FlattenResponse { id: number; ok: true; type: 'flatten'; result: FlattenedRegion }
 export interface ErrorResponse { id: number; ok: false; error: string }
 export interface ProgressResponse { id: number; progress: string }
 
-export type Response = CheckResponse | OpResponse | ErrorResponse | ProgressResponse
+export type Response = CheckResponse | OpResponse | FlattenResponse | ErrorResponse | ProgressResponse

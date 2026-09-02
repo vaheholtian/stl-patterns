@@ -1,6 +1,8 @@
 # Phase plan
 
-Written 2026-09-02. Companion to `00-decisions.md`, which holds the why; this file holds the what and in which order. Nothing here is started.
+Written 2026-09-02. Companion to `00-decisions.md`, which holds the why; this file holds the what and in which order.
+
+**Status (night build of 2026-09-02):** Phase 0 done. Phase 1 done. Phase 2 done (Test 1 print pending). Phase 3 and 4 in progress. See `planning/02-night-report.md` for what was built and what to check.
 
 Conventions:
 - Each phase ends with something you can see or print. No phase is "done" on code alone.

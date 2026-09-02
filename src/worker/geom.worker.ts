@@ -11,6 +11,7 @@ import { buildVoronoiCells } from '../geom/voronoiCells'
 import { buildRegionSlab, buildEdgeMarginTool } from '../geom/slab'
 import { Parameterization } from '../geom/parameterization'
 import { buildSurfaceTool, type Polygon } from '../geom/tileTool'
+import { flattenRegion } from '../geom/regionFlatten'
 import type { TriMesh } from '../geom/manifold'
 
 const ctx = self as unknown as DedicatedWorkerGlobalScope
@@ -35,6 +36,10 @@ ctx.onmessage = async (ev: MessageEvent<Request>) => {
     } else if (req.type === 'tile') {
       const result = runTile(m, req.mesh, req.params, progress)
       post({ id: req.id, ok: true, type: 'tile', result }, [result.mesh.positions.buffer, result.mesh.indices.buffer])
+    } else if (req.type === 'flatten') {
+      progress('flattening region')
+      const result = flattenRegion(req.mesh, req.region, req.origin)
+      post({ id: req.id, ok: true, type: 'flatten', result }, [result.positions.buffer, result.indices.buffer, result.normals.buffer, result.uv.buffer])
     }
   } catch (e) {
     post({ id: req.id, ok: false, error: (e as Error).message ?? String(e) })

@@ -8,6 +8,9 @@ import { downloadBlob } from '../io/download'
 import { geomClient } from '../worker/client'
 import type { PickResult, SceneManager } from '../viewer/SceneManager'
 import VoronoiPanel from './panels/VoronoiPanel'
+import TilePanel from './panels/TilePanel'
+import RecipePanel from './panels/RecipePanel'
+import { setScene } from '../viewer/sceneRef'
 
 export default function ApplyScreen() {
   const bodies = useStore((s) => s.bodies)
@@ -65,6 +68,12 @@ export default function ApplyScreen() {
 
   const onPick = useCallback((hit: PickResult, ev: PointerEvent) => {
     const s = st()
+    if (s.pickMode === 'origin') {
+      if (hit.bodyId !== s.activeBodyId) return
+      s.setTileLayout({ origin: [hit.point.x, hit.point.y, hit.point.z] })
+      s.setPickMode('region')
+      return
+    }
     if (hit.bodyId !== s.activeBodyId) { s.setActive(hit.bodyId); return }
     const adj = s.adjacencyFor(hit.bodyId)
     if (!adj) return
@@ -158,7 +167,9 @@ export default function ApplyScreen() {
           <div className="muted">Click a face to select its smooth region. Shift adds, Alt removes.</div>
         </div>
 
+        <TilePanel region={region} />
         <VoronoiPanel region={region} />
+        <RecipePanel />
 
         <div className="section">
           <h3>Export</h3>
@@ -176,7 +187,7 @@ export default function ApplyScreen() {
           </div>
         </div>
       </div>
-      <Viewer onPick={onPick} onReady={(sm) => (smRef.current = sm)} />
+      <Viewer onPick={onPick} onReady={(sm) => { smRef.current = sm; setScene(sm) }} />
     </div>
   )
 }

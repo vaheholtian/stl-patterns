@@ -1,6 +1,7 @@
 // Typed client for the geometry worker.
-import type { RequestBody, Response, OpResult, VoronoiParams, TileParams, CheckResponse, OpResponse } from './protocol'
+import type { RequestBody, Response, OpResult, VoronoiParams, TileParams, CheckResponse, OpResponse, FlattenResponse } from './protocol'
 import type { TriMesh } from '../geom/manifold'
+import type { FlattenedRegion } from '../geom/regionFlatten'
 
 type Pending = { resolve: (r: Response) => void; reject: (e: Error) => void; onProgress?: (s: string) => void }
 
@@ -50,6 +51,11 @@ class GeomClient {
 
   async tile(mesh: TriMesh, params: TileParams, onProgress?: (s: string) => void): Promise<OpResult> {
     const r = await this.send<OpResponse>({ type: 'tile', mesh, params }, onProgress)
+    return r.result
+  }
+
+  async flatten(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], onProgress?: (s: string) => void): Promise<FlattenedRegion> {
+    const r = await this.send<FlattenResponse>({ type: 'flatten', mesh, region, origin }, onProgress)
     return r.result
   }
 

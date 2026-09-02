@@ -13,8 +13,21 @@ export interface BodyState {
 }
 
 export type Screen = 'pattern' | 'apply'
+export type PickMode = 'region' | 'origin'
 
 export interface VoronoiUi extends VoronoiParams {}
+
+export interface TileLayoutUi {
+  origin: [number, number, number] | null
+  rotationDeg: number
+  scale: number
+  margin: number
+  fitSeam: boolean
+  mode: 'cut' | 'recess' | 'emboss'
+  depth: number
+  wallThickness: number
+  minIslandVolume: number
+}
 
 interface State {
   screen: Screen
@@ -27,6 +40,10 @@ interface State {
   log: string[]
   voronoi: VoronoiUi
   lineWidth: number
+  pickMode: PickMode
+  tileLayout: TileLayoutUi
+  setPickMode: (m: PickMode) => void
+  setTileLayout: (patch: Partial<TileLayoutUi>) => void
   setScreen: (s: Screen) => void
   addBodies: (bodies: { name: string; mesh: TriMesh }[]) => void
   removeBody: (id: number) => void
@@ -68,6 +85,20 @@ export const useStore = create<State>((set, get) => ({
     feature: 'cells',
     edgeMargin: 3,
   },
+  pickMode: 'region',
+  tileLayout: {
+    origin: null,
+    rotationDeg: 0,
+    scale: 1,
+    margin: 3,
+    fitSeam: true,
+    mode: 'emboss',
+    depth: 0.8,
+    wallThickness: 5,
+    minIslandVolume: 5,
+  },
+  setPickMode: (pickMode) => set({ pickMode }),
+  setTileLayout: (patch) => set((s) => ({ tileLayout: { ...s.tileLayout, ...patch } })),
   setScreen: (screen) => set({ screen }),
   addBodies: (list) =>
     set((s) => {

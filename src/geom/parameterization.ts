@@ -171,6 +171,9 @@ export class Parameterization {
    * scale there, rotated so that 2D direction `dirUv` points along +x, then
    * rotated by `rotationDeg` and scaled by `zoom`.
    */
+  /** accumulated linear part of all recenter calls (row-major 2x2) */
+  linear: [number, number, number, number] = [1, 0, 0, 1]
+
   recenter(t: number, x: number, y: number, z: number, rotationDeg = 0, zoom = 1) {
     const [u0, v0] = this.uvAt3D(t, x, y, z)
     const s = this.scale[t] || 1
@@ -181,8 +184,18 @@ export class Parameterization {
       this.uv[i] = (dx * cs - dy * sn) / zoom
       this.uv[i + 1] = (dx * sn + dy * cs) / zoom
     }
+    // M_new = (1/zoom) * R * s ; accumulate M = M_new * M
+    const a = (cs * s) / zoom, b = (-sn * s) / zoom, c = (sn * s) / zoom, d = (cs * s) / zoom
+    const [p, q, r, w] = this.linear
+    this.linear = [a * p + b * r, a * q + b * w, c * p + d * r, c * q + d * w]
     this.computeScale()
     this.buildGrid()
+  }
+
+  /** Apply the accumulated linear transform to a direction vector. */
+  transformVector(v: [number, number]): [number, number] {
+    const [a, b, c, d] = this.linear
+    return [a * v[0] + b * v[1], c * v[0] + d * v[1]]
   }
 
   /** Boundary of the region in 2D as polygons (one per boundary loop), CCW. */
