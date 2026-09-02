@@ -6,6 +6,12 @@ import { guillocheGenerator } from './guilloche'
 import { hilbertGenerator } from './hilbert'
 import { phyllotaxisGenerator } from './phyllotaxis'
 import { moireGenerator } from './moire'
+import { sierpinskiGenerator } from './sierpinski'
+import { kochGenerator } from './koch'
+import { penroseGenerator } from './penrose'
+import { hyperbolicGenerator } from './hyperbolic'
+import { apollonianGenerator } from './apollonian'
+import { juliaGenerator } from './julia'
 
 export const generators: Generator[] = [
   voronoiTileGenerator,
@@ -15,6 +21,12 @@ export const generators: Generator[] = [
   hilbertGenerator,
   phyllotaxisGenerator,
   moireGenerator,
+  sierpinskiGenerator,
+  kochGenerator,
+  penroseGenerator,
+  hyperbolicGenerator,
+  apollonianGenerator,
+  juliaGenerator,
 ]
 
 export function generatorById(id: string): Generator | undefined {

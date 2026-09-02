@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { SceneManager, type PickResult } from '../viewer/SceneManager'
 import { useStore } from '../state/store'
+import { useTileStore } from '../state/tileStore'
 
 interface Props {
   onPick?: (hit: PickResult, ev: PointerEvent) => void
@@ -24,6 +25,7 @@ export default function Viewer({ onPick, onReady }: Props) {
     onReady?.(sm)
     ;(window as unknown as { __scene: SceneManager }).__scene = sm // dev/automation hook
     ;(window as unknown as { __store: typeof useStore }).__store = useStore
+    ;(window as unknown as { __tileStore: typeof useTileStore }).__tileStore = useTileStore
     return () => { ro.disconnect(); sm.dispose(); smRef.current = null }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])

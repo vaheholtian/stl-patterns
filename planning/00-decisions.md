@@ -1,6 +1,6 @@
 # Design decisions (brainstorm stage, nothing built)
 
-Last updated: 2026-09-02 (Phase 0 done). Supersedes all earlier versions of this file.
+Last updated: 2026-09-02 (night build, phases 0-5 done). Supersedes all earlier versions of this file.
 
 ## Goal
 
@@ -94,6 +94,17 @@ If both pass, essentially all technical risk is retired.
 - **Spike B (tile mapping on a hemisphere) passed, with a library change.** xatlas produced 21 charts on a plain hemisphere even with every seam weight zeroed; it is a charting tool, not a single-patch flattener, so it is **rejected**. Replaced by a hand-written **least-squares conformal map (LSCM)** with CGLS solver in `src/geom/lscm.ts`: 2304 triangles flattened in 159 ms to a single seam-free disk, scale 1.0 at the pole and 0.46 at the rim, circles round at the origin. Extrude-then-warp tool bodies boolean cleanly. `xatlas-three` stays installed only as a comparison path in the spike and can be removed.
 - Boundary handling noted for Phase 4: tile shapes that cross the region edge currently fall back to a clamped mapping and can leave slivers (4 components on the hemisphere). Fix is to clip tile polygons to the flattened region boundary, inset by a margin, before extruding.
 - Spikes are kept in `spikes/` as dev-only pages (not part of the production build) instead of being deleted; they are useful regression checks.
+
+
+## Night build outcome (2026-09-02, phases 1 to 5)
+
+- All five phases are built, committed and deployed. Details and the morning checklist are in `planning/02-night-report.md`.
+- **Flattening**: hand-written LSCM in `src/geom/lscm.ts`; ring regions get a seam cut (shortest vertex path between the two longest boundary loops), closed regions lose a far-side cap of 6% of the max geodesic distance. Both run in the worker.
+- **Option 1 in practice**: on a sphere the conformal map halves the pattern size roughly a quarter of the way around, so a "skip where smaller than N%" rule (default 50%) leaves the far part solid. Lower it for more coverage at the cost of smaller features.
+- **Tile pipeline**: everything becomes closed polygons before 3D (curves are stroked with round joins), then a morphological opening at 2 × line width removes unprintable slivers. Tool bodies are extrude-then-warp with a 2 mm default refinement ("Detail").
+- **Handles**: origin by clicking, rotation slider, scale number. 3D gizmos deferred.
+- **Recipes** exist (region found again by nearest triangle with matching normal, then flood fill).
+- **Not done**: per-triangle stretch colouring on the model; 3D drag gizmos; any physical print.
 
 ## Open items
 
