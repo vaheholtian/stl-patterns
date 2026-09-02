@@ -13,10 +13,10 @@ Written by Claude during the overnight build. Read this first in the morning.
 
 ## What to check yourself (in order)
 
-1. **Bambu Studio import.** `C:\Users\vaheh\Downloads\Part 1 (1).3mf` is your cup with a Voronoi through-cut on the outer wall (8 mm cells, 2 mm ribs, 3 mm solid band at the rim and bottom edges). Open it in Bambu Studio. It should arrive at the right size (about 97 mm across, 55 mm tall) with no repair warnings.
+1. **Bambu Studio import.** `C:\Users\vaheh\Downloads\pen-cup-voronoi-cut.3mf` is your cup with a Voronoi through-cut on the outer wall (8 mm cells, 2 mm ribs, 3 mm solid band at the rim and bottom edges). Open it in Bambu Studio. It should arrive at the right size (about 97 mm across, 55 mm tall) with no repair warnings.
 2. **Test 1 print.** If it slices cleanly, print it. No supports should be needed for holes this size on a vertical wall.
 3. **Try the app on the cup**: load it, click the outer wall, press Apply Voronoi. About 1.5 s.
-4. **Try a tile**: on the Pattern screen pick Truchet, go to Apply, click the outer wall, press "1. Flatten region", then "3. Apply tile" with mode Emboss. That is Test 2. Export and print if you like it.
+4. **Test 2 candidate.** `C:\Users\vaheh\Downloads\pen-cup-truchet-emboss.3mf` is the same cup with a Truchet tile (10 mm cells, 2 mm ribs) embossed 1 mm on the outer wall, 8 whole repeats around, 3 mm solid bands. To redo it yourself: Pattern screen, pick Truchet; Apply screen, click the outer wall, "1. Flatten region", "3. Apply tile" with mode Emboss.
 5. **Something with a sphere**: `?load=demo:sphere-prism`, click the sphere, flatten, apply. Then click a box face and apply a different tile. That is the shape of Test 3 without needing your own model yet.
 
 ## Note on your cup file
