@@ -13,6 +13,8 @@ export interface VoronoiParams {
   neighbours: number
   /** which part of the pattern becomes the tool: the cells, or the rib network between them */
   feature: 'cells' | 'ribs'
+  /** untouched band along every region edge, mm */
+  edgeMargin: number
 }
 
 export interface TileParams {

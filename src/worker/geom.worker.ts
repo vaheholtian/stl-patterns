@@ -8,7 +8,7 @@ import { seededRandom } from '../geom/random'
 import { SurfaceIndex } from '../geom/bvh'
 import { relaxOnSurface } from '../geom/relax'
 import { buildVoronoiCells } from '../geom/voronoiCells'
-import { buildRegionSlab } from '../geom/slab'
+import { buildRegionSlab, buildEdgeMarginTool } from '../geom/slab'
 import { Parameterization } from '../geom/parameterization'
 import { buildSurfaceTool, type Polygon } from '../geom/tileTool'
 import type { TriMesh } from '../geom/manifold'
@@ -96,7 +96,13 @@ function runVoronoi(m: ManifoldToplevel, mesh: TriMesh, region: Uint32Array, par
   if (params.mode === 'cut') { inner = -(params.depth + 1); outer = 1 }
   else if (params.mode === 'recess') { inner = -params.depth; outer = 1 }
   else { inner = -0.2; outer = params.depth }
-  const slab = buildRegionSlab(m, sub, inner, outer)
+  let slab = buildRegionSlab(m, sub, inner, outer)
+  const marginTool = buildEdgeMarginTool(m, sub, params.edgeMargin, inner, outer)
+  if (marginTool) {
+    const trimmed = m.Manifold.difference(slab, marginTool)
+    slab.delete(); marginTool.delete()
+    slab = trimmed
+  }
   const tool = params.feature === 'ribs' ? m.Manifold.difference(slab, cellsUnion) : m.Manifold.intersection(slab, cellsUnion)
   slab.delete(); cellsUnion.delete()
 

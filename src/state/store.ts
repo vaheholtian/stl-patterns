@@ -66,6 +66,7 @@ export const useStore = create<State>((set, get) => ({
     minIslandVolume: 5,
     neighbours: 12,
     feature: 'cells',
+    edgeMargin: 3,
   },
   setScreen: (screen) => set({ screen }),
   addBodies: (list) =>

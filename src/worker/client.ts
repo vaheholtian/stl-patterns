@@ -10,8 +10,12 @@ class GeomClient {
   private pending = new Map<number, Pending>()
 
   constructor() {
-    this.worker = new Worker(new URL('./geom.worker.ts', import.meta.url), { type: 'module' })
-    this.worker.onmessage = (ev: MessageEvent<Response>) => {
+    this.worker = this.spawn()
+  }
+
+  private spawn(): Worker {
+    const worker = new Worker(new URL('./geom.worker.ts', import.meta.url), { type: 'module' })
+    worker.onmessage = (ev: MessageEvent<Response>) => {
       const msg = ev.data
       const p = this.pending.get(msg.id)
       if (!p) return
@@ -20,10 +24,11 @@ class GeomClient {
       if (msg.ok) p.resolve(msg)
       else p.reject(new Error(msg.error))
     }
-    this.worker.onerror = (e) => {
+    worker.onerror = (e) => {
       for (const p of this.pending.values()) p.reject(new Error(e.message))
       this.pending.clear()
     }
+    return worker
   }
 
   private send<T extends Response>(req: RequestBody, onProgress?: (s: string) => void): Promise<T> {
@@ -53,9 +58,7 @@ class GeomClient {
     this.worker.terminate()
     for (const p of this.pending.values()) p.reject(new Error('cancelled'))
     this.pending.clear()
-    const fresh = new GeomClient()
-    this.worker = fresh.worker
-    this.worker.onmessage = fresh.worker.onmessage
+    this.worker = this.spawn()
   }
 }
 

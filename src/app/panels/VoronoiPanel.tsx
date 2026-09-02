@@ -63,10 +63,12 @@ export default function VoronoiPanel({ region }: Props) {
         </select>
       </div>
       <Num label={v.mode === 'cut' ? 'Wall thickness (mm)' : v.mode === 'recess' ? 'Depth (mm)' : 'Height (mm)'} value={v.depth} min={0.1} step={0.1} onChange={(x) => set({ depth: x })} title={v.mode === 'cut' ? 'how deep the cut must reach to go through' : ''} />
+      <Num label="Solid edge margin (mm)" value={v.edgeMargin} min={0} step={0.5} onChange={(x) => set({ edgeMargin: x })} title="band along the region boundary that stays untouched" />
       <Num label="Line width (mm)" value={lineWidth} min={0.1} step={0.02} onChange={setLineWidth} title="nozzle line width; ribs are never thinner than two lines" />
       <Num label="Drop islands under (mm³)" value={v.minIslandVolume} min={0} step={1} onChange={(x) => set({ minIslandVolume: x })} />
       <div className="row" style={{ marginTop: 8 }}>
         <button className="primary" disabled={!activeBodyId || !region || !!busy} onClick={run}>Apply Voronoi</button>
+        {busy && <button onClick={() => { geomClient().restart(); st().setBusy(null); st().pushLog('cancelled') }}>Cancel</button>}
         <span className="muted">{region ? `${region.length.toLocaleString()} △` : ''}</span>
       </div>
     </div>
