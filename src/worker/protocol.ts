@@ -30,6 +30,8 @@ export interface TileParams {
   normals: Float32Array
   uv: Float32Array
   wallThickness: number  // used to size through-cuts
+  /** max edge length of the warped tool mesh, mm (smaller = smoother on tight curves, more triangles) */
+  detail?: number
 }
 
 export type Request =

@@ -14,6 +14,8 @@ export interface LayoutSettings {
   margin: number
   /** stretch the tile so it repeats a whole number of times around a seam */
   fitSeam: boolean
+  /** leave the surface solid where the local tile size falls below this fraction of true size (0 = off) */
+  minScale: number
 }
 
 export interface LayoutResult {
@@ -101,11 +103,29 @@ export function layoutTile(
   const loops = flat.loops.map((loop) => loop.map((v) => [param.uv[v * 2], param.uv[v * 2 + 1]] as Pt))
   let regionCs = new m.CrossSection(loops, 'EvenOdd')
   if (settings.margin > 0) regionCs = regionCs.offset(-settings.margin, 'Round', 2, 8)
+  // mask out triangles where the pattern would come out too small to print
+  let masked = 0
+  if (settings.minScale > 0) {
+    const small: Pt[][] = []
+    const ix = param.sub.indices, uv = param.uv
+    for (let t = 0; t < param.scale.length; t++) {
+      if (param.scale[t] >= settings.minScale) continue
+      const a = ix[t * 3], b2 = ix[t * 3 + 1], c = ix[t * 3 + 2]
+      small.push([[uv[a * 2], uv[a * 2 + 1]], [uv[b2 * 2], uv[b2 * 2 + 1]], [uv[c * 2], uv[c * 2 + 1]]])
+    }
+    masked = small.length
+    if (small.length) {
+      const smallCs = m.CrossSection.union(small.map((p) => new m.CrossSection([p], 'NonZero')))
+      // grow the mask a little so ribs at the edge of the masked zone stay solid
+      regionCs = m.CrossSection.difference(regionCs, smallCs.offset(settings.margin > 0 ? settings.margin : 1, 'Round', 2, 8))
+    }
+  }
   const clipped = m.CrossSection.intersection(tiles, regionCs).simplify(0.01)
   const polygons = crossSectionToPolygons(clipped)
   let sMin = Infinity, sMax = 0
   for (const s of param.scale) if (s > 0) { sMin = Math.min(sMin, s); sMax = Math.max(sMax, s) }
   log.push(`${polygons.length} shapes laid out; local size ranges ${(sMin * 100).toFixed(0)}% to ${(sMax * 100).toFixed(0)}% of true`)
+  if (masked) log.push(`left solid where the pattern would shrink below ${(settings.minScale * 100).toFixed(0)}% (${masked} triangles)`)
   return { param, polygons, repeatsAround: repeats, stretch, tileWidth: tw, tileHeight: th, scaleMin: sMin, scaleMax: sMax, log }
 }
 

@@ -1,8 +1,10 @@
 import { useStore } from './state/store'
 import ApplyScreen from './app/ApplyScreen'
 import PatternScreen from './app/PatternScreen'
+import { useTileRegen } from './app/useTileRegen'
 
 export default function App() {
+  useTileRegen()
   const screen = useStore((s) => s.screen)
   const setScreen = useStore((s) => s.setScreen)
   const busy = useStore((s) => s.busy)

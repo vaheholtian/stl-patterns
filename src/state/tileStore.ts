@@ -48,8 +48,17 @@ function writeSaved(list: SavedTile[]) {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(list)) } catch { /* storage unavailable */ }
 }
 
+const CURRENT_KEY = 'stl-patterns.currentTile.v1'
+function readCurrent(): TileDef {
+  try {
+    const raw = localStorage.getItem(CURRENT_KEY)
+    if (raw) return JSON.parse(raw) as TileDef
+  } catch { /* ignore */ }
+  return { name: 'Voronoi cells', generatorId: 'voronoiTile', params: {}, invert: false }
+}
+
 export const useTileStore = create<TileState>((set, get) => ({
-  def: { name: 'Voronoi', generatorId: 'voronoiTile', params: {}, invert: false },
+  def: readCurrent(),
   tile: null,
   polygons: [],
   warnings: [],
@@ -82,3 +91,10 @@ export const useTileStore = create<TileState>((set, get) => ({
     set({ saved })
   },
 }))
+
+// remember the current tile across reloads
+useTileStore.subscribe((s, prev) => {
+  if (s.def !== prev.def) {
+    try { localStorage.setItem(CURRENT_KEY, JSON.stringify(s.def)) } catch { /* ignore */ }
+  }
+})

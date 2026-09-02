@@ -86,6 +86,7 @@ export default function TilePanel({ region }: Props) {
           scale: tl.scale,
           margin: tl.margin,
           fitSeam: tl.fitSeam,
+          minScale: tl.minScale,
         })
         setLayout(res)
         setInfo(res.log)
@@ -99,7 +100,7 @@ export default function TilePanel({ region }: Props) {
         setLayout(null)
       }
     }, 60)
-  }, [flat, tile, tilePolys, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.fitSeam])
+  }, [flat, tile, tilePolys, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.fitSeam, tl.minScale])
 
   // when the origin is picked on a closed region, the cap must move: re-flatten
   const lastOrigin = useRef<string>('')
@@ -128,6 +129,7 @@ export default function TilePanel({ region }: Props) {
         normals: layout.param.sub.normals,
         uv: layout.param.uv,
         wallThickness: tl.wallThickness,
+        detail: tl.detail,
       }, (p) => st().setBusy(`tile: ${p}`))
       st().replaceMesh(body.id, result.mesh)
       st().pushLog(result.log)
@@ -160,6 +162,8 @@ export default function TilePanel({ region }: Props) {
       <div className="row"><label>Scale</label><input type="number" step={0.05} min={0.1} value={tl.scale} onChange={(e) => set({ scale: Number(e.target.value) })} /></div>
       <div className="row"><label>Solid edge margin (mm)</label><input type="number" step={0.5} min={0} value={tl.margin} onChange={(e) => set({ margin: Number(e.target.value) })} /></div>
       <div className="row"><label>Fit whole repeats around seam</label><input type="checkbox" checked={tl.fitSeam} onChange={(e) => set({ fitSeam: e.target.checked })} /></div>
+      <div className="row" title="on curved surfaces the tile shrinks away from the origin; below this size the surface is left solid"><label>Skip where smaller than</label><input type="number" step={5} min={0} max={95} value={Math.round(tl.minScale * 100)} onChange={(e) => set({ minScale: Number(e.target.value) / 100 })} /></div>
+      <div className="row" title="max edge length of the tool mesh, mm; smaller follows tight curves better but makes bigger files"><label>Detail (mm)</label><input type="number" step={0.5} min={0.5} max={5} value={tl.detail} onChange={(e) => set({ detail: Number(e.target.value) })} /></div>
       <div className="row">
         <label>Mode</label>
         <select value={tl.mode} onChange={(e) => set({ mode: e.target.value as typeof tl.mode })}>

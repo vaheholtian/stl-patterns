@@ -112,10 +112,12 @@ function runVoronoi(m: ManifoldToplevel, mesh: TriMesh, region: Uint32Array, par
   slab.delete(); cellsUnion.delete()
 
   progress(params.mode === 'emboss' ? 'adding' : 'cutting')
-  const out = applyMode(m, body, tool, params.mode)
+  const raw = applyMode(m, body, tool, params.mode)
   body.delete(); tool.delete()
-  const status = out.status()
+  const status = raw.status()
   if (status !== 'NoError') throw new Error(`Boolean failed: ${status}`)
+  const out = raw.simplify(0.005)
+  raw.delete()
 
   progress('checking islands')
   const { kept, removed } = dropIslands(m, out, params.minIslandVolume, log)
@@ -142,12 +144,15 @@ function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progres
   else if (params.mode === 'recess') { zMin = -params.depth; zMax = 1 }
   else { zMin = -0.2; zMax = params.depth }
   progress('building tool')
-  const tool = buildSurfaceTool(m, param, polygons, zMin, zMax, 1.0)
+  const tool = buildSurfaceTool(m, param, polygons, zMin, zMax, params.detail ?? 2.0)
   progress(params.mode === 'emboss' ? 'adding' : 'cutting')
-  const out = applyMode(m, body, tool, params.mode)
+  const raw = applyMode(m, body, tool, params.mode)
   body.delete(); tool.delete()
-  const status = out.status()
+  const status = raw.status()
   if (status !== 'NoError') throw new Error(`Boolean failed: ${status}`)
+  // merge coplanar splits left by the boolean
+  const out = raw.simplify(0.005)
+  raw.delete()
   progress('checking islands')
   const { kept, removed } = dropIslands(m, out, params.minIslandVolume, log)
   const result = triMeshFromManifold(kept)

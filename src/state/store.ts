@@ -23,6 +23,8 @@ export interface TileLayoutUi {
   scale: number
   margin: number
   fitSeam: boolean
+  minScale: number
+  detail: number
   mode: 'cut' | 'recess' | 'emboss'
   depth: number
   wallThickness: number
@@ -92,6 +94,8 @@ export const useStore = create<State>((set, get) => ({
     scale: 1,
     margin: 3,
     fitSeam: true,
+    minScale: 0.5,
+    detail: 2,
     mode: 'emboss',
     depth: 0.8,
     wallThickness: 5,

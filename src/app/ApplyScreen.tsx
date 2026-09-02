@@ -11,6 +11,7 @@ import VoronoiPanel from './panels/VoronoiPanel'
 import TilePanel from './panels/TilePanel'
 import RecipePanel from './panels/RecipePanel'
 import { setScene } from '../viewer/sceneRef'
+import { buildDemo } from '../io/demo'
 
 export default function ApplyScreen() {
   const bodies = useStore((s) => s.bodies)
@@ -55,6 +56,10 @@ export default function ApplyScreen() {
     loadedFromUrl.current = true
     const url = new URLSearchParams(location.search).get('load')
     if (!url) return
+    if (url.startsWith('demo:')) {
+      buildDemo(url.slice(5)).then((b) => { st().addBodies([b]); st().pushLog(`built demo ${url}`) }).catch((e) => st().pushLog(`demo failed: ${(e as Error).message}`))
+      return
+    }
     fetch(url)
       .then(async (r) => {
         if (!r.ok) throw new Error(`${r.status}`)

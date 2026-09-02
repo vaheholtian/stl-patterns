@@ -26,9 +26,10 @@ export function buildSurfaceTool(
   polygons: Polygon[],
   zMin: number,
   zMax: number,
-  maxEdge = 1.0,
+  maxEdge = 2.0,
 ): Manifold {
-  const refined = polygons.map((p) => subdividePolygon(p, maxEdge))
+  // outline edges are subdivided finer than the interior so mapped outlines stay smooth
+  const refined = polygons.map((p) => subdividePolygon(p, maxEdge / 2))
   const cs = new m.CrossSection(refined, 'EvenOdd')
   let slab = m.Manifold.extrude(cs, zMax - zMin).translate([0, 0, zMin])
   cs.delete()

@@ -2,13 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 import { useTileStore } from '../state/tileStore'
 import { generators, generatorById, defaultParams } from '../patterns'
 import type { GeneratorParam, ParamValue, Pt, Tile } from '../patterns/types'
-import { seededRandom } from '../geom/random'
-import { getManifold } from '../geom/manifold'
-import { tileToPolygons, polygonsArea } from '../patterns/pipeline'
+import { polygonsArea } from '../patterns/pipeline'
 import { importSvg } from '../patterns/svg/svgImport'
 import { exportTileSvg } from '../patterns/svg/svgExport'
 import { downloadBlob } from '../io/download'
-import { useStore } from '../state/store'
 
 function ParamControl({ p, value, onChange }: { p: GeneratorParam; value: ParamValue; onChange: (v: ParamValue) => void }) {
   if (p.type === 'boolean') {
@@ -89,7 +86,6 @@ export default function PatternScreen() {
   const warnings = useTileStore((s) => s.warnings)
   const saved = useTileStore((s) => s.saved)
   const ts = useTileStore.getState
-  const lineWidth = useStore((s) => s.lineWidth)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [repeat, setRepeat] = useState(3)
   const [error, setError] = useState<string | null>(null)
@@ -103,38 +99,7 @@ export default function PatternScreen() {
     if (missing.length) ts().setDef({ params: { ...defaults, ...def.params } })
   }, [gen, def.params, ts])
 
-  // regenerate on any change (debounced)
-  useEffect(() => {
-    let cancelled = false
-    const h = setTimeout(async () => {
-      try {
-        const m = await getManifold()
-        let t: Tile | null = null
-        let subtract: Pt[][] | undefined
-        if (def.generatorId === 'svg') {
-          t = def.svgTile ?? null
-          subtract = def.svgSubtract
-        } else if (gen) {
-          const seed = Number(def.params.seed ?? 1)
-          t = gen.generate({ ...defaultParams(gen), ...def.params }, { rand: seededRandom(seed) })
-        }
-        if (cancelled) return
-        if (!t) { ts().setResult(null, [], []); return }
-        const polys = tileToPolygons(m, t, { invert: def.invert, subtract, minFeature: lineWidth * 2 })
-        const w: string[] = []
-        const area = polygonsArea(polys), boxArea = t.width * t.height
-        if (area < boxArea * 0.02) w.push('Feature covers under 2% of the tile; check invert or sizes.')
-        if (area > boxArea * 0.98) w.push('Feature covers almost the whole tile; nothing would remain.')
-        const pts = polys.reduce((a, p) => a + p.length, 0)
-        if (pts > 20000) w.push(`Very detailed tile (${pts} points); operations will be slow.`)
-        ts().setResult(t, polys, w)
-        setError(null)
-      } catch (e) {
-        setError((e as Error).message)
-      }
-    }, 120)
-    return () => { cancelled = true; clearTimeout(h) }
-  }, [def, gen, lineWidth, ts])
+  // regeneration itself runs app-wide (useTileRegen), so the Apply screen always has a tile
 
   useEffect(() => {
     if (canvasRef.current) drawPreview(canvasRef.current, tile, polygons, repeat)
