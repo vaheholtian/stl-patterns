@@ -20,15 +20,15 @@ export class PointGrid {
         if (v > max[d]) max[d] = v
       }
     }
-    if (!cellSize) {
-      // aim for ~8 points per cell
-      const vol = Math.max(1e-9, (max[0] - this.min[0]) * (max[1] - this.min[1]) * (max[2] - this.min[2]))
-      cellSize = Math.cbrt((vol * 8) / Math.max(1, this.n))
-      if (!isFinite(cellSize) || cellSize <= 0) cellSize = 1
-    }
-    // keep the grid small enough for exact integer keys (<= 1000 cells per axis)
     const span = Math.max(max[0] - this.min[0], max[1] - this.min[1], max[2] - this.min[2], 1e-9)
-    if (span / cellSize > 1000) cellSize = span / 1000
+    if (!cellSize) {
+      // points usually lie on a surface, so size cells by the longest extent,
+      // not by volume (which collapses for flat regions). ~sqrt(n) cells per axis, capped.
+      const perAxis = Math.min(48, Math.max(2, Math.round(Math.sqrt(this.n) / 1.5)))
+      cellSize = span / perAxis
+    }
+    // keep the grid small enough for exact integer keys and bounded ring searches
+    if (span / cellSize > 64) cellSize = span / 64
     this.cell = cellSize
     for (let i = 0; i < this.n; i++) {
       const key = this.key(pts[i * 3], pts[i * 3 + 1], pts[i * 3 + 2])
@@ -45,8 +45,8 @@ export class PointGrid {
     return this.keyC(this.coord(x, 0), this.coord(y, 1), this.coord(z, 2))
   }
   private keyC(cx: number, cy: number, cz: number): number {
-    // pack into an exact integer; coordinates are within [-1, 1000] by construction
-    return ((cx + 8) * 2048 + (cy + 8)) * 2048 + (cz + 8)
+    // pack into an exact integer; coordinates are within [-70, 70] by construction
+    return ((cx + 128) * 256 + (cy + 128)) * 256 + (cz + 128)
   }
 
   /** Indices of the k nearest points to (x,y,z), excluding `exclude`, sorted by distance. */
@@ -85,7 +85,7 @@ export class PointGrid {
       const innerRadius = ring * this.cell
       if (bestD[k - 1] <= innerRadius * innerRadius) break
       ring++
-      if (ring > 64) break // safety: sparse cloud
+      if (ring > 66) break // the grid is at most 64 cells across; everything has been visited
     }
     for (let j = 0; j < k; j++) bestD[j] = Math.sqrt(bestD[j])
     return { idx: bestIdx, dist: bestD }
