@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spike A: Voronoi cut on a sphere shell</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 1rem; background: #111; color: #ddd; }
+      pre { background: #222; padding: 1rem; white-space: pre-wrap; }
+      canvas { width: 480px; height: 480px; background: #000; display: block; margin-top: 1rem; }
+      button { margin-right: .5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Spike A: Voronoi cut on a sphere shell</h1>
+    <p>200 seeds, 2 mm ribs, 60 mm outer diameter, 1.6 mm wall. Throwaway.</p>
+    <div>
+      <button id="run">Run</button>
+      <button id="download" disabled>Download STL</button>
+    </div>
+    <pre id="log">idle</pre>
+    <canvas id="view" width="960" height="960"></canvas>
+    <script type="module" src="./a.ts"></script>
+  </body>
+</html>

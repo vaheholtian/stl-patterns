@@ -1,6 +1,6 @@
 # Design decisions (brainstorm stage, nothing built)
 
-Last updated: 2026-09-02. Supersedes all earlier versions of this file.
+Last updated: 2026-09-02 (Phase 0 done). Supersedes all earlier versions of this file.
 
 ## Goal
 
@@ -85,6 +85,15 @@ If both pass, essentially all technical risk is retired.
 3. Pattern screen: tile model, Voronoi tile, Truchet, guilloche, Hilbert, SVG import, SVG export.
 4. Tile mapping: flattening, origin/rotation/scale handles, extrude-then-warp tool bodies, stretch-aware warnings.
 5. Tier 2 and 3 patterns, recipe save and load, polish.
+
+
+## Phase 0 results (2026-09-02, night build)
+
+- **manifold-3d 3.5.1 API confirmed** from its type definitions: `extrude`, `warp`, `trimByPlane`, `splitByPlane`, `decompose`, `volume`, `surfaceArea`, `levelSet`, `refine`, `refineToLength`, `hull`, variadic `union`/`difference`/`intersection`, `CrossSection` with `offset` and booleans (Clipper2 inside). Everything the plan assumed exists.
+- **Spike A (Voronoi on a sphere shell) passed.** 200 seeds: 1.1 s total, one connected component. 1000 seeds with 1.2 mm ribs: 4.5 s total, one component. The boolean itself is negligible; cell construction dominates. No performance risk remains for surface-native Voronoi.
+- **Spike B (tile mapping on a hemisphere) passed, with a library change.** xatlas produced 21 charts on a plain hemisphere even with every seam weight zeroed; it is a charting tool, not a single-patch flattener, so it is **rejected**. Replaced by a hand-written **least-squares conformal map (LSCM)** with CGLS solver in `src/geom/lscm.ts`: 2304 triangles flattened in 159 ms to a single seam-free disk, scale 1.0 at the pole and 0.46 at the rim, circles round at the origin. Extrude-then-warp tool bodies boolean cleanly. `xatlas-three` stays installed only as a comparison path in the spike and can be removed.
+- Boundary handling noted for Phase 4: tile shapes that cross the region edge currently fall back to a clamped mapping and can leave slivers (4 components on the hemisphere). Fix is to clip tile polygons to the flattened region boundary, inset by a margin, before extruding.
+- Spikes are kept in `spikes/` as dev-only pages (not part of the production build) instead of being deleted; they are useful regression checks.
 
 ## Open items
 

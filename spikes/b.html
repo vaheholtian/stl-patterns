@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spike B: tile mapping on a hemisphere</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 1rem; background: #111; color: #ddd; }
+      pre { background: #222; padding: 1rem; white-space: pre-wrap; }
+      .row { display: flex; gap: 1rem; margin-top: 1rem; }
+      canvas { width: 480px; height: 480px; background: #000; display: block; }
+      button { margin-right: .5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Spike B: tile mapping on a hemisphere</h1>
+    <p>Flatten the outer surface with xatlas, recenter on the pole, cut a grid of circles. Throwaway.</p>
+    <div>
+      <button id="run">Run</button>
+      <button id="download" disabled>Download STL</button>
+    </div>
+    <pre id="log">idle</pre>
+    <div class="row">
+      <canvas id="uv" width="960" height="960"></canvas>
+      <canvas id="view" width="960" height="960"></canvas>
+    </div>
+    <script type="module" src="./b.ts"></script>
+  </body>
+</html>
