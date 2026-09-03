@@ -61,3 +61,12 @@ The file measures 97.2 mm across and 55 mm tall with a 5 mm wall, not 50 mm acro
 - Hilbert now joins across horizontal repeats; moiré snaps to seamless angles and pitches (the notes say what it snapped to; untick Seamless to keep exact values); guilloche has a woven **Band** style that wraps.
 - Apollonian, hyperbolic, phyllotaxis, Koch, Sierpinski and the guilloche rosette are marked seamless (grid of medallions), so the Auto layout repeats them around the cup instead of stretching one copy.
 - **Seamless switch** (Pattern screen, on by default): holds every setting that would break seamless repetition. Moiré's "Snap to box" is locked on; patterns with no seamless form of their own (Julia, Penrose medallion, imported SVG) get Mirror forced on. Untick Seamless to get the raw pattern back. The generator picker now lists surface-filling patterns first and the centred medallions last.
+
+## Update 2026-09-03: the Pattern screen as a phone app
+
+- The site is now an **installable PWA**. On Android/Chrome an **Install** button appears in the top bar; on iPhone use Safari's share button then **Add to Home Screen**. It opens full screen with no browser bars and works **offline**: the app shell and the geometry WASM are precached, so patterns generate with no network.
+- Updates are not silent. When a new version is deployed the top bar shows an **Update** button; tapping it swaps in the new version and reloads.
+- On a phone the Pattern screen gets its own layout: the preview is pinned to the top and the controls live in a sheet you can **drag up** for more room (three snap positions, and tapping the handle cycles them). Numbers are **sliders with a tappable value** so the preview follows your finger; tap the number to type an exact one.
+- The **Apply** screen is desktop-only: it needs the 3D viewport and a loaded 3MF. On a phone, save tiles and use **Send library** to hand the JSON to AirDrop, mail or a cloud drive, then **Import library** on the desktop.
+- `?mobile=1` forces the phone layout on a desktop browser (and `?mobile=0` the desktop one), which is how to check it without a phone.
+- Icons and the favicon are generated from the app's own Penrose approximant, so the home-screen icon is a real tile from the tool.

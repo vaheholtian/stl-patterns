@@ -273,6 +273,16 @@ export const penroseApproximantGenerator: Generator = {
     const { rhombi, vertices } = buildTiling(W, H, A.strain, B.strain, t, 2.2)
     if (rhombi.length > MAX_RHOMBI) notes.push('rhombus budget exceeded; the tile is incomplete')
     notes.push(`period ${W.toFixed(2)} x ${H.toFixed(2)} edges (orders ${mA}/${mB}), edge ${unit.toFixed(2)} mm, strain ${(100 * Math.abs(A.strain)).toFixed(1)}% / ${(100 * Math.abs(B.strain)).toFixed(1)}%, ${vertices} vertices`)
+    // the period comes from a Fibonacci order, so the edge can only take certain
+    // values; say which control to move when the request could not be met
+    if (unit < edge * 0.8) {
+      const got = `edge ${unit.toFixed(2)} mm instead of ${edge.toFixed(1)}`
+      notes.push(mA > minOrder
+        ? `${got}: the nearest period lands there.`
+        : minOrder > 1
+          ? `${got}: Min order ${minOrder} sets the longest period that fits. Lower Min order, or widen the tile, for bigger rhombi.`
+          : `${got}: this is the longest period there is. Widen the tile for bigger rhombi.`)
+    }
 
     // self-check: the rhombi whose centroid lies in one period cell must tile it
     // exactly (the cell is shifted a little because many centroids sit exactly

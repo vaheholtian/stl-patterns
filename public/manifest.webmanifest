@@ -1,0 +1,17 @@
+{
+  "name": "STL patterns",
+  "short_name": "Patterns",
+  "description": "Design seamless patterns for 3D printing: Voronoi, Penrose, Truchet and more. Wrapping them onto a part needs the desktop app.",
+  "start_url": "/stl-patterns/",
+  "scope": "/stl-patterns/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#15171c",
+  "theme_color": "#15171c",
+  "categories": ["graphics", "productivity", "utilities"],
+  "icons": [
+    { "src": "/stl-patterns/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/stl-patterns/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/stl-patterns/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
