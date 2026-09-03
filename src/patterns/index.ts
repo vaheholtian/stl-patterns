@@ -29,6 +29,13 @@ export const generators: Generator[] = [
   juliaGenerator,
 ]
 
+/** Whether a generator's tiles can be repeated without visible joins (from its description). */
+export function isSeamless(g: Generator | undefined): boolean {
+  if (!g) return true
+  const d = g.description.toLowerCase()
+  return d.includes('seamless') && !d.includes('not seamless')
+}
+
 export function generatorById(id: string): Generator | undefined {
   return generators.find((g) => g.id === id)
 }

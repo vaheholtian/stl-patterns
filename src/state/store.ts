@@ -25,6 +25,8 @@ export interface TileLayoutUi {
   fitSeam: boolean
   minScale: number
   detail: number
+  /** 'repeat' tiles the pattern; 'single' generates it once at the region's size; 'auto' picks by whether the generator is seamless */
+  fit: 'auto' | 'repeat' | 'single'
   mode: 'cut' | 'recess' | 'emboss'
   depth: number
   wallThickness: number
@@ -96,6 +98,7 @@ export const useStore = create<State>((set, get) => ({
     fitSeam: true,
     minScale: 0.5,
     detail: 2,
+    fit: 'auto',
     mode: 'emboss',
     depth: 0.8,
     wallThickness: 5,

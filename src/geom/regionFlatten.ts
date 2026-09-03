@@ -17,6 +17,8 @@ export interface FlattenedRegion {
   topology: 'disk' | 'seam' | 'cap'
   /** boundary loops as vertex indices into the flattened mesh */
   loops: number[][]
+  /** vertices on the artificial seam (both sides); edges between them are not real boundary */
+  seamVertices: number[]
   log: string[]
   /** triangles removed as the far-side cap (source triangle ids), if any */
   removedCap: Uint32Array
@@ -205,10 +207,15 @@ export function flattenRegion(mesh: TriMesh, region: Uint32Array, origin: [numbe
 
   let pairs: [number, number][] = []
   if (loops.length >= 2) {
-    // ring-like: cut the shortest seam between the two longest loops
+    // ring-like: cut a seam between the two longest loops, starting from the
+    // boundary point farthest from the origin so the seam lands on the far side
     loops.sort((a, b) => b.length - a.length)
     const A = loops[0], B = loops[1]
-    const { prev, reached } = dijkstra(sub, A, new Set(B))
+    const o = nearestVertex(sub, origin[0], origin[1], origin[2])
+    const { dist: fromOrigin } = dijkstra(sub, [o])
+    let start = A[0]
+    for (const v of A) if (fromOrigin[v] > fromOrigin[start] && isFinite(fromOrigin[v])) start = v
+    const { prev, reached } = dijkstra(sub, [start], new Set(B))
     if (reached >= 0) {
       const path: number[] = []
       for (let v = reached; v !== -1; v = prev[v]) path.push(v)
@@ -240,6 +247,7 @@ export function flattenRegion(mesh: TriMesh, region: Uint32Array, origin: [numbe
     period,
     topology,
     loops: boundaryLoops(sub),
+    seamVertices: pairs.flatMap(([a, b]) => [a, b]),
     log,
     removedCap,
   }

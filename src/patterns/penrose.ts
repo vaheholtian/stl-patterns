@@ -32,7 +32,7 @@ import type { Generator, GeneratorContext, ParamValue, Pt, TileCurve } from './t
 import { getNum } from './types'
 
 const PHI = (1 + Math.sqrt(5)) / 2
-const MAX_TRIANGLES = 20000
+const MAX_TRIANGLES = 60000
 
 type Color = 0 | 1
 
@@ -74,8 +74,14 @@ function subdivide(t: RTri): RTri[] {
 /** Recursively deflate `t`, stopping (and keeping `t` as a leaf) once the
  * requested depth is exhausted or the children's leg length would fall
  * below `minFeature`. Appends leaves to `out`. */
-function deflate(t: RTri, depthRemaining: number, minFeature: number, out: RTri[]): void {
+function deflate(t: RTri, depthRemaining: number, minFeature: number, out: RTri[], box?: { w: number; h: number }): void {
   if (out.length >= MAX_TRIANGLES) return
+  // prune triangles that cannot touch the box (with a margin of one leg)
+  if (box) {
+    const leg = dist(t.A, t.B)
+    const xs = [t.A[0], t.B[0], t.C[0]], ys = [t.A[1], t.B[1], t.C[1]]
+    if (Math.max(...xs) < -leg || Math.min(...xs) > box.w + leg || Math.max(...ys) < -leg || Math.min(...ys) > box.h + leg) return
+  }
   if (depthRemaining <= 0) {
     out.push(t)
     return
@@ -85,7 +91,7 @@ function deflate(t: RTri, depthRemaining: number, minFeature: number, out: RTri[
     out.push(t)
     return
   }
-  for (const child of subdivide(t)) deflate(child, depthRemaining - 1, minFeature, out)
+  for (const child of subdivide(t)) deflate(child, depthRemaining - 1, minFeature, out, box)
 }
 
 /** Wheel of 10 thin triangles, apexes at the centre, base vertices on a
@@ -251,9 +257,8 @@ export const penroseGenerator: Generator = {
         { value: 'thick', label: 'Thick rhombi only' },
       ],
     },
-    { key: 'depth', label: 'Depth', type: 'int', default: 4, min: 0, max: 7, step: 1, hint: 'requested deflation depth; minFeature may stop earlier' },
+    { key: 'edge', label: 'Rhombus edge (mm)', type: 'number', default: 6, min: 1, max: 60, step: 0.5, hint: 'edge length of the final rhombi; the deflation depth is computed from it' },
     { key: 'minFeature', label: 'Min feature', type: 'number', default: 1.0, min: 0.1, max: 10, step: 0.1, hint: 'smallest detail; deeper recursion is skipped below this' },
-    { key: 'scale', label: 'Initial edge length', type: 'number', default: 6, min: 1, max: 60, step: 0.5, hint: 'leg length, mm, of the 10 initial triangles before deflation; grown automatically to cover the box' },
     { key: 'gap', label: 'Gap', type: 'number', default: 1.0, min: 0, max: 5, step: 0.1, hint: 'inset applied to thin/thick rhombi, mm' },
     { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1 },
     { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1 },
@@ -262,24 +267,23 @@ export const penroseGenerator: Generator = {
     const width = getNum(params, 'width', 40)
     const height = getNum(params, 'height', 40)
     const style = String(params.style ?? 'edges')
-    const depth = Math.max(0, Math.min(7, Math.round(getNum(params, 'depth', 4))))
     const minFeature = Math.max(0.01, getNum(params, 'minFeature', 1.0))
-    const scale = Math.max(0.5, getNum(params, 'scale', 6))
+    const edge = Math.max(0.5, getNum(params, 'edge', getNum(params, 'scale', 6)))
     const gap = Math.max(0, getNum(params, 'gap', 1.0))
     const ribWidth = getNum(params, 'ribWidth', 1.6)
 
     const cx = width / 2
     const cy = height / 2
-    // Grow the initial radius (never shrink it) so the decagon's inscribed
-    // circle (apothem = radius * cos(18deg)) covers the box's bounding
-    // circle, guaranteeing full coverage regardless of decagon rotation.
+    // The initial decagon's inscribed circle (apothem = radius * cos(18deg))
+    // must cover the box's bounding circle so the tiling fills it at any rotation.
     const halfDiag = 0.5 * Math.hypot(width, height)
-    const requiredRadius = halfDiag / Math.cos(Math.PI / 10)
-    const radius = Math.max(scale, requiredRadius * 1.02)
+    const radius = Math.max(edge, (halfDiag / Math.cos(Math.PI / 10)) * 1.02)
+    // each deflation divides the leg by phi; pick the depth that lands on the requested edge
+    const depth = Math.max(0, Math.min(12, Math.round(Math.log(radius / edge) / Math.log(PHI))))
 
     const leaves: RTri[] = []
     for (const tri of initialTriangles(cx, cy, radius)) {
-      deflate(tri, depth, minFeature, leaves)
+      deflate(tri, depth, minFeature, leaves, { w: width, h: height })
     }
 
     if (style === 'edges') {

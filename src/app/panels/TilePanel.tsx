@@ -5,9 +5,12 @@ import { useTileStore } from '../../state/tileStore'
 import { geomClient } from '../../worker/client'
 import { getManifold } from '../../geom/manifold'
 import type { FlattenedRegion } from '../../geom/regionFlatten'
-import { layoutTile, polygonsToSurfaceSegments, type LayoutResult } from '../../geom/layout'
+import { layoutTile, fittedTileSize, polygonsToSurfaceSegments, type LayoutResult } from '../../geom/layout'
 import { getScene } from '../../viewer/sceneRef'
-import type { Pt } from '../../patterns/types'
+import type { Pt, Tile } from '../../patterns/types'
+import { generatorById, defaultParams, isSeamless } from '../../patterns'
+import { seededRandom } from '../../geom/random'
+import { tileToPolygons } from '../../patterns/pipeline'
 
 interface Props {
   region: Uint32Array | null
@@ -42,6 +45,10 @@ export default function TilePanel({ region }: Props) {
   const tile = useTileStore((s) => s.tile)
   const tilePolys = useTileStore((s) => s.polygons)
   const tileName = useTileStore((s) => s.def.name)
+  const tileDef = useTileStore((s) => s.def)
+  const lineWidth = useStore((s) => s.lineWidth)
+  const gen = tileDef.generatorId === 'svg' ? undefined : generatorById(tileDef.generatorId)
+  const single = tl.fit === 'single' || (tl.fit === 'auto' && tileDef.generatorId !== 'svg' && !isSeamless(gen))
   const [flat, setFlat] = useState<FlattenedRegion | null>(null)
   const [flatKey, setFlatKey] = useState<string>('')
   const [layout, setLayout] = useState<LayoutResult | null>(null)
@@ -74,20 +81,53 @@ export default function TilePanel({ region }: Props) {
 
   // re-layout whenever inputs change
   const layoutTimer = useRef<number | null>(null)
+  const singleCache = useRef<{ key: string; polys: Pt[][]; tw: number; th: number } | null>(null)
   useEffect(() => {
     if (!flat || !tile || !tl.origin) return
     if (layoutTimer.current) clearTimeout(layoutTimer.current)
     layoutTimer.current = window.setTimeout(async () => {
       try {
         const m = await getManifold()
-        const res = layoutTile(m, flat, tilePolys, tile.width, tile.height, {
+        const settings = {
           origin: tl.origin!,
           rotationDeg: tl.rotationDeg,
           scale: tl.scale,
           margin: tl.margin,
           fitSeam: tl.fitSeam,
           minScale: tl.minScale,
-        })
+          single,
+        }
+        let polys = tilePolys
+        let tw = tile.width, th = tile.height
+        if (single) {
+          // generate the pattern once at the size of the flattened region (rounded so
+          // small origin moves reuse the cached result)
+          const size = fittedTileSize(flat, settings)
+          tw = Math.ceil(size.width); th = Math.ceil(size.height)
+          if (size.period) tw = size.period // a ring must wrap exactly once
+          const key = JSON.stringify([tileDef.generatorId, tileDef.params, tileDef.invert, tw, th, lineWidth, tileDef.svgTile ? tileDef.svgTile.polygons.length : 0])
+          const cached = singleCache.current
+          if (cached && cached.key === key) {
+            polys = cached.polys; tw = cached.tw; th = cached.th
+          } else {
+            let t: Tile | null = null
+            let subtract: Pt[][] | undefined
+            if (tileDef.generatorId === 'svg' && tileDef.svgTile) {
+              const src = tileDef.svgTile
+              const k = Math.min(tw / src.width, th / src.height)
+              const sc = (ps: Pt[][]) => ps.map((p) => p.map(([x, y]) => [x * k + (tw - src.width * k) / 2, y * k + (th - src.height * k) / 2] as Pt))
+              t = { width: tw, height: th, ribWidth: src.ribWidth * k, polygons: sc(src.polygons), curves: src.curves.map((c) => ({ ...c, points: sc([c.points])[0] })) }
+              subtract = tileDef.svgSubtract ? sc(tileDef.svgSubtract) : undefined
+            } else if (gen) {
+              const params = { ...defaultParams(gen), ...tileDef.params, width: tw, height: th }
+              t = gen.generate(params, { rand: seededRandom(Number(tileDef.params.seed ?? 1)) })
+              tw = t.width; th = t.height // generators may snap the box to whole cells
+            }
+            polys = t ? tileToPolygons(m, t, { invert: tileDef.invert, subtract, minFeature: lineWidth * 2 }) : []
+            singleCache.current = { key, polys, tw, th }
+          }
+        }
+        const res = layoutTile(m, flat, polys, tw, th, settings)
         setLayout(res)
         setInfo(res.log)
         const scene = getScene()
@@ -100,7 +140,7 @@ export default function TilePanel({ region }: Props) {
         setLayout(null)
       }
     }, 60)
-  }, [flat, tile, tilePolys, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.fitSeam, tl.minScale])
+  }, [flat, tile, tilePolys, tileDef, gen, single, lineWidth, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.fitSeam, tl.minScale])
 
   // when the origin is picked on a closed region, the cap must move: re-flatten
   const lastOrigin = useRef<string>('')
@@ -161,7 +201,15 @@ export default function TilePanel({ region }: Props) {
       </div>
       <div className="row"><label>Scale</label><input type="number" step={0.05} min={0.1} value={tl.scale} onChange={(e) => set({ scale: Number(e.target.value) })} /></div>
       <div className="row"><label>Solid edge margin (mm)</label><input type="number" step={0.5} min={0} value={tl.margin} onChange={(e) => set({ margin: Number(e.target.value) })} /></div>
-      <div className="row"><label>Fit whole repeats around seam</label><input type="checkbox" checked={tl.fitSeam} onChange={(e) => set({ fitSeam: e.target.checked })} /></div>
+      <div className="row" title="repeat the tile, or generate the pattern once at the size of the whole region (no internal joins)">
+        <label>Layout</label>
+        <select value={tl.fit} onChange={(e) => set({ fit: e.target.value as typeof tl.fit })}>
+          <option value="auto">Auto ({single ? 'single copy' : 'repeat'})</option>
+          <option value="repeat">Repeat tile</option>
+          <option value="single">Single copy, fitted</option>
+        </select>
+      </div>
+      {!single && <div className="row"><label>Fit whole repeats around seam</label><input type="checkbox" checked={tl.fitSeam} onChange={(e) => set({ fitSeam: e.target.checked })} /></div>}
       <div className="row" title="on curved surfaces the tile shrinks away from the origin; below this size the surface is left solid"><label>Skip where smaller than</label><input type="number" step={5} min={0} max={95} value={Math.round(tl.minScale * 100)} onChange={(e) => set({ minScale: Number(e.target.value) / 100 })} /></div>
       <div className="row" title="max edge length of the tool mesh, mm; smaller follows tight curves better but makes bigger files"><label>Detail (mm)</label><input type="number" step={0.5} min={0.5} max={5} value={tl.detail} onChange={(e) => set({ detail: Number(e.target.value) })} /></div>
       <div className="row">
