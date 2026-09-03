@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useTileStore } from '../state/tileStore'
+import { useTileStore, resolveDef } from '../state/tileStore'
 import { generators, generatorById, defaultParams } from '../patterns'
 import type { GeneratorParam, ParamValue, Pt, Tile } from '../patterns/types'
 import { polygonsArea } from '../patterns/pipeline'
@@ -7,30 +7,33 @@ import { importSvg } from '../patterns/svg/svgImport'
 import { exportTileSvg } from '../patterns/svg/svgExport'
 import { downloadBlob } from '../io/download'
 
-function ParamControl({ p, value, onChange }: { p: GeneratorParam; value: ParamValue; onChange: (v: ParamValue) => void }) {
+function ParamControl({ p, value, onChange, locked }: { p: GeneratorParam; value: ParamValue; onChange: (v: ParamValue) => void; locked?: boolean }) {
+  const title = locked ? `${p.hint ? p.hint + '. ' : ''}Held by the Seamless switch` : p.hint
+  const label = locked ? `${p.label} (seamless)` : p.label
   if (p.type === 'boolean') {
     return (
-      <div className="row" title={p.hint}>
-        <label>{p.label}</label>
-        <input type="checkbox" checked={Boolean(value)} onChange={(e) => onChange(e.target.checked)} />
+      <div className="row" title={title}>
+        <label>{label}</label>
+        <input type="checkbox" checked={Boolean(value)} disabled={locked} onChange={(e) => onChange(e.target.checked)} />
       </div>
     )
   }
   if (p.type === 'select') {
     return (
-      <div className="row" title={p.hint}>
-        <label>{p.label}</label>
-        <select value={String(value)} onChange={(e) => onChange(e.target.value)}>
+      <div className="row" title={title}>
+        <label>{label}</label>
+        <select value={String(value)} disabled={locked} onChange={(e) => onChange(e.target.value)}>
           {p.options?.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
         </select>
       </div>
     )
   }
   return (
-    <div className="row" title={p.hint}>
-      <label>{p.label}</label>
+    <div className="row" title={title}>
+      <label>{label}</label>
       <input
         type="number"
+        disabled={locked}
         value={Number(value)}
         min={p.min}
         max={p.max}
@@ -81,6 +84,7 @@ function drawPreview(canvas: HTMLCanvasElement, tile: Tile | null, polygons: Pt[
 
 export default function PatternScreen() {
   const def = useTileStore((s) => s.def)
+  const resolved = resolveDef(def)
   const tile = useTileStore((s) => s.tile)
   const polygons = useTileStore((s) => s.polygons)
   const warnings = useTileStore((s) => s.warnings)
@@ -196,7 +200,7 @@ export default function PatternScreen() {
           <div className="section">
             <h3>Parameters</h3>
             {gen.params.map((p) => (
-              <ParamControl key={p.key} p={p} value={def.params[p.key] ?? p.default} onChange={(v) => ts().setParam(p.key, v)} />
+              <ParamControl key={p.key} p={p} value={resolved.params[p.key] ?? p.default} locked={resolved.lockedParams.has(p.key)} onChange={(v) => ts().setParam(p.key, v)} />
             ))}
           </div>
         )}
@@ -208,8 +212,14 @@ export default function PatternScreen() {
             <input type="checkbox" checked={def.invert} onChange={(e) => ts().setDef({ invert: e.target.checked })} />
           </div>
           <div className="row">
-            <label title="Reflect the tile into a 2 x 2 kaleidoscope so any pattern repeats seamlessly (doubles the tile size)">Mirror (kaleidoscope, seamless)</label>
-            <input type="checkbox" checked={Boolean(def.mirror)} onChange={(e) => ts().setDef({ mirror: e.target.checked })} />
+            <label title="Hold every setting that would break seamless repetition: snaps parameters and forces Mirror on for patterns that need it">Seamless</label>
+            <input type="checkbox" checked={def.seamless !== false} onChange={(e) => ts().setDef({ seamless: e.target.checked })} />
+          </div>
+          <div className="row">
+            <label title={resolved.mirrorForced ? 'Required by the Seamless switch: this pattern is not seamless on its own' : 'Reflect the tile into a 2 x 2 kaleidoscope so any pattern repeats seamlessly (doubles the tile size)'}>
+              Mirror (kaleidoscope){resolved.mirrorForced ? ' · required for seamless' : ''}
+            </label>
+            <input type="checkbox" checked={resolved.mirror} disabled={resolved.mirrorForced} onChange={(e) => ts().setDef({ mirror: e.target.checked })} />
           </div>
           <div className="row">
             <label>Preview repeat</label>

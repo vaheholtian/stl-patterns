@@ -38,6 +38,8 @@ export interface GeneratorParam {
   options?: { value: string; label: string }[]
   /** short hint shown as a tooltip */
   hint?: string
+  /** value this parameter is locked to while the tile's Seamless switch is on */
+  seamlessValue?: ParamValue
 }
 
 export interface GeneratorContext {
@@ -52,6 +54,8 @@ export interface Generator {
   description: string
   params: GeneratorParam[]
   generate(params: Record<string, ParamValue>, ctx: GeneratorContext): Tile
+  /** whether the tile repeats without joins for these parameters; defaults to a description check */
+  seamless?(params: Record<string, ParamValue>): boolean
 }
 
 /** Density gradient shared by generators that place seeds or dots. */

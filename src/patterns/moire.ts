@@ -218,9 +218,10 @@ export const moireGenerator: Generator = {
       ],
     },
     { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1 },
-    { key: 'seamless', label: 'Seamless', type: 'boolean', default: true, hint: 'snap angles and pitches so every line set repeats exactly on the box' },
+    { key: 'seamless', label: 'Snap to box', type: 'boolean', default: true, seamlessValue: true, hint: 'snap angles and pitches so every line set repeats exactly on the box' },
     { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1 },
   ],
+  seamless: (params) => params.seamless !== false,
   generate(params: Record<string, ParamValue>, _ctx: GeneratorContext) {
     const width = getNum(params, 'width', 40)
     const height = getNum(params, 'height', 40)

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
-import { useTileStore } from '../state/tileStore'
+import { useTileStore, resolveDef } from '../state/tileStore'
 import { useStore } from '../state/store'
-import { generatorById, defaultParams } from '../patterns'
+import { generatorById } from '../patterns'
 import type { Pt, Tile } from '../patterns/types'
 import { seededRandom } from '../geom/random'
 import { getManifold } from '../geom/manifold'
@@ -18,18 +18,19 @@ export function useTileRegen() {
       try {
         const m = await getManifold()
         const gen = def.generatorId === 'svg' ? null : generatorById(def.generatorId)
+        const resolved = resolveDef(def)
         let t: Tile | null = null
         let subtract: Pt[][] | undefined
         if (def.generatorId === 'svg') {
           t = def.svgTile ?? null
           subtract = def.svgSubtract
         } else if (gen) {
-          const seed = Number(def.params.seed ?? 1)
-          t = gen.generate({ ...defaultParams(gen), ...def.params }, { rand: seededRandom(seed) })
+          const seed = Number(resolved.params.seed ?? 1)
+          t = gen.generate(resolved.params, { rand: seededRandom(seed) })
         }
         if (cancelled) return
         if (!t) { useTileStore.getState().setResult(null, [], []); return }
-        if (def.mirror) {
+        if (resolved.mirror) {
           if (subtract) subtract = mirrorPolygons(subtract, t.width, t.height)
           t = mirrorTile(t)
         }

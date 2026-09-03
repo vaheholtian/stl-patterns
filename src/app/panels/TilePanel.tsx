@@ -1,14 +1,14 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Vector3 } from 'three'
 import { useStore } from '../../state/store'
-import { useTileStore } from '../../state/tileStore'
+import { useTileStore, resolveDef } from '../../state/tileStore'
 import { geomClient } from '../../worker/client'
 import { getManifold } from '../../geom/manifold'
 import type { FlattenedRegion } from '../../geom/regionFlatten'
 import { layoutTile, fittedTileSize, polygonsToSurfaceSegments, type LayoutResult } from '../../geom/layout'
 import { getScene } from '../../viewer/sceneRef'
 import type { Pt, Tile } from '../../patterns/types'
-import { generatorById, defaultParams, isSeamless } from '../../patterns'
+import { generatorById, isSeamless } from '../../patterns'
 import { seededRandom } from '../../geom/random'
 import { tileToPolygons } from '../../patterns/pipeline'
 import { mirrorTile, mirrorPolygons } from '../../patterns/mirror'
@@ -49,7 +49,8 @@ export default function TilePanel({ region }: Props) {
   const tileDef = useTileStore((s) => s.def)
   const lineWidth = useStore((s) => s.lineWidth)
   const gen = tileDef.generatorId === 'svg' ? undefined : generatorById(tileDef.generatorId)
-  const single = tl.fit === 'single' || (tl.fit === 'auto' && tileDef.generatorId !== 'svg' && !tileDef.mirror && !isSeamless(gen))
+  const resolved = useMemo(() => resolveDef(tileDef), [tileDef])
+  const single = tl.fit === 'single' || (tl.fit === 'auto' && tileDef.generatorId !== 'svg' && !resolved.mirror && !isSeamless(gen, resolved.params))
   const [flat, setFlat] = useState<FlattenedRegion | null>(null)
   const [flatKey, setFlatKey] = useState<string>('')
   const [layout, setLayout] = useState<LayoutResult | null>(null)
@@ -106,7 +107,7 @@ export default function TilePanel({ region }: Props) {
           const size = fittedTileSize(flat, settings)
           tw = Math.ceil(size.width); th = Math.ceil(size.height)
           if (size.period) tw = size.period // a ring must wrap exactly once
-          const key = JSON.stringify([tileDef.generatorId, tileDef.params, tileDef.invert, Boolean(tileDef.mirror), tw, th, lineWidth, tileDef.svgTile ? tileDef.svgTile.polygons.length : 0])
+          const key = JSON.stringify([tileDef.generatorId, resolved.params, tileDef.invert, resolved.mirror, tw, th, lineWidth, tileDef.svgTile ? tileDef.svgTile.polygons.length : 0])
           const cached = singleCache.current
           if (cached && cached.key === key) {
             polys = cached.polys; tw = cached.tw; th = cached.th
@@ -114,7 +115,7 @@ export default function TilePanel({ region }: Props) {
             let t: Tile | null = null
             let subtract: Pt[][] | undefined
             // a mirrored tile is generated at half size and doubled by reflection
-            const gw = tileDef.mirror ? tw / 2 : tw, gh = tileDef.mirror ? th / 2 : th
+            const gw = resolved.mirror ? tw / 2 : tw, gh = resolved.mirror ? th / 2 : th
             if (tileDef.generatorId === 'svg' && tileDef.svgTile) {
               const src = tileDef.svgTile
               const k = Math.min(gw / src.width, gh / src.height)
@@ -122,10 +123,10 @@ export default function TilePanel({ region }: Props) {
               t = { width: gw, height: gh, ribWidth: src.ribWidth * k, polygons: sc(src.polygons), curves: src.curves.map((c) => ({ ...c, points: sc([c.points])[0] })) }
               subtract = tileDef.svgSubtract ? sc(tileDef.svgSubtract) : undefined
             } else if (gen) {
-              const params = { ...defaultParams(gen), ...tileDef.params, width: gw, height: gh }
-              t = gen.generate(params, { rand: seededRandom(Number(tileDef.params.seed ?? 1)) })
+              const params = { ...resolved.params, width: gw, height: gh }
+              t = gen.generate(params, { rand: seededRandom(Number(resolved.params.seed ?? 1)) })
             }
-            if (t && tileDef.mirror) {
+            if (t && resolved.mirror) {
               if (subtract) subtract = mirrorPolygons(subtract, t.width, t.height)
               t = mirrorTile(t)
             }
@@ -147,7 +148,7 @@ export default function TilePanel({ region }: Props) {
         setLayout(null)
       }
     }, 60)
-  }, [flat, tile, tilePolys, tileDef, gen, single, lineWidth, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.fitSeam, tl.minScale])
+  }, [flat, tile, tilePolys, tileDef, resolved, gen, single, lineWidth, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.fitSeam, tl.minScale])
 
   // when the origin is picked on a closed region, the cap must move: re-flatten
   const lastOrigin = useRef<string>('')
