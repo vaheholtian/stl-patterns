@@ -9,6 +9,7 @@ import { moireGenerator } from './moire'
 import { sierpinskiGenerator } from './sierpinski'
 import { kochGenerator } from './koch'
 import { penroseGenerator } from './penrose'
+import { penroseApproximantGenerator } from './penroseApproximant'
 import { hyperbolicGenerator } from './hyperbolic'
 import { apollonianGenerator } from './apollonian'
 import { juliaGenerator } from './julia'
@@ -23,13 +24,18 @@ export const generators: Generator[] = [
   moireGenerator,
   sierpinskiGenerator,
   kochGenerator,
+  penroseApproximantGenerator,
   penroseGenerator,
   hyperbolicGenerator,
   apollonianGenerator,
   juliaGenerator,
 ]
 
-/** Whether a generator's tiles can be repeated without visible joins (from its description). */
+/**
+ * Whether a generator's tiles can be repeated without visible joins (from its
+ * description). A description that says "not seamless" opts out even when it
+ * also mentions the word elsewhere.
+ */
 export function isSeamless(g: Generator | undefined): boolean {
   if (!g) return true
   const d = g.description.toLowerCase()

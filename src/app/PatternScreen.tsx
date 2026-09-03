@@ -208,6 +208,10 @@ export default function PatternScreen() {
             <input type="checkbox" checked={def.invert} onChange={(e) => ts().setDef({ invert: e.target.checked })} />
           </div>
           <div className="row">
+            <label title="Reflect the tile into a 2 x 2 kaleidoscope so any pattern repeats seamlessly (doubles the tile size)">Mirror (kaleidoscope, seamless)</label>
+            <input type="checkbox" checked={Boolean(def.mirror)} onChange={(e) => ts().setDef({ mirror: e.target.checked })} />
+          </div>
+          <div className="row">
             <label>Preview repeat</label>
             <select value={repeat} onChange={(e) => setRepeat(Number(e.target.value))}>
               <option value={1}>1 × 1</option>

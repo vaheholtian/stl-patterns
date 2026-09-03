@@ -163,7 +163,7 @@ function recurse(
 export const apollonianGenerator: Generator = {
   id: 'apollonian',
   name: 'Apollonian gasket',
-  description: 'Circles packed recursively via the Descartes Circle Theorem inside a bounding circle. Single centred motif; not seamless.',
+  description: 'Circles packed recursively via the Descartes Circle Theorem inside a bounding circle. A self-contained centred motif, so repeats are seamless (a grid of medallions).',
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },

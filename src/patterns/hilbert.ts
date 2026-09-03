@@ -9,10 +9,11 @@
 // but avoids recursion.
 //
 // The grid spacing equals width / 2^order, and the curve is inset by half a
-// spacing so it stays clear of the box edges. Because a Hilbert curve's
-// start and end points are corners of the grid (not matched to translated
-// copies of themselves), this pattern is NOT seamless across tile edges —
-// noted in the description.
+// spacing so it stays clear of the box edges. A Hilbert curve starts in the
+// bottom-left cell and ends in the bottom-right cell, on the same row, so
+// the two ends are extended straight out to the left and right box edges:
+// horizontal repeats then join into one continuous rib, and nothing crosses
+// the top or bottom edges. The tile is seamless.
 //
 // When `rounded` is on, each interior 90-degree turn of the polyline is
 // replaced by a short circular-arc fillet of radius 0.3 * spacing so the
@@ -94,7 +95,7 @@ function filletCorner(p0: Pt, p1: Pt, p2: Pt, r: number): Pt[] {
 export const hilbertGenerator: Generator = {
   id: 'hilbert',
   name: 'Hilbert curve',
-  description: 'Space-filling Hilbert curve as a single continuous rib. Not seamless across tile edges.',
+  description: 'Space-filling Hilbert curve as a single continuous rib; its ends run out to the left and right edges so horizontal repeats join into one seamless line.',
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },
@@ -118,11 +119,14 @@ export const hilbertGenerator: Generator = {
     const offY = spacing / 2 + (height - n * spacing) / 2
 
     const count = n * n
-    const grid: Pt[] = new Array(count)
+    const grid: Pt[] = new Array(count + 2)
     for (let d = 0; d < count; d++) {
       const [gx, gy] = d2xy(order, d)
-      grid[d] = [offX + gx * spacing, offY + gy * spacing]
+      grid[d + 1] = [offX + gx * spacing, offY + gy * spacing]
     }
+    // run the ends out to the box edges (d2xy starts at cell (0,0) and ends at (n-1,0))
+    grid[0] = [0, grid[1][1]]
+    grid[count + 1] = [width, grid[count][1]]
 
     let points: Pt[]
     if (!rounded) {

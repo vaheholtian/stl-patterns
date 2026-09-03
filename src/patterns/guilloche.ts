@@ -18,8 +18,11 @@
 // guaranteeing the whole family (whose outermost point is exactly R0+A)
 // fits inside the box with room for the stroke width.
 //
-// This is a single centred motif per tile, not a repeating lattice, so it
-// is NOT seamless across tile edges.
+// The rosette is a self-contained centred motif, so repeating it is seamless
+// (a grid of rosettes). The `band` style instead draws banknote-style
+// guilloche bands: `count` sinusoids y = cy + A*sin(2*pi*k*x/width + phi_i)
+// and their mirror images, running the full width with a whole number of
+// lobes, so the band continues across horizontal repeats.
 
 import type { Generator, GeneratorContext, ParamValue, Pt, TileCurve } from './types'
 import { getNum } from './types'
@@ -43,10 +46,17 @@ function rosetteCurve(cx: number, cy: number, R0: number, A: number, k: number, 
 export const guillocheGenerator: Generator = {
   id: 'guilloche',
   name: 'Guilloche rosette',
-  description: 'Spirograph-style rosette of layered sinusoidal curves, centred in the tile. Not seamless (single motif per tile).',
+  description: 'Spirograph-style rosette of layered sinusoidal curves centred in the tile (seamless as a grid of medallions), or a banknote-style woven band that runs seamlessly across horizontal repeats.',
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },
+    {
+      key: 'style', label: 'Style', type: 'select', default: 'rosette',
+      options: [
+        { value: 'rosette', label: 'Rosette (medallion)' },
+        { value: 'band', label: 'Band (woven, wraps)' },
+      ],
+    },
     { key: 'count', label: 'Curve count', type: 'int', default: 6, min: 1, max: 24, step: 1 },
     { key: 'radius', label: 'Radius (R0)', type: 'number', default: 15, min: 1, max: 150, step: 0.5 },
     { key: 'amplitude', label: 'Amplitude (A)', type: 'number', default: 4, min: 0, max: 50, step: 0.25 },
@@ -64,9 +74,30 @@ export const guillocheGenerator: Generator = {
     const twist = getNum(params, 'twist', 0.15)
     const innerRings = Math.max(0, Math.round(getNum(params, 'innerRings', 2)))
     const ribWidth = getNum(params, 'ribWidth', 1.6)
+    const style = String(params.style ?? 'rosette')
 
     let R0 = getNum(params, 'radius', 15)
     let A = getNum(params, 'amplitude', 4)
+
+    if (style === 'band') {
+      // a whole number of lobes across the width keeps both ends at the same height
+      const amp = Math.min(A, height / 2 - ribWidth)
+      const steps = Math.max(64, k * 24)
+      const cy = height / 2
+      const curves: TileCurve[] = []
+      for (let i = 0; i < count; i++) {
+        const phi = i * (TWO_PI / count) + i * twist
+        for (const sign of [1, -1]) {
+          const points: Pt[] = []
+          for (let s = 0; s <= steps; s++) {
+            const x = (width * s) / steps
+            points.push([x, cy + sign * amp * Math.sin((TWO_PI * k * x) / width + phi)])
+          }
+          curves.push({ points, closed: false })
+        }
+      }
+      return { width, height, polygons: [], curves, ribWidth }
+    }
     const maxR = Math.max(0.5, Math.min(width, height) / 2 - ribWidth)
     if (R0 + A > maxR) {
       const scale = maxR / (R0 + A)

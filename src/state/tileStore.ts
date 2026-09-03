@@ -10,6 +10,8 @@ export interface TileDef {
   svgTile?: Tile
   svgSubtract?: Pt[][]
   invert: boolean
+  /** kaleidoscope: reflect the tile into a 2 x 2 arrangement so any pattern repeats seamlessly */
+  mirror?: boolean
 }
 
 export interface SavedTile extends TileDef {

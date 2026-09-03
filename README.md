@@ -2,7 +2,7 @@
 
 Put decorative patterns on the surface of 3D-printable parts, in the browser.
 
-Load an STL or 3MF (Onshape exports work as-is, including the ones in meters), click a surface region, and either scatter a surface-native Voronoi lattice on it or wrap a flat tile around it: Truchet, guilloche, Hilbert, Penrose, hyperbolic tilings, Julia sets, your own SVG, and more. Output is a watertight mesh as STL or 3MF, ready for Bambu Studio.
+Load an STL or 3MF (Onshape exports work as-is, including the ones in meters), click a surface region, and either scatter a surface-native Voronoi lattice on it or wrap a flat tile around it: Truchet, guilloche, Hilbert, a seamless periodic Penrose approximant, hyperbolic tilings, Julia sets, your own SVG, and more. A mirror switch turns any tile into a seamless kaleidoscope. Output is a watertight mesh as STL or 3MF, ready for Bambu Studio.
 
 Live: https://vaheholtian.github.io/stl-patterns/
 

@@ -65,7 +65,7 @@ function clipPolygonToConvex(subject: Pt[], clipIn: Pt[]): Pt[] {
 export const phyllotaxisGenerator: Generator = {
   id: 'phyllotaxis',
   name: 'Phyllotaxis spiral',
-  description: 'Sunflower-spiral dot or cell layout, centred on the tile; not seamless across edges.',
+  description: 'Sunflower-spiral dot or cell layout, centred on the tile and kept inside its inscribed circle, so repeats are seamless (a grid of medallions).',
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1, hint: 'tile width, mm' },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1, hint: 'tile height, mm' },

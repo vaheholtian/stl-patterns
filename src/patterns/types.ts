@@ -21,6 +21,8 @@ export interface Tile {
   curves: TileCurve[]
   /** stroke width for curves, mm */
   ribWidth: number
+  /** informational messages from the generator (snapped sizes, self-check results) */
+  notes?: string[]
 }
 
 export type ParamValue = number | string | boolean

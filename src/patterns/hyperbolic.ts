@@ -173,7 +173,7 @@ function pointLineDist(p: Pt, a: Pt, b: Pt): number {
 export const hyperbolicGenerator: Generator = {
   id: 'hyperbolic',
   name: 'Hyperbolic tiling',
-  description: 'Poincare-disk {p,q} tiling built by reflecting the fundamental polygon across its geodesic edges. Single centred motif; not seamless.',
+  description: 'Poincare-disk {p,q} tiling built by reflecting the fundamental polygon across its geodesic edges. A self-contained centred disk, so repeats are seamless (a grid of medallions).',
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },

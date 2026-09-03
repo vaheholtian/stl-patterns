@@ -114,3 +114,14 @@ If both pass, essentially all technical risk is retired.
 - Resolved 2026-09-02, **UI stack**: React + TypeScript on Vite.
 - Resolved 2026-09-02, **hosting**: GitHub Pages from a GitHub repo. The project folder is not a git repo yet; making it one is the first setup step when building starts. Development runs on a local Vite dev server.
 - Resolved 2026-09-02, **density gradients: both, in order**. First, tile-level gradients on the Pattern screen (uniform, radial from a point, linear along a direction), saved with the tile. Only once that is polished, add surface-level density for surface-native Voronoi on the Apply screen, driven by distance from the origin handle. Mapping stretch stays a separate effect and is never presented as a gradient.
+
+## Seamless patterns (2026-09-03)
+
+Every generator now repeats without visible joins, in one of three ways:
+
+- **Periodic by construction.** Voronoi, Delaunay, Truchet, Sierpinski carpet, Koch band, Hilbert (its two ends now run out to the left and right box edges, so horizontal repeats form one continuous rib), guilloche band (whole number of lobes across the width), moiré (each line set is snapped to the nearest angle and pitch that repeat exactly on the box: normal = pitch × (a/width, b/height) with integers a, b).
+- **Self-contained motifs.** Apollonian, hyperbolic disk, phyllotaxis, guilloche rosette, Koch snowflake, Sierpinski triangle stay inside the box, so a repeat is a grid of medallions with nothing cut. Their descriptions now say "seamless" so the Auto layout repeats them instead of stretching one copy over the region.
+- **Penrose periodic approximant.** A true Penrose tiling is aperiodic and cannot be a seamless tile, so `penroseApproximant.ts` builds the cut-and-project Penrose tiling from Z⁵ and applies a linear phason strain that turns two symmetric lattice vectors (Fibonacci ratios, so the strain is small: 5.6 % at order 2, 0.8 % at order 4) into exact horizontal and vertical periods. Rhombi keep their true shapes; only the arrangement repeats. The window must be the projection of the unit cube along the *strained* plane, otherwise gaps appear proportional to the strain (found and fixed by the area self-check). Width is honoured exactly by adjusting the edge; height snaps to the nearest period. `spikes/approx-test.ts` verifies periodicity and 100 % coverage with no overlaps. The old deflation generator stays as "Penrose medallion".
+- **Mirror switch (Pattern screen).** Reflects any tile into a 2 × 2 kaleidoscope, which is seamless for every pattern including Julia sets and the Penrose medallion, at the price of visible mirror symmetry. Mirrored tiles count as seamless for the Auto layout.
+
+Verified on the cup: seamless Penrose, 40 mm tile, edge 4 → Auto layout repeats it 8 times around the seam (stretched −4.7 %), emboss 0.8 mm in 1.4 s, 100k triangles, lines continuous at every join.

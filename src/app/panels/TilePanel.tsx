@@ -11,6 +11,7 @@ import type { Pt, Tile } from '../../patterns/types'
 import { generatorById, defaultParams, isSeamless } from '../../patterns'
 import { seededRandom } from '../../geom/random'
 import { tileToPolygons } from '../../patterns/pipeline'
+import { mirrorTile, mirrorPolygons } from '../../patterns/mirror'
 
 interface Props {
   region: Uint32Array | null
@@ -48,7 +49,7 @@ export default function TilePanel({ region }: Props) {
   const tileDef = useTileStore((s) => s.def)
   const lineWidth = useStore((s) => s.lineWidth)
   const gen = tileDef.generatorId === 'svg' ? undefined : generatorById(tileDef.generatorId)
-  const single = tl.fit === 'single' || (tl.fit === 'auto' && tileDef.generatorId !== 'svg' && !isSeamless(gen))
+  const single = tl.fit === 'single' || (tl.fit === 'auto' && tileDef.generatorId !== 'svg' && !tileDef.mirror && !isSeamless(gen))
   const [flat, setFlat] = useState<FlattenedRegion | null>(null)
   const [flatKey, setFlatKey] = useState<string>('')
   const [layout, setLayout] = useState<LayoutResult | null>(null)
@@ -105,24 +106,30 @@ export default function TilePanel({ region }: Props) {
           const size = fittedTileSize(flat, settings)
           tw = Math.ceil(size.width); th = Math.ceil(size.height)
           if (size.period) tw = size.period // a ring must wrap exactly once
-          const key = JSON.stringify([tileDef.generatorId, tileDef.params, tileDef.invert, tw, th, lineWidth, tileDef.svgTile ? tileDef.svgTile.polygons.length : 0])
+          const key = JSON.stringify([tileDef.generatorId, tileDef.params, tileDef.invert, Boolean(tileDef.mirror), tw, th, lineWidth, tileDef.svgTile ? tileDef.svgTile.polygons.length : 0])
           const cached = singleCache.current
           if (cached && cached.key === key) {
             polys = cached.polys; tw = cached.tw; th = cached.th
           } else {
             let t: Tile | null = null
             let subtract: Pt[][] | undefined
+            // a mirrored tile is generated at half size and doubled by reflection
+            const gw = tileDef.mirror ? tw / 2 : tw, gh = tileDef.mirror ? th / 2 : th
             if (tileDef.generatorId === 'svg' && tileDef.svgTile) {
               const src = tileDef.svgTile
-              const k = Math.min(tw / src.width, th / src.height)
-              const sc = (ps: Pt[][]) => ps.map((p) => p.map(([x, y]) => [x * k + (tw - src.width * k) / 2, y * k + (th - src.height * k) / 2] as Pt))
-              t = { width: tw, height: th, ribWidth: src.ribWidth * k, polygons: sc(src.polygons), curves: src.curves.map((c) => ({ ...c, points: sc([c.points])[0] })) }
+              const k = Math.min(gw / src.width, gh / src.height)
+              const sc = (ps: Pt[][]) => ps.map((p) => p.map(([x, y]) => [x * k + (gw - src.width * k) / 2, y * k + (gh - src.height * k) / 2] as Pt))
+              t = { width: gw, height: gh, ribWidth: src.ribWidth * k, polygons: sc(src.polygons), curves: src.curves.map((c) => ({ ...c, points: sc([c.points])[0] })) }
               subtract = tileDef.svgSubtract ? sc(tileDef.svgSubtract) : undefined
             } else if (gen) {
-              const params = { ...defaultParams(gen), ...tileDef.params, width: tw, height: th }
+              const params = { ...defaultParams(gen), ...tileDef.params, width: gw, height: gh }
               t = gen.generate(params, { rand: seededRandom(Number(tileDef.params.seed ?? 1)) })
-              tw = t.width; th = t.height // generators may snap the box to whole cells
             }
+            if (t && tileDef.mirror) {
+              if (subtract) subtract = mirrorPolygons(subtract, t.width, t.height)
+              t = mirrorTile(t)
+            }
+            if (t) { tw = t.width; th = t.height } // generators may snap the box to whole cells
             polys = t ? tileToPolygons(m, t, { invert: tileDef.invert, subtract, minFeature: lineWidth * 2 }) : []
             singleCache.current = { key, polys, tw, th }
           }

@@ -188,7 +188,7 @@ function perimeter(loop: Pt[]): number {
 export const juliaGenerator: Generator = {
   id: 'julia',
   name: 'Julia / Mandelbrot fractal',
-  description: 'Escape-time Julia or Mandelbrot set, smoothed and traced into filled polygons with marching squares. Single framed view; not seamless.',
+  description: 'Escape-time Julia or Mandelbrot set, smoothed and traced into filled polygons with marching squares. Single framed view; not seamless unless Mirror is on.',
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },

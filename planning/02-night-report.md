@@ -53,3 +53,10 @@ The file measures 97.2 mm across and 55 mm tall with a 5 mm wall, not 50 mm acro
 - Default rib width floor is 2 × line width (0.84 mm at 0.42). Changeable in the Voronoi panel.
 - The tile pipeline removes slivers thinner than 2 × line width from every tile before use.
 - Recipes re-find a region by nearest triangle with a compatible normal, then flood-fill with the saved angle.
+
+## Update 2026-09-03: seamless patterns
+
+- New generator **Penrose tiling (seamless)**: periodic approximant with true rhombi. Set width and edge; height snaps to the nearest period and the info line under the preview reports the period, strain and vertex count. "Min order" 2 is the default; raise it for a closer-to-Penrose look with smaller rhombi.
+- **Mirror (kaleidoscope, seamless)** checkbox on the Pattern screen makes any tile seamless by reflection, including Julia and the Penrose medallion.
+- Hilbert now joins across horizontal repeats; moiré snaps to seamless angles and pitches (the notes say what it snapped to; untick Seamless to keep exact values); guilloche has a woven **Band** style that wraps.
+- Apollonian, hyperbolic, phyllotaxis, Koch, Sierpinski and the guilloche rosette are marked seamless (grid of medallions), so the Auto layout repeats them around the cup instead of stretching one copy.

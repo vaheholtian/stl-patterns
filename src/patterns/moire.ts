@@ -142,9 +142,27 @@ function arcPoints(cx: number, cy: number, r: number, a0: number, a1: number): P
   return pts
 }
 
+/**
+ * Snap a line family so it repeats exactly on the w x h box. A family with
+ * unit normal n and pitch p is invariant under the box translations when
+ * n.(w,0) and n.(0,h) are whole multiples of p, i.e. n = p*(a/w, b/h) for
+ * integers a, b. Round the ideal (a, b) and rebuild angle and pitch from them.
+ */
+function snapFamily(angleRad: number, pitch: number, w: number, h: number): { angle: number; pitch: number } {
+  const n: Pt = [-Math.sin(angleRad), Math.cos(angleRad)]
+  let a = Math.round((w * n[0]) / pitch)
+  let b = Math.round((h * n[1]) / pitch)
+  if (a === 0 && b === 0) { if (Math.abs(w * n[0]) > Math.abs(h * n[1])) a = Math.sign(n[0]) || 1; else b = Math.sign(n[1]) || 1 }
+  if (b < 0 || (b === 0 && a < 0)) { a = -a; b = -b }
+  const nx = a / w, ny = b / h
+  const p = 1 / Math.hypot(nx, ny)
+  // n = p*(nx, ny) = (-sin, cos)
+  return { angle: Math.atan2(-nx * p, ny * p), pitch: p }
+}
+
 /** One family of concentric circles around the box centre, spaced by
- * `pitch`, each clipped exactly to the box. */
-function radialFamily(pitch: number, w: number, h: number): TileCurve[] {
+ * `pitch`, each clipped exactly to the box (or kept inside `maxRadius`). */
+function radialFamily(pitch: number, w: number, h: number, maxRadius = Infinity): TileCurve[] {
   const cx = w / 2
   const cy = h / 2
   const cornerDist = Math.max(
@@ -154,9 +172,10 @@ function radialFamily(pitch: number, w: number, h: number): TileCurve[] {
     Math.hypot(w - cx, h - cy),
   )
   const curves: TileCurve[] = []
-  const maxM = Math.ceil(cornerDist / pitch)
+  const maxM = Math.ceil(Math.min(cornerDist, maxRadius) / pitch)
   for (let m = 1; m <= maxM; m++) {
     const r = m * pitch
+    if (r > maxRadius) break
     const inter = circleBoxIntersections(cx, cy, r, w, h)
     if (inter.length === 0) {
       // Either fully inside the box, or fully outside it.
@@ -183,7 +202,7 @@ function radialFamily(pitch: number, w: number, h: number): TileCurve[] {
 export const moireGenerator: Generator = {
   id: 'moire',
   name: 'Moire lines',
-  description: 'Two overlaid line grids (or lines + concentric circles) clipped exactly to the box; seamless only for the angle-0 family when pitch divides the box height.',
+  description: 'Two overlaid line grids (or lines + concentric circles). With Seamless on, each line set is snapped to the nearest angle and pitch that repeat exactly on the box, and circles stay inside it, so the tile is seamless.',
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },
@@ -199,6 +218,7 @@ export const moireGenerator: Generator = {
       ],
     },
     { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1 },
+    { key: 'seamless', label: 'Seamless', type: 'boolean', default: true, hint: 'snap angles and pitches so every line set repeats exactly on the box' },
     { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1 },
   ],
   generate(params: Record<string, ParamValue>, _ctx: GeneratorContext) {
@@ -210,16 +230,24 @@ export const moireGenerator: Generator = {
     const pitchRatio = Math.max(0.01, getNum(params, 'pitchRatio', 1.05))
     const mode = String(params.mode ?? 'lines')
     const ribWidth = getNum(params, 'ribWidth', 1.6)
+    const seamless = Boolean(params.seamless ?? true)
+    const notes: string[] = []
 
+    const family = (angle: number, p: number, label: string): TileCurve[] => {
+      if (!seamless) return lineFamily(angle, p, width, height)
+      const s = snapFamily(angle, p, width, height)
+      if (Math.abs(s.angle - angle) > 1e-6 || Math.abs(s.pitch - p) > 1e-6) notes.push(`${label} snapped to ${(s.angle / DEG).toFixed(1)} deg, pitch ${s.pitch.toFixed(2)} mm`)
+      return lineFamily(s.angle, s.pitch, width, height)
+    }
     const curves: TileCurve[] = []
-    curves.push(...lineFamily(angleA, pitch, width, height))
+    curves.push(...family(angleA, pitch, 'set A'))
     const pitchB = pitch * pitchRatio
     if (mode === 'radial') {
-      curves.push(...radialFamily(pitchB, width, height))
+      curves.push(...radialFamily(pitchB, width, height, seamless ? Math.min(width, height) / 2 - ribWidth / 2 : Infinity))
     } else {
-      curves.push(...lineFamily(angleB, pitchB, width, height))
+      curves.push(...family(angleB, pitchB, 'set B'))
     }
 
-    return { width, height, polygons: [], curves, ribWidth }
+    return { width, height, polygons: [], curves, ribWidth, notes }
   },
 }

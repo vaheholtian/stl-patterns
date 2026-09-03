@@ -181,7 +181,7 @@ function clipSegmentToBox(a: Pt, b: Pt, width: number, height: number): [Pt, Pt]
 /** Inset a convex polygon inward by `dist`: offset each edge along its
  * inward normal by `dist`, then reconstruct the polygon by intersecting
  * consecutive offset edge lines. Returns null if it degenerates. */
-function insetConvex(poly: Pt[], distIn: number): Pt[] | null {
+export function insetConvex(poly: Pt[], distIn: number): Pt[] | null {
   const n = poly.length
   if (n < 3) return null
   let area = 0
@@ -244,8 +244,8 @@ function edgeKey(a: Pt, b: Pt): string {
 
 export const penroseGenerator: Generator = {
   id: 'penrose',
-  name: 'Penrose tiling',
-  description: 'Penrose P3 rhombus tiling built by deflation of Robinson triangles, clipped to the box. A single centred motif - not seamless across tile edges.',
+  name: 'Penrose medallion',
+  description: 'True (aperiodic) Penrose P3 rhombus tiling built by deflation of Robinson triangles, clipped to the box. A single centred motif - not seamless across tile edges; use "Penrose tiling (seamless)" for a wrap, or turn on Mirror.',
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },
