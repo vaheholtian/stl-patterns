@@ -148,7 +148,8 @@ function Preview({ tile, polygons, repeat }: { tile: Tile | null; polygons: Pt[]
     if (!wrap || !canvas) return
     const ro = new ResizeObserver(() => {
       const dpr = Math.min(window.devicePixelRatio || 1, 2)
-      const side = Math.max(1, Math.floor(Math.min(wrap.clientWidth, wrap.clientHeight)))
+      // the canvas is positioned out of flow, so its size cannot feed back into the wrap
+      const side = Math.max(1, Math.floor(Math.min(wrap.clientWidth, wrap.clientHeight)) - 20)
       canvas.style.width = `${side}px`
       canvas.style.height = `${side}px`
       canvas.width = Math.floor(side * dpr)
