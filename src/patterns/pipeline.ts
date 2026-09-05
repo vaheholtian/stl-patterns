@@ -137,7 +137,7 @@ export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: Pipeli
   const box = own(m.CrossSection.square([tile.width, tile.height], false))
   if (opts.invert) cs = own(m.CrossSection.difference(box, cs))
   if (opts.clipToBox !== false || opts.periodic) cs = own(m.CrossSection.intersection(cs, box))
-  if (opts.periodic && opts.minFeature && opts.minFeature > 0) {
+  if (opts.periodic) {
     const copies: CrossSection[] = []
     for (let y = -1; y <= 1; y++) for (let x = -1; x <= 1; x++) copies.push(own(cs.translate([x * tile.width, y * tile.height])))
     cs = own(m.CrossSection.union(copies))
@@ -147,8 +147,10 @@ export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: Pipeli
     const r = opts.minFeature / 2
     cs = own(own(cs.offset(-r, 'Round', 2, 32)).offset(r, 'Round', 2, 32))
   }
-  if (opts.periodic) cs = own(m.CrossSection.intersection(cs, box))
-  const simplified = own(cs.simplify(0.01))
+  // Simplify the neighbourhood before cropping. Simplifying a cropped tile can
+  // pull a seam vertex inward and independently remove opposite-edge segments.
+  cs = own(cs.simplify(0.01))
+  const simplified = opts.periodic ? own(m.CrossSection.intersection(cs, box)) : cs
   if (opts.connectMaterial) {
     return connectMaterial(m, simplified, tile.width, tile.height, Math.max(tile.ribWidth, opts.minFeature ?? 0), opts.notes)
   }

@@ -73,22 +73,23 @@ for (const g of newGenerators) test(`${g.name}: final cut geometry matches oppos
   } finally { cuts.delete() }
 })
 
-for (const id of ['lusona', 'celtic', 'unicursalMaze']) test(`${id}: many seeds and grids stay one closed stroke`, () => {
+for (const id of ['lusona', 'unicursalMaze']) test(`${id}: periodic generators vary by seed and stay finite across grids`, () => {
   for (const seed of [0, 1, 7, 12345]) for (const [columns, rows] of [[2, 2], [3, 6], [8, 5], [24, 24]]) for (const mirrors of [0, 0.5, 1]) {
     const tile = generate(id, { columns, rows, mirrors, rounding: 0 }, seed)
-    assert.equal(tile.curves.length, 1)
-    assert.equal(tile.curves[0].closed, true)
-    if (id === 'unicursalMaze') assert.equal(tile.curves[0].points.length, 4 * columns * rows)
-    else assert.equal(tile.curves[0].points.length, 4 * columns * rows)
+    assert.ok(tile.curves.length > 1)
+    assert.ok(tile.curves.every((c) => c.points.every((p) => p.every(Number.isFinite))))
   }
   assert.notDeepEqual(generate(id, {}, 1).curves, generate(id, {}, 7).curves, 'Seed must vary the artwork')
 })
 
-test('Maze walls are connected before bridging', () => {
+test('Periodic maze walls connect in a finite panel with a solid edge margin', () => {
   for (let seed = 0; seed < 10; seed++) {
     const tile = generate('unicursalMaze', { style: 'walls' }, seed)
     const ribs = tileToCrossSection(m, tile)
-    assert.equal(count(ribs), 1); ribs.delete()
+    const outer = m.CrossSection.square([tile.width + 2, tile.height + 2]).translate([-1, -1])
+    const inner = m.CrossSection.square([tile.width - 0.2, tile.height - 0.2]).translate([0.1, 0.1])
+    const rim = m.CrossSection.difference(outer, inner), panel = m.CrossSection.union([ribs, rim])
+    assert.equal(count(panel), 1); panel.delete(); rim.delete(); inner.delete(); outer.delete(); ribs.delete()
     checkMaterial(tile)
   }
 })

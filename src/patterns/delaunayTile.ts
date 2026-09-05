@@ -1,42 +1,11 @@
 // Seamless periodic Delaunay mesh tile: shares the periodic seeding and
 // Lloyd relaxation from voronoiTile.ts, then emits the triangulation edges
-// (clipped to the tile box) as open polyline curves instead of filled cells.
+// (clipped after stroking) as open polyline curves instead of filled cells.
 
 import { Delaunay } from 'd3-delaunay'
-import type { Generator, GeneratorContext, ParamValue, Pt, TileCurve } from './types'
+import type { Generator, GeneratorContext, ParamValue, TileCurve } from './types'
 import { gradientParams, getNum } from './types'
 import { periodicSeeds } from './voronoiTile'
-
-/** Liang-Barsky clip of segment a-b to [0,width] x [0,height]. Returns null if fully outside. */
-function clipSegmentToBox(a: Pt, b: Pt, width: number, height: number): [Pt, Pt] | null {
-  let t0 = 0, t1 = 1
-  const dx = b[0] - a[0], dy = b[1] - a[1]
-  const checks: [number, number][] = [
-    [-dx, a[0]],
-    [dx, width - a[0]],
-    [-dy, a[1]],
-    [dy, height - a[1]],
-  ]
-  for (const [p, q] of checks) {
-    if (Math.abs(p) < 1e-12) {
-      if (q < 0) return null
-      continue
-    }
-    const r = q / p
-    if (p < 0) {
-      if (r > t1) return null
-      if (r > t0) t0 = r
-    } else {
-      if (r < t0) return null
-      if (r < t1) t1 = r
-    }
-  }
-  if (t0 > t1) return null
-  const p0: Pt = [a[0] + t0 * dx, a[1] + t0 * dy]
-  const p1: Pt = [a[0] + t1 * dx, a[1] + t1 * dy]
-  if (Math.hypot(p1[0] - p0[0], p1[1] - p0[1]) < 1e-9) return null
-  return [p0, p1]
-}
 
 export const delaunayTileGenerator: Generator = {
   id: 'delaunayTile',
@@ -64,8 +33,11 @@ export const delaunayTileGenerator: Generator = {
       const key = i < j ? `${i}_${j}` : `${j}_${i}`
       if (seen.has(key)) return
       seen.add(key)
-      const clipped = clipSegmentToBox(all[i], all[j], width, height)
-      if (clipped) curves.push({ points: clipped, closed: false })
+      // Clip after stroking; clipping the centreline adds artificial seam caps.
+      const a = all[i], b = all[j], pad = ribWidth
+      if (Math.max(a[0], b[0]) < -pad || Math.min(a[0], b[0]) > width + pad ||
+          Math.max(a[1], b[1]) < -pad || Math.min(a[1], b[1]) > height + pad) return
+      curves.push({ points: [a, b], closed: false })
     }
 
     for (let t = 0; t < triangles.length; t += 3) {

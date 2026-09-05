@@ -54,6 +54,8 @@ export interface Generator {
   description: string
   /** New kept-rib families start inverted, with bridges and seamless repeats. */
   cutoutDefault?: boolean
+  /** Native periodic rib network; automatic joining bars are unnecessary when inverted. */
+  connectedRibs?: boolean
   params: GeneratorParam[]
   generate(params: Record<string, ParamValue>, ctx: GeneratorContext): Tile
   /** whether the tile repeats without joins for these parameters; defaults to a description check */

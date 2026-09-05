@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react'
 import { useTileStore, resolveDef, type ResolvedDef, type TileDef, type SavedTile } from '../state/tileStore'
-import { generators, generatorById, defaultParams } from '../patterns'
+import { generators, generatorById, defaultParams, repeatKind } from '../patterns'
 import type { Generator, GeneratorParam, ParamValue, Pt, Tile } from '../patterns/types'
 import { polygonsArea } from '../patterns/pipeline'
 import { importSvg } from '../patterns/svg/svgImport'
@@ -376,14 +376,18 @@ function Panels(props: PanelProps) {
             onChange={(e) => {
               const g = generatorById(e.target.value)
               ts().setDef({ generatorId: e.target.value, params: g ? defaultParams(g) : def.params, name: g ? g.name : def.name, svgTile: undefined, svgSubtract: undefined,
-                invert: Boolean(g?.cutoutDefault), connectMaterial: Boolean(g?.cutoutDefault), seamless: true, mirror: false })
+                invert: Boolean(g?.cutoutDefault), connectMaterial: Boolean(g?.cutoutDefault && !g?.connectedRibs), seamless: true, mirror: false })
             }}
           >
-            {generators.map((g) => <option key={g.id} value={g.id}>{g.name}</option>)}
+            {(['field', 'band', 'motif'] as const).map((kind) => <optgroup key={kind} label={kind === 'field' ? 'All-over surface patterns' : kind === 'band' ? 'Repeating bands' : 'Motifs / medallions (visible repeats)'}>
+              {generators.filter((g) => repeatKind(g) === kind).map((g) => <option key={g.id} value={g.id}>{g.name}</option>)}
+            </optgroup>)}
             <option value="svg">Imported SVG</option>
           </select>
         </div>
         {gen && <div className="muted">{gen.description}</div>}
+        {gen && repeatKind(gen, resolved.params) === 'motif' && <div className="muted">Motif repeat: matching tile edges does not remove the motif outline or spacing. This is not an all-over surface pattern.</div>}
+        {gen && repeatKind(gen, resolved.params) === 'band' && <div className="muted">Band repeat: continues horizontally; stacked rows remain visible bands.</div>}
         {def.generatorId === 'svg' && (
           <div className="muted">
             Black shapes become the feature. Text and strokes must be outlined first.
@@ -419,11 +423,11 @@ function Panels(props: PanelProps) {
         </div>
         <div className="row">
           <label htmlFor="connect-material" title="Join the kept material with rib-width bridges and matched connections on opposite tile edges. Applies to existing patterns and SVGs too.">Connect material across repeats</label>
-          <input id="connect-material" type="checkbox" checked={Boolean(def.connectMaterial)} onChange={(e) => ts().setDef({ connectMaterial: e.target.checked })} />
+          <input id="connect-material" type="checkbox" disabled={Boolean(gen?.connectedRibs && def.invert)} checked={!(gen?.connectedRibs && def.invert) && Boolean(def.connectMaterial)} onChange={(e) => ts().setDef({ connectMaterial: e.target.checked })} />
         </div>
-        {def.connectMaterial && <div className="muted">Bridges join the ribs across both repeat directions, without a frame grid. Check the 3D result where the surface crops or scales the pattern.</div>}
+        {gen?.connectedRibs && def.invert ? <div className="muted">The rib network connects across both repeat directions by construction. No additional joining bars are needed.</div> : def.connectMaterial && <div className="muted">Bridges join the ribs across both repeat directions, without a frame grid. Check the 3D result where the surface crops or scales the pattern.</div>}
         <div className="row">
-          <label title="Hold every setting that would break seamless repetition: snaps parameters and forces Mirror on for patterns that need it">Seamless</label>
+          <label title="Match opposite tile edges. Mirroring a medallion does not turn it into an all-over pattern.">{gen && repeatKind(gen, resolved.params) === 'motif' ? 'Match repeat edges (motif)' : 'Seamless'}</label>
           <input type="checkbox" checked={def.seamless !== false} onChange={(e) => ts().setDef({ seamless: e.target.checked })} />
         </div>
         <div className="row">

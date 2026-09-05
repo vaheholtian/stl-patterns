@@ -13,16 +13,19 @@ import { penroseApproximantGenerator } from './penroseApproximant'
 import { hyperbolicGenerator } from './hyperbolic'
 import { apollonianGenerator } from './apollonian'
 import { juliaGenerator } from './julia'
-import { lusonaGenerator, celticGenerator } from './mirrorCurves'
+import { lusonaGenerator } from './mirrorCurves'
+import { celticGenerator } from './celtic'
 import { mazeGenerator } from './maze'
 import { ammannBeenkerGenerator } from './ammannBeenker'
 import { hankinGenerator } from './hankin'
 import { fermatSpiralsGenerator } from './fermatSpirals'
 import { singleStrokeFractalGenerators } from './singleStrokeFractals'
 import { greekKeyGenerator } from './greekKey'
+import { perforationGenerators } from './perforations'
 
 /** Ordered for the picker: patterns that fill the surface first, centred medallions last. */
 export const generators: Generator[] = [
+  ...perforationGenerators,
   lusonaGenerator,
   mazeGenerator,
   celticGenerator,
@@ -49,7 +52,8 @@ export const generators: Generator[] = [
 ]
 
 /**
- * Whether a generator's tiles can be repeated without visible joins. A
+ * Whether a generator's opposite box edges match. This does not imply an
+ * all-over design: see repeatKind for bounded motifs and bands. A
  * generator may decide from its parameters; otherwise its description is
  * consulted, where "not seamless" opts out even if the word appears elsewhere.
  */
@@ -68,4 +72,15 @@ export function defaultParams(g: Generator): Record<string, ParamValue> {
   const out: Record<string, ParamValue> = {}
   for (const p of g.params) out[p.key] = p.default
   return out
+}
+
+/** Visual repeat character, separate from merely having matching box edges.
+ * A medallion can repeat periodically and still have an obvious panel outline.
+ */
+export function repeatKind(g: Generator, params: Record<string, ParamValue> = defaultParams(g)): 'field' | 'band' | 'motif' {
+  if (g.id === 'moire' && params.mode === 'radial') return 'motif'
+  if (['hilbert', 'greekKey'].includes(g.id)) return 'band'
+  if (g.id === 'guilloche' || g.id === 'koch') return params.style === 'band' ? 'band' : 'motif'
+  if (['phyllotaxis', 'hyperbolic', 'apollonian', 'penrose', 'julia', 'sierpinski', 'fermatSpirals', 'gosper', 'arrowhead', 'terdragon'].includes(g.id)) return 'motif'
+  return 'field'
 }

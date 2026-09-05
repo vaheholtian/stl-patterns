@@ -3,7 +3,7 @@ import { baseTile, bounded, continuousParams } from './continuous'
 
 export const fermatSpiralsGenerator: Generator = {
   id: 'fermatSpirals', name: 'Stitched Fermat spirals', cutoutDefault: true, seamless: () => false,
-  description: 'Smooth double-arm whorls joined in a serpentine grid into one stroke. A rectangular-cell variant, not an arbitrary-region spiral fill.',
+  description: 'Smooth double-arm whorls joined into one stroke inside a panel. Reflected repeats retain visible panels; not an all-over surface fill.',
   params: [...continuousParams,
     { key: 'columns', label: 'Columns', type: 'int', default: 2, min: 1, max: 8 },
     { key: 'rows', label: 'Rows', type: 'int', default: 2, min: 1, max: 8 },

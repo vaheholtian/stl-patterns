@@ -65,7 +65,8 @@ function kochPoints(p0: Pt, p1: Pt, depthRemaining: number, minFeature: number, 
 export const kochGenerator: Generator = {
   id: 'koch',
   name: 'Koch fractal',
-  description: 'Koch snowflake, antisnowflake, or a repeating band of Koch curves. All styles are seamless: the band pins its row endpoints to the box edges, the closed styles are self-contained centred motifs.',
+  description: 'Koch snowflake or antisnowflake medallions, or a band of Koch curves that joins horizontally. Closed motifs retain visible repeat outlines.',
+  seamless: () => true,
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },

@@ -46,7 +46,8 @@ function rosetteCurve(cx: number, cy: number, R0: number, A: number, k: number, 
 export const guillocheGenerator: Generator = {
   id: 'guilloche',
   name: 'Guilloche rosette',
-  description: 'Spirograph-style rosette of layered sinusoidal curves centred in the tile (seamless as a grid of medallions), or a banknote-style woven band that runs seamlessly across horizontal repeats.',
+  description: 'Layered sinusoidal rosettes (visible medallion repeats), or a woven band that continues horizontally. Neither style is an all-over two-dimensional field.',
+  seamless: () => true,
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },

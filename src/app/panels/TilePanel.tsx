@@ -131,7 +131,7 @@ export default function TilePanel({ region }: Props) {
               t = mirrorTile(t)
             }
             if (t) { tw = t.width; th = t.height } // generators may snap the box to whole cells
-            polys = t ? tileToPolygons(m, t, { invert: tileDef.invert, subtract, minFeature: lineWidth * 2, connectMaterial: tileDef.connectMaterial, periodic: tileDef.seamless !== false || resolved.mirror }) : []
+            polys = t ? tileToPolygons(m, t, { invert: tileDef.invert, subtract, minFeature: lineWidth * 2, connectMaterial: tileDef.connectMaterial && !(gen?.connectedRibs && tileDef.invert), periodic: tileDef.seamless !== false || resolved.mirror }) : []
             singleCache.current = { key, polys, tw, th }
           }
         }

@@ -8,7 +8,7 @@ const systems = {
 }
 export const singleStrokeFractalGenerators: Generator[] = Object.entries(systems).map(([id, system]) => ({
   id, name: system.name, cutoutDefault: true, seamless: () => false,
-  description: 'A single continuous fractal stroke. Reflected copies and bridges make a seamless, connected rectangular repeat.',
+  description: 'A single continuous fractal motif. Reflection matches the tile edges, but the motif outlines remain visible; not an all-over surface pattern.',
   params: [...continuousParams, { key: 'order', label: 'Order', type: 'int', default: id === 'gosper' ? 2 : 4, min: 1, max: system.max }],
   generate(p) {
     const tile = baseTile(p), order = Math.round(bounded(p, 'order', id === 'gosper' ? 2 : 4, 1, system.max))

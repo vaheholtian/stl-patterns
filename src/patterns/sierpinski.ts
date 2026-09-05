@@ -91,7 +91,8 @@ function sierpTriangle(A: Pt, B: Pt, C: Pt, depthRemaining: number, minFeature: 
 export const sierpinskiGenerator: Generator = {
   id: 'sierpinski',
   name: 'Sierpinski fractal',
-  description: 'Sierpinski carpet or triangle; removed sub-squares/triangles are the feature. Both are seamless: the carpet keeps its edges as material, the triangle is a self-contained motif.',
+  description: 'Sierpinski carpet or triangle motifs. Repeated carpets retain square borders; triangles remain separate motifs. Not an all-over surface pattern.',
+  seamless: () => true,
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },

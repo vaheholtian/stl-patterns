@@ -5,32 +5,9 @@
 // box. The visual "moire" beating comes from the small angle and/or pitch
 // mismatch between the two families.
 //
-// Every line/circle is clipped to the box exactly (not left for a later
-// clip step):
-//   - straight lines use the standard Liang-Barsky parametric clip against
-//     the box rectangle, so each output polyline's endpoints are the exact
-//     line/box-edge intersections;
-//   - circles are clipped by finding their intersection points with the
-//     four box edges analytically, sorting the intersections by angle, and
-//     keeping only the circular arcs whose midpoint angle lies inside the
-//     box (a circle fully inside the box is kept as a single closed curve;
-//     a circle fully outside contributes nothing).
-//
-// Line family A sits at `angleA` (default 0 degrees) with spacing `pitch`;
-// its grid is anchored so one member passes through the box's local origin
-// (offset 0 along its own normal), stepping by `pitch` from there. Line
-// family B sits at `angleB` (default 12 degrees) with spacing
-// `pitch * pitchRatio`, anchored the same way, unless `mode` is 'radial',
-// in which case family B is replaced by concentric circles centred on the
-// box with the same spacing.
-//
-// Seamless tiling requires each family's lines to line up with the
-// corresponding lines of the neighbouring tile repeat. That only happens
-// for the angleA=0 family, and only when `pitch` evenly divides the box
-// height (its lines are horizontal, so horizontal translation is already
-// seamless and vertical translation needs the spacing to divide the box).
-// Family B (any non-zero angle) and the 'radial' circles are NOT seamless
-// across tile edges in general.
+// Snapped line families extend beyond the crop before stroking, avoiding
+// artificial seam caps. Unsnapped lines and radial arcs use box clipping.
+// In seamless radial mode the circles stay within the tile as visible motifs.
 
 import type { Generator, GeneratorContext, ParamValue, Pt, TileCurve } from './types'
 import { getNum } from './types'
@@ -65,14 +42,14 @@ function clipLineToBox(p0: Pt, d: Pt, w: number, h: number): [Pt, Pt] | null {
 
 /** Generate one family of parallel lines at angle `angleRad`, spacing
  * `pitch`, anchored through the box's local origin, clipped to the box. */
-function lineFamily(angleRad: number, pitch: number, w: number, h: number): TileCurve[] {
+function lineFamily(angleRad: number, pitch: number, w: number, h: number, pad = 0): TileCurve[] {
   const d: Pt = [Math.cos(angleRad), Math.sin(angleRad)]
   const n: Pt = [-Math.sin(angleRad), Math.cos(angleRad)] // unit normal
   const corners: Pt[] = [
-    [0, 0],
-    [w, 0],
-    [0, h],
-    [w, h],
+    [-pad, -pad],
+    [w + pad, -pad],
+    [-pad, h + pad],
+    [w + pad, h + pad],
   ]
   const cVals = corners.map((c) => n[0] * c[0] + n[1] * c[1])
   const minC = Math.min(...cVals)
@@ -83,8 +60,8 @@ function lineFamily(angleRad: number, pitch: number, w: number, h: number): Tile
   for (let m = mLo; m <= mHi; m++) {
     const c = m * pitch
     const p0: Pt = [c * n[0], c * n[1]]
-    const seg = clipLineToBox(p0, d, w, h)
-    if (seg) curves.push({ points: [seg[0], seg[1]], closed: false })
+    const seg = clipLineToBox([p0[0] + pad, p0[1] + pad], d, w + 2 * pad, h + 2 * pad)
+    if (seg) curves.push({ points: seg.map(([x, y]) => [x - pad, y - pad] as Pt), closed: false })
   }
   return curves
 }
@@ -238,7 +215,8 @@ export const moireGenerator: Generator = {
       if (!seamless) return lineFamily(angle, p, width, height)
       const s = snapFamily(angle, p, width, height)
       if (Math.abs(s.angle - angle) > 1e-6 || Math.abs(s.pitch - p) > 1e-6) notes.push(`${label} snapped to ${(s.angle / DEG).toFixed(1)} deg, pitch ${s.pitch.toFixed(2)} mm`)
-      return lineFamily(s.angle, s.pitch, width, height)
+      // Stroke beyond the crop so opposite edges do not acquire round caps.
+      return lineFamily(s.angle, s.pitch, width, height, ribWidth)
     }
     const curves: TileCurve[] = []
     curves.push(...family(angleA, pitch, 'set A'))
