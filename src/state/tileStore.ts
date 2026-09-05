@@ -11,6 +11,8 @@ export interface TileDef {
   svgTile?: Tile
   svgSubtract?: Pt[][]
   invert: boolean
+  /** Connect kept material across both repeat directions using rib-width bridges. */
+  connectMaterial?: boolean
   /** kaleidoscope: reflect the tile into a 2 x 2 arrangement so any pattern repeats seamlessly */
   mirror?: boolean
   /** lock every setting that would break seamless repetition (default on) */

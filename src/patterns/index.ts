@@ -13,9 +13,24 @@ import { penroseApproximantGenerator } from './penroseApproximant'
 import { hyperbolicGenerator } from './hyperbolic'
 import { apollonianGenerator } from './apollonian'
 import { juliaGenerator } from './julia'
+import { lusonaGenerator, celticGenerator } from './mirrorCurves'
+import { mazeGenerator } from './maze'
+import { ammannBeenkerGenerator } from './ammannBeenker'
+import { hankinGenerator } from './hankin'
+import { fermatSpiralsGenerator } from './fermatSpirals'
+import { singleStrokeFractalGenerators } from './singleStrokeFractals'
+import { greekKeyGenerator } from './greekKey'
 
 /** Ordered for the picker: patterns that fill the surface first, centred medallions last. */
 export const generators: Generator[] = [
+  lusonaGenerator,
+  mazeGenerator,
+  celticGenerator,
+  ammannBeenkerGenerator,
+  hankinGenerator,
+  fermatSpiralsGenerator,
+  ...singleStrokeFractalGenerators,
+  greekKeyGenerator,
   voronoiTileGenerator,
   delaunayTileGenerator,
   truchetGenerator,

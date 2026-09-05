@@ -52,6 +52,8 @@ export interface Generator {
   name: string
   /** one line shown in the UI */
   description: string
+  /** New kept-rib families start inverted, with bridges and seamless repeats. */
+  cutoutDefault?: boolean
   params: GeneratorParam[]
   generate(params: Record<string, ParamValue>, ctx: GeneratorContext): Tile
   /** whether the tile repeats without joins for these parameters; defaults to a description check */

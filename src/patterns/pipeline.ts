@@ -2,6 +2,7 @@
 // that are ready to be extruded. Runs wherever manifold is initialised.
 import type { ManifoldToplevel, CrossSection } from 'manifold-3d'
 import type { Pt, Tile } from './types'
+import { connectMaterial } from './connectMaterial'
 
 export interface PipelineOptions {
   /** swap material and feature: feature = box minus feature */
@@ -12,6 +13,12 @@ export interface PipelineOptions {
   clipToBox?: boolean
   /** minimum feature width in mm; thinner slivers are removed by open/close (0 = off) */
   minFeature?: number
+  /** Connect the kept material, irrespective of which polarity is being cut. */
+  connectMaterial?: boolean
+  /** Filter on a repeated neighbourhood, so minimum-feature cleanup preserves seams. */
+  periodic?: boolean
+  /** Optional diagnostics returned to the screen. */
+  notes?: string[]
 }
 
 function segLen(a: Pt, b: Pt) { return Math.hypot(b[0] - a[0], b[1] - a[1]) }
@@ -31,9 +38,8 @@ function signedArea(p: Pt[]): number {
 /**
  * Stroke a polyline with round joins and caps. Returns loops to be filled with
  * the NonZero rule as one CrossSection: an open curve gives one loop (left side
- * forward, round cap, right side backward, round cap); a closed curve gives an
- * outer loop and an oppositely wound inner loop. Sharp corners produce small
- * self-overlaps, which NonZero fills correctly.
+ * forward, round cap, right side backward, round cap). Closed curves use a
+ * union of segment strips, preserving hollow lobes at self-crossings.
  */
 export function strokePolyline(points: Pt[], closed: boolean, width: number): Pt[][] {
   const r = width / 2
@@ -85,10 +91,13 @@ export function strokePolyline(points: Pt[], closed: boolean, width: number): Pt
     loop.push(...arc(s, a1, a1 - Math.PI))
     loops.push(loop)
   } else {
-    const outer = left, inner = right.slice().reverse()
-    // the two loops must wind in opposite directions to leave the middle hollow
-    if (Math.sign(signedArea(outer)) === Math.sign(signedArea(inner))) inner.reverse()
-    loops.push(outer, inner)
+    // A self-crossing closed path has no global "inside" offset. Filling two
+    // offset outlines can fill entire lobes instead of just the rib. Union
+    // consistently wound segment strips; shared miter vertices close the joins.
+    for (let i = 0; i < n; i++) {
+      const j = (i + 1) % n
+      loops.push([left[i], left[j], right[j], right[i]])
+    }
   }
   // discs at sharp corners so joins are round rather than mitred
   const cosMin = Math.cos((25 * Math.PI) / 180)
@@ -99,39 +108,53 @@ export function strokePolyline(points: Pt[], closed: boolean, width: number): Pt
     const d = ((c[0] - p[0]) * (q[0] - c[0]) + (c[1] - p[1]) * (q[1] - c[1])) / (l1 * l2)
     if (d < cosMin) loops.push(circle(c, r, 12))
   }
-  // consistent orientation for every filled loop (holes are already opposite)
+  // consistent orientation for every filled strip/disc
   for (let i = 0; i < loops.length; i++) {
-    const isHole = closed && i === 1
     const a = signedArea(loops[i])
-    if ((a < 0) !== isHole) loops[i].reverse()
+    if (a < 0) loops[i].reverse()
   }
   return loops
 }
 
 /** Build the feature region of a tile as a CrossSection in tile coordinates. */
 export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: PipelineOptions = {}): CrossSection {
+  const owned: CrossSection[] = []
+  const own = (cs: CrossSection) => { owned.push(cs); return cs }
+  try {
   const parts: CrossSection[] = []
-  if (tile.polygons.length) parts.push(new m.CrossSection(tile.polygons, 'EvenOdd'))
+  if (tile.polygons.length) parts.push(own(new m.CrossSection(tile.polygons, 'EvenOdd')))
   if (tile.curves.length) {
     // each curve's loops are consistently wound, so all strokes can share one NonZero fill
     const loops: Pt[][] = []
     for (const c of tile.curves) loops.push(...strokePolyline(c.points, c.closed, tile.ribWidth))
-    if (loops.length) parts.push(new m.CrossSection(loops, 'NonZero'))
+    if (loops.length) parts.push(own(new m.CrossSection(loops, 'NonZero')))
   }
-  let cs = parts.length ? (parts.length === 1 ? parts[0] : m.CrossSection.union(parts)) : new m.CrossSection([], 'EvenOdd')
+  let cs = parts.length ? (parts.length === 1 ? parts[0] : own(m.CrossSection.union(parts))) : own(m.CrossSection.square([0, 0]))
   if (opts.subtract?.length) {
-    const sub = new m.CrossSection(opts.subtract, 'EvenOdd')
-    cs = m.CrossSection.difference(cs, sub)
+    const sub = own(new m.CrossSection(opts.subtract, 'EvenOdd'))
+    cs = own(m.CrossSection.difference(cs, sub))
   }
-  const box = m.CrossSection.square([tile.width, tile.height], false)
-  if (opts.invert) cs = m.CrossSection.difference(box, cs)
-  if (opts.clipToBox !== false) cs = m.CrossSection.intersection(cs, box)
+  const box = own(m.CrossSection.square([tile.width, tile.height], false))
+  if (opts.invert) cs = own(m.CrossSection.difference(box, cs))
+  if (opts.clipToBox !== false || opts.periodic) cs = own(m.CrossSection.intersection(cs, box))
+  if (opts.periodic && opts.minFeature && opts.minFeature > 0) {
+    const copies: CrossSection[] = []
+    for (let y = -1; y <= 1; y++) for (let x = -1; x <= 1; x++) copies.push(own(cs.translate([x * tile.width, y * tile.height])))
+    cs = own(m.CrossSection.union(copies))
+  }
   if (opts.minFeature && opts.minFeature > 0) {
     // morphological opening removes slivers thinner than minFeature
     const r = opts.minFeature / 2
-    cs = cs.offset(-r, 'Round', 2, 32).offset(r, 'Round', 2, 32)
+    cs = own(own(cs.offset(-r, 'Round', 2, 32)).offset(r, 'Round', 2, 32))
   }
-  return cs.simplify(0.01)
+  if (opts.periodic) cs = own(m.CrossSection.intersection(cs, box))
+  const simplified = own(cs.simplify(0.01))
+  if (opts.connectMaterial) {
+    return connectMaterial(m, simplified, tile.width, tile.height, Math.max(tile.ribWidth, opts.minFeature ?? 0), opts.notes)
+  }
+  owned.pop() // transfer ownership of the returned simplified section
+  return simplified
+  } finally { for (const cs of owned) cs.delete() }
 }
 
 /** Polygons (with holes, even-odd) from a CrossSection. */
@@ -142,7 +165,7 @@ export function crossSectionToPolygons(cs: CrossSection): Pt[][] {
 /** Convenience: tile -> polygons. */
 export function tileToPolygons(m: ManifoldToplevel, tile: Tile, opts: PipelineOptions = {}): Pt[][] {
   const cs = tileToCrossSection(m, tile, opts)
-  return crossSectionToPolygons(cs)
+  try { return crossSectionToPolygons(cs) } finally { cs.delete() }
 }
 
 /** Area of a polygon set under even-odd (absolute). */

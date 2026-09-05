@@ -107,7 +107,7 @@ export default function TilePanel({ region }: Props) {
           const size = fittedTileSize(flat, settings)
           tw = Math.ceil(size.width); th = Math.ceil(size.height)
           if (size.period) tw = size.period // a ring must wrap exactly once
-          const key = JSON.stringify([tileDef.generatorId, resolved.params, tileDef.invert, resolved.mirror, tw, th, lineWidth, tileDef.svgTile ? tileDef.svgTile.polygons.length : 0])
+          const key = JSON.stringify([tileDef.generatorId, resolved.params, tileDef.invert, tileDef.connectMaterial, tileDef.seamless, resolved.mirror, tw, th, lineWidth, tileDef.svgTile ? tileDef.svgTile.polygons.length : 0])
           const cached = singleCache.current
           if (cached && cached.key === key) {
             polys = cached.polys; tw = cached.tw; th = cached.th
@@ -131,7 +131,7 @@ export default function TilePanel({ region }: Props) {
               t = mirrorTile(t)
             }
             if (t) { tw = t.width; th = t.height } // generators may snap the box to whole cells
-            polys = t ? tileToPolygons(m, t, { invert: tileDef.invert, subtract, minFeature: lineWidth * 2 }) : []
+            polys = t ? tileToPolygons(m, t, { invert: tileDef.invert, subtract, minFeature: lineWidth * 2, connectMaterial: tileDef.connectMaterial, periodic: tileDef.seamless !== false || resolved.mirror }) : []
             singleCache.current = { key, polys, tw, th }
           }
         }
@@ -196,6 +196,7 @@ export default function TilePanel({ region }: Props) {
       <div className="muted" style={{ marginBottom: 6 }}>
         {tile ? `${tileName}: ${tile.width.toFixed(0)} × ${tile.height.toFixed(0)} mm, ${tilePolys.length} shapes` : 'No tile yet. Make one on the Pattern screen.'}
       </div>
+      {tileDef.connectMaterial && <div className="muted">Ribs connect across both repeat directions. Inspect the 3D result at cropped edges and small scales.</div>}
       <div className="row wrap">
         <button className="small" disabled={!region || !!busy || !tile} onClick={() => flatten()}>{flat ? 'Re-flatten' : '1. Flatten region'}</button>
         <button className={'small' + (pickMode === 'origin' ? ' active' : '')} disabled={!flat} onClick={() => setPickMode(pickMode === 'origin' ? 'region' : 'origin')}>

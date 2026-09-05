@@ -35,5 +35,6 @@ export function mirrorTile(t: Tile): Tile {
     height: 2 * h,
     polygons: mirrorPolygons(t.polygons, w, h),
     curves: mirrorCurves(t.curves, w, h),
+    notes: [...(t.notes ?? []), 'The repeat contains four reflected copies of the source motif.'],
   }
 }

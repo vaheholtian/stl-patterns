@@ -375,7 +375,8 @@ function Panels(props: PanelProps) {
             value={def.generatorId}
             onChange={(e) => {
               const g = generatorById(e.target.value)
-              ts().setDef({ generatorId: e.target.value, params: g ? defaultParams(g) : def.params, name: g ? g.name : def.name, svgTile: undefined, svgSubtract: undefined })
+              ts().setDef({ generatorId: e.target.value, params: g ? defaultParams(g) : def.params, name: g ? g.name : def.name, svgTile: undefined, svgSubtract: undefined,
+                invert: Boolean(g?.cutoutDefault), connectMaterial: Boolean(g?.cutoutDefault), seamless: true, mirror: false })
             }}
           >
             {generators.map((g) => <option key={g.id} value={g.id}>{g.name}</option>)}
@@ -411,10 +412,16 @@ function Panels(props: PanelProps) {
 
       <div className="section">
         <h3>Feature</h3>
+        <div className="muted">Black is the feature: removed by through-cut or recess, added by emboss. White remains in a through-cut.</div>
         <div className="row">
           <label>Invert (feature ↔ material)</label>
           <input type="checkbox" checked={def.invert} onChange={(e) => ts().setDef({ invert: e.target.checked })} />
         </div>
+        <div className="row">
+          <label htmlFor="connect-material" title="Join the kept material with rib-width bridges and matched connections on opposite tile edges. Applies to existing patterns and SVGs too.">Connect material across repeats</label>
+          <input id="connect-material" type="checkbox" checked={Boolean(def.connectMaterial)} onChange={(e) => ts().setDef({ connectMaterial: e.target.checked })} />
+        </div>
+        {def.connectMaterial && <div className="muted">Bridges join the ribs across both repeat directions, without a frame grid. Check the 3D result where the surface crops or scales the pattern.</div>}
         <div className="row">
           <label title="Hold every setting that would break seamless repetition: snaps parameters and forces Mirror on for patterns that need it">Seamless</label>
           <input type="checkbox" checked={def.seamless !== false} onChange={(e) => ts().setDef({ seamless: e.target.checked })} />
@@ -439,7 +446,7 @@ function Panels(props: PanelProps) {
         <div className="muted">
           {tile ? `${tile.width.toFixed(1)} × ${tile.height.toFixed(1)} mm · ${polygons.length} shapes · feature ${(100 * polygonsArea(polygons) / (tile.width * tile.height)).toFixed(0)}% of tile` : 'no tile'}
         </div>
-        {warnings.map((w, i) => <div key={i} className="danger">{w}</div>)}
+        {warnings.map((w, i) => <div key={i} className={tile?.notes?.includes(w) || w.startsWith('Kept material:') ? 'muted' : 'danger'}>{w}</div>)}
         {error && <div className="danger">{error}</div>}
       </div>
 

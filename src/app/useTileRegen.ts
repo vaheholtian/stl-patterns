@@ -34,8 +34,8 @@ export function useTileRegen() {
           if (subtract) subtract = mirrorPolygons(subtract, t.width, t.height)
           t = mirrorTile(t)
         }
-        const polys = tileToPolygons(m, t, { invert: def.invert, subtract, minFeature: lineWidth * 2 })
         const w: string[] = [...(t.notes ?? [])]
+        const polys = tileToPolygons(m, t, { invert: def.invert, subtract, minFeature: lineWidth * 2, connectMaterial: def.connectMaterial, periodic: def.seamless !== false || resolved.mirror, notes: w })
         const area = polygonsArea(polys), boxArea = t.width * t.height
         if (area < boxArea * 0.02) w.push('Feature covers under 2% of the tile; check invert or sizes.')
         if (area > boxArea * 0.98) w.push('Feature covers almost the whole tile; nothing would remain.')
