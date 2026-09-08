@@ -8,15 +8,16 @@
 // distance-along-curve index to (x,y) grid coordinates, which is equivalent
 // but avoids recursion.
 //
-// The grid spacing equals width / 2^order, and the curve is inset by half a
-// spacing so it stays clear of the box edges. A Hilbert curve starts in the
+// The grid fills the box (width / 2^order by height / 2^order cells), and the
+// curve is inset by half a cell, or half a rib width if that is more, so it
+// stays clear of the box edges. A Hilbert curve starts in the
 // bottom-left cell and ends in the bottom-right cell, on the same row, so
 // the two ends are extended straight out to the left and right box edges:
 // horizontal repeats then join into one continuous rib, and nothing crosses
 // the top or bottom edges. The tile is seamless.
 //
 // When `rounded` is on, each interior 90-degree turn of the polyline is
-// replaced by a short circular-arc fillet of radius 0.3 * spacing so the
+// replaced by a short circular-arc fillet of radius 0.3 * the cell pitch so the
 // milled/printed rib has no sharp inner corner.
 
 import type { Generator, GeneratorContext, ParamValue, Pt } from './types'
@@ -73,8 +74,9 @@ function filletCorner(p0: Pt, p1: Pt, p2: Pt, r: number): Pt[] {
   const b: Pt = [p1[0] + u2[0] * rr, p1[1] + u2[1] * rr]
   // Arc centre: offset from corner along the internal angle bisector.
   const turnSign = cross > 0 ? 1 : -1
-  // Normal to u1 pointing toward the centre (rotate u1 by -90*turnSign)
-  const n1: Pt = turnSign > 0 ? [u1[1], -u1[0]] : [-u1[1], u1[0]]
+  // Normal to u1 pointing toward the centre: a left turn (positive cross)
+  // has its centre on the left of the incoming leg, u1 rotated by +90 degrees.
+  const n1: Pt = turnSign > 0 ? [-u1[1], u1[0]] : [u1[1], -u1[0]]
   const centre: Pt = [a[0] + n1[0] * rr, a[1] + n1[1] * rr]
   const a0 = Math.atan2(a[1] - centre[1], a[0] - centre[0])
   let a1 = Math.atan2(b[1] - centre[1], b[0] - centre[0])
@@ -112,17 +114,24 @@ export const hilbertGenerator: Generator = {
     const ribWidth = getNum(params, 'ribWidth', 1.6)
 
     const n = 1 << order // grid cells per side
-    const spacing = width / n
-    // Half-spacing inset from the box edges, plus (for a non-square box)
-    // any leftover vertical space split evenly to keep the curve centred.
-    const offX = spacing / 2
-    const offY = spacing / 2 + (height - n * spacing) / 2
+    // The grid spans the whole box: cells may be rectangular on a non-square
+    // tile, so the curve never crosses the top or bottom edge. When the rib is
+    // wider than a cell the grid is inset further, so no side of the stroke
+    // reaches the left or right edge except the two run-outs.
+    // (A run-out then stays straight for at least half a rib before its fillet,
+    // so the neighbouring tile's rib end is fully covered across the seam.)
+    const inset = (size: number) => { const half = size / n / 2; return half >= ribWidth / 2 + 0.05 ? half : ribWidth / 2 + 0.05 + 0.3 * size / n }
+    const insetX = inset(width), insetY = inset(height)
+    if (width <= 2 * insetX || height <= 2 * insetY) {
+      throw new Error('Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.')
+    }
+    const stepX = n > 1 ? (width - 2 * insetX) / (n - 1) : 0, stepY = n > 1 ? (height - 2 * insetY) / (n - 1) : 0
 
     const count = n * n
     const grid: Pt[] = new Array(count + 2)
     for (let d = 0; d < count; d++) {
       const [gx, gy] = d2xy(order, d)
-      grid[d + 1] = [offX + gx * spacing, offY + gy * spacing]
+      grid[d + 1] = [insetX + gx * stepX, insetY + gy * stepY]
     }
     // run the ends out to the box edges (d2xy starts at cell (0,0) and ends at (n-1,0))
     grid[0] = [0, grid[1][1]]
@@ -132,7 +141,7 @@ export const hilbertGenerator: Generator = {
     if (!rounded) {
       points = grid
     } else {
-      const r = 0.3 * spacing
+      const r = 0.3 * Math.min(stepX, stepY)
       points = [grid[0]]
       for (let i = 1; i < grid.length - 1; i++) {
         const filleted = filletCorner(grid[i - 1], grid[i], grid[i + 1], r)

@@ -103,18 +103,18 @@ function randomStart(R: number, rand: () => number): [Circle, Circle, Circle] {
     const [sre, sim] = csqrt(zdisc[0], zdisc[1])
     const zsq: C = [2 * sre, 2 * sim]
 
-    const branches: { k: number; z: C }[] = [
-      { k: ksum + ksq, z: cadd(zsum, zsq) },
-      { k: ksum - ksq, z: csub(zsum, zsq) },
-    ]
-    for (const br of branches) {
-      if (Math.abs(br.k) < 1e-9) continue
-      const k3 = br.k
-      const z3 = cdivReal(br.z, k3)
-      if (k3 <= 0) continue
+    // The curvature and centre equations each have two roots, and the right
+    // pairing is not always the same sign: keep the root that is actually
+    // tangent to both starting circles and to the enclosing circle.
+    for (const k3 of [ksum + ksq, ksum - ksq]) for (const zk of [cadd(zsum, zsq), csub(zsum, zsq)]) {
+      if (!(k3 > 1e-9)) continue
       const r3 = 1 / k3
+      const z3 = cdivReal(zk, k3)
       const dist = Math.hypot(z3[0], z3[1])
-      if (dist + r3 <= R + 1e-6 && r3 > 1e-6) {
+      const error = Math.abs(Math.hypot(z3[0] - z1[0], z3[1] - z1[1]) - (r1 + r3))
+        + Math.abs(Math.hypot(z3[0] - z2[0], z3[1] - z2[1]) - (r2 + r3))
+        + Math.abs(dist + r3 - R)
+      if (error < 1e-6 * R && r3 > 1e-6) {
         return [
           { x: z1[0], y: z1[1], r: r1, k: k1 },
           { x: z2[0], y: z2[1], r: r2, k: k2 },
@@ -199,7 +199,9 @@ export const apollonianGenerator: Generator = {
     const minFeature = Math.max(0.05, getNum(params, 'minFeature', 1))
 
     const cx = width / 2, cy = height / 2
-    const R = Math.max(0.5, Math.min(width, height) / 2 - 1)
+    // stroked rings reach ribWidth / 2 beyond the outer circle: keep them inside the box
+    const rim = style === 'rings' ? Math.max(1, ribWidth / 2 + 0.2) : 1
+    const R = Math.max(0.5, Math.min(width, height) / 2 - rim)
 
     const outer: Circle = { x: 0, y: 0, r: R, k: -1 / R }
     const [c1, c2, c3] = start === 'random' ? randomStart(R, ctx.rand) : threeEqualStart(R)

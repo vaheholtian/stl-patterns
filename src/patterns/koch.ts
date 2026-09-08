@@ -15,11 +15,12 @@
 //     carving the points away instead of growing them.
 //   - 'curve-band': a single open Koch curve is drawn straight across the
 //     box from the left edge to the right edge (from (0,y) to (width,y)),
-//     repeated at evenly spaced rows every `bandPitch` mm. Because Koch
-//     subdivision never moves the two original endpoints, every row curve
-//     starts and ends at exactly the same height y on the box's left and
-//     right edges, so neighbouring tile repeats always meet at those points
-//     - seamless horizontally. (Not claimed seamless vertically.)
+//     repeated at evenly spaced rows. Koch subdivision never moves the two
+//     original endpoints, so every row starts and ends at exactly the same
+//     height on the box's left and right edges. The row pitch is snapped so a
+//     whole number of rows fills the height, and rows are also drawn at
+//     wrapped offsets, so bumps that cross the top edge reappear at the
+//     bottom: the band field is seamless in both directions.
 //
 // `depth` sets the requested recursion depth, but `minFeature` caps it
 // automatically: subdivision of a segment stops as soon as the next level's
@@ -65,7 +66,7 @@ function kochPoints(p0: Pt, p1: Pt, depthRemaining: number, minFeature: number, 
 export const kochGenerator: Generator = {
   id: 'koch',
   name: 'Koch fractal',
-  description: 'Koch snowflake or antisnowflake medallions, or a band of Koch curves that joins horizontally. Closed motifs retain visible repeat outlines.',
+  description: 'Koch snowflake or antisnowflake medallions, or an all-over field of Koch curve bands that wraps in both directions. Closed motifs retain visible repeat outlines.',
   seamless: () => true,
   params: [
     { key: 'width', label: 'Width', type: 'number', default: 40, min: 5, max: 300, step: 1 },
@@ -75,7 +76,7 @@ export const kochGenerator: Generator = {
       options: [
         { value: 'snowflake', label: 'Snowflake' },
         { value: 'antisnowflake', label: 'Antisnowflake' },
-        { value: 'curve-band', label: 'Curve band (seamless horizontally)' },
+        { value: 'curve-band', label: 'Curve band (all-over)' },
       ],
     },
     { key: 'depth', label: 'Depth', type: 'int', default: 3, min: 0, max: 5, step: 1, hint: 'requested recursion depth; minFeature may stop earlier' },
@@ -94,13 +95,24 @@ export const kochGenerator: Generator = {
 
     if (style === 'curve-band') {
       const bandPitch = Math.max(0.5, getNum(params, 'bandPitch', 12))
+      // A whole number of rows fills the height, so the band field repeats
+      // vertically as well as horizontally.
+      const rows = Math.max(1, Math.round(height / bandPitch)), pitch = height / rows
+      const signs: number[] = []
+      for (let r = 0; r < rows; r++) signs.push(ctx.rand() < 0.5 ? 1 : -1)
+      // A bump reaches width * sqrt(3) / 6 above or below its row. Rows are
+      // drawn at wrapped offsets too, so a bump crossing the top edge
+      // reappears at the bottom.
+      const reach = (width * Math.sqrt(3)) / 6 + ribWidth
+      const wraps = Math.ceil(reach / height)
       const curves: TileCurve[] = []
-      for (let y = bandPitch / 2; y < height; y += bandPitch) {
-        const sign = ctx.rand() < 0.5 ? 1 : -1
-        const points = kochPoints([0, y], [width, y], depth, minFeature, sign)
-        curves.push({ points, closed: false })
+      for (let k = -wraps; k <= wraps; k++) for (let r = 0; r < rows; r++) {
+        const y = (r + 0.5) * pitch + k * height
+        if (y + reach < 0 || y - reach > height) continue
+        curves.push({ points: kochPoints([0, y], [width, y], depth, minFeature, signs[r]), closed: false })
       }
-      return { width, height, polygons: [], curves, ribWidth }
+      const notes = Math.abs(pitch - bandPitch) > 1e-9 ? [`Band pitch snapped to ${pitch.toFixed(2)} mm (${rows} rows) so the field repeats vertically.`] : []
+      return { width, height, polygons: [], curves, ribWidth, notes }
     }
 
     // Closed snowflake / antisnowflake: equilateral triangle inscribed in
@@ -110,7 +122,9 @@ export const kochGenerator: Generator = {
     const margin = style === 'antisnowflake' ? 0.9 : 0.75
     const sByWidth = width
     const sByHeight = height / (Math.sqrt(3) / 2)
-    const s = Math.min(sByWidth, sByHeight) * margin
+    // Both motifs fit their triangle's circumcircle (radius s / sqrt 3), which
+    // must stay inside the box for the repeat to be seamless.
+    const s = Math.min(Math.min(sByWidth, sByHeight) * margin, (Math.min(width, height) / 2 - 0.5) * Math.sqrt(3))
     const cx = width / 2
     const cy = height / 2
     const baseY = cy - (s * Math.sqrt(3)) / 6

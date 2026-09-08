@@ -48,7 +48,8 @@ export const hankinGenerator: Generator = {
     const oct: Pt[] = [[-q, -0.5], [q, -0.5], [0.5, -q], [0.5, q], [q, 0.5], [-q, 0.5], [-0.5, q], [-0.5, -q]]
     const d = 0.5 - q, square: Pt[] = [[0, -d], [d, 0], [0, d], [-d, 0]]
     const motifs = [hankinMotif(oct, angle), hankinMotif(square, angle)]
-    for (let y = -1; y <= rows; y++) for (let x = -1; x <= cols; x++) for (let k = 0; k < 2; k++) {
+    const pad = Math.ceil(tile.ribWidth / 2 / pitch) + 1
+    for (let y = -pad; y < rows + pad; y++) for (let x = -pad; x < cols + pad; x++) for (let k = 0; k < 2; k++) {
       for (const c of motifs[k]) tile.curves.push({ closed: false, points: c.points.map(([px, py]) => [(px + x + (k ? 1 : 0.5)) * pitch, (py + y + (k ? 1 : 0.5)) * pitch]) })
     }
     tile.notes = [`Height set to ${tile.height.toFixed(1)} mm to preserve regular polygons and whole repeats. Multiple strands; use bridges to connect any separate components.`]

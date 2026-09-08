@@ -1,9 +1,9 @@
 // Typed client for the geometry worker.
-import type { RequestBody, Response, OpResult, VoronoiParams, TileParams, CheckResponse, OpResponse, FlattenResponse } from './protocol'
+import type { RequestBody, Response, OpResult, VoronoiParams, TileParams, CheckResponse, OpResponse, FlattenResponse, FlattenPiecesResponse } from './protocol'
 import type { TriMesh } from '../geom/manifold'
-import type { FlattenedRegion } from '../geom/regionFlatten'
+import type { FlattenedRegion, FlattenedPiece } from '../geom/regionFlatten'
 
-type Pending = { resolve: (r: Response) => void; reject: (e: Error) => void; onProgress?: (s: string) => void }
+type Pending = { resolve: (r: Response) => void; reject: (e: Error) => void; onProgress?: (s: string, fraction?: number) => void }
 
 class GeomClient {
   private worker: Worker
@@ -20,7 +20,7 @@ class GeomClient {
       const msg = ev.data
       const p = this.pending.get(msg.id)
       if (!p) return
-      if ('progress' in msg) { p.onProgress?.(msg.progress); return }
+      if ('progress' in msg) { p.onProgress?.(msg.progress, msg.fraction); return }
       this.pending.delete(msg.id)
       if (msg.ok) p.resolve(msg)
       else p.reject(new Error(msg.error))
@@ -32,7 +32,7 @@ class GeomClient {
     return worker
   }
 
-  private send<T extends Response>(req: RequestBody, onProgress?: (s: string) => void): Promise<T> {
+  private send<T extends Response>(req: RequestBody, onProgress?: (s: string, fraction?: number) => void): Promise<T> {
     const id = this.nextId++
     return new Promise<T>((resolve, reject) => {
       this.pending.set(id, { resolve: resolve as (r: Response) => void, reject, onProgress })
@@ -44,19 +44,25 @@ class GeomClient {
     return this.send<CheckResponse>({ type: 'check', mesh })
   }
 
-  async voronoi(mesh: TriMesh, region: Uint32Array, params: VoronoiParams, onProgress?: (s: string) => void): Promise<OpResult> {
+  async voronoi(mesh: TriMesh, region: Uint32Array, params: VoronoiParams, onProgress?: (s: string, fraction?: number) => void): Promise<OpResult> {
     const r = await this.send<OpResponse>({ type: 'voronoi', mesh, region, params }, onProgress)
     return r.result
   }
 
-  async tile(mesh: TriMesh, params: TileParams, onProgress?: (s: string) => void): Promise<OpResult> {
+  async tile(mesh: TriMesh, params: TileParams, onProgress?: (s: string, fraction?: number) => void): Promise<OpResult> {
     const r = await this.send<OpResponse>({ type: 'tile', mesh, params }, onProgress)
     return r.result
   }
 
-  async flatten(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], onProgress?: (s: string) => void): Promise<FlattenedRegion> {
+  async flatten(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], onProgress?: (s: string, fraction?: number) => void): Promise<FlattenedRegion> {
     const r = await this.send<FlattenResponse>({ type: 'flatten', mesh, region, origin }, onProgress)
     return r.result
+  }
+
+  /** Flatten every smooth piece of a region (split at edges sharper than maxAngleDeg). */
+  async flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], maxAngleDeg: number, onProgress?: (s: string, fraction?: number) => void): Promise<{ pieces: FlattenedPiece[]; log: string[] }> {
+    const r = await this.send<FlattenPiecesResponse>({ type: 'flattenPieces', mesh, region, origin, maxAngleDeg }, onProgress)
+    return { pieces: r.pieces, log: r.log }
   }
 
   /** Abort everything by restarting the worker. */

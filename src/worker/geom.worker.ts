@@ -10,8 +10,8 @@ import { relaxOnSurface } from '../geom/relax'
 import { buildVoronoiCells } from '../geom/voronoiCells'
 import { buildRegionSlab, buildEdgeMarginTool } from '../geom/slab'
 import { Parameterization } from '../geom/parameterization'
-import { buildSurfaceTool, type Polygon } from '../geom/tileTool'
-import { flattenRegion } from '../geom/regionFlatten'
+import { buildSurfaceTool, isPlanar, type Polygon } from '../geom/tileTool'
+import { flattenRegion, flattenPieces } from '../geom/regionFlatten'
 import type { TriMesh } from '../geom/manifold'
 
 const ctx = self as unknown as DedicatedWorkerGlobalScope
@@ -22,7 +22,7 @@ function post(msg: Response, transfer: Transferable[] = []) {
 
 ctx.onmessage = async (ev: MessageEvent<Request>) => {
   const req = ev.data
-  const progress = (s: string) => post({ id: req.id, progress: s })
+  const progress = (s: string, fraction?: number) => post({ id: req.id, progress: s, fraction })
   try {
     const m = await getManifold()
     if (req.type === 'check') {
@@ -40,6 +40,10 @@ ctx.onmessage = async (ev: MessageEvent<Request>) => {
       progress('flattening region')
       const result = flattenRegion(req.mesh, req.region, req.origin)
       post({ id: req.id, ok: true, type: 'flatten', result }, [result.positions.buffer, result.indices.buffer, result.normals.buffer, result.uv.buffer])
+    } else if (req.type === 'flattenPieces') {
+      progress('flattening region')
+      const { pieces, log } = flattenPieces(req.mesh, req.region, req.origin, req.maxAngleDeg)
+      post({ id: req.id, ok: true, type: 'flattenPieces', pieces, log }, pieces.flatMap((p) => [p.positions.buffer, p.indices.buffer, p.normals.buffer, p.uv.buffer]))
     }
   } catch (e) {
     post({ id: req.id, ok: false, error: (e as Error).message ?? String(e) })
@@ -127,36 +131,60 @@ function runVoronoi(m: ManifoldToplevel, mesh: TriMesh, region: Uint32Array, par
   return { mesh: result, islandsRemoved: removed, log, ms: performance.now() - t0 }
 }
 
-function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progress: (s: string) => void): OpResult {
+function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progress: (s: string, fraction?: number) => void): OpResult {
   const t0 = performance.now()
   const log: string[] = []
   const body = manifoldFromTriMesh(m, mesh)
-  const sub = { positions: params.positions, indices: params.indices, normals: params.normals, sourceTriangles: new Uint32Array(0) }
-  const param = new Parameterization(sub, params.uv)
-  const polygons: Polygon[] = params.polygons.map((f) => {
-    const poly: Polygon = []
-    for (let i = 0; i < f.length; i += 2) poly.push([f[i], f[i + 1]])
-    return poly
-  })
-  log.push(`${polygons.length} polygons`)
   let zMin: number, zMax: number
   if (params.mode === 'cut') { zMin = -(params.wallThickness + 1); zMax = 1 }
   else if (params.mode === 'recess') { zMin = -params.depth; zMax = 1 }
   else { zMin = -0.2; zMax = params.depth }
-  progress('building tool')
-  const tool = buildSurfaceTool(m, param, polygons, zMin, zMax, params.detail ?? 2.0)
-  progress(params.mode === 'emboss' ? 'adding' : 'cutting')
+  // one tool per smooth piece, each warped through its own flattening
+  const tools: Manifold[] = []
+  let nPoly = 0, completed = 0, allPlanar = true
+  const total = params.pieces.length + (params.pieces.length > 1 ? 1 : 0) + 3
+  params.pieces.forEach((piece, i) => {
+    if (!piece.polygons.length) return
+    progress(`Preparing cut shapes ${i + 1}/${params.pieces.length}`, completed / total)
+    const sub = { positions: piece.positions, indices: piece.indices, normals: piece.normals, sourceTriangles: new Uint32Array(0) }
+    const param = new Parameterization(sub, piece.uv)
+    allPlanar &&= isPlanar(param)
+    const polygons: Polygon[] = piece.polygons.map((f) => {
+      const poly: Polygon = []
+      for (let k = 0; k < f.length; k += 2) poly.push([f[k], f[k + 1]])
+      return poly
+    })
+    nPoly += polygons.length
+    tools.push(buildSurfaceTool(m, param, polygons, zMin, zMax, params.detail ?? 2.0))
+    completed++
+  })
+  log.push(params.pieces.length > 1 ? `${nPoly} polygons over ${params.pieces.length} pieces` : `${nPoly} polygons`)
+  if (!tools.length) throw new Error('nothing to apply: no pattern shapes on the region')
+  let tool: Manifold
+  if (tools.length === 1) tool = tools[0]
+  else {
+    progress('Joining cut shapes', completed / total)
+    tool = m.Manifold.union(tools)
+    for (const t of tools) t.delete()
+    completed++
+  }
+  progress(params.mode === 'emboss' ? 'Adding the pattern' : 'Cutting the pattern', completed / total)
   const raw = applyMode(m, body, tool, params.mode)
   body.delete(); tool.delete()
   const status = raw.status()
   if (status !== 'NoError') throw new Error(`Boolean failed: ${status}`)
-  // merge coplanar splits left by the boolean
-  const out = raw.simplify(0.005)
-  raw.delete()
-  progress('checking islands')
+  // Curved wrap seams can have coincident edges from both sides of the cut.
+  // Collapsing those edges can introduce thin walls through real openings.
+  const out = allPlanar ? raw.simplify(0.005) : raw
+  if (out !== raw) raw.delete()
+  completed++
+  progress('Checking connected parts', completed / total)
   const { kept, removed } = dropIslands(m, out, params.minIslandVolume, log)
+  completed++
+  progress('Preparing the result', completed / total)
   const result = triMeshFromManifold(kept)
   kept.delete()
   log.push(`${result.indices.length / 3} triangles in ${((performance.now() - t0) / 1000).toFixed(1)} s`)
+  progress('Pattern applied', 1)
   return { mesh: result, islandsRemoved: removed, log, ms: performance.now() - t0 }
 }

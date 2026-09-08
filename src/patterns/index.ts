@@ -80,7 +80,8 @@ export function defaultParams(g: Generator): Record<string, ParamValue> {
 export function repeatKind(g: Generator, params: Record<string, ParamValue> = defaultParams(g)): 'field' | 'band' | 'motif' {
   if (g.id === 'moire' && params.mode === 'radial') return 'motif'
   if (['hilbert', 'greekKey'].includes(g.id)) return 'band'
-  if (g.id === 'guilloche' || g.id === 'koch') return params.style === 'band' ? 'band' : 'motif'
+  if (g.id === 'guilloche') return params.style === 'band' ? 'band' : 'motif'
+  if (g.id === 'koch') return params.style === 'curve-band' ? 'field' : 'motif'
   if (['phyllotaxis', 'hyperbolic', 'apollonian', 'penrose', 'julia', 'sierpinski', 'fermatSpirals', 'gosper', 'arrowhead', 'terdragon'].includes(g.id)) return 'motif'
   return 'field'
 }

@@ -116,6 +116,76 @@ export function strokePolyline(points: Pt[], closed: boolean, width: number): Pt
   return loops
 }
 
+/**
+ * Douglas-Peucker simplification that keeps every vertex on the tile box
+ * boundary (snapped exactly onto it). Chains between those anchors are
+ * simplified on their own, so the profile on x = 0 stays identical to the one
+ * on x = width for a periodic tile. Loops that never touch the box are
+ * anchored at their first vertex and the vertex farthest from it.
+ */
+export function simplifyAnchored(polys: Pt[][], w: number, h: number, eps: number): Pt[][] {
+  const tol = 1e-4
+  const snap = (v: number, size: number) => (Math.abs(v) < tol ? 0 : Math.abs(v - size) < tol ? size : v)
+  const onBoundary = (p: Pt) => p[0] === 0 || p[0] === w || p[1] === 0 || p[1] === h
+  const out: Pt[][] = []
+  for (const loop of polys) {
+    const pts: Pt[] = []
+    for (const p of loop) {
+      const q: Pt = [snap(p[0], w), snap(p[1], h)]
+      const last = pts[pts.length - 1]
+      if (!last || segLen(last, q) > 1e-9) pts.push(q)
+    }
+    while (pts.length > 1 && segLen(pts[0], pts[pts.length - 1]) <= 1e-9) pts.pop()
+    const n = pts.length
+    if (n < 3) continue
+    let anchors: number[] = []
+    // A shallow excursion next to a seam must not become a straight segment
+    // on that seam. Pin the nearby vertices as well as the edge intersections.
+    for (let i = 0; i < n; i++) if (onBoundary(pts[i]) || Math.min(Math.abs(pts[i][0]), Math.abs(pts[i][0] - w), Math.abs(pts[i][1]), Math.abs(pts[i][1] - h)) <= 2 * eps) anchors.push(i)
+    if (anchors.length < 2) {
+      let far = 0, best = -1
+      for (let i = 1; i < n; i++) { const d = segLen(pts[0], pts[i]); if (d > best) { best = d; far = i } }
+      anchors = [0, far]
+    }
+    const kept: Pt[] = []
+    for (let a = 0; a < anchors.length; a++) {
+      const from = anchors[a], to = anchors[(a + 1) % anchors.length]
+      const chain: Pt[] = [pts[from]]
+      for (let i = (from + 1) % n; i !== to; i = (i + 1) % n) chain.push(pts[i])
+      chain.push(pts[to])
+      const keep = douglasPeucker(chain, eps)
+      for (let i = 0; i < keep.length - 1; i++) kept.push(keep[i])
+    }
+    if (kept.length >= 3) out.push(kept)
+  }
+  return out
+}
+
+/** Iterative Douglas-Peucker on an open chain; both ends are always kept. */
+function douglasPeucker(chain: Pt[], eps: number): Pt[] {
+  const n = chain.length
+  if (n <= 2) return chain
+  const keep = new Uint8Array(n)
+  keep[0] = 1; keep[n - 1] = 1
+  const stack: [number, number][] = [[0, n - 1]]
+  while (stack.length) {
+    const [i, j] = stack.pop()!
+    if (j - i < 2) continue
+    const a = chain[i], b = chain[j]
+    const dx = b[0] - a[0], dy = b[1] - a[1], len = Math.hypot(dx, dy)
+    let worst = -1, at = -1
+    for (let k = i + 1; k < j; k++) {
+      const p = chain[k]
+      const d = len < 1e-12 ? segLen(a, p) : Math.abs(dx * (p[1] - a[1]) - dy * (p[0] - a[0])) / len
+      if (d > worst) { worst = d; at = k }
+    }
+    if (worst > eps) { keep[at] = 1; stack.push([i, at], [at, j]) }
+  }
+  const out: Pt[] = []
+  for (let k = 0; k < n; k++) if (keep[k]) out.push(chain[k])
+  return out
+}
+
 /** Build the feature region of a tile as a CrossSection in tile coordinates. */
 export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: PipelineOptions = {}): CrossSection {
   const owned: CrossSection[] = []
@@ -124,10 +194,15 @@ export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: Pipeli
   const parts: CrossSection[] = []
   if (tile.polygons.length) parts.push(own(new m.CrossSection(tile.polygons, 'EvenOdd')))
   if (tile.curves.length) {
-    // each curve's loops are consistently wound, so all strokes can share one NonZero fill
+    // Resolve overlapping stroke loops in bounded batches before their union.
+    // A single arrangement of tens of thousands of strips can take minutes.
     const loops: Pt[][] = []
     for (const c of tile.curves) loops.push(...strokePolyline(c.points, c.closed, tile.ribWidth))
-    if (loops.length) parts.push(own(new m.CrossSection(loops, 'NonZero')))
+    if (loops.length) {
+      const batches: CrossSection[] = []
+      for (let i = 0; i < loops.length; i += 128) batches.push(own(new m.CrossSection(loops.slice(i, i + 128), 'NonZero')))
+      parts.push(batches.length === 1 ? batches[0] : own(m.CrossSection.union(batches)))
+    }
   }
   let cs = parts.length ? (parts.length === 1 ? parts[0] : own(m.CrossSection.union(parts))) : own(m.CrossSection.square([0, 0]))
   if (opts.subtract?.length) {
@@ -138,19 +213,63 @@ export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: Pipeli
   if (opts.invert) cs = own(m.CrossSection.difference(box, cs))
   if (opts.clipToBox !== false || opts.periodic) cs = own(m.CrossSection.intersection(cs, box))
   if (opts.periodic) {
+    // Opening needs at most two radii of context. Include the canonical seam
+    // collar too, and crop each neighbour before the expensive union/offsets.
+    const haloSize = Math.min(tile.width, tile.height) / 8 + (opts.minFeature ?? 0) + .02
+    const halo = own(own(m.CrossSection.square([tile.width + 2 * haloSize, tile.height + 2 * haloSize])).translate([-haloSize, -haloSize]))
     const copies: CrossSection[] = []
-    for (let y = -1; y <= 1; y++) for (let x = -1; x <= 1; x++) copies.push(own(cs.translate([x * tile.width, y * tile.height])))
+    for (let y = -1; y <= 1; y++) for (let x = -1; x <= 1; x++) copies.push(own(m.CrossSection.intersection(own(cs.translate([x * tile.width, y * tile.height])), halo)))
     cs = own(m.CrossSection.union(copies))
   }
   if (opts.minFeature && opts.minFeature > 0) {
     // morphological opening removes slivers thinner than minFeature
     const r = opts.minFeature / 2
-    cs = own(own(cs.offset(-r, 'Round', 2, 32)).offset(r, 'Round', 2, 32))
+    // At exactly the cutoff, quantization can leave a microscopic ribbon
+    // whose subsequent dilation resurrects an entire rib. Erode 1e-6 mm
+    // further so collapsed features stay collapsed.
+    const erosion = r + 1e-6
+    if (cs.numVert() > 20000) {
+      // Morphological opening is local. Overlapping inputs protect each
+      // chunk's core, so artificial chunk edges cannot affect the result.
+      const filtered: CrossSection[] = [], b = cs.bounds(), n = 4, pad = 2 * r + .02
+      const bw = (b.max[0] - b.min[0]) / n, bh = (b.max[1] - b.min[1]) / n
+      for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) {
+        const ox = b.min[0] + x * bw, oy = b.min[1] + y * bh
+        const region = own(own(m.CrossSection.square([bw + 2 * pad, bh + 2 * pad])).translate([ox - pad, oy - pad]))
+        const input = own(m.CrossSection.intersection(cs, region))
+        const opened = own(own(input.offset(-erosion, 'Round', 2, 32)).offset(r, 'Round', 2, 32))
+        const core = own(own(m.CrossSection.square([bw, bh])).translate([ox, oy]))
+        filtered.push(own(m.CrossSection.intersection(opened, core)))
+      }
+      cs = own(m.CrossSection.union(filtered))
+    } else cs = own(own(cs.offset(-erosion, 'Round', 2, 32)).offset(r, 'Round', 2, 32))
   }
-  // Simplify the neighbourhood before cropping. Simplifying a cropped tile can
-  // pull a seam vertex inward and independently remove opposite-edge segments.
-  cs = own(cs.simplify(0.01))
-  const simplified = opts.periodic ? own(m.CrossSection.intersection(cs, box)) : cs
+  // Reduce the repeated neighbourhood before the canonical seam crop. The
+  // final simplifier below also pins nearby curves, not only boundary points.
+  if (cs.numVert() <= 20000) cs = own(cs.simplify(0.01))
+  if (opts.periodic) {
+    // The boolean kernel is not exactly translation invariant: a hairline
+    // residue of the opening can survive at one seam junction and vanish at
+    // the other. Take the strip just beyond the left and bottom edges as the
+    // right and top edge content, so opposite edges are literally the same
+    // polygons, translated.
+    const w = tile.width, h = tile.height, c = Math.min(w, h) / 8
+    const strip = (x: number, y: number, sx: number, sy: number) => own(own(m.CrossSection.square([sx, sy], false)).translate([x, y]))
+    // one cut of the large neighbourhood; the stitching then works on tile-sized pieces
+    const near = own(m.CrossSection.intersection(cs, strip(-c, -c, w + c, h + c)))
+    const stitchedX = own(m.CrossSection.union([
+      own(m.CrossSection.intersection(near, strip(0, -c, w - c, h + c))),
+      own(own(m.CrossSection.intersection(near, strip(-c, -c, c, h + c))).translate([w, 0])),
+    ]))
+    cs = own(m.CrossSection.union([
+      own(m.CrossSection.intersection(stitchedX, strip(0, 0, w, h - c))),
+      own(own(m.CrossSection.intersection(stitchedX, strip(0, -c, w, c))).translate([0, h])),
+    ]))
+  }
+  // Simplify with the box-boundary vertices pinned: a general simplifier decides
+  // differently on each side of a seam, so opposite-edge profiles drift apart.
+  const lean = simplifyAnchored(cs.toPolygons() as Pt[][], tile.width, tile.height, 0.01)
+  const simplified = own(lean.length ? new m.CrossSection(lean, 'EvenOdd') : m.CrossSection.square([0, 0]))
   if (opts.connectMaterial) {
     return connectMaterial(m, simplified, tile.width, tile.height, Math.max(tile.ribWidth, opts.minFeature ?? 0), opts.notes)
   }

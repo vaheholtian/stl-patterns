@@ -41,6 +41,7 @@ interface State {
   selection: Uint8Array | null
   segmentAngle: number
   busy: string | null
+  progress: number | null
   log: string[]
   voronoi: VoronoiUi
   lineWidth: number
@@ -55,7 +56,7 @@ interface State {
   toggleVisible: (id: number) => void
   setSelection: (sel: Uint8Array | null) => void
   setSegmentAngle: (a: number) => void
-  setBusy: (b: string | null) => void
+  setBusy: (b: string | null, progress?: number) => void
   pushLog: (lines: string | string[]) => void
   clearLog: () => void
   setVoronoi: (patch: Partial<VoronoiUi>) => void
@@ -74,6 +75,7 @@ export const useStore = create<State>((set, get) => ({
   selection: null,
   segmentAngle: 30,
   busy: null,
+  progress: null,
   log: [],
   lineWidth: 0.42,
   voronoi: {
@@ -124,7 +126,7 @@ export const useStore = create<State>((set, get) => ({
   toggleVisible: (id) => set((s) => ({ bodies: s.bodies.map((b) => (b.id === id ? { ...b, visible: !b.visible } : b)) })),
   setSelection: (selection) => set({ selection }),
   setSegmentAngle: (segmentAngle) => set({ segmentAngle }),
-  setBusy: (busy) => set({ busy }),
+  setBusy: (busy, progress) => set({ busy, progress: busy && progress !== undefined ? Math.max(0, Math.min(1, progress)) : null }),
   pushLog: (lines) => set((s) => ({ log: [...s.log, ...(Array.isArray(lines) ? lines : [lines])].slice(-200) })),
   clearLog: () => set({ log: [] }),
   setVoronoi: (patch) => set((s) => ({ voronoi: { ...s.voronoi, ...patch } })),

@@ -3,6 +3,9 @@
 import type { TriMesh } from './manifold'
 import { extractSubMesh, boundaryLoops, type SubMesh } from './submesh'
 import { flattenLSCM } from './lscm'
+import { FaceAdjacency } from './segmentation'
+import { SurfaceIndex } from './bvh'
+import { triangleAreaNormal } from './sampling'
 
 export interface FlattenedRegion {
   positions: Float32Array
@@ -236,6 +239,17 @@ export function flattenRegion(mesh: TriMesh, region: Uint32Array, origin: [numbe
     let px = 0, py = 0
     for (const [a, b] of pairs) { px += res.uv[b * 2] - res.uv[a * 2]; py += res.uv[b * 2 + 1] - res.uv[a * 2 + 1] }
     period = [px / pairs.length, py / pairs.length]
+    // a ring that already lies flat (a washer, a box rim, a plate with a hole) comes
+    // back with both sides of the seam on top of each other: nothing wraps, so lay
+    // the tile out as on a disk. A zero period would otherwise collapse the layout.
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity
+    for (let i = 0; i < res.uv.length; i += 2) { minX = Math.min(minX, res.uv[i]); maxX = Math.max(maxX, res.uv[i]); minY = Math.min(minY, res.uv[i + 1]); maxY = Math.max(maxY, res.uv[i + 1]) }
+    const diag = Math.hypot(maxX - minX, maxY - minY) || 1
+    if (Math.hypot(period[0], period[1]) < 1e-3 * diag) {
+      period = null
+      topology = 'disk'
+      log.push('the ring lies flat, so the tile is laid out without wrapping')
+    }
   }
   const originTriangle = nearestTriangle(sub, origin[0], origin[1], origin[2])
   return {
@@ -251,4 +265,150 @@ export function flattenRegion(mesh: TriMesh, region: Uint32Array, origin: [numbe
     log,
     removedCap,
   }
+}
+
+/** A point on the region near its centroid, snapped to the nearest triangle centroid. */
+export function regionCentroid(mesh: TriMesh, region: Uint32Array): [number, number, number] {
+  const { positions, indices } = mesh
+  let x = 0, y = 0, z = 0
+  for (const t of region) for (let c = 0; c < 3; c++) { const v = indices[t * 3 + c] * 3; x += positions[v]; y += positions[v + 1]; z += positions[v + 2] }
+  const n = region.length * 3 || 1
+  x /= n; y /= n; z /= n
+  let best: [number, number, number] = [x, y, z], bd = Infinity
+  for (const t of region) {
+    let cx = 0, cy = 0, cz = 0
+    for (let c = 0; c < 3; c++) { const v = indices[t * 3 + c] * 3; cx += positions[v]; cy += positions[v + 1]; cz += positions[v + 2] }
+    cx /= 3; cy /= 3; cz /= 3
+    const d = (cx - x) ** 2 + (cy - y) ** 2 + (cz - z) ** 2
+    if (d < bd) { bd = d; best = [cx, cy, cz] }
+  }
+  return best
+}
+
+/**
+ * Split a region into smooth pieces at edges sharper than maxAngleDeg. A region
+ * that spans sharp edges (a whole box, several faces added with shift) cannot be
+ * flattened as one sheet: LSCM folds it over, and points laid out in the fold map
+ * to the wrong face. Each piece is flattened on its own instead.
+ */
+export function splitSmoothPieces(mesh: TriMesh, region: Uint32Array, maxAngleDeg: number): Uint32Array[] {
+  const adj = new FaceAdjacency(mesh)
+  const mask = new Uint8Array(adj.nTri)
+  for (const t of region) mask[t] = 1
+  const done = new Uint8Array(adj.nTri)
+  const pieces: Uint32Array[] = []
+  for (const t of region) {
+    if (done[t]) continue
+    const piece = adj.floodFill(t, maxAngleDeg, mask)
+    for (const x of piece) done[x] = 1
+    pieces.push(piece)
+  }
+  // largest first so the pieces that matter are logged and previewed first
+  pieces.sort((a, b) => b.length - a.length)
+  return pieces
+}
+
+export interface FlattenedPiece extends FlattenedRegion {
+  /** the layout origin used for this piece (the user's origin when it lies on the piece, else the piece centroid) */
+  origin: [number, number, number]
+  /** triangles of this piece (source triangle ids) */
+  region: Uint32Array
+  /** surface area, mm² */
+  area: number
+  /**
+   * Set when this piece is the back side of a wall whose front is a larger piece
+   * of the same region: `fraction` of the piece has that front within `distance`
+   * mm behind it. A through-cut from the front already perforates this side.
+   */
+  backing: { fraction: number; distance: number } | null
+}
+
+/**
+ * In through-cut mode, a piece mostly backed by a larger opposite face within the
+ * cut's reach is that face's back side: the cut from the front already goes
+ * through it, and cutting it again with its own layout would chop the wall up.
+ */
+export function isBackSide(piece: Pick<FlattenedPiece, 'backing'>, mode: 'cut' | 'recess' | 'emboss', wallThickness: number): boolean {
+  return mode === 'cut' && !!piece.backing && piece.backing.fraction > 0.5 && piece.backing.distance <= wallThickness + 1
+}
+
+/**
+ * For each piece, find whether a larger piece of the region lies behind it
+ * (through the material) facing the other way, and how far. Rays are cast from
+ * area-weighted triangle centroids along the inward normal.
+ */
+function findBacking(mesh: TriMesh, parts: Uint32Array[], maxDist: number): ({ fraction: number; distance: number } | null)[] {
+  if (parts.length < 2) return parts.map(() => null)
+  const pieceOf = new Int32Array(mesh.indices.length / 3).fill(-1)
+  parts.forEach((part, i) => { for (const t of part) pieceOf[t] = i })
+  const index = new SurfaceIndex(mesh)
+  const n = new Float64Array(3), nh = new Float64Array(3)
+  const partArea = parts.map((part) => { let a = 0; for (const t of part) a += triangleAreaNormal(mesh, t, n); return a })
+  const out: ({ fraction: number; distance: number } | null)[] = []
+  for (let i = 0; i < parts.length; i++) {
+    const part = parts[i]
+    // area-weighted pick of up to 200 triangles
+    const areas = new Float64Array(part.length)
+    const total = partArea[i]
+    for (let j = 0; j < part.length; j++) areas[j] = triangleAreaNormal(mesh, part[j], n)
+    const samples = Math.min(200, part.length)
+    let backed = 0, tested = 0
+    const dists: number[] = []
+    for (let s = 0; s < samples; s++) {
+      // stratified cumulative-area pick
+      let target = ((s + 0.5) / samples) * total, j = 0
+      while (j < part.length - 1 && target > areas[j]) { target -= areas[j]; j++ }
+      const t = part[j]
+      triangleAreaNormal(mesh, t, n)
+      const { positions: p, indices: ix } = mesh
+      let cx = 0, cy = 0, cz = 0
+      for (let c = 0; c < 3; c++) { const v = ix[t * 3 + c] * 3; cx += p[v]; cy += p[v + 1]; cz += p[v + 2] }
+      cx /= 3; cy /= 3; cz /= 3
+      const eps = 1e-3
+      const hit = index.raycastFirst(cx - n[0] * eps, cy - n[1] * eps, cz - n[2] * eps, -n[0], -n[1], -n[2], maxDist)
+      tested++
+      if (!hit || hit.faceIndex < 0) continue
+      const other = pieceOf[hit.faceIndex]
+      if (other < 0 || other === i || partArea[other] <= total) continue // only a larger front counts
+      triangleAreaNormal(mesh, hit.faceIndex, nh)
+      if (n[0] * nh[0] + n[1] * nh[1] + n[2] * nh[2] > -0.7) continue
+      backed++
+      dists.push(hit.distance + eps)
+    }
+    if (!tested || !backed) { out.push(null); continue }
+    dists.sort((a, b) => a - b)
+    out.push({ fraction: backed / tested, distance: dists[Math.floor(dists.length / 2)] })
+  }
+  index.dispose()
+  return out
+}
+
+/** Flatten every smooth piece of a region. Pieces that cannot be flattened are skipped with a log line. */
+export function flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], maxAngleDeg: number): { pieces: FlattenedPiece[]; log: string[] } {
+  const parts = splitSmoothPieces(mesh, region, maxAngleDeg)
+  const log: string[] = []
+  // the piece the origin lies on: the one holding the triangle nearest the origin
+  const all = extractSubMesh(mesh, region)
+  const originTri = all.sourceTriangles[nearestTriangle(all, origin[0], origin[1], origin[2])]
+  const pieces: FlattenedPiece[] = []
+  if (parts.length > 1) log.push(`region spans ${parts.length} smooth pieces (edges sharper than ${maxAngleDeg}°); each is flattened on its own`)
+  const backing = findBacking(mesh, parts, 50)
+  parts.forEach((part, i) => {
+    const own = part.includes(originTri) ? origin : regionCentroid(mesh, part)
+    try {
+      const flat = flattenRegion(mesh, part, own)
+      if (parts.length === 1) log.push(...flat.log)
+      let area = 0
+      const tmp = new Float64Array(3)
+      for (const t of part) area += triangleAreaNormal(mesh, t, tmp)
+      pieces.push({ ...flat, origin: own, region: part, area, backing: backing[i] })
+    } catch (e) {
+      log.push(`piece of ${part.length} triangles skipped: ${(e as Error).message}`)
+    }
+  })
+  if (parts.length > 1) {
+    const caps = pieces.filter((p) => p.topology === 'cap').length, seams = pieces.filter((p) => p.topology === 'seam').length
+    log.push(`${pieces.length} pieces flattened${caps ? `, ${caps} closed (far-side cap left solid)` : ''}${seams ? `, ${seams} ring-shaped (tile wraps)` : ''}`)
+  }
+  return { pieces, log }
 }

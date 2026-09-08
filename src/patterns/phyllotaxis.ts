@@ -127,6 +127,9 @@ export const phyllotaxisGenerator: Generator = {
       for (const { p, r } of points) {
         const factor = grow <= 0 ? 1 : Math.pow(r / maxRadius, grow)
         const diameter = Math.max(0.05, dotSize * factor)
+        // the whole dot stays inside the inscribed circle, so nothing is cut
+        // off by the box edge and the repeat stays seamless
+        if (r + diameter / 2 > maxRadius) continue
         polygons.push(circlePolygon(p[0], p[1], diameter / 2, 24))
       }
     }

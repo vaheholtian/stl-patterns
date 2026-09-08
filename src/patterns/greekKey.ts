@@ -14,9 +14,11 @@ export const greekKeyGenerator: Generator = {
     // Open nested-hook motif; straight horizontal endpoints preserve the seam
     // even when the interior corners are rounded.
     const motif: Pt[] = [[0, 0.1], [0.8, 0.1], [0.8, 0.7], [0.4, 0.7], [0.4, 0.5], [0.6, 0.5], [0.6, 0.3], [0.2, 0.3], [0.2, 0.9], [0.95, 0.9], [0.95, 0.1], [1, 0.1]]
-    for (let row = 0; row < bands; row++) {
+    // Draw one key past each side and one band past the top and bottom: a rib
+    // that pokes over the box edge then reappears on the opposite side.
+    for (let row = -1; row <= bands; row++) {
       const points: Pt[] = []
-      for (let i = 0; i < repeats; i++) for (const [x, y] of (i ? motif.slice(1) : motif)) points.push([(i + x) * sx, (row + y) * sy])
+      for (let i = -1; i <= repeats; i++) for (const [x, y] of (i > -1 ? motif.slice(1) : motif)) points.push([(i + x) * sx, (row + y) * sy])
       tile.curves.push(roundPath(points, false, bounded(p, 'rounding', 0, 0, 0.4)))
     }
     return tile

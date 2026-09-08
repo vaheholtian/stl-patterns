@@ -15,6 +15,9 @@ export async function getManifold(): Promise<ManifoldToplevel> {
       m.setup()
       toplevel = m
       return m
+    }).catch((error) => {
+      pending = null // a failed initialization must not poison all later requests
+      throw error
     })
   }
   return pending

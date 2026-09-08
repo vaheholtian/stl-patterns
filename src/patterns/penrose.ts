@@ -1,3 +1,4 @@
+import { insetConvexPolygon as insetConvex } from './convexInset'
 // Penrose P3 (rhombus) tiling generator.
 //
 // Built by deflation/substitution of Robinson triangles, the standard way
@@ -178,62 +179,8 @@ function clipSegmentToBox(a: Pt, b: Pt, width: number, height: number): [Pt, Pt]
   ]
 }
 
-/** Inset a convex polygon inward by `dist`: offset each edge along its
- * inward normal by `dist`, then reconstruct the polygon by intersecting
- * consecutive offset edge lines. Returns null if it degenerates. */
-export function insetConvex(poly: Pt[], distIn: number): Pt[] | null {
-  const n = poly.length
-  if (n < 3) return null
-  let area = 0
-  for (let i = 0; i < n; i++) {
-    const [x0, y0] = poly[i]
-    const [x1, y1] = poly[(i + 1) % n]
-    area += x0 * y1 - x1 * y0
-  }
-  area *= 0.5
-  if (Math.abs(area) < 1e-9) return null
-  const sign = area > 0 ? 1 : -1
-
-  const lines: { p: Pt; d: Pt }[] = []
-  for (let i = 0; i < n; i++) {
-    const a = poly[i]
-    const b = poly[(i + 1) % n]
-    let dx = b[0] - a[0]
-    let dy = b[1] - a[1]
-    const len = Math.hypot(dx, dy)
-    if (len < 1e-9) return null
-    dx /= len
-    dy /= len
-    const nx = sign > 0 ? -dy : dy
-    const ny = sign > 0 ? dx : -dx
-    lines.push({ p: [a[0] + nx * distIn, a[1] + ny * distIn], d: [dx, dy] })
-  }
-
-  const out: Pt[] = []
-  for (let i = 0; i < n; i++) {
-    const l0 = lines[(i - 1 + n) % n]
-    const l1 = lines[i]
-    const denom = l0.d[0] * l1.d[1] - l0.d[1] * l1.d[0]
-    if (Math.abs(denom) < 1e-9) {
-      out.push(l1.p)
-      continue
-    }
-    const dx = l1.p[0] - l0.p[0]
-    const dy = l1.p[1] - l0.p[1]
-    const t = (dx * l1.d[1] - dy * l1.d[0]) / denom
-    out.push([l0.p[0] + t * l0.d[0], l0.p[1] + t * l0.d[1]])
-  }
-
-  let outArea = 0
-  for (let i = 0; i < n; i++) {
-    const [x0, y0] = out[i]
-    const [x1, y1] = out[(i + 1) % n]
-    outArea += x0 * y1 - x1 * y0
-  }
-  outArea *= 0.5
-  if (outArea * sign <= 1e-6) return null
-  return out
-}
+/** Inset with inward half-planes; collapsed polygons remain empty. */
+export { insetConvex }
 
 function edgeKey(a: Pt, b: Pt): string {
   const r = (v: number) => Math.round(v * 1e4) / 1e4

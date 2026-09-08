@@ -1,5 +1,5 @@
 // Lay a tile out over a flattened region: repeat, fit around seams, clip.
-import type { ManifoldToplevel } from 'manifold-3d'
+import type { ManifoldToplevel, CrossSection } from 'manifold-3d'
 import type { Pt } from '../patterns/types'
 import { Parameterization } from './parameterization'
 import type { FlattenedRegion } from './regionFlatten'
@@ -75,8 +75,7 @@ export function layoutTile(
   const log: string[] = []
   const { param, period } = buildParameterization(flat, settings)
   // seam fitting: period is along +x after baseRotation when user rotation is 0.
-  // With user rotation the tile grid no longer aligns with the seam; stretch still
-  // uses the period length projected on the tile x axis.
+  // Only periods along the actual tile x axis can be fitted by x-only stretch.
   let stretch = 1
   let repeats: number | null = null
   if (settings.single) {
@@ -87,17 +86,15 @@ export function layoutTile(
     return finish(m, param, flat, [copy], settings, log, null, 1, tw, th)
   }
   if (period && settings.fitSeam) {
-    const rot = (settings.rotationDeg * Math.PI) / 180
-    // period expressed in the rotated tile frame
-    const px = period[0] * Math.cos(-rot) - period[1] * Math.sin(-rot)
-    const py = period[0] * Math.sin(-rot) + period[1] * Math.cos(-rot)
+    // buildParameterization already expresses this vector in placement coordinates.
+    const [px, py] = period
     const len = Math.hypot(px, py)
-    if (Math.abs(py) < 1e-3 * len + 1e-6) {
+    if (Math.abs(py) < 1e-8 * len + 1e-6) {
       repeats = Math.max(1, Math.round(len / tileWidth))
       stretch = len / (repeats * tileWidth)
       log.push(`${repeats} repeats around the seam, tile stretched ${((stretch - 1) * 100).toFixed(1)}%`)
     } else {
-      log.push('rotated tile: seam fit skipped (rotate to 0 for a seamless wrap)')
+      log.push('rotated tile: automatic seam fit unsupported at this angle (rotate to 0 or 180 degrees to fit the wrap)')
     }
   }
   const tw = tileWidth * stretch, th = tileHeight
@@ -132,11 +129,14 @@ function finish(
   th: number,
 ): LayoutResult {
   if (!copies.length) return { param, polygons: [], repeatsAround: repeats, stretch, tileWidth: tw, tileHeight: th, scaleMin: 1, scaleMax: 1, log }
+  const owned: CrossSection[] = []
+  const own = (cs: CrossSection) => { owned.push(cs); return cs }
+  try {
   // each copy keeps its holes (even-odd over its own contours); copies are then unioned
-  const tiles = m.CrossSection.union(copies.map((c) => new m.CrossSection(c, 'EvenOdd')))
+  const tiles = own(m.CrossSection.union(copies.map((c) => own(new m.CrossSection(c, 'EvenOdd')))))
   // region polygon in 2D, inset by the margin
   const loops = flat.loops.map((loop) => loop.map((v) => [param.uv[v * 2], param.uv[v * 2 + 1]] as Pt))
-  let regionCs = new m.CrossSection(loops, 'EvenOdd')
+  let regionCs = own(new m.CrossSection(loops, 'EvenOdd'))
   if (settings.margin > 0) {
     // keep a solid band along real boundary edges only; the seam is not an edge of the part
     const seam = new Set(flat.seamVertices)
@@ -148,7 +148,7 @@ function finish(
         bands.push(...strokePolyline([[param.uv[a * 2], param.uv[a * 2 + 1]], [param.uv[b * 2], param.uv[b * 2 + 1]]], false, 2 * settings.margin))
       }
     }
-    if (bands.length) regionCs = m.CrossSection.difference(regionCs, new m.CrossSection(bands, 'NonZero'))
+    if (bands.length) regionCs = own(m.CrossSection.difference(regionCs, own(new m.CrossSection(bands, 'NonZero'))))
   }
   // mask out triangles where the pattern would come out too small to print
   let masked = 0
@@ -162,18 +162,22 @@ function finish(
     }
     masked = small.length
     if (small.length) {
-      const smallCs = m.CrossSection.union(small.map((p) => new m.CrossSection([p], 'NonZero')))
+      const smallCs = own(m.CrossSection.union(small.map((p) => own(new m.CrossSection([p], 'NonZero')))))
       // grow the mask a little so ribs at the edge of the masked zone stay solid
-      regionCs = m.CrossSection.difference(regionCs, smallCs.offset(settings.margin > 0 ? settings.margin : 1, 'Round', 2, 8))
+      regionCs = own(m.CrossSection.difference(regionCs, own(smallCs.offset(settings.margin > 0 ? settings.margin : 1, 'Round', 2, 8))))
     }
   }
-  const clipped = m.CrossSection.intersection(tiles, regionCs).simplify(0.01)
+  const intersection = own(m.CrossSection.intersection(tiles, regionCs))
+  // Simplifying paired wrap boundaries independently can pull one side into
+  // the surface, leaving a thin wall after extrusion. Keep the clipped seam.
+  const clipped = flat.period ? intersection : own(intersection.simplify(0.01))
   const polygons = crossSectionToPolygons(clipped)
   let sMin = Infinity, sMax = 0
   for (const s of param.scale) if (s > 0) { sMin = Math.min(sMin, s); sMax = Math.max(sMax, s) }
   log.push(`${polygons.length} shapes laid out; local size ranges ${(sMin * 100).toFixed(0)}% to ${(sMax * 100).toFixed(0)}% of true`)
   if (masked) log.push(`left solid where the pattern would shrink below ${(settings.minScale * 100).toFixed(0)}% (${masked} triangles)`)
   return { param, polygons, repeatsAround: repeats, stretch, tileWidth: tw, tileHeight: th, scaleMin: sMin, scaleMax: sMax, log }
+  } finally { for (const cs of owned) cs.delete() }
 }
 
 /** 3D line segments (xyz pairs) for previewing polygons on the surface. */

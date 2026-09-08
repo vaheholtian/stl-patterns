@@ -1,3 +1,4 @@
+import { insetConvexPolygon } from './convexInset'
 // Seamless periodic Voronoi tile: seeds are relaxed on a 3x3 periodic
 // replication of the tile box, then each central cell is inset by half the
 // rib width and clipped back to the box. What remains between the inset
@@ -96,63 +97,10 @@ export function periodicSeeds(params: Record<string, ParamValue>, ctx: Generator
 }
 
 /**
- * Inset a convex polygon inward by `dist`, offsetting each edge along its
- * inward normal and intersecting consecutive offset edges. Returns null if
- * the polygon degenerates (too small, or the inset collapses/flips it).
+ * Inset with inward half-planes, allowing edges to disappear as it shrinks.
+ * Returns null when the polygon collapses.
  */
-export function insetConvexPolygon(input: Pt[], dist: number): Pt[] | null {
-  const pts = openRing(input)
-  const n = pts.length
-  if (n < 3) return null
-  if (dist <= 0) return pts.slice()
-
-  let area = 0
-  for (let i = 0; i < n; i++) {
-    const [x0, y0] = pts[i]
-    const [x1, y1] = pts[(i + 1) % n]
-    area += x0 * y1 - x1 * y0
-  }
-  area *= 0.5
-  if (Math.abs(area) < 1e-9) return null
-  const sign = area > 0 ? 1 : -1
-
-  const lines: { p: Pt; d: Pt }[] = []
-  for (let i = 0; i < n; i++) {
-    const a = pts[i], b = pts[(i + 1) % n]
-    let dx = b[0] - a[0], dy = b[1] - a[1]
-    const len = Math.hypot(dx, dy)
-    if (len < 1e-9) return null
-    dx /= len; dy /= len
-    // inward normal: rotate the edge direction by -90deg for CCW polygons, +90deg for CW
-    const nx = sign > 0 ? -dy : dy
-    const ny = sign > 0 ? dx : -dx
-    lines.push({ p: [a[0] + nx * dist, a[1] + ny * dist], d: [dx, dy] })
-  }
-
-  const out: Pt[] = []
-  for (let i = 0; i < n; i++) {
-    const l0 = lines[(i - 1 + n) % n]
-    const l1 = lines[i]
-    const denom = l0.d[0] * l1.d[1] - l0.d[1] * l1.d[0]
-    if (Math.abs(denom) < 1e-9) {
-      out.push(l1.p)
-      continue
-    }
-    const dx = l1.p[0] - l0.p[0], dy = l1.p[1] - l0.p[1]
-    const t = (dx * l1.d[1] - dy * l1.d[0]) / denom
-    out.push([l0.p[0] + t * l0.d[0], l0.p[1] + t * l0.d[1]])
-  }
-
-  let outArea = 0
-  for (let i = 0; i < n; i++) {
-    const [x0, y0] = out[i]
-    const [x1, y1] = out[(i + 1) % n]
-    outArea += x0 * y1 - x1 * y0
-  }
-  outArea *= 0.5
-  if (outArea * sign <= 1e-6) return null
-  return out
-}
+export { insetConvexPolygon }
 
 function clipEdge(pts: Pt[], inside: (p: Pt) => boolean, intersect: (a: Pt, b: Pt) => Pt): Pt[] {
   const n = pts.length

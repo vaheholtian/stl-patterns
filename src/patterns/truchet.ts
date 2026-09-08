@@ -102,16 +102,24 @@ export const truchetGenerator: Generator = {
     const style = String(params.style ?? 'arcs')
     const ribWidth = getNum(params, 'ribWidth', 1.6)
 
+    // Decide every cell first, then draw one wrapped ring of cells around the
+    // box as well: a rib ending at a corner on the seam then carries the same
+    // round cap it has at an interior corner (the pipeline crops the rest).
+    const choice: { rot: boolean; arc: boolean }[] = []
+    for (let cy = 0; cy < rows; cy++) for (let cx = 0; cx < cols; cx++) {
+      const rot = ctx.rand() < 0.5
+      let useArc = style === 'arcs'
+      if (style === 'arcsAndLines') useArc = ctx.rand() < 0.5
+      choice.push({ rot, arc: useArc })
+    }
     const curves: TileCurve[] = []
-    for (let cy = 0; cy < rows; cy++) {
-      for (let cx = 0; cx < cols; cx++) {
+    for (let cy = -1; cy <= rows; cy++) {
+      for (let cx = -1; cx <= cols; cx++) {
+        const c = choice[(((cy % rows) + rows) % rows) * cols + (((cx % cols) + cols) % cols)]
         const x0 = cx * cell
         const y0 = cy * cell
-        const rot = ctx.rand() < 0.5
-        let useArc = style === 'arcs'
-        if (style === 'arcsAndLines') useArc = ctx.rand() < 0.5
-        if (useArc) curves.push(...arcCell(x0, y0, cell, rot))
-        else curves.push(...diagonalCell(x0, y0, cell, rot))
+        if (c.arc) curves.push(...arcCell(x0, y0, cell, c.rot))
+        else curves.push(...diagonalCell(x0, y0, cell, c.rot))
       }
     }
 

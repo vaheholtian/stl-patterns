@@ -214,7 +214,9 @@ export const hyperbolicGenerator: Generator = {
     const minFeature = Math.max(0.05, getNum(params, 'minFeature', 1))
 
     const cx = width / 2, cy = height / 2
-    const Rbox = Math.max(0.5, Math.min(width, height) / 2 - 1)
+    // stroked edges reach ribWidth / 2 beyond the disk: keep them inside the box
+    const rim = style === 'cells' ? 1 : Math.max(1, ribWidth / 2 + 0.2)
+    const Rbox = Math.max(0.5, Math.min(width, height) / 2 - rim)
     const toBox = (pt: Pt): Pt => [cx + pt[0] * Rbox, cy + pt[1] * Rbox]
 
     const r0 = diskRadius(p, q)

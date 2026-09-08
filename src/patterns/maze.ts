@@ -29,10 +29,14 @@ export const mazeGenerator: Generator = {
     // The dual wall graph of a toroidal passage tree is connected and retains
     // both winding directions. No special boundary walls are added.
     const sx = tile.width / cols, sy = tile.height / rows, curves: TileCurve[] = []
-    for (let y = -1; y <= rows; y++) for (let x = -1; x <= cols; x++) {
+    // Enough wrapped cells that every stroke reaching into the box is drawn.
+    const padX = Math.ceil(tile.ribWidth / 2 / sx) + 1, padY = Math.ceil(tile.ribWidth / 2 / sy) + 1
+    for (let y = -padY; y < rows + padY; y++) for (let x = -padX; x < cols + padX; x++) {
       const a = id(x, y)
-      if (!passages.has(2 * a)) curves.push({ points: [[(x + 1) * sx, y * sy], [(x + 1) * sx, (y + 1) * sy]], closed: false })
-      if (!passages.has(2 * a + 1)) curves.push({ points: [[x * sx, (y + 1) * sy], [(x + 1) * sx, (y + 1) * sy]], closed: false })
+      // Place repeat boundaries through cell interiors, rather than directly
+      // on wall centrelines. Real passages then cross both repeat directions.
+      if (!passages.has(2 * a)) curves.push({ points: [[(x + 1.5) * sx, (y + .5) * sy], [(x + 1.5) * sx, (y + 1.5) * sy]], closed: false })
+      if (!passages.has(2 * a + 1)) curves.push({ points: [[(x + .5) * sx, (y + 1.5) * sy], [(x + 1.5) * sx, (y + 1.5) * sy]], closed: false })
     }
     tile.curves = curves
     tile.notes = ['Native periodic maze walls. The former closed-ribbon motif is replaced by a connected wrap-around wall network.']

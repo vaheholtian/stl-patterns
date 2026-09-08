@@ -58,7 +58,13 @@ export function connectMaterial(m: ManifoldToplevel, feature: CrossSection, widt
         }
       }
       const length = Math.sqrt(best)
-      if (length < 1e-9) continue
+      if (length < 1e-6) {
+        // Decomposed components may touch at a vertex without sharing material.
+        // A zero-length link still needs width; skipping it leaves real islands.
+        const cx = (from[0] + to[0]) / 2, cy = (from[1] + to[1]) / 2
+        bridges.push(Array.from({ length: 16 }, (_, k): Pt => [cx + w / 2 * Math.cos(k * Math.PI / 8), cy + w / 2 * Math.sin(k * Math.PI / 8)]))
+        continue
+      }
       const dx = (to[0] - from[0]) / length, dy = (to[1] - from[1]) / length, r = w / 2
       // Extend one full rib into each component, avoiding point contacts.
       const a: Pt = [from[0] - dx * w, from[1] - dy * w], b: Pt = [to[0] + dx * w, to[1] + dy * w]

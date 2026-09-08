@@ -142,10 +142,19 @@ export class Parameterization {
     if (!loc) loc = this.nearest(x, y)
     const { positions: p, normals: nrm, indices: ix } = this.sub
     const a = ix[loc.t * 3], b = ix[loc.t * 3 + 1], c = ix[loc.t * 3 + 2]
+    // interpolated vertex normals shorten between differing normals; renormalise so
+    // the offset keeps its length (a through-cut must reach its full depth)
+    let nx = 0, ny = 0, nz = 0
+    for (let d = 0; d < 3; d++) {
+      const n = loc.w0 * nrm[a * 3 + d] + loc.w1 * nrm[b * 3 + d] + loc.w2 * nrm[c * 3 + d]
+      if (d === 0) nx = n; else if (d === 1) ny = n; else nz = n
+    }
+    const len = Math.hypot(nx, ny, nz) || 1
+    const k = offset / len
     for (let d = 0; d < 3; d++) {
       const pos = loc.w0 * p[a * 3 + d] + loc.w1 * p[b * 3 + d] + loc.w2 * p[c * 3 + d]
-      const n = loc.w0 * nrm[a * 3 + d] + loc.w1 * nrm[b * 3 + d] + loc.w2 * nrm[c * 3 + d]
-      out[o + d] = pos + n * offset
+      const n = d === 0 ? nx : d === 1 ? ny : nz
+      out[o + d] = pos + n * k
     }
     return inside
   }

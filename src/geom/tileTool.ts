@@ -15,10 +15,23 @@ export function subdividePolygon(poly: Polygon, maxLen: number): Polygon {
   return out
 }
 
+/** True when every vertex normal of the piece points the same way (a planar face). */
+export function isPlanar(param: Parameterization, maxAngleDeg = 0.5): boolean {
+  const n = param.sub.normals
+  if (n.length < 6) return true
+  const cosMin = Math.cos((maxAngleDeg * Math.PI) / 180)
+  for (let v = 3; v < n.length; v += 3) {
+    if (n[0] * n[v] + n[1] * n[v + 1] + n[2] * n[v + 2] < cosMin) return false
+  }
+  return true
+}
+
 /**
  * Turn flat polygons (in the parameterization's 2D mm space) into a solid that
  * follows the surface: extrude a slab from zMin to zMax (along the normal),
  * refine so no edge is longer than maxEdge, then warp every vertex onto the surface.
+ * A planar piece maps affinely, so it is warped without refinement: refining a
+ * flat face only multiplies triangles and slows the boolean.
  */
 export function buildSurfaceTool(
   m: ManifoldToplevel,
@@ -28,14 +41,17 @@ export function buildSurfaceTool(
   zMax: number,
   maxEdge = 2.0,
 ): Manifold {
+  const planar = isPlanar(param)
   // outline edges are subdivided finer than the interior so mapped outlines stay smooth
-  const refined = polygons.map((p) => subdividePolygon(p, maxEdge / 2))
+  const refined = planar ? polygons : polygons.map((p) => subdividePolygon(p, maxEdge / 2))
   const cs = new m.CrossSection(refined, 'EvenOdd')
   let slab = m.Manifold.extrude(cs, zMax - zMin).translate([0, 0, zMin])
   cs.delete()
-  const fine = slab.refineToLength(maxEdge)
-  slab.delete()
-  slab = fine
+  if (!planar) {
+    const fine = slab.refineToLength(maxEdge)
+    slab.delete()
+    slab = fine
+  }
   const tmp = new Float32Array(3)
   const warped = slab.warp((v) => {
     param.toSurface(v[0], v[1], v[2], tmp)

@@ -5,12 +5,12 @@ import PatternScreen from './app/PatternScreen'
 import { useTileRegen } from './app/useTileRegen'
 import { useIsMobile } from './app/useIsMobile'
 import { usePwa } from './app/usePwa'
+import Notifications from './app/Notifications'
 
 export default function App() {
   useTileRegen()
   const screen = useStore((s) => s.screen)
   const setScreen = useStore((s) => s.setScreen)
-  const busy = useStore((s) => s.busy)
   const mobile = useIsMobile()
   const pwa = usePwa()
 
@@ -28,7 +28,6 @@ export default function App() {
           </div>
         )}
         <span className="spacer" />
-        {busy && <span className="busy">⏳ {busy}</span>}
         {pwa.updateReady && <button className="small primary" onClick={pwa.applyUpdate}>Update</button>}
         {!pwa.updateReady && pwa.canInstall && <button className="small" onClick={pwa.install}>Install</button>}
       </div>
@@ -38,6 +37,7 @@ export default function App() {
         </div>
       )}
       {(mobile || screen === 'pattern') && <PatternScreen />}
+      <Notifications />
     </div>
   )
 }

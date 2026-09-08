@@ -5,7 +5,7 @@ export interface SubMesh {
   positions: Float32Array
   /** triangle indices into positions */
   indices: Uint32Array
-  /** area-weighted smooth vertex normals, xyz */
+  /** corner-angle-weighted smooth vertex normals, xyz */
   normals: Float32Array
   /** original triangle index for each sub triangle */
   sourceTriangles: Uint32Array
@@ -41,17 +41,33 @@ export function extractSubMesh(tri: TriMesh, region: Uint32Array | null, weldTol
     }
   }
   const positions = new Float32Array(pos)
-  const normals = new Float32Array(positions.length)
+  const accumulated = new Float64Array(positions.length)
   for (let j = 0; j < nTri; j++) {
     const a = idx[j * 3] * 3, b = idx[j * 3 + 1] * 3, c = idx[j * 3 + 2] * 3
     const ux = positions[b] - positions[a], uy = positions[b + 1] - positions[a + 1], uz = positions[b + 2] - positions[a + 2]
     const vx = positions[c] - positions[a], vy = positions[c + 1] - positions[a + 1], vz = positions[c + 2] - positions[a + 2]
-    const nx = uy * vz - uz * vy, ny = uz * vx - ux * vz, nz = ux * vy - uy * vx // length = 2*area
-    for (const v of [a, b, c]) { normals[v] += nx; normals[v + 1] += ny; normals[v + 2] += nz }
+    const nx = uy * vz - uz * vy, ny = uz * vx - ux * vz, nz = ux * vy - uy * vx
+    const area2 = Math.hypot(nx, ny, nz)
+    if (area2 <= 1e-20) continue
+    // Weight by the corner angle, so splitting a flat face into triangles
+    // does not change its contribution. Area weighting tilts the two rims of
+    // a cylinder in opposite directions and leaves thin walls at tiled seams.
+    const verts = [a, b, c]
+    for (let k = 0; k < 3; k++) {
+      const v = verts[k], next = verts[(k + 1) % 3], prev = verts[(k + 2) % 3]
+      let dot = 0
+      for (let d = 0; d < 3; d++) dot += (positions[next + d] - positions[v + d]) * (positions[prev + d] - positions[v + d])
+      const weight = Math.atan2(area2, dot) / area2
+      accumulated[v] += nx * weight; accumulated[v + 1] += ny * weight; accumulated[v + 2] += nz * weight
+    }
   }
+  const normals = new Float32Array(positions.length)
   for (let v = 0; v < normals.length; v += 3) {
-    const len = Math.hypot(normals[v], normals[v + 1], normals[v + 2]) || 1
-    normals[v] /= len; normals[v + 1] /= len; normals[v + 2] /= len
+    const len = Math.hypot(accumulated[v], accumulated[v + 1], accumulated[v + 2]) || 1
+    for (let d = 0; d < 3; d++) {
+      const value = accumulated[v + d] / len
+      normals[v + d] = Math.abs(value) < 1e-12 ? 0 : value
+    }
   }
   return { positions, indices: idx, normals, sourceTriangles: src }
 }

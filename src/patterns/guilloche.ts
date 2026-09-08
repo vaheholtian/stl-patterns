@@ -82,16 +82,21 @@ export const guillocheGenerator: Generator = {
 
     if (style === 'band') {
       // a whole number of lobes across the width keeps both ends at the same height
-      const amp = Math.min(A, height / 2 - ribWidth)
+      const amp = Math.max(0, Math.min(A, height / 2 - ribWidth))
       const steps = Math.max(64, k * 24)
       const cy = height / 2
+      // Draw past both sides: a curve cut exactly at the seam would lose its
+      // round cap and leave a wedge notch where its slanted end meets the box
+      // edge. The sinusoid is exactly periodic, so the overhang is the true
+      // continuation and the pipeline crops it.
+      const pad = ribWidth, dx = width / steps, padSteps = Math.ceil(pad / dx)
       const curves: TileCurve[] = []
       for (let i = 0; i < count; i++) {
         const phi = i * (TWO_PI / count) + i * twist
         for (const sign of [1, -1]) {
           const points: Pt[] = []
-          for (let s = 0; s <= steps; s++) {
-            const x = (width * s) / steps
+          for (let s = -padSteps; s <= steps + padSteps; s++) {
+            const x = dx * s
             points.push([x, cy + sign * amp * Math.sin((TWO_PI * k * x) / width + phi)])
           }
           curves.push({ points, closed: false })
@@ -99,11 +104,16 @@ export const guillocheGenerator: Generator = {
       }
       return { width, height, polygons: [], curves, ribWidth }
     }
-    const maxR = Math.max(0.5, Math.min(width, height) / 2 - ribWidth)
+    const maxR = Math.min(width, height) / 2 - ribWidth
+    if (maxR <= 0) {
+      throw new Error('Guilloche rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.')
+    }
+    const notes: string[] = []
     if (R0 + A > maxR) {
       const scale = maxR / (R0 + A)
       R0 *= scale
       A *= scale
+      notes.push(`Rosette radius and amplitude scaled to ${(scale * 100).toFixed(1)}% to fit the tile and rib width.`)
     }
 
     const cx = width / 2
@@ -126,6 +136,6 @@ export const guillocheGenerator: Generator = {
       }
     }
 
-    return { width, height, polygons: [], curves, ribWidth }
+    return { width, height, polygons: [], curves, ribWidth, notes }
   },
 }
