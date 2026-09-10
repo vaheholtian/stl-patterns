@@ -1,6 +1,7 @@
 // Request/response types shared by the main thread and the geometry worker.
 import type { TriMesh } from '../geom/manifold'
 import type { FlattenedRegion, FlattenedPiece } from '../geom/regionFlatten'
+import type { Mitre } from '../geom/tileTool'
 
 export interface VoronoiParams {
   cellSize: number       // mm, target mean cell size
@@ -22,6 +23,10 @@ export interface VoronoiParams {
 export interface TilePiece {
   /** closed polygons in the piece's flattened mm space (already repeated/laid out by the caller) */
   polygons: Float32Array[]   // each is xy interleaved
+  /** pattern continued just past the piece's folds, so the tool reaches its neighbour's mitre plane */
+  foldPolygons?: Float32Array[]
+  /** fold mitres the tool is trimmed at, so it meets the neighbouring piece's tool there */
+  mitres?: Mitre[]
   /** the flattening: submesh + uv, produced on the main thread */
   positions: Float32Array
   indices: Uint32Array
@@ -45,11 +50,13 @@ export type Request =
   | { id: number; type: 'voronoi'; mesh: TriMesh; region: Uint32Array; params: VoronoiParams }
   | { id: number; type: 'tile'; mesh: TriMesh; params: TileParams }
   | { id: number; type: 'flatten'; mesh: TriMesh; region: Uint32Array; origin: [number, number, number] }
-  | { id: number; type: 'flattenPieces'; mesh: TriMesh; region: Uint32Array; origin: [number, number, number]; maxAngleDeg: number }
+  | { id: number; type: 'flattenPieces'; mesh: TriMesh; region: Uint32Array; origin: [number, number, number]; maxAngleDeg: number; joinEdges?: boolean }
 
 export interface OpResult {
   mesh: TriMesh
   islandsRemoved: number
+  /** separate parts of material in the result (cavities are not parts); more than one prints as loose pieces */
+  parts: number
   log: string[]
   ms: number
 }

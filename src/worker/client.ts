@@ -59,9 +59,9 @@ class GeomClient {
     return r.result
   }
 
-  /** Flatten every smooth piece of a region (split at edges sharper than maxAngleDeg). */
-  async flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], maxAngleDeg: number, onProgress?: (s: string, fraction?: number) => void): Promise<{ pieces: FlattenedPiece[]; log: string[] }> {
-    const r = await this.send<FlattenPiecesResponse>({ type: 'flattenPieces', mesh, region, origin, maxAngleDeg }, onProgress)
+  /** Flatten every smooth piece of a region (split at edges sharper than maxAngleDeg), unfolding neighbours into shared sheets when joinEdges is on. */
+  async flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], maxAngleDeg: number, joinEdges = true, onProgress?: (s: string, fraction?: number) => void): Promise<{ pieces: FlattenedPiece[]; log: string[] }> {
+    const r = await this.send<FlattenPiecesResponse>({ type: 'flattenPieces', mesh, region, origin, maxAngleDeg, joinEdges }, onProgress)
     return { pieces: r.pieces, log: r.log }
   }
 

@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "test": "node --import ./tests/register.mjs --test tests/continuous.test.ts tests/perforations.test.ts tests/celtic.test.ts tests/repeat-audit.test.ts tests/whole-body.test.ts tests/seamless.test.ts tests/seam-fixes.test.ts tests/preview-client.test.ts tests/periodic-cleanup.test.ts tests/cylindrical-seam.test.ts",
+    "test": "node --import ./tests/register.mjs --test tests/continuous.test.ts tests/perforations.test.ts tests/celtic.test.ts tests/repeat-audit.test.ts tests/whole-body.test.ts tests/seamless.test.ts tests/seam-fixes.test.ts tests/preview-client.test.ts tests/periodic-cleanup.test.ts tests/cylindrical-seam.test.ts tests/crease.test.ts tests/physical-fold.test.ts",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",

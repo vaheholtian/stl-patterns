@@ -51,6 +51,25 @@ export class Parameterization {
     }
   }
 
+  /**
+   * mm travelled on the surface per uv unit when moving across triangle t in
+   * the uv direction (dx, dy). The isotropic `scale` is exact for a planar
+   * piece; this directional form is what a distance perpendicular to an edge
+   * (a margin, a fold reach) needs on a stretched flattening.
+   */
+  directionalScale(t: number, dx: number, dy: number): number {
+    const { positions: p, indices: ix } = this.sub, uv = this.uv
+    const a = ix[t * 3], b = ix[t * 3 + 1], c = ix[t * 3 + 2]
+    const ubx = uv[b * 2] - uv[a * 2], uby = uv[b * 2 + 1] - uv[a * 2 + 1], ucx = uv[c * 2] - uv[a * 2], ucy = uv[c * 2 + 1] - uv[a * 2 + 1]
+    const det = ubx * ucy - ucx * uby
+    const len = Math.hypot(dx, dy) || 1
+    if (Math.abs(det) < 1e-18) return this.scale[t] || 1
+    const w1 = (dx * ucy - ucx * dy) / det, w2 = (ubx * dy - dx * uby) / det
+    let s = 0
+    for (let d = 0; d < 3; d++) { const v = w1 * (p[b * 3 + d] - p[a * 3 + d]) + w2 * (p[c * 3 + d] - p[a * 3 + d]); s += v * v }
+    return Math.sqrt(s) / len
+  }
+
   bounds(): { minX: number; minY: number; maxX: number; maxY: number } {
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity
     for (let i = 0; i < this.uv.length; i += 2) {
@@ -116,7 +135,12 @@ export class Parameterization {
     return null
   }
 
-  /** Nearest triangle by 2D vertex distance, for points outside the region. */
+  /**
+   * Nearest triangle by 2D vertex distance, for points outside the region, with
+   * the point's (unclamped) barycentrics in it: the surface is continued past
+   * its edge along that triangle's plane, which is exact for a planar piece. A
+   * tool that must reach past a fold to meet its neighbour's mitre relies on it.
+   */
   nearest(x: number, y: number): { t: number; w0: number; w1: number; w2: number } {
     // brute force: fine for fallback use only
     const ix = this.sub.indices, uv = this.uv
@@ -128,11 +152,13 @@ export class Parameterization {
         if (d < bestD) { bestD = d; best = t }
       }
     }
-    // clamp to the closest vertex of that triangle
     const a = ix[best * 3], b = ix[best * 3 + 1], c = ix[best * 3 + 2]
-    const ds = [a, b, c].map((v) => (uv[v * 2] - x) ** 2 + (uv[v * 2 + 1] - y) ** 2)
-    const m = ds.indexOf(Math.min(...ds))
-    return { t: best, w0: m === 0 ? 1 : 0, w1: m === 1 ? 1 : 0, w2: m === 2 ? 1 : 0 }
+    const ax = uv[a * 2], ay = uv[a * 2 + 1], bx = uv[b * 2], by = uv[b * 2 + 1], cx = uv[c * 2], cy = uv[c * 2 + 1]
+    const det = (bx - ax) * (cy - ay) - (cx - ax) * (by - ay)
+    if (Math.abs(det) < 1e-18) return { t: best, w0: 1, w1: 0, w2: 0 }
+    const w1 = ((x - ax) * (cy - ay) - (cx - ax) * (y - ay)) / det
+    const w2 = ((bx - ax) * (y - ay) - (x - ax) * (by - ay)) / det
+    return { t: best, w0: 1 - w1 - w2, w1, w2 }
   }
 
   /** Map a 2D point plus normal offset to 3D. Writes xyz into out. */
@@ -185,7 +211,15 @@ export class Parameterization {
 
   recenter(t: number, x: number, y: number, z: number, rotationDeg = 0, zoom = 1) {
     const [u0, v0] = this.uvAt3D(t, x, y, z)
-    const s = this.scale[t] || 1
+    this.recenterAt(u0, v0, this.scale[t] || 1, rotationDeg, zoom)
+  }
+
+  /**
+   * Recenter on a 2D point of the current uv space that need not lie on this
+   * mesh: pieces unfolded into one shared sheet all recentre on the same
+   * point with the same scale, so their tiles line up across the fold.
+   */
+  recenterAt(u0: number, v0: number, s: number, rotationDeg = 0, zoom = 1) {
     const rot = (rotationDeg * Math.PI) / 180
     const cs = Math.cos(rot), sn = Math.sin(rot)
     for (let i = 0; i < this.uv.length; i += 2) {

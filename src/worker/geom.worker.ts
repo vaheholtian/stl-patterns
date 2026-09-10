@@ -10,7 +10,7 @@ import { relaxOnSurface } from '../geom/relax'
 import { buildVoronoiCells } from '../geom/voronoiCells'
 import { buildRegionSlab, buildEdgeMarginTool } from '../geom/slab'
 import { Parameterization } from '../geom/parameterization'
-import { buildSurfaceTool, isPlanar, type Polygon } from '../geom/tileTool'
+import { buildSurfaceTool, isPlanar, mitreTool, toolOffsetRange, type Polygon } from '../geom/tileTool'
 import { flattenRegion, flattenPieces } from '../geom/regionFlatten'
 import type { TriMesh } from '../geom/manifold'
 
@@ -42,7 +42,7 @@ ctx.onmessage = async (ev: MessageEvent<Request>) => {
       post({ id: req.id, ok: true, type: 'flatten', result }, [result.positions.buffer, result.indices.buffer, result.normals.buffer, result.uv.buffer])
     } else if (req.type === 'flattenPieces') {
       progress('flattening region')
-      const { pieces, log } = flattenPieces(req.mesh, req.region, req.origin, req.maxAngleDeg)
+      const { pieces, log } = flattenPieces(req.mesh, req.region, req.origin, req.maxAngleDeg, req.joinEdges ?? true)
       post({ id: req.id, ok: true, type: 'flattenPieces', pieces, log }, pieces.flatMap((p) => [p.positions.buffer, p.indices.buffer, p.normals.buffer, p.uv.buffer]))
     }
   } catch (e) {
@@ -50,25 +50,34 @@ ctx.onmessage = async (ev: MessageEvent<Request>) => {
   }
 }
 
-/** Drop small disconnected pieces; always keep the largest. */
-function dropIslands(m: ManifoldToplevel, man: Manifold, minVolume: number, log: string[]): { kept: Manifold; removed: number } {
+/**
+ * Drop small disconnected pieces; always keep the largest. Reports the separate
+ * parts of material that remain: a closed cavity decomposes as its own
+ * (negative-volume) shell and is not a loose part, so only positive volumes
+ * count. More than one part means the pattern has cut the body into pieces
+ * that would print separately; that is said plainly rather than hidden.
+ */
+function dropIslands(m: ManifoldToplevel, man: Manifold, minVolume: number, log: string[]): { kept: Manifold; removed: number; parts: number; removedVolume: number } {
   const parts = man.decompose()
-  if (parts.length <= 1) { for (const p of parts) p.delete(); return { kept: man, removed: 0 } }
+  if (parts.length <= 1) { for (const p of parts) p.delete(); return { kept: man, removed: 0, parts: 1, removedVolume: 0 } }
   let largest = parts[0], largestVol = -1
   for (const p of parts) { const v = p.volume(); if (v > largestVol) { largestVol = v; largest = p } }
   const keep: Manifold[] = []
-  let removed = 0
+  let removed = 0, removedVolume = 0, material = 0
   for (const p of parts) {
-    if (p === largest || p.volume() >= minVolume) keep.push(p)
-    else { removed++; p.delete() }
+    const v = p.volume()
+    if (p === largest || v >= minVolume) { keep.push(p); if (v > 0) material++ }
+    else { removed++; removedVolume += Math.max(0, v); p.delete() }
   }
-  log.push(`${parts.length} pieces after the operation; removed ${removed} island(s) under ${minVolume} mm³`)
+  log.push(`removed ${removed} island(s) under ${minVolume} mm³ (${removedVolume.toFixed(1)} mm³)`)
+  if (material > 1) log.push(`the result is ${material} separate parts of material: the pattern has cut the body into pieces (try inverting the pattern, connecting its material, a larger scale or a wider margin)`)
+  else log.push('the result is one connected part')
   man.delete()
-  if (keep.length === 1) return { kept: keep[0], removed }
+  if (keep.length === 1) return { kept: keep[0], removed, parts: material, removedVolume }
   // pieces are disjoint (they came out of decompose), so compose is safe
   const out = m.Manifold.compose(keep)
   for (const p of keep) p.delete()
-  return { kept: out, removed }
+  return { kept: out, removed, parts: material, removedVolume }
 }
 
 function applyMode(m: ManifoldToplevel, body: Manifold, tool: Manifold, mode: 'cut' | 'recess' | 'emboss'): Manifold {
@@ -124,21 +133,18 @@ function runVoronoi(m: ManifoldToplevel, mesh: TriMesh, region: Uint32Array, par
   raw.delete()
 
   progress('checking islands')
-  const { kept, removed } = dropIslands(m, out, params.minIslandVolume, log)
+  const { kept, removed, parts } = dropIslands(m, out, params.minIslandVolume, log)
   const result = triMeshFromManifold(kept)
   kept.delete()
   log.push(`${result.indices.length / 3} triangles in ${((performance.now() - t0) / 1000).toFixed(1)} s`)
-  return { mesh: result, islandsRemoved: removed, log, ms: performance.now() - t0 }
+  return { mesh: result, islandsRemoved: removed, parts, log, ms: performance.now() - t0 }
 }
 
 function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progress: (s: string, fraction?: number) => void): OpResult {
   const t0 = performance.now()
   const log: string[] = []
   const body = manifoldFromTriMesh(m, mesh)
-  let zMin: number, zMax: number
-  if (params.mode === 'cut') { zMin = -(params.wallThickness + 1); zMax = 1 }
-  else if (params.mode === 'recess') { zMin = -params.depth; zMax = 1 }
-  else { zMin = -0.2; zMax = params.depth }
+  const [zMin, zMax] = toolOffsetRange(params.mode, params.depth, params.wallThickness)
   // one tool per smooth piece, each warped through its own flattening
   const tools: Manifold[] = []
   let nPoly = 0, completed = 0, allPlanar = true
@@ -149,13 +155,14 @@ function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progres
     const sub = { positions: piece.positions, indices: piece.indices, normals: piece.normals, sourceTriangles: new Uint32Array(0) }
     const param = new Parameterization(sub, piece.uv)
     allPlanar &&= isPlanar(param)
-    const polygons: Polygon[] = piece.polygons.map((f) => {
+    const polygons: Polygon[] = [...piece.polygons, ...(piece.foldPolygons ?? [])].map((f) => {
       const poly: Polygon = []
       for (let k = 0; k < f.length; k += 2) poly.push([f[k], f[k + 1]])
       return poly
     })
-    nPoly += polygons.length
-    tools.push(buildSurfaceTool(m, param, polygons, zMin, zMax, params.detail ?? 2.0))
+    nPoly += piece.polygons.length
+    // meet the neighbouring piece's tool at the fold's mitre plane
+    tools.push(mitreTool(m, buildSurfaceTool(m, param, polygons, zMin, zMax, params.detail ?? 2.0), piece.mitres ?? [], zMin, zMax))
     completed++
   })
   log.push(params.pieces.length > 1 ? `${nPoly} polygons over ${params.pieces.length} pieces` : `${nPoly} polygons`)
@@ -179,12 +186,12 @@ function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progres
   if (out !== raw) raw.delete()
   completed++
   progress('Checking connected parts', completed / total)
-  const { kept, removed } = dropIslands(m, out, params.minIslandVolume, log)
+  const { kept, removed, parts } = dropIslands(m, out, params.minIslandVolume, log)
   completed++
   progress('Preparing the result', completed / total)
   const result = triMeshFromManifold(kept)
   kept.delete()
   log.push(`${result.indices.length / 3} triangles in ${((performance.now() - t0) / 1000).toFixed(1)} s`)
   progress('Pattern applied', 1)
-  return { mesh: result, islandsRemoved: removed, log, ms: performance.now() - t0 }
+  return { mesh: result, islandsRemoved: removed, parts, log, ms: performance.now() - t0 }
 }

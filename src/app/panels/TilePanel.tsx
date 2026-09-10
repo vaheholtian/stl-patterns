@@ -6,10 +6,11 @@ import { useTileStore, resolveDef } from '../../state/tileStore'
 import { geomClient } from '../../worker/client'
 import { PreviewClient } from '../../worker/preview-client'
 import { regionCentroid, isBackSide, type FlattenedPiece } from '../../geom/regionFlatten'
-import { buildParameterization, fittedTileSize, polygonsToSurfaceSegments, type LayoutResult } from '../../geom/layout'
+import { buildParameterization, fittedTileSize, polygonsToSurfaceSegments, toolMitres, type LayoutResult } from '../../geom/layout'
 import { getScene } from '../../viewer/sceneRef'
 import type { Pt } from '../../patterns/types'
 import { generatorById, isSeamless } from '../../patterns'
+import { toolOffsetRange } from '../../geom/tileTool'
 
 interface Props {
   region: Uint32Array | null
@@ -52,7 +53,7 @@ export default function TilePanel({ region }: Props) {
     if (!tl.origin) set({ origin })
     s.setBusy('flattening region')
     try {
-      const res = await geomClient().flattenPieces(body.mesh, region, origin, s.segmentAngle, (p) => st().setBusy(p))
+      const res = await geomClient().flattenPieces(body.mesh, region, origin, s.segmentAngle, s.tileLayout.joinEdges !== false, (p) => st().setBusy(p))
       if (!res.pieces.length) throw new Error('no piece of the region could be flattened')
       setFlat(res.pieces)
       setFlatKey(`${regionKey}|${res.pieces.length}`)
@@ -84,6 +85,8 @@ export default function TilePanel({ region }: Props) {
           fitSeam: tl.fitSeam,
           minScale: tl.minScale,
           single,
+          // the tool must reach past each fold to the mitre plane shared with the neighbouring face
+          normalRange: toolOffsetRange(tl.mode, tl.depth, tl.wallThickness),
         }
         const results: LayoutResult[] = []
         const segments: Float32Array[] = []
@@ -93,15 +96,22 @@ export default function TilePanel({ region }: Props) {
         // back too, with an independently placed pattern, would chop the wall into islands
         const active = flat.filter((piece) => !isBackSide(piece, tl.mode, tl.wallThickness))
         if (active.length < flat.length) notes.push(`${flat.length - active.length} piece(s) left alone: the back of a wall cut through from the other side`)
+        // a single copy must cover the whole sheet, not just the piece it is generated for
+        const sheetSize = new Map<number, { width: number; height: number; period: number | null }>()
+        if (single) for (const piece of active) {
+          const size = fittedTileSize(piece, { ...base, origin: piece.origin })
+          const prev = sheetSize.get(piece.sheet)
+          sheetSize.set(piece.sheet, prev ? { width: Math.max(prev.width, size.width), height: Math.max(prev.height, size.height), period: prev.period ?? size.period } : size)
+        }
         for (const piece of active) {
-          // the user's origin drives the piece it lies on; other pieces are centred on themselves
+          // the user's origin drives the sheet it lies on; other sheets are centred on their largest piece
           const settings = { ...base, origin: piece.origin }
           let polys = tilePolys
           let tw = tile.width, th = tile.height
           if (single) {
-            // generate the pattern once at the size of the flattened piece (rounded so
+            // generate the pattern once at the size of the flattened sheet (rounded so
             // small origin moves reuse the cached result)
-            const size = fittedTileSize(piece, settings)
+            const size = sheetSize.get(piece.sheet)!
             tw = Math.ceil(size.width); th = Math.ceil(size.height)
             if (size.period) tw = size.period // a ring must wrap exactly once
             const key = JSON.stringify([tileDef.generatorId, resolved.params, tileDef.invert, tileDef.connectMaterial, tileDef.seamless, resolved.mirror, tw, th, lineWidth, tileDef.svgTile ? tileDef.svgTile.polygons.length : 0])
@@ -127,7 +137,7 @@ export default function TilePanel({ region }: Props) {
           if (active.length === 1) notes.push(...res.log)
           else for (const l of res.log) {
             if (l.startsWith('left solid')) masked++
-            if (l.includes('automatic seam fit unsupported') && !notes.includes(l)) notes.push(l)
+            if ((l.includes('automatic seam fit unsupported') || l.includes('closing edge') || l.includes('meets itself')) && !notes.includes(l)) notes.push(l)
           }
           segments.push(polygonsToSurfaceSegments(res.param, res.polygons))
         }
@@ -156,7 +166,7 @@ export default function TilePanel({ region }: Props) {
       }
     }, 60)
     return () => { cancelled = true; if (layoutTimer.current) clearTimeout(layoutTimer.current); previewClient.cancel() }
-  }, [previewClient, flat, tile, tilePolys, tileDef, resolved, gen, single, lineWidth, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.fitSeam, tl.minScale, tl.mode, tl.wallThickness])
+  }, [previewClient, flat, tile, tilePolys, tileDef, resolved, gen, single, lineWidth, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.fitSeam, tl.minScale, tl.mode, tl.wallThickness, tl.depth])
 
   // when the origin is picked, the pieces that centre on it (and any far-side cap) move: re-flatten
   const lastOrigin = useRef<string>('')
@@ -174,8 +184,12 @@ export default function TilePanel({ region }: Props) {
     if (!body || !layout || !flat) return
     s.setBusy('tile: Preparing pattern', 0)
     try {
-      const pieces = layout.map((l) => ({
-        polygons: l.polygons.map((p: Pt[]) => { const f = new Float32Array(p.length * 2); p.forEach(([x, y], i) => { f[i * 2] = x; f[i * 2 + 1] = y }); return f }),
+      const pack = (p: Pt[]) => { const f = new Float32Array(p.length * 2); p.forEach(([x, y], i) => { f[i * 2] = x; f[i * 2 + 1] = y }); return f }
+      const active = flat.filter((piece) => !isBackSide(piece, tl.mode, tl.wallThickness))
+      const pieces = layout.map((l, i) => ({
+        polygons: l.polygons.map(pack),
+        foldPolygons: l.foldPolygons.map(pack),
+        mitres: active[i] ? toolMitres(active[i], l) : [],
         positions: l.param.sub.positions,
         indices: l.param.sub.indices,
         normals: l.param.sub.normals,
@@ -191,6 +205,7 @@ export default function TilePanel({ region }: Props) {
       }, (p, fraction) => st().setBusy(`tile: ${p}`, fraction))
       st().replaceMesh(body.id, result.mesh)
       st().pushLog(['Tiled pattern applied', ...result.log])
+      if (result.parts > 1) useNotifications.getState().show('tile', 'Tiled pattern', [`The result is ${result.parts} separate parts of material. The pattern has cut the body into pieces that would print separately: try inverting the pattern, connecting its material, a larger scale or a wider margin.`], 'error')
       getScene()?.setOverlayLines(null)
       setFlat(null); setLayout(null)
     } catch (e) {
@@ -206,7 +221,11 @@ export default function TilePanel({ region }: Props) {
       return t === 'seam' ? 'ring-shaped: tile wraps around' : t === 'cap' ? 'closed: far-side cap left solid' : 'open surface'
     }
     const caps = pieces.filter((p) => p.topology === 'cap').length, seams = pieces.filter((p) => p.topology === 'seam').length
-    return `${pieces.length} smooth pieces (split at ${segmentAngle}°), each patterned on its own` + (caps ? `; ${caps} closed` : '') + (seams ? `; ${seams} ring-shaped` : '')
+    const sheets = new Set(pieces.map((p) => p.sheet)).size
+    const how = sheets === pieces.length ? 'each patterned on its own'
+      : sheets === 1 ? 'unfolded into one sheet so the pattern continues across the edges'
+      : `unfolded into ${sheets} sheets; the pattern continues across edges within a sheet`
+    return `${pieces.length} smooth pieces (split at ${segmentAngle}°), ${how}` + (caps ? `; ${caps} closed` : '') + (seams ? `; ${seams} ring-shaped` : '')
   }
 
   return (
@@ -238,6 +257,10 @@ export default function TilePanel({ region }: Props) {
         </select>
       </div>
       {!single && <div className="row"><label>Fit whole repeats around seam</label><input type="checkbox" checked={tl.fitSeam} onChange={(e) => set({ fitSeam: e.target.checked })} /></div>}
+      <div className="row" title="unfold faces that meet at a sharp edge like the net of a box, so the pattern continues across the edge instead of restarting on each face; off keeps a solid margin along every edge">
+        <label>Continue across sharp edges</label>
+        <input type="checkbox" checked={tl.joinEdges !== false} onChange={(e) => set({ joinEdges: e.target.checked })} />
+      </div>
       <div className="row" title="on curved surfaces the tile shrinks away from the origin; below this size the surface is left solid"><label>Skip where smaller than</label><input type="number" step={5} min={0} max={95} value={Math.round(tl.minScale * 100)} onChange={(e) => set({ minScale: Number(e.target.value) / 100 })} /></div>
       <div className="row" title="max edge length of the tool mesh, mm; smaller follows tight curves better but makes bigger files"><label>Detail (mm)</label><input type="number" step={0.5} min={0.5} max={5} value={tl.detail} onChange={(e) => set({ detail: Number(e.target.value) })} /></div>
       <div className="row">

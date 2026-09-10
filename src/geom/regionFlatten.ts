@@ -6,6 +6,8 @@ import { flattenLSCM } from './lscm'
 import { FaceAdjacency } from './segmentation'
 import { SurfaceIndex } from './bvh'
 import { triangleAreaNormal } from './sampling'
+import { Parameterization } from './parameterization'
+import type { Mitre } from './tileTool'
 
 export interface FlattenedRegion {
   positions: Float32Array
@@ -321,6 +323,381 @@ export interface FlattenedPiece extends FlattenedRegion {
    * mm behind it. A through-cut from the front already perforates this side.
    */
   backing: { fraction: number; distance: number } | null
+  /** pieces with the same sheet id were unfolded into one 2D sheet and lay their tiles out in one shared frame */
+  sheet: number
+  /** point of the sheet's uv space that the layout origin maps to, and the mm-per-uv scale there */
+  frame: { u0: number; v0: number; scale: number } | null
+  /** vertices on folds shared with another piece of the same sheet; edges between them are not a real boundary */
+  foldVertices: number[]
+  /** boundary edges of this piece that are folds to another piece of the same sheet */
+  foldEdges: [number, number][]
+  /**
+   * One per straight fold: the plane bisecting the two faces, so neighbouring
+   * tools meet at a mitre instead of each cutting on through the other's wall.
+   */
+  mitres: Mitre[]
+  /**
+   * Where the sheet wraps round and meets itself at this piece (the last edge of
+   * a ring of walls): the two sides coincide after the sheet's `period`. The
+   * layout joins it, as a fold with this mitre, only when the tile repeats a
+   * whole number of times over that period; otherwise it stays a real edge.
+   */
+  closure: { edges: [number, number][]; vertices: number[]; mitre: Mitre; length: number } | null
+}
+
+function triangleNormal(p: Float32Array, ix: Uint32Array, t: number): [number, number, number] {
+  const a = ix[t * 3] * 3, b = ix[t * 3 + 1] * 3, c = ix[t * 3 + 2] * 3
+  const ux = p[b] - p[a], uy = p[b + 1] - p[a + 1], uz = p[b + 2] - p[a + 2]
+  const vx = p[c] - p[a], vy = p[c + 1] - p[a + 1], vz = p[c + 2] - p[a + 2]
+  const nx = uy * vz - uz * vy, ny = uz * vx - ux * vz, nz = ux * vy - uy * vx
+  const len = Math.hypot(nx, ny, nz) || 1
+  return [nx / len, ny / len, nz / len]
+}
+
+/** Triangle owning each boundary edge, keyed "lo,hi". */
+function boundaryTriangles(ix: Uint32Array): Map<string, number> {
+  const owner = new Map<string, number>(), count = new Map<string, number>()
+  for (let t = 0; t < ix.length / 3; t++) for (let c = 0; c < 3; c++) {
+    const a = ix[t * 3 + c], b = ix[t * 3 + ((c + 1) % 3)]
+    const k = a < b ? `${a},${b}` : `${b},${a}`
+    count.set(k, (count.get(k) ?? 0) + 1)
+    owner.set(k, t)
+  }
+  for (const [k, n] of count) if (n !== 1) owner.delete(k)
+  return owner
+}
+
+/**
+ * The mitre plane of a straight fold between pieces A and B: through the fold
+ * line, bisecting the two faces, oriented towards A. Null for a curved fold.
+ */
+function mitrePlane(A: FlattenedPiece, edgesA: [number, number][], B: FlattenedPiece, edgesB: [number, number][]): (Mitre & { otherFaceNormal: [number, number, number] }) | null {
+  const P = A.positions
+  const pts: [number, number, number][] = []
+  for (const [a, b] of edgesA) for (const v of [a, b]) pts.push([P[v * 3], P[v * 3 + 1], P[v * 3 + 2]])
+  if (pts.length < 2) return null
+  // the fold line: through the two farthest-apart fold vertices
+  let p0 = pts[0], p1 = pts[1], far = -1
+  for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+    const d = Math.hypot(pts[i][0] - pts[j][0], pts[i][1] - pts[j][1], pts[i][2] - pts[j][2])
+    if (d > far) { far = d; p0 = pts[i]; p1 = pts[j] }
+  }
+  if (far < 1e-6) return null
+  const d: [number, number, number] = [(p1[0] - p0[0]) / far, (p1[1] - p0[1]) / far, (p1[2] - p0[2]) / far]
+  for (const q of pts) {
+    const w = [q[0] - p0[0], q[1] - p0[1], q[2] - p0[2]]
+    const along = w[0] * d[0] + w[1] * d[1] + w[2] * d[2]
+    if (Math.hypot(w[0] - along * d[0], w[1] - along * d[1], w[2] - along * d[2]) > 0.05) return null // curved fold
+  }
+  // average face normal on each side, and a point inside A next to the fold
+  const side = (piece: FlattenedPiece, edges: [number, number][]): { n: [number, number, number]; inside: [number, number, number] } => {
+    const owner = boundaryTriangles(piece.indices)
+    const n: [number, number, number] = [0, 0, 0], inside: [number, number, number] = [0, 0, 0]
+    let count = 0
+    for (const [a, b] of edges) {
+      const t = owner.get(a < b ? `${a},${b}` : `${b},${a}`)
+      if (t === undefined) continue
+      const tn = triangleNormal(piece.positions, piece.indices, t)
+      n[0] += tn[0]; n[1] += tn[1]; n[2] += tn[2]
+      for (let c = 0; c < 3; c++) {
+        const v = piece.indices[t * 3 + c]
+        if (v === a || v === b) continue
+        inside[0] += piece.positions[v * 3]; inside[1] += piece.positions[v * 3 + 1]; inside[2] += piece.positions[v * 3 + 2]
+        count++
+      }
+    }
+    const len = Math.hypot(n[0], n[1], n[2]) || 1
+    return { n: [n[0] / len, n[1] / len, n[2] / len], inside: [inside[0] / (count || 1), inside[1] / (count || 1), inside[2] / (count || 1)] }
+  }
+  const a = side(A, edgesA), b = side(B, edgesB)
+  let n: [number, number, number] = [a.n[0] - b.n[0], a.n[1] - b.n[1], a.n[2] - b.n[2]]
+  const len = Math.hypot(n[0], n[1], n[2])
+  if (len < 1e-6) return null
+  n = [n[0] / len, n[1] / len, n[2] / len]
+  const point: [number, number, number] = [(p0[0] + p1[0]) / 2, (p0[1] + p1[1]) / 2, (p0[2] + p1[2]) / 2]
+  if ((a.inside[0] - point[0]) * n[0] + (a.inside[1] - point[1]) * n[1] + (a.inside[2] - point[2]) * n[2] < 0) n = [-n[0], -n[1], -n[2]]
+  return { point, normal: n, direction: d, halfLength: far / 2, faceNormal: a.n, otherFaceNormal: b.n }
+}
+
+/** Signed uv area of a flattening (positive when it matches the 3D winding). */
+function signedUvArea(uv: Float32Array, ix: Uint32Array): number {
+  let s = 0
+  for (let t = 0; t < ix.length; t += 3) {
+    const a = ix[t], b = ix[t + 1], c = ix[t + 2]
+    s += (uv[b * 2] - uv[a * 2]) * (uv[c * 2 + 1] - uv[a * 2 + 1]) - (uv[c * 2] - uv[a * 2]) * (uv[b * 2 + 1] - uv[a * 2 + 1])
+  }
+  return s / 2
+}
+
+function positionKey(p: Float32Array, v: number): string {
+  return `${Math.round(p[v * 3] * 1e4)},${Math.round(p[v * 3 + 1] * 1e4)},${Math.round(p[v * 3 + 2] * 1e4)}`
+}
+
+/** A sharp edge shared by two pieces: its true length, matched vertex pairs (a's vertex, b's vertex) and a's edges along it. */
+interface Fold { a: number; b: number; length: number; pairs: [number, number][]; edges: [number, number][] }
+
+/** Shared sharp edges between pieces, matched by vertex position along boundary edges both pieces own. */
+function findFolds(pieces: FlattenedPiece[]): Fold[] {
+  const keys = pieces.map((piece) => {
+    const map = new Map<string, number[]>()
+    for (let v = 0; v < piece.positions.length / 3; v++) {
+      const k = positionKey(piece.positions, v)
+      const list = map.get(k)
+      if (list) list.push(v); else map.set(k, [v])
+    }
+    return map
+  })
+  const boundary = pieces.map((piece) => {
+    const ends = new Map<string, [number, number]>()
+    const seen = new Map<string, number>()
+    const ix = piece.indices
+    for (let t = 0; t < ix.length; t += 3) for (let c = 0; c < 3; c++) {
+      const a = ix[t + c], b = ix[t + ((c + 1) % 3)]
+      const k = a < b ? `${a},${b}` : `${b},${a}`
+      seen.set(k, (seen.get(k) ?? 0) + 1)
+      ends.set(k, [a, b])
+    }
+    const edges: [number, number][] = []
+    for (const [k, n] of seen) if (n === 1) edges.push(ends.get(k)!)
+    return edges
+  })
+  const folds: Fold[] = []
+  for (let i = 0; i < pieces.length; i++) for (let j = i + 1; j < pieces.length; j++) {
+    // a wrapping seam puts one position at two uv points a period apart; a flat ring's seam does not
+    const seamI = new Set(pieces[i].period ? pieces[i].seamVertices : []), seamJ = new Set(pieces[j].period ? pieces[j].seamVertices : [])
+    const pairs: [number, number][] = []
+    const edges: [number, number][] = []
+    let length = 0
+    const matched = new Set<number>()
+    const P = pieces[i].positions
+    for (const [a, b] of boundary[i]) {
+      const ja = keys[j].get(positionKey(P, a)), jb = keys[j].get(positionKey(P, b))
+      if (!ja || !jb) continue
+      edges.push([a, b])
+      length += Math.hypot(P[a * 3] - P[b * 3], P[a * 3 + 1] - P[b * 3 + 1], P[a * 3 + 2] - P[b * 3 + 2])
+      for (const [v, js] of [[a, ja], [b, jb]] as [number, number[]][]) {
+        if (matched.has(v) || seamI.has(v)) continue
+        matched.add(v)
+        for (const w of js) if (!seamJ.has(w)) pairs.push([v, w])
+      }
+    }
+    if (edges.length) folds.push({ a: i, b: j, length, pairs, edges })
+  }
+  return folds
+}
+
+/** Similarity transform (rotation, uniform scale, translation; no reflection) taking `src` onto `dst` in the least-squares sense. */
+function fitSimilarity(src: [number, number][], dst: [number, number][]): { s: number; cos: number; sin: number; tx: number; ty: number } | null {
+  const n = src.length
+  if (n < 2) return null
+  let sx = 0, sy = 0, dx = 0, dy = 0
+  for (let i = 0; i < n; i++) { sx += src[i][0]; sy += src[i][1]; dx += dst[i][0]; dy += dst[i][1] }
+  sx /= n; sy /= n; dx /= n; dy /= n
+  let a = 0, b = 0, norm = 0
+  for (let i = 0; i < n; i++) {
+    const x = src[i][0] - sx, y = src[i][1] - sy, u = dst[i][0] - dx, v = dst[i][1] - dy
+    a += x * u + y * v
+    b += x * v - y * u
+    norm += x * x + y * y
+  }
+  if (norm < 1e-18) return null
+  const s = Math.hypot(a, b) / norm
+  if (!(s > 0)) return null
+  const cos = a / (s * norm), sin = b / (s * norm)
+  return { s, cos, sin, tx: dx - s * (cos * sx - sin * sy), ty: dy - s * (sin * sx + cos * sy) }
+}
+
+/**
+ * Unfold pieces that meet along sharp edges into shared sheets, like the net of
+ * a box: a child's uv is moved by a similarity transform so its side of the
+ * fold lands where the parent has it. A fold is only joined when the shared
+ * edge flattens the same way in both pieces (two planar faces always do; a
+ * cylinder wall and its flat lid never do). Longest folds are joined first,
+ * starting from the piece under the layout origin, so a closed corner keeps
+ * its two longest edges continuous and cuts the third.
+ */
+function unfoldSheets(pieces: FlattenedPiece[], root: number, log: string[]): void {
+  // consistent orientation first: a mirrored uv cannot be aligned by a rotation
+  for (const piece of pieces) {
+    if (signedUvArea(piece.uv, piece.indices) >= 0) continue
+    for (let i = 0; i < piece.uv.length; i += 2) piece.uv[i] = -piece.uv[i]
+    if (piece.period) piece.period = [-piece.period[0], piece.period[1]]
+  }
+  pieces.forEach((piece, i) => { piece.sheet = i; piece.foldVertices = []; piece.foldEdges = []; piece.mitres = []; piece.closure = null })
+  const folds = findFolds(pieces)
+  const placed = new Uint8Array(pieces.length)
+  let nPlaced = 0
+  const rejected: string[] = []
+  const place = (i: number) => { placed[i] = 1; nPlaced++ }
+  // the unfolding tree: which piece each was unfolded from, along which fold
+  const parentOf = new Int32Array(pieces.length).fill(-1)
+  const parentFold: (Fold | null)[] = pieces.map(() => null)
+  place(root)
+  let joined = 0
+  while (nPlaced < pieces.length) {
+    // the longest fold between a placed piece and one still loose
+    let best: Fold | null = null
+    for (const f of folds) if (placed[f.a] !== placed[f.b] && (!best || f.length > best.length)) best = f
+    if (!best) {
+      // nothing joins what is placed: the largest loose piece starts its own sheet
+      let next = -1
+      for (let i = 0; i < pieces.length; i++) if (!placed[i] && (next < 0 || pieces[i].area > pieces[next].area)) next = i
+      place(next)
+      continue
+    }
+    folds.splice(folds.indexOf(best), 1) // settled either way
+    const parent = placed[best.a] ? best.a : best.b, child = parent === best.a ? best.b : best.a
+    const P = pieces[parent], C = pieces[child]
+    const src: [number, number][] = [], dst: [number, number][] = []
+    const toParent = new Map<number, number>() // a's vertex -> parent's vertex
+    for (const [va, vb] of best.pairs) {
+      const vp = parent === best.a ? va : vb, vc = parent === best.a ? vb : va
+      dst.push([P.uv[vp * 2], P.uv[vp * 2 + 1]])
+      src.push([C.uv[vc * 2], C.uv[vc * 2 + 1]])
+      toParent.set(va, vp)
+    }
+    const fit = fitSimilarity(src, dst)
+    // residual in mm: the parent's uv along the fold is scaled by the fold's true length over its uv length
+    let uvLength = 0
+    for (const [a, b] of best.edges) {
+      const pa = toParent.get(a), pb = toParent.get(b)
+      if (pa === undefined || pb === undefined) continue
+      uvLength += Math.hypot(P.uv[pa * 2] - P.uv[pb * 2], P.uv[pa * 2 + 1] - P.uv[pb * 2 + 1])
+    }
+    const mmPerUv = uvLength > 0 ? best.length / uvLength : 1
+    let worst = 0
+    if (fit) for (let i = 0; i < src.length; i++) {
+      const [x, y] = src[i]
+      const u = fit.s * (fit.cos * x - fit.sin * y) + fit.tx, v = fit.s * (fit.sin * x + fit.cos * y) + fit.ty
+      worst = Math.max(worst, Math.hypot(u - dst[i][0], v - dst[i][1]) * mmPerUv)
+    }
+    const tolerance = Math.max(0.05, Math.min(0.5, best.length * 0.01))
+    if (!fit || worst > tolerance || fit.s < 0.5 || fit.s > 2) {
+      rejected.push(`${best.length.toFixed(0)} mm edge (${fit ? `sides differ by ${worst.toFixed(2)} mm` : 'too few shared points'})`)
+      continue
+    }
+    for (let i = 0; i < C.uv.length; i += 2) {
+      const x = C.uv[i], y = C.uv[i + 1]
+      C.uv[i] = fit.s * (fit.cos * x - fit.sin * y) + fit.tx
+      C.uv[i + 1] = fit.s * (fit.sin * x + fit.cos * y) + fit.ty
+    }
+    if (C.period) C.period = [fit.s * (fit.cos * C.period[0] - fit.sin * C.period[1]), fit.s * (fit.sin * C.period[0] + fit.cos * C.period[1])]
+    C.sheet = P.sheet
+    const A = pieces[best.a], B = pieces[best.b]
+    const toB = new Map<number, number>()
+    for (const [va, vb] of best.pairs) { A.foldVertices.push(va); B.foldVertices.push(vb); toB.set(va, vb) }
+    const edgesB: [number, number][] = []
+    for (const [a, b] of best.edges) {
+      A.foldEdges.push([a, b])
+      const ba = toB.get(a), bb = toB.get(b)
+      if (ba !== undefined && bb !== undefined) { edgesB.push([ba, bb]); B.foldEdges.push([ba, bb]) }
+    }
+    const mitre = mitrePlane(A, best.edges, B, edgesB)
+    if (mitre) {
+      const { otherFaceNormal, ...own } = mitre
+      A.mitres.push(own)
+      B.mitres.push({ ...own, normal: [-own.normal[0], -own.normal[1], -own.normal[2]], faceNormal: otherFaceNormal })
+    }
+    parentOf[child] = parent
+    parentFold[child] = best
+    place(child)
+    joined++
+  }
+  if (joined) {
+    const sheets = new Set(pieces.map((p) => p.sheet)).size
+    log.push(`${joined} sharp edge(s) unfolded flat so the pattern continues across them: ${pieces.length} pieces form ${sheets} sheet(s)`)
+  }
+  if (rejected.length) log.push(`not unfolded, the edge does not flatten the same way on both sides: ${rejected.join(', ')}`)
+  closeRings(pieces, folds, parentOf, parentFold, log)
+}
+
+/** 3D direction of a fold, from its longest edge on piece A. */
+function foldDirection(pieces: FlattenedPiece[], f: Fold): [number, number, number] {
+  const P = pieces[f.a].positions
+  let best: [number, number, number] = [0, 0, 0], len = -1
+  for (const [a, b] of f.edges) {
+    const d: [number, number, number] = [P[b * 3] - P[a * 3], P[b * 3 + 1] - P[a * 3 + 1], P[b * 3 + 2] - P[a * 3 + 2]]
+    const l = Math.hypot(...d)
+    if (l > len) { len = l; best = [d[0] / l, d[1] / l, d[2] / l] }
+  }
+  return best
+}
+
+/**
+ * A fold left over between two pieces of one sheet is where the sheet wraps
+ * round and meets itself: the last edge of a ring of walls. When its two sides
+ * coincide after a plain translation, that translation is the sheet's period
+ * and the tile can repeat a whole number of times around it, exactly as around
+ * a cylinder; the fold is recorded as the sheet's closure for the layout to
+ * join. A fold whose sides only meet after a turn (the third edge of a cube
+ * corner, the last side of a tapered box) cannot close flat and stays cut, and
+ * so does a fold to a ring-shaped piece (a box rim): its two sides do line up
+ * by a translation, but the loop would run across the piece's hole. One
+ * closure per sheet: a whole shell has several rings of different lengths, and
+ * one period can only fit one of them.
+ */
+function closeRings(pieces: FlattenedPiece[], folds: Fold[], parentOf: Int32Array, parentFold: (Fold | null)[], log: string[]): void {
+  const candidates: { fold: Fold; period: [number, number]; edgesB: [number, number][] }[] = []
+  const cut: string[] = []
+  // the loop a closing fold makes with the unfolding tree: the pieces and folds from a up to the
+  // common ancestor and back down to b
+  const loop = (a: number, b: number): { pieces: number[]; folds: Fold[] } => {
+    const up = (i: number) => { const path = [i]; while (parentOf[path[path.length - 1]] >= 0) path.push(parentOf[path[path.length - 1]]); return path }
+    const pa = up(a), pb = up(b), lca = pa.find((x) => pb.includes(x))!
+    const ia = pa.indexOf(lca), ib = pb.indexOf(lca)
+    return { pieces: [...pa.slice(0, ia + 1), ...pb.slice(0, ib)], folds: [...pa.slice(0, ia), ...pb.slice(0, ib)].map((i) => parentFold[i]!) }
+  }
+  for (const f of folds) {
+    const A = pieces[f.a], B = pieces[f.b]
+    if (A.sheet !== B.sheet || f.pairs.length < 2) continue
+    // the ring must be a straight band: every fold around it parallel to the closing one, and no
+    // piece on the way ring-shaped itself (a rim needed a seam cut to flatten: the loop would run
+    // across its hole)
+    const ring = loop(f.a, f.b)
+    if (ring.pieces.some((i) => pieces[i].seamVertices.length)) { cut.push(`${f.length.toFixed(0)} mm edge (the loop runs through a ring-shaped piece with a hole)`); continue }
+    const d0 = foldDirection(pieces, f)
+    const skew = ring.folds.map((g) => foldDirection(pieces, g)).map((d) => (Math.acos(Math.min(1, Math.abs(d[0] * d0[0] + d[1] * d0[1] + d[2] * d0[2]))) * 180) / Math.PI)
+    if (skew.some((s) => s > 1)) { cut.push(`${f.length.toFixed(0)} mm edge (the loop's edges are not parallel, so it is not a straight band: ${Math.max(...skew).toFixed(0)}° apart)`); continue }
+    // the translation taking B's side of the fold onto A's, and how far it leaves each pair apart
+    let tx = 0, ty = 0
+    for (const [va, vb] of f.pairs) { tx += A.uv[va * 2] - B.uv[vb * 2]; ty += A.uv[va * 2 + 1] - B.uv[vb * 2 + 1] }
+    tx /= f.pairs.length; ty /= f.pairs.length
+    let uvLength = 0
+    for (const [a, b] of f.edges) uvLength += Math.hypot(A.uv[a * 2] - A.uv[b * 2], A.uv[a * 2 + 1] - A.uv[b * 2 + 1])
+    const mmPerUv = uvLength > 0 ? f.length / uvLength : 1
+    let worst = 0
+    for (const [va, vb] of f.pairs) worst = Math.max(worst, Math.hypot(A.uv[va * 2] - B.uv[vb * 2] - tx, A.uv[va * 2 + 1] - B.uv[vb * 2 + 1] - ty) * mmPerUv)
+    if (worst > Math.max(0.05, Math.min(0.5, f.length * 0.01))) {
+      const fit = fitSimilarity(f.pairs.map(([, vb]) => [B.uv[vb * 2], B.uv[vb * 2 + 1]]), f.pairs.map(([va]) => [A.uv[va * 2], A.uv[va * 2 + 1]]))
+      const turn = fit ? Math.abs((Math.atan2(fit.sin, fit.cos) * 180) / Math.PI) : 0
+      cut.push(`${f.length.toFixed(0)} mm edge (the faces turn by ${turn.toFixed(0)}° there, so the sheet cannot wrap round flat)`)
+      continue
+    }
+    const toB = new Map(f.pairs)
+    const edgesB: [number, number][] = []
+    for (const [a, b] of f.edges) { const ba = toB.get(a), bb = toB.get(b); if (ba !== undefined && bb !== undefined) edgesB.push([ba, bb]) }
+    candidates.push({ fold: f, period: [tx, ty], edgesB })
+  }
+  candidates.sort((x, y) => y.fold.length - x.fold.length)
+  const closed = new Set<number>()
+  for (const { fold: f, period, edgesB } of candidates) {
+    const A = pieces[f.a], B = pieces[f.b]
+    if (closed.has(A.sheet)) { cut.push(`${f.length.toFixed(0)} mm edge (a second ring on the same sheet)`); continue }
+    if (pieces.some((p) => p.sheet === A.sheet && p.period)) { cut.push(`${f.length.toFixed(0)} mm edge (the sheet already wraps another way)`); continue }
+    const mitre = mitrePlane(A, f.edges, B, edgesB)
+    if (!mitre) { cut.push(`${f.length.toFixed(0)} mm edge (not straight)`); continue }
+    const { otherFaceNormal, ...own } = mitre
+    A.closure = { edges: f.edges, vertices: f.pairs.map(([va]) => va), mitre: own, length: f.length }
+    B.closure = { edges: edgesB, vertices: f.pairs.map(([, vb]) => vb), mitre: { ...own, normal: [-own.normal[0], -own.normal[1], -own.normal[2]], faceNormal: otherFaceNormal }, length: f.length }
+    for (const p of pieces) if (p.sheet === A.sheet) p.period = [period[0], period[1]]
+    closed.add(A.sheet)
+    // the period in millimetres: the sheet's uv scale at the fold
+    let uvLength = 0
+    for (const [a, b] of f.edges) uvLength += Math.hypot(A.uv[a * 2] - A.uv[b * 2], A.uv[a * 2 + 1] - A.uv[b * 2 + 1])
+    const mm = Math.hypot(period[0], period[1]) * (uvLength > 0 ? f.length / uvLength : 1)
+    log.push(`the sheet wraps round to meet itself along a ${f.length.toFixed(0)} mm edge: the tile can repeat around its ${mm.toFixed(0)} mm circumference`)
+  }
+  if (cut.length) log.push(`edge(s) left cut where the sheet meets itself: ${cut.join(', ')}`)
 }
 
 /**
@@ -384,7 +761,7 @@ function findBacking(mesh: TriMesh, parts: Uint32Array[], maxDist: number): ({ f
 }
 
 /** Flatten every smooth piece of a region. Pieces that cannot be flattened are skipped with a log line. */
-export function flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], maxAngleDeg: number): { pieces: FlattenedPiece[]; log: string[] } {
+export function flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], maxAngleDeg: number, joinEdges = true): { pieces: FlattenedPiece[]; log: string[] } {
   const parts = splitSmoothPieces(mesh, region, maxAngleDeg)
   const log: string[] = []
   // the piece the origin lies on: the one holding the triangle nearest the origin
@@ -401,7 +778,7 @@ export function flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [numbe
       let area = 0
       const tmp = new Float64Array(3)
       for (const t of part) area += triangleAreaNormal(mesh, t, tmp)
-      pieces.push({ ...flat, origin: own, region: part, area, backing: backing[i] })
+      pieces.push({ ...flat, origin: own, region: part, area, backing: backing[i], sheet: pieces.length, frame: null, foldVertices: [], foldEdges: [], mitres: [], closure: null })
     } catch (e) {
       log.push(`piece of ${part.length} triangles skipped: ${(e as Error).message}`)
     }
@@ -409,6 +786,20 @@ export function flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [numbe
   if (parts.length > 1) {
     const caps = pieces.filter((p) => p.topology === 'cap').length, seams = pieces.filter((p) => p.topology === 'seam').length
     log.push(`${pieces.length} pieces flattened${caps ? `, ${caps} closed (far-side cap left solid)` : ''}${seams ? `, ${seams} ring-shaped (tile wraps)` : ''}`)
+  }
+  let rootIndex = pieces.findIndex((p) => p.region.includes(originTri))
+  if (rootIndex < 0) rootIndex = pieces.reduce((best, p, i) => (p.area > pieces[best].area ? i : best), 0)
+  if (joinEdges && pieces.length > 1) unfoldSheets(pieces, rootIndex, log)
+  // one layout frame per sheet: its origin (the user's, when their piece is on the sheet,
+  // else the centre of the sheet's largest piece) expressed in the sheet's shared uv space
+  for (const sheet of new Set(pieces.map((p) => p.sheet))) {
+    const members = pieces.filter((p) => p.sheet === sheet)
+    const lead = members.includes(pieces[rootIndex]) ? pieces[rootIndex] : members.reduce((a, b) => (b.area > a.area ? b : a))
+    const param = new Parameterization({ positions: lead.positions, indices: lead.indices, normals: lead.normals, sourceTriangles: new Uint32Array(0) }, new Float32Array(lead.uv))
+    const t = lead.originTriangle
+    const [u0, v0] = param.uvAt3D(t, lead.origin[0], lead.origin[1], lead.origin[2])
+    const frame = { u0, v0, scale: param.scale[t] || 1 }
+    for (const p of members) { p.frame = frame; p.origin = lead.origin }
   }
   return { pieces, log }
 }
