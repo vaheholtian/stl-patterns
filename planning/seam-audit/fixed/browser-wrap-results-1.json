@@ -1,0 +1,47 @@
+{
+  "fitted": "Activity\n×\nring-shaped region: cut a seam of 2 vertices so the tile can wrap\nflattened 128 triangles (127 iterations)\nTile layout\n×\n5 repeats around the seam, tile stretched 9.2%\n95 shapes laid out; local size ranges 100% to 100% of true",
+  "rotated": "Activity\n×\nring-shaped region: cut a seam of 2 vertices so the tile can wrap\nflattened 128 triangles (127 iterations)\nTile layout\n×\nrotated tile: automatic seam fit unsupported at this angle (rotate to 0 or 180 degrees to fit the wrap)\n99 shapes laid out; local size ranges 100% to 100% of true",
+  "check": {
+    "id": 3,
+    "ok": true,
+    "type": "check",
+    "manifold": true,
+    "status": "NoError",
+    "volume": 4192.85292692489,
+    "area": 8529.74473879918
+  },
+  "bytes": 5997084,
+  "seamAngle": -3.141592653589793,
+  "mismatches": 0,
+  "holes": 235,
+  "material": 165,
+  "samples": 400,
+  "components": 16,
+  "componentVolumes": [
+    4192.85292692489,
+    -1.3299214934961113e-17,
+    0,
+    -1.0729741562755234e-17,
+    -3.291442409426227e-17,
+    1.605340581510881e-17,
+    0,
+    -1.0729741562755124e-17,
+    1.1191188951546737e-17,
+    0,
+    -6.856481969641634e-18,
+    -2.044796865630927e-18,
+    3.5591394211641745e-18,
+    1.2688044517105738e-17,
+    0,
+    5.809295524116837e-18
+  ],
+  "solidComponents": 1,
+  "log": [
+    "ring-shaped region: cut a seam of 2 vertices so the tile can wrap",
+    "flattened 128 triangles (127 iterations)",
+    "Tiled pattern applied",
+    "95 polygons",
+    "119940 triangles in 0.9 s"
+  ],
+  "errors": []
+}

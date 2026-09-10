@@ -1,0 +1,143 @@
+[
+  {
+    "body": "plate 45°",
+    "angle": 45,
+    "scale": 0.6,
+    "depth": 0.8,
+    "expectedRidgeY": 0.8659137602339152,
+    "actualRidgeY": 0.8659137473760834,
+    "missingHeight": 1.2857831799273356e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 45°",
+    "angle": 45,
+    "scale": 1,
+    "depth": 0.8,
+    "expectedRidgeY": 0.8659137602339152,
+    "actualRidgeY": 0.865913766800289,
+    "missingHeight": -6.5663737780496945e-9,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 45°",
+    "angle": 45,
+    "scale": 1.7,
+    "depth": 0.8,
+    "expectedRidgeY": 0.8659137602339152,
+    "actualRidgeY": 0.8659137564189306,
+    "missingHeight": 3.814984550487566e-9,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 90°",
+    "angle": 90,
+    "scale": 0.6,
+    "depth": 0.8,
+    "expectedRidgeY": 1.131370849898476,
+    "actualRidgeY": 0.6788225471973419,
+    "missingHeight": 0.4525483027011341,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 90°",
+    "angle": 90,
+    "scale": 1,
+    "depth": 0.8,
+    "expectedRidgeY": 1.131370849898476,
+    "actualRidgeY": 1.1313708998095677,
+    "missingHeight": -4.991109170404684e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 90°",
+    "angle": 90,
+    "scale": 1.7,
+    "depth": 0.8,
+    "expectedRidgeY": 1.131370849898476,
+    "actualRidgeY": 1.131370866999907,
+    "missingHeight": -1.710143093802685e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 135°",
+    "angle": 135,
+    "scale": 0.6,
+    "depth": 0.8,
+    "expectedRidgeY": 2.090500743802202,
+    "actualRidgeY": 0.519548275887188,
+    "missingHeight": 1.570952467915014,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 135°",
+    "angle": 135,
+    "scale": 1,
+    "depth": 0.8,
+    "expectedRidgeY": 2.090500743802202,
+    "actualRidgeY": 0.8659137957554179,
+    "missingHeight": 1.2245869480467841,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 135°",
+    "angle": 135,
+    "scale": 1.7,
+    "depth": 0.8,
+    "expectedRidgeY": 2.090500743802202,
+    "actualRidgeY": 1.4720533995987184,
+    "missingHeight": 0.6184473442034837,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "scale": 0.6,
+    "depth": 0.8,
+    "expected": [
+      50.8,
+      -0.8,
+      25
+    ],
+    "actual": [
+      50.479999989271164,
+      -0.47999998927116394,
+      25
+    ],
+    "missingHeight": 0.3200000107288361,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "scale": 1,
+    "depth": 0.8,
+    "expected": [
+      50.8,
+      -0.8,
+      25
+    ],
+    "actual": [
+      50.79999923706055,
+      -0.7999992370605469,
+      25
+    ],
+    "missingHeight": 7.629394531694089e-7,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "scale": 1.7,
+    "depth": 0.8,
+    "expected": [
+      50.8,
+      -0.8,
+      25
+    ],
+    "actual": [
+      50.80000001192093,
+      -0.800000011920929,
+      25
+    ],
+    "missingHeight": -1.1920928910669204e-8,
+    "status": "NoError"
+  }
+]

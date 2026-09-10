@@ -1,0 +1,205 @@
+[
+  {
+    "id": "diamondLattice",
+    "name": "Diamond lattice",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 50
+  },
+  {
+    "id": "squareGrid",
+    "name": "Square / rectangular grid",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 50
+  },
+  {
+    "id": "roundPerforations",
+    "name": "Round perforations",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 48
+  },
+  {
+    "id": "honeycomb",
+    "name": "Honeycomb",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 48
+  },
+  {
+    "id": "roundedSlots",
+    "name": "Rounded slots",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 50
+  },
+  {
+    "id": "lusona",
+    "name": "Mirror curves / lusona",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 53
+  },
+  {
+    "id": "unicursalMaze",
+    "name": "Periodic maze",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 50
+  },
+  {
+    "id": "celtic",
+    "name": "Celtic plait",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 54
+  },
+  {
+    "id": "ammannBeenker",
+    "name": "Ammann–Beenker (Pell repeat)",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 48
+  },
+  {
+    "id": "hankin",
+    "name": "Islamic star strapwork",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 52
+  },
+  {
+    "id": "fermatSpirals",
+    "name": "Stitched Fermat spirals",
+    "native": false,
+    "kind": "motif",
+    "expectedCases": 52
+  },
+  {
+    "id": "gosper",
+    "name": "Gosper / flowsnake",
+    "native": false,
+    "kind": "motif",
+    "expectedCases": 48
+  },
+  {
+    "id": "arrowhead",
+    "name": "Sierpiński arrowhead",
+    "native": false,
+    "kind": "motif",
+    "expectedCases": 48
+  },
+  {
+    "id": "terdragon",
+    "name": "Terdragon",
+    "native": false,
+    "kind": "motif",
+    "expectedCases": 48
+  },
+  {
+    "id": "greekKey",
+    "name": "Greek key / meander",
+    "native": true,
+    "kind": "band",
+    "expectedCases": 51
+  },
+  {
+    "id": "voronoiTile",
+    "name": "Voronoi cells",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 55
+  },
+  {
+    "id": "delaunayTile",
+    "name": "Delaunay mesh",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 55
+  },
+  {
+    "id": "truchet",
+    "name": "Truchet tiling",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 50
+  },
+  {
+    "id": "penroseApproximant",
+    "name": "Penrose tiling (seamless)",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 55
+  },
+  {
+    "id": "hilbert",
+    "name": "Hilbert curve",
+    "native": true,
+    "kind": "band",
+    "expectedCases": 49
+  },
+  {
+    "id": "moire",
+    "name": "Moire lines",
+    "native": true,
+    "kind": "field",
+    "expectedCases": 55
+  },
+  {
+    "id": "guilloche",
+    "name": "Guilloche rosette",
+    "native": true,
+    "kind": "motif",
+    "expectedCases": 59
+  },
+  {
+    "id": "sierpinski",
+    "name": "Sierpinski fractal",
+    "native": true,
+    "kind": "motif",
+    "expectedCases": 49
+  },
+  {
+    "id": "koch",
+    "name": "Koch fractal",
+    "native": true,
+    "kind": "motif",
+    "expectedCases": 54
+  },
+  {
+    "id": "phyllotaxis",
+    "name": "Phyllotaxis spiral",
+    "native": true,
+    "kind": "motif",
+    "expectedCases": 55
+  },
+  {
+    "id": "hyperbolic",
+    "name": "Hyperbolic tiling",
+    "native": true,
+    "kind": "motif",
+    "expectedCases": 56
+  },
+  {
+    "id": "apollonian",
+    "name": "Apollonian gasket",
+    "native": true,
+    "kind": "motif",
+    "expectedCases": 54
+  },
+  {
+    "id": "penrose",
+    "name": "Penrose medallion",
+    "native": false,
+    "kind": "motif",
+    "expectedCases": 54
+  },
+  {
+    "id": "julia",
+    "name": "Julia / Mandelbrot fractal",
+    "native": false,
+    "kind": "motif",
+    "expectedCases": 68
+  }
+]

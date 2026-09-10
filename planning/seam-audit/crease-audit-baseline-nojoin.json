@@ -1,0 +1,917 @@
+[
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 800,
+  "mismatched": 298,
+  "longestRun": 2.6,
+  "runs": 23,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 298,
+   "longestRun": 2.6,
+   "runs": 23,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   23.333332062959673,
+   41.66666603088379
+  ],
+  "lengthRatio": 0.9999999761581421,
+  "ms": 85,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    37.3% of 80 mm mismatched, longest 2.60 mm in 23 runs (37.3% before discounting outlines on the crease); crease turns 0.0° between frames, offset (23.33, 41.67), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 800,
+  "mismatched": 351,
+  "longestRun": 5.7,
+  "runs": 16,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 351,
+   "longestRun": 5.7,
+   "runs": 16,
+   "length": 80
+  },
+  "angleDeg": -5.45483203495678e-7,
+  "phase": [
+   -6.440797805786133,
+   47.31882715284824
+  ],
+  "lengthRatio": 0.9999999928258059,
+  "ms": 52,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    43.9% of 80 mm mismatched, longest 5.70 mm in 16 runs (43.9% before discounting outlines on the crease); crease turns -0.0° between frames, offset (-6.44, 47.32), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   23.333332062959673,
+   41.66666603088379
+  ],
+  "lengthRatio": 0.9999999761581421,
+  "ms": 39,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (23.33, 41.67), length ratio 1.0000"
+ },
+ {
+  "label": "box corner wall 2 | voronoiTile | {\"margin\":0}",
+  "pieces": 3,
+  "sheets": 3,
+  "sameSheet": false,
+  "samples": 800,
+  "mismatched": 298,
+  "longestRun": 2.6,
+  "runs": 23,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 298,
+   "longestRun": 2.6,
+   "runs": 23,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   23.333332062959673,
+   41.66666603088379
+  ],
+  "lengthRatio": 0.9999999761581421,
+  "ms": 55,
+  "log": [
+   "region spans 3 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "3 pieces flattened"
+  ],
+  "text": "cut    37.3% of 80 mm mismatched, longest 2.60 mm in 23 runs (37.3% before discounting outlines on the crease); crease turns 0.0° between frames, offset (23.33, 41.67), length ratio 1.0000"
+ },
+ {
+  "label": "box corner wall 2 | voronoiTile | {\"margin\":0}",
+  "pieces": 3,
+  "sheets": 3,
+  "sameSheet": false,
+  "samples": 400,
+  "mismatched": 160,
+  "longestRun": 5.5,
+  "runs": 8,
+  "length": 40,
+  "raw": {
+   "samples": 400,
+   "mismatched": 160,
+   "longestRun": 5.5,
+   "runs": 8,
+   "length": 40
+  },
+  "angleDeg": 0,
+  "phase": [
+   69.99999809265137,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 55,
+  "log": [
+   "region spans 3 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "3 pieces flattened"
+  ],
+  "text": "cut    40.0% of 40 mm mismatched, longest 5.50 mm in 8 runs (40.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (70.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box corner wall 2 | voronoiTile | {\"margin\":0}",
+  "pieces": 3,
+  "sheets": 3,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 260,
+  "longestRun": 6,
+  "runs": 12,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 260,
+   "longestRun": 6,
+   "runs": 12,
+   "length": 50
+  },
+  "angleDeg": 90,
+  "phase": [
+   46.61666603279114,
+   -41.61666603088379
+  ],
+  "lengthRatio": 1.0000000381469742,
+  "ms": 55,
+  "log": [
+   "region spans 3 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "3 pieces flattened"
+  ],
+  "text": "cut    52.0% of 50 mm mismatched, longest 6.00 mm in 12 runs (52.0% before discounting outlines on the crease); crease turns 90.0° between frames, offset (46.62, -41.62), length ratio 1.0000"
+ },
+ {
+  "label": "box corner wall 2 | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 3,
+  "sheets": 3,
+  "sameSheet": false,
+  "samples": 800,
+  "mismatched": 351,
+  "longestRun": 5.7,
+  "runs": 16,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 351,
+   "longestRun": 5.7,
+   "runs": 16,
+   "length": 80
+  },
+  "angleDeg": -5.45483203495678e-7,
+  "phase": [
+   -6.440797805786133,
+   47.31882715284824
+  ],
+  "lengthRatio": 0.9999999928258059,
+  "ms": 67,
+  "log": [
+   "region spans 3 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "3 pieces flattened"
+  ],
+  "text": "cut    43.9% of 80 mm mismatched, longest 5.70 mm in 16 runs (43.9% before discounting outlines on the crease); crease turns -0.0° between frames, offset (-6.44, 47.32), length ratio 1.0000"
+ },
+ {
+  "label": "box corner wall 2 | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 3,
+  "sheets": 3,
+  "sameSheet": false,
+  "samples": 400,
+  "mismatched": 195,
+  "longestRun": 3.7,
+  "runs": 13,
+  "length": 40,
+  "raw": {
+   "samples": 400,
+   "mismatched": 195,
+   "longestRun": 3.7,
+   "runs": 13,
+   "length": 40
+  },
+  "angleDeg": -2.6886425530392444e-7,
+  "phase": [
+   55.9044828426838,
+   42.12705039858818
+  ],
+  "lengthRatio": 0.9999999666106556,
+  "ms": 67,
+  "log": [
+   "region spans 3 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "3 pieces flattened"
+  ],
+  "text": "cut    48.8% of 40 mm mismatched, longest 3.70 mm in 13 runs (48.8% before discounting outlines on the crease); crease turns -0.0° between frames, offset (55.90, 42.13), length ratio 1.0000"
+ },
+ {
+  "label": "box corner wall 2 | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 3,
+  "sheets": 3,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 247,
+  "longestRun": 4.1000000000000005,
+  "runs": 14,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 247,
+   "longestRun": 4.1000000000000005,
+   "runs": 14,
+   "length": 50
+  },
+  "angleDeg": 89.9999998831488,
+  "phase": [
+   62.27525907635689,
+   -5.181936678409578
+  ],
+  "lengthRatio": 1.000000058169655,
+  "ms": 67,
+  "log": [
+   "region spans 3 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "3 pieces flattened"
+  ],
+  "text": "cut    49.4% of 50 mm mismatched, longest 4.10 mm in 14 runs (49.4% before discounting outlines on the crease); crease turns 90.0° between frames, offset (62.28, -5.18), length ratio 1.0000"
+ },
+ {
+  "label": "box corner wall 2 | voronoiTile | {\"margin\":3}",
+  "pieces": 3,
+  "sheets": 3,
+  "sameSheet": false,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   23.333332062959673,
+   41.66666603088379
+  ],
+  "lengthRatio": 0.9999999761581421,
+  "ms": 52,
+  "log": [
+   "region spans 3 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "3 pieces flattened"
+  ],
+  "text": "cut    0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (23.33, 41.67), length ratio 1.0000"
+ },
+ {
+  "label": "box corner wall 2 | voronoiTile | {\"margin\":3}",
+  "pieces": 3,
+  "sheets": 3,
+  "sameSheet": false,
+  "samples": 400,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 40,
+  "raw": {
+   "samples": 400,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 40
+  },
+  "angleDeg": 0,
+  "phase": [
+   69.99999809265137,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 52,
+  "log": [
+   "region spans 3 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "3 pieces flattened"
+  ],
+  "text": "cut    0.0% of 40 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (70.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box corner wall 2 | voronoiTile | {\"margin\":3}",
+  "pieces": 3,
+  "sheets": 3,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 90,
+  "phase": [
+   46.61666603279114,
+   -41.61666603088379
+  ],
+  "lengthRatio": 1.0000000381469742,
+  "ms": 52,
+  "log": [
+   "region spans 3 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "3 pieces flattened"
+  ],
+  "text": "cut    0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 90.0° between frames, offset (46.62, -41.62), length ratio 1.0000"
+ },
+ {
+  "label": "plate 20° | voronoiTile | {\"margin\":0}",
+  "pieces": 1,
+  "note": "single piece: local size 100.0% to 100.0%"
+ },
+ {
+  "label": "plate 20° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 1,
+  "note": "single piece: local size 100.0% to 100.0%"
+ },
+ {
+  "label": "plate 20° | voronoiTile | {\"margin\":3}",
+  "pieces": 1,
+  "note": "single piece: local size 100.0% to 100.0%"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 176,
+  "longestRun": 3,
+  "runs": 13,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 176,
+   "longestRun": 3,
+   "runs": 13,
+   "length": 50
+  },
+  "angleDeg": -39.805573191103804,
+  "phase": [
+   -24.72669372797012,
+   4.381034965515127
+  ],
+  "lengthRatio": 0.999999965097796,
+  "ms": 33,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    35.2% of 50 mm mismatched, longest 3.00 mm in 13 runs (35.2% before discounting outlines on the crease); crease turns -39.8° between frames, offset (-24.73, 4.38), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 180,
+  "longestRun": 3.2,
+  "runs": 13,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 180,
+   "longestRun": 3.2,
+   "runs": 13,
+   "length": 50
+  },
+  "angleDeg": -39.80557315154522,
+  "phase": [
+   -22.38418798327445,
+   -11.382045082092292
+  ],
+  "lengthRatio": 0.9999999885571903,
+  "ms": 37,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    36.0% of 50 mm mismatched, longest 3.20 mm in 13 runs (36.0% before discounting outlines on the crease); crease turns -39.8° between frames, offset (-22.38, -11.38), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": -39.805573191103804,
+  "phase": [
+   -24.72669372797012,
+   4.381034965515127
+  ],
+  "lengthRatio": 0.999999965097796,
+  "ms": 30,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns -39.8° between frames, offset (-24.73, 4.38), length ratio 1.0000"
+ },
+ {
+  "label": "plate 90° | voronoiTile | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 189,
+  "longestRun": 4.1000000000000005,
+  "runs": 12,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 189,
+   "longestRun": 4.1000000000000005,
+   "runs": 12,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.333332063674934,
+   -60
+  ],
+  "lengthRatio": 1.000000038146974,
+  "ms": 29,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    37.8% of 50 mm mismatched, longest 4.10 mm in 12 runs (37.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (3.33, -60.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 245,
+  "longestRun": 5.7,
+  "runs": 13,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 245,
+   "longestRun": 5.7,
+   "runs": 13,
+   "length": 50
+  },
+  "angleDeg": -2.24397012971167e-7,
+  "phase": [
+   38.77101803016663,
+   -45.91208076357841
+  ],
+  "lengthRatio": 1.0000000448139177,
+  "ms": 35,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    49.0% of 50 mm mismatched, longest 5.70 mm in 13 runs (49.0% before discounting outlines on the crease); crease turns -0.0° between frames, offset (38.77, -45.91), length ratio 1.0000"
+ },
+ {
+  "label": "plate 90° | voronoiTile | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.333332063674934,
+   -60
+  ],
+  "lengthRatio": 1.000000038146974,
+  "ms": 29,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (3.33, -60.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 149,
+  "longestRun": 2.5,
+  "runs": 12,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 149,
+   "longestRun": 2.5,
+   "runs": 12,
+   "length": 50
+  },
+  "angleDeg": 140.1944268088962,
+  "phase": [
+   15.273306272029874,
+   -55.51896503448485
+  ],
+  "lengthRatio": 0.999999965097796,
+  "ms": 34,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    29.8% of 50 mm mismatched, longest 2.50 mm in 12 runs (29.8% before discounting outlines on the crease); crease turns 140.2° between frames, offset (15.27, -55.52), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 186,
+  "longestRun": 4.9,
+  "runs": 14,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 186,
+   "longestRun": 4.9,
+   "runs": 14,
+   "length": 50
+  },
+  "angleDeg": 140.19442684845478,
+  "phase": [
+   45.60995180392265,
+   -35.147711088180536
+  ],
+  "lengthRatio": 0.9999999885571903,
+  "ms": 33,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    37.2% of 50 mm mismatched, longest 4.90 mm in 14 runs (37.2% before discounting outlines on the crease); crease turns 140.2° between frames, offset (45.61, -35.15), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 2,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 140.1944268088962,
+  "phase": [
+   15.273306272029874,
+   -55.51896503448485
+  ],
+  "lengthRatio": 0.999999965097796,
+  "ms": 32,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened"
+  ],
+  "text": "cut    0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 140.2° between frames, offset (15.27, -55.52), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 4,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 253,
+  "longestRun": 6,
+  "runs": 15,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 253,
+   "longestRun": 6,
+   "runs": 15,
+   "length": 50
+  },
+  "angleDeg": -41.10415878523321,
+  "phase": [
+   11.477827292442228,
+   20.80615870499613
+  ],
+  "lengthRatio": 0.9999999776788635,
+  "ms": 51,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened"
+  ],
+  "text": "cut    50.6% of 50 mm mismatched, longest 6.00 mm in 15 runs (50.6% before discounting outlines on the crease); crease turns -41.1° between frames, offset (11.48, 20.81), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 4,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 243,
+  "longestRun": 3,
+  "runs": 15,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 243,
+   "longestRun": 3,
+   "runs": 15,
+   "length": 50
+  },
+  "angleDeg": 0.000004407561277730565,
+  "phase": [
+   -39.26464461779593,
+   -15.364425659179698
+  ],
+  "lengthRatio": 1.0000000641053801,
+  "ms": 51,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened"
+  ],
+  "text": "cut    48.6% of 50 mm mismatched, longest 3.00 mm in 15 runs (48.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-39.26, -15.36), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 4,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 194,
+  "longestRun": 3.7,
+  "runs": 14,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 194,
+   "longestRun": 3.7,
+   "runs": 14,
+   "length": 50
+  },
+  "angleDeg": -41.10415458755563,
+  "phase": [
+   -25.379917360305786,
+   -18.100547952890395
+  ],
+  "lengthRatio": 1.0000000387316064,
+  "ms": 51,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened"
+  ],
+  "text": "cut    38.8% of 50 mm mismatched, longest 3.70 mm in 14 runs (38.8% before discounting outlines on the crease); crease turns -41.1° between frames, offset (-25.38, -18.10), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 4,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 241,
+  "longestRun": 3.1,
+  "runs": 13,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 241,
+   "longestRun": 3.1,
+   "runs": 13,
+   "length": 50
+  },
+  "angleDeg": -41.10416080006223,
+  "phase": [
+   -3.354856615066609,
+   23.52406603431697
+  ],
+  "lengthRatio": 1.0000000120054227,
+  "ms": 52,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened"
+  ],
+  "text": "cut    48.2% of 50 mm mismatched, longest 3.10 mm in 13 runs (48.2% before discounting outlines on the crease); crease turns -41.1° between frames, offset (-3.35, 23.52), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 4,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 221,
+  "longestRun": 6.800000000000001,
+  "runs": 13,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 221,
+   "longestRun": 6.800000000000001,
+   "runs": 13,
+   "length": 50
+  },
+  "angleDeg": 0.000004189723426861747,
+  "phase": [
+   -22.11159896469115,
+   -35.90062904071808
+  ],
+  "lengthRatio": 1.0000000612189448,
+  "ms": 52,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened"
+  ],
+  "text": "cut    44.2% of 50 mm mismatched, longest 6.80 mm in 13 runs (44.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-22.11, -35.90), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 4,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 266,
+  "longestRun": 5.1000000000000005,
+  "runs": 15,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 266,
+   "longestRun": 5.1000000000000005,
+   "runs": 15,
+   "length": 50
+  },
+  "angleDeg": -41.10415177329429,
+  "phase": [
+   -9.376121393203734,
+   -29.729756887912753
+  ],
+  "lengthRatio": 1.0000000469922006,
+  "ms": 52,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened"
+  ],
+  "text": "cut    53.2% of 50 mm mismatched, longest 5.10 mm in 15 runs (53.2% before discounting outlines on the crease); crease turns -41.1° between frames, offset (-9.38, -29.73), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 4,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": -41.10415878523321,
+  "phase": [
+   11.477827292442228,
+   20.80615870499613
+  ],
+  "lengthRatio": 0.9999999776788635,
+  "ms": 52,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened"
+  ],
+  "text": "cut    0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns -41.1° between frames, offset (11.48, 20.81), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 4,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0.000004407561277730565,
+  "phase": [
+   -39.26464461779593,
+   -15.364425659179698
+  ],
+  "lengthRatio": 1.0000000641053801,
+  "ms": 52,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened"
+  ],
+  "text": "cut    0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-39.26, -15.36), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 4,
+  "sameSheet": false,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": -41.10415458755563,
+  "phase": [
+   -25.379917360305786,
+   -18.100547952890395
+  ],
+  "lengthRatio": 1.0000000387316064,
+  "ms": 52,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened"
+  ],
+  "text": "cut    0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns -41.1° between frames, offset (-25.38, -18.10), length ratio 1.0000"
+ }
+]

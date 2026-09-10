@@ -1,0 +1,453 @@
+[
+  {
+    "source": "guilloche",
+    "index": 55,
+    "config": {
+      "label": "combined 8",
+      "params": {
+        "width": 61,
+        "height": 11,
+        "style": "rosette",
+        "count": 6,
+        "radius": 101,
+        "amplitude": 4,
+        "lobes": 7,
+        "twist": 0.15,
+        "innerRings": 2,
+        "ribWidth": 5.800000000000001,
+        "seed": 999999
+      },
+      "minFeature": 0,
+      "invert": false,
+      "mirror": false,
+      "bridge": true
+    },
+    "originalBudgetMs": 20000
+  },
+  {
+    "source": "guilloche",
+    "index": 56,
+    "config": {
+      "label": "combined 9",
+      "params": {
+        "width": 23,
+        "height": 37,
+        "style": "rosette",
+        "count": 8,
+        "radius": 15,
+        "amplitude": 4,
+        "lobes": 7,
+        "twist": 0.62,
+        "innerRings": 4,
+        "ribWidth": 1.6,
+        "seed": 0
+      },
+      "minFeature": 0.4,
+      "invert": true,
+      "mirror": true,
+      "bridge": false
+    },
+    "originalBudgetMs": 20000
+  },
+  {
+    "source": "guilloche",
+    "index": 57,
+    "config": {
+      "label": "combined 10",
+      "params": {
+        "width": 61,
+        "height": 11,
+        "style": "rosette",
+        "count": 18,
+        "radius": 15,
+        "amplitude": 24.5,
+        "lobes": 7,
+        "twist": 0.15,
+        "innerRings": 2,
+        "ribWidth": 1.6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "invert": false,
+      "mirror": false,
+      "bridge": false
+    },
+    "originalBudgetMs": 20000
+  },
+  {
+    "source": "hyperbolic",
+    "index": 55,
+    "config": {
+      "label": "combined 11",
+      "params": {
+        "width": 23,
+        "height": 37,
+        "p": 7,
+        "q": 8,
+        "depth": 4,
+        "style": "edges",
+        "ribWidth": 3.9000000000000004,
+        "gap": 3.5,
+        "minFeature": 1,
+        "seed": 999999
+      },
+      "minFeature": 1.6,
+      "invert": true,
+      "mirror": false,
+      "bridge": false
+    },
+    "originalBudgetMs": 20000
+  },
+  {
+    "source": "julia",
+    "index": 30,
+    "config": {
+      "label": "size",
+      "params": {
+        "width": 300,
+        "height": 300,
+        "kind": "julia",
+        "cRe": -0.8,
+        "cIm": 0.156,
+        "centerRe": 0,
+        "centerIm": 0,
+        "zoom": 1,
+        "iterations": 60,
+        "mode": "inside",
+        "bandFrom": 8,
+        "bandTo": 14,
+        "smooth": 0.4,
+        "resolution": 0.2,
+        "minFeature": 1,
+        "seed": 42
+      },
+      "minFeature": 0.84,
+      "invert": false,
+      "mirror": false,
+      "bridge": false
+    },
+    "originalBudgetMs": 20000
+  },
+  {
+    "source": "julia",
+    "index": 31,
+    "config": {
+      "label": "size",
+      "params": {
+        "width": 300,
+        "height": 300,
+        "kind": "julia",
+        "cRe": -0.8,
+        "cIm": 0.156,
+        "centerRe": 0,
+        "centerIm": 0,
+        "zoom": 1,
+        "iterations": 60,
+        "mode": "inside",
+        "bandFrom": 8,
+        "bandTo": 14,
+        "smooth": 0.4,
+        "resolution": 0.2,
+        "minFeature": 1,
+        "seed": 42
+      },
+      "minFeature": 0.84,
+      "invert": true,
+      "mirror": false,
+      "bridge": false
+    },
+    "originalBudgetMs": 20000
+  },
+  {
+    "source": "penrose",
+    "index": 30,
+    "config": {
+      "label": "size",
+      "params": {
+        "width": 300,
+        "height": 300,
+        "style": "edges",
+        "edge": 6,
+        "minFeature": 1,
+        "gap": 1,
+        "ribWidth": 1.6,
+        "seed": 42
+      },
+      "minFeature": 0.84,
+      "invert": false,
+      "mirror": false,
+      "bridge": false
+    },
+    "originalBudgetMs": 20000
+  },
+  {
+    "source": "targeted",
+    "index": 64,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 5,
+        "height": 5,
+        "order": 7,
+        "rounded": false,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 65,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 5,
+        "height": 5,
+        "order": 7,
+        "rounded": true,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 70,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 23,
+        "height": 5,
+        "order": 7,
+        "rounded": false,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 71,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 23,
+        "height": 5,
+        "order": 7,
+        "rounded": true,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 76,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 61,
+        "height": 5,
+        "order": 7,
+        "rounded": false,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 77,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 61,
+        "height": 5,
+        "order": 7,
+        "rounded": true,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 82,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 5,
+        "height": 7,
+        "order": 7,
+        "rounded": false,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 83,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 5,
+        "height": 7,
+        "order": 7,
+        "rounded": true,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 88,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 23,
+        "height": 7,
+        "order": 7,
+        "rounded": false,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 89,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 23,
+        "height": 7,
+        "order": 7,
+        "rounded": true,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 94,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 61,
+        "height": 7,
+        "order": 7,
+        "rounded": false,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 100,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 5,
+        "height": 11,
+        "order": 7,
+        "rounded": false,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 101,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 5,
+        "height": 11,
+        "order": 7,
+        "rounded": true,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 106,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 23,
+        "height": 11,
+        "order": 7,
+        "rounded": false,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  },
+  {
+    "source": "targeted",
+    "index": 112,
+    "config": {
+      "id": "hilbert",
+      "params": {
+        "width": 61,
+        "height": 11,
+        "order": 7,
+        "rounded": false,
+        "ribWidth": 6,
+        "seed": 7
+      },
+      "minFeature": 0.84,
+      "timeout": true,
+      "error": "Isolated case exceeded 8 second wall-clock budget"
+    }
+  }
+]

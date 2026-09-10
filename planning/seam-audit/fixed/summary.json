@@ -1,0 +1,800 @@
+{
+  "patterns": 29,
+  "pipeline": {
+    "cases": 1518,
+    "seamFailures": 0,
+    "rejected": 1,
+    "empty": 85
+  },
+  "raw": {
+    "cases": 344,
+    "incomplete": 0,
+    "rejected": 6
+  },
+  "targeted": {
+    "cases": 114,
+    "seamFailures": 0,
+    "rejected": 34,
+    "empty": 0
+  },
+  "layout": {
+    "cases": 108,
+    "fitted": 36,
+    "falseFits": 0
+  },
+  "retry": {
+    "completed": 11,
+    "seam-failure": 0,
+    "error": 11,
+    "timeout": 0
+  },
+  "rejections": {
+    "pipeline": [
+      {
+        "id": "guilloche",
+        "index": 55,
+        "config": {
+          "label": "combined 8",
+          "params": {
+            "width": 61,
+            "height": 11,
+            "style": "rosette",
+            "count": 6,
+            "radius": 101,
+            "amplitude": 4,
+            "lobes": 7,
+            "twist": 0.15,
+            "innerRings": 2,
+            "ribWidth": 5.800000000000001,
+            "seed": 999999
+          },
+          "minFeature": 0,
+          "invert": false,
+          "mirror": false,
+          "bridge": true
+        },
+        "error": "Error: Guilloche rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+        "ms": 0.8507000000099652
+      }
+    ],
+    "raw": [
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 4,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 61,
+          "order": 4,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 4,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "guilloche",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "style": "rosette",
+          "count": 6,
+          "radius": 15,
+          "amplitude": 4,
+          "lobes": 7,
+          "twist": 0.15,
+          "innerRings": 2,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "error": "Error: Guilloche rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "guilloche",
+        "params": {
+          "width": 5,
+          "height": 61,
+          "style": "rosette",
+          "count": 6,
+          "radius": 15,
+          "amplitude": 4,
+          "lobes": 7,
+          "twist": 0.15,
+          "innerRings": 2,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "error": "Error: Guilloche rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "guilloche",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "style": "rosette",
+          "count": 6,
+          "radius": 15,
+          "amplitude": 4,
+          "lobes": 7,
+          "twist": 0.15,
+          "innerRings": 2,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "error": "Error: Guilloche rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      }
+    ],
+    "targeted": [
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 1,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 1,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 4,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 4,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 1,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 1,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 4,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 4,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 1,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 1,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 4,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 4,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 1,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 1,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 4,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 4,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 7,
+          "order": 1,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 7,
+          "order": 1,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 7,
+          "order": 1,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 7,
+          "order": 1,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 1,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 1,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 4,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 4,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      }
+    ],
+    "retry": [
+      {
+        "n": 0,
+        "config": {
+          "label": "combined 8",
+          "params": {
+            "width": 61,
+            "height": 11,
+            "style": "rosette",
+            "count": 6,
+            "radius": 101,
+            "amplitude": 4,
+            "lobes": 7,
+            "twist": 0.15,
+            "innerRings": 2,
+            "ribWidth": 5.800000000000001,
+            "seed": 999999
+          },
+          "minFeature": 0,
+          "invert": false,
+          "mirror": false,
+          "bridge": true
+        },
+        "error": "Error: Guilloche rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 7,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 5,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 8,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 5,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 9,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 5,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 10,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 5,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 11,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 5,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 12,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 5,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 13,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 7,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 14,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 7,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 18,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 11,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      },
+      {
+        "n": 19,
+        "config": {
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 11,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          },
+          "minFeature": 0.84,
+          "timeout": true,
+          "error": "Isolated case exceeded 8 second wall-clock budget"
+        },
+        "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+      }
+    ]
+  }
+}

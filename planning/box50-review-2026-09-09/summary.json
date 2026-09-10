@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "fixture": 29,
+    "tile": 232,
+    "layout": 1392,
+    "solid": 551,
+    "picker-solid": 87,
+    "fine-solid": 6,
+    "footprint-attribution": 12,
+    "physical-margin": 3,
+    "extra-solid": 58,
+    "angle-solid": 261,
+    "footprint": 174,
+    "control": 3,
+    "ring-solid": 16
+  },
+  "generators": 29,
+  "solidExecutions": 979,
+  "fixtureSha256": "81a5a39c0d759a699d1a5b0e389f58423cd0699ec68fa25b4cd0089ae14ed6b7",
+  "images": 341,
+  "errors": [],
+  "tileMaxMismatchMm": 9.067356586456299e-05,
+  "footprintSamples": 180969,
+  "footprintDifferences": 414,
+  "angleScreenFlags": 41
+}

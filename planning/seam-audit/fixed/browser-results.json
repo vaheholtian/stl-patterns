@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "check": "actual worker generates default preview",
+      "polygons": 64
+    },
+    {
+      "check": "invalid geometry produces a top-right error"
+    },
+    {
+      "check": "UI responds during heavy geometry and latest selection replaces it",
+      "responseMs": 1.0740000000000691
+    },
+    {
+      "check": "cut progress is accessible and positioned at top right",
+      "position": {
+        "right": 12,
+        "top": 56,
+        "width": 350
+      }
+    }
+  ],
+  "errors": []
+}

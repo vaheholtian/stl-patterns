@@ -1,0 +1,147 @@
+[
+  {
+    "id": "squareGrid",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "diamondLattice",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "honeycomb",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "roundedSlots",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "roundPerforations",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "unicursalMaze",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "lusona",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "celtic",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "hankin",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "ammannBeenker",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "gosper",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "arrowhead",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "terdragon",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "greekKey",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "fermatSpirals",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "voronoiTile",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "delaunayTile",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "truchet",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "penroseApproximant",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "hilbert",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "moire",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "sierpinski",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "koch",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "guilloche",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "phyllotaxis",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "apollonian",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "penrose",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "julia",
+    "code": 0,
+    "signal": null
+  },
+  {
+    "id": "hyperbolic",
+    "code": 0,
+    "signal": null
+  }
+]

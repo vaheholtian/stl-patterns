@@ -1,0 +1,467 @@
+[
+  {
+    "body": "plate 45°",
+    "angle": 45,
+    "scale": 0.6,
+    "depth": 0.8,
+    "expectedRidgeY": 0.8659137602339152,
+    "actualRidgeY": 0.8659137614953941,
+    "missingHeight": -1.2614789213216682e-9,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 45°",
+    "angle": 45,
+    "scale": 1,
+    "depth": 0.8,
+    "expectedRidgeY": 0.8659137602339152,
+    "actualRidgeY": 0.8659137661983921,
+    "missingHeight": -5.9644769123679e-9,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 45°",
+    "angle": 45,
+    "scale": 1.7,
+    "depth": 0.8,
+    "expectedRidgeY": 0.8659137602339152,
+    "actualRidgeY": 0.8659137665538141,
+    "missingHeight": -6.3198989375123915e-9,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 90°",
+    "angle": 90,
+    "scale": 0.6,
+    "depth": 0.8,
+    "expectedRidgeY": 1.131370849898476,
+    "actualRidgeY": 1.1313708674415233,
+    "missingHeight": -1.7543047237111864e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 90°",
+    "angle": 90,
+    "scale": 1,
+    "depth": 0.8,
+    "expectedRidgeY": 1.131370849898476,
+    "actualRidgeY": 1.1313709019147253,
+    "missingHeight": -5.201624930784021e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 90°",
+    "angle": 90,
+    "scale": 1.7,
+    "depth": 0.8,
+    "expectedRidgeY": 1.131370849898476,
+    "actualRidgeY": 1.1313708722535474,
+    "missingHeight": -2.2355071349622335e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 135°",
+    "angle": 135,
+    "scale": 0.6,
+    "depth": 0.8,
+    "expectedRidgeY": 2.090500743802202,
+    "actualRidgeY": 2.0905008300687564,
+    "missingHeight": -8.626655434440522e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 135°",
+    "angle": 135,
+    "scale": 1,
+    "depth": 0.8,
+    "expectedRidgeY": 2.090500743802202,
+    "actualRidgeY": 2.090500830672704,
+    "missingHeight": -8.68705019030358e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "plate 135°",
+    "angle": 135,
+    "scale": 1.7,
+    "depth": 0.8,
+    "expectedRidgeY": 2.090500743802202,
+    "actualRidgeY": 2.0905008303707304,
+    "missingHeight": -8.656852834576512e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "plate -90°",
+    "angle": -90,
+    "scale": 0.6,
+    "depth": 0.8,
+    "expectedRidgeY": 1.131370849898476,
+    "actualRidgeY": 1.1313709501598233,
+    "missingHeight": -1.002613472245173e-7,
+    "status": "NoError"
+  },
+  {
+    "body": "plate -90°",
+    "angle": -90,
+    "scale": 1,
+    "depth": 0.8,
+    "expectedRidgeY": 1.131370849898476,
+    "actualRidgeY": 1.1313709501598233,
+    "missingHeight": -1.002613472245173e-7,
+    "status": "NoError"
+  },
+  {
+    "body": "plate -90°",
+    "angle": -90,
+    "scale": 1.7,
+    "depth": 0.8,
+    "expectedRidgeY": 1.131370849898476,
+    "actualRidgeY": 1.1313709501598233,
+    "missingHeight": -1.002613472245173e-7,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "mode": "emboss",
+    "scale": 0.6,
+    "depth": 0.8,
+    "expected": [
+      50.8,
+      -0.8,
+      25
+    ],
+    "actual": [
+      50.79999923706055,
+      -0.7999992370605469,
+      25
+    ],
+    "missingHeight": 7.629394502828291e-7,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "kind": "physical-margin",
+    "mode": "emboss",
+    "scale": 0.6,
+    "requestedMargin": 2.5,
+    "extents": [
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      },
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      }
+    ],
+    "solidBand": {
+      "z47_4": -0.800000011920929,
+      "z47_6": 0,
+      "z2_4": 0,
+      "z2_6": -0.800000011920929
+    }
+  },
+  {
+    "body": "box50",
+    "mode": "emboss",
+    "scale": 1,
+    "depth": 0.8,
+    "expected": [
+      50.8,
+      -0.8,
+      25
+    ],
+    "actual": [
+      50.79999923706055,
+      -0.7999992370605469,
+      25
+    ],
+    "missingHeight": 7.629394502828291e-7,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "kind": "physical-margin",
+    "mode": "emboss",
+    "scale": 1,
+    "requestedMargin": 2.5,
+    "extents": [
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      },
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      }
+    ],
+    "solidBand": {
+      "z47_4": -0.800000011920929,
+      "z47_6": 0,
+      "z2_4": 0,
+      "z2_6": -0.800000011920929
+    }
+  },
+  {
+    "body": "box50",
+    "mode": "emboss",
+    "scale": 1.7,
+    "depth": 0.8,
+    "expected": [
+      50.8,
+      -0.8,
+      25
+    ],
+    "actual": [
+      50.79999923706055,
+      -0.7999992370605469,
+      25
+    ],
+    "missingHeight": 7.629394502828291e-7,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "kind": "physical-margin",
+    "mode": "emboss",
+    "scale": 1.7,
+    "requestedMargin": 2.5,
+    "extents": [
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      },
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      }
+    ],
+    "solidBand": {
+      "z47_4": -0.800000011920929,
+      "z47_6": 0,
+      "z2_4": 0,
+      "z2_6": -0.800000011920929
+    }
+  },
+  {
+    "body": "box50",
+    "mode": "recess",
+    "scale": 0.6,
+    "depth": 0.8,
+    "expected": [
+      49.2,
+      0.8,
+      25
+    ],
+    "actual": [
+      49.19999998807907,
+      0.800000011920929,
+      25
+    ],
+    "missingHeight": 1.1920931797249068e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "kind": "physical-margin",
+    "mode": "recess",
+    "scale": 0.6,
+    "requestedMargin": 2.5,
+    "extents": [
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      },
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      }
+    ],
+    "solidBand": {
+      "z47_4": 0.800000011920929,
+      "z47_6": 0,
+      "z2_4": 0,
+      "z2_6": 0.800000011920929
+    }
+  },
+  {
+    "body": "box50",
+    "mode": "recess",
+    "scale": 1,
+    "depth": 0.8,
+    "expected": [
+      49.2,
+      0.8,
+      25
+    ],
+    "actual": [
+      49.19999998807907,
+      0.800000011920929,
+      25
+    ],
+    "missingHeight": 1.1920931797249068e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "kind": "physical-margin",
+    "mode": "recess",
+    "scale": 1,
+    "requestedMargin": 2.5,
+    "extents": [
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      },
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      }
+    ],
+    "solidBand": {
+      "z47_4": 0.800000011920929,
+      "z47_6": 0,
+      "z2_4": 0,
+      "z2_6": 0.800000011920929
+    }
+  },
+  {
+    "body": "box50",
+    "mode": "recess",
+    "scale": 1.7,
+    "depth": 0.8,
+    "expected": [
+      49.2,
+      0.8,
+      25
+    ],
+    "actual": [
+      49.19999998807907,
+      0.800000011920929,
+      25
+    ],
+    "missingHeight": 1.1920931797249068e-8,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "kind": "physical-margin",
+    "mode": "recess",
+    "scale": 1.7,
+    "requestedMargin": 2.5,
+    "extents": [
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      },
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      }
+    ],
+    "solidBand": {
+      "z47_4": 0.800000011920929,
+      "z47_6": 0,
+      "z2_4": 0,
+      "z2_6": 0.800000011920929
+    }
+  },
+  {
+    "body": "box50",
+    "mode": "cut",
+    "scale": 0.6,
+    "depth": 0.8,
+    "expected": null,
+    "actual": null,
+    "missingHeight": null,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "kind": "physical-margin",
+    "mode": "cut",
+    "scale": 0.6,
+    "requestedMargin": 2.5,
+    "extents": [
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      },
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      }
+    ],
+    "solidBand": {
+      "z47_4": 48.400001525878906,
+      "z47_6": 0,
+      "z2_4": 0,
+      "z2_6": 48.400001525878906
+    }
+  },
+  {
+    "body": "box50",
+    "mode": "cut",
+    "scale": 1,
+    "depth": 0.8,
+    "expected": null,
+    "actual": null,
+    "missingHeight": null,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "kind": "physical-margin",
+    "mode": "cut",
+    "scale": 1,
+    "requestedMargin": 2.5,
+    "extents": [
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      },
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      }
+    ],
+    "solidBand": {
+      "z47_4": 48.400001525878906,
+      "z47_6": 0,
+      "z2_4": 0,
+      "z2_6": 48.400001525878906
+    }
+  },
+  {
+    "body": "box50",
+    "mode": "cut",
+    "scale": 1.7,
+    "depth": 0.8,
+    "expected": null,
+    "actual": null,
+    "missingHeight": null,
+    "status": "NoError"
+  },
+  {
+    "body": "box50",
+    "kind": "physical-margin",
+    "mode": "cut",
+    "scale": 1.7,
+    "requestedMargin": 2.5,
+    "extents": [
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      },
+      {
+        "minZ": 2.5,
+        "maxZ": 47.5
+      }
+    ],
+    "solidBand": {
+      "z47_4": 48.400001525878906,
+      "z47_6": 0,
+      "z2_4": 0,
+      "z2_6": 48.400001525878906
+    }
+  }
+]

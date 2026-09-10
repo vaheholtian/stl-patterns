@@ -1,0 +1,613 @@
+[
+  {
+    "id": "voronoiTile",
+    "params": {
+      "width": 40,
+      "height": 40,
+      "relax": 0,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0,
+    "area": 985.5532337023365,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "params": {
+      "width": 40,
+      "height": 40,
+      "relax": 0,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.2,
+    "area": 983.5215495204317,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "params": {
+      "width": 40,
+      "height": 40,
+      "relax": 0,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.4,
+    "area": 981.5859622906985,
+    "edges": [
+      {
+        "total": 0.043878525495529175,
+        "max": 0.043878525495529175,
+        "intervals": [
+          [
+            18.801117420196533,
+            18.844995945692062
+          ]
+        ]
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "params": {
+      "width": 40,
+      "height": 40,
+      "relax": 0,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.84,
+    "area": 976.8309733822208,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "params": {
+      "width": 40,
+      "height": 40,
+      "relax": 0,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 1.6,
+    "area": 964.7596780348634,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0,
+    "area": 10.134456023153025,
+    "edges": [
+      {
+        "total": 0.7662630900740623,
+        "max": 0.3835156708955765,
+        "intervals": [
+          [
+            0.003275662660598755,
+            0.3860230818390846
+          ],
+          [
+            1.238575391471386,
+            1.6220910623669624
+          ]
+        ]
+      },
+      {
+        "total": 1.0501439943909645,
+        "max": 0.5278640389442444,
+        "intervals": [
+          [
+            0.5313152000308037,
+            1.0535951554775238
+          ],
+          [
+            1.1768887266516685,
+            1.704752765595913
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.2,
+    "area": 7.318339199917378,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.000051975250244140625,
+        "max": 0.000051975250244140625,
+        "intervals": [
+          [
+            3.0873985663056374,
+            3.0874505415558815
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.4,
+    "area": 2.778144914763455,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.84,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 1.6,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0,
+    "area": 304.83220614191436,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 1.1972089558839798,
+        "max": 0.5237339660525322,
+        "intervals": [
+          [
+            1.1937500014901161,
+            1.7174839675426483
+          ],
+          [
+            1.7345572784543037,
+            1.7526574805378914
+          ],
+          [
+            1.810009479522705,
+            1.8667797893285751
+          ],
+          [
+            59.133220210671425,
+            59.189990520477295
+          ],
+          [
+            59.24734251946211,
+            59.265442721545696
+          ],
+          [
+            59.28251603245735,
+            59.806249998509884
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.2,
+    "area": 304.8170026887103,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.4,
+    "area": 304.8012973416762,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.84,
+    "area": 304.78502573314336,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 1.6,
+    "area": 304.77224500365907,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "diamondLattice",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "holeSize": 21,
+      "aspect": 0.75,
+      "seed": 0
+    },
+    "mirror": true,
+    "bridge": true,
+    "minFeature": 0,
+    "error": "Error: Material still has 3 components after bridging"
+  },
+  {
+    "id": "diamondLattice",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "holeSize": 21,
+      "aspect": 0.75,
+      "seed": 0
+    },
+    "mirror": true,
+    "bridge": true,
+    "minFeature": 0.2,
+    "area": 2772.324620513744,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "diamondLattice",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "holeSize": 21,
+      "aspect": 0.75,
+      "seed": 0
+    },
+    "mirror": true,
+    "bridge": true,
+    "minFeature": 0.4,
+    "area": 2768.539428039462,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "diamondLattice",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "holeSize": 21,
+      "aspect": 0.75,
+      "seed": 0
+    },
+    "mirror": true,
+    "bridge": true,
+    "minFeature": 0.84,
+    "area": 2759.008397287823,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "diamondLattice",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "holeSize": 21,
+      "aspect": 0.75,
+      "seed": 0
+    },
+    "mirror": true,
+    "bridge": true,
+    "minFeature": 1.6,
+    "area": 2537.0649032074907,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ]
+  },
+  {
+    "id": "guilloche",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0,
+    "error": "RuntimeError: Aborted(). Build with -sASSERTIONS for more info."
+  },
+  {
+    "id": "guilloche",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.2,
+    "error": "RuntimeError: Aborted(). Build with -sASSERTIONS for more info."
+  },
+  {
+    "id": "guilloche",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.4,
+    "error": "RuntimeError: Aborted(). Build with -sASSERTIONS for more info."
+  },
+  {
+    "id": "guilloche",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 0.84,
+    "error": "RuntimeError: Aborted(). Build with -sASSERTIONS for more info."
+  },
+  {
+    "id": "guilloche",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "mirror": false,
+    "bridge": false,
+    "minFeature": 1.6,
+    "error": "RuntimeError: Aborted(). Build with -sASSERTIONS for more info."
+  }
+]

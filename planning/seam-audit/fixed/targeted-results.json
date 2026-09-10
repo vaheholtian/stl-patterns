@@ -1,0 +1,2637 @@
+[
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 15.395543514749924,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 183.09566301097067,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 149.95573042678743,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 131.85472197974806,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 110.17435197198367,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 685.1287772977294,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 651.0009961716404,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 62.01564283323491,
+    "edges": [
+      {
+        "total": 0.00006634742021560669,
+        "max": 0.00005000084638595581,
+        "intervals": [
+          [
+            4.854102291166782,
+            4.854110464453697
+          ],
+          [
+            25.883346781134605,
+            25.88335495442152
+          ],
+          [
+            34.01311107724905,
+            34.013161078095436
+          ]
+        ]
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 51.292482766974835,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 172.93045726124436,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 138.0081650293512,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 937.2516705731721,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 882.5364547497743,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 59.478641951580556,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 7,
+    "area": 151.69684585323782,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 7,
+    "area": 149.66687713193525,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 7,
+    "area": 157.31792900248004,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 7,
+    "area": 154.94135872663503,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 7,
+    "area": 402.56060706909716,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 7,
+    "area": 398.37012542444944,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 7,
+    "area": 417.5049438373627,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 7,
+    "area": 415.43362108588815,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width."
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 156.75668321911235,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 148.19605423123346,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 236.43107086837645,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 232.5821675401845,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 248.12379389253442,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 244.53740154835737,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 384.4311622268664,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 376.1043276489613,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 627.962110204911,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 617.617917962245,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 659.0595487596337,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 655.6159203739608,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "id": "squareGrid",
+    "code": 0,
+    "signal": null,
+    "ms": 3308,
+    "last": {
+      "id": "squareGrid",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "diamondLattice",
+    "code": 0,
+    "signal": null,
+    "ms": 5020,
+    "last": {
+      "id": "diamondLattice",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "honeycomb",
+    "code": 0,
+    "signal": null,
+    "ms": 4809,
+    "last": {
+      "id": "honeycomb",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "roundPerforations",
+    "code": 0,
+    "signal": null,
+    "ms": 10498,
+    "last": {
+      "id": "roundPerforations",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "roundedSlots",
+    "code": 0,
+    "signal": null,
+    "ms": 5260,
+    "last": {
+      "id": "roundedSlots",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "unicursalMaze",
+    "code": 0,
+    "signal": null,
+    "ms": 2171,
+    "last": {
+      "id": "unicursalMaze",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "lusona",
+    "code": 0,
+    "signal": null,
+    "ms": 5322,
+    "last": {
+      "id": "lusona",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "celtic",
+    "code": 0,
+    "signal": null,
+    "ms": 4464,
+    "last": {
+      "id": "celtic",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "hankin",
+    "code": 0,
+    "signal": null,
+    "ms": 3362,
+    "last": {
+      "id": "hankin",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "ammannBeenker",
+    "code": 0,
+    "signal": null,
+    "ms": 10169,
+    "last": {
+      "id": "ammannBeenker",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "gosper",
+    "code": 0,
+    "signal": null,
+    "ms": 2722,
+    "last": {
+      "id": "gosper",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "fermatSpirals",
+    "code": 0,
+    "signal": null,
+    "ms": 9340,
+    "last": {
+      "id": "fermatSpirals",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "arrowhead",
+    "code": 0,
+    "signal": null,
+    "ms": 3775,
+    "last": {
+      "id": "arrowhead",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "greekKey",
+    "code": 0,
+    "signal": null,
+    "ms": 3895,
+    "last": {
+      "id": "greekKey",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "terdragon",
+    "code": 0,
+    "signal": null,
+    "ms": 6134,
+    "last": {
+      "id": "terdragon",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "delaunayTile",
+    "code": 0,
+    "signal": null,
+    "ms": 3511,
+    "last": {
+      "id": "delaunayTile",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "voronoiTile",
+    "code": 0,
+    "signal": null,
+    "ms": 4736,
+    "last": {
+      "id": "voronoiTile",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "penroseApproximant",
+    "code": 0,
+    "signal": null,
+    "ms": 4979,
+    "last": {
+      "id": "penroseApproximant",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "truchet",
+    "code": 0,
+    "signal": null,
+    "ms": 7919,
+    "last": {
+      "id": "truchet",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "moire",
+    "code": 0,
+    "signal": null,
+    "ms": 2971,
+    "last": {
+      "id": "moire",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "hilbert",
+    "code": 0,
+    "signal": null,
+    "ms": 7705,
+    "last": {
+      "id": "hilbert",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "sierpinski",
+    "code": 0,
+    "signal": null,
+    "ms": 5864,
+    "last": {
+      "id": "sierpinski",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "guilloche",
+    "code": 0,
+    "signal": null,
+    "ms": 9538,
+    "last": {
+      "id": "guilloche",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "koch",
+    "code": 0,
+    "signal": null,
+    "ms": 3443,
+    "last": {
+      "id": "koch",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "phyllotaxis",
+    "code": 0,
+    "signal": null,
+    "ms": 7514,
+    "last": {
+      "id": "phyllotaxis",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "apollonian",
+    "code": 0,
+    "signal": null,
+    "ms": 4550,
+    "last": {
+      "id": "apollonian",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "hyperbolic",
+    "code": 0,
+    "signal": null,
+    "ms": 13675,
+    "last": {
+      "id": "hyperbolic",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "penrose",
+    "code": 0,
+    "signal": null,
+    "ms": 4637,
+    "last": {
+      "id": "penrose",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "julia",
+    "code": 0,
+    "signal": null,
+    "ms": 5559,
+    "last": {
+      "id": "julia",
+      "fixture": "gap",
+      "angle": -90,
+      "mode": "recess"
+    }
+  }
+]

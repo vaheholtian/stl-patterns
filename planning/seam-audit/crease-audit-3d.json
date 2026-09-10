@@ -1,0 +1,6158 @@
+[
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 63,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":0} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 800,
+  "levelB": 800,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 800/800 of 800"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":0} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 800,
+  "levelB": 800,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 800/800 of 800"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":0} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 800,
+  "levelB": 800,
+  "status": "NoError",
+  "parts": 13,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 800/800 of 800"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 10,
+   "longestRun": 0.1,
+   "runs": 10,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 40,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (1.3% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 304,
+  "levelB": 307,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 304/307 of 800"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 304,
+  "levelB": 307,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 304/307 of 800"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 304,
+  "levelB": 307,
+  "status": "NoError",
+  "parts": 4,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 304/307 of 800"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 26,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":3} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 800,
+  "levelB": 800,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 800/800 of 800"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":3} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 800,
+  "levelB": 800,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 800/800 of 800"
+ },
+ {
+  "label": "box wall 2 | squareGrid | {\"margin\":3} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 800,
+  "levelB": 800,
+  "status": "NoError",
+  "parts": 13,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 800/800 of 800"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 49,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":0} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 160,
+  "levelB": 160,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 160/160 of 800"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":0} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 160,
+  "levelB": 160,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 160/160 of 800"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":0} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 160,
+  "levelB": 160,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 160/160 of 800"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 12,
+   "longestRun": 0.30000000000000004,
+   "runs": 8,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 66,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (1.5% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 320,
+  "levelB": 320,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 320/320 of 800"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 320,
+  "levelB": 320,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 320/320 of 800"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 320,
+  "levelB": 320,
+  "status": "NoError",
+  "parts": 4,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 320/320 of 800"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 46,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":3} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 220,
+  "levelB": 220,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 220/220 of 800"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":3} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 220,
+  "levelB": 220,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 220/220 of 800"
+ },
+ {
+  "label": "box wall 2 | honeycomb | {\"margin\":3} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 220,
+  "levelB": 220,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 220/220 of 800"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 32,
+   "longestRun": 0.1,
+   "runs": 32,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 40,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (4.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":0} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 464,
+  "levelB": 464,
+  "status": "NoError",
+  "parts": 60,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 464/464 of 800"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":0} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 464,
+  "levelB": 464,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 464/464 of 800"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":0} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 464,
+  "levelB": 464,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 464/464 of 800"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 7,
+   "longestRun": 0.2,
+   "runs": 5,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 39,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.9% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 474,
+  "levelB": 474,
+  "status": "NoError",
+  "parts": 73,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 474/474 of 800"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 474,
+  "levelB": 474,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 474/474 of 800"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 474,
+  "levelB": 474,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 474/474 of 800"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 30,
+   "longestRun": 0.1,
+   "runs": 30,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 37,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (3.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":3} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 496,
+  "levelB": 494,
+  "status": "NoError",
+  "parts": 53,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 496/494 of 800"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":3} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 496,
+  "levelB": 494,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 496/494 of 800"
+ },
+ {
+  "label": "box wall 2 | celtic | {\"margin\":3} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 496,
+  "levelB": 494,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 496/494 of 800"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 2,
+   "longestRun": 0.1,
+   "runs": 2,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 45,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.3% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 220,
+  "levelB": 210,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 220/210 of 800"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 220,
+  "levelB": 210,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 220/210 of 800"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 220,
+  "levelB": 210,
+  "status": "NoError",
+  "parts": 4,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 220/210 of 800"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 11,
+   "longestRun": 0.30000000000000004,
+   "runs": 8,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 52,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (1.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 495,
+  "levelB": 494,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 495/494 of 800"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 495,
+  "levelB": 494,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 495/494 of 800"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 495,
+  "levelB": 494,
+  "status": "NoError",
+  "parts": 8,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 495/494 of 800"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 2,
+   "longestRun": 0.1,
+   "runs": 2,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 35,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.3% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":3} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 264,
+  "levelB": 254,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 264/254 of 800"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":3} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 264,
+  "levelB": 254,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 264/254 of 800"
+ },
+ {
+  "label": "box wall 2 | voronoiTile | {\"margin\":3} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 264,
+  "levelB": 254,
+  "status": "NoError",
+  "parts": 4,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 264/254 of 800"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 75,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":0} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 630,
+  "levelB": 630,
+  "status": "NoError",
+  "parts": 9,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 630/630 of 800"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":0} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 630,
+  "levelB": 630,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 630/630 of 800"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":0} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 630,
+  "levelB": 630,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 630/630 of 800"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 7,
+   "longestRun": 0.1,
+   "runs": 7,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 86,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.9% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 577,
+  "levelB": 578,
+  "status": "NoError",
+  "parts": 9,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 577/578 of 800"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 577,
+  "levelB": 578,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 577/578 of 800"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 577,
+  "levelB": 578,
+  "status": "NoError",
+  "parts": 4,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 577/578 of 800"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 69,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":3} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 647,
+  "levelB": 647,
+  "status": "NoError",
+  "parts": 9,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 647/647 of 800"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":3} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 647,
+  "levelB": 647,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 647/647 of 800"
+ },
+ {
+  "label": "box wall 2 | truchet | {\"margin\":3} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 647,
+  "levelB": 647,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 647/647 of 800"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 78,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":0} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 672,
+  "levelB": 672,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 672/672 of 800"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":0} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 672,
+  "levelB": 672,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 672/672 of 800"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":0} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 672,
+  "levelB": 672,
+  "status": "NoError",
+  "parts": 10,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 672/672 of 800"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 19,
+   "longestRun": 0.2,
+   "runs": 18,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 101,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (2.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 320,
+  "levelB": 313,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 320/313 of 800"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 320,
+  "levelB": 313,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 320/313 of 800"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 320,
+  "levelB": 313,
+  "status": "NoError",
+  "parts": 3,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 320/313 of 800"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "raw": {
+   "samples": 800,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 80
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 1,
+  "ms": 72,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":3} 3d cut",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 674,
+  "levelB": 674,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 674/674 of 800"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":3} 3d recess",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 674,
+  "levelB": 674,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 674/674 of 800"
+ },
+ {
+  "label": "box wall 2 | hilbert | {\"margin\":3} 3d emboss",
+  "samples": 800,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 80,
+  "levelA": 674,
+  "levelB": 674,
+  "status": "NoError",
+  "parts": 10,
+  "text": "0.0% of 80 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 674/674 of 800"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 27,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 100,
+  "levelB": 100,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 100/100 of 500"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 100,
+  "levelB": 100,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 100/100 of 500"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 100,
+  "levelB": 100,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 100/100 of 500"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 8,
+   "longestRun": 0.30000000000000004,
+   "runs": 6,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 27,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 177,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/177 of 500"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 177,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/177 of 500"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 177,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/177 of 500"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 21,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 156,
+  "levelB": 156,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 156/156 of 500"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 156,
+  "levelB": 156,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 156/156 of 500"
+ },
+ {
+  "label": "plate 45° | squareGrid | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 156,
+  "levelB": 156,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 156/156 of 500"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 4,
+   "longestRun": 0.1,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 42,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 147,
+  "levelB": 155,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 147/155 of 500"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 147,
+  "levelB": 155,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 147/155 of 500"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 147,
+  "levelB": 155,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 147/155 of 500"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 43,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 202,
+  "levelB": 200,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 202/200 of 500"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 202,
+  "levelB": 200,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 202/200 of 500"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 202,
+  "levelB": 200,
+  "status": "NoError",
+  "parts": 3,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 202/200 of 500"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 4,
+   "longestRun": 0.1,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 40,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 190,
+  "levelB": 196,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 190/196 of 500"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 190,
+  "levelB": 196,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 190/196 of 500"
+ },
+ {
+  "label": "plate 45° | honeycomb | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 190,
+  "levelB": 196,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 190/196 of 500"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 37,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 383,
+  "levelB": 383,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 383/383 of 500"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 383,
+  "levelB": 383,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 383/383 of 500"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 383,
+  "levelB": 383,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 383/383 of 500"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 1,
+   "longestRun": 0.1,
+   "runs": 1,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 33,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 158,
+  "levelB": 155,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 158/155 of 500"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 158,
+  "levelB": 155,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 158/155 of 500"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 158,
+  "levelB": 155,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 158/155 of 500"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 34,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 419,
+  "levelB": 419,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 419/419 of 500"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 419,
+  "levelB": 419,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 419/419 of 500"
+ },
+ {
+  "label": "plate 45° | celtic | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 419,
+  "levelB": 419,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 419/419 of 500"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 6,
+   "longestRun": 0.30000000000000004,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 30,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 132,
+  "levelB": 126,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 132/126 of 500"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 132,
+  "levelB": 126,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 132/126 of 500"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 132,
+  "levelB": 126,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 132/126 of 500"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.1,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 36,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 179,
+  "levelB": 177,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 179/177 of 500"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 179,
+  "levelB": 177,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 179/177 of 500"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 179,
+  "levelB": 177,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 179/177 of 500"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 6,
+   "longestRun": 0.30000000000000004,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 29,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 192,
+  "levelB": 186,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 192/186 of 500"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 192,
+  "levelB": 186,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 192/186 of 500"
+ },
+ {
+  "label": "plate 45° | voronoiTile | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 192,
+  "levelB": 186,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 192/186 of 500"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 13,
+   "longestRun": 0.1,
+   "runs": 13,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 56,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (2.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 176,
+  "levelB": 175,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 176/175 of 500"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 176,
+  "levelB": 175,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 176/175 of 500"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 176,
+  "levelB": 175,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 176/175 of 500"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 2,
+   "longestRun": 0.1,
+   "runs": 2,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 65,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 360,
+  "levelB": 361,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 360/361 of 500"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 360,
+  "levelB": 361,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 360/361 of 500"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 360,
+  "levelB": 361,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 360/361 of 500"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 11,
+   "longestRun": 0.1,
+   "runs": 11,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 55,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (2.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 198,
+  "levelB": 199,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 198/199 of 500"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 198,
+  "levelB": 199,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 198/199 of 500"
+ },
+ {
+  "label": "plate 45° | truchet | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 198,
+  "levelB": 199,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 198/199 of 500"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 65,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 468,
+  "levelB": 468,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 468/468 of 500"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 468,
+  "levelB": 468,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 468/468 of 500"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 468,
+  "levelB": 468,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 468/468 of 500"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 9,
+   "longestRun": 0.1,
+   "runs": 9,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 75,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 191,
+  "levelB": 194,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 191/194 of 500"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 191,
+  "levelB": 194,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 191/194 of 500"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 191,
+  "levelB": 194,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 191/194 of 500"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   3.552713678800501e-15,
+   -1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 60,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 484,
+  "levelB": 484,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 484/484 of 500"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 484,
+  "levelB": 484,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 484/484 of 500"
+ },
+ {
+  "label": "plate 45° | hilbert | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 484,
+  "levelB": 484,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 484/484 of 500"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 23,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 100,
+  "levelB": 100,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 100/100 of 500"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 100,
+  "levelB": 100,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 100/100 of 500"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 100,
+  "levelB": 100,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 100/100 of 500"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 7,
+   "longestRun": 0.2,
+   "runs": 6,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -7.105427357601002e-15,
+   7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 27,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 177,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/177 of 500"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 177,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/177 of 500"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 177,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/177 of 500"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 23,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 156,
+  "levelB": 156,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 156/156 of 500"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 156,
+  "levelB": 156,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 156/156 of 500"
+ },
+ {
+  "label": "plate 135° | squareGrid | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 156,
+  "levelB": 156,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 156/156 of 500"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 46,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 147,
+  "levelB": 154,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 147/154 of 500"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 147,
+  "levelB": 154,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 147/154 of 500"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 147,
+  "levelB": 154,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 147/154 of 500"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -7.105427357601002e-15,
+   7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 45,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 202,
+  "levelB": 200,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 202/200 of 500"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 202,
+  "levelB": 200,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 202/200 of 500"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 202,
+  "levelB": 200,
+  "status": "NoError",
+  "parts": 3,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 202/200 of 500"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 42,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 190,
+  "levelB": 195,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 190/195 of 500"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 190,
+  "levelB": 195,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 190/195 of 500"
+ },
+ {
+  "label": "plate 135° | honeycomb | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 190,
+  "levelB": 195,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 190/195 of 500"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 33,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 409,
+  "levelB": 409,
+  "status": "NoError",
+  "parts": 8,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 409/409 of 500"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 409,
+  "levelB": 409,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 409/409 of 500"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 409,
+  "levelB": 409,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 409/409 of 500"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 1,
+   "longestRun": 0.1,
+   "runs": 1,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -7.105427357601002e-15,
+   7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 37,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 148,
+  "levelB": 152,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 148/152 of 500"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 148,
+  "levelB": 152,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 148/152 of 500"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 148,
+  "levelB": 152,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 148/152 of 500"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 33,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 445,
+  "levelB": 445,
+  "status": "NoError",
+  "parts": 5,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 445/445 of 500"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 445,
+  "levelB": 445,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 445/445 of 500"
+ },
+ {
+  "label": "plate 135° | celtic | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 445,
+  "levelB": 445,
+  "status": "NoError",
+  "parts": 3,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 445/445 of 500"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.30000000000000004,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 32,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 115,
+  "levelB": 122,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 115/122 of 500"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 115,
+  "levelB": 122,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 115/122 of 500"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 115,
+  "levelB": 122,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 115/122 of 500"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 2,
+   "longestRun": 0.1,
+   "runs": 2,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -7.105427357601002e-15,
+   7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 39,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 159,
+  "levelB": 162,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 159/162 of 500"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 159,
+  "levelB": 162,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 159/162 of 500"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 159,
+  "levelB": 162,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 159/162 of 500"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.30000000000000004,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 28,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 175,
+  "levelB": 182,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 175/182 of 500"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 175,
+  "levelB": 182,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 175/182 of 500"
+ },
+ {
+  "label": "plate 135° | voronoiTile | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 175,
+  "levelB": 182,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 175/182 of 500"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 13,
+   "longestRun": 0.1,
+   "runs": 13,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 59,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (2.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 176,
+  "levelB": 175,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 176/175 of 500"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 176,
+  "levelB": 175,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 176/175 of 500"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 176,
+  "levelB": 175,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 176/175 of 500"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 4,
+   "longestRun": 0.1,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -7.105427357601002e-15,
+   7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 69,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 332,
+  "levelB": 332,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 332/332 of 500"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 332,
+  "levelB": 332,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 332/332 of 500"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 332,
+  "levelB": 332,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 332/332 of 500"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 11,
+   "longestRun": 0.1,
+   "runs": 11,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 60,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (2.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 199,
+  "levelB": 198,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 199/198 of 500"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 199,
+  "levelB": 198,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 199/198 of 500"
+ },
+ {
+  "label": "plate 135° | truchet | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 199,
+  "levelB": 198,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 199/198 of 500"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":0}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 63,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 484,
+  "levelB": 484,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 484/484 of 500"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 484,
+  "levelB": 484,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 484/484 of 500"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 484,
+  "levelB": 484,
+  "status": "NoError",
+  "parts": 9,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 484/484 of 500"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 8,
+   "longestRun": 0.1,
+   "runs": 8,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -7.105427357601002e-15,
+   7.105427357601002e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 73,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 210,
+  "levelB": 215,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 210/215 of 500"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 210,
+  "levelB": 215,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 210/215 of 500"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 210,
+  "levelB": 215,
+  "status": "NoError",
+  "parts": 3,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 210/215 of 500"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":3}",
+  "pieces": 2,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -3.552713678800501e-15,
+   1.0658141036401503e-14
+  ],
+  "lengthRatio": 1,
+  "ms": 69,
+  "log": [
+   "region spans 2 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "2 pieces flattened",
+   "1 sharp edge(s) unfolded flat so the pattern continues across them: 2 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 484,
+  "levelB": 484,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 484/484 of 500"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 484,
+  "levelB": 484,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 484/484 of 500"
+ },
+ {
+  "label": "plate 135° | hilbert | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 484,
+  "levelB": 484,
+  "status": "NoError",
+  "parts": 9,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 484/484 of 500"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 48,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.1,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 48,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 10,
+   "longestRun": 0.1,
+   "runs": 10,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 48,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (2.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 199,
+  "levelB": 198,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 199/198 of 500"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 199,
+  "levelB": 198,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 199/198 of 500"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 199,
+  "levelB": 198,
+  "status": "NoError",
+  "parts": 4,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 199/198 of 500"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 6,
+   "longestRun": 0.2,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -9.237055564881302e-14,
+   1.4210854715202004e-14
+  ],
+  "lengthRatio": 0.9999999999999983,
+  "ms": 34,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 9,
+   "longestRun": 0.2,
+   "runs": 7,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   0
+  ],
+  "lengthRatio": 1.0000000000000002,
+  "ms": 34,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 1,
+   "longestRun": 0.1,
+   "runs": 1,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999999,
+  "ms": 34,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 198,
+  "levelB": 194,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 198/194 of 500"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 198,
+  "levelB": 194,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 198/194 of 500"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 198,
+  "levelB": 194,
+  "status": "NoError",
+  "parts": 6,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 198/194 of 500"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 62,
+   "longestRun": 3,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 44,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (12.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.1,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 44,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 58,
+   "longestRun": 3,
+   "runs": 11,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 44,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (11.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 199,
+  "levelB": 258,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 199/258 of 500"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 199,
+  "levelB": 258,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 199/258 of 500"
+ },
+ {
+  "label": "plate -90° | squareGrid | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 199,
+  "levelB": 258,
+  "status": "NoError",
+  "parts": 4,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 199/258 of 500"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.2,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 77,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 77,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.1,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 77,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 175,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/175 of 500"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 175,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/175 of 500"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 175,
+  "status": "NoError",
+  "parts": 5,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/175 of 500"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -9.237055564881302e-14,
+   1.4210854715202004e-14
+  ],
+  "lengthRatio": 0.9999999999999983,
+  "ms": 63,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   0
+  ],
+  "lengthRatio": 1.0000000000000002,
+  "ms": 63,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 7,
+   "longestRun": 0.2,
+   "runs": 6,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999999,
+  "ms": 63,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 186,
+  "levelB": 190,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 186/190 of 500"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 186,
+  "levelB": 190,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 186/190 of 500"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 186,
+  "levelB": 190,
+  "status": "NoError",
+  "parts": 8,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 186/190 of 500"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 61,
+   "longestRun": 3,
+   "runs": 6,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 77,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (12.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 77,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 48,
+   "longestRun": 3,
+   "runs": 8,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 77,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (9.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 231,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/231 of 500"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 231,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/231 of 500"
+ },
+ {
+  "label": "plate -90° | honeycomb | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 174,
+  "levelB": 231,
+  "status": "NoError",
+  "parts": 5,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 174/231 of 500"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 45,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 360,
+   "longestRun": 6.2,
+   "runs": 7,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 45,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (72.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 0,
+   "longestRun": 0,
+   "runs": 0,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 45,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 394,
+  "levelB": 393,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 394/393 of 500"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 394,
+  "levelB": 393,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 394/393 of 500"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 394,
+  "levelB": 393,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 394/393 of 500"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 8,
+   "longestRun": 0.1,
+   "runs": 8,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -9.237055564881302e-14,
+   1.4210854715202004e-14
+  ],
+  "lengthRatio": 0.9999999999999983,
+  "ms": 43,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 7,
+   "longestRun": 0.1,
+   "runs": 7,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   0
+  ],
+  "lengthRatio": 1.0000000000000002,
+  "ms": 43,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 4,
+   "longestRun": 0.1,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999999,
+  "ms": 43,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 299,
+  "levelB": 302,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 299/302 of 500"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 299,
+  "levelB": 302,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 299/302 of 500"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 299,
+  "levelB": 302,
+  "status": "NoError",
+  "parts": 1,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 299/302 of 500"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 15,
+   "longestRun": 0.8,
+   "runs": 2,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 48,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (3.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 360,
+   "longestRun": 6.2,
+   "runs": 7,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 48,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (72.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 46,
+   "longestRun": 3,
+   "runs": 2,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 48,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (9.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 394,
+  "levelB": 408,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 394/408 of 500"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 394,
+  "levelB": 408,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 394/408 of 500"
+ },
+ {
+  "label": "plate -90° | celtic | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 394,
+  "levelB": 408,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 394/408 of 500"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 7,
+   "longestRun": 0.1,
+   "runs": 7,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 62,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 1,
+   "longestRun": 0.1,
+   "runs": 1,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 62,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.1,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 62,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 268,
+  "levelB": 272,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 268/272 of 500"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 268,
+  "levelB": 272,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 268/272 of 500"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 268,
+  "levelB": 272,
+  "status": "NoError",
+  "parts": 6,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 268/272 of 500"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -9.237055564881302e-14,
+   1.4210854715202004e-14
+  ],
+  "lengthRatio": 0.9999999999999983,
+  "ms": 59,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.1,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   0
+  ],
+  "lengthRatio": 1.0000000000000002,
+  "ms": 59,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 2,
+   "longestRun": 0.1,
+   "runs": 2,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999999,
+  "ms": 59,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 186,
+  "levelB": 183,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 186/183 of 500"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 186,
+  "levelB": 183,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 186/183 of 500"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 186,
+  "levelB": 183,
+  "status": "NoError",
+  "parts": 3,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 186/183 of 500"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 19,
+   "longestRun": 0.9,
+   "runs": 9,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 67,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (3.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 1,
+   "longestRun": 0.1,
+   "runs": 1,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 67,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 17,
+   "longestRun": 1.3,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 67,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (3.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 268,
+  "levelB": 284,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 268/284 of 500"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 268,
+  "levelB": 284,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 268/284 of 500"
+ },
+ {
+  "label": "plate -90° | voronoiTile | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 268,
+  "levelB": 284,
+  "status": "NoError",
+  "parts": 6,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 268/284 of 500"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 2,
+   "longestRun": 0.1,
+   "runs": 2,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 108,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 6,
+   "longestRun": 0.2,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 108,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 108,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 344,
+  "levelB": 345,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 344/345 of 500"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 344,
+  "levelB": 345,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 344/345 of 500"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 344,
+  "levelB": 345,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 344/345 of 500"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 9,
+   "longestRun": 0.2,
+   "runs": 6,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -9.237055564881302e-14,
+   1.4210854715202004e-14
+  ],
+  "lengthRatio": 0.9999999999999983,
+  "ms": 114,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 3,
+   "longestRun": 0.1,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   0
+  ],
+  "lengthRatio": 1.0000000000000002,
+  "ms": 114,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 4,
+   "longestRun": 0.1,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999999,
+  "ms": 114,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 329,
+  "levelB": 343,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 329/343 of 500"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 329,
+  "levelB": 343,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 329/343 of 500"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 329,
+  "levelB": 343,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 329/343 of 500"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 31,
+   "longestRun": 1.9000000000000001,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 119,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (6.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 6,
+   "longestRun": 0.2,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 119,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 11,
+   "longestRun": 0.8,
+   "runs": 4,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 119,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (2.2% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 344,
+  "levelB": 373,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 344/373 of 500"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 344,
+  "levelB": 373,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 344/373 of 500"
+ },
+ {
+  "label": "plate -90° | truchet | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 344,
+  "levelB": 373,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 344/373 of 500"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 13,
+   "longestRun": 0.30000000000000004,
+   "runs": 11,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 121,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (2.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 9,
+   "longestRun": 0.1,
+   "runs": 9,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 121,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 15,
+   "longestRun": 0.30000000000000004,
+   "runs": 12,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 121,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (3.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 230,
+  "levelB": 225,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 230/225 of 500"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 230,
+  "levelB": 225,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 230/225 of 500"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 230,
+  "levelB": 225,
+  "status": "NoError",
+  "parts": 4,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 230/225 of 500"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 13,
+   "longestRun": 0.2,
+   "runs": 9,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -9.237055564881302e-14,
+   1.4210854715202004e-14
+  ],
+  "lengthRatio": 0.9999999999999983,
+  "ms": 117,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (2.6% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 4,
+   "longestRun": 0.2,
+   "runs": 3,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   0
+  ],
+  "lengthRatio": 1.0000000000000002,
+  "ms": 117,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (0.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0,\"rotationDeg\":37}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 5,
+   "longestRun": 0.1,
+   "runs": 5,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999999,
+  "ms": 117,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 233,
+  "levelB": 228,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 233/228 of 500"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 233,
+  "levelB": 228,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 233/228 of 500"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":0,\"rotationDeg\":37} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 233,
+  "levelB": 228,
+  "status": "NoError",
+  "parts": 3,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 233/228 of 500"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 57,
+   "longestRun": 2.7,
+   "runs": 13,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   -6.394884621840902e-14,
+   7.283063041541027e-14
+  ],
+  "lengthRatio": 0.9999999999999981,
+  "ms": 113,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (11.4% before discounting outlines on the crease); crease turns 0.0° between frames, offset (-0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 9,
+   "longestRun": 0.1,
+   "runs": 9,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   7.105427357601002e-15,
+   -8.881784197001252e-15
+  ],
+  "lengthRatio": 1,
+  "ms": 113,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (1.8% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, -0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":3}",
+  "pieces": 4,
+  "sheets": 1,
+  "sameSheet": true,
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "raw": {
+   "samples": 500,
+   "mismatched": 30,
+   "longestRun": 1.4000000000000001,
+   "runs": 13,
+   "length": 50
+  },
+  "angleDeg": 0,
+  "phase": [
+   0,
+   0
+  ],
+  "lengthRatio": 0.9999999999999996,
+  "ms": 113,
+  "log": [
+   "region spans 4 smooth pieces (edges sharper than 30°); each is flattened on its own",
+   "4 pieces flattened",
+   "3 sharp edge(s) unfolded flat so the pattern continues across them: 4 pieces form 1 sheet(s)"
+  ],
+  "text": "joined 0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs (6.0% before discounting outlines on the crease); crease turns 0.0° between frames, offset (0.00, 0.00), length ratio 1.0000"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":3} 3d cut",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 230,
+  "levelB": 268,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 230/268 of 500"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":3} 3d recess",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 230,
+  "levelB": 268,
+  "status": "NoError",
+  "parts": 2,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 230/268 of 500"
+ },
+ {
+  "label": "plate -90° | hilbert | {\"margin\":3} 3d emboss",
+  "samples": 500,
+  "mismatched": 0,
+  "longestRun": 0,
+  "runs": 0,
+  "length": 50,
+  "levelA": 230,
+  "levelB": 268,
+  "status": "NoError",
+  "parts": 4,
+  "text": "0.0% of 50 mm mismatched, longest 0.00 mm in 0 runs; at surface level: 230/268 of 500"
+ }
+]

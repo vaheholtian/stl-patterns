@@ -1,0 +1,2918 @@
+[
+  {
+    "id": "squareGrid",
+    "rotationDeg": 0,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      200,
+      0
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      9,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "378 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 0,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      200,
+      0
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      9,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "392 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 0,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      100,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      4,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "84 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 0,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      100,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      4,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "104 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 0,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      50,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      2,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "24 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 0,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      50,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      2,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "35 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 15,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      193.18516525781365,
+      51.76380902050415
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      8.693332436601615,
+      1.3622055005395828
+    ],
+    "claimedFitted": true,
+    "mismatches": 199,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "392 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 15,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      193.18516525781365,
+      51.76380902050415
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      8.693332436601615,
+      1.3622055005395828
+    ],
+    "claimedFitted": true,
+    "mismatches": 199,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "394 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 15,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      96.59258262890683,
+      25.881904510252074
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      3.863703305156273,
+      0.6811027502697914
+    ],
+    "claimedFitted": true,
+    "mismatches": 325,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "98 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 15,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      96.59258262890683,
+      25.881904510252074
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      3.863703305156273,
+      0.6811027502697914
+    ],
+    "claimedFitted": true,
+    "mismatches": 276,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "96 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 15,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      48.29629131445341,
+      12.940952255126037
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      1.9318516525781364,
+      0.3405513751348957
+    ],
+    "claimedFitted": true,
+    "mismatches": 189,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "29 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 15,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      48.29629131445341,
+      12.940952255126037
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      1.9318516525781364,
+      0.3405513751348957
+    ],
+    "claimedFitted": true,
+    "mismatches": 313,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "30 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 30,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      173.20508075688775,
+      99.99999999999999
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      7.794228634059949,
+      2.631578947368421
+    ],
+    "claimedFitted": true,
+    "mismatches": 265,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "396 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 30,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      173.20508075688775,
+      99.99999999999999
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      7.794228634059949,
+      2.631578947368421
+    ],
+    "claimedFitted": true,
+    "mismatches": 255,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "398 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 30,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      86.60254037844388,
+      49.99999999999999
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      3.4641016151377553,
+      1.3157894736842104
+    ],
+    "claimedFitted": true,
+    "mismatches": 355,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "98 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 30,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      86.60254037844388,
+      49.99999999999999
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      3.4641016151377553,
+      1.3157894736842104
+    ],
+    "claimedFitted": true,
+    "mismatches": 239,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "99 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 30,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      43.30127018922194,
+      24.999999999999996
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      1.7320508075688776,
+      0.6578947368421052
+    ],
+    "claimedFitted": true,
+    "mismatches": 333,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "30 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 30,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      43.30127018922194,
+      24.999999999999996
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      1.7320508075688776,
+      0.6578947368421052
+    ],
+    "claimedFitted": true,
+    "mismatches": 314,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "30 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 45,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      141.4213562373095,
+      141.42135623730948
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      6.3639610306789285,
+      3.721614637823934
+    ],
+    "claimedFitted": true,
+    "mismatches": 184,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "398 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 45,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      141.4213562373095,
+      141.42135623730948
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      6.3639610306789285,
+      3.721614637823934
+    ],
+    "claimedFitted": true,
+    "mismatches": 216,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "400 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 45,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      70.71067811865476,
+      70.71067811865474
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      2.8284271247461903,
+      1.860807318911967
+    ],
+    "claimedFitted": true,
+    "mismatches": 323,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "99 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 45,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      70.71067811865476,
+      70.71067811865474
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      2.8284271247461903,
+      1.860807318911967
+    ],
+    "claimedFitted": true,
+    "mismatches": 264,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "100 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 45,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      35.35533905932738,
+      35.35533905932737
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      1.4142135623730951,
+      0.9304036594559835
+    ],
+    "claimedFitted": true,
+    "mismatches": 297,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "30 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 45,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      35.35533905932738,
+      35.35533905932737
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      1.4142135623730951,
+      0.9304036594559835
+    ],
+    "claimedFitted": true,
+    "mismatches": 264,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "30 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 90,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      1.2246467991473532e-14,
+      200
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      5.51091059616309e-16,
+      5.2631578947368425
+    ],
+    "claimedFitted": true,
+    "mismatches": 394,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "378 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 90,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      1.2246467991473532e-14,
+      200
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      5.51091059616309e-16,
+      5.2631578947368425
+    ],
+    "claimedFitted": true,
+    "mismatches": 395,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "378 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 90,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      6.123233995736766e-15,
+      100
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      2.4492935982947064e-16,
+      2.6315789473684212
+    ],
+    "claimedFitted": true,
+    "mismatches": 392,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "84 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 90,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      6.123233995736766e-15,
+      100
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      2.4492935982947064e-16,
+      2.6315789473684212
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "84 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 90,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      3.061616997868383e-15,
+      50
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      1.2246467991473532e-16,
+      1.3157894736842106
+    ],
+    "claimedFitted": true,
+    "mismatches": 394,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "21 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 90,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      3.061616997868383e-15,
+      50
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      1.2246467991473532e-16,
+      1.3157894736842106
+    ],
+    "claimedFitted": true,
+    "mismatches": 2,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "21 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 180,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      -200,
+      2.4492935982947064e-14
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      -9,
+      6.445509469196596e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "378 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 180,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      -200,
+      2.4492935982947064e-14
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 38,
+    "phase": [
+      -9,
+      6.445509469196596e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -2.5%",
+      "392 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 180,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      -100,
+      1.2246467991473532e-14
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      -4,
+      3.222754734598298e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "84 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 180,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      -100,
+      1.2246467991473532e-14
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      -4,
+      3.222754734598298e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 9.6%",
+      "104 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 180,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      -50,
+      6.123233995736766e-15
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      -2,
+      1.611377367299149e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "24 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "squareGrid",
+    "rotationDeg": 180,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      -50,
+      6.123233995736766e-15
+    ],
+    "tileWidth": 25,
+    "tileHeight": 38,
+    "phase": [
+      -2,
+      1.611377367299149e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 9.6%",
+      "35 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 0,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      200,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      8,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "69 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 0,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      200,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      8,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "68 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 0,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      100,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      4,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "26 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 0,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      100,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      4,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "25 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 0,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      50,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      2,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "9 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 0,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      50,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      2,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "9 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 15,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      193.18516525781365,
+      51.76380902050415
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      7.727406610312546,
+      1.2940952255126037
+    ],
+    "claimedFitted": true,
+    "mismatches": 230,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "69 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 15,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      193.18516525781365,
+      51.76380902050415
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      7.727406610312546,
+      1.2940952255126037
+    ],
+    "claimedFitted": true,
+    "mismatches": 249,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "69 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 15,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      96.59258262890683,
+      25.881904510252074
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      3.863703305156273,
+      0.6470476127563018
+    ],
+    "claimedFitted": true,
+    "mismatches": 160,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "26 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 15,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      96.59258262890683,
+      25.881904510252074
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      3.863703305156273,
+      0.6470476127563018
+    ],
+    "claimedFitted": true,
+    "mismatches": 256,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "24 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 15,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      48.29629131445341,
+      12.940952255126037
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      1.9318516525781364,
+      0.3235238063781509
+    ],
+    "claimedFitted": true,
+    "mismatches": 195,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "10 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 15,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      48.29629131445341,
+      12.940952255126037
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      1.9318516525781364,
+      0.3235238063781509
+    ],
+    "claimedFitted": true,
+    "mismatches": 207,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "9 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 30,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      173.20508075688775,
+      99.99999999999999
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      6.9282032302755105,
+      2.4999999999999996
+    ],
+    "claimedFitted": true,
+    "mismatches": 225,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "70 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 30,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      173.20508075688775,
+      99.99999999999999
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      6.9282032302755105,
+      2.4999999999999996
+    ],
+    "claimedFitted": true,
+    "mismatches": 193,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "72 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 30,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      86.60254037844388,
+      49.99999999999999
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      3.4641016151377553,
+      1.2499999999999998
+    ],
+    "claimedFitted": true,
+    "mismatches": 221,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "23 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 30,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      86.60254037844388,
+      49.99999999999999
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      3.4641016151377553,
+      1.2499999999999998
+    ],
+    "claimedFitted": true,
+    "mismatches": 167,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "28 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 30,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      43.30127018922194,
+      24.999999999999996
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      1.7320508075688776,
+      0.6249999999999999
+    ],
+    "claimedFitted": true,
+    "mismatches": 234,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "8 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 30,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      43.30127018922194,
+      24.999999999999996
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      1.7320508075688776,
+      0.6249999999999999
+    ],
+    "claimedFitted": true,
+    "mismatches": 167,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "10 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 45,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      141.4213562373095,
+      141.42135623730948
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      5.656854249492381,
+      3.535533905932737
+    ],
+    "claimedFitted": true,
+    "mismatches": 181,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "66 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 45,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      141.4213562373095,
+      141.42135623730948
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      5.656854249492381,
+      3.535533905932737
+    ],
+    "claimedFitted": true,
+    "mismatches": 241,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "73 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 45,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      70.71067811865476,
+      70.71067811865474
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      2.8284271247461903,
+      1.7677669529663684
+    ],
+    "claimedFitted": true,
+    "mismatches": 221,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "24 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 45,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      70.71067811865476,
+      70.71067811865474
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      2.8284271247461903,
+      1.7677669529663684
+    ],
+    "claimedFitted": true,
+    "mismatches": 179,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "22 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 45,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      35.35533905932738,
+      35.35533905932737
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      1.4142135623730951,
+      0.8838834764831842
+    ],
+    "claimedFitted": true,
+    "mismatches": 219,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "11 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 45,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      35.35533905932738,
+      35.35533905932737
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      1.4142135623730951,
+      0.8838834764831842
+    ],
+    "claimedFitted": true,
+    "mismatches": 217,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "11 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 90,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      1.2246467991473532e-14,
+      200
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      4.898587196589413e-16,
+      5
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "69 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 90,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      1.2246467991473532e-14,
+      200
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      4.898587196589413e-16,
+      5
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "67 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 90,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      6.123233995736766e-15,
+      100
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      2.4492935982947064e-16,
+      2.5
+    ],
+    "claimedFitted": true,
+    "mismatches": 432,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "27 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 90,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      6.123233995736766e-15,
+      100
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      2.4492935982947064e-16,
+      2.5
+    ],
+    "claimedFitted": true,
+    "mismatches": 206,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "25 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 90,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      3.061616997868383e-15,
+      50
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      1.2246467991473532e-16,
+      1.25
+    ],
+    "claimedFitted": true,
+    "mismatches": 72,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "11 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 90,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      3.061616997868383e-15,
+      50
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      1.2246467991473532e-16,
+      1.25
+    ],
+    "claimedFitted": true,
+    "mismatches": 398,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "10 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 180,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      -200,
+      2.4492935982947064e-14
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      -8,
+      6.123233995736766e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "69 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 180,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      -200,
+      2.4492935982947064e-14
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      -8,
+      6.123233995736766e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "8 repeats around the seam, tile stretched 4.2%",
+      "68 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 180,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      -100,
+      1.2246467991473532e-14
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      -4,
+      3.061616997868383e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "18 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 180,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      -100,
+      1.2246467991473532e-14
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      -4,
+      3.061616997868383e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 4.2%",
+      "25 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 180,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      -50,
+      6.123233995736766e-15
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      -2,
+      1.5308084989341916e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "9 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "truchet",
+    "rotationDeg": 180,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      -50,
+      6.123233995736766e-15
+    ],
+    "tileWidth": 25,
+    "tileHeight": 40,
+    "phase": [
+      -2,
+      1.5308084989341916e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 4.2%",
+      "11 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 0,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      200,
+      0
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      9,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "387 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 0,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      200,
+      0
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      9,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "418 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 0,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      100,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      4,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "89 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 0,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      100,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      4,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "104 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 0,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      50,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      2,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "25 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 0,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      50,
+      0
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      2,
+      0
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "30 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 15,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      193.18516525781365,
+      51.76380902050415
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      8.693332436601615,
+      1.399021865419031
+    ],
+    "claimedFitted": true,
+    "mismatches": 228,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "403 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 15,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      193.18516525781365,
+      51.76380902050415
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      8.693332436601615,
+      1.399021865419031
+    ],
+    "claimedFitted": true,
+    "mismatches": 259,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "405 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 15,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      96.59258262890683,
+      25.881904510252074
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      3.863703305156273,
+      0.6995109327095155
+    ],
+    "claimedFitted": true,
+    "mismatches": 249,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "103 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 15,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      96.59258262890683,
+      25.881904510252074
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      3.863703305156273,
+      0.6995109327095155
+    ],
+    "claimedFitted": true,
+    "mismatches": 235,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "101 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 15,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      48.29629131445341,
+      12.940952255126037
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      1.9318516525781364,
+      0.34975546635475774
+    ],
+    "claimedFitted": true,
+    "mismatches": 197,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "31 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 15,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      48.29629131445341,
+      12.940952255126037
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      1.9318516525781364,
+      0.34975546635475774
+    ],
+    "claimedFitted": true,
+    "mismatches": 213,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "30 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 30,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      173.20508075688775,
+      99.99999999999999
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      7.794228634059949,
+      2.702702702702702
+    ],
+    "claimedFitted": true,
+    "mismatches": 227,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "409 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 30,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      173.20508075688775,
+      99.99999999999999
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      7.794228634059949,
+      2.702702702702702
+    ],
+    "claimedFitted": true,
+    "mismatches": 225,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "408 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 30,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      86.60254037844388,
+      49.99999999999999
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      3.4641016151377553,
+      1.351351351351351
+    ],
+    "claimedFitted": true,
+    "mismatches": 196,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "96 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 30,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      86.60254037844388,
+      49.99999999999999
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      3.4641016151377553,
+      1.351351351351351
+    ],
+    "claimedFitted": true,
+    "mismatches": 227,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "99 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 30,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      43.30127018922194,
+      24.999999999999996
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      1.7320508075688776,
+      0.6756756756756755
+    ],
+    "claimedFitted": true,
+    "mismatches": 295,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "30 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 30,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      43.30127018922194,
+      24.999999999999996
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      1.7320508075688776,
+      0.6756756756756755
+    ],
+    "claimedFitted": true,
+    "mismatches": 273,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "31 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 45,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      141.4213562373095,
+      141.42135623730948
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      6.3639610306789285,
+      3.8221988172245807
+    ],
+    "claimedFitted": true,
+    "mismatches": 244,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "401 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 45,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      141.4213562373095,
+      141.42135623730948
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      6.3639610306789285,
+      3.8221988172245807
+    ],
+    "claimedFitted": true,
+    "mismatches": 252,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "407 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 45,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      70.71067811865476,
+      70.71067811865474
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      2.8284271247461903,
+      1.9110994086122903
+    ],
+    "claimedFitted": true,
+    "mismatches": 260,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "96 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 45,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      70.71067811865476,
+      70.71067811865474
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      2.8284271247461903,
+      1.9110994086122903
+    ],
+    "claimedFitted": true,
+    "mismatches": 181,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "102 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 45,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      35.35533905932738,
+      35.35533905932737
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      1.4142135623730951,
+      0.9555497043061452
+    ],
+    "claimedFitted": true,
+    "mismatches": 292,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "31 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 45,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      35.35533905932738,
+      35.35533905932737
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      1.4142135623730951,
+      0.9555497043061452
+    ],
+    "claimedFitted": true,
+    "mismatches": 195,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "32 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 90,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      1.2246467991473532e-14,
+      200
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      5.51091059616309e-16,
+      5.405405405405405
+    ],
+    "claimedFitted": true,
+    "mismatches": 231,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "384 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 90,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      1.2246467991473532e-14,
+      200
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      5.51091059616309e-16,
+      5.405405405405405
+    ],
+    "claimedFitted": true,
+    "mismatches": 208,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "408 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 90,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      6.123233995736766e-15,
+      100
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      2.4492935982947064e-16,
+      2.7027027027027026
+    ],
+    "claimedFitted": true,
+    "mismatches": 178,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "93 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 90,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      6.123233995736766e-15,
+      100
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      2.4492935982947064e-16,
+      2.7027027027027026
+    ],
+    "claimedFitted": true,
+    "mismatches": 250,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "100 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 90,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      3.061616997868383e-15,
+      50
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      1.2246467991473532e-16,
+      1.3513513513513513
+    ],
+    "claimedFitted": true,
+    "mismatches": 256,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "26 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 90,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      3.061616997868383e-15,
+      50
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      1.2246467991473532e-16,
+      1.3513513513513513
+    ],
+    "claimedFitted": true,
+    "mismatches": 226,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "30 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 180,
+    "scale": 0.5,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      -200,
+      2.4492935982947064e-14
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      -9,
+      6.619712427823531e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "414 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 180,
+    "scale": 0.5,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      -200,
+      2.4492935982947064e-14
+    ],
+    "tileWidth": 22.22222222222222,
+    "tileHeight": 37,
+    "phase": [
+      -9,
+      6.619712427823531e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "9 repeats around the seam, tile stretched -3.4%",
+      "401 shapes laid out; local size ranges 50% to 50% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 180,
+    "scale": 1,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      -100,
+      1.2246467991473532e-14
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      -4,
+      3.3098562139117655e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "105 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 180,
+    "scale": 1,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      -100,
+      1.2246467991473532e-14
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      -4,
+      3.3098562139117655e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "4 repeats around the seam, tile stretched 8.7%",
+      "96 shapes laid out; local size ranges 100% to 100% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 180,
+    "scale": 2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "period": [
+      -50,
+      6.123233995736766e-15
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      -2,
+      1.6549281069558827e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "33 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  },
+  {
+    "id": "voronoiTile",
+    "rotationDeg": 180,
+    "scale": 2,
+    "origin": [
+      13,
+      17,
+      0
+    ],
+    "period": [
+      -50,
+      6.123233995736766e-15
+    ],
+    "tileWidth": 25,
+    "tileHeight": 37,
+    "phase": [
+      -2,
+      1.6549281069558827e-16
+    ],
+    "claimedFitted": true,
+    "mismatches": 0,
+    "samples": 500,
+    "log": [
+      "2 repeats around the seam, tile stretched 8.7%",
+      "31 shapes laid out; local size ranges 200% to 200% of true"
+    ]
+  }
+]

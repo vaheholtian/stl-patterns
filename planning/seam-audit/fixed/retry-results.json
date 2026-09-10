@@ -1,0 +1,2667 @@
+{
+  "startedAt": "2026-09-08T02:37:17.144Z",
+  "budgetMs": 60000,
+  "jobs": 2,
+  "node": "v24.11.1",
+  "platform": "win32",
+  "cpu": "AMD Ryzen 5 7535HS with Radeon Graphics        ",
+  "logicalCpus": 12,
+  "sourceHashes": {
+    "src//App.tsx": "1e66cd7a68c41d8bf2c9868be42d4451a1971652c78357ced8a598a30d8246fe",
+    "src//index.css": "36810991c8fca6130bd328753d1e6a6a05e01682cbe3b91bb3e7e4fedbb1771b",
+    "src//main.tsx": "b9a6fa53ba45f4b3b7e9ca443884580f6a6a211e9343cd8240aea210be34e4d3",
+    "src//vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "src/app/ApplyScreen.tsx": "8a1d68b641bdf69aa3899b6e6bc22286b55a0c8c8a2b5b8268577be8bf0e5628",
+    "src/app/Notifications.tsx": "b4609036cb6eea56666aff2b9a9dc6d2447f2807e52484ff563164e2af7a85f6",
+    "src/app/panels/RecipePanel.tsx": "3d771241fc4ed20769c61ab802aea7ed8675655d60ce66103c69b1ce6087fc20",
+    "src/app/panels/TilePanel.tsx": "bdc33c1a335721b2a7a1fde423c1265a6ff8d70166704e649bb90aeedd1170e9",
+    "src/app/panels/VoronoiPanel.tsx": "5122ab052574faab74c1ae80297878bbf209e2cc8195a70cbc64b6c713657f56",
+    "src/app/PatternScreen.tsx": "d165808eba232f88c4760558c86bef57d3e938f688acb97fa8a87061f97648b9",
+    "src/app/useIsMobile.ts": "e30f5c629d68784e4bd0dcb6bd23a4c48483cdd3fb22193dca66850062f5ce2c",
+    "src/app/usePwa.ts": "c9f597b900412882e0bc536e1066c99497f192df95fcefb83b46ef296b117579",
+    "src/app/useTileRegen.ts": "420286c04b068d5d46893ccb15bdc025da59390bc259e41c9b4bc48745051eb4",
+    "src/app/Viewer.tsx": "389faee183184e62d4ab5189ac7fc4491b040d760ab003bb12132b30f5194ad0",
+    "src/assets/hero.png": "881ffbcaafc212e49addad08846a5b82761355fa20624253af3477ba33262c5c",
+    "src/assets/vite.svg": "5be21acd42eb7b896e517f4e0f0f11eb5c5d9e54fbbcebe9453f033008fcca6f",
+    "src/geom/bvh.ts": "237aec754b7cd7a610931fef1df64d7efae45af9fa1eb95866fb0de8419e712f",
+    "src/geom/flatten.ts": "00a4a19136dbd0dd8786b9e9686caab50ef6bd214d7bbece49a7bae6ddb945ad",
+    "src/geom/knn.ts": "48041962abefb9c3a9d4c6a8f9d242a8071f464b0a0e78dd5f56a312e2a82f77",
+    "src/geom/layout.ts": "fce9903bf97ac1891ceaa200f2f1276e031c7ae702eda07de94b1c03ce6b117d",
+    "src/geom/lscm.ts": "2f412357bf9420c6240dfff7de3f2000bfbf01292d06194b0c642bd6f1f2411f",
+    "src/geom/manifold.ts": "836bab72d335664cf01f7431d752be67e5cb5c3815d54a6bed2692e84e8f75c3",
+    "src/geom/parameterization.ts": "063f6b6df6aa4718fce5c2c2a71db638af28c45de124131836b206c88ea5eb85",
+    "src/geom/random.ts": "beb5b6f89fc55af347526d095285e346346fe1def5d5cb841e21984149493ce4",
+    "src/geom/regionFlatten.ts": "06e65a561df0be940bee91a06e1d2ad927ee12c92d5538050c0ba0be3499dc11",
+    "src/geom/relax.ts": "bfe6402fc152a5665b8705c8a653a7d75384ad9a3ee88528c078b3301cd0ad09",
+    "src/geom/sampling.ts": "d412623e9fbc41f5e54527c3c70999d7c08fb273fcb681bbd4d34942fcba72fa",
+    "src/geom/segmentation.ts": "d4bcb2db0776a7e6d9d2977c67e4ac031f3f2b7f601e5b5da125a7a6f73657cf",
+    "src/geom/slab.ts": "71cbc2bb535a0002949db97fb5bc53861880c0cc5bd7362f9d4e84affb0e7fdf",
+    "src/geom/submesh.ts": "0ee2735b76f575fefededd24b3576893d283e920d1634349aa43e5a881903a82",
+    "src/geom/tileTool.ts": "6d737e64c92b32aa6362adf64f9f74b2f1097b8588207338777edcecb241cd2d",
+    "src/geom/voronoiCells.ts": "3aeb48b2bfc01ffadbfaf98f4a8cefb44fde84fd0284f78301875ba20a1485da",
+    "src/io/demo.ts": "b363bf8df51f3b0baf13c5cf22028a37115a7c853f1b4b8d786faf9683ce82a5",
+    "src/io/download.ts": "0e1e354cd271fdda6085439fe30736e9280da286fabfca81a97e627d18d40936",
+    "src/io/load.ts": "1e9792cef7f725cd33d27d32a5ca24362270ee7a5226c23980e20367fdb3358e",
+    "src/io/stl.ts": "53f25135bf0d7a9f148397d8416a1bc7bc41337e6d3e43d5fc4a76a50f33d6f3",
+    "src/io/threemf.ts": "3e901340f4983c7e35776c3956c0125abe0a1fa4bdd3494bd8f431f241b0cdeb",
+    "src/patterns/ammannBeenker.ts": "874921b4abdf69e74eb74bbc1b82bf08af5d3bfe1a82562c74519fd326bc227b",
+    "src/patterns/apollonian.ts": "87429c74dd9322fbf16f0e8835f2db8f0eca3991fb8da411eb2e2ca17e6c2010",
+    "src/patterns/celtic.ts": "e829cb8e42aebaa40ff4a20337df3e122b75259114281df889f72dc0442ac531",
+    "src/patterns/connectMaterial.ts": "29294af37bcae3ae525da800d0613e884bba45a71c8ea725f03b6cd4e1dc0adf",
+    "src/patterns/continuous.ts": "142c7d292f43e309ebf4c1c2011a44e64582b472c578e4daaeae18fde3f6b9c4",
+    "src/patterns/convexInset.ts": "a4a3339ec03415ceb1f5521c5f20bea668fec11e62d083721ff7d137ab3f459a",
+    "src/patterns/definition.ts": "c3a830b8dfab4583bb8f54d147cad3c848100d917aa12e51b9988ae2e73441b7",
+    "src/patterns/delaunayTile.ts": "91dcf494122bb67807393c0648bf5a2ae9fe8ce3cdd27b63256841f4ba8a770d",
+    "src/patterns/fermatSpirals.ts": "9bc9b06c031991905df362efe82c42e1b1b9865b4be3898b652ad2d871da72aa",
+    "src/patterns/generate.ts": "4b6b73b1d84e53d47e9ce022ac99d059ac6b4c870f8608eee6f56d5f8c63dfbf",
+    "src/patterns/greekKey.ts": "3878088170b6a4eaa417f5f5952903291315c6d6579ce088e2ed008ce3ae5012",
+    "src/patterns/guilloche.ts": "68ebb798e0fc18cf5b4cb38e06e5391140db73e7975de907bc399722950c03ac",
+    "src/patterns/hankin.ts": "1d60b34b6704c775b182ec0355c5c65b5a565fd53bdbf86b7674196506831617",
+    "src/patterns/hilbert.ts": "4093d429407d1ee32d683f69aa97d166ec781ae1bebf24d26aa93c407aca0c04",
+    "src/patterns/hyperbolic.ts": "3f42490efb1031026f609eca34db435fc87c52b44c53b8d6fad31beab00898de",
+    "src/patterns/index.ts": "498177a165085e40abd5dd13ef3d9de11b1f9a8aaaae1671843a63633eaed562",
+    "src/patterns/julia.ts": "ea9167f2ddd41c4d5c4e89e66f1e2eee2be3fd03048695466be4002e5022740e",
+    "src/patterns/koch.ts": "9fa5a11d099f277a7b0ee6a0d38eee95ebc9c13520995ede38f21de2275fe5a7",
+    "src/patterns/maze.ts": "fd3817aeae78bf2f99c951f8c1ee3eff17e1be0fa719881b2f491ae6147fcffd",
+    "src/patterns/mirror.ts": "0f7303f594e291b5752a029eb2dcba675bd211ad15851757aeb39a118e238e09",
+    "src/patterns/mirrorCurves.ts": "4efc6312b3f555e3136f1cecdc970c9ee055cdeb58226c3c4d4066d80d4d2d02",
+    "src/patterns/moire.ts": "0addb3d755e1555c9b6660c85b0c44a428979ae128c67f4ac7312300359c5aea",
+    "src/patterns/penrose.ts": "73a78baf1912abb008feb76f437914babb35070e68b18dbea55a3be51df87091",
+    "src/patterns/penroseApproximant.ts": "63b96dc982453c69f32531b23274f0144dbc33a2320323aa29c2e25bdf4dc5cb",
+    "src/patterns/perforations.ts": "2a2672cc5d6607907fae77423b9b5ef34cb2b8b935172ed9b913d6a07aaeda93",
+    "src/patterns/phyllotaxis.ts": "57d5043d6deeacb6823836861ff100300c417496faca60229d79775731ec4ce7",
+    "src/patterns/pipeline.ts": "3fa5e91a796b3c0dfbae354abbfd6f186c3b7c151f934835be7afe49fa0b0e94",
+    "src/patterns/sierpinski.ts": "d6f4c066484978571d6aa494d886d0f5cda09c21bf2b90c88ba2741f7eaa2783",
+    "src/patterns/singleStrokeFractals.ts": "a93f0c42973a9f5121a90bd800e3f7e5f65567ea6190c4be49fb323a5c073e37",
+    "src/patterns/svg/svgExport.ts": "72e1309b21c7281a3c779e33717bde30492b485f76eb252a53a1692bf664f8f3",
+    "src/patterns/svg/svgImport.ts": "6961f5c4241feacb6a61b3f7b8580e68c3745afd14cb4e9ed9b908b832560413",
+    "src/patterns/svg/svgUnits.ts": "0f5b308ff45e485ddc2395a4ab34deb51ab95be2d6b72e46955034c15753bac2",
+    "src/patterns/truchet.ts": "2e85822e09f4cdd21c800388723404ae6be9089cf7e76fbee6f56cf093390e62",
+    "src/patterns/types.ts": "8a59141a57f40a8f1c5057043231ea03e9ceb80f4f03e729f88e3e8151368c39",
+    "src/patterns/voronoiTile.ts": "81cfdcffd9587342e92f8687ae531db3d35fd57998860542076c67ea14436aea",
+    "src/state/notifications.ts": "9062db08746982fed0fda66a20fed829653436d942f71e76b6937eaf97373c0c",
+    "src/state/recipes.ts": "a5551bf23fd08e19da039b990647c24e104e88f9c13ec41170399a7bd70619b9",
+    "src/state/store.ts": "997e567d943ab1833a9c07342d7a665eba0cf5df9383eb1bf27d48f9d2dd2ea5",
+    "src/state/tileStore.ts": "4f6bb9dc91a646ddcc2d3d5ffbc4b1151f3a154d55b3ee61d16849168affbed8",
+    "src/viewer/SceneManager.ts": "0c260743382018aca32ec62458da1f551dc09ec13bc877d2ab05ba56c8576c3c",
+    "src/viewer/sceneRef.ts": "f2fded3a4e220fde648ffa0df19b8dc6ec9c00358557f77efdbaa50ced6e7fc6",
+    "src/worker/client.ts": "5741a1f6a1cca7cb7326aad8de17a95fbb3532f6858cc0e60f239c6f69ca5ad8",
+    "src/worker/geom.worker.ts": "4a9099087a4697d7f9bcf557280c0941c8251b2c46646445cdc351b5dc728689",
+    "src/worker/preview-client.ts": "d4b4a2763a721e109cf5f7c03b28b9903a66979dd1185b24c341d7a263f8f41d",
+    "src/worker/preview-protocol.ts": "a800b72149c5ae115884c6e0e7865c1365ebe6c510718e8c328fee63a36f3c3b",
+    "src/worker/preview.worker.ts": "cfdf98b3434dc06df24598a021681991a0bd8f1f5de0578522205355aade8b76",
+    "src/worker/protocol.ts": "a4947c541321b0db86d0a639fb275abbecdc08eeb9369d361052a225758f0af3"
+  },
+  "results": [
+    {
+      "source": "guilloche",
+      "index": 55,
+      "config": {
+        "label": "combined 8",
+        "params": {
+          "width": 61,
+          "height": 11,
+          "style": "rosette",
+          "count": 6,
+          "radius": 101,
+          "amplitude": 4,
+          "lobes": 7,
+          "twist": 0.15,
+          "innerRings": 2,
+          "ribWidth": 5.800000000000001,
+          "seed": 999999
+        },
+        "minFeature": 0,
+        "invert": false,
+        "mirror": false,
+        "bridge": true
+      },
+      "originalBudgetMs": 20000,
+      "n": 0,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 444.0712,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.057599999999979445
+        },
+        {
+          "event": "generating",
+          "ms": 17.3408,
+          "id": "guilloche",
+          "params": {
+            "width": 61,
+            "height": 11,
+            "style": "rosette",
+            "count": 6,
+            "radius": 101,
+            "amplitude": 4,
+            "lobes": 7,
+            "twist": 0.15,
+            "innerRings": 2,
+            "ribWidth": 5.800000000000001,
+            "seed": 999999
+          }
+        },
+        {
+          "event": "error",
+          "ms": 18.61809999999997,
+          "error": "Error: Guilloche rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Guilloche rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/guilloche.ts:109:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85417984
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "guilloche",
+      "index": 56,
+      "config": {
+        "label": "combined 9",
+        "params": {
+          "width": 23,
+          "height": 37,
+          "style": "rosette",
+          "count": 8,
+          "radius": 15,
+          "amplitude": 4,
+          "lobes": 7,
+          "twist": 0.62,
+          "innerRings": 4,
+          "ribWidth": 1.6,
+          "seed": 0
+        },
+        "minFeature": 0.4,
+        "invert": true,
+        "mirror": true,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 1,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 2734.0193000000004,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.05299999999999727
+        },
+        {
+          "event": "generating",
+          "ms": 22.4443,
+          "id": "guilloche",
+          "params": {
+            "width": 23,
+            "height": 37,
+            "style": "rosette",
+            "count": 8,
+            "radius": 15,
+            "amplitude": 4,
+            "lobes": 7,
+            "twist": 0.62,
+            "innerRings": 4,
+            "ribWidth": 1.6,
+            "seed": 0
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 26.467499999999973,
+          "width": 23,
+          "height": 37,
+          "polygons": 0,
+          "curves": 40,
+          "points": 14400
+        },
+        {
+          "event": "mirroring",
+          "ms": 26.70490000000001
+        },
+        {
+          "event": "pipeline",
+          "ms": 43.81939999999997,
+          "mirror": true,
+          "bridge": false,
+          "points": 57600
+        },
+        {
+          "event": "extracting",
+          "ms": 2278.1884
+        },
+        {
+          "event": "result",
+          "ms": 2285.3158000000003,
+          "id": "guilloche",
+          "actual": {
+            "width": 46,
+            "height": 74,
+            "mirror": true,
+            "bridge": false
+          },
+          "area": 1985.9497014924623,
+          "fillFraction": 0.5834164810494895,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 9,
+          "vertices": 1058,
+          "peakRssBytes": 149041152
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "guilloche",
+      "index": 57,
+      "config": {
+        "label": "combined 10",
+        "params": {
+          "width": 61,
+          "height": 11,
+          "style": "rosette",
+          "count": 18,
+          "radius": 15,
+          "amplitude": 24.5,
+          "lobes": 7,
+          "twist": 0.15,
+          "innerRings": 2,
+          "ribWidth": 1.6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "invert": false,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 2,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 1424.0055,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.06290000000001328
+        },
+        {
+          "event": "generating",
+          "ms": 18.086700000000008,
+          "id": "guilloche",
+          "params": {
+            "width": 61,
+            "height": 11,
+            "style": "rosette",
+            "count": 18,
+            "radius": 15,
+            "amplitude": 24.5,
+            "lobes": 7,
+            "twist": 0.15,
+            "innerRings": 2,
+            "ribWidth": 1.6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 31.670000000000016,
+          "width": 61,
+          "height": 11,
+          "polygons": 0,
+          "curves": 54,
+          "points": 19440
+        },
+        {
+          "event": "pipeline",
+          "ms": 34.28469999999999,
+          "mirror": false,
+          "bridge": false,
+          "points": 19440
+        },
+        {
+          "event": "extracting",
+          "ms": 943.3043
+        },
+        {
+          "event": "result",
+          "ms": 949.2107999999998,
+          "id": "guilloche",
+          "actual": {
+            "width": 61,
+            "height": 11,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 69.40107149001217,
+          "fillFraction": 0.10342931667662023,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 137,
+          "peakRssBytes": 110137344
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "hyperbolic",
+      "index": 55,
+      "config": {
+        "label": "combined 11",
+        "params": {
+          "width": 23,
+          "height": 37,
+          "p": 7,
+          "q": 8,
+          "depth": 4,
+          "style": "edges",
+          "ribWidth": 3.9000000000000004,
+          "gap": 3.5,
+          "minFeature": 1,
+          "seed": 999999
+        },
+        "minFeature": 1.6,
+        "invert": true,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 3,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 2292.2906,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.040699999999958436
+        },
+        {
+          "event": "generating",
+          "ms": 12.860099999999989,
+          "id": "hyperbolic",
+          "params": {
+            "width": 23,
+            "height": 37,
+            "p": 7,
+            "q": 8,
+            "depth": 4,
+            "style": "edges",
+            "ribWidth": 3.9000000000000004,
+            "gap": 3.5,
+            "minFeature": 1,
+            "seed": 999999
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 20.362199999999973,
+          "width": 23,
+          "height": 37,
+          "polygons": 0,
+          "curves": 375,
+          "points": 7812
+        },
+        {
+          "event": "pipeline",
+          "ms": 21.635899999999992,
+          "mirror": false,
+          "bridge": false,
+          "points": 7812
+        },
+        {
+          "event": "extracting",
+          "ms": 1853.2490000000003
+        },
+        {
+          "event": "result",
+          "ms": 1858.2399,
+          "id": "hyperbolic",
+          "actual": {
+            "width": 23,
+            "height": 37,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 501.6086328703551,
+          "fillFraction": 0.5894343511990072,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 3,
+          "vertices": 304,
+          "peakRssBytes": 105218048
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "julia",
+      "index": 30,
+      "config": {
+        "label": "size",
+        "params": {
+          "width": 300,
+          "height": 300,
+          "kind": "julia",
+          "cRe": -0.8,
+          "cIm": 0.156,
+          "centerRe": 0,
+          "centerIm": 0,
+          "zoom": 1,
+          "iterations": 60,
+          "mode": "inside",
+          "bandFrom": 8,
+          "bandTo": 14,
+          "smooth": 0.4,
+          "resolution": 0.2,
+          "minFeature": 1,
+          "seed": 42
+        },
+        "minFeature": 0.84,
+        "invert": false,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 4,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 3791.4349,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.06579999999996744
+        },
+        {
+          "event": "generating",
+          "ms": 18.132799999999975,
+          "id": "julia",
+          "params": {
+            "width": 300,
+            "height": 300,
+            "kind": "julia",
+            "cRe": -0.8,
+            "cIm": 0.156,
+            "centerRe": 0,
+            "centerIm": 0,
+            "zoom": 1,
+            "iterations": 60,
+            "mode": "inside",
+            "bandFrom": 8,
+            "bandTo": 14,
+            "smooth": 0.4,
+            "resolution": 0.2,
+            "minFeature": 1,
+            "seed": 42
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 335.7254,
+          "width": 300,
+          "height": 300,
+          "polygons": 79,
+          "curves": 0,
+          "points": 19304
+        },
+        {
+          "event": "mirroring",
+          "ms": 335.91979999999995
+        },
+        {
+          "event": "pipeline",
+          "ms": 349.45969999999994,
+          "mirror": true,
+          "bridge": false,
+          "points": 77216
+        },
+        {
+          "event": "extracting",
+          "ms": 3288.9393
+        },
+        {
+          "event": "result",
+          "ms": 3372.6481999999996,
+          "id": "julia",
+          "actual": {
+            "width": 600,
+            "height": 600,
+            "mirror": true,
+            "bridge": false
+          },
+          "area": 35374.498418264535,
+          "fillFraction": 0.09826249560629037,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 316,
+          "vertices": 49844,
+          "peakRssBytes": 220725248
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "julia",
+      "index": 31,
+      "config": {
+        "label": "size",
+        "params": {
+          "width": 300,
+          "height": 300,
+          "kind": "julia",
+          "cRe": -0.8,
+          "cIm": 0.156,
+          "centerRe": 0,
+          "centerIm": 0,
+          "zoom": 1,
+          "iterations": 60,
+          "mode": "inside",
+          "bandFrom": 8,
+          "bandTo": 14,
+          "smooth": 0.4,
+          "resolution": 0.2,
+          "minFeature": 1,
+          "seed": 42
+        },
+        "minFeature": 0.84,
+        "invert": true,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 5,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 4216.765899999999,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.07929999999998927
+        },
+        {
+          "event": "generating",
+          "ms": 13.463300000000004,
+          "id": "julia",
+          "params": {
+            "width": 300,
+            "height": 300,
+            "kind": "julia",
+            "cRe": -0.8,
+            "cIm": 0.156,
+            "centerRe": 0,
+            "centerIm": 0,
+            "zoom": 1,
+            "iterations": 60,
+            "mode": "inside",
+            "bandFrom": 8,
+            "bandTo": 14,
+            "smooth": 0.4,
+            "resolution": 0.2,
+            "minFeature": 1,
+            "seed": 42
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 278.3433,
+          "width": 300,
+          "height": 300,
+          "polygons": 79,
+          "curves": 0,
+          "points": 19304
+        },
+        {
+          "event": "mirroring",
+          "ms": 278.49069999999995
+        },
+        {
+          "event": "pipeline",
+          "ms": 291.8562999999999,
+          "mirror": true,
+          "bridge": false,
+          "points": 77216
+        },
+        {
+          "event": "extracting",
+          "ms": 3806.5586000000003
+        },
+        {
+          "event": "result",
+          "ms": 3903.9734000000003,
+          "id": "julia",
+          "actual": {
+            "width": 600,
+            "height": 600,
+            "mirror": true,
+            "bridge": false
+          },
+          "area": 324382.85318413324,
+          "fillFraction": 0.9010634810670368,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 325,
+          "vertices": 49157,
+          "peakRssBytes": 197382144
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "penrose",
+      "index": 30,
+      "config": {
+        "label": "size",
+        "params": {
+          "width": 300,
+          "height": 300,
+          "style": "edges",
+          "edge": 6,
+          "minFeature": 1,
+          "gap": 1,
+          "ribWidth": 1.6,
+          "seed": 42
+        },
+        "minFeature": 0.84,
+        "invert": false,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 6,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 20513.606200000002,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.04210000000000491
+        },
+        {
+          "event": "generating",
+          "ms": 14.316100000000006,
+          "id": "penrose",
+          "params": {
+            "width": 300,
+            "height": 300,
+            "style": "edges",
+            "edge": 6,
+            "minFeature": 1,
+            "gap": 1,
+            "ribWidth": 1.6,
+            "seed": 42
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 59.47890000000001,
+          "width": 300,
+          "height": 300,
+          "polygons": 0,
+          "curves": 9598,
+          "points": 19196
+        },
+        {
+          "event": "mirroring",
+          "ms": 59.61959999999999
+        },
+        {
+          "event": "pipeline",
+          "ms": 90.75259999999997,
+          "mirror": true,
+          "bridge": false,
+          "points": 76784
+        },
+        {
+          "event": "extracting",
+          "ms": 19866.4817
+        },
+        {
+          "event": "result",
+          "ms": 20095.1992,
+          "id": "penrose",
+          "actual": {
+            "width": 600,
+            "height": 600,
+            "mirror": true,
+            "bridge": false
+          },
+          "area": 230035.7468335409,
+          "fillFraction": 0.6389881856487247,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0.0011725351214408875,
+              "max": 0.000008888542652130127,
+              "intervals": [
+                [
+                  2.5255797877907753,
+                  2.525588668882847
+                ],
+                [
+                  11.414009258151054,
+                  11.414018146693707
+                ],
+                [
+                  16.25683654844761,
+                  16.25684543699026
+                ],
+                [
+                  19.249868407845497,
+                  19.24987729638815
+                ],
+                [
+                  24.09269569814205,
+                  24.092704586684704
+                ],
+                [
+                  28.935522995889187,
+                  28.93553187698126
+                ],
+                [
+                  30.87598455697298,
+                  30.87599343061447
+                ],
+                [
+                  35.718811847269535,
+                  35.71882072836161
+                ],
+                [
+                  40.56163913756609,
+                  40.56164801865816
+                ],
+                [
+                  43.55467101186514,
+                  43.55467988550663
+                ],
+                [
+                  48.397498302161694,
+                  48.397507183253765
+                ],
+                [
+                  57.28592776507139,
+                  57.285936653614044
+                ],
+                [
+                  62.12875505536795,
+                  62.12876393646002
+                ],
+                [
+                  65.12178691476583,
+                  65.12179580330849
+                ],
+                [
+                  68.91204389929771,
+                  68.91205278038979
+                ],
+                [
+                  73.75487119704485,
+                  73.75488007068634
+                ],
+                [
+                  76.74790305644274,
+                  76.74791193753481
+                ],
+                [
+                  81.59073034673929,
+                  81.59073922783136
+                ],
+                [
+                  90.47915982455015,
+                  90.4791687130928
+                ],
+                [
+                  95.3219871148467,
+                  95.32199600338936
+                ],
+                [
+                  98.3150189742446,
+                  98.31502786278725
+                ],
+                [
+                  103.15784627199173,
+                  103.1578551530838
+                ],
+                [
+                  108.0006735548377,
+                  108.00068244338036
+                ],
+                [
+                  109.94113510847092,
+                  109.94114398956299
+                ],
+                [
+                  114.78396239876747,
+                  114.78397127985954
+                ],
+                [
+                  117.77699427306652,
+                  117.77700315415859
+                ],
+                [
+                  122.61982156336308,
+                  122.61983044445515
+                ],
+                [
+                  131.5082510188222,
+                  131.50825990736485
+                ],
+                [
+                  136.35107831656933,
+                  136.3510871976614
+                ],
+                [
+                  139.3441101834178,
+                  139.34411907196045
+                ],
+                [
+                  144.18693747371435,
+                  144.186946362257
+                ],
+                [
+                  149.0297647714615,
+                  149.02977365255356
+                ],
+                [
+                  150.97022633254528,
+                  150.97023520618677
+                ],
+                [
+                  155.81305362284184,
+                  155.8130625039339
+                ],
+                [
+                  160.6558809131384,
+                  160.65588979423046
+                ],
+                [
+                  163.64891277998686,
+                  163.64892166107893
+                ],
+                [
+                  164.70148307830095,
+                  164.7014919668436
+                ],
+                [
+                  169.5443103685975,
+                  169.54431925714016
+                ],
+                [
+                  172.5373422279954,
+                  172.53735111653805
+                ],
+                [
+                  177.3801695406437,
+                  177.38017842173576
+                ],
+                [
+                  182.22299682348967,
+                  182.22300571203232
+                ],
+                [
+                  184.16345837712288,
+                  184.16346725821495
+                ],
+                [
+                  189.00628566741943,
+                  189.0062945485115
+                ],
+                [
+                  193.849112957716,
+                  193.84912183880806
+                ],
+                [
+                  196.84214483201504,
+                  196.8421537131071
+                ],
+                [
+                  201.6849721223116,
+                  201.68498100340366
+                ],
+                [
+                  210.5734015852213,
+                  210.57341046631336
+                ],
+                [
+                  213.56643345206976,
+                  213.5664423406124
+                ],
+                [
+                  218.4092607423663,
+                  218.40926963090897
+                ],
+                [
+                  223.25208804011345,
+                  223.25209692120552
+                ],
+                [
+                  225.19254958629608,
+                  225.19255846738815
+                ],
+                [
+                  230.03537687659264,
+                  230.0353857576847
+                ],
+                [
+                  234.8782041668892,
+                  234.87821304798126
+                ],
+                [
+                  237.87123604863882,
+                  237.8712449222803
+                ],
+                [
+                  242.71406333893538,
+                  242.71407221257687
+                ],
+                [
+                  251.6024927943945,
+                  251.60250168293715
+                ],
+                [
+                  256.4453200921416,
+                  256.4453289732337
+                ],
+                [
+                  259.4383519515395,
+                  259.43836084008217
+                ],
+                [
+                  263.228608943522,
+                  263.22861782461405
+                ],
+                [
+                  268.07143622636795,
+                  268.07144510746
+                ],
+                [
+                  271.064468100667,
+                  271.06447698175907
+                ],
+                [
+                  275.90729539096355,
+                  275.9073042720556
+                ],
+                [
+                  284.79572486132383,
+                  284.7957337424159
+                ],
+                [
+                  289.6385521441698,
+                  289.63856103271246
+                ],
+                [
+                  292.6315840035677,
+                  292.63159289211035
+                ],
+                [
+                  297.4744113087654,
+                  297.4744201898575
+                ],
+                [
+                  302.5255797877908,
+                  302.52558866888285
+                ],
+                [
+                  307.36840707808733,
+                  307.3684159591794
+                ],
+                [
+                  310.3614389523864,
+                  310.36144783347845
+                ],
+                [
+                  315.20426624268293,
+                  315.204275123775
+                ],
+                [
+                  324.09269569814205,
+                  324.0927045866847
+                ],
+                [
+                  328.9355229958892,
+                  328.93553187698126
+                ],
+                [
+                  331.92855486273766,
+                  331.9285637512803
+                ],
+                [
+                  336.7713821530342,
+                  336.77139104157686
+                ],
+                [
+                  340.5616391375661,
+                  340.56164801865816
+                ],
+                [
+                  343.55467101186514,
+                  343.5546798929572
+                ],
+                [
+                  348.3974983021617,
+                  348.39750718325377
+                ],
+                [
+                  357.285927772522,
+                  357.28593665361404
+                ],
+                [
+                  362.12875504791737,
+                  362.12876393646
+                ],
+                [
+                  365.12178691476583,
+                  365.1217958033085
+                ],
+                [
+                  369.96461421996355,
+                  369.9646231010556
+                ],
+                [
+                  374.8074415028095,
+                  374.8074503913522
+                ],
+                [
+                  376.74790305644274,
+                  376.7479119375348
+                ],
+                [
+                  381.5907303467393,
+                  381.59073922783136
+                ],
+                [
+                  386.43355763703585,
+                  386.4335665181279
+                ],
+                [
+                  389.4265895113349,
+                  389.42659839242697
+                ],
+                [
+                  398.3150189742446,
+                  398.31502786278725
+                ],
+                [
+                  403.15784627199173,
+                  403.1578551530838
+                ],
+                [
+                  406.1508781313896,
+                  406.15088701993227
+                ],
+                [
+                  410.9937054216862,
+                  410.9937143102288
+                ],
+                [
+                  415.8365327194333,
+                  415.8365416005254
+                ],
+                [
+                  417.7769942730665,
+                  417.7770031541586
+                ],
+                [
+                  422.6198215633631,
+                  422.61983044445515
+                ],
+                [
+                  427.46264885365963,
+                  427.4626577347517
+                ],
+                [
+                  430.4556807279587,
+                  430.45568960160017
+                ],
+                [
+                  435.29850801825523,
+                  435.2985168993473
+                ],
+                [
+                  436.35107830911875,
+                  436.3510871976614
+                ],
+                [
+                  439.3441101834178,
+                  439.34411907196045
+                ],
+                [
+                  444.18693748116493,
+                  444.186946362257
+                ],
+                [
+                  449.0297647714615,
+                  449.02977365255356
+                ],
+                [
+                  450.9702263325453,
+                  450.97023521363735
+                ],
+                [
+                  455.81305362284184,
+                  455.8130625039339
+                ],
+                [
+                  460.6558809131384,
+                  460.65588979423046
+                ],
+                [
+                  463.64891277998686,
+                  463.64892165362835
+                ],
+                [
+                  468.4917400702834,
+                  468.4917489513755
+                ],
+                [
+                  477.3801695406437,
+                  477.38017842173576
+                ],
+                [
+                  482.22299682348967,
+                  482.2230057120323
+                ],
+                [
+                  485.21602868288755,
+                  485.2160375714302
+                ],
+                [
+                  490.0588559806347,
+                  490.05886486917734
+                ],
+                [
+                  491.9993175417185,
+                  491.99932642281055
+                ],
+                [
+                  496.84214483201504,
+                  496.8421537131071
+                ],
+                [
+                  501.6849721223116,
+                  501.68498100340366
+                ],
+                [
+                  504.67800398916006,
+                  504.67801287025213
+                ],
+                [
+                  509.5208312794566,
+                  509.5208401605487
+                ],
+                [
+                  518.4092607423663,
+                  518.409269630909
+                ],
+                [
+                  523.2520880401134,
+                  523.2520969212055
+                ],
+                [
+                  526.2451199218631,
+                  526.2451288029552
+                ],
+                [
+                  531.0879472121596,
+                  531.0879560932517
+                ],
+                [
+                  534.8782041817904,
+                  534.878213070333
+                ],
+                [
+                  537.87123606354,
+                  537.871244944632
+                ],
+                [
+                  542.714063346386,
+                  542.7140722349286
+                ],
+                [
+                  551.6024928167462,
+                  551.6025016903877
+                ],
+                [
+                  556.4453201070428,
+                  556.4453289806843
+                ],
+                [
+                  559.4383519664407,
+                  559.4383608475327
+                ],
+                [
+                  564.2811792641878,
+                  564.2811881378293
+                ],
+                [
+                  569.1240065544844,
+                  569.1240154281259
+                ],
+                [
+                  571.0644681081176,
+                  571.0644769966602
+                ],
+                [
+                  575.9072953984141,
+                  575.9073042869568
+                ],
+                [
+                  580.7501226887107,
+                  580.7501315698028
+                ],
+                [
+                  583.7431545630097,
+                  583.7431634515524
+                ],
+                [
+                  588.5859818533063,
+                  588.585990741849
+                ],
+                [
+                  597.4744113236666,
+                  597.4744201973081
+                ]
+              ]
+            },
+            {
+              "total": 0.0037974268198013306,
+              "max": 0.00005274266004562378,
+              "intervals": [
+                [
+                  2.9887809082865715,
+                  2.9888336434960365
+                ],
+                [
+                  14.652669548988342,
+                  14.652722291648388
+                ],
+                [
+                  17.893470741808414,
+                  17.89352348446846
+                ],
+                [
+                  29.557359367609024,
+                  29.55741211026907
+                ],
+                [
+                  33.075879350304604,
+                  33.07593209296465
+                ],
+                [
+                  38.49124549329281,
+                  38.491298235952854
+                ],
+                [
+                  42.00976546853781,
+                  42.00981821119785
+                ],
+                [
+                  53.67365409433842,
+                  53.67370683699846
+                ],
+                [
+                  56.91445530205965,
+                  56.914508044719696
+                ],
+                [
+                  77.78994882851839,
+                  77.79000157117844
+                ],
+                [
+                  81.03075002878904,
+                  81.03080277144909
+                ],
+                [
+                  92.69463865458965,
+                  92.6946913972497
+                ],
+                [
+                  101.62852477282286,
+                  101.6285775154829
+                ],
+                [
+                  105.14704474806786,
+                  105.14709748327732
+                ],
+                [
+                  116.81093338876963,
+                  116.81098613142967
+                ],
+                [
+                  120.0517345815897,
+                  120.05178732424974
+                ],
+                [
+                  140.92722810804844,
+                  140.92728085070848
+                ],
+                [
+                  144.1680293083191,
+                  144.16808205097914
+                ],
+                [
+                  155.8319179341197,
+                  155.83197067677975
+                ],
+                [
+                  159.07271914184093,
+                  159.07277188450098
+                ],
+                [
+                  179.94821266829967,
+                  179.94826541095972
+                ],
+                [
+                  183.18901386111975,
+                  183.1890666037798
+                ],
+                [
+                  194.85290249437094,
+                  194.85295523703098
+                ],
+                [
+                  203.78678861260414,
+                  203.7868413552642
+                ],
+                [
+                  207.30530858784914,
+                  207.3053613230586
+                ],
+                [
+                  218.96919721364975,
+                  218.9692499563098
+                ],
+                [
+                  222.20999842137098,
+                  222.21005116403103
+                ],
+                [
+                  243.08549194782972,
+                  243.08554469048977
+                ],
+                [
+                  246.32629314810038,
+                  246.32634589076042
+                ],
+                [
+                  257.990181773901,
+                  257.99023451656103
+                ],
+                [
+                  261.50870175659657,
+                  261.5087544992566
+                ],
+                [
+                  266.92406789958477,
+                  266.9241206422448
+                ],
+                [
+                  270.44258788228035,
+                  270.4426406249404
+                ],
+                [
+                  282.10647650808096,
+                  282.106529250741
+                ],
+                [
+                  285.34727770090103,
+                  285.3473304435611
+                ],
+                [
+                  297.0111663341522,
+                  297.01121907681227
+                ],
+                [
+                  302.98878090828657,
+                  302.98883364349604
+                ],
+                [
+                  314.65266954898834,
+                  314.6527222916484
+                ],
+                [
+                  317.8934707418084,
+                  317.89352348446846
+                ],
+                [
+                  329.557359367609,
+                  329.55741211026907
+                ],
+                [
+                  333.0758793503046,
+                  333.07593209296465
+                ],
+                [
+                  338.4912454932928,
+                  338.49129823595285
+                ],
+                [
+                  342.0097654685378,
+                  342.00981821119785
+                ],
+                [
+                  353.6736540943384,
+                  353.67370683699846
+                ],
+                [
+                  356.91445530205965,
+                  356.9145080447197
+                ],
+                [
+                  377.7899488285184,
+                  377.79000157117844
+                ],
+                [
+                  381.03075002878904,
+                  381.0308027714491
+                ],
+                [
+                  392.69463865458965,
+                  392.6946913972497
+                ],
+                [
+                  401.62852477282286,
+                  401.6285775154829
+                ],
+                [
+                  405.14704474806786,
+                  405.1470974832773
+                ],
+                [
+                  416.8109333887696,
+                  416.8109861314297
+                ],
+                [
+                  420.0517345815897,
+                  420.05178732424974
+                ],
+                [
+                  440.92722810804844,
+                  440.9272808507085
+                ],
+                [
+                  444.1680293083191,
+                  444.16808205097914
+                ],
+                [
+                  455.8319179341197,
+                  455.83197067677975
+                ],
+                [
+                  459.07271914184093,
+                  459.072771884501
+                ],
+                [
+                  479.9482126682997,
+                  479.9482654109597
+                ],
+                [
+                  483.18901386111975,
+                  483.1890666037798
+                ],
+                [
+                  494.85290249437094,
+                  494.852955237031
+                ],
+                [
+                  503.78678861260414,
+                  503.7868413552642
+                ],
+                [
+                  507.30530858784914,
+                  507.3053613230586
+                ],
+                [
+                  518.9691972136497,
+                  518.9692499563098
+                ],
+                [
+                  522.209998421371,
+                  522.210051164031
+                ],
+                [
+                  543.0854919552803,
+                  543.0855446979403
+                ],
+                [
+                  546.3262931630015,
+                  546.3263459056616
+                ],
+                [
+                  557.9901817888021,
+                  557.9902345314622
+                ],
+                [
+                  561.5087017640471,
+                  561.5087545067072
+                ],
+                [
+                  566.9240679070354,
+                  566.9241206496954
+                ],
+                [
+                  570.4425878897309,
+                  570.442640632391
+                ],
+                [
+                  582.1064765155315,
+                  582.1065292581916
+                ],
+                [
+                  585.3472777083516,
+                  585.3473304510117
+                ],
+                [
+                  597.0111663490534,
+                  597.0112190917134
+                ]
+              ]
+            }
+          ],
+          "fail": false,
+          "polygons": 18560,
+          "vertices": 84646,
+          "peakRssBytes": 385150976
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 64,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 7,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 310.1795999999995,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.030300000000011096
+        },
+        {
+          "event": "generating",
+          "ms": 10.837099999999992,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 5,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 11.360399999999998,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85626880
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 65,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 8,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 301.6880000000001,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.04019999999999868
+        },
+        {
+          "event": "generating",
+          "ms": 10.742199999999997,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 5,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 11.328900000000004,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85278720
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 70,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 9,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 285.26590000000033,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03540000000000987
+        },
+        {
+          "event": "generating",
+          "ms": 11.167000000000002,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 5,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 11.850300000000004,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85266432
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 71,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 10,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 258.6472999999987,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.030000000000001137
+        },
+        {
+          "event": "generating",
+          "ms": 11.201300000000003,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 5,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 11.858400000000017,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85368832
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 76,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 11,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 276.7561999999998,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03280000000000882
+        },
+        {
+          "event": "generating",
+          "ms": 10.429699999999997,
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 5,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 10.9743,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85913600
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 77,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 12,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 275.28110000000015,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03180000000000405
+        },
+        {
+          "event": "generating",
+          "ms": 11.272800000000018,
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 5,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 11.883499999999998,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85688320
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 82,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 13,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 313.02750000000015,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03870000000000573
+        },
+        {
+          "event": "generating",
+          "ms": 12.347300000000018,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 7,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 13.02770000000001,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85114880
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 83,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 14,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 332.1358,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.05370000000002051
+        },
+        {
+          "event": "generating",
+          "ms": 11.613900000000001,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 7,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 12.319699999999983,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85614592
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 88,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 7,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 15,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 1355.3683999999994,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.028300000000001546
+        },
+        {
+          "event": "generating",
+          "ms": 8.630800000000022,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 7,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 14.023500000000013,
+          "width": 23,
+          "height": 7,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 15.618700000000018,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 1071.6841
+        },
+        {
+          "event": "result",
+          "ms": 1076.0021,
+          "id": "hilbert",
+          "actual": {
+            "width": 23,
+            "height": 7,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 157.31792900248004,
+          "fillFraction": 0.9771299938042238,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 14,
+          "peakRssBytes": 141467648
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 89,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 7,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 16,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 12149.949200000001,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03499999999999659
+        },
+        {
+          "event": "generating",
+          "ms": 11.307600000000008,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 7,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 46.5771,
+          "width": 23,
+          "height": 7,
+          "polygons": 0,
+          "curves": 1,
+          "points": 68818
+        },
+        {
+          "event": "pipeline",
+          "ms": 50.883200000000016,
+          "mirror": false,
+          "bridge": false,
+          "points": 68818
+        },
+        {
+          "event": "extracting",
+          "ms": 11863.339
+        },
+        {
+          "event": "result",
+          "ms": 11869.961,
+          "id": "hilbert",
+          "actual": {
+            "width": 23,
+            "height": 7,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 154.94135872663503,
+          "fillFraction": 0.9623686877430747,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 13,
+          "peakRssBytes": 177086464
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 94,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 7,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 17,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 2001.605099999997,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.09979999999995925
+        },
+        {
+          "event": "generating",
+          "ms": 16.597399999999993,
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 7,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 26.01049999999998,
+          "width": 61,
+          "height": 7,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 27.412799999999947,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 1548.3126
+        },
+        {
+          "event": "result",
+          "ms": 1553.8847,
+          "id": "hilbert",
+          "actual": {
+            "width": 61,
+            "height": 7,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 417.5049438373627,
+          "fillFraction": 0.97776333451373,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 14,
+          "peakRssBytes": 141291520
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 100,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 18,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 383.3275999999969,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.031999999999982265
+        },
+        {
+          "event": "generating",
+          "ms": 11.534599999999955,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 11,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 12.079099999999983,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85450752
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 101,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 19,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "error",
+      "wallMs": 390.46210000000065,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.04529999999999745
+        },
+        {
+          "event": "generating",
+          "ms": 18.38749999999999,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 11,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "error",
+          "ms": 19.414199999999994,
+          "error": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.",
+          "stack": "Error: Hilbert rib width is too large for this tile. Increase the tile dimensions or reduce the rib width.\n    at Object.generate (file:///C:/Code/STL-patterns/src/patterns/hilbert.ts:126:13)\n    at file:///C:/Code/STL-patterns/planning/seam-audit/retry-worker.mjs:25:16",
+          "peakRssBytes": 85164032
+        }
+      ],
+      "stderr": "",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 106,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 11,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 20,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 1978.4700000000012,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.06900000000001683
+        },
+        {
+          "event": "generating",
+          "ms": 20.8365,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 11,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 26.553200000000004,
+          "width": 23,
+          "height": 11,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 27.932799999999986,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 1562.4506
+        },
+        {
+          "event": "result",
+          "ms": 1567.3032,
+          "id": "hilbert",
+          "actual": {
+            "width": 23,
+            "height": 11,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 248.12379389253442,
+          "fillFraction": 0.9807264580732585,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 15,
+          "peakRssBytes": 137564160
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 112,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 11,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 21,
+      "originalBudgetMs": 8000,
+      "budgetMs": 60000,
+      "status": "completed",
+      "wallMs": 1830.3582999999999,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.047100000000000364
+        },
+        {
+          "event": "generating",
+          "ms": 17.59359999999998,
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 11,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 29.05419999999998,
+          "width": 61,
+          "height": 11,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 33.19419999999997,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 1398.1607999999999
+        },
+        {
+          "event": "result",
+          "ms": 1403.4303,
+          "id": "hilbert",
+          "actual": {
+            "width": 61,
+            "height": 11,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 659.0595487596337,
+          "fillFraction": 0.9822049906999012,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 16,
+          "peakRssBytes": 140316672
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    }
+  ],
+  "finishedAt": "2026-09-08T02:37:46.237Z",
+  "sourceUnchanged": true,
+  "summary": {
+    "completed": 11,
+    "seam-failure": 0,
+    "error": 11,
+    "timeout": 0
+  }
+}

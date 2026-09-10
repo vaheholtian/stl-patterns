@@ -1,0 +1,669 @@
+[
+  {
+    "id": "squareGrid",
+    "code": 0,
+    "signal": null,
+    "ms": 13363,
+    "last": {
+      "id": "squareGrid",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "diamondLattice",
+    "code": 0,
+    "signal": null,
+    "ms": 22751,
+    "last": {
+      "id": "diamondLattice",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "honeycomb",
+    "code": 0,
+    "signal": null,
+    "ms": 21912,
+    "last": {
+      "id": "honeycomb",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "roundPerforations",
+    "code": 0,
+    "signal": null,
+    "ms": 48916,
+    "last": {
+      "id": "roundPerforations",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "roundedSlots",
+    "code": 0,
+    "signal": null,
+    "ms": 20803,
+    "last": {
+      "id": "roundedSlots",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "unicursalMaze",
+    "code": 0,
+    "signal": null,
+    "ms": 5705,
+    "last": {
+      "id": "unicursalMaze",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "lusona",
+    "code": 0,
+    "signal": null,
+    "ms": 20586,
+    "last": {
+      "id": "lusona",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "celtic",
+    "code": 0,
+    "signal": null,
+    "ms": 17085,
+    "last": {
+      "id": "celtic",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "hankin",
+    "code": 0,
+    "signal": null,
+    "ms": 10727,
+    "last": {
+      "id": "hankin",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "fermatSpirals",
+    "code": 0,
+    "signal": null,
+    "ms": 18962,
+    "last": {
+      "id": "fermatSpirals",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "ammannBeenker",
+    "code": 0,
+    "signal": null,
+    "ms": 40997,
+    "last": {
+      "id": "ammannBeenker",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "gosper",
+    "code": 0,
+    "signal": null,
+    "ms": 6032,
+    "last": {
+      "id": "gosper",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "arrowhead",
+    "code": 0,
+    "signal": null,
+    "ms": 8884,
+    "last": {
+      "id": "arrowhead",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "terdragon",
+    "code": 0,
+    "signal": null,
+    "ms": 14134,
+    "last": {
+      "id": "terdragon",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "greekKey",
+    "code": 0,
+    "signal": null,
+    "ms": 8804,
+    "last": {
+      "id": "greekKey",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "delaunayTile",
+    "code": 0,
+    "signal": null,
+    "ms": 13271,
+    "last": {
+      "id": "delaunayTile",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "voronoiTile",
+    "code": 0,
+    "signal": null,
+    "ms": 17324,
+    "last": {
+      "id": "voronoiTile",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "truchet",
+    "code": 0,
+    "signal": null,
+    "ms": 31785,
+    "last": {
+      "id": "truchet",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "penroseApproximant",
+    "code": 0,
+    "signal": null,
+    "ms": 36894,
+    "last": {
+      "id": "penroseApproximant",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "moire",
+    "code": 0,
+    "signal": null,
+    "ms": 12003,
+    "last": {
+      "id": "moire",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "hilbert",
+    "code": 0,
+    "signal": null,
+    "ms": 31538,
+    "last": {
+      "id": "hilbert",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "guilloche",
+    "code": 0,
+    "signal": null,
+    "ms": 29656,
+    "last": {
+      "id": "guilloche",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "sierpinski",
+    "code": 0,
+    "signal": null,
+    "ms": 24813,
+    "last": {
+      "id": "sierpinski",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "koch",
+    "code": 0,
+    "signal": null,
+    "ms": 12056,
+    "last": {
+      "id": "koch",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "phyllotaxis",
+    "code": 0,
+    "signal": null,
+    "ms": 34372,
+    "last": {
+      "id": "phyllotaxis",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "apollonian",
+    "code": 0,
+    "signal": null,
+    "ms": 16241,
+    "last": {
+      "id": "apollonian",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "hyperbolic",
+    "code": 0,
+    "signal": null,
+    "ms": 59956,
+    "last": {
+      "id": "hyperbolic",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "penrose",
+    "code": 0,
+    "signal": null,
+    "ms": 13226,
+    "last": {
+      "id": "penrose",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  },
+  {
+    "id": "julia",
+    "code": 0,
+    "signal": null,
+    "ms": 14516,
+    "last": {
+      "id": "julia",
+      "name": "nonuniform",
+      "mode": "recess",
+      "settings": {
+        "rotationDeg": 37,
+        "scale": 0.6,
+        "margin": 2.5,
+        "fitSeam": true,
+        "minScale": 0.5,
+        "fit": "repeat",
+        "mode": "recess",
+        "wallThickness": 4.2,
+        "depth": 0.8,
+        "detail": 3
+      }
+    }
+  }
+]

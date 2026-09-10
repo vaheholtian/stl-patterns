@@ -1,0 +1,547 @@
+[
+  {
+    "id": "honeycomb",
+    "code": 0,
+    "signal": null,
+    "ms": 1326,
+    "last": {
+      "i": 19,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "holeSize": 40,
+          "ribWidth": 10
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "roundPerforations",
+    "code": 0,
+    "signal": null,
+    "ms": 6172,
+    "last": {
+      "i": 19,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "holeSize": 40,
+          "ribWidth": 10
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "gosper",
+    "code": 0,
+    "signal": null,
+    "ms": 1334,
+    "last": {
+      "i": 19,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "order": 4
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "arrowhead",
+    "code": 0,
+    "signal": null,
+    "ms": 1601,
+    "last": {
+      "i": 19,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "order": 7
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "terdragon",
+    "code": 0,
+    "signal": null,
+    "ms": 1868,
+    "last": {
+      "i": 19,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "order": 7
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "voronoiTile",
+    "code": 0,
+    "signal": null,
+    "ms": 1010,
+    "last": {
+      "i": 26,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "cellSize": 60,
+          "relax": 8,
+          "ribWidth": 6,
+          "gradientStrength": 8
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "delaunayTile",
+    "code": 0,
+    "signal": null,
+    "ms": 1830,
+    "last": {
+      "i": 26,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "cellSize": 60,
+          "relax": 8,
+          "ribWidth": 6,
+          "gradientStrength": 8
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "koch",
+    "code": 0,
+    "signal": null,
+    "ms": 538,
+    "last": {
+      "i": 25,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "depth": 5,
+          "minFeature": 10,
+          "bandPitch": 100,
+          "ribWidth": 6
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "squareGrid",
+    "code": 0,
+    "signal": null,
+    "ms": 824,
+    "last": {
+      "i": 21,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "holeSize": 40,
+          "aspect": 4,
+          "ribWidth": 10
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "diamondLattice",
+    "code": 0,
+    "signal": null,
+    "ms": 936,
+    "last": {
+      "i": 21,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "holeSize": 40,
+          "aspect": 4,
+          "ribWidth": 10
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "lusona",
+    "code": 0,
+    "signal": null,
+    "ms": 1440,
+    "last": {
+      "i": 24,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "columns": 24,
+          "rows": 24,
+          "mirrors": 1,
+          "rounding": 0.45
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "unicursalMaze",
+    "code": 0,
+    "signal": null,
+    "ms": 858,
+    "last": {
+      "i": 21,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "columns": 24,
+          "rows": 24
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "celtic",
+    "code": 0,
+    "signal": null,
+    "ms": 1699,
+    "last": {
+      "i": 25,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "columns": 24,
+          "rows": 24,
+          "mirrors": 1,
+          "rounding": 0.45
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "ammannBeenker",
+    "code": 0,
+    "signal": null,
+    "ms": 1792,
+    "last": {
+      "i": 19,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "order": 3
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "hankin",
+    "code": 0,
+    "signal": null,
+    "ms": 1590,
+    "last": {
+      "i": 23,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "columns": 8,
+          "rows": 8,
+          "angle": 75
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "roundedSlots",
+    "code": 0,
+    "signal": null,
+    "ms": 9918,
+    "last": {
+      "i": 21,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "holeSize": 40,
+          "aspect": 4,
+          "ribWidth": 10
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "greekKey",
+    "code": 0,
+    "signal": null,
+    "ms": 1001,
+    "last": {
+      "i": 22,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "repeats": 16,
+          "bands": 12,
+          "rounding": 0.4
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "truchet",
+    "code": 0,
+    "signal": null,
+    "ms": 2440,
+    "last": {
+      "i": 21,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "cell": 50,
+          "ribWidth": 6
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "fermatSpirals",
+    "code": 0,
+    "signal": null,
+    "ms": 9881,
+    "last": {
+      "i": 23,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "ribWidth": 6,
+          "columns": 8,
+          "rows": 8,
+          "turns": 10
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "penroseApproximant",
+    "code": 0,
+    "signal": null,
+    "ms": 4209,
+    "last": {
+      "i": 26,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "edge": 60,
+          "minOrder": 6,
+          "gap": 5,
+          "ribWidth": 6
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "moire",
+    "code": 0,
+    "signal": null,
+    "ms": 1369,
+    "last": {
+      "i": 27,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "pitch": 30,
+          "angleA": 90,
+          "angleB": 90,
+          "pitchRatio": 2,
+          "ribWidth": 6
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "hilbert",
+    "code": 0,
+    "signal": null,
+    "ms": 2152,
+    "last": {
+      "i": 20,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "order": 7,
+          "ribWidth": 6
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "sierpinski",
+    "code": 0,
+    "signal": null,
+    "ms": 501,
+    "last": {
+      "i": 20,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "depth": 6,
+          "minFeature": 10
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "phyllotaxis",
+    "code": 0,
+    "signal": null,
+    "ms": 1058,
+    "last": {
+      "i": 26,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "count": 2000,
+          "spacing": 20,
+          "dotSize": 20,
+          "ribWidth": 6,
+          "grow": 4
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "hyperbolic",
+    "code": 0,
+    "signal": null,
+    "ms": 7155,
+    "last": {
+      "i": 27,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "p": 12,
+          "q": 12,
+          "depth": 6,
+          "ribWidth": 4,
+          "gap": 4,
+          "minFeature": 5
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "apollonian",
+    "code": 0,
+    "signal": null,
+    "ms": 890,
+    "last": {
+      "i": 25,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "depth": 10,
+          "gap": 3,
+          "ribWidth": 4,
+          "minFeature": 5
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "penrose",
+    "code": 0,
+    "signal": null,
+    "ms": 5256,
+    "last": {
+      "i": 25,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "edge": 60,
+          "minFeature": 10,
+          "gap": 5,
+          "ribWidth": 6
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "julia",
+    "code": 0,
+    "signal": null,
+    "ms": 2842,
+    "last": {
+      "i": 39,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "cRe": 2,
+          "cIm": 2,
+          "centerRe": 2,
+          "centerIm": 2,
+          "zoom": 1000,
+          "iterations": 500,
+          "bandFrom": 500,
+          "bandTo": 500,
+          "smooth": 3,
+          "resolution": 2,
+          "minFeature": 5
+        },
+        "seamless": true
+      }
+    }
+  },
+  {
+    "id": "guilloche",
+    "code": 0,
+    "signal": null,
+    "ms": 29865,
+    "last": {
+      "i": 30,
+      "config": {
+        "label": "combined-max",
+        "params": {
+          "count": 24,
+          "radius": 150,
+          "amplitude": 50,
+          "lobes": 24,
+          "twist": 1,
+          "innerRings": 6,
+          "ribWidth": 6
+        },
+        "seamless": true
+      }
+    }
+  }
+]

@@ -1,0 +1,321 @@
+[
+  {
+    "id": "squareGrid",
+    "code": 0,
+    "signal": null,
+    "ms": 4356,
+    "last": {
+      "id": "squareGrid",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "diamondLattice",
+    "code": 0,
+    "signal": null,
+    "ms": 7328,
+    "last": {
+      "id": "diamondLattice",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "honeycomb",
+    "code": 0,
+    "signal": null,
+    "ms": 7201,
+    "last": {
+      "id": "honeycomb",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "roundPerforations",
+    "code": 0,
+    "signal": null,
+    "ms": 15378,
+    "last": {
+      "id": "roundPerforations",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "roundedSlots",
+    "code": 0,
+    "signal": null,
+    "ms": 6683,
+    "last": {
+      "id": "roundedSlots",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "unicursalMaze",
+    "code": 0,
+    "signal": null,
+    "ms": 2821,
+    "last": {
+      "id": "unicursalMaze",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "lusona",
+    "code": 0,
+    "signal": null,
+    "ms": 7232,
+    "last": {
+      "id": "lusona",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "celtic",
+    "code": 0,
+    "signal": null,
+    "ms": 5787,
+    "last": {
+      "id": "celtic",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "hankin",
+    "code": 0,
+    "signal": null,
+    "ms": 4436,
+    "last": {
+      "id": "hankin",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "ammannBeenker",
+    "code": 0,
+    "signal": null,
+    "ms": 14453,
+    "last": {
+      "id": "ammannBeenker",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "gosper",
+    "code": 0,
+    "signal": null,
+    "ms": 3549,
+    "last": {
+      "id": "gosper",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "fermatSpirals",
+    "code": 0,
+    "signal": null,
+    "ms": 12183,
+    "last": {
+      "id": "fermatSpirals",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "arrowhead",
+    "code": 0,
+    "signal": null,
+    "ms": 5390,
+    "last": {
+      "id": "arrowhead",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "greekKey",
+    "code": 0,
+    "signal": null,
+    "ms": 5141,
+    "last": {
+      "id": "greekKey",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "terdragon",
+    "code": 0,
+    "signal": null,
+    "ms": 11574,
+    "last": {
+      "id": "terdragon",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "delaunayTile",
+    "code": 0,
+    "signal": null,
+    "ms": 4913,
+    "last": {
+      "id": "delaunayTile",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "voronoiTile",
+    "code": 0,
+    "signal": null,
+    "ms": 7653,
+    "last": {
+      "id": "voronoiTile",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "penroseApproximant",
+    "code": 0,
+    "signal": null,
+    "ms": 7447,
+    "last": {
+      "id": "penroseApproximant",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "truchet",
+    "code": 0,
+    "signal": null,
+    "ms": 12437,
+    "last": {
+      "id": "truchet",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "moire",
+    "code": 0,
+    "signal": null,
+    "ms": 4523,
+    "last": {
+      "id": "moire",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "hilbert",
+    "code": 0,
+    "signal": null,
+    "ms": 12192,
+    "last": {
+      "id": "hilbert",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "sierpinski",
+    "code": 0,
+    "signal": null,
+    "ms": 10074,
+    "last": {
+      "id": "sierpinski",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "guilloche",
+    "code": 0,
+    "signal": null,
+    "ms": 13097,
+    "last": {
+      "id": "guilloche",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "koch",
+    "code": 0,
+    "signal": null,
+    "ms": 5506,
+    "last": {
+      "id": "koch",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "phyllotaxis",
+    "code": 0,
+    "signal": null,
+    "ms": 12410,
+    "last": {
+      "id": "phyllotaxis",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "apollonian",
+    "code": 0,
+    "signal": null,
+    "ms": 6717,
+    "last": {
+      "id": "apollonian",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "hyperbolic",
+    "code": 0,
+    "signal": null,
+    "ms": 19575,
+    "last": {
+      "id": "hyperbolic",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "penrose",
+    "code": 0,
+    "signal": null,
+    "ms": 7513,
+    "last": {
+      "id": "penrose",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  },
+  {
+    "id": "julia",
+    "code": 0,
+    "signal": null,
+    "ms": 7471,
+    "last": {
+      "id": "julia",
+      "rotationDeg": 37,
+      "mode": "recess"
+    }
+  }
+]

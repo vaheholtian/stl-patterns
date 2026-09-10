@@ -1,0 +1,18 @@
+{
+  "patterns": 29,
+  "pipelineCases": 1518,
+  "pipelineSeamFailures": 3,
+  "pipelineErrors": 1,
+  "pipelineTimeouts": 7,
+  "emptyFeatures": 84,
+  "rawCases": 344,
+  "rawIncomplete": 9,
+  "rawErrors": 3,
+  "targetedCases": 114,
+  "targetedSeamFailures": 13,
+  "targetedErrors": 0,
+  "targetedTimeouts": 15,
+  "wrapCases": 108,
+  "wrapFailures": 69,
+  "reproductionCases": 25
+}

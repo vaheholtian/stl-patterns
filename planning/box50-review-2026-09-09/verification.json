@@ -1,0 +1,1735 @@
+{
+  "checkedAt": "2026-09-09T19:21:18.834Z",
+  "fixtureUnchanged": true,
+  "generators": 29,
+  "validExportedSTLs": 345,
+  "confirmedNotch": true,
+  "confirmedMarginScaling": true,
+  "files": [
+    {
+      "file": "ammannBeenker-default-cut.stl",
+      "status": "NoError",
+      "volume": 13534.424574351346
+    },
+    {
+      "file": "ammannBeenker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21402.925476190256
+    },
+    {
+      "file": "ammannBeenker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16615.862998523506
+    },
+    {
+      "file": "ammannBeenker-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 17110.184998633802
+    },
+    {
+      "file": "ammannBeenker-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19472.95607906447
+    },
+    {
+      "file": "ammannBeenker-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 17181.958953334968
+    },
+    {
+      "file": "ammannBeenker-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19931.131639525953
+    },
+    {
+      "file": "ammannBeenker-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 18078.027964234985
+    },
+    {
+      "file": "ammannBeenker-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 12524.605576212456
+    },
+    {
+      "file": "ammannBeenker-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21807.746708624833
+    },
+    {
+      "file": "ammannBeenker-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16222.188568863676
+    },
+    {
+      "file": "apollonian-default-cut.stl",
+      "status": "NoError",
+      "volume": 15272.156288898332
+    },
+    {
+      "file": "apollonian-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20916.11569540914
+    },
+    {
+      "file": "apollonian-default-recess.stl",
+      "status": "NoError",
+      "volume": 17112.62346394479
+    },
+    {
+      "file": "apollonian-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 15724.226257366763
+    },
+    {
+      "file": "apollonian-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19816.659256323113
+    },
+    {
+      "file": "apollonian-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 15272.156288898332
+    },
+    {
+      "file": "apollonian-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20916.11569540914
+    },
+    {
+      "file": "apollonian-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17112.62346394479
+    },
+    {
+      "file": "apollonian-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 14853.551614525415
+    },
+    {
+      "file": "apollonian-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21047.70256365252
+    },
+    {
+      "file": "apollonian-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16969.20604092452
+    },
+    {
+      "file": "arrowhead-default-cut.stl",
+      "status": "NoError",
+      "volume": 17769.035244463008
+    },
+    {
+      "file": "arrowhead-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19623.066998963313
+    },
+    {
+      "file": "arrowhead-default-recess.stl",
+      "status": "NoError",
+      "volume": 18373.323283683818
+    },
+    {
+      "file": "arrowhead-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 13473.190831236987
+    },
+    {
+      "file": "arrowhead-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20402.93557104515
+    },
+    {
+      "file": "arrowhead-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 13539.532384216584
+    },
+    {
+      "file": "arrowhead-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21789.090203200052
+    },
+    {
+      "file": "arrowhead-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16244.710797361913
+    },
+    {
+      "file": "arrowhead-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 17633.430599042757
+    },
+    {
+      "file": "arrowhead-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 19667.250525153242
+    },
+    {
+      "file": "arrowhead-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 18322.76920928952
+    },
+    {
+      "file": "celtic-default-cut.stl",
+      "status": "NoError",
+      "volume": 16503.326173572743
+    },
+    {
+      "file": "celtic-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20274.384703775664
+    },
+    {
+      "file": "celtic-default-recess.stl",
+      "status": "NoError",
+      "volume": 17736.46554525576
+    },
+    {
+      "file": "celtic-fine-picker-cut.stl",
+      "status": "NoError",
+      "volume": 14499.55878324536
+    },
+    {
+      "file": "celtic-fine-picker-emboss.stl",
+      "status": "NoError",
+      "volume": 21284.138715529218
+    },
+    {
+      "file": "celtic-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 14806.76677551298
+    },
+    {
+      "file": "celtic-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20061.48433328832
+    },
+    {
+      "file": "celtic-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 14788.857341311339
+    },
+    {
+      "file": "celtic-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21145.982574816568
+    },
+    {
+      "file": "celtic-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16873.46122082435
+    },
+    {
+      "file": "celtic-ring-margin-cut.stl",
+      "status": "NoError",
+      "volume": 13881.349649306732
+    },
+    {
+      "file": "celtic-ring-margin-emboss.stl",
+      "status": "NoError",
+      "volume": 21636.392686256848
+    },
+    {
+      "file": "celtic-ring-no-margin-cut.stl",
+      "status": "NoError",
+      "volume": 13050.851755424723
+    },
+    {
+      "file": "celtic-ring-no-margin-emboss.stl",
+      "status": "NoError",
+      "volume": 21995.279742944345
+    },
+    {
+      "file": "celtic-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 15956.715185718838
+    },
+    {
+      "file": "celtic-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 20490.876273168906
+    },
+    {
+      "file": "celtic-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 17516.14299601297
+    },
+    {
+      "file": "control-box50-scale0.6-emboss.stl",
+      "status": "NoError",
+      "volume": 22666.456110119223
+    },
+    {
+      "file": "control-box50-scale1-emboss.stl",
+      "status": "NoError",
+      "volume": 22444.376612213648
+    },
+    {
+      "file": "control-box50-scale1.7-emboss.stl",
+      "status": "NoError",
+      "volume": 22062.187490830733
+    },
+    {
+      "file": "control-filled-135-emboss.stl",
+      "status": "NoError",
+      "volume": 44465.25961587128
+    },
+    {
+      "file": "delaunayTile-default-cut.stl",
+      "status": "NoError",
+      "volume": 15034.967681187289
+    },
+    {
+      "file": "delaunayTile-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21006.068651269386
+    },
+    {
+      "file": "delaunayTile-default-recess.stl",
+      "status": "NoError",
+      "volume": 17012.91238346649
+    },
+    {
+      "file": "delaunayTile-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 16382.115403298685
+    },
+    {
+      "file": "delaunayTile-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19661.88972804504
+    },
+    {
+      "file": "delaunayTile-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 15034.967681187289
+    },
+    {
+      "file": "delaunayTile-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21006.068651269386
+    },
+    {
+      "file": "delaunayTile-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17012.91238346649
+    },
+    {
+      "file": "delaunayTile-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 14136.357402584934
+    },
+    {
+      "file": "delaunayTile-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21353.686273744122
+    },
+    {
+      "file": "delaunayTile-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16665.303651957933
+    },
+    {
+      "file": "diamondLattice-default-cut.stl",
+      "status": "NoError",
+      "volume": 15493.070331963609
+    },
+    {
+      "file": "diamondLattice-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20785.19243320288
+    },
+    {
+      "file": "diamondLattice-default-recess.stl",
+      "status": "NoError",
+      "volume": 17227.875794345342
+    },
+    {
+      "file": "diamondLattice-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 15800.230904049966
+    },
+    {
+      "file": "diamondLattice-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19807.42702210968
+    },
+    {
+      "file": "diamondLattice-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 15493.070331963609
+    },
+    {
+      "file": "diamondLattice-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20785.19243320288
+    },
+    {
+      "file": "diamondLattice-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17227.875794345342
+    },
+    {
+      "file": "diamondLattice-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 14730.846136468113
+    },
+    {
+      "file": "diamondLattice-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21094.714769960498
+    },
+    {
+      "file": "diamondLattice-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16925.39178142147
+    },
+    {
+      "file": "fermatSpirals-default-cut.stl",
+      "status": "NoError",
+      "volume": 15035.775449495302
+    },
+    {
+      "file": "fermatSpirals-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21028.871157087084
+    },
+    {
+      "file": "fermatSpirals-default-recess.stl",
+      "status": "NoError",
+      "volume": 16996.38564071801
+    },
+    {
+      "file": "fermatSpirals-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 16220.620462150178
+    },
+    {
+      "file": "fermatSpirals-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19696.643173165343
+    },
+    {
+      "file": "fermatSpirals-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 16490.91966320292
+    },
+    {
+      "file": "fermatSpirals-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20272.018067919296
+    },
+    {
+      "file": "fermatSpirals-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17731.380909219428
+    },
+    {
+      "file": "fermatSpirals-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 14477.255712764481
+    },
+    {
+      "file": "fermatSpirals-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21231.5440317301
+    },
+    {
+      "file": "fermatSpirals-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16796.16955269753
+    },
+    {
+      "file": "gosper-default-cut.stl",
+      "status": "NoError",
+      "volume": 17808.746351727863
+    },
+    {
+      "file": "gosper-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19602.024066345206
+    },
+    {
+      "file": "gosper-default-recess.stl",
+      "status": "NoError",
+      "volume": 18394.86110584657
+    },
+    {
+      "file": "gosper-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 13603.519923726186
+    },
+    {
+      "file": "gosper-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20363.981950794914
+    },
+    {
+      "file": "gosper-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 13555.296672480546
+    },
+    {
+      "file": "gosper-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21782.587292492524
+    },
+    {
+      "file": "gosper-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16250.811209251333
+    },
+    {
+      "file": "gosper-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 17352.27154652983
+    },
+    {
+      "file": "gosper-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 19793.85565117773
+    },
+    {
+      "file": "gosper-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 18197.901877488162
+    },
+    {
+      "file": "greekKey-default-cut.stl",
+      "status": "NoError",
+      "volume": 16323.70907472377
+    },
+    {
+      "file": "greekKey-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20354.36251903929
+    },
+    {
+      "file": "greekKey-default-recess.stl",
+      "status": "NoError",
+      "volume": 17647.44485645038
+    },
+    {
+      "file": "greekKey-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 14961.759577740742
+    },
+    {
+      "file": "greekKey-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20017.705947932787
+    },
+    {
+      "file": "greekKey-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 15114.844236374085
+    },
+    {
+      "file": "greekKey-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20990.333839845585
+    },
+    {
+      "file": "greekKey-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17035.473684528763
+    },
+    {
+      "file": "greekKey-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 15738.695462966714
+    },
+    {
+      "file": "greekKey-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 20597.38270817675
+    },
+    {
+      "file": "greekKey-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 17415.94909653095
+    },
+    {
+      "file": "guilloche-default-cut.stl",
+      "status": "NoError",
+      "volume": 16893.20646375384
+    },
+    {
+      "file": "guilloche-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20070.56066831678
+    },
+    {
+      "file": "guilloche-default-recess.stl",
+      "status": "NoError",
+      "volume": 17932.34265424881
+    },
+    {
+      "file": "guilloche-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 14237.240544050483
+    },
+    {
+      "file": "guilloche-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20210.682383457053
+    },
+    {
+      "file": "guilloche-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 16893.20646375384
+    },
+    {
+      "file": "guilloche-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20070.56066831678
+    },
+    {
+      "file": "guilloche-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17932.34265424881
+    },
+    {
+      "file": "guilloche-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 16698.612527101614
+    },
+    {
+      "file": "guilloche-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 20121.779332764698
+    },
+    {
+      "file": "guilloche-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 17876.58436104065
+    },
+    {
+      "file": "hankin-default-cut.stl",
+      "status": "NoError",
+      "volume": 17436.396196337122
+    },
+    {
+      "file": "hankin-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19784.21802422028
+    },
+    {
+      "file": "hankin-default-recess.stl",
+      "status": "NoError",
+      "volume": 18210.105205233125
+    },
+    {
+      "file": "hankin-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 13961.593850251436
+    },
+    {
+      "file": "hankin-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20274.682581716243
+    },
+    {
+      "file": "hankin-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 13889.128150986633
+    },
+    {
+      "file": "hankin-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21619.62711823334
+    },
+    {
+      "file": "hankin-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16416.34866556009
+    },
+    {
+      "file": "hankin-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 16974.070586011112
+    },
+    {
+      "file": "hankin-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 19990.369009816095
+    },
+    {
+      "file": "hankin-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 18014.042049090607
+    },
+    {
+      "file": "hilbert-default-cut.stl",
+      "status": "NoError",
+      "volume": 15164.776590674965
+    },
+    {
+      "file": "hilbert-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20960.176735881236
+    },
+    {
+      "file": "hilbert-default-recess.stl",
+      "status": "NoError",
+      "volume": 17060.462648749693
+    },
+    {
+      "file": "hilbert-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 16146.822691410172
+    },
+    {
+      "file": "hilbert-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19716.225125739784
+    },
+    {
+      "file": "hilbert-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 15164.776590674965
+    },
+    {
+      "file": "hilbert-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20960.176735881236
+    },
+    {
+      "file": "hilbert-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17060.462648749693
+    },
+    {
+      "file": "hilbert-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 14317.073877792793
+    },
+    {
+      "file": "hilbert-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21300.74824213814
+    },
+    {
+      "file": "hilbert-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16726.502702046724
+    },
+    {
+      "file": "honeycomb-default-cut.stl",
+      "status": "NoError",
+      "volume": 14814.492394810622
+    },
+    {
+      "file": "honeycomb-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21131.782489276946
+    },
+    {
+      "file": "honeycomb-default-recess.stl",
+      "status": "NoError",
+      "volume": 16885.437684086708
+    },
+    {
+      "file": "honeycomb-fine-picker-cut.stl",
+      "status": "NoError",
+      "volume": 14538.9599442575
+    },
+    {
+      "file": "honeycomb-fine-picker-emboss.stl",
+      "status": "NoError",
+      "volume": 21261.0870167215
+    },
+    {
+      "file": "honeycomb-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 16455.735309331794
+    },
+    {
+      "file": "honeycomb-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19641.200251205228
+    },
+    {
+      "file": "honeycomb-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 14814.492394810622
+    },
+    {
+      "file": "honeycomb-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21131.782489276946
+    },
+    {
+      "file": "honeycomb-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16885.437684086708
+    },
+    {
+      "file": "honeycomb-ring-margin-cut.stl",
+      "status": "NoError",
+      "volume": 10488.154966363329
+    },
+    {
+      "file": "honeycomb-ring-margin-emboss.stl",
+      "status": "NoError",
+      "volume": 23405.951263010622
+    },
+    {
+      "file": "honeycomb-ring-no-margin-cut.stl",
+      "status": "NoError",
+      "volume": 9139.930998668811
+    },
+    {
+      "file": "honeycomb-ring-no-margin-emboss.stl",
+      "status": "NoError",
+      "volume": 24016.157656309857
+    },
+    {
+      "file": "honeycomb-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 13913.359803415984
+    },
+    {
+      "file": "honeycomb-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21493.71038684944
+    },
+    {
+      "file": "honeycomb-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16529.420446061733
+    },
+    {
+      "file": "hyperbolic-default-cut.stl",
+      "status": "NoError",
+      "volume": 16266.532504980545
+    },
+    {
+      "file": "hyperbolic-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20318.822258654272
+    },
+    {
+      "file": "hyperbolic-default-recess.stl",
+      "status": "NoError",
+      "volume": 17685.930866248047
+    },
+    {
+      "file": "hyperbolic-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 14931.492001311737
+    },
+    {
+      "file": "hyperbolic-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20019.04250768959
+    },
+    {
+      "file": "hyperbolic-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 16266.532504980545
+    },
+    {
+      "file": "hyperbolic-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20318.822258654272
+    },
+    {
+      "file": "hyperbolic-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17685.930866248047
+    },
+    {
+      "file": "hyperbolic-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 15772.753106092998
+    },
+    {
+      "file": "hyperbolic-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 20544.73327005661
+    },
+    {
+      "file": "hyperbolic-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 17484.77922809529
+    },
+    {
+      "file": "julia-default-cut.stl",
+      "status": "NoError",
+      "volume": 18185.32756250807
+    },
+    {
+      "file": "julia-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19400.36890328783
+    },
+    {
+      "file": "julia-default-recess.stl",
+      "status": "NoError",
+      "volume": 18587.589106927466
+    },
+    {
+      "file": "julia-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 12803.101862196927
+    },
+    {
+      "file": "julia-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20566.815598763806
+    },
+    {
+      "file": "julia-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 18185.32756250807
+    },
+    {
+      "file": "julia-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19400.36890328783
+    },
+    {
+      "file": "julia-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 18587.589106927466
+    },
+    {
+      "file": "julia-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 18244.341974571285
+    },
+    {
+      "file": "julia-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 19342.11369717621
+    },
+    {
+      "file": "julia-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 18642.64078695912
+    },
+    {
+      "file": "koch-default-cut.stl",
+      "status": "NoError",
+      "volume": 16156.080905708384
+    },
+    {
+      "file": "koch-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20457.47549687623
+    },
+    {
+      "file": "koch-default-recess.stl",
+      "status": "NoError",
+      "volume": 17559.790586215615
+    },
+    {
+      "file": "koch-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 14794.69830060995
+    },
+    {
+      "file": "koch-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20069.870664370363
+    },
+    {
+      "file": "koch-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 16156.080905708384
+    },
+    {
+      "file": "koch-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20457.47549687623
+    },
+    {
+      "file": "koch-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17559.790586215615
+    },
+    {
+      "file": "koch-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 15920.841996322364
+    },
+    {
+      "file": "koch-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 20496.21857832561
+    },
+    {
+      "file": "koch-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 17504.228199882164
+    },
+    {
+      "file": "lusona-default-cut.stl",
+      "status": "NoError",
+      "volume": 16559.57048795135
+    },
+    {
+      "file": "lusona-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20246.917314278067
+    },
+    {
+      "file": "lusona-default-recess.stl",
+      "status": "NoError",
+      "volume": 17764.969777908856
+    },
+    {
+      "file": "lusona-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 14747.7086945593
+    },
+    {
+      "file": "lusona-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20076.16504493183
+    },
+    {
+      "file": "lusona-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 14732.127665485961
+    },
+    {
+      "file": "lusona-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21173.77435291711
+    },
+    {
+      "file": "lusona-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16844.65285326989
+    },
+    {
+      "file": "lusona-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 16024.701241614426
+    },
+    {
+      "file": "lusona-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 20458.171408803362
+    },
+    {
+      "file": "lusona-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 17548.47935428704
+    },
+    {
+      "file": "moire-default-cut.stl",
+      "status": "NoError",
+      "volume": 13205.81740041732
+    },
+    {
+      "file": "moire-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21964.58222517487
+    },
+    {
+      "file": "moire-default-recess.stl",
+      "status": "NoError",
+      "volume": 16073.852131409463
+    },
+    {
+      "file": "moire-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 18670.711942155052
+    },
+    {
+      "file": "moire-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19074.29037182834
+    },
+    {
+      "file": "moire-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 13205.81740041732
+    },
+    {
+      "file": "moire-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21964.58222517487
+    },
+    {
+      "file": "moire-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16073.852131409463
+    },
+    {
+      "file": "moire-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 11944.397239228887
+    },
+    {
+      "file": "moire-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 22460.249189194077
+    },
+    {
+      "file": "moire-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 15581.158909013127
+    },
+    {
+      "file": "penrose-default-cut.stl",
+      "status": "NoError",
+      "volume": 15824.000597747128
+    },
+    {
+      "file": "penrose-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20620.382136607397
+    },
+    {
+      "file": "penrose-default-recess.stl",
+      "status": "NoError",
+      "volume": 17398.109445269587
+    },
+    {
+      "file": "penrose-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 15513.758229236717
+    },
+    {
+      "file": "penrose-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19882.503036186976
+    },
+    {
+      "file": "penrose-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 15824.000597747128
+    },
+    {
+      "file": "penrose-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20620.382136607397
+    },
+    {
+      "file": "penrose-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17398.109445269587
+    },
+    {
+      "file": "penrose-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 15089.836833896103
+    },
+    {
+      "file": "penrose-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 20901.065386070917
+    },
+    {
+      "file": "penrose-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 17111.62275372691
+    },
+    {
+      "file": "penroseApproximant-default-cut.stl",
+      "status": "NoError",
+      "volume": 14033.173029281725
+    },
+    {
+      "file": "penroseApproximant-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21423.442850927087
+    },
+    {
+      "file": "penroseApproximant-default-recess.stl",
+      "status": "NoError",
+      "volume": 16603.985127567485
+    },
+    {
+      "file": "penroseApproximant-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 17175.680585084887
+    },
+    {
+      "file": "penroseApproximant-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19458.244048342392
+    },
+    {
+      "file": "penroseApproximant-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 14033.173029281725
+    },
+    {
+      "file": "penroseApproximant-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21423.442850927087
+    },
+    {
+      "file": "penroseApproximant-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16603.985127567485
+    },
+    {
+      "file": "penroseApproximant-ring-margin-cut.stl",
+      "status": "NoError",
+      "volume": 8893.651887889957
+    },
+    {
+      "file": "penroseApproximant-ring-margin-emboss.stl",
+      "status": "NoError",
+      "volume": 23999.78013975173
+    },
+    {
+      "file": "penroseApproximant-ring-no-margin-cut.stl",
+      "status": "NoError",
+      "volume": 7254.926252910495
+    },
+    {
+      "file": "penroseApproximant-ring-no-margin-emboss.stl",
+      "status": "NoError",
+      "volume": 24704.59863823126
+    },
+    {
+      "file": "penroseApproximant-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 12923.511228228856
+    },
+    {
+      "file": "penroseApproximant-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21839.781036915465
+    },
+    {
+      "file": "penroseApproximant-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16187.437965153389
+    },
+    {
+      "file": "phyllotaxis-default-cut.stl",
+      "status": "NoError",
+      "volume": 18497.996830245178
+    },
+    {
+      "file": "phyllotaxis-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19246.61509274101
+    },
+    {
+      "file": "phyllotaxis-default-recess.stl",
+      "status": "NoError",
+      "volume": 18743.107252478705
+    },
+    {
+      "file": "phyllotaxis-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 12371.842422166546
+    },
+    {
+      "file": "phyllotaxis-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20569.230480663013
+    },
+    {
+      "file": "phyllotaxis-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 18497.996830245178
+    },
+    {
+      "file": "phyllotaxis-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19246.61509274101
+    },
+    {
+      "file": "phyllotaxis-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 18743.107252478705
+    },
+    {
+      "file": "phyllotaxis-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 18377.657081986767
+    },
+    {
+      "file": "phyllotaxis-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 19304.5702621089
+    },
+    {
+      "file": "phyllotaxis-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 18691.294907595573
+    },
+    {
+      "file": "roundedSlots-default-cut.stl",
+      "status": "NoError",
+      "volume": 14709.54780715167
+    },
+    {
+      "file": "roundedSlots-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21207.256448057993
+    },
+    {
+      "file": "roundedSlots-default-recess.stl",
+      "status": "NoError",
+      "volume": 16828.328549135553
+    },
+    {
+      "file": "roundedSlots-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 16634.314854075656
+    },
+    {
+      "file": "roundedSlots-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19593.793225410263
+    },
+    {
+      "file": "roundedSlots-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 14709.54780715167
+    },
+    {
+      "file": "roundedSlots-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21207.256448057993
+    },
+    {
+      "file": "roundedSlots-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16828.328549135553
+    },
+    {
+      "file": "roundedSlots-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 13677.803451492013
+    },
+    {
+      "file": "roundedSlots-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21613.371169053247
+    },
+    {
+      "file": "roundedSlots-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16415.37265516474
+    },
+    {
+      "file": "roundPerforations-default-cut.stl",
+      "status": "NoError",
+      "volume": 15191.109220418362
+    },
+    {
+      "file": "roundPerforations-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20938.744366826424
+    },
+    {
+      "file": "roundPerforations-default-recess.stl",
+      "status": "NoError",
+      "volume": 17075.557834349038
+    },
+    {
+      "file": "roundPerforations-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 16063.598385227033
+    },
+    {
+      "file": "roundPerforations-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19742.448956535958
+    },
+    {
+      "file": "roundPerforations-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 15191.109220418362
+    },
+    {
+      "file": "roundPerforations-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20938.744366826424
+    },
+    {
+      "file": "roundPerforations-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17075.557834349038
+    },
+    {
+      "file": "roundPerforations-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 14376.865264686263
+    },
+    {
+      "file": "roundPerforations-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21265.748624455093
+    },
+    {
+      "file": "roundPerforations-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16753.94152593714
+    },
+    {
+      "file": "sierpinski-default-cut.stl",
+      "status": "NoError",
+      "volume": 16778.965751726064
+    },
+    {
+      "file": "sierpinski-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20106.758994196447
+    },
+    {
+      "file": "sierpinski-default-recess.stl",
+      "status": "NoError",
+      "volume": 17879.780043953993
+    },
+    {
+      "file": "sierpinski-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 13677.408890027382
+    },
+    {
+      "file": "sierpinski-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20212.975062867445
+    },
+    {
+      "file": "sierpinski-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 16778.965751726064
+    },
+    {
+      "file": "sierpinski-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20106.758994196447
+    },
+    {
+      "file": "sierpinski-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17879.780043953993
+    },
+    {
+      "file": "sierpinski-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 16619.071213812185
+    },
+    {
+      "file": "sierpinski-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 20145.141094890292
+    },
+    {
+      "file": "sierpinski-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 17850.61163488061
+    },
+    {
+      "file": "squareGrid-default-cut.stl",
+      "status": "NoError",
+      "volume": 14855.695242655253
+    },
+    {
+      "file": "squareGrid-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21130.554419469237
+    },
+    {
+      "file": "squareGrid-default-recess.stl",
+      "status": "NoError",
+      "volume": 16901.940946585197
+    },
+    {
+      "file": "squareGrid-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 16454.392681408786
+    },
+    {
+      "file": "squareGrid-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19638.06687193792
+    },
+    {
+      "file": "squareGrid-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 14855.695242655253
+    },
+    {
+      "file": "squareGrid-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21130.554419469237
+    },
+    {
+      "file": "squareGrid-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16901.940946585197
+    },
+    {
+      "file": "squareGrid-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 13940.615846245504
+    },
+    {
+      "file": "squareGrid-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21483.331983164608
+    },
+    {
+      "file": "squareGrid-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16541.806151962253
+    },
+    {
+      "file": "terdragon-default-cut.stl",
+      "status": "NoError",
+      "volume": 17994.316054981817
+    },
+    {
+      "file": "terdragon-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19495.74248796226
+    },
+    {
+      "file": "terdragon-default-recess.stl",
+      "status": "NoError",
+      "volume": 18491.8479573386
+    },
+    {
+      "file": "terdragon-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 13508.914655166232
+    },
+    {
+      "file": "terdragon-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20400.05412657
+    },
+    {
+      "file": "terdragon-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 13332.529505927969
+    },
+    {
+      "file": "terdragon-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21907.36428368931
+    },
+    {
+      "file": "terdragon-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16135.23030755873
+    },
+    {
+      "file": "terdragon-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 17513.928600471056
+    },
+    {
+      "file": "terdragon-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 19700.620979822746
+    },
+    {
+      "file": "terdragon-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 18284.133512052937
+    },
+    {
+      "file": "truchet-default-cut.stl",
+      "status": "NoError",
+      "volume": 16876.808762693694
+    },
+    {
+      "file": "truchet-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20085.275827421097
+    },
+    {
+      "file": "truchet-default-recess.stl",
+      "status": "NoError",
+      "volume": 17922.395814832882
+    },
+    {
+      "file": "truchet-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 14376.64195188737
+    },
+    {
+      "file": "truchet-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20171.73504232521
+    },
+    {
+      "file": "truchet-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 16876.808762693694
+    },
+    {
+      "file": "truchet-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 20085.275827421097
+    },
+    {
+      "file": "truchet-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 17922.395814832882
+    },
+    {
+      "file": "truchet-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 16405.335148565468
+    },
+    {
+      "file": "truchet-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 20259.672537454513
+    },
+    {
+      "file": "truchet-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 17741.702402544404
+    },
+    {
+      "file": "unicursalMaze-default-cut.stl",
+      "status": "NoError",
+      "volume": 17771.06487507656
+    },
+    {
+      "file": "unicursalMaze-default-emboss.stl",
+      "status": "NoError",
+      "volume": 19656.406731578954
+    },
+    {
+      "file": "unicursalMaze-default-recess.stl",
+      "status": "NoError",
+      "volume": 18370.439201539855
+    },
+    {
+      "file": "unicursalMaze-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 13532.057334861585
+    },
+    {
+      "file": "unicursalMaze-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 20385.907036366254
+    },
+    {
+      "file": "unicursalMaze-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 13497.838397488551
+    },
+    {
+      "file": "unicursalMaze-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21775.41521264221
+    },
+    {
+      "file": "unicursalMaze-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16227.810030192164
+    },
+    {
+      "file": "unicursalMaze-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 17454.094527829602
+    },
+    {
+      "file": "unicursalMaze-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 19754.08822496961
+    },
+    {
+      "file": "unicursalMaze-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 18245.03925072883
+    },
+    {
+      "file": "voronoiTile-default-cut.stl",
+      "status": "NoError",
+      "volume": 14876.898278808036
+    },
+    {
+      "file": "voronoiTile-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21107.21457795068
+    },
+    {
+      "file": "voronoiTile-default-recess.stl",
+      "status": "NoError",
+      "volume": 16916.611090953807
+    },
+    {
+      "file": "voronoiTile-fine-picker-cut.stl",
+      "status": "NoError",
+      "volume": 14550.482086256488
+    },
+    {
+      "file": "voronoiTile-fine-picker-emboss.stl",
+      "status": "NoError",
+      "volume": 21254.749333945736
+    },
+    {
+      "file": "voronoiTile-inverted-cut.stl",
+      "status": "NoError",
+      "volume": 16497.2360329196
+    },
+    {
+      "file": "voronoiTile-inverted-emboss.stl",
+      "status": "NoError",
+      "volume": 19636.078482103203
+    },
+    {
+      "file": "voronoiTile-picker-default-cut.stl",
+      "status": "NoError",
+      "volume": 14876.898278808036
+    },
+    {
+      "file": "voronoiTile-picker-default-emboss.stl",
+      "status": "NoError",
+      "volume": 21107.21457795068
+    },
+    {
+      "file": "voronoiTile-picker-default-recess.stl",
+      "status": "NoError",
+      "volume": 16916.611090953807
+    },
+    {
+      "file": "voronoiTile-ring-margin-cut.stl",
+      "status": "NoError",
+      "volume": 8029.951032998161
+    },
+    {
+      "file": "voronoiTile-ring-margin-emboss.stl",
+      "status": "NoError",
+      "volume": 23406.391785401116
+    },
+    {
+      "file": "voronoiTile-ring-no-margin-cut.stl",
+      "status": "NoError",
+      "volume": 9219.764355062414
+    },
+    {
+      "file": "voronoiTile-ring-no-margin-emboss.stl",
+      "status": "NoError",
+      "volume": 23947.944592187505
+    },
+    {
+      "file": "voronoiTile-rotated37-cut.stl",
+      "status": "NoError",
+      "volume": 13989.42375385333
+    },
+    {
+      "file": "voronoiTile-rotated37-emboss.stl",
+      "status": "NoError",
+      "volume": 21460.19280712321
+    },
+    {
+      "file": "voronoiTile-rotated37-recess.stl",
+      "status": "NoError",
+      "volume": 16551.62970385352
+    }
+  ]
+}

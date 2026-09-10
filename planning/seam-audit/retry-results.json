@@ -1,0 +1,2049 @@
+{
+  "startedAt": "2026-09-07T21:35:27.233Z",
+  "budgetMs": 180000,
+  "jobs": 2,
+  "node": "v24.11.1",
+  "platform": "win32",
+  "cpu": "AMD Ryzen 5 7535HS with Radeon Graphics        ",
+  "logicalCpus": 12,
+  "sourceHashes": {
+    "src//App.tsx": "0d29033dea94da6d90505cdcfe29b49b5a0fae8642cd3a74b3216b5e045ce104",
+    "src//index.css": "e36af56e4878dbd17bd743dcacced1d09c680be9eedde420e4d502f0a0b4e2c8",
+    "src//main.tsx": "b9a6fa53ba45f4b3b7e9ca443884580f6a6a211e9343cd8240aea210be34e4d3",
+    "src//vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "src/app/ApplyScreen.tsx": "8a1d68b641bdf69aa3899b6e6bc22286b55a0c8c8a2b5b8268577be8bf0e5628",
+    "src/app/panels/RecipePanel.tsx": "3d771241fc4ed20769c61ab802aea7ed8675655d60ce66103c69b1ce6087fc20",
+    "src/app/panels/TilePanel.tsx": "c1f1e4e51565d35a36e4dfb12eb0b45c67583fe7d276f4832ff6015bc545e730",
+    "src/app/panels/VoronoiPanel.tsx": "5122ab052574faab74c1ae80297878bbf209e2cc8195a70cbc64b6c713657f56",
+    "src/app/PatternScreen.tsx": "d165808eba232f88c4760558c86bef57d3e938f688acb97fa8a87061f97648b9",
+    "src/app/useIsMobile.ts": "e30f5c629d68784e4bd0dcb6bd23a4c48483cdd3fb22193dca66850062f5ce2c",
+    "src/app/usePwa.ts": "c9f597b900412882e0bc536e1066c99497f192df95fcefb83b46ef296b117579",
+    "src/app/useTileRegen.ts": "29eeeaa5d72d81652f37330d2f102ab55f8330941409fbc3b65acf77ba6e3d4f",
+    "src/app/Viewer.tsx": "389faee183184e62d4ab5189ac7fc4491b040d760ab003bb12132b30f5194ad0",
+    "src/assets/hero.png": "881ffbcaafc212e49addad08846a5b82761355fa20624253af3477ba33262c5c",
+    "src/assets/vite.svg": "5be21acd42eb7b896e517f4e0f0f11eb5c5d9e54fbbcebe9453f033008fcca6f",
+    "src/geom/bvh.ts": "237aec754b7cd7a610931fef1df64d7efae45af9fa1eb95866fb0de8419e712f",
+    "src/geom/flatten.ts": "00a4a19136dbd0dd8786b9e9686caab50ef6bd214d7bbece49a7bae6ddb945ad",
+    "src/geom/knn.ts": "48041962abefb9c3a9d4c6a8f9d242a8071f464b0a0e78dd5f56a312e2a82f77",
+    "src/geom/layout.ts": "3331fcce179b586ad7b6939c14102feddf78431a867047e10a5510e96b0f342a",
+    "src/geom/lscm.ts": "2f412357bf9420c6240dfff7de3f2000bfbf01292d06194b0c642bd6f1f2411f",
+    "src/geom/manifold.ts": "7a8d06f2b83cadbe2102f37e69dfb86c1918393a77d28df3e5ecbdac56758e57",
+    "src/geom/parameterization.ts": "063f6b6df6aa4718fce5c2c2a71db638af28c45de124131836b206c88ea5eb85",
+    "src/geom/random.ts": "beb5b6f89fc55af347526d095285e346346fe1def5d5cb841e21984149493ce4",
+    "src/geom/regionFlatten.ts": "06e65a561df0be940bee91a06e1d2ad927ee12c92d5538050c0ba0be3499dc11",
+    "src/geom/relax.ts": "bfe6402fc152a5665b8705c8a653a7d75384ad9a3ee88528c078b3301cd0ad09",
+    "src/geom/sampling.ts": "d412623e9fbc41f5e54527c3c70999d7c08fb273fcb681bbd4d34942fcba72fa",
+    "src/geom/segmentation.ts": "d4bcb2db0776a7e6d9d2977c67e4ac031f3f2b7f601e5b5da125a7a6f73657cf",
+    "src/geom/slab.ts": "71cbc2bb535a0002949db97fb5bc53861880c0cc5bd7362f9d4e84affb0e7fdf",
+    "src/geom/submesh.ts": "a4722e4a73767970630e5b4fc94d9962f3709101b5ecf7724e47c704ef9fb518",
+    "src/geom/tileTool.ts": "6d737e64c92b32aa6362adf64f9f74b2f1097b8588207338777edcecb241cd2d",
+    "src/geom/voronoiCells.ts": "3aeb48b2bfc01ffadbfaf98f4a8cefb44fde84fd0284f78301875ba20a1485da",
+    "src/io/demo.ts": "b363bf8df51f3b0baf13c5cf22028a37115a7c853f1b4b8d786faf9683ce82a5",
+    "src/io/download.ts": "0e1e354cd271fdda6085439fe30736e9280da286fabfca81a97e627d18d40936",
+    "src/io/load.ts": "1e9792cef7f725cd33d27d32a5ca24362270ee7a5226c23980e20367fdb3358e",
+    "src/io/stl.ts": "53f25135bf0d7a9f148397d8416a1bc7bc41337e6d3e43d5fc4a76a50f33d6f3",
+    "src/io/threemf.ts": "3e901340f4983c7e35776c3956c0125abe0a1fa4bdd3494bd8f431f241b0cdeb",
+    "src/patterns/ammannBeenker.ts": "874921b4abdf69e74eb74bbc1b82bf08af5d3bfe1a82562c74519fd326bc227b",
+    "src/patterns/apollonian.ts": "87429c74dd9322fbf16f0e8835f2db8f0eca3991fb8da411eb2e2ca17e6c2010",
+    "src/patterns/celtic.ts": "e829cb8e42aebaa40ff4a20337df3e122b75259114281df889f72dc0442ac531",
+    "src/patterns/connectMaterial.ts": "56d38b748939db1e9ee5a88e09a21e80b7879c918febc53f01b28043d2b873c6",
+    "src/patterns/continuous.ts": "142c7d292f43e309ebf4c1c2011a44e64582b472c578e4daaeae18fde3f6b9c4",
+    "src/patterns/delaunayTile.ts": "91dcf494122bb67807393c0648bf5a2ae9fe8ce3cdd27b63256841f4ba8a770d",
+    "src/patterns/fermatSpirals.ts": "9bc9b06c031991905df362efe82c42e1b1b9865b4be3898b652ad2d871da72aa",
+    "src/patterns/greekKey.ts": "3878088170b6a4eaa417f5f5952903291315c6d6579ce088e2ed008ce3ae5012",
+    "src/patterns/guilloche.ts": "dfceb37bf35c56980f3deac3c55f3ec8549f580a7b955262d4878582030e3a37",
+    "src/patterns/hankin.ts": "1d60b34b6704c775b182ec0355c5c65b5a565fd53bdbf86b7674196506831617",
+    "src/patterns/hilbert.ts": "50640eef8f2a6b911067b941297e477c6a3ae6c9e367148b2fce3341a6ceee3b",
+    "src/patterns/hyperbolic.ts": "3f42490efb1031026f609eca34db435fc87c52b44c53b8d6fad31beab00898de",
+    "src/patterns/index.ts": "498177a165085e40abd5dd13ef3d9de11b1f9a8aaaae1671843a63633eaed562",
+    "src/patterns/julia.ts": "ea9167f2ddd41c4d5c4e89e66f1e2eee2be3fd03048695466be4002e5022740e",
+    "src/patterns/koch.ts": "9fa5a11d099f277a7b0ee6a0d38eee95ebc9c13520995ede38f21de2275fe5a7",
+    "src/patterns/maze.ts": "4527557b9d37e02be4c608d18af9f32fec673316463e8b12e79e32288cf9994e",
+    "src/patterns/mirror.ts": "0f7303f594e291b5752a029eb2dcba675bd211ad15851757aeb39a118e238e09",
+    "src/patterns/mirrorCurves.ts": "4efc6312b3f555e3136f1cecdc970c9ee055cdeb58226c3c4d4066d80d4d2d02",
+    "src/patterns/moire.ts": "0addb3d755e1555c9b6660c85b0c44a428979ae128c67f4ac7312300359c5aea",
+    "src/patterns/penrose.ts": "e5ab169b33baf92d0abd5f3b2cd002ac8ceb458d6ecf9b6c714eab75a31a8ead",
+    "src/patterns/penroseApproximant.ts": "63b96dc982453c69f32531b23274f0144dbc33a2320323aa29c2e25bdf4dc5cb",
+    "src/patterns/perforations.ts": "2a2672cc5d6607907fae77423b9b5ef34cb2b8b935172ed9b913d6a07aaeda93",
+    "src/patterns/phyllotaxis.ts": "57d5043d6deeacb6823836861ff100300c417496faca60229d79775731ec4ce7",
+    "src/patterns/pipeline.ts": "4df72578589f9d437fc70e29842b06911924fdd07cba134094ad41ed495615db",
+    "src/patterns/sierpinski.ts": "d6f4c066484978571d6aa494d886d0f5cda09c21bf2b90c88ba2741f7eaa2783",
+    "src/patterns/singleStrokeFractals.ts": "a93f0c42973a9f5121a90bd800e3f7e5f65567ea6190c4be49fb323a5c073e37",
+    "src/patterns/svg/svgExport.ts": "72e1309b21c7281a3c779e33717bde30492b485f76eb252a53a1692bf664f8f3",
+    "src/patterns/svg/svgImport.ts": "6961f5c4241feacb6a61b3f7b8580e68c3745afd14cb4e9ed9b908b832560413",
+    "src/patterns/svg/svgUnits.ts": "0f5b308ff45e485ddc2395a4ab34deb51ab95be2d6b72e46955034c15753bac2",
+    "src/patterns/truchet.ts": "2e85822e09f4cdd21c800388723404ae6be9089cf7e76fbee6f56cf093390e62",
+    "src/patterns/types.ts": "8a59141a57f40a8f1c5057043231ea03e9ceb80f4f03e729f88e3e8151368c39",
+    "src/patterns/voronoiTile.ts": "17681d0e214c96971fbaf59b5518f55a4b5cf438649399c33b7613a8a15fe7d0",
+    "src/state/recipes.ts": "a5551bf23fd08e19da039b990647c24e104e88f9c13ec41170399a7bd70619b9",
+    "src/state/store.ts": "694e924d2a77d8136629e2ee5a74b3c17cecc678c60d7a573b6366cf7eebf4fc",
+    "src/state/tileStore.ts": "39e20c0b1be71440b8f68a02ba9bb45ea73a00c7bce1f24dfdeea34ddf9cd831",
+    "src/viewer/SceneManager.ts": "0c260743382018aca32ec62458da1f551dc09ec13bc877d2ab05ba56c8576c3c",
+    "src/viewer/sceneRef.ts": "f2fded3a4e220fde648ffa0df19b8dc6ec9c00358557f77efdbaa50ced6e7fc6",
+    "src/worker/client.ts": "1e0d523e6b43692e59ea93acdf0d53fa4de14e105cf0de0efd8b351e0447675b",
+    "src/worker/geom.worker.ts": "e80ab0e4bf94c93d76235f159cb6a8bda76bfe70c6745af75bac478b4a041e18",
+    "src/worker/protocol.ts": "e08db4d05b9316d79abb647262fa99d4ba1a80f4bb2b7c95361ccb8c1034ade7"
+  },
+  "results": [
+    {
+      "source": "guilloche",
+      "index": 55,
+      "config": {
+        "label": "combined 8",
+        "params": {
+          "width": 61,
+          "height": 11,
+          "style": "rosette",
+          "count": 6,
+          "radius": 101,
+          "amplitude": 4,
+          "lobes": 7,
+          "twist": 0.15,
+          "innerRings": 2,
+          "ribWidth": 5.800000000000001,
+          "seed": 999999
+        },
+        "minFeature": 0,
+        "invert": false,
+        "mirror": false,
+        "bridge": true
+      },
+      "originalBudgetMs": 20000,
+      "n": 0,
+      "budgetMs": 180000,
+      "status": "error",
+      "wallMs": 28253.945799999998,
+      "lastStage": "error",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03319999999996526
+        },
+        {
+          "event": "generating",
+          "ms": 18.042899999999975,
+          "id": "guilloche",
+          "params": {
+            "width": 61,
+            "height": 11,
+            "style": "rosette",
+            "count": 6,
+            "radius": 101,
+            "amplitude": 4,
+            "lobes": 7,
+            "twist": 0.15,
+            "innerRings": 2,
+            "ribWidth": 5.800000000000001,
+            "seed": 999999
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 20.16859999999997,
+          "width": 61,
+          "height": 11,
+          "polygons": 0,
+          "curves": 18,
+          "points": 6480
+        },
+        {
+          "event": "pipeline",
+          "ms": 21.233799999999974,
+          "mirror": false,
+          "bridge": true,
+          "points": 6480
+        },
+        {
+          "event": "error",
+          "ms": 27465.1407,
+          "error": "RuntimeError: Aborted(). Build with -sASSERTIONS for more info.",
+          "stack": "RuntimeError: Aborted(). Build with -sASSERTIONS for more info.\n    at abort (file:///C:/Code/STL-patterns/node_modules/manifold-3d/manifold.js:1:20548)\n    at __abort_js (file:///C:/Code/STL-patterns/node_modules/manifold-3d/manifold.js:1:24847)\n    at wasm://wasm/00210c7a:wasm-function[302]:0x1ef91\n    at wasm://wasm/00210c7a:wasm-function[35]:0x11a1\n    at wasm://wasm/00210c7a:wasm-function[221]:0x116f5\n    at wasm://wasm/00210c7a:wasm-function[220]:0x115be\n    at wasm://wasm/00210c7a:wasm-function[255]:0x16d84\n    at wasm://wasm/00210c7a:wasm-function[226]:0x12244\n    at wasm://wasm/00210c7a:wasm-function[951]:0x77fa9\n    at wasm://wasm/00210c7a:wasm-function[719]:0x67cb9",
+          "peakRssBytes": 4330012672
+        }
+      ],
+      "stderr": "Aborted()\n",
+      "code": 1,
+      "signal": null
+    },
+    {
+      "source": "guilloche",
+      "index": 56,
+      "config": {
+        "label": "combined 9",
+        "params": {
+          "width": 23,
+          "height": 37,
+          "style": "rosette",
+          "count": 8,
+          "radius": 15,
+          "amplitude": 4,
+          "lobes": 7,
+          "twist": 0.62,
+          "innerRings": 4,
+          "ribWidth": 1.6,
+          "seed": 0
+        },
+        "minFeature": 0.4,
+        "invert": true,
+        "mirror": true,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 1,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 39534.712,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03649999999998954
+        },
+        {
+          "event": "generating",
+          "ms": 20.8707,
+          "id": "guilloche",
+          "params": {
+            "width": 23,
+            "height": 37,
+            "style": "rosette",
+            "count": 8,
+            "radius": 15,
+            "amplitude": 4,
+            "lobes": 7,
+            "twist": 0.62,
+            "innerRings": 4,
+            "ribWidth": 1.6,
+            "seed": 0
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 24.325400000000002,
+          "width": 23,
+          "height": 37,
+          "polygons": 0,
+          "curves": 40,
+          "points": 14400
+        },
+        {
+          "event": "mirroring",
+          "ms": 24.50999999999999
+        },
+        {
+          "event": "pipeline",
+          "ms": 39.35820000000001,
+          "mirror": true,
+          "bridge": false,
+          "points": 57600
+        },
+        {
+          "event": "extracting",
+          "ms": 39169.2542
+        },
+        {
+          "event": "result",
+          "ms": 39175.4084,
+          "id": "guilloche",
+          "actual": {
+            "width": 46,
+            "height": 74,
+            "mirror": true,
+            "bridge": false
+          },
+          "area": 1985.9499964822587,
+          "fillFraction": 0.5834165677092417,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 9,
+          "vertices": 1058,
+          "peakRssBytes": 167796736
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "guilloche",
+      "index": 57,
+      "config": {
+        "label": "combined 10",
+        "params": {
+          "width": 61,
+          "height": 11,
+          "style": "rosette",
+          "count": 18,
+          "radius": 15,
+          "amplitude": 24.5,
+          "lobes": 7,
+          "twist": 0.15,
+          "innerRings": 2,
+          "ribWidth": 1.6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "invert": false,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 2,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 155447.0049,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.04800000000000182
+        },
+        {
+          "event": "generating",
+          "ms": 14.844100000000026,
+          "id": "guilloche",
+          "params": {
+            "width": 61,
+            "height": 11,
+            "style": "rosette",
+            "count": 18,
+            "radius": 15,
+            "amplitude": 24.5,
+            "lobes": 7,
+            "twist": 0.15,
+            "innerRings": 2,
+            "ribWidth": 1.6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 17.765899999999988,
+          "width": 61,
+          "height": 11,
+          "polygons": 0,
+          "curves": 54,
+          "points": 19440
+        },
+        {
+          "event": "pipeline",
+          "ms": 19.79430000000002,
+          "mirror": false,
+          "bridge": false,
+          "points": 19440
+        },
+        {
+          "event": "extracting",
+          "ms": 155089.8476
+        },
+        {
+          "event": "result",
+          "ms": 155094.83870000002,
+          "id": "guilloche",
+          "actual": {
+            "width": 61,
+            "height": 11,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 69.40110122895005,
+          "fillFraction": 0.10342936099694494,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 137,
+          "peakRssBytes": 140722176
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "hyperbolic",
+      "index": 55,
+      "config": {
+        "label": "combined 11",
+        "params": {
+          "width": 23,
+          "height": 37,
+          "p": 7,
+          "q": 8,
+          "depth": 4,
+          "style": "edges",
+          "ribWidth": 3.9000000000000004,
+          "gap": 3.5,
+          "minFeature": 1,
+          "seed": 999999
+        },
+        "minFeature": 1.6,
+        "invert": true,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 3,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 25516.0628,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.041800000000023374
+        },
+        {
+          "event": "generating",
+          "ms": 12.026200000000017,
+          "id": "hyperbolic",
+          "params": {
+            "width": 23,
+            "height": 37,
+            "p": 7,
+            "q": 8,
+            "depth": 4,
+            "style": "edges",
+            "ribWidth": 3.9000000000000004,
+            "gap": 3.5,
+            "minFeature": 1,
+            "seed": 999999
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 18.76830000000001,
+          "width": 23,
+          "height": 37,
+          "polygons": 0,
+          "curves": 375,
+          "points": 7812
+        },
+        {
+          "event": "pipeline",
+          "ms": 19.5026,
+          "mirror": false,
+          "bridge": false,
+          "points": 7812
+        },
+        {
+          "event": "extracting",
+          "ms": 25231.4397
+        },
+        {
+          "event": "result",
+          "ms": 25236.202299999997,
+          "id": "hyperbolic",
+          "actual": {
+            "width": 23,
+            "height": 37,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 501.6115818545284,
+          "fillFraction": 0.5894378165153096,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 3,
+          "vertices": 305,
+          "peakRssBytes": 124678144
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "julia",
+      "index": 30,
+      "config": {
+        "label": "size",
+        "params": {
+          "width": 300,
+          "height": 300,
+          "kind": "julia",
+          "cRe": -0.8,
+          "cIm": 0.156,
+          "centerRe": 0,
+          "centerIm": 0,
+          "zoom": 1,
+          "iterations": 60,
+          "mode": "inside",
+          "bandFrom": 8,
+          "bandTo": 14,
+          "smooth": 0.4,
+          "resolution": 0.2,
+          "minFeature": 1,
+          "seed": 42
+        },
+        "minFeature": 0.84,
+        "invert": false,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 4,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 30816.033000000003,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.026700000000005275
+        },
+        {
+          "event": "generating",
+          "ms": 11.339100000000002,
+          "id": "julia",
+          "params": {
+            "width": 300,
+            "height": 300,
+            "kind": "julia",
+            "cRe": -0.8,
+            "cIm": 0.156,
+            "centerRe": 0,
+            "centerIm": 0,
+            "zoom": 1,
+            "iterations": 60,
+            "mode": "inside",
+            "bandFrom": 8,
+            "bandTo": 14,
+            "smooth": 0.4,
+            "resolution": 0.2,
+            "minFeature": 1,
+            "seed": 42
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 252.09679999999997,
+          "width": 300,
+          "height": 300,
+          "polygons": 79,
+          "curves": 0,
+          "points": 19304
+        },
+        {
+          "event": "mirroring",
+          "ms": 252.2353
+        },
+        {
+          "event": "pipeline",
+          "ms": 263.7252,
+          "mirror": true,
+          "bridge": false,
+          "points": 77216
+        },
+        {
+          "event": "extracting",
+          "ms": 30454.9629
+        },
+        {
+          "event": "result",
+          "ms": 30529.1515,
+          "id": "julia",
+          "actual": {
+            "width": 600,
+            "height": 600,
+            "mirror": true,
+            "bridge": false
+          },
+          "area": 35373.92028633601,
+          "fillFraction": 0.0982608896842667,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 316,
+          "vertices": 49546,
+          "peakRssBytes": 390131712
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "julia",
+      "index": 31,
+      "config": {
+        "label": "size",
+        "params": {
+          "width": 300,
+          "height": 300,
+          "kind": "julia",
+          "cRe": -0.8,
+          "cIm": 0.156,
+          "centerRe": 0,
+          "centerIm": 0,
+          "zoom": 1,
+          "iterations": 60,
+          "mode": "inside",
+          "bandFrom": 8,
+          "bandTo": 14,
+          "smooth": 0.4,
+          "resolution": 0.2,
+          "minFeature": 1,
+          "seed": 42
+        },
+        "minFeature": 0.84,
+        "invert": true,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 5,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 39111.4727,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03839999999999577
+        },
+        {
+          "event": "generating",
+          "ms": 12.213400000000007,
+          "id": "julia",
+          "params": {
+            "width": 300,
+            "height": 300,
+            "kind": "julia",
+            "cRe": -0.8,
+            "cIm": 0.156,
+            "centerRe": 0,
+            "centerIm": 0,
+            "zoom": 1,
+            "iterations": 60,
+            "mode": "inside",
+            "bandFrom": 8,
+            "bandTo": 14,
+            "smooth": 0.4,
+            "resolution": 0.2,
+            "minFeature": 1,
+            "seed": 42
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 245.23590000000002,
+          "width": 300,
+          "height": 300,
+          "polygons": 79,
+          "curves": 0,
+          "points": 19304
+        },
+        {
+          "event": "mirroring",
+          "ms": 245.38240000000002
+        },
+        {
+          "event": "pipeline",
+          "ms": 256.0974,
+          "mirror": true,
+          "bridge": false,
+          "points": 77216
+        },
+        {
+          "event": "extracting",
+          "ms": 38757.8215
+        },
+        {
+          "event": "result",
+          "ms": 38833.761399999996,
+          "id": "julia",
+          "actual": {
+            "width": 600,
+            "height": 600,
+            "mirror": true,
+            "bridge": false
+          },
+          "area": 324382.94156655757,
+          "fillFraction": 0.901063726573771,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 325,
+          "vertices": 48945,
+          "peakRssBytes": 415346688
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "penrose",
+      "index": 30,
+      "config": {
+        "label": "size",
+        "params": {
+          "width": 300,
+          "height": 300,
+          "style": "edges",
+          "edge": 6,
+          "minFeature": 1,
+          "gap": 1,
+          "ribWidth": 1.6,
+          "seed": 42
+        },
+        "minFeature": 0.84,
+        "invert": false,
+        "mirror": false,
+        "bridge": false
+      },
+      "originalBudgetMs": 20000,
+      "n": 6,
+      "budgetMs": 180000,
+      "status": "timeout",
+      "wallMs": 180138.80699999997,
+      "lastStage": "pipeline",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.09049999999999159
+        },
+        {
+          "event": "generating",
+          "ms": 11.437299999999993,
+          "id": "penrose",
+          "params": {
+            "width": 300,
+            "height": 300,
+            "style": "edges",
+            "edge": 6,
+            "minFeature": 1,
+            "gap": 1,
+            "ribWidth": 1.6,
+            "seed": 42
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 48.0316,
+          "width": 300,
+          "height": 300,
+          "polygons": 0,
+          "curves": 9598,
+          "points": 19196
+        },
+        {
+          "event": "mirroring",
+          "ms": 48.159700000000015
+        },
+        {
+          "event": "pipeline",
+          "ms": 76.09989999999999,
+          "mirror": true,
+          "bridge": false,
+          "points": 76784
+        }
+      ],
+      "stderr": "",
+      "code": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "source": "targeted",
+      "index": 64,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 7,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "timeout",
+      "wallMs": 180040.3425,
+      "lastStage": "pipeline",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03809999999998581
+        },
+        {
+          "event": "generating",
+          "ms": 14.692800000000005,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 5,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 23.54759999999999,
+          "width": 5,
+          "height": 5,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 24.806999999999988,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        }
+      ],
+      "stderr": "",
+      "code": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "source": "targeted",
+      "index": 65,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 5,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 8,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "timeout",
+      "wallMs": 180171.2697,
+      "lastStage": "pipeline",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.058000000000021146
+        },
+        {
+          "event": "generating",
+          "ms": 12.43210000000002,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 5,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 37.49610000000001,
+          "width": 5,
+          "height": 5,
+          "polygons": 0,
+          "curves": 1,
+          "points": 68818
+        },
+        {
+          "event": "pipeline",
+          "ms": 39.64320000000001,
+          "mirror": false,
+          "bridge": false,
+          "points": 68818
+        }
+      ],
+      "stderr": "",
+      "code": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "source": "targeted",
+      "index": 70,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 9,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 55558.19279999996,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.056099999999986494
+        },
+        {
+          "event": "generating",
+          "ms": 10.973199999999991,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 5,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 17.562700000000007,
+          "width": 23,
+          "height": 5,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 18.733900000000006,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 55240.0168
+        },
+        {
+          "event": "result",
+          "ms": 55244.096399999995,
+          "id": "hilbert",
+          "actual": {
+            "width": 23,
+            "height": 5,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 114.98815764455746,
+          "fillFraction": 0.9998970229961518,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 14,
+          "peakRssBytes": 314507264
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 71,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 5,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 10,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "timeout",
+      "wallMs": 180159.3495,
+      "lastStage": "pipeline",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03290000000001214
+        },
+        {
+          "event": "generating",
+          "ms": 10.859499999999997,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 5,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 34.024,
+          "width": 23,
+          "height": 5,
+          "polygons": 0,
+          "curves": 1,
+          "points": 68818
+        },
+        {
+          "event": "pipeline",
+          "ms": 36.484700000000004,
+          "mirror": false,
+          "bridge": false,
+          "points": 68818
+        }
+      ],
+      "stderr": "",
+      "code": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "source": "targeted",
+      "index": 76,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 11,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 28529.683499999985,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.032500000000027285
+        },
+        {
+          "event": "generating",
+          "ms": 11.708400000000012,
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 5,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 16.2149,
+          "width": 61,
+          "height": 5,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 17.218500000000006,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 28215.3982
+        },
+        {
+          "event": "result",
+          "ms": 28221.1593,
+          "id": "hilbert",
+          "actual": {
+            "width": 61,
+            "height": 5,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 304.9778230521483,
+          "fillFraction": 0.9999272886955682,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 14,
+          "peakRssBytes": 193880064
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 77,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 5,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 12,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "timeout",
+      "wallMs": 180071.8296,
+      "lastStage": "pipeline",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.04429999999999268
+        },
+        {
+          "event": "generating",
+          "ms": 10.459399999999988,
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 5,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 33.89750000000001,
+          "width": 61,
+          "height": 5,
+          "polygons": 0,
+          "curves": 1,
+          "points": 68818
+        },
+        {
+          "event": "pipeline",
+          "ms": 36.02760000000001,
+          "mirror": false,
+          "bridge": false,
+          "points": 68818
+        }
+      ],
+      "stderr": "",
+      "code": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "source": "targeted",
+      "index": 82,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 13,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 83766.64969999995,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03120000000001255
+        },
+        {
+          "event": "generating",
+          "ms": 13.606400000000008,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 7,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 18.88390000000001,
+          "width": 5,
+          "height": 7,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 20.400599999999997,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 83399.13170000001
+        },
+        {
+          "event": "result",
+          "ms": 83403.04530000001,
+          "id": "hilbert",
+          "actual": {
+            "width": 5,
+            "height": 7,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 34.255235716700554,
+          "fillFraction": 0.9787210204771587,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 6,
+          "peakRssBytes": 873308160
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 83,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 7,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 14,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "timeout",
+      "wallMs": 180271.8907,
+      "lastStage": "pipeline",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.030100000000004457
+        },
+        {
+          "event": "generating",
+          "ms": 10.723000000000013,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 7,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 36.74170000000001,
+          "width": 5,
+          "height": 7,
+          "polygons": 0,
+          "curves": 1,
+          "points": 68818
+        },
+        {
+          "event": "pipeline",
+          "ms": 39.16720000000001,
+          "mirror": false,
+          "bridge": false,
+          "points": 68818
+        }
+      ],
+      "stderr": "",
+      "code": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "source": "targeted",
+      "index": 88,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 7,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 15,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 55645.65950000007,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.030599999999992633
+        },
+        {
+          "event": "generating",
+          "ms": 11.457599999999985,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 7,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 15.8707,
+          "width": 23,
+          "height": 7,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 16.853099999999984,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 55348.84190000001
+        },
+        {
+          "event": "result",
+          "ms": 55353.2425,
+          "id": "hilbert",
+          "actual": {
+            "width": 23,
+            "height": 7,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 157.3179765738012,
+          "fillFraction": 0.9771302892782683,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 14,
+          "peakRssBytes": 496922624
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 89,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 7,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 16,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 9284.93200000003,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.04169999999999163
+        },
+        {
+          "event": "generating",
+          "ms": 11.619200000000006,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 7,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 35.19540000000001,
+          "width": 23,
+          "height": 7,
+          "polygons": 0,
+          "curves": 1,
+          "points": 68818
+        },
+        {
+          "event": "pipeline",
+          "ms": 37.55189999999999,
+          "mirror": false,
+          "bridge": false,
+          "points": 68818
+        },
+        {
+          "event": "extracting",
+          "ms": 9008.3534
+        },
+        {
+          "event": "result",
+          "ms": 9011.757,
+          "id": "hilbert",
+          "actual": {
+            "width": 23,
+            "height": 7,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 154.9418969205149,
+          "fillFraction": 0.9623720305622043,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 11,
+          "peakRssBytes": 169037824
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 94,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 7,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 17,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 29095.416899999953,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.030900000000002592
+        },
+        {
+          "event": "generating",
+          "ms": 10.549199999999985,
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 7,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 15.091899999999981,
+          "width": 61,
+          "height": 7,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 16.415599999999984,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 28820.5632
+        },
+        {
+          "event": "result",
+          "ms": 28826.1988,
+          "id": "hilbert",
+          "actual": {
+            "width": 61,
+            "height": 7,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 417.50506728131074,
+          "fillFraction": 0.977763623609627,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 14,
+          "peakRssBytes": 307494912
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 100,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 18,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 73520.31799999997,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.03159999999999741
+        },
+        {
+          "event": "generating",
+          "ms": 12.011300000000006,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 11,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 16.949600000000004,
+          "width": 5,
+          "height": 11,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 17.966499999999996,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 73215.1975
+        },
+        {
+          "event": "result",
+          "ms": 73219.5044,
+          "id": "hilbert",
+          "actual": {
+            "width": 5,
+            "height": 11,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 54.161485731601715,
+          "fillFraction": 0.9847542860291221,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 6,
+          "peakRssBytes": 235028480
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 101,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 5,
+          "height": 11,
+          "order": 7,
+          "rounded": true,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 19,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "timeout",
+      "wallMs": 180038.02229999995,
+      "lastStage": "pipeline",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.04009999999999536
+        },
+        {
+          "event": "generating",
+          "ms": 13.760899999999992,
+          "id": "hilbert",
+          "params": {
+            "width": 5,
+            "height": 11,
+            "order": 7,
+            "rounded": true,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 40.21639999999999,
+          "width": 5,
+          "height": 11,
+          "polygons": 0,
+          "curves": 1,
+          "points": 68818
+        },
+        {
+          "event": "pipeline",
+          "ms": 43.11859999999999,
+          "mirror": false,
+          "bridge": false,
+          "points": 68818
+        }
+      ],
+      "stderr": "",
+      "code": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "source": "targeted",
+      "index": 106,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 23,
+          "height": 11,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 20,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 43698.444299999974,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.030000000000001137
+        },
+        {
+          "event": "generating",
+          "ms": 11.248899999999992,
+          "id": "hilbert",
+          "params": {
+            "width": 23,
+            "height": 11,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 17.687600000000003,
+          "width": 23,
+          "height": 11,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 19.116799999999984,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 43418.9531
+        },
+        {
+          "event": "result",
+          "ms": 43422.8753,
+          "id": "hilbert",
+          "actual": {
+            "width": 23,
+            "height": 11,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 248.03460903686462,
+          "fillFraction": 0.9803739487623108,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 14,
+          "peakRssBytes": 178950144
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "source": "targeted",
+      "index": 112,
+      "config": {
+        "id": "hilbert",
+        "params": {
+          "width": 61,
+          "height": 11,
+          "order": 7,
+          "rounded": false,
+          "ribWidth": 6,
+          "seed": 7
+        },
+        "minFeature": 0.84,
+        "timeout": true,
+        "error": "Isolated case exceeded 8 second wall-clock budget"
+      },
+      "n": 21,
+      "originalBudgetMs": 8000,
+      "budgetMs": 180000,
+      "status": "completed",
+      "wallMs": 21948.285499999998,
+      "lastStage": "result",
+      "events": [
+        {
+          "event": "initializing",
+          "ms": 0.027899999999988268
+        },
+        {
+          "event": "generating",
+          "ms": 11.913899999999984,
+          "id": "hilbert",
+          "params": {
+            "width": 61,
+            "height": 11,
+            "order": 7,
+            "rounded": false,
+            "ribWidth": 6,
+            "seed": 7
+          }
+        },
+        {
+          "event": "generated",
+          "ms": 17.984099999999984,
+          "width": 61,
+          "height": 11,
+          "polygons": 0,
+          "curves": 1,
+          "points": 16386
+        },
+        {
+          "event": "pipeline",
+          "ms": 19.387899999999973,
+          "mirror": false,
+          "bridge": false,
+          "points": 16386
+        },
+        {
+          "event": "extracting",
+          "ms": 21666.2932
+        },
+        {
+          "event": "result",
+          "ms": 21669.9299,
+          "id": "hilbert",
+          "actual": {
+            "width": 61,
+            "height": 11,
+            "mirror": false,
+            "bridge": false
+          },
+          "area": 658.8000397258994,
+          "fillFraction": 0.9818182410222048,
+          "empty": false,
+          "edges": [
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            },
+            {
+              "total": 0,
+              "max": 0,
+              "intervals": []
+            }
+          ],
+          "fail": false,
+          "polygons": 1,
+          "vertices": 14,
+          "peakRssBytes": 166555648
+        }
+      ],
+      "stderr": "",
+      "code": 0,
+      "signal": null
+    }
+  ],
+  "finishedAt": "2026-09-07T21:52:50.850Z",
+  "sourceUnchanged": true,
+  "summary": {
+    "completed": 14,
+    "seam-failure": 0,
+    "error": 1,
+    "timeout": 7
+  }
+}

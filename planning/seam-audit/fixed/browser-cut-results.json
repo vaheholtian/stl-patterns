@@ -1,0 +1,358 @@
+{
+  "results": [
+    {
+      "mode": "cut",
+      "initial": {
+        "id": 1,
+        "ok": true,
+        "type": "check",
+        "manifold": true,
+        "status": "NoError",
+        "volume": 15552,
+        "area": 15952
+      },
+      "mesh": {
+        "id": 5,
+        "ok": true,
+        "type": "check",
+        "manifold": true,
+        "status": "NoError",
+        "volume": 8873.097166814927,
+        "area": 14192.445635610107
+      },
+      "exports": [
+        {
+          "extension": "stl",
+          "bytes": 351284,
+          "check": {
+            "id": 6,
+            "ok": true,
+            "type": "check",
+            "manifold": true,
+            "status": "NoError",
+            "volume": 8873.097166814927,
+            "area": 14192.445635610107
+          }
+        },
+        {
+          "extension": "3mf",
+          "bytes": 65817,
+          "check": {
+            "id": 7,
+            "ok": true,
+            "type": "check",
+            "manifold": true,
+            "status": "NoError",
+            "volume": 8873.09472181273,
+            "area": 14192.444082502065
+          }
+        }
+      ],
+      "log": [
+        "region spans 11 smooth pieces (edges sharper than 30°); each is flattened on its own",
+        "11 pieces flattened",
+        "Tiled operation cancelled",
+        "Tiled pattern applied",
+        "122 polygons over 5 pieces",
+        "7024 triangles in 0.1 s"
+      ],
+      "history": 1,
+      "progress": [
+        {
+          "stage": "tile: Preparing pattern",
+          "value": 0
+        },
+        {
+          "stage": "tile: Preparing cut shapes 1/5",
+          "value": 0
+        },
+        {
+          "stage": "tile: Preparing cut shapes 2/5",
+          "value": 0.1111111111111111
+        },
+        {
+          "stage": "tile: Preparing cut shapes 3/5",
+          "value": 0.2222222222222222
+        },
+        {
+          "stage": "tile: Preparing cut shapes 4/5",
+          "value": 0.3333333333333333
+        },
+        {
+          "stage": "tile: Preparing cut shapes 5/5",
+          "value": 0.4444444444444444
+        },
+        {
+          "stage": "tile: Joining cut shapes",
+          "value": 0.5555555555555556
+        },
+        {
+          "stage": "tile: Cutting the pattern",
+          "value": 0.6666666666666666
+        },
+        {
+          "stage": "tile: Checking connected parts",
+          "value": 0.7777777777777778
+        },
+        {
+          "stage": "tile: Preparing the result",
+          "value": 0.8888888888888888
+        },
+        {
+          "stage": "tile: Pattern applied",
+          "value": 1
+        }
+      ],
+      "notice": "Pattern\n×\n3 × 3 whole repeats; tile 24.00 × 24.00 mm. Hole sizes and 2.00 mm minimum web are preserved before layout scaling.\nTile layout\n×\n122 shapes over 6 pieces; local size ranges 100% to 100% of true\n5 piece(s) left alone: the back of a wall cut through from the other side\nActivity\n×\nTiled pattern applied\n122 polygons over 5 pieces\n7024 triangles in 0.1 s"
+    },
+    {
+      "mode": "recess",
+      "initial": {
+        "id": 1,
+        "ok": true,
+        "type": "check",
+        "manifold": true,
+        "status": "NoError",
+        "volume": 15552,
+        "area": 15952
+      },
+      "mesh": {
+        "id": 10,
+        "ok": true,
+        "type": "check",
+        "manifold": true,
+        "status": "NoError",
+        "volume": 11839.066573973792,
+        "area": 18656.072714396876
+      },
+      "exports": [
+        {
+          "extension": "stl",
+          "bytes": 589484,
+          "check": {
+            "id": 11,
+            "ok": true,
+            "type": "check",
+            "manifold": true,
+            "status": "NoError",
+            "volume": 11839.066573973792,
+            "area": 18656.072714396876
+          }
+        },
+        {
+          "extension": "3mf",
+          "bytes": 112679,
+          "check": {
+            "id": 12,
+            "ok": true,
+            "type": "check",
+            "manifold": true,
+            "status": "NoError",
+            "volume": 11839.06519821378,
+            "area": 18656.073186988142
+          }
+        }
+      ],
+      "log": [
+        "region spans 11 smooth pieces (edges sharper than 30°); each is flattened on its own",
+        "11 pieces flattened",
+        "Tiled pattern applied",
+        "223 polygons over 10 pieces",
+        "11788 triangles in 0.1 s"
+      ],
+      "history": 1,
+      "progress": [
+        {
+          "stage": "tile: Preparing pattern",
+          "value": 0
+        },
+        {
+          "stage": "tile: Preparing cut shapes 1/10",
+          "value": 0
+        },
+        {
+          "stage": "tile: Preparing cut shapes 2/10",
+          "value": 0.07142857142857142
+        },
+        {
+          "stage": "tile: Preparing cut shapes 3/10",
+          "value": 0.14285714285714285
+        },
+        {
+          "stage": "tile: Preparing cut shapes 4/10",
+          "value": 0.21428571428571427
+        },
+        {
+          "stage": "tile: Preparing cut shapes 5/10",
+          "value": 0.2857142857142857
+        },
+        {
+          "stage": "tile: Preparing cut shapes 6/10",
+          "value": 0.35714285714285715
+        },
+        {
+          "stage": "tile: Preparing cut shapes 7/10",
+          "value": 0.42857142857142855
+        },
+        {
+          "stage": "tile: Preparing cut shapes 8/10",
+          "value": 0.5
+        },
+        {
+          "stage": "tile: Preparing cut shapes 9/10",
+          "value": 0.5714285714285714
+        },
+        {
+          "stage": "tile: Preparing cut shapes 10/10",
+          "value": 0.6428571428571429
+        },
+        {
+          "stage": "tile: Joining cut shapes",
+          "value": 0.7142857142857143
+        },
+        {
+          "stage": "tile: Cutting the pattern",
+          "value": 0.7857142857142857
+        },
+        {
+          "stage": "tile: Checking connected parts",
+          "value": 0.8571428571428571
+        },
+        {
+          "stage": "tile: Preparing the result",
+          "value": 0.9285714285714286
+        },
+        {
+          "stage": "tile: Pattern applied",
+          "value": 1
+        }
+      ],
+      "notice": "Pattern\n×\n3 × 3 whole repeats; tile 24.00 × 24.00 mm. Hole sizes and 2.00 mm minimum web are preserved before layout scaling.\nTile layout\n×\n223 shapes over 11 pieces; local size ranges 100% to 100% of true\nActivity\n×\nTiled pattern applied\n223 polygons over 10 pieces\n11788 triangles in 0.1 s"
+    },
+    {
+      "mode": "emboss",
+      "initial": {
+        "id": 1,
+        "ok": true,
+        "type": "check",
+        "manifold": true,
+        "status": "NoError",
+        "volume": 15552,
+        "area": 15952
+      },
+      "mesh": {
+        "id": 15,
+        "ok": true,
+        "type": "check",
+        "manifold": true,
+        "status": "NoError",
+        "volume": 19264.933203985067,
+        "area": 18656.072558441163
+      },
+      "exports": [
+        {
+          "extension": "stl",
+          "bytes": 589484,
+          "check": {
+            "id": 16,
+            "ok": true,
+            "type": "check",
+            "manifold": true,
+            "status": "NoError",
+            "volume": 19264.933203985067,
+            "area": 18656.072558441163
+          }
+        },
+        {
+          "extension": "3mf",
+          "bytes": 112462,
+          "check": {
+            "id": 17,
+            "ok": true,
+            "type": "check",
+            "manifold": true,
+            "status": "NoError",
+            "volume": 19264.93457974496,
+            "area": 18656.073031032396
+          }
+        }
+      ],
+      "log": [
+        "region spans 11 smooth pieces (edges sharper than 30°); each is flattened on its own",
+        "11 pieces flattened",
+        "Tiled pattern applied",
+        "223 polygons over 10 pieces",
+        "11788 triangles in 0.1 s"
+      ],
+      "history": 1,
+      "progress": [
+        {
+          "stage": "tile: Preparing pattern",
+          "value": 0
+        },
+        {
+          "stage": "tile: Preparing cut shapes 1/10",
+          "value": 0
+        },
+        {
+          "stage": "tile: Preparing cut shapes 2/10",
+          "value": 0.07142857142857142
+        },
+        {
+          "stage": "tile: Preparing cut shapes 3/10",
+          "value": 0.14285714285714285
+        },
+        {
+          "stage": "tile: Preparing cut shapes 4/10",
+          "value": 0.21428571428571427
+        },
+        {
+          "stage": "tile: Preparing cut shapes 5/10",
+          "value": 0.2857142857142857
+        },
+        {
+          "stage": "tile: Preparing cut shapes 6/10",
+          "value": 0.35714285714285715
+        },
+        {
+          "stage": "tile: Preparing cut shapes 7/10",
+          "value": 0.42857142857142855
+        },
+        {
+          "stage": "tile: Preparing cut shapes 8/10",
+          "value": 0.5
+        },
+        {
+          "stage": "tile: Preparing cut shapes 9/10",
+          "value": 0.5714285714285714
+        },
+        {
+          "stage": "tile: Preparing cut shapes 10/10",
+          "value": 0.6428571428571429
+        },
+        {
+          "stage": "tile: Joining cut shapes",
+          "value": 0.7142857142857143
+        },
+        {
+          "stage": "tile: Adding the pattern",
+          "value": 0.7857142857142857
+        },
+        {
+          "stage": "tile: Checking connected parts",
+          "value": 0.8571428571428571
+        },
+        {
+          "stage": "tile: Preparing the result",
+          "value": 0.9285714285714286
+        },
+        {
+          "stage": "tile: Pattern applied",
+          "value": 1
+        }
+      ],
+      "notice": "Pattern\n×\n3 × 3 whole repeats; tile 24.00 × 24.00 mm. Hole sizes and 2.00 mm minimum web are preserved before layout scaling.\nTile layout\n×\n223 shapes over 11 pieces; local size ranges 100% to 100% of true\nActivity\n×\nTiled pattern applied\n223 polygons over 10 pieces\n11788 triangles in 0.1 s"
+    }
+  ],
+  "errors": []
+}

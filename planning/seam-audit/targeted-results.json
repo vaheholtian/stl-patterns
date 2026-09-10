@@ -1,0 +1,3292 @@
+[
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 49.6876755244795,
+    "edges": [
+      {
+        "total": 0.11310601234436035,
+        "max": 0.06814748793840408,
+        "intervals": [
+          [
+            1.1614205092191696,
+            1.2061210721731186
+          ],
+          [
+            4.447838515043259,
+            4.448096476495266
+          ],
+          [
+            7.274240806698799,
+            7.342388294637203
+          ]
+        ]
+      },
+      {
+        "total": 0.000001959502696990967,
+        "max": 0.000001959502696990967,
+        "intervals": [
+          [
+            4.671136327087879,
+            4.671138286590576
+          ]
+        ]
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 27.041967271553645,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.0030946731567382812,
+        "max": 0.0030946731567382812,
+        "intervals": [
+          [
+            1.3667040467262268,
+            1.369798719882965
+          ]
+        ]
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 34.599406414777846,
+    "edges": [
+      {
+        "total": 0.10530539602041245,
+        "max": 0.09161419421434402,
+        "intervals": [
+          [
+            2.0554805248975754,
+            2.1470947191119194
+          ],
+          [
+            19.23867443203926,
+            19.243406429886818
+          ],
+          [
+            25.31580191105604,
+            25.324761115014553
+          ]
+        ]
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 8.27446828797055,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 29.865765525609238,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.25102415680885315,
+        "max": 0.25102415680885315,
+        "intervals": [
+          [
+            2.8036591932177544,
+            3.0546833500266075
+          ]
+        ]
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 3.5440418163981975,
+    "edges": [
+      {
+        "total": 0.019061557948589325,
+        "max": 0.019061557948589325,
+        "intervals": [
+          [
+            11.902517147362232,
+            11.921578705310822
+          ]
+        ]
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 5,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 29.152236890588004,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 30.56260109119803,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 30.56260109119803,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 136.41999401739298,
+    "edges": [
+      {
+        "total": 0.01130523532629013,
+        "max": 0.01122438907623291,
+        "intervals": [
+          [
+            15.603211477398872,
+            15.60329232364893
+          ],
+          [
+            27.111214973032475,
+            27.122439362108707
+          ]
+        ]
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 18.67863664981818,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 124.36928286160237,
+    "edges": [
+      {
+        "total": 0.5969125330448151,
+        "max": 0.1771755889058113,
+        "intervals": [
+          [
+            4.6437308713793755,
+            4.643746368587017
+          ],
+          [
+            4.855180248618126,
+            4.855269864201546
+          ],
+          [
+            6.91744152456522,
+            7.094617091119289
+          ],
+          [
+            7.4187730476260185,
+            7.418822206556797
+          ],
+          [
+            8.096281416714191,
+            8.101309038698673
+          ],
+          [
+            9.917599901556969,
+            10.030756384134293
+          ],
+          [
+            12.369269780814648,
+            12.36928527802229
+          ],
+          [
+            18.100632339715958,
+            18.100644268095493
+          ],
+          [
+            23.860522635281086,
+            23.860588528215885
+          ],
+          [
+            26.711310975253582,
+            26.72228416055441
+          ],
+          [
+            32.187927186489105,
+            32.30108368396759
+          ],
+          [
+            34.445079922676086,
+            34.6222555115819
+          ]
+        ]
+      },
+      {
+        "total": 0.05186288058757782,
+        "max": 0.03840181976556778,
+        "intervals": [
+          [
+            2.228226698935032,
+            2.241687759757042
+          ],
+          [
+            2.5940980091691017,
+            2.6324998289346695
+          ]
+        ]
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 141.87405647137024,
+    "edges": [
+      {
+        "total": 0.9196764528751373,
+        "max": 0.31550297141075134,
+        "intervals": [
+          [
+            7.616787351667881,
+            7.673606611788273
+          ],
+          [
+            7.70986245572567,
+            8.025365427136421
+          ],
+          [
+            22.868816442787647,
+            23.068277537822723
+          ],
+          [
+            23.095111779868603,
+            23.138871558010578
+          ],
+          [
+            30.36157549917698,
+            30.36166539043188
+          ],
+          [
+            31.270742170512676,
+            31.574785627424717
+          ]
+        ]
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 15.863706580709927,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 103.85773665902323,
+    "edges": [
+      {
+        "total": 0.4664429724216461,
+        "max": 0.19946109503507614,
+        "intervals": [
+          [
+            2.395536981523037,
+            2.424412466585636
+          ],
+          [
+            12.090689405798912,
+            12.215038403868675
+          ],
+          [
+            14.591772057116032,
+            14.627420701086521
+          ],
+          [
+            22.868816442787647,
+            23.068277537822723
+          ],
+          [
+            23.095111779868603,
+            23.138871558010578
+          ],
+          [
+            23.68959591537714,
+            23.714645452797413
+          ],
+          [
+            26.243963092565536,
+            26.253247559070587
+          ],
+          [
+            32.17638464272022,
+            32.17639961093664
+          ]
+        ]
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 10,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 10,
+    "height": 36.03414649294387,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 15.386895307893381,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 183.08218616337942,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 149.941730023844,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 222.203378493502,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.000018134713172912598,
+        "max": 0.00001695007085800171,
+        "intervals": [
+          [
+            12.69183973968029,
+            12.691856689751148
+          ],
+          [
+            20.64783224463463,
+            20.647833429276943
+          ]
+        ]
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 187.60720462671557,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 267.90158164658243,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.000018134713172912598,
+        "max": 0.00001695007085800171,
+        "intervals": [
+          [
+            12.69183973968029,
+            12.691856689751148
+          ],
+          [
+            20.64783224463463,
+            20.647833429276943
+          ]
+        ]
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 187.60720462671557,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 324.4667372789101,
+    "edges": [
+      {
+        "total": 0.0413876473903656,
+        "max": 0.020671986043453217,
+        "intervals": [
+          [
+            4.00076449662447,
+            4.000779062509537
+          ],
+          [
+            8.067508086562157,
+            8.08818007260561
+          ],
+          [
+            15.56418950855732,
+            15.564204059541225
+          ],
+          [
+            16.09258010238409,
+            16.092594660818577
+          ],
+          [
+            27.632476687431335,
+            27.65314867347479
+          ]
+        ]
+      },
+      {
+        "total": 0.0000408366322517395,
+        "max": 0.0000408366322517395,
+        "intervals": [
+          [
+            14.539925172924995,
+            14.539966009557247
+          ]
+        ]
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 273.1580005471962,
+    "edges": [
+      {
+        "total": 1.7217915579676628,
+        "max": 1.3344410806894302,
+        "intervals": [
+          [
+            0,
+            1.3344410806894302
+          ],
+          [
+            11.299451671540737,
+            11.625403828918934
+          ],
+          [
+            31.59538584947586,
+            31.656784169375896
+          ]
+        ]
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 341.3083388774501,
+    "edges": [
+      {
+        "total": 1.83574628084898,
+        "max": 1.0291045755147934,
+        "intervals": [
+          [
+            0.6806616634130478,
+            1.3032124042510986
+          ],
+          [
+            16.671059653162956,
+            16.671060897409916
+          ],
+          [
+            18.281583964824677,
+            19.31068854033947
+          ],
+          [
+            31.044679887592793,
+            31.22876960784197
+          ]
+        ]
+      },
+      {
+        "total": 0.08377519249916077,
+        "max": 0.08369738608598709,
+        "intervals": [
+          [
+            1.7375593706965446,
+            1.8212567567825317
+          ],
+          [
+            10.609580524265766,
+            10.60961788892746
+          ],
+          [
+            16.966624185442924,
+            16.966661550104618
+          ],
+          [
+            17.9436606913805,
+            17.943663768470287
+          ]
+        ]
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 23,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 31.65678417083699,
+    "area": 204.25712787795402,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.000037297606468200684,
+        "max": 0.000024266541004180908,
+        "intervals": [
+          [
+            16.965205281972885,
+            16.96522954851389
+          ],
+          [
+            17.945231467485428,
+            17.945244498550892
+          ]
+        ]
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 131.82046229313192,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 110.1785525974116,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 684.9807641180522,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 651.0023109400942,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 14.71007228997569,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 76.69074149740264,
+    "edges": [
+      {
+        "total": 0.2633155807852745,
+        "max": 0.07238024473190308,
+        "intervals": [
+          [
+            4.856450505554676,
+            4.915703296661377
+          ],
+          [
+            8.064285032451153,
+            8.136665277183056
+          ],
+          [
+            21.061072893440723,
+            21.133453138172626
+          ],
+          [
+            25.8856949955225,
+            25.9449477866292
+          ],
+          [
+            34.01311318576336,
+            34.013162694871426
+          ]
+        ]
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 51.28491121417065,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 380.4887822886904,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 3.8929931968450546,
+        "max": 3.8929931968450546,
+        "intervals": [
+          [
+            18.22665385901928,
+            22.119647055864334
+          ]
+        ]
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 358.30294454721417,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 438.5234126413139,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 3.8929931968450546,
+        "max": 3.8929931968450546,
+        "intervals": [
+          [
+            18.22665385901928,
+            22.119647055864334
+          ]
+        ]
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 40,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 40,
+    "height": 34.0260323340816,
+    "area": 405.67592256570305,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 172.87133937187994,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 1,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 137.9614189073938,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 937.3026024857703,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 1,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 882.5185376700302,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 40.015324724518216,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 3,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 99.50855622114628,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 3,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 0,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 622.0009075690172,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.00006137043237686157,
+        "max": 0.000055149197578430176,
+        "intervals": [
+          [
+            10.693875193595886,
+            10.693930342793465
+          ],
+          [
+            27.11170334368944,
+            27.111706465482712
+          ],
+          [
+            57.188220247626305,
+            57.18822334706783
+          ]
+        ]
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 5,
+      "style": "thin",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 594.5966151119578,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.000036463141441345215,
+        "max": 0.000021792948246002197,
+        "intervals": [
+          [
+            6.710959158837795,
+            6.710980951786041
+          ],
+          [
+            27.113274112343788,
+            27.1132872402668
+          ],
+          [
+            57.18665102869272,
+            57.186652570962906
+          ]
+        ]
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.2,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 766.1436020413688,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.00006137043237686157,
+        "max": 0.000055149197578430176,
+        "intervals": [
+          [
+            10.693875193595886,
+            10.693930342793465
+          ],
+          [
+            27.11170334368944,
+            27.111706465482712
+          ],
+          [
+            57.188220247626305,
+            57.18822334706783
+          ]
+        ]
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "penroseApproximant",
+    "params": {
+      "width": 61,
+      "height": 37,
+      "gap": 5,
+      "style": "all",
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 32.069597839267146,
+    "area": 721.1070946117931,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0.000036463141441345215,
+        "max": 0.000021792948246002197,
+        "intervals": [
+          [
+            6.710959158837795,
+            6.710980951786041
+          ],
+          [
+            27.113274112343788,
+            27.1132872402668
+          ],
+          [
+            57.18665102869272,
+            57.186652570962906
+          ]
+        ]
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 5,
+    "area": 25,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 5,
+    "area": 25,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 5,
+    "area": 25,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 5,
+    "area": 25,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 5,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 5,
+    "area": 106.24659238048146,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 5,
+    "area": 113.21646644614194,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 5,
+    "area": 114.86572004391905,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 5,
+    "area": 113.61833189285073,
+    "edges": [
+      {
+        "total": 7.450580596923828e-9,
+        "max": 7.450580596923828e-9,
+        "intervals": [
+          [
+            4.971341989934444,
+            4.971341997385025
+          ]
+        ]
+      },
+      {
+        "total": 0.07960335165262222,
+        "max": 0.05742376297712326,
+        "intervals": [
+          [
+            0.16369926184415817,
+            0.18587885051965714
+          ],
+          [
+            22.7524199411273,
+            22.809843704104424
+          ]
+        ]
+      }
+    ],
+    "fail": true
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 5,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 5,
+    "area": 265.98719161786386,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 5,
+    "area": 272.9550359755237,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 5,
+    "area": 304.66614877000336,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 5,
+    "area": 304.78502573314336,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 5,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 7,
+    "area": 35,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 7,
+    "area": 35,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 7,
+    "area": 33.106798231601715,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 7,
+    "area": 33.85092501156532,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 7,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 7,
+    "area": 148.948812406118,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 7,
+    "area": 138.63294404602905,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 7,
+    "area": 151.61069812639514,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 7,
+    "area": 149.7056477905088,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 7,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 7,
+    "area": 373.28941175674925,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 7,
+    "area": 362.7529722761778,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 7,
+    "area": 402.3280634393606,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 7,
+    "area": 398.4271371563795,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 7,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 7,
+    "area": 415.43423515722475,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 11,
+    "area": 37.91929818689823,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 11,
+    "area": 55,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 11,
+    "area": 52.35679820179939,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 5,
+    "height": 11,
+    "area": 52.430453946034355,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 5,
+      "height": 11,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 156.77286341069106,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 148.25033736025165,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 236.43112527749525,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 232.60935227396666,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 23,
+      "height": 11,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 23,
+    "height": 11,
+    "area": 244.51700551967667,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 1,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 384.53649626700053,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 1,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 376.32369867508487,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 4,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 627.9622403638051,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 4,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 617.6355154435884,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 7,
+      "rounded": false,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "timeout": true,
+    "error": "Isolated case exceeded 8 second wall-clock budget"
+  },
+  {
+    "id": "hilbert",
+    "params": {
+      "width": 61,
+      "height": 11,
+      "order": 7,
+      "rounded": true,
+      "ribWidth": 6,
+      "seed": 7
+    },
+    "minFeature": 0.84,
+    "width": 61,
+    "height": 11,
+    "area": 655.3770450028398,
+    "edges": [
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      },
+      {
+        "total": 0,
+        "max": 0,
+        "intervals": []
+      }
+    ],
+    "fail": false
+  }
+]
