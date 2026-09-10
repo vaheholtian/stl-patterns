@@ -65,8 +65,15 @@ test('surface fit only claims a repeat when the actual placement period matches'
       assert.notEqual(result.repeatsAround, null)
       assert.ok(Math.abs(period![0] / result.tileWidth - Math.round(period![0] / result.tileWidth)) < 1e-6)
       assert.ok(Math.abs(period![1]) < 1e-6)
+      assert.equal(result.stretchY, 1)
+    } else if (rotationDeg % 90 === 0) {
+      // the wrap runs along the tile's height: fitted by stretching y, never x
+      assert.notEqual(result.repeatsAround, null, `${rotationDeg} degrees fits along the tile height`)
+      assert.equal(result.stretch, 1)
+      assert.ok(Math.abs(period![0]) < 1e-6)
+      assert.ok(Math.abs(period![1] / result.tileHeight - Math.round(period![1] / result.tileHeight)) < 1e-6)
     } else {
-      assert.equal(result.repeatsAround, null, `${rotationDeg} degrees must not claim an x-only fit`)
+      assert.equal(result.repeatsAround, null, `${rotationDeg} degrees must not claim a fit`)
       assert.equal(result.stretch, 1)
     }
   }

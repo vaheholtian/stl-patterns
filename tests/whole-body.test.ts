@@ -1,7 +1,7 @@
 // A whole-body through-cut on a thin-walled open box (the "recipe 1 - debug"
-// case) must not fold the flattening: every face is flattened on its own, the
-// back sides of through-cut walls are left alone, and the result is one solid
-// piece whose only non-planar triangles are the small hole walls.
+// case) must not fold the flattening: every face is flattened on its own (then
+// unfolded into one sheet), the back sides of through-cut walls are left alone,
+// and the result is one solid piece whose only non-planar triangles are the small hole walls.
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import Module from 'manifold-3d'
@@ -9,7 +9,7 @@ import { triMeshFromManifold, type TriMesh, type Manifold } from '../src/geom/ma
 import { flattenPieces, splitSmoothPieces, isBackSide } from '../src/geom/regionFlatten.ts'
 import { layoutTile } from '../src/geom/layout.ts'
 import { Parameterization } from '../src/geom/parameterization.ts'
-import { buildSurfaceTool, isPlanar, type Polygon } from '../src/geom/tileTool.ts'
+import { buildSurfaceTool, isPlanar, mitreTool, type Polygon } from '../src/geom/tileTool.ts'
 import { generatorById } from '../src/patterns/index.ts'
 import { resolveDef } from '../src/state/tileStore.ts'
 import { tileToPolygons } from '../src/patterns/pipeline.ts'
@@ -64,10 +64,26 @@ test('a box splits into one smooth piece per face and each face flattens without
   for (const p of pieces) { assert.equal(isBackSide(p, 'recess', 5), false); assert.equal(isBackSide(p, 'emboss', 5), false) }
 })
 
-test('whole-body Voronoi through-cut leaves one solid with clean geometry', () => {
+test('unfolding an open box joins its faces into one sheet; the rim is then patterned too', () => {
+  const { mesh } = openBox()
+  const origin: [number, number, number] = [-13.33, -13.33, 2]
+  const { pieces, log } = flattenPieces(mesh, wholeRegion(mesh), origin, 30)
+  assert.equal(new Set(pieces.map((p) => p.sheet)).size, 1, log.join('\n'))
+  assert.ok(log.some((l) => l.includes('10 sharp edge(s) unfolded')), log.join('\n'))
+  // every piece lays out in the same frame: the user's origin
+  for (const p of pieces) { assert.deepEqual(p.origin, origin); assert.equal(p.frame, pieces[0].frame) }
+  const rim = pieces.find((p) => p.region.length === 8)!
+  assert.ok(rim.foldVertices.length >= 8, 'both rim edges are folds')
+  // with unfolding off, every piece is its own sheet, centred on itself
+  const separate = flattenPieces(mesh, wholeRegion(mesh), origin, 30, false)
+  assert.equal(new Set(separate.pieces.map((p) => p.sheet)).size, 11)
+  assert.equal(separate.pieces.filter((p) => p.foldVertices.length).length, 0)
+})
+
+for (const joinEdges of [true, false]) test(`whole-body Voronoi through-cut leaves one solid with clean geometry (unfold ${joinEdges})`, () => {
   const { body, mesh } = openBox()
   const origin: [number, number, number] = [-13.333333333333334, -13.333333333333334, 2]
-  const { pieces } = flattenPieces(mesh, wholeRegion(mesh), origin, 30)
+  const { pieces } = flattenPieces(mesh, wholeRegion(mesh), origin, 30, joinEdges)
   const def = { name: 'Voronoi cells', generatorId: 'voronoiTile', params: { width: 80, height: 50, cellSize: 8.5, relax: 4, ribWidth: 1.6, seed: 5, gradient: 'radialOut', gradientStrength: 2 }, invert: false }
   const gen = generatorById(def.generatorId)!
   const resolved = resolveDef(def)
@@ -78,24 +94,29 @@ test('whole-body Voronoi through-cut leaves one solid with clean geometry', () =
   let planarTools = 0
   for (const piece of pieces) {
     if (isBackSide(piece, 'cut', wallThickness)) continue
-    const layout = layoutTile(m, piece, polys, tile.width, tile.height, { origin: piece.origin, rotationDeg: 0, scale: 0.85, margin: 1.6, fitSeam: true, minScale: 0.65, single: false })
+    // as the geometry worker does: continue the pattern past the folds, then mitre the tool there
+    const layout = layoutTile(m, piece, polys, tile.width, tile.height, { origin: piece.origin, rotationDeg: 0, scale: 0.85, margin: 1.6, fitSeam: true, minScale: 0.65, single: false, normalRange: [-(wallThickness + 1), 1] })
     if (!layout.polygons.length) continue
     const param = new Parameterization({ ...layout.param.sub, sourceTriangles: new Uint32Array(0) }, layout.param.uv)
     assert.ok(isPlanar(param))
-    const polygons: Polygon[] = layout.polygons.map((p) => p.map(([x, y]) => [x, y] as [number, number]))
-    const tool = buildSurfaceTool(m, param, polygons, -(wallThickness + 1), 1, 0.5)
+    const polygons: Polygon[] = [...layout.polygons, ...layout.foldPolygons].map((p) => p.map(([x, y]) => [x, y] as [number, number]))
+    const tool = mitreTool(m, buildSurfaceTool(m, param, polygons, -(wallThickness + 1), 1, 0.5), piece.mitres, -(wallThickness + 1), 1)
     assert.equal(tool.status(), 'NoError')
     // a planar face is not refined: far fewer triangles than the 0.5 mm refinement would give
     assert.ok(tool.numTri() < 20000, `tool has ${tool.numTri()} triangles`)
     planarTools++
     tools.push(tool)
   }
-  assert.equal(planarTools, 5) // outer walls and bottom; the rim is all margin
+  // outer walls and bottom; the rim is all margin on its own, but once unfolded into the
+  // sheet its edges are folds, not boundaries, so the pattern wraps over it as well
+  assert.equal(planarTools, joinEdges ? 6 : 5)
   const tool = M.union(tools)
   const cut = M.difference(body, tool).simplify(0.005)
   assert.equal(cut.status(), 'NoError')
-  const parts = cut.decompose()
-  assert.equal(parts.length, 1, `result fell into ${parts.length} pieces`)
+  // zero-volume shells can remain where three mitred tools meet along a line; the worker's
+  // island filter drops them, so only real material counts here
+  const parts = cut.decompose().filter((p) => Math.abs(p.volume()) > 0.01)
+  assert.equal(parts.length, 1, `result fell into ${parts.length} pieces: ${parts.map((p) => p.volume().toFixed(3)).join(', ')}`)
   const removed = 1 - cut.volume() / body.volume()
   assert.ok(removed > 0.1 && removed < 0.75, `removed ${(removed * 100).toFixed(0)}% of the volume`)
   // every triangle either lies on one of the box planes or is a hole wall no longer than a cell;
