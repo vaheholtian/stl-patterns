@@ -210,7 +210,7 @@ function crease3D(solid: Manifold, a: Laid, b: Laid, mode: 'cut' | 'recess' | 'e
   return runs(samples.map((s) => level(s.pa, s.na)), samples.map((s) => level(s.pb, s.nb)), spacing, explained)
 }
 
-const GENERATORS = ['squareGrid', 'honeycomb', 'voronoiTile', 'celtic', 'hilbert']
+const GENERATORS = ['squareGrid', 'honeycomb', 'voronoiTile', 'lusona', 'hilbert']
 
 test('two faces of a box share one layout frame and the pattern continues across their edge', () => {
   const b = box([[0, 0, 1], [0, -1, 0]])
@@ -234,7 +234,7 @@ test('two faces of a box share one layout frame and the pattern continues across
 })
 
 test('bent plates unfold at 45°, 135° and into a concave valley, at any tile rotation or scale', () => {
-  for (const angle of [45, 135, -90]) for (const generatorId of ['squareGrid', 'voronoiTile', 'celtic']) for (const s of [{ rotationDeg: 37 }, { scale: 0.6 }, { margin: 3 }]) {
+  for (const angle of [45, 135, -90]) for (const generatorId of ['squareGrid', 'voronoiTile', 'lusona']) for (const s of [{ rotationDeg: 37 }, { scale: 0.6 }, { margin: 3 }]) {
     const { laid, pieces, log } = layoutOn(plate(angle), generatorId, s)
     assert.equal(pieces.length, 2, log.join('\n'))
     assert.equal(new Set(pieces.map((p) => p.sheet)).size, 1, log.join('\n'))

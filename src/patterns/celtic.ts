@@ -4,6 +4,10 @@ import { baseTile, bounded, continuousParams, roundPath, seedParam } from './con
 /** Periodic diagonal midpoint lattice. There is no outer boundary to reflect:
  * neighbours, barrier choices and curve tangents all wrap modulo the grid.
  * Crossings are fused for cutouts. Opening a barrier only ADDS connectivity.
+ *
+ * Not in the picker any more -- "Celtic plait" was dropped. This stays because
+ * Mirror curves / lusona is the same lattice under different defaults and is
+ * built by spreading this generator; see mirrorCurves.ts.
  */
 export const celticGenerator: Generator = {
   id: 'celtic', name: 'Celtic plait', cutoutDefault: true, connectedRibs: true,

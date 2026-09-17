@@ -14,7 +14,6 @@ import { hyperbolicGenerator } from './hyperbolic'
 import { apollonianGenerator } from './apollonian'
 import { juliaGenerator } from './julia'
 import { lusonaGenerator } from './mirrorCurves'
-import { celticGenerator } from './celtic'
 import { mazeGenerator } from './maze'
 import { ammannBeenkerGenerator } from './ammannBeenker'
 import { hankinGenerator } from './hankin'
@@ -28,7 +27,6 @@ export const generators: Generator[] = [
   ...perforationGenerators,
   lusonaGenerator,
   mazeGenerator,
-  celticGenerator,
   ammannBeenkerGenerator,
   hankinGenerator,
   fermatSpiralsGenerator,
@@ -85,3 +83,4 @@ export function repeatKind(g: Generator, params: Record<string, ParamValue> = de
   if (['phyllotaxis', 'hyperbolic', 'apollonian', 'penrose', 'julia', 'sierpinski', 'fermatSpirals', 'gosper', 'arrowhead', 'terdragon'].includes(g.id)) return 'motif'
   return 'field'
 }
+

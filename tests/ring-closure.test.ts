@@ -112,7 +112,7 @@ function apply(f: Fixture, laid: Laid[], mode: Mode): Manifold {
 test('the four walls of the box close as one periodic sheet: all four edges continuous at 0, 90, 180 and 270 degrees', () => {
   const f = box(true)
   try {
-    for (const generatorId of ['honeycomb', 'voronoiTile', 'celtic', 'greekKey']) for (const rotationDeg of [0, 90, 180, 270]) {
+    for (const generatorId of ['honeycomb', 'voronoiTile', 'lusona', 'greekKey']) for (const rotationDeg of [0, 90, 180, 270]) {
       const { pieces, laid, log } = layoutOn(f, generatorId, { rotationDeg })
       const what = `${generatorId} ${rotationDeg}°`
       assert.equal(pieces.length, 4)
