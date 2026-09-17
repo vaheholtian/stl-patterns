@@ -42,7 +42,7 @@ function layOut(marginPerSurface: boolean) {
   assert.equal(new Set(pieces.map((p) => p.sheet)).size, 1, 'unfolded into one sheet')
 
   const settings: LayoutSettings = { origin: pieces[0].origin, scale: 1, rotationDeg: 0, margin: MARGIN, marginPerSurface, fitSeam: true, minScale: .5, normalRange: [zMin, zMax] }
-  const folds: number[] = [], rims: number[] = []
+  const folds: number[] = [], rims: number[] = [], closing: number[] = []
   for (const piece of pieces) {
     const lay = layoutTile(m, piece, tile.polygons as [number, number][][], tile.tile!.width, tile.tile!.height, { ...settings, origin: piece.origin })
     if (!lay.polygons.length) continue
@@ -56,12 +56,17 @@ function layOut(marginPerSurface: boolean) {
         const key = a < b ? `${a},${b}` : `${b},${a}`
         const d = clearance(uv, lay.polygons as [number, number][][], a, b, scale)
         if (!Number.isFinite(d)) continue
-        if (foldKeys.has(key)) folds.push(d)
-        else if (!closure.has(key)) rims.push(d)
+        // The closing edge of a ring is not in foldEdges: layout's closing() turns
+        // it into one only once the tile fits whole repeats around the ring, and
+        // otherwise leaves it a real edge with its margin. Measured on its own so
+        // the fourth corner of a box is actually covered.
+        if (closure.has(key)) closing.push(d)
+        else if (foldKeys.has(key)) folds.push(d)
+        else rims.push(d)
       }
     }
   }
-  return { folds, rims }
+  return { folds, rims, closing }
 }
 
 test('the rim of a box always keeps its solid margin', () => {
@@ -83,6 +88,24 @@ test('off, the pattern runs through the unfolded corners; on, they come out soli
   assert.equal(on.folds.length, off.folds.length, 'the same corners are measured either way')
   assert.ok(Math.min(...on.folds) >= MARGIN - 0.5,
     `every corner should be solid for ${MARGIN} mm, nearest shape is ${Math.min(...on.folds).toFixed(2)} mm`)
+})
+
+test('the ring closing corner behaves like the other three', () => {
+  // A closed box unfolds into a strip whose two ends are the same corner. It
+  // reaches the layout as the sheet's closure rather than as a fold, so it is
+  // easy to leave out and end up with three solid corners and one open.
+  const off = layOut(false)
+  assert.equal(off.closing.length, 2, 'both sides of the closing corner are measured')
+  assert.ok(Math.max(...off.closing) < 0.5,
+    `off, the pattern should meet itself round the ring; clearance is ${off.closing.map(d => d.toFixed(2)).join(', ')} mm`)
+
+  const on = layOut(true)
+  assert.ok(Math.min(...on.closing) >= MARGIN - 0.5,
+    `on, the closing corner should be solid too; clearance is ${on.closing.map(d => d.toFixed(2)).join(', ')} mm`)
+
+  // all four corners of the box, not just the three that are folds
+  assert.equal(on.folds.length + on.closing.length, 8, 'four corners, two sides each')
+  assert.ok(Math.min(...on.folds, ...on.closing) >= MARGIN - 0.5, 'every corner solid')
 })
 
 test('turning it on only removes material from the pattern, never adds any', () => {
