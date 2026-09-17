@@ -82,6 +82,7 @@ export default function TilePanel({ region }: Props) {
           rotationDeg: tl.rotationDeg,
           scale: tl.scale,
           margin: tl.margin,
+          marginPerSurface: tl.marginPerSurface,
           fitSeam: tl.fitSeam,
           minScale: tl.minScale,
           single,
@@ -166,7 +167,7 @@ export default function TilePanel({ region }: Props) {
       }
     }, 60)
     return () => { cancelled = true; if (layoutTimer.current) clearTimeout(layoutTimer.current); previewClient.cancel() }
-  }, [previewClient, flat, tile, tilePolys, tileDef, resolved, gen, single, lineWidth, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.fitSeam, tl.minScale, tl.mode, tl.wallThickness, tl.depth])
+  }, [previewClient, flat, tile, tilePolys, tileDef, resolved, gen, single, lineWidth, tl.origin, tl.rotationDeg, tl.scale, tl.margin, tl.marginPerSurface, tl.fitSeam, tl.minScale, tl.mode, tl.wallThickness, tl.depth])
 
   // when the origin is picked, the pieces that centre on it (and any far-side cap) move: re-flatten
   const lastOrigin = useRef<string>('')
@@ -264,6 +265,12 @@ export default function TilePanel({ region }: Props) {
         <label>Continue across sharp edges</label>
         <input type="checkbox" checked={tl.joinEdges !== false} onChange={(e) => set({ joinEdges: e.target.checked })} />
       </div>
+      {tl.joinEdges !== false && tl.margin > 0 && (
+        <div className="row" title="apply the solid edge margin to every face, including the sharp edges the faces were unfolded across, so a box comes out with solid corners. The pattern still repeats in phase around the part, unlike turning off Continue across sharp edges, which restarts it on each face.">
+          <label htmlFor="margin-per-surface">Solid edge margin on each surface</label>
+          <input id="margin-per-surface" type="checkbox" checked={tl.marginPerSurface} onChange={(e) => set({ marginPerSurface: e.target.checked })} />
+        </div>
+      )}
       <div className="row" title="on curved surfaces the tile shrinks away from the origin; below this size the surface is left solid"><label>Skip where smaller than</label><input type="number" step={5} min={0} max={95} value={Math.round(tl.minScale * 100)} onChange={(e) => set({ minScale: Number(e.target.value) / 100 })} /></div>
       <div className="row" title="max edge length of the tool mesh, mm; smaller follows tight curves better but makes bigger files"><label>Detail (mm)</label><input type="number" step={0.5} min={0.5} max={5} value={tl.detail} onChange={(e) => set({ detail: Number(e.target.value) })} /></div>
       <div className="row">

@@ -25,6 +25,8 @@ export interface TileLayoutUi {
   fitSeam: boolean
   /** unfold faces that meet at a sharp edge into one sheet so the pattern continues across the edge */
   joinEdges: boolean
+  /** keep the solid edge margin along those unfolded edges too, so a box's corners come out solid */
+  marginPerSurface: boolean
   minScale: number
   detail: number
   /** 'repeat' tiles the pattern; 'single' generates it once at the region's size; 'auto' picks by whether the generator is seamless */
@@ -101,6 +103,7 @@ export const useStore = create<State>((set, get) => ({
     margin: 3,
     fitSeam: true,
     joinEdges: true,
+    marginPerSurface: false,
     minScale: 0.5,
     detail: 2,
     fit: 'auto',

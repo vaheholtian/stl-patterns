@@ -32,6 +32,18 @@ export interface LayoutSettings {
   scale: number
   /** untouched band along the region boundary, mm */
   margin: number
+  /**
+   * Also keep that band along the edges where faces were unfolded into one
+   * sheet, so every surface is bounded on all sides and a box's corners come
+   * out solid. Off, the sheet is treated as one surface and the pattern runs
+   * straight through a corner, which is the point of unfolding.
+   *
+   * Not the same as turning off "continue across sharp edges": that lays each
+   * face on its own, so the pattern restarts per face. Here the sheet stays
+   * unfolded and the repeats stay in phase around the part; only the band is
+   * added.
+   */
+  marginPerSurface?: boolean
   /** stretch the tile so it repeats a whole number of times around a seam */
   fitSeam: boolean
   /** leave the surface solid where the local tile size falls below this fraction of true size (0 = off) */
@@ -223,6 +235,7 @@ function finish(
     // keep a solid band along real boundary edges only: neither the wrap seam nor a
     // fold to a neighbouring piece of the same sheet is an edge of the part. Folds are
     // matched by edge: a wall's rim edge runs between two fold corners yet is a real edge.
+    // With marginPerSurface the folds are banded too, so each face is bounded all round.
     const seam = new Set(flat.seamVertices)
     const foldKeys = new Set((flat.foldEdges ?? []).map(([a, b]) => (a < b ? `${a},${b}` : `${b},${a}`)))
     const foldVertices = new Set(flat.foldVertices ?? [])
@@ -234,7 +247,7 @@ function finish(
         const a = loop[i], b = loop[(i + 1) % loop.length]
         if (seam.has(a) && seam.has(b)) continue
         const key = a < b ? `${a},${b}` : `${b},${a}`
-        if (foldKeys.has(key)) continue
+        if (foldKeys.has(key) && !settings.marginPerSurface) continue
         const ax = param.uv[a * 2], ay = param.uv[a * 2 + 1], bx = param.uv[b * 2], by = param.uv[b * 2 + 1]
         const len = Math.hypot(bx - ax, by - ay)
         if (len < 1e-9) continue
