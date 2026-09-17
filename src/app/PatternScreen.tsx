@@ -10,6 +10,7 @@ import { exportTileSvg } from '../patterns/svg/svgExport'
 import { downloadBlob } from '../io/download'
 import { useIsMobile } from './useIsMobile'
 import { usePwa } from './usePwa'
+import { PatternLibraryPicker } from './PatternLibraryPicker'
 
 /** Number input that only reports a value once it is complete, so typing "0.5" does not pass through 0. */
 function NumberChip({ value, param, onChange, disabled }: { value: number; param: GeneratorParam; onChange: (v: number) => void; disabled?: boolean }) {
@@ -419,7 +420,10 @@ function Panels(props: PanelProps) {
         <div className="section">
           <h3>Parameters</h3>
           {gen.params.map((p) => (
-            <ParamControl key={p.key} p={p} touch={mobile} value={resolved.params[p.key] ?? p.default} locked={resolved.lockedParams.has(p.key)} onChange={(v) => ts().setParam(p.key, v)} />
+            // 330 designs do not browse as a dropdown: the library gets a thumbnail grid
+            gen.id === 'library' && p.key === 'pattern'
+              ? <PatternLibraryPicker key={p.key} value={String(resolved.params[p.key] ?? p.default)} onPick={(slug) => ts().setParam(p.key, slug)} />
+              : <ParamControl key={p.key} p={p} touch={mobile} value={resolved.params[p.key] ?? p.default} locked={resolved.lockedParams.has(p.key)} onChange={(v) => ts().setParam(p.key, v)} />
           ))}
         </div>
       )}

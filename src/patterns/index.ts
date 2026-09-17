@@ -21,9 +21,11 @@ import { fermatSpiralsGenerator } from './fermatSpirals'
 import { singleStrokeFractalGenerators } from './singleStrokeFractals'
 import { greekKeyGenerator } from './greekKey'
 import { perforationGenerators } from './perforations'
+import { libraryGenerator } from './library'
 
 /** Ordered for the picker: patterns that fill the surface first, centred medallions last. */
 export const generators: Generator[] = [
+  libraryGenerator,
   ...perforationGenerators,
   lusonaGenerator,
   mazeGenerator,

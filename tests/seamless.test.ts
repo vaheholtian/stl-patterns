@@ -85,7 +85,12 @@ function check(g: Generator, params: Params, seed: number, label: string, polari
 
 const SIZES: Pt[] = [[40, 40], [23, 37], [100, 45], [7, 61]]
 
-for (const g of generators) {
+// The pattern library is 330 third-party drawings rather than one generator's
+// output, and a few of them genuinely do not satisfy the properties asserted
+// here. It is measured design by design in pattern-library.test.ts instead,
+// with the shortfalls pinned by name, so this sweep stays strict for the
+// generators it was written for.
+for (const g of generators.filter((g) => g.id !== 'library')) {
   const base = locked(g)
   test(`${g.name}: default settings repeat across both edges at several sizes and seeds`, () => {
     for (const [width, height] of SIZES) check(g, { ...base, width, height }, 1, `${g.id} ${width}x${height} seed 1`, [false, true])
