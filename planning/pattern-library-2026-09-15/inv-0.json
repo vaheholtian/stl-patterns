@@ -1,0 +1,825 @@
+[
+ {
+  "slug": "waves-1",
+  "title": "Waves - 1",
+  "mode": "stroke",
+  "as": {
+   "parts": 5,
+   "thin": 6,
+   "volume": 16750
+  },
+  "inv": {
+   "parts": 7,
+   "thin": 7,
+   "volume": 7606
+  }
+ },
+ {
+  "slug": "waves-2",
+  "title": "Waves - 2",
+  "mode": "stroke",
+  "as": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 17544
+  },
+  "inv": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 6810
+  }
+ },
+ {
+  "slug": "waves-3",
+  "title": "Waves - 3",
+  "mode": "stroke",
+  "as": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 18107
+  },
+  "inv": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 6248
+  }
+ },
+ {
+  "slug": "waves-4",
+  "title": "Waves - 4",
+  "mode": "stroke",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15615
+  },
+  "inv": {
+   "parts": 7,
+   "thin": 7,
+   "volume": 8737
+  }
+ },
+ {
+  "slug": "waves-5",
+  "title": "Waves - 5",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16342
+  },
+  "inv": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 8014
+  }
+ },
+ {
+  "slug": "waves-6",
+  "title": "Waves - 6",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15690
+  },
+  "inv": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 8670
+  }
+ },
+ {
+  "slug": "waves-7",
+  "title": "Waves - 7",
+  "mode": "fill",
+  "as": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 15259
+  },
+  "inv": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 9099
+  }
+ },
+ {
+  "slug": "chevron-1",
+  "title": "Chevron - 1",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 18228
+  },
+  "inv": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 6131
+  }
+ },
+ {
+  "slug": "chevron-2",
+  "title": "Chevron - 2",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 18163
+  },
+  "inv": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 6196
+  }
+ },
+ {
+  "slug": "chevron-3",
+  "title": "Chevron - 3",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18583
+  },
+  "inv": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 5776
+  }
+ },
+ {
+  "slug": "straight-lines",
+  "title": "Straight Lines",
+  "mode": "stroke",
+  "as": {
+   "skipped": "nothing laid on the walls"
+  },
+  "inv": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 5363
+  }
+ },
+ {
+  "slug": "cross-section",
+  "title": "Cross Section",
+  "mode": "stroke",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18986
+  },
+  "inv": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 5370
+  }
+ },
+ {
+  "slug": "brick-wall-1",
+  "title": "Brick Wall - 1",
+  "mode": "stroke",
+  "as": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 17932
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6442
+  }
+ },
+ {
+  "slug": "brick-wall-2",
+  "title": "Brick Wall - 2",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8106
+  },
+  "inv": {
+   "parts": 18,
+   "thin": 26,
+   "volume": 16278
+  }
+ },
+ {
+  "slug": "herringbone-1",
+  "title": "Herringbone - 1",
+  "mode": "stroke",
+  "as": {
+   "parts": 5,
+   "thin": 18,
+   "volume": 16915
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7457
+  }
+ },
+ {
+  "slug": "herringbone-2",
+  "title": "Herringbone - 2",
+  "mode": "stroke",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17546
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6821
+  }
+ },
+ {
+  "slug": "herringbone-3",
+  "title": "Herringbone - 3",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 6,
+   "volume": 12159
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 6,
+   "volume": 12220
+  }
+ },
+ {
+  "slug": "herringbone-4",
+  "title": "Herringbone - 4",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12221
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12160
+  }
+ },
+ {
+  "slug": "herringbone-5",
+  "title": "Herringbone - 5",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 22,
+   "volume": 12215
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 22,
+   "volume": 12181
+  }
+ },
+ {
+  "slug": "herringbone-6",
+  "title": "Herringbone - 6",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 6,
+   "volume": 12213
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 6,
+   "volume": 12186
+  }
+ },
+ {
+  "slug": "herringbone-7",
+  "title": "Herringbone - 7",
+  "mode": "stroke",
+  "as": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 17350
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7024
+  }
+ },
+ {
+  "slug": "herringbone-8",
+  "title": "Herringbone - 8",
+  "mode": "stroke",
+  "as": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 16900
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7486
+  }
+ },
+ {
+  "slug": "flower-1",
+  "title": "Flower - 1",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13436
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 10955
+  }
+ },
+ {
+  "slug": "flower-2",
+  "title": "Flower - 2",
+  "mode": "stroke",
+  "as": {
+   "parts": 1,
+   "thin": 6,
+   "volume": 17211
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7161
+  }
+ },
+ {
+  "slug": "flower-3",
+  "title": "Flower - 3",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17320
+  },
+  "inv": {
+   "parts": 66,
+   "thin": 66,
+   "volume": 7076
+  }
+ },
+ {
+  "slug": "flower-4",
+  "title": "Flower - 4",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 5,
+   "volume": 16467
+  },
+  "inv": {
+   "parts": 42,
+   "thin": 62,
+   "volume": 7943
+  }
+ },
+ {
+  "slug": "flower-5",
+  "title": "Flower - 5",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 5,
+   "volume": 15808
+  },
+  "inv": {
+   "parts": 46,
+   "thin": 46,
+   "volume": 8588
+  }
+ },
+ {
+  "slug": "flower-6",
+  "title": "Flower - 6",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12380
+  },
+  "inv": {
+   "parts": 14,
+   "thin": 14,
+   "volume": 12010
+  }
+ },
+ {
+  "slug": "flower-7",
+  "title": "Flower - 7",
+  "mode": "fill",
+  "as": {
+   "parts": 25,
+   "thin": 25,
+   "volume": 16280
+  },
+  "inv": {
+   "parts": 38,
+   "thin": 38,
+   "volume": 8382
+  }
+ },
+ {
+  "slug": "plus-1",
+  "title": "Plus - 1",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18773
+  },
+  "inv": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 5584
+  }
+ },
+ {
+  "slug": "plus-2",
+  "title": "Plus - 2",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18756
+  },
+  "inv": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 5601
+  }
+ },
+ {
+  "slug": "plus-3",
+  "title": "Plus - 3",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18550
+  },
+  "inv": {
+   "parts": 22,
+   "thin": 22,
+   "volume": 5807
+  }
+ },
+ {
+  "slug": "plus-4",
+  "title": "Plus - 4",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18443
+  },
+  "inv": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 5915
+  }
+ },
+ {
+  "slug": "circles-1",
+  "title": "Circles - 1",
+  "mode": "stroke",
+  "as": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 18495
+  },
+  "inv": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 5861
+  }
+ },
+ {
+  "slug": "circles-2",
+  "title": "Circles - 2",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17855
+  },
+  "inv": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 6501
+  }
+ },
+ {
+  "slug": "circles-3",
+  "title": "Circles - 3",
+  "mode": "stroke",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18521
+  },
+  "inv": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 5834
+  }
+ },
+ {
+  "slug": "circles-4",
+  "title": "Circles - 4",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18208
+  },
+  "inv": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 6147
+  }
+ },
+ {
+  "slug": "circles-5",
+  "title": "Circles - 5",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15022
+  },
+  "inv": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 9333
+  }
+ },
+ {
+  "slug": "circles-6",
+  "title": "Circles - 6",
+  "mode": "stroke",
+  "as": {
+   "parts": 9,
+   "thin": 9,
+   "volume": 17764
+  },
+  "inv": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 6591
+  }
+ },
+ {
+  "slug": "circles-7",
+  "title": "Circles - 7",
+  "mode": "stroke",
+  "as": {
+   "parts": 5,
+   "thin": 9,
+   "volume": 17929
+  },
+  "inv": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 6448
+  }
+ },
+ {
+  "slug": "concentric-circles-1",
+  "title": "Concentric Circles - 1",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18094
+  },
+  "inv": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 6263
+  }
+ },
+ {
+  "slug": "concentric-circles-2",
+  "title": "Concentric Circles - 2",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17527
+  },
+  "inv": {
+   "parts": 46,
+   "thin": 46,
+   "volume": 6828
+  }
+ },
+ {
+  "slug": "concentric-circles-3",
+  "title": "Concentric Circles - 3",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17079
+  },
+  "inv": {
+   "parts": 70,
+   "thin": 70,
+   "volume": 7278
+  }
+ },
+ {
+  "slug": "adjointed-circles",
+  "title": "Adjointed Circles",
+  "mode": "stroke",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17466
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6894
+  }
+ },
+ {
+  "slug": "adjointed-diamonds",
+  "title": "Adjointed Diamonds",
+  "mode": "stroke",
+  "as": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 17557
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6815
+  }
+ },
+ {
+  "slug": "diamonds-1",
+  "title": "Diamonds - 1",
+  "mode": "stroke",
+  "as": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 17628
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6739
+  }
+ },
+ {
+  "slug": "diamonds-2",
+  "title": "Diamonds - 2",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13177
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 11192
+  }
+ },
+ {
+  "slug": "diamonds-3",
+  "title": "Diamonds - 3",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 38,
+   "thin": 38,
+   "volume": 16753
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7641
+  }
+ },
+ {
+  "slug": "hexagon-1",
+  "title": "Hexagon - 1",
+  "mode": "stroke",
+  "as": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18252
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6106
+  }
+ },
+ {
+  "slug": "hexagon-2",
+  "title": "Hexagon - 2",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 5,
+   "volume": 17289
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7073
+  }
+ },
+ {
+  "slug": "hexagon-3",
+  "title": "Hexagon - 3",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 5,
+   "thin": 9,
+   "volume": 16750
+  },
+  "inv": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 7615
+  }
+ },
+ {
+  "slug": "hexagon-4",
+  "title": "Hexagon - 4",
+  "mode": "fill",
+  "as": {
+   "parts": 1,
+   "thin": 18,
+   "volume": 8709
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15666
+  }
+ },
+ {
+  "slug": "hexagon-5",
+  "title": "Hexagon - 5",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 1,
+   "thin": 5,
+   "volume": 17532
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6832
+  }
+ },
+ {
+  "slug": "hexagon-6",
+  "title": "Hexagon - 6",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 13,
+   "thin": 18,
+   "volume": 14963
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9459
+  }
+ },
+ {
+  "slug": "hexagon-7",
+  "title": "Hexagon - 7",
+  "mode": "stroke-join",
+  "as": {
+   "parts": 25,
+   "thin": 26,
+   "volume": 15167
+  },
+  "inv": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9254
+  }
+ }
+]

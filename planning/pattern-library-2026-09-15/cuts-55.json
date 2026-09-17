@@ -1,0 +1,1026 @@
+[
+ {
+  "slug": "hexagon-8",
+  "title": "Hexagon - 8",
+  "mode": "stroke",
+  "tags": [
+   "hexagon",
+   "triangles"
+  ],
+  "w25": {
+   "parts": 122,
+   "thin": 138,
+   "volume": 13573.4
+  },
+  "w50": {
+   "parts": 2,
+   "thin": 14,
+   "volume": 16137.9
+  }
+ },
+ {
+  "slug": "overlapping-hexagons",
+  "title": "Overlapping Hexagons",
+  "mode": "stroke",
+  "tags": [
+   "overlapping hexagons"
+  ],
+  "w25": {
+   "parts": 206,
+   "thin": 206,
+   "volume": 13746.4
+  },
+  "w50": {
+   "parts": 42,
+   "thin": 50,
+   "volume": 16179.2
+  }
+ },
+ {
+  "slug": "squares-and-squares-1",
+  "title": "Squares & Squares - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & squares"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12196.9
+  },
+  "w50": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12170.6
+  }
+ },
+ {
+  "slug": "squares-and-squares-2",
+  "title": "Squares & Squares - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & squares"
+  ],
+  "w25": {
+   "parts": 101,
+   "thin": 101,
+   "volume": 12243.6
+  },
+  "w50": {
+   "parts": 29,
+   "thin": 30,
+   "volume": 12211
+  }
+ },
+ {
+  "slug": "squares-and-diamonds",
+  "title": "Squares & Diamonds",
+  "mode": "fill",
+  "tags": [
+   "squares & diamonds"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12195.3
+  },
+  "w50": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12168.8
+  }
+ },
+ {
+  "slug": "squares-and-circles-1",
+  "title": "Squares & Circles - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & circles"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12183.7
+  },
+  "w50": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12165.1
+  }
+ },
+ {
+  "slug": "squares-and-circles-2",
+  "title": "Squares & Circles - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & circles"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 146,
+   "volume": 12396.1
+  },
+  "w50": {
+   "parts": 5,
+   "thin": 58,
+   "volume": 12275.7
+  }
+ },
+ {
+  "slug": "squares-and-plus-1",
+  "title": "Squares & Plus - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & plus",
+   "cross"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12191.3
+  },
+  "w50": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12167.4
+  }
+ },
+ {
+  "slug": "squares-and-plus-2",
+  "title": "Squares & Plus - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & plus",
+   "cross"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 114,
+   "volume": 12487.1
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 62,
+   "volume": 12247.2
+  }
+ },
+ {
+  "slug": "squares-and-stars-1",
+  "title": "Squares & Stars - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & stars"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12247.9
+  },
+  "w50": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12181.5
+  }
+ },
+ {
+  "slug": "squares-and-stars-2",
+  "title": "Squares & Stars - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & stars"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12979.6
+  },
+  "w50": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12886.5
+  }
+ },
+ {
+  "slug": "stars-and-lines-1",
+  "title": "Stars & Lines - 1",
+  "mode": "fill",
+  "tags": [
+   "stars & lines",
+   "stripes"
+  ],
+  "w25": {
+   "parts": 18,
+   "thin": 18,
+   "volume": 6806.6
+  },
+  "w50": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 6388.2
+  }
+ },
+ {
+  "slug": "stars-and-lines-2",
+  "title": "Stars & Lines - 2",
+  "mode": "fill",
+  "tags": [
+   "stars & lines",
+   "stripes"
+  ],
+  "w25": {
+   "parts": 11,
+   "thin": 11,
+   "volume": 10043.4
+  },
+  "w50": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 8873.4
+  }
+ },
+ {
+  "slug": "triangles-1",
+  "title": "Triangles - 1",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 34,
+   "volume": 12223
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 12175.9
+  }
+ },
+ {
+  "slug": "triangles-2",
+  "title": "Triangles - 2",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 26,
+   "volume": 12002.4
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 11719.9
+  }
+ },
+ {
+  "slug": "triangles-3",
+  "title": "Triangles - 3",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 30,
+   "volume": 12565.6
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 12690
+  }
+ },
+ {
+  "slug": "triangles-4",
+  "title": "Triangles - 4",
+  "mode": "stroke",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 14,
+   "thin": 18,
+   "volume": 16941.9
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18306.2
+  }
+ },
+ {
+  "slug": "triangles-5",
+  "title": "Triangles - 5",
+  "mode": "stroke-join",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 97,
+   "thin": 105,
+   "volume": 15000.2
+  },
+  "w50": {
+   "parts": 13,
+   "thin": 29,
+   "volume": 16976.6
+  }
+ },
+ {
+  "slug": "triangles-6",
+  "title": "Triangles - 6",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15026.8
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14931.7
+  }
+ },
+ {
+  "slug": "triangles-7",
+  "title": "Triangles - 7",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 14,
+   "volume": 12842.1
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 12733.4
+  }
+ },
+ {
+  "slug": "triangles-8",
+  "title": "Triangles - 8",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15685.6
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15989.5
+  }
+ },
+ {
+  "slug": "triangles-9",
+  "title": "Triangles - 9",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 2,
+   "thin": 26,
+   "volume": 12125.5
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 5,
+   "volume": 14307.5
+  }
+ },
+ {
+  "slug": "triangles-10",
+  "title": "Triangles - 10",
+  "mode": "stroke-join",
+  "tags": [
+   "triangles"
+  ],
+  "w25": {
+   "parts": 94,
+   "thin": 106,
+   "volume": 14701.3
+  },
+  "w50": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 16750
+  }
+ },
+ {
+  "slug": "inverted-triangles",
+  "title": "Inverted Triangles",
+  "mode": "stroke",
+  "tags": [
+   "inverted triangles"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 25,
+   "volume": 16466.3
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17812.9
+  }
+ },
+ {
+  "slug": "checkerboard",
+  "title": "Checkerboard",
+  "mode": "fill",
+  "tags": [
+   "checkerboard",
+   "lines",
+   "squares"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 18,
+   "volume": 12183.5
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 12164.5
+  }
+ },
+ {
+  "slug": "japanese-pattern-1",
+  "title": "Japanese Pattern - 1",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "w25": {
+   "parts": 210,
+   "thin": 246,
+   "volume": 12967.5
+  },
+  "w50": {
+   "parts": 46,
+   "thin": 50,
+   "volume": 15779.5
+  }
+ },
+ {
+  "slug": "japanese-pattern-2",
+  "title": "Japanese Pattern - 2",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "w25": {
+   "parts": 82,
+   "thin": 90,
+   "volume": 14211.1
+  },
+  "w50": {
+   "parts": 13,
+   "thin": 22,
+   "volume": 16455
+  }
+ },
+ {
+  "slug": "japanese-pattern-3",
+  "title": "Japanese Pattern - 3",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "w25": {
+   "parts": 53,
+   "thin": 122,
+   "volume": 14802
+  },
+  "w50": {
+   "parts": 22,
+   "thin": 22,
+   "volume": 16737.6
+  }
+ },
+ {
+  "slug": "japanese-pattern-4",
+  "title": "Japanese Pattern - 4",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "w25": {
+   "parts": 234,
+   "thin": 250,
+   "volume": 11923.5
+  },
+  "w50": {
+   "parts": 34,
+   "thin": 42,
+   "volume": 15041.4
+  }
+ },
+ {
+  "slug": "japanese-pattern-5",
+  "title": "Japanese Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "waves"
+  ],
+  "w25": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 9765.7
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12564.6
+  }
+ },
+ {
+  "slug": "japanese-pattern-6",
+  "title": "Japanese Pattern - 6",
+  "mode": "stroke-join",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "w25": {
+   "parts": 206,
+   "thin": 206,
+   "volume": 10365.7
+  },
+  "w50": {
+   "parts": 34,
+   "thin": 42,
+   "volume": 14544.1
+  }
+ },
+ {
+  "slug": "eyes-1",
+  "title": "Eyes - 1",
+  "mode": "stroke",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "w25": {
+   "parts": 43,
+   "thin": 43,
+   "volume": 15160.4
+  },
+  "w50": {
+   "parts": 9,
+   "thin": 14,
+   "volume": 16499.6
+  }
+ },
+ {
+  "slug": "eyes-2",
+  "title": "Eyes - 2",
+  "mode": "fill",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "w25": {
+   "parts": 11,
+   "thin": 11,
+   "volume": 12582.6
+  },
+  "w50": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 11837.6
+  }
+ },
+ {
+  "slug": "eyes-3",
+  "title": "Eyes - 3",
+  "mode": "stroke",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "w25": {
+   "parts": 27,
+   "thin": 27,
+   "volume": 16971.4
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 3,
+   "volume": 17961.2
+  }
+ },
+ {
+  "slug": "eyes-4",
+  "title": "Eyes - 4",
+  "mode": "fill",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "w25": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 11357.5
+  },
+  "w50": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 12954.8
+  }
+ },
+ {
+  "slug": "jigsaw",
+  "title": "Jigsaw",
+  "mode": "stroke",
+  "tags": [
+   "jigsaw",
+   "puzzle"
+  ],
+  "w25": {
+   "parts": 50,
+   "thin": 50,
+   "volume": 14582.8
+  },
+  "w50": {
+   "parts": 2,
+   "thin": 6,
+   "volume": 16845.5
+  }
+ },
+ {
+  "slug": "railroad",
+  "title": "Railroad",
+  "mode": "stroke-join",
+  "tags": [
+   "railroad",
+   "lines"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 25,
+   "volume": 16550.1
+  },
+  "w50": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 17748.3
+  }
+ },
+ {
+  "slug": "octagons-1",
+  "title": "Octagons - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "octagons"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 25,
+   "volume": 16720.8
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17925.8
+  }
+ },
+ {
+  "slug": "octagons-2",
+  "title": "Octagons - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "octagons"
+  ],
+  "w25": {
+   "parts": 25,
+   "thin": 25,
+   "volume": 16262.3
+  },
+  "w50": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 17703.8
+  }
+ },
+ {
+  "slug": "lines-1",
+  "title": "Lines - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "lines"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18371.9
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18731.1
+  }
+ },
+ {
+  "slug": "lines-2",
+  "title": "Lines - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "lines"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17613.6
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18366.3
+  }
+ },
+ {
+  "slug": "scales-1",
+  "title": "Scales - 1",
+  "mode": "stroke",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "w25": {
+   "parts": 14,
+   "thin": 14,
+   "volume": 16835.6
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 17894.8
+  }
+ },
+ {
+  "slug": "scales-2",
+  "title": "Scales - 2",
+  "mode": "fill",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 3,
+   "volume": 12403.2
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 11895.1
+  }
+ },
+ {
+  "slug": "scales-3",
+  "title": "Scales - 3",
+  "mode": "stroke",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "w25": {
+   "parts": 38,
+   "thin": 38,
+   "volume": 7729.7
+  },
+  "w50": {
+   "parts": 266,
+   "thin": 266,
+   "volume": 11363.1
+  }
+ },
+ {
+  "slug": "scales-4",
+  "title": "Scales - 4",
+  "mode": "stroke",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "w25": {
+   "parts": 306,
+   "thin": 306,
+   "volume": 11766.9
+  },
+  "w50": {
+   "parts": 98,
+   "thin": 102,
+   "volume": 14663.1
+  }
+ },
+ {
+  "slug": "leaves-1",
+  "title": "Leaves - 1",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15876.8
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15588.9
+  }
+ },
+ {
+  "slug": "leaves-2",
+  "title": "Leaves - 2",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17533.1
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17491.3
+  }
+ },
+ {
+  "slug": "leaves-3",
+  "title": "Leaves - 3",
+  "mode": "stroke-join",
+  "tags": [
+   "leaves"
+  ],
+  "w25": {
+   "parts": 97,
+   "thin": 97,
+   "volume": 16574.8
+  },
+  "w50": {
+   "parts": 21,
+   "thin": 25,
+   "volume": 17781.4
+  }
+ },
+ {
+  "slug": "leaves-4",
+  "title": "Leaves - 4",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14655.8
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14919.2
+  }
+ },
+ {
+  "slug": "leaves-5",
+  "title": "Leaves - 5",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10583.9
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10570.4
+  }
+ },
+ {
+  "slug": "leaves-6",
+  "title": "Leaves - 6",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12886.2
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12775.6
+  }
+ },
+ {
+  "slug": "leaves-7",
+  "title": "Leaves - 7",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12301.3
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12479.8
+  }
+ },
+ {
+  "slug": "leaves-8",
+  "title": "Leaves - 8",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13049.4
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13028.8
+  }
+ },
+ {
+  "slug": "pipes",
+  "title": "Pipes",
+  "mode": "stroke-join",
+  "tags": [
+   "pipes"
+  ],
+  "w25": {
+   "parts": 9,
+   "thin": 9,
+   "volume": 17319.4
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18074.9
+  }
+ },
+ {
+  "slug": "zebra",
+  "title": "Zebra",
+  "mode": "fill",
+  "tags": [
+   "zebra",
+   "animals"
+  ],
+  "w25": {
+   "parts": 9,
+   "thin": 17,
+   "volume": 11168.8
+  },
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10900.7
+  }
+ }
+]

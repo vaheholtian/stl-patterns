@@ -1,0 +1,12032 @@
+[
+ {
+  "slug": "waves-1",
+  "title": "Waves - 1",
+  "mode": "stroke",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3825,
+   "points": 219,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2256,
+   "points": 273,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1626,
+   "points": 329,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1072,
+   "points": 426,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-2",
+  "title": "Waves - 2",
+  "mode": "stroke",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0.043,
+  "w20": {
+   "fill": 0.2523,
+   "points": 247,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1451,
+   "points": 319,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1025,
+   "points": 411,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.065,
+   "points": 517,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-3",
+  "title": "Waves - 3",
+  "mode": "stroke",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 4,
+  "clipLossPct": 1.78,
+  "ribBreak": 0.062,
+  "w20": {
+   "fill": 0.1395,
+   "points": 332,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0805,
+   "points": 456,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0569,
+   "points": 553,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0362,
+   "points": 714,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-4",
+  "title": "Waves - 4",
+  "mode": "stroke",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.006,
+  "w20": {
+   "fill": 0.6285,
+   "points": 121,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3591,
+   "points": 130,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2516,
+   "points": 152,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1572,
+   "points": 205,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-5",
+  "title": "Waves - 5",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1848,
+   "points": 205,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1848,
+   "points": 294,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1848,
+   "points": 344,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1848,
+   "points": 415,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-6",
+  "title": "Waves - 6",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2138,
+   "points": 197,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.214,
+   "points": 271,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2141,
+   "points": 286,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2142,
+   "points": 392,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-7",
+  "title": "Waves - 7",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2794,
+   "points": 550,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2795,
+   "points": 676,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2796,
+   "points": 793,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2797,
+   "points": 1055,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chevron-1",
+  "title": "Chevron - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "chevron",
+   "lines"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1233,
+   "points": 40,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0705,
+   "points": 40,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0493,
+   "points": 40,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0308,
+   "points": 40,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chevron-2",
+  "title": "Chevron - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "chevron",
+   "lines"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1337,
+   "points": 48,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0764,
+   "points": 48,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0535,
+   "points": 48,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0334,
+   "points": 49,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chevron-3",
+  "title": "Chevron - 3",
+  "mode": "stroke-join",
+  "tags": [
+   "chevron",
+   "lines"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0.99,
+  "w20": {
+   "fill": 0.0858,
+   "points": 68,
+   "rings": 4,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.0 mm instead of carrying into the next copy."
+   ]
+  },
+  "w35": {
+   "fill": 0.0496,
+   "points": 72,
+   "rings": 4,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.0 mm instead of carrying into the next copy."
+   ]
+  },
+  "w50": {
+   "fill": 0.0351,
+   "points": 80,
+   "rings": 4,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.0 mm instead of carrying into the next copy."
+   ]
+  },
+  "w80": {
+   "fill": 0.0224,
+   "points": 84,
+   "rings": 4,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.0 mm instead of carrying into the next copy."
+   ]
+  }
+ },
+ {
+  "slug": "straight-lines",
+  "title": "Straight Lines",
+  "mode": "stroke",
+  "tags": [
+   "straight lines"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0026,
+   "points": 104,
+   "rings": 8,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0009,
+   "points": 104,
+   "rings": 8,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0.0004,
+   "points": 104,
+   "rings": 8,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w80": {
+   "fill": 0.0002,
+   "points": 104,
+   "rings": 8,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  }
+ },
+ {
+  "slug": "cross-section",
+  "title": "Cross Section",
+  "mode": "stroke",
+  "tags": [
+   "cross section",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0053,
+   "points": 52,
+   "rings": 4,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0017,
+   "points": 52,
+   "rings": 4,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0.0008,
+   "points": 52,
+   "rings": 4,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w80": {
+   "fill": 0.0039,
+   "points": 66,
+   "rings": 4,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  }
+ },
+ {
+  "slug": "brick-wall-1",
+  "title": "Brick Wall - 1",
+  "mode": "stroke",
+  "tags": [
+   "brick wall",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1725,
+   "points": 24,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1003,
+   "points": 24,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0707,
+   "points": 24,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0444,
+   "points": 24,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "brick-wall-2",
+  "title": "Brick Wall - 2",
+  "mode": "fill",
+  "tags": [
+   "brick wall",
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.8017,
+   "points": 76,
+   "rings": 7,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.8055,
+   "points": 76,
+   "rings": 7,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.8067,
+   "points": 76,
+   "rings": 7,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.8076,
+   "points": 76,
+   "rings": 7,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "herringbone-1",
+  "title": "Herringbone - 1",
+  "mode": "stroke",
+  "tags": [
+   "herringbone",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.357,
+   "points": 30,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2119,
+   "points": 30,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1506,
+   "points": 30,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0953,
+   "points": 30,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "herringbone-2",
+  "title": "Herringbone - 2",
+  "mode": "stroke",
+  "tags": [
+   "herringbone",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2509,
+   "points": 40,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1472,
+   "points": 40,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1041,
+   "points": 40,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0656,
+   "points": 40,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "herringbone-3",
+  "title": "Herringbone - 3",
+  "mode": "fill",
+  "tags": [
+   "herringbone",
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4963,
+   "points": 86,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4985,
+   "points": 86,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4991,
+   "points": 86,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4995,
+   "points": 86,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "herringbone-4",
+  "title": "Herringbone - 4",
+  "mode": "fill",
+  "tags": [
+   "herringbone",
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.496,
+   "points": 74,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4982,
+   "points": 74,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4989,
+   "points": 74,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4994,
+   "points": 74,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "herringbone-5",
+  "title": "Herringbone - 5",
+  "mode": "fill",
+  "tags": [
+   "herringbone",
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4934,
+   "points": 104,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4974,
+   "points": 104,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4985,
+   "points": 104,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4992,
+   "points": 104,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "herringbone-6",
+  "title": "Herringbone - 6",
+  "mode": "fill",
+  "tags": [
+   "herringbone",
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.493,
+   "points": 97,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4971,
+   "points": 97,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4983,
+   "points": 97,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4991,
+   "points": 97,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "herringbone-7",
+  "title": "Herringbone - 7",
+  "mode": "stroke",
+  "tags": [
+   "herringbone",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3318,
+   "points": 49,
+   "rings": 7,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1967,
+   "points": 49,
+   "rings": 7,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1396,
+   "points": 49,
+   "rings": 7,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0884,
+   "points": 49,
+   "rings": 7,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "herringbone-8",
+  "title": "Herringbone - 8",
+  "mode": "stroke",
+  "tags": [
+   "herringbone",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3317,
+   "points": 48,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1966,
+   "points": 48,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1396,
+   "points": 48,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0883,
+   "points": 48,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "flower-1",
+  "title": "Flower - 1",
+  "mode": "fill",
+  "tags": [
+   "flower",
+   "floral"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.42,
+   "points": 226,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.426,
+   "points": 282,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4281,
+   "points": 310,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4294,
+   "points": 492,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "flower-2",
+  "title": "Flower - 2",
+  "mode": "stroke",
+  "tags": [
+   "flower",
+   "floral"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3132,
+   "points": 372,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.189,
+   "points": 463,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1356,
+   "points": 525,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0869,
+   "points": 895,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "flower-3",
+  "title": "Flower - 3",
+  "mode": "fill",
+  "tags": [
+   "flower",
+   "floral"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1225,
+   "points": 566,
+   "rings": 17,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1324,
+   "points": 732,
+   "rings": 17,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1349,
+   "points": 827,
+   "rings": 17,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1364,
+   "points": 1134,
+   "rings": 17,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "flower-4",
+  "title": "Flower - 4",
+  "mode": "fill",
+  "tags": [
+   "flower",
+   "floral"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0489,
+   "points": 402,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1746,
+   "points": 1326,
+   "rings": 21,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1786,
+   "points": 1515,
+   "rings": 21,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.181,
+   "points": 1974,
+   "rings": 21,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "flower-5",
+  "title": "Flower - 5",
+  "mode": "fill",
+  "tags": [
+   "flower",
+   "floral"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1733,
+   "points": 493,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.25,
+   "points": 1292,
+   "rings": 22,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2526,
+   "points": 1511,
+   "rings": 22,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2541,
+   "points": 1850,
+   "rings": 22,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "flower-6",
+  "title": "Flower - 6",
+  "mode": "fill",
+  "tags": [
+   "flower",
+   "floral"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4638,
+   "points": 765,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4771,
+   "points": 909,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4805,
+   "points": 923,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4827,
+   "points": 1313,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "flower-7",
+  "title": "Flower - 7",
+  "mode": "fill",
+  "tags": [
+   "flower",
+   "floral"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2026,
+   "points": 733,
+   "rings": 21,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2086,
+   "points": 760,
+   "rings": 25,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2215,
+   "points": 1905,
+   "rings": 57,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2401,
+   "points": 2515,
+   "rings": 61,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plus-1",
+  "title": "Plus - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "plus",
+   "cross"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0827,
+   "points": 46,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0468,
+   "points": 46,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0326,
+   "points": 46,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0203,
+   "points": 46,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plus-2",
+  "title": "Plus - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "plus",
+   "cross"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.077,
+   "points": 50,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0427,
+   "points": 50,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0295,
+   "points": 50,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0182,
+   "points": 50,
+   "rings": 4,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  }
+ },
+ {
+  "slug": "plus-3",
+  "title": "Plus - 3",
+  "mode": "stroke-join",
+  "tags": [
+   "plus",
+   "cross"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1111,
+   "points": 181,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0582,
+   "points": 181,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0393,
+   "points": 181,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0237,
+   "points": 181,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plus-4",
+  "title": "Plus - 4",
+  "mode": "stroke-join",
+  "tags": [
+   "plus",
+   "cross"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1111,
+   "points": 179,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0582,
+   "points": 173,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0392,
+   "points": 173,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0237,
+   "points": 173,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-1",
+  "title": "Circles - 1",
+  "mode": "stroke",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0943,
+   "points": 222,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0538,
+   "points": 296,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0377,
+   "points": 318,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0236,
+   "points": 514,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-2",
+  "title": "Circles - 2",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.098,
+   "points": 132,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0981,
+   "points": 162,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0981,
+   "points": 162,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0982,
+   "points": 260,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-3",
+  "title": "Circles - 3",
+  "mode": "stroke",
+  "tags": [
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0941,
+   "points": 150,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.054,
+   "points": 220,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0377,
+   "points": 256,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0236,
+   "points": 384,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-4",
+  "title": "Circles - 4",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.049,
+   "points": 63,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.049,
+   "points": 75,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.049,
+   "points": 74,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0491,
+   "points": 128,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-5",
+  "title": "Circles - 5",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3134,
+   "points": 231,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3138,
+   "points": 301,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.314,
+   "points": 428,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3141,
+   "points": 462,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-6",
+  "title": "Circles - 6",
+  "mode": "stroke",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2261,
+   "points": 509,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1291,
+   "points": 590,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0904,
+   "points": 831,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0566,
+   "points": 918,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-7",
+  "title": "Circles - 7",
+  "mode": "stroke",
+  "tags": [
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 3.48,
+  "ribBreak": 5.296,
+  "w20": {
+   "fill": 0.1956,
+   "points": 418,
+   "rings": 12,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 5.3 mm instead of carrying into the next copy."
+   ]
+  },
+  "w35": {
+   "fill": 0.1148,
+   "points": 644,
+   "rings": 12,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 5.3 mm instead of carrying into the next copy."
+   ]
+  },
+  "w50": {
+   "fill": 0.0798,
+   "points": 733,
+   "rings": 13,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 5.3 mm instead of carrying into the next copy."
+   ]
+  },
+  "w80": {
+   "fill": 0.0502,
+   "points": 991,
+   "rings": 14,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 5.3 mm instead of carrying into the next copy."
+   ]
+  }
+ },
+ {
+  "slug": "concentric-circles-1",
+  "title": "Concentric Circles - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "concentric circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 16.43,
+  "ribBreak": 0.013,
+  "w20": {
+   "fill": 0.1594,
+   "points": 421,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0888,
+   "points": 486,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0626,
+   "points": 517,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0407,
+   "points": 729,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "concentric-circles-2",
+  "title": "Concentric Circles - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "concentric circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0.003,
+  "w20": {
+   "fill": 0.3005,
+   "points": 776,
+   "rings": 24,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1611,
+   "points": 903,
+   "rings": 24,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1098,
+   "points": 937,
+   "rings": 24,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0671,
+   "points": 1318,
+   "rings": 24,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "concentric-circles-3",
+  "title": "Concentric Circles - 3",
+  "mode": "stroke-join",
+  "tags": [
+   "concentric circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0.001,
+  "w20": {
+   "fill": 0.3856,
+   "points": 1024,
+   "rings": 36,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2048,
+   "points": 1225,
+   "rings": 36,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1388,
+   "points": 1314,
+   "rings": 36,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0844,
+   "points": 1587,
+   "rings": 36,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "adjointed-circles",
+  "title": "Adjointed Circles",
+  "mode": "stroke",
+  "tags": [
+   "adjointed circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2874,
+   "points": 299,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1697,
+   "points": 425,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1201,
+   "points": 511,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0759,
+   "points": 611,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "adjointed-diamonds",
+  "title": "Adjointed Diamonds",
+  "mode": "stroke",
+  "tags": [
+   "adjointed diamonds"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2701,
+   "points": 37,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1593,
+   "points": 37,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1129,
+   "points": 37,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0714,
+   "points": 37,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-1",
+  "title": "Diamonds - 1",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2387,
+   "points": 28,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1404,
+   "points": 26,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0994,
+   "points": 26,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0627,
+   "points": 26,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-2",
+  "title": "Diamonds - 2",
+  "mode": "fill",
+  "tags": [
+   "diamonds",
+   "rhombus"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4973,
+   "points": 88,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4988,
+   "points": 86,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4993,
+   "points": 88,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4996,
+   "points": 88,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-3",
+  "title": "Diamonds - 3",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3653,
+   "points": 179,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2233,
+   "points": 179,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1604,
+   "points": 179,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1025,
+   "points": 179,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "hexagon-1",
+  "title": "Hexagon - 1",
+  "mode": "stroke",
+  "tags": [
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.007,
+  "w20": {
+   "fill": 0.1212,
+   "points": 26,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0722,
+   "points": 26,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0522,
+   "points": 26,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0345,
+   "points": 26,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "hexagon-2",
+  "title": "Hexagon - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.007,
+  "w20": {
+   "fill": 0.2904,
+   "points": 99,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1695,
+   "points": 99,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1208,
+   "points": 100,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.078,
+   "points": 100,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "hexagon-3",
+  "title": "Hexagon - 3",
+  "mode": "stroke-join",
+  "tags": [
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.01,
+  "w20": {
+   "fill": 0.3842,
+   "points": 172,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2236,
+   "points": 172,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1589,
+   "points": 172,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1021,
+   "points": 174,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "hexagon-4",
+  "title": "Hexagon - 4",
+  "mode": "fill",
+  "tags": [
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.7482,
+   "points": 113,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.7491,
+   "points": 114,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.7494,
+   "points": 113,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.7496,
+   "points": 115,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "hexagon-5",
+  "title": "Hexagon - 5",
+  "mode": "stroke-join",
+  "tags": [
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 2.41,
+  "ribBreak": 0.005,
+  "w20": {
+   "fill": 0.2637,
+   "points": 83,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1532,
+   "points": 83,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1079,
+   "points": 83,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0679,
+   "points": 83,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "hexagon-6",
+  "title": "Hexagon - 6",
+  "mode": "stroke-join",
+  "tags": [
+   "hexagon",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0.13,
+  "ribBreak": 1.717,
+  "w20": {
+   "fill": 0.6389,
+   "points": 304,
+   "rings": 21,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.7 mm instead of carrying into the next copy."
+   ]
+  },
+  "w35": {
+   "fill": 0.3934,
+   "points": 460,
+   "rings": 31,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.7 mm instead of carrying into the next copy."
+   ]
+  },
+  "w50": {
+   "fill": 0.2859,
+   "points": 456,
+   "rings": 29,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.7 mm instead of carrying into the next copy."
+   ]
+  },
+  "w80": {
+   "fill": 0.1873,
+   "points": 488,
+   "rings": 32,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.7 mm instead of carrying into the next copy."
+   ]
+  }
+ },
+ {
+  "slug": "hexagon-7",
+  "title": "Hexagon - 7",
+  "mode": "stroke-join",
+  "tags": [
+   "hexagon",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.718,
+  "w20": {
+   "fill": 0.6318,
+   "points": 314,
+   "rings": 22,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.7 mm instead of carrying into the next copy."
+   ]
+  },
+  "w35": {
+   "fill": 0.3864,
+   "points": 356,
+   "rings": 33,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.7 mm instead of carrying into the next copy."
+   ]
+  },
+  "w50": {
+   "fill": 0.2785,
+   "points": 358,
+   "rings": 33,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.7 mm instead of carrying into the next copy."
+   ]
+  },
+  "w80": {
+   "fill": 0.1795,
+   "points": 356,
+   "rings": 33,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.7 mm instead of carrying into the next copy."
+   ]
+  }
+ },
+ {
+  "slug": "hexagon-8",
+  "title": "Hexagon - 8",
+  "mode": "stroke",
+  "tags": [
+   "hexagon",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 1.393,
+  "w20": {
+   "fill": 0.4853,
+   "points": 155,
+   "rings": 14,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.4 mm instead of carrying into the next copy."
+   ]
+  },
+  "w35": {
+   "fill": 0.2939,
+   "points": 204,
+   "rings": 14,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.4 mm instead of carrying into the next copy."
+   ]
+  },
+  "w50": {
+   "fill": 0.2081,
+   "points": 154,
+   "rings": 14,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.4 mm instead of carrying into the next copy."
+   ]
+  },
+  "w80": {
+   "fill": 0.134,
+   "points": 161,
+   "rings": 14,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 1.4 mm instead of carrying into the next copy."
+   ]
+  }
+ },
+ {
+  "slug": "overlapping-hexagons",
+  "title": "Overlapping Hexagons",
+  "mode": "stroke",
+  "tags": [
+   "overlapping hexagons"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.004,
+  "w20": {
+   "fill": 0.46,
+   "points": 187,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2835,
+   "points": 184,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2042,
+   "points": 184,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1308,
+   "points": 186,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-squares-1",
+  "title": "Squares & Squares - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & squares"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4964,
+   "points": 74,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4983,
+   "points": 74,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4989,
+   "points": 74,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4994,
+   "points": 74,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-squares-2",
+  "title": "Squares & Squares - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & squares"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4925,
+   "points": 195,
+   "rings": 18,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4965,
+   "points": 195,
+   "rings": 18,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4978,
+   "points": 197,
+   "rings": 18,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4988,
+   "points": 197,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-diamonds",
+  "title": "Squares & Diamonds",
+  "mode": "fill",
+  "tags": [
+   "squares & diamonds"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4966,
+   "points": 80,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4984,
+   "points": 80,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.499,
+   "points": 80,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4994,
+   "points": 80,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-circles-1",
+  "title": "Squares & Circles - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4977,
+   "points": 290,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4988,
+   "points": 334,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4992,
+   "points": 334,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4996,
+   "points": 546,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-circles-2",
+  "title": "Squares & Circles - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4759,
+   "points": 371,
+   "rings": 23,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4908,
+   "points": 371,
+   "rings": 23,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4948,
+   "points": 371,
+   "rings": 23,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4975,
+   "points": 371,
+   "rings": 23,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-plus-1",
+  "title": "Squares & Plus - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & plus",
+   "cross"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4968,
+   "points": 328,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4985,
+   "points": 378,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4991,
+   "points": 586,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4995,
+   "points": 602,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-plus-2",
+  "title": "Squares & Plus - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & plus",
+   "cross"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4661,
+   "points": 540,
+   "rings": 26,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4874,
+   "points": 540,
+   "rings": 26,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4931,
+   "points": 540,
+   "rings": 26,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4967,
+   "points": 540,
+   "rings": 26,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-stars-1",
+  "title": "Squares & Stars - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & stars"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4912,
+   "points": 168,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4966,
+   "points": 172,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4981,
+   "points": 170,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4991,
+   "points": 170,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-stars-2",
+  "title": "Squares & Stars - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & stars"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4466,
+   "points": 84,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.448,
+   "points": 84,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4485,
+   "points": 84,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4489,
+   "points": 84,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stars-and-lines-1",
+  "title": "Stars & Lines - 1",
+  "mode": "fill",
+  "tags": [
+   "stars & lines",
+   "stripes"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.8985,
+   "points": 56,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.8987,
+   "points": 56,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.8987,
+   "points": 56,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.8987,
+   "points": 56,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stars-and-lines-2",
+  "title": "Stars & Lines - 2",
+  "mode": "fill",
+  "tags": [
+   "stars & lines",
+   "stripes"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6554,
+   "points": 39,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6559,
+   "points": 39,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.656,
+   "points": 39,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6562,
+   "points": 39,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-1",
+  "title": "Triangles - 1",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4928,
+   "points": 73,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.497,
+   "points": 73,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4982,
+   "points": 73,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.499,
+   "points": 73,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-2",
+  "title": "Triangles - 2",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4928,
+   "points": 74,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.497,
+   "points": 74,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4982,
+   "points": 74,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.499,
+   "points": 74,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-3",
+  "title": "Triangles - 3",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.495,
+   "points": 89,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.498,
+   "points": 85,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4988,
+   "points": 89,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4994,
+   "points": 89,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-4",
+  "title": "Triangles - 4",
+  "mode": "stroke",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1783,
+   "points": 29,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.104,
+   "points": 29,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0734,
+   "points": 29,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0462,
+   "points": 29,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-5",
+  "title": "Triangles - 5",
+  "mode": "stroke-join",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3471,
+   "points": 258,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2024,
+   "points": 261,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1428,
+   "points": 271,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0898,
+   "points": 262,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-6",
+  "title": "Triangles - 6",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2694,
+   "points": 141,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2767,
+   "points": 143,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2786,
+   "points": 143,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.28,
+   "points": 141,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-7",
+  "title": "Triangles - 7",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4257,
+   "points": 54,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.428,
+   "points": 54,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4287,
+   "points": 54,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4291,
+   "points": 55,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-8",
+  "title": "Triangles - 8",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2441,
+   "points": 42,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2477,
+   "points": 42,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2487,
+   "points": 41,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2493,
+   "points": 42,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-9",
+  "title": "Triangles - 9",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4946,
+   "points": 145,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4978,
+   "points": 137,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4987,
+   "points": 137,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4993,
+   "points": 137,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-10",
+  "title": "Triangles - 10",
+  "mode": "stroke-join",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.133,
+  "w20": {
+   "fill": 0.3881,
+   "points": 88,
+   "rings": 11,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2319,
+   "points": 89,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1653,
+   "points": 89,
+   "rings": 11,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1052,
+   "points": 89,
+   "rings": 11,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "inverted-triangles",
+  "title": "Inverted Triangles",
+  "mode": "stroke",
+  "tags": [
+   "inverted triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2254,
+   "points": 130,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1293,
+   "points": 129,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0906,
+   "points": 127,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0567,
+   "points": 123,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "checkerboard",
+  "title": "Checkerboard",
+  "mode": "fill",
+  "tags": [
+   "checkerboard",
+   "lines",
+   "squares"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4977,
+   "points": 34,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4989,
+   "points": 34,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4992,
+   "points": 34,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4996,
+   "points": 34,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "japanese-pattern-1",
+  "title": "Japanese Pattern - 1",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.003,
+  "w20": {
+   "fill": 0.5384,
+   "points": 68,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3289,
+   "points": 68,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2362,
+   "points": 68,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1508,
+   "points": 70,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "japanese-pattern-2",
+  "title": "Japanese Pattern - 2",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4376,
+   "points": 111,
+   "rings": 11,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2606,
+   "points": 110,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1854,
+   "points": 110,
+   "rings": 11,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1175,
+   "points": 110,
+   "rings": 11,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "japanese-pattern-3",
+  "title": "Japanese Pattern - 3",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.002,
+  "w20": {
+   "fill": 0.3763,
+   "points": 36,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2274,
+   "points": 37,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1634,
+   "points": 38,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1053,
+   "points": 38,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "japanese-pattern-4",
+  "title": "Japanese Pattern - 4",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6263,
+   "points": 50,
+   "rings": 11,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3949,
+   "points": 49,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2867,
+   "points": 54,
+   "rings": 11,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1848,
+   "points": 86,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "japanese-pattern-5",
+  "title": "Japanese Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "waves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6138,
+   "points": 171,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6139,
+   "points": 237,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6139,
+   "points": 273,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.614,
+   "points": 340,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "japanese-pattern-6",
+  "title": "Japanese Pattern - 6",
+  "mode": "stroke-join",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.019,
+  "w20": {
+   "fill": 0.7806,
+   "points": 207,
+   "rings": 18,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4586,
+   "points": 217,
+   "rings": 16,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3246,
+   "points": 217,
+   "rings": 16,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2049,
+   "points": 216,
+   "rings": 16,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "eyes-1",
+  "title": "Eyes - 1",
+  "mode": "stroke",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 69.74,
+  "ribBreak": 0.058,
+  "w20": {
+   "fill": 0.3405,
+   "points": 450,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2172,
+   "points": 558,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1668,
+   "points": 650,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1221,
+   "points": 924,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "eyes-2",
+  "title": "Eyes - 2",
+  "mode": "fill",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 7.52,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4965,
+   "points": 219,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4964,
+   "points": 268,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4964,
+   "points": 326,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4964,
+   "points": 425,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "eyes-3",
+  "title": "Eyes - 3",
+  "mode": "stroke",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 27.64,
+  "ribBreak": 0.006,
+  "w20": {
+   "fill": 0.1718,
+   "points": 186,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1011,
+   "points": 253,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0721,
+   "points": 267,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0463,
+   "points": 343,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "eyes-4",
+  "title": "Eyes - 4",
+  "mode": "fill",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5104,
+   "points": 86,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5104,
+   "points": 107,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5104,
+   "points": 117,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5104,
+   "points": 166,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "jigsaw",
+  "title": "Jigsaw",
+  "mode": "stroke",
+  "tags": [
+   "jigsaw",
+   "puzzle"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.008,
+  "w20": {
+   "fill": 0.3861,
+   "points": 669,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2273,
+   "points": 1033,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.16,
+   "points": 1285,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1006,
+   "points": 1541,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "railroad",
+  "title": "Railroad",
+  "mode": "stroke-join",
+  "tags": [
+   "railroad",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2072,
+   "points": 66,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1206,
+   "points": 64,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0851,
+   "points": 68,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0535,
+   "points": 62,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "octagons-1",
+  "title": "Octagons - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "octagons"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.198,
+   "points": 83,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1132,
+   "points": 83,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0793,
+   "points": 82,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0495,
+   "points": 82,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "octagons-2",
+  "title": "Octagons - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "octagons"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.004,
+  "w20": {
+   "fill": 0.2473,
+   "points": 159,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1414,
+   "points": 157,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.099,
+   "points": 157,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0619,
+   "points": 159,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "lines-1",
+  "title": "Lines - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0705,
+   "points": 103,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0376,
+   "points": 103,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0256,
+   "points": 103,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0156,
+   "points": 103,
+   "rings": 9,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  }
+ },
+ {
+  "slug": "lines-2",
+  "title": "Lines - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1411,
+   "points": 184,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0754,
+   "points": 184,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0513,
+   "points": 184,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0312,
+   "points": 184,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "scales-1",
+  "title": "Scales - 1",
+  "mode": "stroke",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2044,
+   "points": 277,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1216,
+   "points": 329,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0867,
+   "points": 361,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0552,
+   "points": 601,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "scales-2",
+  "title": "Scales - 2",
+  "mode": "fill",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4983,
+   "points": 129,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4992,
+   "points": 155,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4995,
+   "points": 161,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4998,
+   "points": 258,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "scales-3",
+  "title": "Scales - 3",
+  "mode": "stroke",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "clipLossPct": 25.01,
+  "ribBreak": 0.111,
+  "w20": {
+   "fill": 0.9023,
+   "points": 322,
+   "rings": 45,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6932,
+   "points": 825,
+   "rings": 64,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.548,
+   "points": 1332,
+   "rings": 84,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3789,
+   "points": 1975,
+   "rings": 88,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "scales-4",
+  "title": "Scales - 4",
+  "mode": "stroke",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "clipLossPct": 18.87,
+  "ribBreak": 0.087,
+  "w20": {
+   "fill": 0.6201,
+   "points": 319,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4145,
+   "points": 606,
+   "rings": 23,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3114,
+   "points": 798,
+   "rings": 22,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2083,
+   "points": 1179,
+   "rings": 21,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-1",
+  "title": "Leaves - 1",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2147,
+   "points": 608,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2296,
+   "points": 791,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.232,
+   "points": 927,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2332,
+   "points": 1160,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-2",
+  "title": "Leaves - 2",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1128,
+   "points": 277,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1146,
+   "points": 374,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.115,
+   "points": 417,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1153,
+   "points": 554,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-3",
+  "title": "Leaves - 3",
+  "mode": "stroke-join",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2269,
+   "points": 496,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1304,
+   "points": 653,
+   "rings": 16,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0914,
+   "points": 821,
+   "rings": 17,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0573,
+   "points": 1015,
+   "rings": 16,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-4",
+  "title": "Leaves - 4",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3122,
+   "points": 511,
+   "rings": 15,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3131,
+   "points": 624,
+   "rings": 15,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3136,
+   "points": 889,
+   "rings": 15,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3138,
+   "points": 968,
+   "rings": 15,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-5",
+  "title": "Leaves - 5",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6092,
+   "points": 563,
+   "rings": 25,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6176,
+   "points": 674,
+   "rings": 25,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6197,
+   "points": 749,
+   "rings": 25,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6212,
+   "points": 937,
+   "rings": 25,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-6",
+  "title": "Leaves - 6",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4362,
+   "points": 945,
+   "rings": 23,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4513,
+   "points": 1235,
+   "rings": 23,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4551,
+   "points": 1418,
+   "rings": 23,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4575,
+   "points": 1926,
+   "rings": 23,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-7",
+  "title": "Leaves - 7",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4753,
+   "points": 384,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4773,
+   "points": 458,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4779,
+   "points": 575,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4782,
+   "points": 734,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-8",
+  "title": "Leaves - 8",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4332,
+   "points": 261,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4363,
+   "points": 321,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4372,
+   "points": 362,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4378,
+   "points": 512,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "pipes",
+  "title": "Pipes",
+  "mode": "stroke-join",
+  "tags": [
+   "pipes"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.008,
+  "w20": {
+   "fill": 0.1477,
+   "points": 156,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0846,
+   "points": 179,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0594,
+   "points": 191,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0371,
+   "points": 245,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "zebra",
+  "title": "Zebra",
+  "mode": "fill",
+  "tags": [
+   "zebra",
+   "animals"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5333,
+   "points": 418,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5853,
+   "points": 544,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5858,
+   "points": 617,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5864,
+   "points": 777,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "memphis-1",
+  "title": "Memphis Pattern - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0.018,
+  "w20": {
+   "fill": 0.2019,
+   "points": 323,
+   "rings": 15,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1078,
+   "points": 320,
+   "rings": 15,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0734,
+   "points": 329,
+   "rings": 15,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0446,
+   "points": 328,
+   "rings": 15,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "memphis-2",
+  "title": "Memphis Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0128,
+   "points": 146,
+   "rings": 6,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0144,
+   "points": 177,
+   "rings": 7,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0.0674,
+   "points": 815,
+   "rings": 28,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0721,
+   "points": 1148,
+   "rings": 30,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "memphis-3",
+  "title": "Memphis Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0721,
+   "points": 135,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0749,
+   "points": 207,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0873,
+   "points": 509,
+   "rings": 23,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1118,
+   "points": 519,
+   "rings": 21,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "memphis-4",
+  "title": "Memphis Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1698,
+   "points": 213,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1806,
+   "points": 374,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1958,
+   "points": 638,
+   "rings": 14,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.208,
+   "points": 1186,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "memphis-5",
+  "title": "Memphis Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1122,
+   "points": 379,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1124,
+   "points": 483,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1124,
+   "points": 600,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1124,
+   "points": 723,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "memphis-6",
+  "title": "Memphis Pattern - 6",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 4,
+  "clipLossPct": 7.9,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1457,
+   "points": 295,
+   "rings": 14,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1624,
+   "points": 437,
+   "rings": 18,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2119,
+   "points": 680,
+   "rings": 28,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2456,
+   "points": 5246,
+   "rings": 236,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "greek-key",
+  "title": "Greek Key",
+  "mode": "stroke-join",
+  "tags": [
+   "greek key",
+   "country"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5589,
+   "points": 201,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3206,
+   "points": 197,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2246,
+   "points": 194,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1406,
+   "points": 198,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-1",
+  "title": "Chinese Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3284,
+   "points": 547,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4399,
+   "points": 1217,
+   "rings": 15,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4414,
+   "points": 1434,
+   "rings": 15,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4429,
+   "points": 1779,
+   "rings": 15,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-2",
+  "title": "Chinese Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1309,
+   "points": 256,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2644,
+   "points": 700,
+   "rings": 7,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2739,
+   "points": 820,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2739,
+   "points": 1070,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-3",
+  "title": "Chinese Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4961,
+   "points": 393,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5353,
+   "points": 1058,
+   "rings": 18,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5354,
+   "points": 1236,
+   "rings": 18,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5355,
+   "points": 1444,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-4",
+  "title": "Chinese Pattern - 4",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5389,
+   "points": 264,
+   "rings": 17,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3229,
+   "points": 266,
+   "rings": 17,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2302,
+   "points": 266,
+   "rings": 17,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1462,
+   "points": 266,
+   "rings": 17,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-5",
+  "title": "Chinese Pattern - 5",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4506,
+   "points": 256,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2612,
+   "points": 254,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1839,
+   "points": 261,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1155,
+   "points": 263,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-6",
+  "title": "Chinese Pattern - 6",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 1,
+  "clipLossPct": 24.02,
+  "ribBreak": 0.003,
+  "w20": {
+   "fill": 0.553,
+   "points": 189,
+   "rings": 26,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.348,
+   "points": 206,
+   "rings": 30,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2516,
+   "points": 205,
+   "rings": 30,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1617,
+   "points": 207,
+   "rings": 30,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-7",
+  "title": "Chinese Pattern - 7",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 3,
+  "clipLossPct": 13.03,
+  "ribBreak": 0.018,
+  "w20": {
+   "fill": 0.4313,
+   "points": 474,
+   "rings": 15,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2598,
+   "points": 594,
+   "rings": 16,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1858,
+   "points": 741,
+   "rings": 16,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1192,
+   "points": 861,
+   "rings": 16,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-8",
+  "title": "Chinese Pattern - 8",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0.002,
+  "w20": {
+   "fill": 0.3462,
+   "points": 311,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2049,
+   "points": 413,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1453,
+   "points": 428,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.092,
+   "points": 506,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-9",
+  "title": "Chinese Pattern - 9",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6076,
+   "points": 1524,
+   "rings": 29,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6567,
+   "points": 2436,
+   "rings": 51,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6574,
+   "points": 2698,
+   "rings": 51,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6578,
+   "points": 3713,
+   "rings": 51,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-1",
+  "title": "New Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2749,
+   "points": 853,
+   "rings": 29,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3248,
+   "points": 924,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3251,
+   "points": 1144,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3252,
+   "points": 1386,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-2",
+  "title": "New Pattern - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1833,
+   "points": 114,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1056,
+   "points": 112,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0742,
+   "points": 111,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0465,
+   "points": 113,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-3",
+  "title": "New Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0335,
+   "points": 334,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0748,
+   "points": 968,
+   "rings": 40,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0779,
+   "points": 1102,
+   "rings": 40,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1019,
+   "points": 1603,
+   "rings": 36,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-4",
+  "title": "New Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4207,
+   "points": 259,
+   "rings": 17,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4247,
+   "points": 264,
+   "rings": 17,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4257,
+   "points": 259,
+   "rings": 17,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4266,
+   "points": 262,
+   "rings": 17,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-5",
+  "title": "New Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4834,
+   "points": 522,
+   "rings": 29,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.491,
+   "points": 533,
+   "rings": 29,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4931,
+   "points": 530,
+   "rings": 29,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4946,
+   "points": 563,
+   "rings": 29,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-6",
+  "title": "New Pattern - 6",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.1,
+  "w20": {
+   "fill": 0.1604,
+   "points": 34,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0934,
+   "points": 33,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0659,
+   "points": 34,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0415,
+   "points": 35,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-7",
+  "title": "New Pattern - 7",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2912,
+   "points": 32,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2928,
+   "points": 32,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2932,
+   "points": 32,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2935,
+   "points": 32,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-8",
+  "title": "New Pattern - 8",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 3,
+  "clipLossPct": 11.44,
+  "ribBreak": 0.008,
+  "w20": {
+   "fill": 0.3163,
+   "points": 351,
+   "rings": 14,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1798,
+   "points": 403,
+   "rings": 14,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1257,
+   "points": 428,
+   "rings": 14,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0784,
+   "points": 564,
+   "rings": 14,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-9",
+  "title": "New Pattern - 9",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1834,
+   "points": 320,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1021,
+   "points": 379,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0708,
+   "points": 412,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0439,
+   "points": 544,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-10",
+  "title": "New Pattern - 10",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5651,
+   "points": 444,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5652,
+   "points": 563,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5652,
+   "points": 622,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5653,
+   "points": 880,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-11",
+  "title": "New Pattern - 11",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5315,
+   "points": 387,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5313,
+   "points": 498,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5312,
+   "points": 600,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5312,
+   "points": 731,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-12",
+  "title": "New Pattern - 12",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6324,
+   "points": 108,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6372,
+   "points": 108,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6386,
+   "points": 108,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6395,
+   "points": 108,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-13",
+  "title": "New Pattern - 13",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4011,
+   "points": 370,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4015,
+   "points": 467,
+   "rings": 16,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4016,
+   "points": 558,
+   "rings": 16,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4018,
+   "points": 655,
+   "rings": 16,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-14",
+  "title": "New Pattern - 14",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4884,
+   "points": 264,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4947,
+   "points": 336,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4968,
+   "points": 355,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4983,
+   "points": 466,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-15",
+  "title": "New Pattern - 15",
+  "mode": "stroke",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.01,
+  "w20": {
+   "fill": 0.1731,
+   "points": 31,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1008,
+   "points": 31,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.071,
+   "points": 31,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0447,
+   "points": 31,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-16",
+  "title": "New Pattern - 16",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.023,
+  "w20": {
+   "fill": 0.4365,
+   "points": 109,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2602,
+   "points": 117,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1852,
+   "points": 117,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1175,
+   "points": 121,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "new-17",
+  "title": "New Pattern - 17",
+  "mode": "stroke",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2489,
+   "points": 68,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.147,
+   "points": 72,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1042,
+   "points": 72,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0659,
+   "points": 72,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "double-bubble-1",
+  "title": "Double Bubble - 1",
+  "mode": "fill",
+  "tags": [
+   "double bubbles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4636,
+   "points": 429,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4643,
+   "points": 636,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4643,
+   "points": 699,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4642,
+   "points": 842,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "double-bubble-2",
+  "title": "Double Bubble - 2",
+  "mode": "stroke",
+  "tags": [
+   "double bubbles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0.009,
+  "w20": {
+   "fill": 0.4045,
+   "points": 871,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2314,
+   "points": 1195,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1619,
+   "points": 1371,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1012,
+   "points": 1716,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stars-1",
+  "title": "Stars - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "stars"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0.003,
+  "w20": {
+   "fill": 0.0992,
+   "points": 254,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0576,
+   "points": 228,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0405,
+   "points": 222,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0254,
+   "points": 213,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stars-2",
+  "title": "Stars - 2",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0446,
+   "points": 97,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0486,
+   "points": 96,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0496,
+   "points": 95,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0502,
+   "points": 96,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stars-3",
+  "title": "Stars - 3",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0657,
+   "points": 291,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0806,
+   "points": 354,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0846,
+   "points": 356,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.087,
+   "points": 367,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stars-4",
+  "title": "Stars - 4",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0701,
+   "points": 393,
+   "rings": 21,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0797,
+   "points": 600,
+   "rings": 21,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0836,
+   "points": 640,
+   "rings": 21,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.086,
+   "points": 711,
+   "rings": 21,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stars-5",
+  "title": "Stars - 5",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0876,
+   "points": 521,
+   "rings": 21,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1087,
+   "points": 714,
+   "rings": 25,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1157,
+   "points": 700,
+   "rings": 25,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1199,
+   "points": 706,
+   "rings": 25,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stars-6",
+  "title": "Stars - 6",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0113,
+   "points": 135,
+   "rings": 8,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0312,
+   "points": 689,
+   "rings": 29,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0849,
+   "points": 2191,
+   "rings": 90,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1118,
+   "points": 923,
+   "rings": 30,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "semicircles-1",
+  "title": "Semicircles - 1",
+  "mode": "fill",
+  "tags": [
+   "semicircles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.7817,
+   "points": 365,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.7841,
+   "points": 568,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.7846,
+   "points": 580,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.7847,
+   "points": 658,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "songket-1",
+  "title": "Songket Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "songket pattern",
+   "malaysia"
+  ],
+  "layers": 4,
+  "clipLossPct": 0.27,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.024,
+   "points": 207,
+   "rings": 11,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2833,
+   "points": 632,
+   "rings": 35,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2857,
+   "points": 641,
+   "rings": 35,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2873,
+   "points": 632,
+   "rings": 35,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "christmas-tree-1",
+  "title": "Christmas Tree - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "tree",
+   "holidays"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1896,
+   "points": 594,
+   "rings": 24,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2189,
+   "points": 800,
+   "rings": 22,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2226,
+   "points": 852,
+   "rings": 24,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2241,
+   "points": 1022,
+   "rings": 26,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "candy-cane-1",
+  "title": "Candy Cane - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "candy",
+   "cane",
+   "holidays",
+   "santaclaus"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.125,
+   "points": 331,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1297,
+   "points": 439,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1307,
+   "points": 508,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1314,
+   "points": 630,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "christmas-bells-1",
+  "title": "Christmas Bells - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "santaclaus"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2108,
+   "points": 420,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2159,
+   "points": 528,
+   "rings": 18,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2171,
+   "points": 620,
+   "rings": 18,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2176,
+   "points": 810,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "christmas-pattern-1",
+  "title": "Christmas Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 1,
+  "clipLossPct": 0.22,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1323,
+   "points": 731,
+   "rings": 28,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2309,
+   "points": 2119,
+   "rings": 68,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2562,
+   "points": 3235,
+   "rings": 87,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2755,
+   "points": 5239,
+   "rings": 146,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "christmas-pattern-2",
+  "title": "Christmas Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1599,
+   "points": 839,
+   "rings": 37,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2263,
+   "points": 2107,
+   "rings": 74,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2402,
+   "points": 2707,
+   "rings": 80,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2631,
+   "points": 4104,
+   "rings": 100,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "christmas-pattern-3",
+  "title": "Christmas Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1997,
+   "points": 559,
+   "rings": 20,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2266,
+   "points": 964,
+   "rings": 27,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2383,
+   "points": 1181,
+   "rings": 35,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2418,
+   "points": 1524,
+   "rings": 38,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "snowflakes-1",
+  "title": "Snowflakes - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "snowflakes",
+   "holidays",
+   "winter",
+   "santaclaus"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0372,
+   "points": 382,
+   "rings": 20,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0703,
+   "points": 1155,
+   "rings": 54,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1783,
+   "points": 1515,
+   "rings": 32,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1791,
+   "points": 1833,
+   "rings": 32,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "christmas-tree-balls",
+  "title": "Christmas Tree Balls",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "tree",
+   "holidays",
+   "santaclaus"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2343,
+   "points": 467,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2507,
+   "points": 691,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2541,
+   "points": 734,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.26,
+   "points": 1128,
+   "rings": 16,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "santa-claus",
+  "title": "Santa Claus",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "holidays",
+   "winter",
+   "santaclaus"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2001,
+   "points": 449,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2058,
+   "points": 619,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.207,
+   "points": 693,
+   "rings": 15,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2075,
+   "points": 912,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "christmas-gift",
+  "title": "Christmas Gift",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3122,
+   "points": 298,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3429,
+   "points": 433,
+   "rings": 14,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3686,
+   "points": 587,
+   "rings": 17,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3698,
+   "points": 659,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "cubes-1",
+  "title": "Cubes - 1",
+  "mode": "stroke",
+  "tags": [
+   "cubes",
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5438,
+   "points": 75,
+   "rings": 17,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3249,
+   "points": 75,
+   "rings": 17,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2314,
+   "points": 75,
+   "rings": 17,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1468,
+   "points": 75,
+   "rings": 17,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "cubes-2",
+  "title": "Cubes - 2",
+  "mode": "stroke",
+  "tags": [
+   "cubes",
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.438,
+   "points": 57,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2609,
+   "points": 57,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1856,
+   "points": 57,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1177,
+   "points": 57,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "cubes-3",
+  "title": "Cubes - 3",
+  "mode": "stroke",
+  "tags": [
+   "cubes",
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4337,
+   "points": 78,
+   "rings": 14,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2594,
+   "points": 80,
+   "rings": 14,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1849,
+   "points": 80,
+   "rings": 14,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1173,
+   "points": 80,
+   "rings": 14,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stained-glass",
+  "title": "Stained Glass",
+  "mode": "stroke",
+  "tags": [
+   "cubes",
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3015,
+   "points": 39,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1782,
+   "points": 47,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1264,
+   "points": 58,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0799,
+   "points": 75,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "tiles-1",
+  "title": "Tiles - 1",
+  "mode": "stroke",
+  "tags": [
+   "tiles",
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.14,
+  "w20": {
+   "fill": 0.2071,
+   "points": 358,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1213,
+   "points": 441,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0859,
+   "points": 474,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0543,
+   "points": 737,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "rectangles-and-squares-1",
+  "title": "Rectangles & Squares - 1",
+  "mode": "stroke",
+  "tags": [
+   "rectangles & squares"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4252,
+   "points": 47,
+   "rings": 11,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2518,
+   "points": 48,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1788,
+   "points": 48,
+   "rings": 11,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1131,
+   "points": 48,
+   "rings": 11,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "mexican-pattern-1",
+  "title": "Mexican Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "mexican pattern"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1559,
+   "points": 619,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2549,
+   "points": 1701,
+   "rings": 18,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2573,
+   "points": 2058,
+   "rings": 18,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2587,
+   "points": 2710,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "mexican-pattern-2",
+  "title": "Mexican Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "mexican pattern"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5601,
+   "points": 628,
+   "rings": 14,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5629,
+   "points": 870,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5677,
+   "points": 1282,
+   "rings": 36,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5682,
+   "points": 1640,
+   "rings": 38,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "ethnic-pattern-1",
+  "title": "Ethnic Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "ethnic pattern",
+   "tribal"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2893,
+   "points": 375,
+   "rings": 22,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3004,
+   "points": 388,
+   "rings": 22,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3032,
+   "points": 390,
+   "rings": 22,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3049,
+   "points": 405,
+   "rings": 23,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "ethnic-pattern-2",
+  "title": "Ethnic Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "ethnic pattern",
+   "tribal"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3255,
+   "points": 504,
+   "rings": 23,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3389,
+   "points": 439,
+   "rings": 21,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3575,
+   "points": 489,
+   "rings": 24,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3595,
+   "points": 492,
+   "rings": 24,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "ethnic-pattern-3",
+  "title": "Ethnic Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "ethnic pattern",
+   "tribal"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1499,
+   "points": 604,
+   "rings": 33,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2456,
+   "points": 445,
+   "rings": 28,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2487,
+   "points": 448,
+   "rings": 28,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2505,
+   "points": 447,
+   "rings": 28,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plaid-pattern-1",
+  "title": "Plaid Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "plaid pattern",
+   "tartan",
+   "buffalo"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2045,
+   "points": 310,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4333,
+   "points": 503,
+   "rings": 20,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4382,
+   "points": 525,
+   "rings": 21,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4417,
+   "points": 519,
+   "rings": 21,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plaid-pattern-2",
+  "title": "Plaid Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "plaid pattern",
+   "tartan",
+   "buffalo"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2514,
+   "points": 209,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2536,
+   "points": 305,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2563,
+   "points": 427,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4725,
+   "points": 424,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plaid-pattern-3",
+  "title": "Plaid Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "plaid pattern",
+   "tartan",
+   "buffalo"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0405,
+   "points": 111,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3985,
+   "points": 1059,
+   "rings": 52,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4119,
+   "points": 1105,
+   "rings": 55,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4199,
+   "points": 1120,
+   "rings": 56,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plaid-pattern-4",
+  "title": "Plaid Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "plaid pattern",
+   "tartan",
+   "buffalo"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0632,
+   "points": 108,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0913,
+   "points": 484,
+   "rings": 19,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3271,
+   "points": 1795,
+   "rings": 82,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3378,
+   "points": 1817,
+   "rings": 86,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "doodle-1",
+  "title": "Doodle Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "doodle pattern"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.04,
+   "points": 485,
+   "rings": 24,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1688,
+   "points": 1171,
+   "rings": 29,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1792,
+   "points": 1227,
+   "rings": 37,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1794,
+   "points": 1569,
+   "rings": 37,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "doodle-2",
+  "title": "Doodle Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "doodle pattern"
+  ],
+  "layers": 2,
+  "clipLossPct": 0.62,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w80": {
+   "fill": 0.0783,
+   "points": 1994,
+   "rings": 68,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "batik-1",
+  "title": "Batik Pattern - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "batik pattern",
+   "diamonds"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0.014,
+  "w20": {
+   "fill": 0.4902,
+   "points": 464,
+   "rings": 18,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2844,
+   "points": 570,
+   "rings": 18,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2005,
+   "points": 655,
+   "rings": 18,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.126,
+   "points": 829,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "batik-2",
+  "title": "Batik Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "batik pattern",
+   "floral",
+   "flower"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.553,
+   "points": 824,
+   "rings": 23,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5573,
+   "points": 1012,
+   "rings": 23,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5585,
+   "points": 1270,
+   "rings": 23,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5593,
+   "points": 1593,
+   "rings": 23,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "batik-3",
+  "title": "Batik Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "batik pattern",
+   "diamonds"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4665,
+   "points": 244,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4696,
+   "points": 281,
+   "rings": 16,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4705,
+   "points": 279,
+   "rings": 16,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4711,
+   "points": 306,
+   "rings": 16,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "batik-4",
+  "title": "Batik Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "batik pattern",
+   "floral",
+   "flower",
+   "diamonds"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0962,
+   "points": 182,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1301,
+   "points": 685,
+   "rings": 36,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2059,
+   "points": 699,
+   "rings": 40,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2088,
+   "points": 816,
+   "rings": 40,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "batik-5",
+  "title": "Batik Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "batik pattern",
+   "floral",
+   "flower"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1543,
+   "points": 783,
+   "rings": 35,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1595,
+   "points": 988,
+   "rings": 41,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1598,
+   "points": 1147,
+   "rings": 41,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1599,
+   "points": 1525,
+   "rings": 41,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "batik-6",
+  "title": "Batik Pattern - 6",
+  "mode": "fill",
+  "tags": [
+   "batik pattern",
+   "floral",
+   "flower"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.067,
+   "points": 722,
+   "rings": 38,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.083,
+   "points": 1360,
+   "rings": 71,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0971,
+   "points": 3162,
+   "rings": 119,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "african-1",
+  "title": "African Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "african pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5515,
+   "points": 1758,
+   "rings": 14,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5862,
+   "points": 1752,
+   "rings": 14,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5903,
+   "points": 1752,
+   "rings": 14,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5928,
+   "points": 1752,
+   "rings": 14,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "african-2",
+  "title": "African Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "african pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6096,
+   "points": 426,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6127,
+   "points": 426,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6135,
+   "points": 426,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.614,
+   "points": 426,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "african-3",
+  "title": "African Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "african pattern"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4311,
+   "points": 476,
+   "rings": 17,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4349,
+   "points": 477,
+   "rings": 17,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.436,
+   "points": 477,
+   "rings": 17,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4367,
+   "points": 477,
+   "rings": 17,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "african-4",
+  "title": "African Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "african pattern"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4379,
+   "points": 542,
+   "rings": 11,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4419,
+   "points": 542,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.443,
+   "points": 542,
+   "rings": 11,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4437,
+   "points": 542,
+   "rings": 11,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-11",
+  "title": "Triangles - 11",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.475,
+   "points": 88,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4787,
+   "points": 97,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4798,
+   "points": 88,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4805,
+   "points": 88,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "hexagon-9",
+  "title": "Hexagon - 9",
+  "mode": "fill",
+  "tags": [
+   "hexagon",
+   "triangles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.7572,
+   "points": 330,
+   "rings": 17,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.7655,
+   "points": 325,
+   "rings": 18,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.7677,
+   "points": 325,
+   "rings": 18,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.7693,
+   "points": 330,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "tiles-2",
+  "title": "Tiles - 2",
+  "mode": "fill",
+  "tags": [
+   "tiles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6291,
+   "points": 159,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.632,
+   "points": 163,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.633,
+   "points": 162,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6337,
+   "points": 168,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "tiles-3",
+  "title": "Tiles - 3",
+  "mode": "fill",
+  "tags": [
+   "tiles",
+   "squares"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5473,
+   "points": 92,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5492,
+   "points": 93,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5498,
+   "points": 91,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5502,
+   "points": 90,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "tribal-1",
+  "title": "Tribal Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "tribal pattern",
+   " ethnic"
+  ],
+  "layers": 1,
+  "clipLossPct": 3.19,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.042,
+   "points": 483,
+   "rings": 28,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4314,
+   "points": 656,
+   "rings": 25,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4343,
+   "points": 673,
+   "rings": 25,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4364,
+   "points": 720,
+   "rings": 25,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "tribal-2",
+  "title": "Tribal Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "tribal pattern",
+   " ethnic"
+  ],
+  "layers": 1,
+  "clipLossPct": 4.24,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0199,
+   "points": 288,
+   "rings": 18,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.3271,
+   "points": 343,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3284,
+   "points": 345,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3294,
+   "points": 357,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-8",
+  "title": "Waves - 8",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2374,
+   "points": 620,
+   "rings": 21,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3782,
+   "points": 1200,
+   "rings": 23,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3997,
+   "points": 1558,
+   "rings": 26,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4098,
+   "points": 2071,
+   "rings": 27,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-9",
+  "title": "Leaves - 9",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4336,
+   "points": 970,
+   "rings": 30,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6146,
+   "points": 1852,
+   "rings": 81,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6553,
+   "points": 2003,
+   "rings": 122,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6619,
+   "points": 2443,
+   "rings": 141,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "blobs",
+  "title": "Blobs",
+  "mode": "fill",
+  "tags": [
+   "blobs"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.7749,
+   "points": 1445,
+   "rings": 28,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.7864,
+   "points": 2033,
+   "rings": 28,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.787,
+   "points": 2433,
+   "rings": 28,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.7871,
+   "points": 2895,
+   "rings": 28,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "african-5",
+  "title": "African Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "african pattern"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4611,
+   "points": 414,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4614,
+   "points": 579,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4616,
+   "points": 688,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4616,
+   "points": 821,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-12",
+  "title": "Triangles - 12",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.3098,
+   "points": 1012,
+   "rings": 50,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3212,
+   "points": 1017,
+   "rings": 50,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3282,
+   "points": 1004,
+   "rings": 50,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-triangles-1",
+  "title": "Squares & Triangles - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1157,
+   "points": 106,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4375,
+   "points": 835,
+   "rings": 50,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4458,
+   "points": 834,
+   "rings": 50,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4512,
+   "points": 829,
+   "rings": 50,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "tribal-3",
+  "title": "Tribal Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "tribal pattern",
+   "greek key",
+   "country",
+   " ethnic"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.021,
+   "points": 265,
+   "rings": 16,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0679,
+   "points": 3452,
+   "rings": 192,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.391,
+   "points": 1302,
+   "rings": 26,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-8",
+  "title": "Circles - 8",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0984,
+   "points": 383,
+   "rings": 19,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1901,
+   "points": 1761,
+   "rings": 41,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2129,
+   "points": 2567,
+   "rings": 41,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2306,
+   "points": 3438,
+   "rings": 49,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-13",
+  "title": "Triangles - 13",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4889,
+   "points": 231,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4958,
+   "points": 232,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4976,
+   "points": 231,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4988,
+   "points": 233,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-14",
+  "title": "Triangles - 14",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6974,
+   "points": 95,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6988,
+   "points": 81,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6992,
+   "points": 97,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6995,
+   "points": 99,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-15",
+  "title": "Triangles - 15",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5397,
+   "points": 512,
+   "rings": 28,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5555,
+   "points": 511,
+   "rings": 28,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5597,
+   "points": 511,
+   "rings": 28,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5623,
+   "points": 511,
+   "rings": 28,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-16",
+  "title": "Triangles - 16",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4088,
+   "points": 199,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4168,
+   "points": 197,
+   "rings": 16,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.419,
+   "points": 201,
+   "rings": 16,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4204,
+   "points": 198,
+   "rings": 16,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-9",
+  "title": "Circles - 9",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.532,
+   "points": 756,
+   "rings": 20,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5346,
+   "points": 1276,
+   "rings": 20,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5347,
+   "points": 1504,
+   "rings": 20,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5347,
+   "points": 1504,
+   "rings": 20,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "concentric-circles-4",
+  "title": "Concentric Circles - 4",
+  "mode": "fill",
+  "tags": [
+   "concentric circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0.5432,
+   "points": 5642,
+   "rings": 122,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5442,
+   "points": 6993,
+   "rings": 122,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "concentric-circles-5",
+  "title": "Concentric Circles - 5",
+  "mode": "fill",
+  "tags": [
+   "concentric circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 14.25,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.5078,
+   "points": 1924,
+   "rings": 28,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5089,
+   "points": 2265,
+   "rings": 22,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5096,
+   "points": 2867,
+   "rings": 22,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "concentric-circles-6",
+  "title": "Concentric Circles - 6",
+  "mode": "fill",
+  "tags": [
+   "concentric circles"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4654,
+   "points": 494,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4844,
+   "points": 733,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4846,
+   "points": 918,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4846,
+   "points": 1145,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stripes-1",
+  "title": "Stripes - 1",
+  "mode": "fill",
+  "tags": [
+   "straight lines",
+   "stripes",
+   "lines"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3254,
+   "points": 24,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4134,
+   "points": 36,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4989,
+   "points": 53,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5314,
+   "points": 61,
+   "rings": 15,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "stripes-2",
+  "title": "Stripes - 2",
+  "mode": "fill",
+  "tags": [
+   "straight lines",
+   "stripes",
+   "lines"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4924,
+   "points": 32,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6882,
+   "points": 62,
+   "rings": 15,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.7908,
+   "points": 84,
+   "rings": 20,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.8221,
+   "points": 90,
+   "rings": 22,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chevron-4",
+  "title": "Chevron - 4",
+  "mode": "fill",
+  "tags": [
+   "chevron",
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6662,
+   "points": 29,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6664,
+   "points": 29,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6665,
+   "points": 30,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6665,
+   "points": 29,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chevron-5",
+  "title": "Chevron - 5",
+  "mode": "fill",
+  "tags": [
+   "chevron",
+   "lines"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6991,
+   "points": 89,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.7006,
+   "points": 87,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.701,
+   "points": 97,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.7013,
+   "points": 101,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "terrazzo-1",
+  "title": "Terrazzo - 1",
+  "mode": "fill",
+  "tags": [
+   "terrazzo",
+   "mosaic",
+   "tiles"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1979,
+   "points": 1318,
+   "rings": 61,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2561,
+   "points": 2478,
+   "rings": 87,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2856,
+   "points": 4111,
+   "rings": 138,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2975,
+   "points": 6352,
+   "rings": 181,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-1",
+  "title": "Geometric Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "geometric",
+   "triangles",
+   "hexagon",
+   "diamond",
+   "rhombus"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1565,
+   "points": 218,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1673,
+   "points": 252,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1907,
+   "points": 958,
+   "rings": 49,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3607,
+   "points": 448,
+   "rings": 22,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "halloween-1",
+  "title": "Halloween Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "halloween",
+   "bats"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1839,
+   "points": 821,
+   "rings": 15,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.238,
+   "points": 2049,
+   "rings": 38,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2552,
+   "points": 2963,
+   "rings": 37,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2674,
+   "points": 4169,
+   "rings": 38,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "halloween-2",
+  "title": "Halloween Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "halloween",
+   "bats",
+   "skull"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2362,
+   "points": 749,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3484,
+   "points": 2901,
+   "rings": 37,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3986,
+   "points": 4423,
+   "rings": 53,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.408,
+   "points": 5408,
+   "rings": 66,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "halloween-3",
+  "title": "Halloween Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "halloween",
+   "pumpkin"
+  ],
+  "layers": 4,
+  "clipLossPct": 1.41,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2325,
+   "points": 633,
+   "rings": 17,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2414,
+   "points": 769,
+   "rings": 18,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2433,
+   "points": 861,
+   "rings": 18,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.245,
+   "points": 1190,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "halloween-4",
+  "title": "Halloween Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "halloween",
+   "candy",
+   "trick",
+   "treat"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0761,
+   "points": 1812,
+   "rings": 57,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0856,
+   "points": 2114,
+   "rings": 75,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.116,
+   "points": 3334,
+   "rings": 122,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "halloween-5",
+  "title": "Halloween Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "halloween",
+   "pumpkin"
+  ],
+  "layers": 4,
+  "clipLossPct": 22.34,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2547,
+   "points": 605,
+   "rings": 14,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3103,
+   "points": 797,
+   "rings": 17,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3168,
+   "points": 893,
+   "rings": 17,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3204,
+   "points": 1100,
+   "rings": 17,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "halloween-6",
+  "title": "Halloween Pattern - 6",
+  "mode": "fill",
+  "tags": [
+   "halloween",
+   "pumpkin"
+  ],
+  "layers": 2,
+  "clipLossPct": 5.42,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2188,
+   "points": 412,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2242,
+   "points": 555,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2256,
+   "points": 650,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2261,
+   "points": 832,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "hexagon-10",
+  "title": "Hexagon - 10",
+  "mode": "fill",
+  "tags": [
+   "hexagon",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3996,
+   "points": 63,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4005,
+   "points": 70,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4007,
+   "points": 71,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4008,
+   "points": 73,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "hexagon-11",
+  "title": "Hexagon - 11",
+  "mode": "fill",
+  "tags": [
+   "hexagon",
+   "triangles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4156,
+   "points": 547,
+   "rings": 27,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5061,
+   "points": 754,
+   "rings": 33,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5116,
+   "points": 792,
+   "rings": 41,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5151,
+   "points": 836,
+   "rings": 33,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-1",
+  "title": "Squares - 1",
+  "mode": "fill",
+  "tags": [
+   "squares"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.3107,
+   "points": 411,
+   "rings": 38,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3125,
+   "points": 411,
+   "rings": 38,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3137,
+   "points": 412,
+   "rings": 38,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-2",
+  "title": "Squares - 2",
+  "mode": "fill",
+  "tags": [
+   "squares"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6688,
+   "points": 320,
+   "rings": 20,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6771,
+   "points": 400,
+   "rings": 20,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6782,
+   "points": 320,
+   "rings": 20,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6797,
+   "points": 320,
+   "rings": 20,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "sprinkles-1",
+  "title": "Sprinkles - 1",
+  "mode": "fill",
+  "tags": [
+   "sprinkles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1021,
+   "points": 269,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1026,
+   "points": 367,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1027,
+   "points": 426,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1028,
+   "points": 522,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "cubes-4",
+  "title": "Cubes - 4",
+  "mode": "fill",
+  "tags": [
+   "cubes",
+   "squares",
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5673,
+   "points": 94,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5678,
+   "points": 93,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.568,
+   "points": 96,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5681,
+   "points": 96,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-2",
+  "title": "Geometric Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.4894,
+   "points": 237,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4944,
+   "points": 241,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4975,
+   "points": 239,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-3",
+  "title": "Geometric Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4976,
+   "points": 197,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5052,
+   "points": 202,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5072,
+   "points": 200,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5086,
+   "points": 202,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-4",
+  "title": "Geometric Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0.0111,
+   "points": 998,
+   "rings": 54,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w80": {
+   "fill": 0.2765,
+   "points": 1282,
+   "rings": 78,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-10",
+  "title": "Circles - 10",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5052,
+   "points": 221,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5054,
+   "points": 308,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5054,
+   "points": 385,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5055,
+   "points": 454,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-11",
+  "title": "Circles - 11",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 9.13,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.654,
+   "points": 401,
+   "rings": 21,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6542,
+   "points": 617,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6542,
+   "points": 685,
+   "rings": 23,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6543,
+   "points": 764,
+   "rings": 20,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-12",
+  "title": "Circles - 12",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0443,
+   "points": 316,
+   "rings": 11,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0868,
+   "points": 740,
+   "rings": 19,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1135,
+   "points": 1300,
+   "rings": 27,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1178,
+   "points": 1861,
+   "rings": 29,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-17",
+  "title": "Triangles - 17",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5362,
+   "points": 1350,
+   "rings": 88,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5853,
+   "points": 1361,
+   "rings": 88,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5978,
+   "points": 1346,
+   "rings": 88,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6057,
+   "points": 1355,
+   "rings": 88,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-18",
+  "title": "Triangles - 18",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0621,
+   "points": 85,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0635,
+   "points": 115,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0637,
+   "points": 129,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0637,
+   "points": 188,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-5",
+  "title": "Geometric Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0033,
+   "points": 38,
+   "rings": 2,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.2215,
+   "points": 1033,
+   "rings": 35,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.488,
+   "points": 1000,
+   "rings": 20,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4881,
+   "points": 1217,
+   "rings": 20,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-6",
+  "title": "Geometric Pattern - 6",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0542,
+   "points": 149,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3801,
+   "points": 1333,
+   "rings": 20,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3815,
+   "points": 1513,
+   "rings": 20,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3824,
+   "points": 1760,
+   "rings": 20,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squiggle-1",
+  "title": "Squiggle",
+  "mode": "fill",
+  "tags": [
+   "squiggle"
+  ],
+  "layers": 1,
+  "clipLossPct": 0.35,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w80": {
+   "fill": 0.1036,
+   "points": 4037,
+   "rings": 52,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "moroccan-1",
+  "title": "Moroccan Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "moroccan"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0282,
+   "points": 154,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0821,
+   "points": 865,
+   "rings": 28,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1538,
+   "points": 1251,
+   "rings": 28,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1589,
+   "points": 1405,
+   "rings": 14,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "moroccan-2",
+  "title": "Moroccan Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "moroccan"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3753,
+   "points": 213,
+   "rings": 12,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3814,
+   "points": 215,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3831,
+   "points": 207,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3841,
+   "points": 209,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "japanese-pattern-7",
+  "title": "Japanese Pattern - 7",
+  "mode": "fill",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "bamboo",
+   "interlocked"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5253,
+   "points": 280,
+   "rings": 23,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5355,
+   "points": 260,
+   "rings": 17,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.545,
+   "points": 392,
+   "rings": 24,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5489,
+   "points": 393,
+   "rings": 24,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-9",
+  "title": "Waves - 9",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5031,
+   "points": 422,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5062,
+   "points": 530,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5072,
+   "points": 550,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5079,
+   "points": 813,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "christmas-pattern-4",
+  "title": "Christmas Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0891,
+   "points": 254,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0896,
+   "points": 260,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0897,
+   "points": 256,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0898,
+   "points": 261,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "christmas-pattern-5",
+  "title": "Christmas Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1015,
+   "points": 601,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2266,
+   "points": 1885,
+   "rings": 28,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2338,
+   "points": 2627,
+   "rings": 34,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2382,
+   "points": 3261,
+   "rings": 30,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plaid-pattern-5",
+  "title": "Plaid Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "plaid pattern",
+   "tartan",
+   "buffalo",
+   "diamonds"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4732,
+   "points": 225,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4985,
+   "points": 422,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4987,
+   "points": 453,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4989,
+   "points": 530,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plaid-pattern-6",
+  "title": "Plaid Pattern - 6",
+  "mode": "fill",
+  "tags": [
+   "plaid pattern",
+   "tartan",
+   "buffalo",
+   "diamonds"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4865,
+   "points": 95,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4874,
+   "points": 100,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4878,
+   "points": 102,
+   "rings": 11,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4959,
+   "points": 337,
+   "rings": 24,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-13",
+  "title": "Circles - 13",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2644,
+   "points": 430,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3171,
+   "points": 623,
+   "rings": 28,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3192,
+   "points": 745,
+   "rings": 28,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3205,
+   "points": 877,
+   "rings": 28,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-14",
+  "title": "Circles - 14",
+  "mode": "fill",
+  "tags": [
+   "circles",
+   "lines"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.094,
+   "points": 291,
+   "rings": 15,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1866,
+   "points": 768,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1866,
+   "points": 820,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1867,
+   "points": 1149,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "interlocked-hexagons-1",
+  "title": "Interlocked Hexagons - 1",
+  "mode": "fill",
+  "tags": [
+   "hexagons",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0091,
+   "points": 178,
+   "rings": 8,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0.1038,
+   "points": 1473,
+   "rings": 52,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1975,
+   "points": 323,
+   "rings": 15,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "interlocked-hexagons-2",
+  "title": "Interlocked Hexagons - 2",
+  "mode": "fill",
+  "tags": [
+   "hexagons",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1274,
+   "points": 1572,
+   "rings": 60,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4782,
+   "points": 1425,
+   "rings": 34,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4825,
+   "points": 1440,
+   "rings": 35,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4851,
+   "points": 1447,
+   "rings": 35,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "interlocked-hexagons-3",
+  "title": "Interlocked Hexagons - 3",
+  "mode": "fill",
+  "tags": [
+   "hexagons",
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.8948,
+   "points": 623,
+   "rings": 36,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.9081,
+   "points": 611,
+   "rings": 36,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.9121,
+   "points": 624,
+   "rings": 36,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.9146,
+   "points": 625,
+   "rings": 36,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "lanterns-1",
+  "title": "Lanterns",
+  "mode": "fill",
+  "tags": [
+   "lanterns",
+   "circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0432,
+   "points": 220,
+   "rings": 11,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0574,
+   "points": 379,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2061,
+   "points": 946,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2062,
+   "points": 1211,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "leaves-10",
+  "title": "Leaves - 10",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2475,
+   "points": 137,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2501,
+   "points": 236,
+   "rings": 12,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3271,
+   "points": 494,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3272,
+   "points": 586,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "lines-3",
+  "title": "Lines - 3",
+  "mode": "fill",
+  "tags": [
+   "lines"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4438,
+   "points": 868,
+   "rings": 50,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4855,
+   "points": 1010,
+   "rings": 48,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5133,
+   "points": 1053,
+   "rings": 46,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5188,
+   "points": 1193,
+   "rings": 46,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "rope-1",
+  "title": "Rope",
+  "mode": "fill",
+  "tags": [
+   "rope",
+   "geometric"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0314,
+   "points": 824,
+   "rings": 38,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2044,
+   "points": 690,
+   "rings": 14,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2043,
+   "points": 930,
+   "rings": 14,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-10",
+  "title": "Waves - 10",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.056,
+   "points": 135,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3297,
+   "points": 485,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4104,
+   "points": 942,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5133,
+   "points": 1935,
+   "rings": 26,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-11",
+  "title": "Waves - 11",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2742,
+   "points": 152,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2745,
+   "points": 217,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2744,
+   "points": 274,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2744,
+   "points": 297,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "lines-4",
+  "title": "Lines - 4",
+  "mode": "stroke",
+  "tags": [
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3903,
+   "points": 54,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2488,
+   "points": 88,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1781,
+   "points": 88,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1136,
+   "points": 88,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "lines-5",
+  "title": "Lines - 5",
+  "mode": "stroke",
+  "tags": [
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3951,
+   "points": 75,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2539,
+   "points": 113,
+   "rings": 13,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1834,
+   "points": 118,
+   "rings": 13,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.119,
+   "points": 126,
+   "rings": 13,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "lines-6",
+  "title": "Lines - 6",
+  "mode": "stroke-join",
+  "tags": [
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2904,
+   "points": 70,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1736,
+   "points": 93,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1241,
+   "points": 94,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0793,
+   "points": 82,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plus-5",
+  "title": "Plus - 5",
+  "mode": "fill",
+  "tags": [
+   "plus",
+   "cross"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5502,
+   "points": 149,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5529,
+   "points": 172,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5537,
+   "points": 148,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5542,
+   "points": 172,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "plus-6",
+  "title": "Plus - 6",
+  "mode": "fill",
+  "tags": [
+   "plus",
+   "cross"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4067,
+   "points": 244,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4066,
+   "points": 280,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4066,
+   "points": 286,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4066,
+   "points": 421,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "scales-5",
+  "title": "Scales - 5",
+  "mode": "fill",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2665,
+   "points": 840,
+   "rings": 29,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2729,
+   "points": 1243,
+   "rings": 29,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2749,
+   "points": 1358,
+   "rings": 29,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2845,
+   "points": 2879,
+   "rings": 84,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "scales-6",
+  "title": "Scales - 6",
+  "mode": "fill",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0023,
+   "points": 45,
+   "rings": 4,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0.5039,
+   "points": 2222,
+   "rings": 39,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5081,
+   "points": 2751,
+   "rings": 40,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "scales-7",
+  "title": "Scales - 7",
+  "mode": "fill",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3147,
+   "points": 384,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4604,
+   "points": 1325,
+   "rings": 33,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4608,
+   "points": 1498,
+   "rings": 32,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4611,
+   "points": 2015,
+   "rings": 33,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "scales-8",
+  "title": "Scales - 8",
+  "mode": "fill",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.8106,
+   "points": 213,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.8115,
+   "points": 272,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.8118,
+   "points": 301,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.812,
+   "points": 405,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "scales-9",
+  "title": "Scales - 9",
+  "mode": "fill",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2803,
+   "points": 300,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2863,
+   "points": 357,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2871,
+   "points": 444,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2875,
+   "points": 573,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-19",
+  "title": "Triangles - 19",
+  "mode": "stroke",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.082,
+  "w20": {
+   "fill": 0.3541,
+   "points": 52,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2128,
+   "points": 54,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1521,
+   "points": 54,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.097,
+   "points": 57,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-20",
+  "title": "Triangles - 20",
+  "mode": "stroke-join",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2145,
+   "points": 25,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1258,
+   "points": 24,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.089,
+   "points": 21,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0562,
+   "points": 29,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "batik-7",
+  "title": "Batik Pattern - 7",
+  "mode": "fill",
+  "tags": [
+   "batik pattern",
+   "floral",
+   "flower"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3022,
+   "points": 356,
+   "rings": 22,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3179,
+   "points": 386,
+   "rings": 24,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3227,
+   "points": 409,
+   "rings": 29,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3256,
+   "points": 392,
+   "rings": 24,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-15",
+  "title": "Circles - 15",
+  "mode": "stroke",
+  "tags": [
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.212,
+  "w20": {
+   "fill": 0.4387,
+   "points": 391,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2782,
+   "points": 646,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2049,
+   "points": 887,
+   "rings": 12,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1347,
+   "points": 1205,
+   "rings": 12,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-16",
+  "title": "Circles - 16",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0.82,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.5093,
+   "points": 3284,
+   "rings": 70,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5095,
+   "points": 3936,
+   "rings": 70,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5093,
+   "points": 5121,
+   "rings": 70,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-17",
+  "title": "Circles - 17",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4899,
+   "points": 483,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.495,
+   "points": 616,
+   "rings": 21,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4963,
+   "points": 719,
+   "rings": 16,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4969,
+   "points": 843,
+   "rings": 16,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-and-diamonds",
+  "title": "Circles & Diamonds",
+  "mode": "fill",
+  "tags": [
+   "squares & diamonds"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6571,
+   "points": 315,
+   "rings": 11,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6582,
+   "points": 444,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6583,
+   "points": 475,
+   "rings": 11,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6583,
+   "points": 602,
+   "rings": 11,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-4",
+  "title": "Diamonds - 4",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.094,
+  "w20": {
+   "fill": 0.0911,
+   "points": 259,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.05,
+   "points": 278,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0342,
+   "points": 280,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.021,
+   "points": 276,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-5",
+  "title": "Diamonds - 5",
+  "mode": "fill",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0944,
+   "points": 378,
+   "rings": 22,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4231,
+   "points": 573,
+   "rings": 32,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.425,
+   "points": 577,
+   "rings": 32,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4263,
+   "points": 538,
+   "rings": 24,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-6",
+  "title": "Diamonds - 6",
+  "mode": "fill",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6237,
+   "points": 728,
+   "rings": 20,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.8141,
+   "points": 699,
+   "rings": 69,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.815,
+   "points": 838,
+   "rings": 88,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.8155,
+   "points": 1007,
+   "rings": 90,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-7",
+  "title": "Geometric Pattern - 7",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4234,
+   "points": 869,
+   "rings": 40,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4367,
+   "points": 885,
+   "rings": 40,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4402,
+   "points": 904,
+   "rings": 40,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4425,
+   "points": 887,
+   "rings": 40,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-8",
+  "title": "Geometric Pattern - 8",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5585,
+   "points": 992,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5587,
+   "points": 1309,
+   "rings": 16,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5587,
+   "points": 1594,
+   "rings": 16,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5585,
+   "points": 1975,
+   "rings": 16,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-9",
+  "title": "Geometric Pattern - 9",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.558,
+   "points": 1813,
+   "rings": 24,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.558,
+   "points": 2158,
+   "rings": 24,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5577,
+   "points": 2902,
+   "rings": 24,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "geometric-10",
+  "title": "Geometric Pattern - 10",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0126,
+   "points": 486,
+   "rings": 24,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0.4873,
+   "points": 5869,
+   "rings": 76,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4911,
+   "points": 7434,
+   "rings": 76,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-12",
+  "title": "Waves - 12",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.502,
+   "points": 98,
+   "rings": 1,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5022,
+   "points": 117,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5021,
+   "points": 139,
+   "rings": 1,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5022,
+   "points": 198,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-13",
+  "title": "Waves - 13",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3989,
+   "points": 175,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3988,
+   "points": 223,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3988,
+   "points": 241,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3989,
+   "points": 348,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-14",
+  "title": "Waves - 14",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.6268,
+   "points": 140,
+   "rings": 13,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.6268,
+   "points": 269,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.6268,
+   "points": 292,
+   "rings": 19,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.6268,
+   "points": 331,
+   "rings": 22,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-15",
+  "title": "Waves - 15",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3936,
+   "points": 222,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3941,
+   "points": 271,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3943,
+   "points": 302,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3946,
+   "points": 427,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "double-bubble-3",
+  "title": "Double Bubble - 3",
+  "mode": "fill",
+  "tags": [
+   "double bubbles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2441,
+   "points": 1385,
+   "rings": 48,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.267,
+   "points": 1940,
+   "rings": 58,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2715,
+   "points": 1928,
+   "rings": 29,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2721,
+   "points": 2936,
+   "rings": 29,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "double-bubble-4",
+  "title": "Double Bubble - 4",
+  "mode": "stroke",
+  "tags": [
+   "double bubbles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.022,
+  "w20": {
+   "fill": 0.2421,
+   "points": 367,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1447,
+   "points": 518,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1032,
+   "points": 661,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0659,
+   "points": 834,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "patches",
+  "title": "Patches",
+  "mode": "fill",
+  "tags": [
+   "patches"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3766,
+   "points": 403,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3869,
+   "points": 413,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3895,
+   "points": 412,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3911,
+   "points": 411,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-3",
+  "title": "Squares - 3",
+  "mode": "stroke",
+  "tags": [
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.341,
+   "points": 37,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2015,
+   "points": 39,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1428,
+   "points": 39,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0902,
+   "points": 39,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-4",
+  "title": "Squares - 4",
+  "mode": "stroke",
+  "tags": [
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.007,
+  "w20": {
+   "fill": 0.2834,
+   "points": 232,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1698,
+   "points": 312,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1211,
+   "points": 340,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0769,
+   "points": 550,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-5",
+  "title": "Squares - 5",
+  "mode": "stroke",
+  "tags": [
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.004,
+  "w20": {
+   "fill": 0.2875,
+   "points": 140,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1725,
+   "points": 216,
+   "rings": 2,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1237,
+   "points": 265,
+   "rings": 2,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0793,
+   "points": 337,
+   "rings": 2,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-6",
+  "title": "Squares - 6",
+  "mode": "stroke",
+  "tags": [
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.008,
+  "w20": {
+   "fill": 0.3509,
+   "points": 91,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2108,
+   "points": 93,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1542,
+   "points": 92,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1045,
+   "points": 88,
+   "rings": 9,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-21",
+  "title": "Triangles - 21",
+  "mode": "stroke",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.003,
+  "w20": {
+   "fill": 0.3709,
+   "points": 49,
+   "rings": 2,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2228,
+   "points": 52,
+   "rings": 1,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1592,
+   "points": 64,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1015,
+   "points": 52,
+   "rings": 1,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-22",
+  "title": "Triangles - 22",
+  "mode": "stroke-join",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1878,
+   "points": 105,
+   "rings": 7,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1105,
+   "points": 98,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0782,
+   "points": 89,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0493,
+   "points": 89,
+   "rings": 6,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "triangles-23",
+  "title": "Triangles - 23",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1227,
+   "points": 84,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1255,
+   "points": 79,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1263,
+   "points": 78,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1268,
+   "points": 80,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "tribal-4",
+  "title": "Tribal Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "tribal pattern",
+   "greek key",
+   "country"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1222,
+   "points": 583,
+   "rings": 28,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.203,
+   "points": 986,
+   "rings": 42,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2386,
+   "points": 1313,
+   "rings": 53,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3165,
+   "points": 2497,
+   "rings": 85,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "tribal-5",
+  "title": "Tribal Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "tribal pattern",
+   "greek key",
+   "country"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0449,
+   "points": 341,
+   "rings": 16,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2397,
+   "points": 2199,
+   "rings": 72,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2997,
+   "points": 3337,
+   "rings": 73,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3232,
+   "points": 4296,
+   "rings": 60,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-10",
+  "title": "Chinese Pattern - 10",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.046,
+   "points": 48,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0805,
+   "points": 982,
+   "rings": 37,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2304,
+   "points": 137,
+   "rings": 21,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2303,
+   "points": 137,
+   "rings": 21,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-11",
+  "title": "Chinese Pattern - 11",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares",
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0715,
+   "points": 1302,
+   "rings": 33,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1856,
+   "points": 613,
+   "rings": 14,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1857,
+   "points": 692,
+   "rings": 14,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-7",
+  "title": "Diamonds - 7",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.563,
+  "w20": {
+   "fill": 0.1353,
+   "points": 30,
+   "rings": 2,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.6 mm instead of carrying into the next copy."
+   ]
+  },
+  "w35": {
+   "fill": 0.0843,
+   "points": 30,
+   "rings": 2,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.6 mm instead of carrying into the next copy."
+   ]
+  },
+  "w50": {
+   "fill": 0.0635,
+   "points": 28,
+   "rings": 2,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.6 mm instead of carrying into the next copy."
+   ]
+  },
+  "w80": {
+   "fill": 0.045,
+   "points": 28,
+   "rings": 2,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.6 mm instead of carrying into the next copy."
+   ]
+  }
+ },
+ {
+  "slug": "diamonds-8",
+  "title": "Diamonds - 8",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.02,
+  "w20": {
+   "fill": 0.4045,
+   "points": 342,
+   "rings": 9,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2369,
+   "points": 352,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1675,
+   "points": 352,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1056,
+   "points": 348,
+   "rings": 7,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-9",
+  "title": "Diamonds - 9",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.001,
+  "w20": {
+   "fill": 0.736,
+   "points": 92,
+   "rings": 15,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4624,
+   "points": 119,
+   "rings": 17,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3348,
+   "points": 115,
+   "rings": 17,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2154,
+   "points": 121,
+   "rings": 17,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-16",
+  "title": "Waves - 16",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3622,
+   "points": 273,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3633,
+   "points": 403,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3635,
+   "points": 447,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3637,
+   "points": 495,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-17",
+  "title": "Waves - 17",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4647,
+   "points": 575,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4649,
+   "points": 645,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4648,
+   "points": 736,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4649,
+   "points": 1138,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-18",
+  "title": "Waves - 18",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.7157,
+   "points": 844,
+   "rings": 14,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.7185,
+   "points": 1029,
+   "rings": 11,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.7193,
+   "points": 1133,
+   "rings": 11,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.7201,
+   "points": 1622,
+   "rings": 11,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-19",
+  "title": "Waves - 19",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 4,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3832,
+   "points": 306,
+   "rings": 6,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3868,
+   "points": 431,
+   "rings": 6,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3878,
+   "points": 497,
+   "rings": 6,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3886,
+   "points": 585,
+   "rings": 7,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-20",
+  "title": "Waves - 20",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0071,
+   "points": 39,
+   "rings": 2,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.3673,
+   "points": 682,
+   "rings": 9,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3672,
+   "points": 751,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3672,
+   "points": 987,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-10",
+  "title": "Diamonds - 10",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2871,
+   "points": 43,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1722,
+   "points": 42,
+   "rings": 10,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1228,
+   "points": 42,
+   "rings": 10,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.078,
+   "points": 42,
+   "rings": 10,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-11",
+  "title": "Diamonds - 11",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.201,
+   "points": 52,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1183,
+   "points": 52,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0838,
+   "points": 53,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0529,
+   "points": 53,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-12",
+  "title": "Diamonds - 12",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.008,
+  "w20": {
+   "fill": 0.1759,
+   "points": 27,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.1024,
+   "points": 27,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.0722,
+   "points": 27,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0454,
+   "points": 27,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-13",
+  "title": "Diamonds - 13",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles",
+   "squares"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.081,
+  "w20": {
+   "fill": 0.4023,
+   "points": 77,
+   "rings": 7,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2425,
+   "points": 74,
+   "rings": 7,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.1736,
+   "points": 76,
+   "rings": 7,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1112,
+   "points": 78,
+   "rings": 7,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-12",
+  "title": "Chinese Pattern - 12",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0089,
+   "points": 47,
+   "rings": 5,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.0095,
+   "points": 45,
+   "rings": 5,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0.0458,
+   "points": 2264,
+   "rings": 101,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2387,
+   "points": 373,
+   "rings": 49,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-13",
+  "title": "Chinese Pattern - 13",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares",
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.0335,
+   "points": 86,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.0901,
+   "points": 838,
+   "rings": 33,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2014,
+   "points": 1330,
+   "rings": 42,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.2695,
+   "points": 3853,
+   "rings": 132,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "chinese-14",
+  "title": "Chinese Pattern - 14",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "octagons"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0.334,
+   "points": 334,
+   "rings": 25,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3345,
+   "points": 323,
+   "rings": 25,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3349,
+   "points": 326,
+   "rings": 25,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "egyptian-1",
+  "title": "Egyptian Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "hexagons"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5673,
+   "points": 348,
+   "rings": 20,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5924,
+   "points": 363,
+   "rings": 20,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5941,
+   "points": 356,
+   "rings": 19,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5953,
+   "points": 365,
+   "rings": 18,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "egyptian-2",
+  "title": "Egyptian Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "circles",
+   "diamonds"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4305,
+   "points": 767,
+   "rings": 34,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4431,
+   "points": 837,
+   "rings": 47,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4469,
+   "points": 880,
+   "rings": 57,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4488,
+   "points": 991,
+   "rings": 36,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "egyptian-3",
+  "title": "Egyptian Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "hexagons"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.5606,
+   "points": 376,
+   "rings": 23,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.5775,
+   "points": 410,
+   "rings": 25,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.5807,
+   "points": 412,
+   "rings": 25,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.5826,
+   "points": 420,
+   "rings": 25,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-19",
+  "title": "Circles - 19",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4405,
+   "points": 348,
+   "rings": 7,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.446,
+   "points": 399,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4471,
+   "points": 397,
+   "rings": 5,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.448,
+   "points": 502,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-20",
+  "title": "Circles - 20",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.4378,
+   "points": 274,
+   "rings": 8,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.4374,
+   "points": 403,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4375,
+   "points": 444,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4375,
+   "points": 513,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "egyptian-4",
+  "title": "Egyptian Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "hexagons",
+   "squares"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2367,
+   "points": 508,
+   "rings": 31,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.421,
+   "points": 507,
+   "rings": 32,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.4232,
+   "points": 507,
+   "rings": 32,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.4248,
+   "points": 509,
+   "rings": 32,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "egyptian-6",
+  "title": "Egyptian Pattern - 6",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "diamonds",
+   "rhombus",
+   "squares"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.7408,
+   "points": 93,
+   "rings": 3,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.7417,
+   "points": 93,
+   "rings": 3,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.7419,
+   "points": 93,
+   "rings": 3,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.7421,
+   "points": 93,
+   "rings": 3,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "waves-22",
+  "title": "Waves - 22",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.3478,
+   "points": 278,
+   "rings": 5,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.3493,
+   "points": 349,
+   "rings": 5,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.3502,
+   "points": 468,
+   "rings": 9,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.3502,
+   "points": 545,
+   "rings": 5,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "squares-and-circles-3",
+  "title": "Squares & Circles - 3",
+  "mode": "fill",
+  "tags": [
+   "squares",
+   "circles"
+  ],
+  "layers": 3,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.2489,
+   "points": 313,
+   "rings": 10,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.2936,
+   "points": 374,
+   "rings": 8,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2939,
+   "points": 421,
+   "rings": 8,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.294,
+   "points": 464,
+   "rings": 8,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "japanese-pattern-8",
+  "title": "Japanese Pattern - 8",
+  "mode": "fill",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "sashiko"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w35": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w50": {
+   "fill": 0,
+   "points": 0,
+   "rings": 0,
+   "warnings": [
+    "Feature covers under 2% of the tile; check invert or sizes."
+   ]
+  },
+  "w80": {
+   "fill": 0.0232,
+   "points": 360,
+   "rings": 21,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "circles-22",
+  "title": "Circles - 22",
+  "mode": "stroke",
+  "tags": [
+   "circles"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.083,
+  "w20": {
+   "fill": 0.5598,
+   "points": 500,
+   "rings": 25,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.356,
+   "points": 854,
+   "rings": 25,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.2605,
+   "points": 994,
+   "rings": 25,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.1695,
+   "points": 1645,
+   "rings": 25,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-14",
+  "title": "Diamonds - 14",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "squares"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0,
+  "w20": {
+   "fill": 0.1231,
+   "points": 129,
+   "rings": 4,
+   "warnings": []
+  },
+  "w35": {
+   "fill": 0.075,
+   "points": 134,
+   "rings": 4,
+   "warnings": []
+  },
+  "w50": {
+   "fill": 0.057,
+   "points": 130,
+   "rings": 4,
+   "warnings": []
+  },
+  "w80": {
+   "fill": 0.0417,
+   "points": 140,
+   "rings": 4,
+   "warnings": []
+  }
+ },
+ {
+  "slug": "diamonds-15",
+  "title": "Diamonds - 15",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus"
+  ],
+  "layers": 1,
+  "clipLossPct": 0,
+  "ribBreak": 0.484,
+  "w20": {
+   "fill": 0.4104,
+   "points": 462,
+   "rings": 26,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.5 mm instead of carrying into the next copy."
+   ]
+  },
+  "w35": {
+   "fill": 0.2493,
+   "points": 477,
+   "rings": 26,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.5 mm instead of carrying into the next copy."
+   ]
+  },
+  "w50": {
+   "fill": 0.1789,
+   "points": 483,
+   "rings": 27,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.5 mm instead of carrying into the next copy."
+   ]
+  },
+  "w80": {
+   "fill": 0.1145,
+   "points": 490,
+   "rings": 27,
+   "warnings": [
+    "Its ribs stop at the repeat edge over 0.5 mm instead of carrying into the next copy."
+   ]
+  }
+ }
+]
