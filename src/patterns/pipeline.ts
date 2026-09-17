@@ -246,7 +246,11 @@ export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: Pipeli
   }
   // Reduce the repeated neighbourhood before the canonical seam crop. The
   // final simplifier below also pins nearby curves, not only boundary points.
-  if (cs.numVert() <= 20000) cs = own(cs.simplify(0.01))
+  // Only the periodic path builds that neighbourhood, and only it repairs the
+  // damage afterwards: this simplifier moves box-boundary vertices inward, so
+  // without the seam stitch the anchored pass below no longer recognises them
+  // and consecutive repeats meet across a sub-nozzle gap instead of joining.
+  if (opts.periodic && cs.numVert() <= 20000) cs = own(cs.simplify(0.01))
   if (opts.periodic) {
     // The boolean kernel is not exactly translation invariant: a hairline
     // residue of the opening can survive at one seam junction and vanish at

@@ -11,6 +11,7 @@ import { buildVoronoiCells } from '../geom/voronoiCells'
 import { buildRegionSlab, buildEdgeMarginTool } from '../geom/slab'
 import { Parameterization } from '../geom/parameterization'
 import { buildSurfaceTool, isPlanar, mitreTool, toolOffsetRange, type Polygon } from '../geom/tileTool'
+import { thinConnectionParts, type ProbePiece } from '../geom/thinConnection'
 import { flattenRegion, flattenPieces } from '../geom/regionFlatten'
 import type { TriMesh } from '../geom/manifold'
 
@@ -145,8 +146,13 @@ function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progres
   const log: string[] = []
   const body = manifoldFromTriMesh(m, mesh)
   const [zMin, zMax] = toolOffsetRange(params.mode, params.depth, params.wallThickness)
+  // A connection thinner than one extrusion is not a connection, but decompose()
+  // counts a ribbon of any width. Only a through-cut can sever the body, so only
+  // there is it worth keeping each piece's flattening to re-cut with a fatter tool.
+  const probeGap = params.mode === 'cut' && params.minFeature ? params.minFeature / 2 : 0
   // one tool per smooth piece, each warped through its own flattening
   const tools: Manifold[] = []
+  const probeInput: ProbePiece[] = []
   let nPoly = 0, completed = 0, allPlanar = true
   const total = params.pieces.length + (params.pieces.length > 1 ? 1 : 0) + 3
   params.pieces.forEach((piece, i) => {
@@ -163,6 +169,7 @@ function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progres
     nPoly += piece.polygons.length
     // meet the neighbouring piece's tool at the fold's mitre plane
     tools.push(mitreTool(m, buildSurfaceTool(m, param, polygons, zMin, zMax, params.detail ?? 2.0), piece.mitres ?? [], zMin, zMax))
+    if (probeGap > 0) probeInput.push({ param, polygons, mitres: piece.mitres ?? [] })
     completed++
   })
   log.push(params.pieces.length > 1 ? `${nPoly} polygons over ${params.pieces.length} pieces` : `${nPoly} polygons`)
@@ -176,8 +183,10 @@ function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progres
     completed++
   }
   progress(params.mode === 'emboss' ? 'Adding the pattern' : 'Cutting the pattern', completed / total)
+  // the body outlives the boolean now: the thin-connection probe re-cuts it
+  try {
   const raw = applyMode(m, body, tool, params.mode)
-  body.delete(); tool.delete()
+  tool.delete()
   const status = raw.status()
   if (status !== 'NoError') throw new Error(`Boolean failed: ${status}`)
   // Curved wrap seams can have coincident edges from both sides of the cut.
@@ -187,11 +196,21 @@ function runTile(m: ManifoldToplevel, mesh: TriMesh, params: TileParams, progres
   completed++
   progress('Checking connected parts', completed / total)
   const { kept, removed, parts } = dropIslands(m, out, params.minIslandVolume, log)
+  // advisory only: a failure here must not lose the user their cut
+  let thinParts = parts
+  if (probeGap > 0) {
+    try {
+      thinParts = Math.max(parts, thinConnectionParts(m, body, probeInput, probeGap, zMin, zMax, params.detail ?? 2.0, params.minIslandVolume))
+      if (thinParts > parts) log.push(`connections thinner than ${(2 * probeGap).toFixed(2)} mm hold this together: discounting them it is ${thinParts} separate parts, not ${parts}`)
+    } catch (e) { log.push(`thin-connection check skipped: ${(e as Error).message}`) }
+  }
   completed++
   progress('Preparing the result', completed / total)
   const result = triMeshFromManifold(kept)
   kept.delete()
   log.push(`${result.indices.length / 3} triangles in ${((performance.now() - t0) / 1000).toFixed(1)} s`)
   progress('Pattern applied', 1)
-  return { mesh: result, islandsRemoved: removed, parts, log, ms: performance.now() - t0 }
+  return { mesh: result, islandsRemoved: removed, parts, thinParts, log, ms: performance.now() - t0 }
+  } finally { body.delete() }
 }
+

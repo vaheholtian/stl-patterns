@@ -9,6 +9,10 @@ export interface TileDef {
   /** for imported SVGs: the raw tile since it cannot be regenerated */
   svgTile?: Tile
   svgSubtract?: Pt[][]
+  /** for imported SVGs: whether the artwork's opposite edges match, measured at import
+   * by tilePeriodicity. Undefined on tiles saved before that was measured, which keeps
+   * the old behaviour of assuming they do not. */
+  svgSeamless?: boolean
   invert: boolean
   /** Connect kept material across both repeat directions using rib-width bridges. */
   connectMaterial?: boolean
@@ -43,7 +47,9 @@ export function resolveDef(def: TileDef): ResolvedDef {
         lockedParams.add(p.key)
       }
     }
-    const inherentlySeamless = gen ? isSeamless(gen, params) : false // imported SVGs are not
+    // An imported SVG says so for itself: artwork drawn as a repeat tiles without
+    // help, and mirroring it would destroy the design it was drawn to make.
+    const inherentlySeamless = gen ? isSeamless(gen, params) : Boolean(def.svgSeamless)
     if (!inherentlySeamless) { mirror = true; mirrorForced = true }
   }
   return { params, mirror, lockedParams, mirrorForced }

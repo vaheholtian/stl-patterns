@@ -202,10 +202,13 @@ export default function TilePanel({ region }: Props) {
         minIslandVolume: tl.minIslandVolume,
         wallThickness: tl.wallThickness,
         detail: tl.detail,
+        minFeature: lineWidth * 2,
       }, (p, fraction) => st().setBusy(`tile: ${p}`, fraction))
       st().replaceMesh(body.id, result.mesh)
       st().pushLog(['Tiled pattern applied', ...result.log])
+      const thin = result.thinParts ?? result.parts
       if (result.parts > 1) useNotifications.getState().show('tile', 'Tiled pattern', [`The result is ${result.parts} separate parts of material. The pattern has cut the body into pieces that would print separately: try inverting the pattern, connecting its material, a larger scale or a wider margin.`], 'error')
+      else if (thin > 1) useNotifications.getState().show('tile', 'Tiled pattern', [`This looks like one part but only holds together on connections thinner than ${(lineWidth * 2).toFixed(2)} mm, which the printer cannot lay down. It would come off the plate as ${thin} pieces: try inverting the pattern, connecting its material, a larger scale or a wider margin.`], 'error')
       getScene()?.setOverlayLines(null)
       setFlat(null); setLayout(null)
     } catch (e) {

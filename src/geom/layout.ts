@@ -115,6 +115,12 @@ export function layoutTile(
   settings: LayoutSettings,
 ): LayoutResult {
   const log: string[] = []
+  // A zero or non-finite box makes the copy grid's bounds infinite, and `j++`
+  // never advances from -Infinity: the loop below would spin forever. The
+  // copy-count guard cannot catch it because the count comes out NaN.
+  if (!(tileWidth > 0) || !(tileHeight > 0) || !Number.isFinite(tileWidth) || !Number.isFinite(tileHeight)) {
+    throw new Error(`Tile has no size (${tileWidth} x ${tileHeight} mm): the pattern produced nothing to lay out.`)
+  }
   const { param, period } = buildParameterization(flat, settings)
   // seam fitting: the period is along +x after baseRotation when the user rotation is 0.
   // A period along the tile's x axis is fitted by stretching x, one along y by stretching y.
@@ -148,6 +154,8 @@ export function layoutTile(
   }
   const eff = closing(flat, repeats !== null, log)
   const tw = tileWidth * stretch, th = tileHeight * stretchY
+  // a degenerate seam period can stretch the box to nothing; same infinite grid
+  if (!(tw > 0) || !(th > 0)) throw new Error(`Seam fitting collapsed the tile to ${tw.toFixed(3)} x ${th.toFixed(3)} mm; turn off Fit seam or change the tile size.`)
   const b = param.bounds()
   // copies must also cover the strips continued past the folds
   const folds = foldReaches(param, eff, settings)

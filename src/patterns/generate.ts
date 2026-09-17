@@ -31,7 +31,12 @@ export function generateTile(m: ManifoldToplevel, { def, lineWidth, size }: Tile
       subtract = subtract ? scale(subtract) : undefined
     }
   } else if (gen) tile = gen.generate(params, { rand: seededRandom(Number(params.seed ?? 1)) })
-  if (!tile) return { tile: null, polygons: [], warnings: [] }
+  // A recipe naming a generator this build does not have produces nothing. Say so:
+  // silence here surfaces much later as an empty layout or a zero-sized tile.
+  if (!tile) {
+    const why = def.generatorId === 'svg' ? 'the imported artwork is missing' : `unknown pattern '${def.generatorId}'`
+    return { tile: null, polygons: [], warnings: [`No tile was generated: ${why}.`] }
+  }
   if (resolved.mirror) {
     if (subtract) subtract = mirrorPolygons(subtract, tile.width, tile.height)
     tile = mirrorTile(tile)

@@ -43,6 +43,8 @@ export interface TileParams {
   wallThickness: number  // used to size through-cuts
   /** max edge length of the warped tool mesh, mm (smaller = smoother on tight curves, more triangles) */
   detail?: number
+  /** thinnest printable connection, mm; enables the thin-connection probe on a through-cut */
+  minFeature?: number
 }
 
 export type Request =
@@ -57,6 +59,9 @@ export interface OpResult {
   islandsRemoved: number
   /** separate parts of material in the result (cavities are not parts); more than one prints as loose pieces */
   parts: number
+  /** parts once connections thinner than minFeature are discounted; > parts means the body only
+   * holds together on ribbons no nozzle can lay down */
+  thinParts?: number
   log: string[]
   ms: number
 }

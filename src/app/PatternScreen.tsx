@@ -4,6 +4,8 @@ import { generators, generatorById, defaultParams, repeatKind } from '../pattern
 import type { Generator, GeneratorParam, ParamValue, Pt, Tile } from '../patterns/types'
 import { polygonsArea } from '../patterns/pipeline'
 import { importSvg } from '../patterns/svg/svgImport'
+import { tilePeriodicity } from '../patterns/periodic'
+import { getManifold } from '../geom/manifold'
 import { exportTileSvg } from '../patterns/svg/svgExport'
 import { downloadBlob } from '../io/download'
 import { useIsMobile } from './useIsMobile'
@@ -180,6 +182,7 @@ export default function PatternScreen() {
   const [repeat, setRepeat] = useState(3)
   const [error, setError] = useState<string | null>(null)
   const gen = def.generatorId === 'svg' ? null : generatorById(def.generatorId)
+
   const mobile = useIsMobile()
 
   // fill in defaults when the generator changes
@@ -196,14 +199,21 @@ export default function PatternScreen() {
     try {
       const text = await file.text()
       const res = importSvg(text, { widthMm: Number(def.params.svgWidth ?? 0) || undefined, tolerance: 0.15 })
+      // Ask the artwork whether it repeats instead of assuming it does not: a tile
+      // drawn as a repeat keeps Seamless on without being mirrored into a kaleidoscope.
+      const edges = tilePeriodicity(await getManifold(), res.tile)
+      const seamless = edges.x && edges.y
       ts().setDef({
         name: file.name.replace(/\.svg$/i, ''),
         generatorId: 'svg',
         svgTile: res.tile,
         svgSubtract: res.subtract,
+        svgSeamless: seamless,
         params: { ...def.params, svgWidth: res.tile.width, ribWidth: res.tile.ribWidth },
       })
-      ts().setResult(res.tile, [], res.warnings)
+      ts().setResult(res.tile, [], [...res.warnings, seamless
+        ? 'Opposite edges match: this artwork repeats on its own, so Seamless leaves it as drawn.'
+        : `Opposite edges do not match (${edges.x ? 'top/bottom' : edges.y ? 'left/right' : 'both directions'}); Seamless will mirror it into a kaleidoscope.`])
       setError(null)
     } catch (e) {
       setError(`SVG import failed: ${(e as Error).message}`)
@@ -375,7 +385,7 @@ function Panels(props: PanelProps) {
             value={def.generatorId}
             onChange={(e) => {
               const g = generatorById(e.target.value)
-              ts().setDef({ generatorId: e.target.value, params: g ? defaultParams(g) : def.params, name: g ? g.name : def.name, svgTile: undefined, svgSubtract: undefined,
+              ts().setDef({ generatorId: e.target.value, params: g ? defaultParams(g) : def.params, name: g ? g.name : def.name, svgTile: undefined, svgSubtract: undefined, svgSeamless: undefined,
                 invert: Boolean(g?.cutoutDefault), connectMaterial: Boolean(g?.cutoutDefault && !g?.connectedRibs), seamless: true, mirror: false })
             }}
           >
