@@ -21,7 +21,8 @@ import { fermatSpiralsGenerator } from './fermatSpirals'
 import { singleStrokeFractalGenerators } from './singleStrokeFractals'
 import { greekKeyGenerator } from './greekKey'
 import { perforationGenerators } from './perforations'
-import { libraryGenerator } from './library'
+import { libraryGenerator, libraryPattern } from './library'
+import { NATIVE_CUT_PARTS, cutAdvice, type CutAdvice } from './cutParts'
 
 /** Ordered for the picker: patterns that fill the surface first, centred medallions last. */
 export const generators: Generator[] = [
@@ -86,3 +87,19 @@ export function repeatKind(g: Generator, params: Record<string, ParamValue> = de
   return 'field'
 }
 
+/**
+ * What a through-cut on a closed box measured for this pattern, in each
+ * orientation. The library carries a measurement per design; every other
+ * generator has one against its default parameters.
+ *
+ * Used to steer the Invert control, so a pattern opens on the orientation that
+ * survives instead of on whichever way its generator happened to be written.
+ */
+export function cutAdviceFor(g: Generator | undefined, params?: Record<string, ParamValue>): CutAdvice | undefined {
+  if (!g) return undefined
+  if (g.id === 'library') {
+    const p = libraryPattern(String(params?.pattern ?? defaultParams(g).pattern))
+    return p ? cutAdvice([p.cutAs, p.cutInv]) : undefined
+  }
+  return cutAdvice(NATIVE_CUT_PARTS[g.id])
+}

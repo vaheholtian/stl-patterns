@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react'
 import { useTileStore, resolveDef, type ResolvedDef, type TileDef, type SavedTile } from '../state/tileStore'
-import { generators, generatorById, defaultParams, repeatKind } from '../patterns'
+import { generators, generatorById, defaultParams, repeatKind, cutAdviceFor } from '../patterns'
 import type { Generator, GeneratorParam, ParamValue, Pt, Tile } from '../patterns/types'
 import { polygonsArea } from '../patterns/pipeline'
 import { importSvg } from '../patterns/svg/svgImport'
@@ -170,6 +170,11 @@ function Preview({ tile, polygons, repeat }: { tile: Tile | null; polygons: Pt[]
       <canvas ref={canvasRef} />
     </div>
   )
+}
+
+/** 0 is not zero pieces: it means the design produced nothing at this size. */
+function cutPieces(n: number): string {
+  return n === 0 ? 'nothing the printer can lay down' : `${n} loose piece${n === 1 ? '' : 's'}`
 }
 
 export default function PatternScreen() {
@@ -371,6 +376,25 @@ function Panels(props: PanelProps) {
   const { def, resolved, gen, tile, polygons, warnings, saved, error, repeat, setRepeat, mobile } = props
   const ts = useTileStore.getState
   const pwa = usePwa()
+
+  /* Invert decides which side of the drawing is material, and for most patterns
+     only one side survives a through-cut -- the same wall drawn inside out gives
+     opposite answers. So the control is held at the measured orientation instead
+     of sitting on whichever way its generator happened to be written, which for
+     four of them was the side that shatters the box. It is a strong default, not
+     a prohibition: the measurement is one box at one scale, so it can be unlocked. */
+  const advice = cutAdviceFor(gen ?? undefined, resolved.params)
+  const [unlockedInvert, setUnlockedInvert] = useState(false)
+  // an unlock belongs to the pattern it was granted for, so drop it when the
+  // pattern changes -- adjusted during render rather than in an effect, so the
+  // control never paints unlocked for the new pattern for a frame first
+  const lockKey = `${def.generatorId}:${String(resolved.params.pattern ?? '')}`
+  const [lastLockKey, setLastLockKey] = useState(lockKey)
+  if (lastLockKey !== lockKey) { setLastLockKey(lockKey); setUnlockedInvert(false) }
+  const invertLocked = advice?.good != null && !unlockedInvert
+  useEffect(() => {
+    if (invertLocked && advice && def.invert !== advice.good) ts().setDef({ invert: advice.good as boolean })
+  }, [invertLocked, advice, def.invert, ts])
   return (
     <>
       <div className="section">
@@ -386,8 +410,11 @@ function Panels(props: PanelProps) {
             value={def.generatorId}
             onChange={(e) => {
               const g = generatorById(e.target.value)
+              // open on the orientation measured to survive a through-cut, falling
+              // back to the generator's own claim where nothing was measured
+              const nextInvert = cutAdviceFor(g, g ? defaultParams(g) : undefined)?.good ?? Boolean(g?.cutoutDefault)
               ts().setDef({ generatorId: e.target.value, params: g ? defaultParams(g) : def.params, name: g ? g.name : def.name, svgTile: undefined, svgSubtract: undefined, svgSeamless: undefined,
-                invert: Boolean(g?.cutoutDefault), connectMaterial: Boolean(g?.cutoutDefault && !g?.connectedRibs), seamless: true, mirror: false })
+                invert: nextInvert, connectMaterial: Boolean(nextInvert && !g?.connectedRibs), seamless: true, mirror: false })
             }}
           >
             {(['field', 'band', 'motif'] as const).map((kind) => <optgroup key={kind} label={kind === 'field' ? 'All-over surface patterns' : kind === 'band' ? 'Repeating bands' : 'Motifs / medallions (visible repeats)'}>
@@ -432,9 +459,22 @@ function Panels(props: PanelProps) {
         <h3>Feature</h3>
         <div className="muted">Black is the feature: removed by through-cut or recess, added by emboss. White remains in a through-cut.</div>
         <div className="row">
-          <label>Invert (feature ↔ material)</label>
-          <input type="checkbox" checked={def.invert} onChange={(e) => ts().setDef({ invert: e.target.checked })} />
+          <label htmlFor="invert-feature">Invert (feature ↔ material){invertLocked ? <span className="locked-tag" title="Held at the orientation that survives a through-cut"> locked</span> : null}</label>
+          <input id="invert-feature" type="checkbox" checked={def.invert} disabled={invertLocked} onChange={(e) => ts().setDef({ invert: e.target.checked })} />
         </div>
+        {advice && advice.good !== null && (
+          <div className="muted">
+            {advice.good ? 'Inverted' : 'As drawn'} is the orientation that leaves a cut box in one printable piece; the other falls into {advice.good ? advice.plain : advice.inverted} loose pieces on a closed 50 mm box.{' '}
+            {invertLocked
+              ? <button type="button" className="as-link" onClick={() => setUnlockedInvert(true)}>Unlock anyway</button>
+              : 'Unlocked, so you can set it either way.'}
+          </div>
+        )}
+        {advice && advice.good === null && advice.plain !== 1 && advice.inverted !== 1 && (
+          <div className="muted">
+            {`As drawn this leaves ${cutPieces(advice.plain)}; inverted, ${cutPieces(advice.inverted)}. Neither orientation survives a through-cut on a closed box, so use recess or emboss, a bounded region, or Connect material.`}
+          </div>
+        )}
         <div className="row">
           <label htmlFor="connect-material" title="Join the kept material with rib-width bridges and matched connections on opposite tile edges. Applies to existing patterns and SVGs too.">Connect material across repeats</label>
           <input id="connect-material" type="checkbox" disabled={Boolean(gen?.connectedRibs && def.invert)} checked={!(gen?.connectedRibs && def.invert) && Boolean(def.connectMaterial)} onChange={(e) => ts().setDef({ connectMaterial: e.target.checked })} />
