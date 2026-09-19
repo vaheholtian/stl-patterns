@@ -21,6 +21,7 @@ import { fermatSpiralsGenerator } from './fermatSpirals'
 import { singleStrokeFractalGenerators } from './singleStrokeFractals'
 import { greekKeyGenerator } from './greekKey'
 import { perforationGenerators } from './perforations'
+import { caneWeaveGenerator } from './caneWeave'
 import { libraryGenerator, libraryPattern } from './library'
 import { NATIVE_CUT_PARTS, cutAdvice, type CutAdvice } from './cutParts'
 
@@ -28,6 +29,7 @@ import { NATIVE_CUT_PARTS, cutAdvice, type CutAdvice } from './cutParts'
 export const generators: Generator[] = [
   libraryGenerator,
   ...perforationGenerators,
+  caneWeaveGenerator,
   lusonaGenerator,
   mazeGenerator,
   ammannBeenkerGenerator,

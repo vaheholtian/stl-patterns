@@ -28,6 +28,7 @@ export const NATIVE_CUT_PARTS: Record<string, readonly [plain: number, inverted:
   arrowhead: [1, 1],
   terdragon: [1, 1],
   greekKey: [1, 1],
+  caneWeave: [74, 1],
   voronoiTile: [1, 121],
   delaunayTile: [262, 1],
   truchet: [11, 11],
