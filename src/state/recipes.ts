@@ -14,6 +14,8 @@ export interface Recipe {
     point: [number, number, number] | null
     normal: [number, number, number] | null
     segmentAngle: number
+    /** wall/floor tilt split used for the fill; 0 or missing = off */
+    wallTiltDeg?: number
   }
   tile?: TileDef
   layout?: TileLayoutUi

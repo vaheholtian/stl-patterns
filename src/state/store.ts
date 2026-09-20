@@ -44,6 +44,10 @@ interface State {
   /** per-triangle selection mask for the active body */
   selection: Uint8Array | null
   segmentAngle: number
+  /** also stop the region fill where a wall turns into a floor or ceiling (see wallTiltDeg) */
+  splitWalls: boolean
+  /** faces tilted more than this from flat count as wall; the fill will not cross from wall to floor */
+  wallTiltDeg: number
   busy: string | null
   progress: number | null
   log: string[]
@@ -60,6 +64,8 @@ interface State {
   toggleVisible: (id: number) => void
   setSelection: (sel: Uint8Array | null) => void
   setSegmentAngle: (a: number) => void
+  setSplitWalls: (on: boolean) => void
+  setWallTiltDeg: (deg: number) => void
   setBusy: (b: string | null, progress?: number) => void
   pushLog: (lines: string | string[]) => void
   clearLog: () => void
@@ -78,6 +84,8 @@ export const useStore = create<State>((set, get) => ({
   activeBodyId: null,
   selection: null,
   segmentAngle: 30,
+  splitWalls: true,
+  wallTiltDeg: 45,
   busy: null,
   progress: null,
   log: [],
@@ -132,6 +140,8 @@ export const useStore = create<State>((set, get) => ({
   toggleVisible: (id) => set((s) => ({ bodies: s.bodies.map((b) => (b.id === id ? { ...b, visible: !b.visible } : b)) })),
   setSelection: (selection) => set({ selection }),
   setSegmentAngle: (segmentAngle) => set({ segmentAngle }),
+  setSplitWalls: (splitWalls) => set({ splitWalls }),
+  setWallTiltDeg: (wallTiltDeg) => set({ wallTiltDeg }),
   setBusy: (busy, progress) => set({ busy, progress: busy && progress !== undefined ? Math.max(0, Math.min(1, progress)) : null }),
   pushLog: (lines) => set((s) => ({ log: [...s.log, ...(Array.isArray(lines) ? lines : [lines])].slice(-200) })),
   clearLog: () => set({ log: [] }),
@@ -160,6 +170,11 @@ export const useStore = create<State>((set, get) => ({
     return b.adjacency
   },
 }))
+
+/** Tilt threshold to hand to floodFill: 0 when the wall/floor split is off. */
+export function effectiveWallTilt(s: { splitWalls: boolean; wallTiltDeg: number }): number {
+  return s.splitWalls ? s.wallTiltDeg : 0
+}
 
 /** Triangle index list from a selection mask (null mask = every triangle). */
 export function selectionToRegion(mask: Uint8Array | null, nTri: number): Uint32Array {

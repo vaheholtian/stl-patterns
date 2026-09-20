@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useStore } from '../../state/store'
+import { useStore, effectiveWallTilt } from '../../state/store'
 import { useTileStore } from '../../state/tileStore'
 import { useRecipes, type Recipe } from '../../state/recipes'
 import { downloadBlob } from '../../io/download'
@@ -52,7 +52,7 @@ export default function RecipePanel() {
     useRecipes.getState().add({
       name: name || `${op} on ${body.name}`,
       op,
-      region: { wholeBody: !s.selection, point, normal, segmentAngle: s.segmentAngle },
+      region: { wholeBody: !s.selection, point, normal, segmentAngle: s.segmentAngle, wallTiltDeg: effectiveWallTilt(s) },
       tile: op === 'tile' ? useTileStore.getState().def : undefined,
       layout: op === 'tile' ? s.tileLayout : undefined,
       voronoi: op === 'voronoi' ? s.voronoi : undefined,
@@ -65,6 +65,9 @@ export default function RecipePanel() {
     const body = s.bodies.find((b) => b.id === s.activeBodyId)
     if (!body) { s.pushLog('load a body first, then load the recipe'); return }
     s.setSegmentAngle(r.region.segmentAngle)
+    const tilt = r.region.wallTiltDeg ?? 0
+    s.setSplitWalls(tilt > 0)
+    if (tilt > 0) s.setWallTiltDeg(tilt)
     if (r.region.wholeBody || !r.region.point || !r.region.normal) {
       s.setSelection(null)
     } else {
@@ -73,7 +76,7 @@ export default function RecipePanel() {
       else {
         const adj = s.adjacencyFor(body.id)!
         const mask = new Uint8Array(adj.nTri)
-        for (const x of adj.floodFill(t, r.region.segmentAngle)) mask[x] = 1
+        for (const x of adj.floodFill(t, r.region.segmentAngle, null, tilt)) mask[x] = 1
         s.setSelection(mask)
       }
     }

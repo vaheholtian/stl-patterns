@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Viewer from './Viewer'
-import { useStore, selectionToRegion } from '../state/store'
+import { useStore, selectionToRegion, effectiveWallTilt } from '../state/store'
 import { loadMeshFile } from '../io/load'
 import { writeBinaryStl } from '../io/stl'
 import { write3mf } from '../io/threemf'
@@ -18,6 +18,8 @@ export default function ApplyScreen() {
   const activeBodyId = useStore((s) => s.activeBodyId)
   const selection = useStore((s) => s.selection)
   const segmentAngle = useStore((s) => s.segmentAngle)
+  const splitWalls = useStore((s) => s.splitWalls)
+  const wallTiltDeg = useStore((s) => s.wallTiltDeg)
   const busy = useStore((s) => s.busy)
   const log = useStore((s) => s.log)
   const st = useStore.getState
@@ -82,7 +84,7 @@ export default function ApplyScreen() {
     if (hit.bodyId !== s.activeBodyId) { s.setActive(hit.bodyId); return }
     const adj = s.adjacencyFor(hit.bodyId)
     if (!adj) return
-    const tris = adj.floodFill(hit.faceIndex, s.segmentAngle)
+    const tris = adj.floodFill(hit.faceIndex, s.segmentAngle, null, effectiveWallTilt(s))
     const nTri = adj.nTri
     let mask: Uint8Array
     if (ev.shiftKey && s.selection) mask = new Uint8Array(s.selection)
@@ -163,6 +165,13 @@ export default function ApplyScreen() {
           <div className="field">
             <label>Stop at edges sharper than {segmentAngle}°</label>
             <input type="range" min={5} max={90} step={1} value={segmentAngle} onChange={(e) => st().setSegmentAngle(Number(e.target.value))} />
+          </div>
+          <div className="field">
+            <label className="row" style={{ gap: 6 }}>
+              <input type="checkbox" checked={splitWalls} onChange={(e) => st().setSplitWalls(e.target.checked)} />
+              Split walls from floors where the surface tilts past {wallTiltDeg}°
+            </label>
+            {splitWalls && <input type="range" min={10} max={80} step={1} value={wallTiltDeg} onChange={(e) => st().setWallTiltDeg(Number(e.target.value))} title="faces steeper than this (from the print bed) count as wall, flatter ones as floor or ceiling" />}
           </div>
           <div className="row wrap">
             <button className="small" disabled={!active} onClick={selectAll}>Whole body</button>
