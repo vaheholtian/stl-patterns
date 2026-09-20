@@ -20,6 +20,7 @@ import { buildLibraryTile, sourceHeight } from '../src/patterns/library/tile.ts'
 import { defaultParams, generatorById, isSeamless } from '../src/patterns/index.ts'
 import { tileToCrossSection, polygonsArea } from '../src/patterns/pipeline.ts'
 import { generateTile } from '../src/patterns/generate.ts'
+import { ringParts } from '../src/patterns/ringParts.ts'
 import type { Pt } from '../src/patterns/types.ts'
 
 const m = await Module(); m.setup()
@@ -30,7 +31,7 @@ const tileAt = (slug: string, width: number, extra: Record<string, number> = {})
 // Measured by planning/pattern-library-2026-09-15/measure-seams.ts and pinned so a
 // regression that breaks a fourth design cannot pass unnoticed. Each is a drawing
 // whose two edges genuinely differ, not a fault in the pipeline.
-const EDGES_DO_NOT_MATCH = ['circles-7', 'terrazzo-1', 'triangles-8']
+const EDGES_DO_NOT_MATCH = ['terrazzo-1', 'triangles-8']
 
 test('the library generator is registered and declares itself seamless', () => {
   const g = generatorById('library')
@@ -113,11 +114,11 @@ test('the measured warnings reach the tile', () => {
   const clean = libraryPatterns.find(p => p.clipLossPct === 0 && p.ribBreak === 0)!
   assert.ok(!(tileAt(clean.slug, 50).notes ?? []).some(n => /repeat box|ribs stop/.test(n)), `${clean.slug} should carry no seam warning`)
 
-  // the cut result reaches the tile too: waves-1 leaves the 50 mm box in six bands
+  // the cut result reaches the tile too: waves-1 cuts the wall into bands either way
   const waves = libraryPattern('waves-1')!
-  assert.equal(waves.cutAs, 6, 'measured against fixtures/box-50.stl by invert-sweep.ts')
-  assert.equal(waves.cutInv, 7, 'and it severs the box inverted too, so it is warned about')
-  assert.match((tileAt('waves-1', 50).notes ?? []).join(' '), /leaves 6 loose pieces; inverted, 7/)
+  assert.equal(waves.cutAs, 17, 'measured by ring-sweep.ts with ringParts()')
+  assert.equal(waves.cutInv, 18, 'and it severs the wall inverted too, so it is warned about')
+  assert.match((tileAt('waves-1', 50).notes ?? []).join(' '), /leaves 17 loose pieces; inverted, 18/)
   const holds = libraryPatterns.find(p => p.cutAs === 1)!
   assert.ok(!(tileAt(holds.slug, 50).notes ?? []).some(n => /loose pieces/.test(n)), `${holds.slug} survives the cut and should not be warned about`)
   // every design carries a measured count, not a default
@@ -149,8 +150,8 @@ test('a design is judged on both orientations, not just the one it is drawn in',
   // property. brick-wall-1 and its filled twin are the same wall drawn inside
   // out, and they gave opposite answers, which is what exposed it.
   const stroked = libraryPattern('brick-wall-1')!, filled = libraryPattern('brick-wall-2')!
-  assert.deepEqual([stroked.cutAs, stroked.cutInv], [6, 1], 'the mortar lines cut the wall into bands; inverted the web holds')
-  assert.deepEqual([filled.cutAs, filled.cutInv], [1, 26], 'and the filled twin does the exact opposite')
+  assert.deepEqual([stroked.cutAs, stroked.cutInv], [30, 1], 'the mortar lines cut the wall into bands; inverted the web holds')
+  assert.deepEqual([filled.cutAs, filled.cutInv], [1, 58], 'and the filled twin does the exact opposite')
 
   const onlyInverted = libraryPatterns.filter(p => p.cutAs !== 1 && p.cutInv === 1)
   assert.ok(onlyInverted.length > 50, `${onlyInverted.length} designs survive a through-cut only inverted`)
@@ -165,8 +166,11 @@ test('a design that produces nothing at 50 mm says so instead of passing as whol
   // tile came out empty were recorded as surviving a through-cut.
   // A zero is recorded per orientation, not for the design as a whole: every
   // one of these still draws something the other way round.
+  // straight-lines used to be a fifth. Its zero was the box again, not the
+  // drawing: an 80 mm-tall repeat laid nothing on a 44 mm wall. It cuts a wall
+  // into 17 bands, and is warned about for that instead.
   const empty = libraryPatterns.filter(p => p.cutAs === 0 || p.cutInv === 0)
-  assert.equal(empty.length, 5, empty.map(p => p.slug).join(', '))
+  assert.equal(empty.length, 4, empty.map(p => p.slug).join(', '))
   assert.ok(empty.every(p => p.cutAs !== 0 || p.cutInv !== 0), 'none is empty both ways')
   for (const p of empty) {
     // an empty side is never 1, so none of these can be mistaken for surviving
@@ -175,4 +179,62 @@ test('a design that produces nothing at 50 mm says so instead of passing as whol
       assert.match((tileAt(p.slug, 50).notes ?? []).join(' '), /nothing the printer can lay down/, p.slug)
     }
   }
+})
+
+test('whole or in pieces is a property of the tiling, not of the box it was measured on', () => {
+  // Greek Key wraps every repeat in a closed frame, so a through-cut drops the
+  // middle of each copy out. It was recorded as whole because the only fixture
+  // measured was a 50 mm box: its walls are about 44 mm between the margins, no
+  // 54.8 mm repeat ever fitted, and the margin held in what the frame cut loose.
+  // Cut on that same box at a 15 mm repeat it falls into 25 pieces.
+  for (const slug of ['greek-key', 'brick-wall-1', 'brick-wall-2', 'triangles-1']) {
+    const p = libraryPattern(slug)!
+    for (const invert of [false, true]) {
+      const g = generateTile(m, { def: { name: slug, generatorId: 'library', invert, seamless: true, params: { ...base, pattern: slug, width: 50, ribWidth: 1.2, layers: p.layers.length } }, lineWidth: 0.42 })
+      assert.equal(ringParts(m, g.polygons, g.tile!.width, g.tile!.height), invert ? p.cutInv : p.cutAs,
+        `${slug}${invert ? ' inverted' : ''}: the recorded count must be what the tiling gives today`)
+    }
+  }
+  const greek = libraryPattern('greek-key')!
+  assert.ok(greek.cutAs !== 1 && greek.cutInv !== 1, 'a closed frame around every repeat cannot survive a through-cut')
+  assert.match((tileAt('greek-key', 50).notes ?? []).join(' '), /Neither orientation survives/)
+})
+
+test('a neighbouring copy of a rib is drawn only where it brings something new', () => {
+  // waves-1 is drawn 220 units wide inside a 120-wide repeat, and that overflow is
+  // a lead-in rather than the continuation: over the overlap it drifts 1.45 units,
+  // 0.6 mm at a 50 mm repeat, against a 2.7 mm rib. Drawing the neighbour copy
+  // anyway unions the two into a rib that steps wider and back twice per crest --
+  // small, but visible on the print and in the cut.
+  const waves = libraryPattern('waves-1')!
+  const opts = { widthMm: 50, ribWidth: 1.2, layers: waves.layers.length, spacingX: 0, spacingY: 0 }
+  const tile = buildLibraryTile(waves, opts)
+  assert.equal(tile.curves!.length, waves.layers.length, 'one rib per drawn path, with nothing retraced on top of it')
+
+  // and the rib holds one width: no point of the finished outline is further from
+  // its own centreline than half a rib
+  const g = generateTile(m, {
+    def: { name: 'waves-1', generatorId: 'library', invert: false, seamless: true, params: { ...base, pattern: 'waves-1', width: 50, ribWidth: 1.2, layers: waves.layers.length } },
+    lineWidth: 0.42,
+  })
+  const segs: [Pt, Pt][] = []
+  for (const c of tile.curves!) for (let i = 0; i + 1 < c.points.length; i++) segs.push([c.points[i], c.points[i + 1]])
+  const near = ([px, py]: Pt) => {
+    let best = Infinity
+    for (const [[ax, ay], [bx, by]] of segs) {
+      const dx = bx - ax, dy = by - ay, l2 = dx * dx + dy * dy
+      const t = l2 ? Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / l2)) : 0
+      best = Math.min(best, Math.hypot(px - ax - t * dx, py - ay - t * dy))
+    }
+    return best
+  }
+  let worst = 0
+  for (const poly of g.polygons as Pt[][]) for (const pt of poly) worst = Math.max(worst, near(pt))
+  assert.ok(worst <= 0.66, `the rib reaches ${worst.toFixed(3)} mm from its centreline, against a 0.6 mm half-rib`)
+
+  // a design whose overflow really is the continuation still gets its copies, or
+  // every rib that crosses the repeat edge would stop dead there
+  const hex = libraryPattern('hexagon-1')!
+  const hexTile = buildLibraryTile(hex, { ...opts, layers: hex.layers.length })
+  assert.ok(hexTile.curves!.length > hex.layers.length, `hexagon-1 draws ${hexTile.curves!.length} ribs from ${hex.layers.length} paths`)
 })

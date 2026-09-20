@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-hyperbolic",
+  "title": "Hyperbolic tiling",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "hyperbolic"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 465,
+  "cutInv": 18,
+  "w50": {
+   "parts": 117,
+   "thin": 117,
+   "volume": 14437.3,
+   "lost": 0.0007,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 95,
+   "thin": 95,
+   "volume": 15033.5,
+   "lost": 0.0007,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 9999.9,
+   "lost": 0.009,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10638.5,
+   "lost": 0.009,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 121,
+   "thin": 121,
+   "volume": 12018.8,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 66,
+   "thin": 66,
+   "volume": 12679.5,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 12414.8,
+   "lost": 0.0112,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 12988.5,
+   "lost": 0.0112,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

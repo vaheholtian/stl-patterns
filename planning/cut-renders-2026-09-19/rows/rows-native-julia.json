@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-julia",
+  "title": "Julia / Mandelbrot fractal",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "julia"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 194,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18160.8,
+   "lost": 0.0296,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18136.7,
+   "lost": 0.0296,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 6209.4,
+   "lost": 0.0003,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50if": {
+   "parts": 7,
+   "thin": 7,
+   "volume": 7480.1,
+   "lost": 0.0003,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17877.7,
+   "lost": 0.0142,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18144.9,
+   "lost": 0.0142,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25i": {
+   "parts": 50,
+   "thin": 50,
+   "volume": 6496.5,
+   "lost": 0.0002,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25if": {
+   "parts": 27,
+   "thin": 27,
+   "volume": 7464.9,
+   "lost": 0.0002,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  }
+ }
+]

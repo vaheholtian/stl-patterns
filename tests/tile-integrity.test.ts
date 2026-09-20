@@ -7,7 +7,7 @@ import { flattenPieces } from '../src/geom/regionFlatten.ts'
 import { layoutTile, toolMitres } from '../src/geom/layout.ts'
 import { buildSurfaceTool, mitreTool, toolOffsetRange, type Polygon } from '../src/geom/tileTool.ts'
 import { thinConnectionParts, countMaterial, type ProbePiece } from '../src/geom/thinConnection.ts'
-import { tileToCrossSection } from '../src/patterns/pipeline.ts'
+import { tileToCrossSection, strokePolyline } from '../src/patterns/pipeline.ts'
 import { tilePeriodicity } from '../src/patterns/periodic.ts'
 import { resolveDef } from '../src/patterns/definition.ts'
 import { generateTile } from '../src/patterns/generate.ts'
@@ -99,4 +99,21 @@ test('a recipe naming a pattern this build does not have says so', () => {
   const r = generateTile(m, { def: { name: 'x', generatorId: 'waves-1', params: {}, invert: false }, lineWidth: .42 })
   assert.equal(r.tile, null)
   assert.match(r.warnings.join(' '), /unknown pattern 'waves-1'/)
+})
+
+test('a stroke that doubles back keeps its width and does not erase what it crosses', () => {
+  // SVG draws a single line as `M x y v h z`: out and straight back. The two
+  // edge normals at each end cancel; strips built on their average twisted
+  // into bowties, the line vanished, and its reversed lobe cut a notch in any
+  // stroke it overlapped (circles-7 lost every crosshair and broke its rings).
+  const area = (loops: Pt[][]) => { const cs = new m.CrossSection(loops, 'NonZero'); const a = cs.area(); cs.delete(); return a }
+  const w = 1, len = 10, full = len * w + Math.PI * (w / 2) ** 2
+  for (const closed of [true, false]) {
+    const line = area(strokePolyline([[0, 0], [0, len], [0, 0]], closed, w))
+    assert.ok(Math.abs(line - full) < 0.05 * full, `closed=${closed}: ${line.toFixed(3)} mm² of ~${full.toFixed(3)}`)
+  }
+  const ring: Pt[] = Array.from({ length: 64 }, (_, i) => [8 * Math.cos(i * Math.PI / 32), 8 * Math.sin(i * Math.PI / 32)] as Pt)
+  const alone = area(strokePolyline(ring, true, w))
+  const crossed = area([...strokePolyline(ring, true, w), ...strokePolyline([[0, 4], [0, 12], [0, 4]], true, w)])
+  assert.ok(crossed > alone, `a line across the ring adds material (${crossed.toFixed(3)} vs ${alone.toFixed(3)}), never removes it`)
 })

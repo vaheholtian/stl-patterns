@@ -5,8 +5,8 @@
   "mode": "stroke",
   "w": 50,
   "h": 33.33,
-  "area": 270.88,
-  "clipLoss": 0,
+  "area": 243.75,
+  "clipLoss": 10.5376,
   "clipLossSolid": 0,
   "clipLossPct": 0,
   "edgeX": 0,
@@ -18,11 +18,11 @@
   "mode": "stroke",
   "w": 50,
   "h": 50,
-  "area": 256.26,
-  "clipLoss": 0,
+  "area": 248.91,
+  "clipLoss": 6.4475,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.043,
   "edgeY": 0
  },
  {
@@ -31,11 +31,11 @@
   "mode": "stroke",
   "w": 50,
   "h": 100,
-  "area": 284.48,
-  "clipLoss": 0,
-  "clipLossSolid": 0,
-  "clipLossPct": 0,
-  "edgeX": 0,
+  "area": 274.29,
+  "clipLoss": 9.6137,
+  "clipLossSolid": 4.8836,
+  "clipLossPct": 1.78,
+  "edgeX": 0.062,
   "edgeY": 0
  },
  {
@@ -44,11 +44,11 @@
   "mode": "stroke",
   "w": 50,
   "h": 5.71,
-  "area": 71.93,
+  "area": 71.92,
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.001,
   "edgeY": 0.001
  },
  {
@@ -122,11 +122,11 @@
   "mode": "stroke-join",
   "w": 50,
   "h": 200,
-  "area": 352.25,
-  "clipLoss": 0,
+  "area": 339.83,
+  "clipLoss": 10.8561,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.99,
   "edgeY": 0
  },
  {
@@ -135,7 +135,7 @@
   "mode": "stroke",
   "w": 50,
   "h": 200,
-  "area": 4.32,
+  "area": 240,
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
@@ -148,10 +148,10 @@
   "mode": "stroke",
   "w": 50,
   "h": 50,
-  "area": 2.16,
-  "clipLoss": 14.4416,
-  "clipLossSolid": 12.5606,
-  "clipLossPct": 581.508,
+  "area": 118.56,
+  "clipLoss": 0,
+  "clipLossSolid": 0,
+  "clipLossPct": 0,
   "edgeX": 0,
   "edgeY": 0
  },
@@ -304,7 +304,7 @@
   "mode": "stroke",
   "w": 50,
   "h": 50,
-  "area": 339.28,
+  "area": 339.31,
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
@@ -512,11 +512,11 @@
   "mode": "stroke",
   "w": 50,
   "h": 50,
-  "area": 202.94,
-  "clipLoss": 5.5822,
-  "clipLossSolid": 2.2512,
-  "clipLossPct": 1.109,
-  "edgeX": 10.59,
+  "area": 234.26,
+  "clipLoss": 0,
+  "clipLossSolid": 0,
+  "clipLossPct": 0,
+  "edgeX": 0.009,
   "edgeY": 0
  },
  {
@@ -633,7 +633,7 @@
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.007,
   "edgeY": 0
  },
  {
@@ -646,7 +646,7 @@
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.007,
   "edgeY": 0
  },
  {
@@ -659,7 +659,7 @@
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.007,
   "edgeY": 0
  },
  {
@@ -694,11 +694,11 @@
   "mode": "stroke-join",
   "w": 50,
   "h": 86.41,
-  "area": 1237.67,
-  "clipLoss": 0.4685,
+  "area": 1243.53,
+  "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0.056,
+  "edgeX": 0,
   "edgeY": 0
  },
  {
@@ -720,12 +720,12 @@
   "mode": "stroke",
   "w": 50,
   "h": 86.29,
-  "area": 903.22,
-  "clipLoss": 3.3675,
-  "clipLossSolid": 0.6731,
-  "clipLossPct": 0.075,
+  "area": 932.67,
+  "clipLoss": 0,
+  "clipLossSolid": 0,
+  "clipLossPct": 0,
   "edgeX": 0,
-  "edgeY": 6.824
+  "edgeY": 0
  },
  {
   "slug": "overlapping-hexagons",
@@ -1050,7 +1050,7 @@
   "clipLossSolid": 0,
   "clipLossPct": 0,
   "edgeX": 0,
-  "edgeY": 0
+  "edgeY": 0.001
  },
  {
   "slug": "japanese-pattern-2",
@@ -1076,7 +1076,7 @@
   "clipLossSolid": 0,
   "clipLossPct": 0,
   "edgeX": 0,
-  "edgeY": 0
+  "edgeY": 0.001
  },
  {
   "slug": "japanese-pattern-4",
@@ -1123,7 +1123,7 @@
   "mode": "stroke",
   "w": 50,
   "h": 50,
-  "area": 417.58,
+  "area": 418.03,
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
@@ -1253,10 +1253,10 @@
   "mode": "stroke",
   "w": 50,
   "h": 50,
-  "area": 218.67,
-  "clipLoss": 3.5401,
-  "clipLossSolid": 2.4359,
-  "clipLossPct": 1.114,
+  "area": 218.55,
+  "clipLoss": 3.5396,
+  "clipLossSolid": 2.4375,
+  "clipLossPct": 1.115,
   "edgeX": 4.905,
   "edgeY": 0
  },
@@ -1280,9 +1280,9 @@
   "w": 50,
   "h": 26,
   "area": 712.63,
-  "clipLoss": 148.9147,
-  "clipLossSolid": 144.6487,
-  "clipLossPct": 20.298,
+  "clipLoss": 143.204,
+  "clipLossSolid": 139.2402,
+  "clipLossPct": 19.539,
   "edgeX": 0,
   "edgeY": 8.967
  },
@@ -1292,11 +1292,11 @@
   "mode": "stroke",
   "w": 50,
   "h": 26,
-  "area": 404.87,
-  "clipLoss": 107.4987,
-  "clipLossSolid": 105.3062,
-  "clipLossPct": 26.01,
-  "edgeX": 0,
+  "area": 404.86,
+  "clipLoss": 98.209,
+  "clipLossSolid": 96.2984,
+  "clipLossPct": 23.785,
+  "edgeX": 0.001,
   "edgeY": 3.265
  },
  {
@@ -1604,11 +1604,11 @@
   "mode": "stroke-join",
   "w": 50,
   "h": 50,
-  "area": 464.96,
-  "clipLoss": 0,
-  "clipLossSolid": 0,
-  "clipLossPct": 0,
-  "edgeX": 0,
+  "area": 456.65,
+  "clipLoss": 16.2823,
+  "clipLossSolid": 13.955,
+  "clipLossPct": 3.056,
+  "edgeX": 0.001,
   "edgeY": 0
  },
  {
@@ -1708,11 +1708,11 @@
   "mode": "stroke-join",
   "w": 50,
   "h": 50,
-  "area": 164.81,
-  "clipLoss": 0,
+  "area": 164.8,
+  "clipLoss": 0.0075,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.1,
   "edgeY": 0
  },
  {
@@ -1825,11 +1825,11 @@
   "mode": "stroke",
   "w": 50,
   "h": 57.74,
-  "area": 205.02,
+  "area": 204.83,
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.005,
   "edgeY": 0
  },
  {
@@ -1881,7 +1881,7 @@
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.001,
   "edgeY": 0
  },
  {
@@ -2176,12 +2176,12 @@
   "mode": "stroke",
   "w": 50,
   "h": 57.73,
-  "area": 247.8,
+  "area": 247.81,
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
   "edgeX": 0,
-  "edgeY": 0.002
+  "edgeY": 0.01
  },
  {
   "slug": "rectangles-and-squares-1",
@@ -3554,12 +3554,12 @@
   "mode": "stroke",
   "w": 50,
   "h": 39.53,
-  "area": 404.53,
+  "area": 404.52,
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
   "edgeX": 0,
-  "edgeY": 0
+  "edgeY": 0.212
  },
  {
   "slug": "circles-16",
@@ -3610,7 +3610,7 @@
   "clipLoss": 0.0001,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.048,
   "edgeY": 0.08
  },
  {
@@ -3827,12 +3827,12 @@
   "mode": "stroke",
   "w": 50,
   "h": 50,
-  "area": 387.25,
-  "clipLoss": 0,
+  "area": 380.43,
+  "clipLoss": 18.9657,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
-  "edgeY": 0
+  "edgeX": 0.14,
+  "edgeY": 0.14
  },
  {
   "slug": "triangles-21",
@@ -3948,7 +3948,7 @@
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
-  "edgeX": 0,
+  "edgeX": 0.001,
   "edgeY": 0
  },
  {
@@ -4256,12 +4256,12 @@
   "mode": "stroke",
   "w": 50,
   "h": 50,
-  "area": 651.25,
+  "area": 651.21,
   "clipLoss": 0,
   "clipLossSolid": 0,
   "clipLossPct": 0,
   "edgeX": 0,
-  "edgeY": 0
+  "edgeY": 0.083
  },
  {
   "slug": "diamonds-14",

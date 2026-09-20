@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-fermatSpirals",
+  "title": "Stitched Fermat spirals",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "fermatSpirals"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 513,
+  "cutInv": 66,
+  "w50": {
+   "parts": 25,
+   "thin": 33,
+   "volume": 10374.8,
+   "lost": 0.0002,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50f": {
+   "parts": 15,
+   "thin": 16,
+   "volume": 11720.2,
+   "lost": 0.0002,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 14227.5,
+   "lost": 0.0423,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14042,
+   "lost": 0.0423,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10470.3,
+   "lost": 0.0008,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11741.5,
+   "lost": 0.0008,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25i": {
+   "parts": 2,
+   "thin": 10,
+   "volume": 13904.7,
+   "lost": 0.0025,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25if": {
+   "parts": 2,
+   "thin": 3,
+   "volume": 13871.8,
+   "lost": 0.0025,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  }
+ }
+]

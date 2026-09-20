@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-penrose",
+  "title": "Penrose medallion",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "penrose"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 2162,
+  "cutInv": 1,
+  "w50": {
+   "parts": 294,
+   "thin": 294,
+   "volume": 11135.4,
+   "lost": 0,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50f": {
+   "parts": 242,
+   "thin": 242,
+   "volume": 11864.8,
+   "lost": 0,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13416.5,
+   "lost": 0.0373,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13916.9,
+   "lost": 0.0373,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w25": {
+   "parts": 162,
+   "thin": 178,
+   "volume": 12524.2,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25f": {
+   "parts": 125,
+   "thin": 132,
+   "volume": 13116.8,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11969.7,
+   "lost": 0.0199,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12604.7,
+   "lost": 0.0199,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  }
+ }
+]

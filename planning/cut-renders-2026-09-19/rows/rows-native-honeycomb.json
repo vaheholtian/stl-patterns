@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-honeycomb",
+  "title": "Honeycomb",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "honeycomb"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 1282,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10514.5,
+   "lost": 0.0045,
+   "broken": false,
+   "tile": "53.2 x 52.7 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11313.5,
+   "lost": 0.0045,
+   "broken": false,
+   "tile": "53.2 x 52.7 mm"
+  },
+  "w50i": {
+   "parts": 158,
+   "thin": 170,
+   "volume": 13865.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "53.2 x 52.7 mm"
+  },
+  "w50if": {
+   "parts": 117,
+   "thin": 119,
+   "volume": 14305.6,
+   "lost": 0,
+   "broken": true,
+   "tile": "53.2 x 52.7 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10520.8,
+   "lost": 0.0044,
+   "broken": false,
+   "tile": "22.8 x 26.3 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11313.3,
+   "lost": 0.0044,
+   "broken": false,
+   "tile": "22.8 x 26.3 mm"
+  },
+  "w25i": {
+   "parts": 145,
+   "thin": 158,
+   "volume": 13859.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "22.8 x 26.3 mm"
+  },
+  "w25if": {
+   "parts": 117,
+   "thin": 119,
+   "volume": 14305.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "22.8 x 26.3 mm"
+  }
+ }
+]

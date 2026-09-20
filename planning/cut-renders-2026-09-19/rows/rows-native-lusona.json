@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-lusona",
+  "title": "Mirror curves / lusona",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "lusona"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 762,
+  "cutInv": 1,
+  "w50": {
+   "parts": 98,
+   "thin": 194,
+   "volume": 13100.6,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 87,
+   "thin": 142,
+   "volume": 13696.9,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11370.5,
+   "lost": 0.0164,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12006.4,
+   "lost": 0.0164,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 8738.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9668.6,
+   "lost": 0,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15860.1,
+   "lost": 0.074,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16147.8,
+   "lost": 0.074,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

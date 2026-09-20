@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-hankin",
+  "title": "Islamic star strapwork",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "hankin"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 362,
+  "cutInv": 1,
+  "w50": {
+   "parts": 54,
+   "thin": 58,
+   "volume": 15094.4,
+   "lost": 0.0009,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 53,
+   "thin": 53,
+   "volume": 15166.6,
+   "lost": 0.0009,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9313,
+   "lost": 0.0054,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10481.3,
+   "lost": 0.0054,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 258,
+   "thin": 258,
+   "volume": 11760.2,
+   "lost": 0.0021,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 195,
+   "thin": 195,
+   "volume": 12424.4,
+   "lost": 0.0021,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12775.8,
+   "lost": 0.0274,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13341.1,
+   "lost": 0.0274,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

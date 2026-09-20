@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-truchet",
+  "title": "Truchet tiling",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "truchet"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 45,
+  "cutInv": 45,
+  "w50": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 14799.5,
+   "lost": 0.0005,
+   "broken": true,
+   "tile": "48.0 x 48.0 mm"
+  },
+  "w50f": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 15136.5,
+   "lost": 0.0005,
+   "broken": true,
+   "tile": "48.0 x 48.0 mm"
+  },
+  "w50i": {
+   "parts": 5,
+   "thin": 6,
+   "volume": 9553.5,
+   "lost": 0,
+   "broken": true,
+   "tile": "48.0 x 48.0 mm"
+  },
+  "w50if": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 10460.2,
+   "lost": 0,
+   "broken": true,
+   "tile": "48.0 x 48.0 mm"
+  },
+  "w25": {
+   "parts": 5,
+   "thin": 9,
+   "volume": 14811,
+   "lost": 0.0005,
+   "broken": true,
+   "tile": "24.0 x 24.0 mm"
+  },
+  "w25f": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 15125.2,
+   "lost": 0.0005,
+   "broken": true,
+   "tile": "24.0 x 24.0 mm"
+  },
+  "w25i": {
+   "parts": 5,
+   "thin": 9,
+   "volume": 9542.2,
+   "lost": 0,
+   "broken": true,
+   "tile": "24.0 x 24.0 mm"
+  },
+  "w25if": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 10471.6,
+   "lost": 0,
+   "broken": true,
+   "tile": "24.0 x 24.0 mm"
+  }
+ }
+]

@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-hilbert",
+  "title": "Hilbert curve",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "hilbert"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 634,
+  "cutInv": 6,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12631,
+   "lost": 0.0027,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13331.7,
+   "lost": 0.0027,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 11780,
+   "lost": 0.0054,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12313.8,
+   "lost": 0.0054,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 7162.7,
+   "lost": 0.0032,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8484.1,
+   "lost": 0.0032,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 17859.9,
+   "lost": 0.3005,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17686.2,
+   "lost": 0.3005,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

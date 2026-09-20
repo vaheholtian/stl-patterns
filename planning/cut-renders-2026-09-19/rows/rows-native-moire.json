@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-moire",
+  "title": "Moire lines",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "moire"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 2,
+  "cutInv": 1,
+  "w50": {
+   "parts": 258,
+   "thin": 258,
+   "volume": 7220.5,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 187,
+   "thin": 187,
+   "volume": 8271.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18391.6,
+   "lost": 0.6794,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18454.9,
+   "lost": 0.6794,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 274,
+   "thin": 274,
+   "volume": 7389.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 183,
+   "thin": 183,
+   "volume": 8418.2,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18156.1,
+   "lost": 0.5906,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18247.8,
+   "lost": 0.5906,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

@@ -1,0 +1,1333 @@
+[
+ {
+  "slug": "memphis-1",
+  "title": "Memphis Pattern - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 4,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17985.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16812.4,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "memphis-2",
+  "title": "Memphis Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18053.8,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18793.4,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "memphis-3",
+  "title": "Memphis Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17705.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18266.7,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "memphis-4",
+  "title": "Memphis Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 4,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16165,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16807,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "memphis-5",
+  "title": "Memphis Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 4,
+  "w50": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 17321.5,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25": {
+   "parts": 9,
+   "thin": 9,
+   "volume": 17446.9,
+   "pieces": 9,
+   "broken": true
+  }
+ },
+ {
+  "slug": "memphis-6",
+  "title": "Memphis Pattern - 6",
+  "mode": "fill",
+  "tags": [
+   "memphis pattern"
+  ],
+  "layers": 4,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16249.9,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16811.6,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "greek-key",
+  "title": "Greek Key",
+  "mode": "stroke-join",
+  "tags": [
+   "greek key",
+   "country"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15979.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12877.1,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "chinese-1",
+  "title": "Chinese Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 25,
+   "thin": 30,
+   "volume": 13300.5,
+   "pieces": 25,
+   "broken": true
+  },
+  "w25": {
+   "parts": 49,
+   "thin": 49,
+   "volume": 13690.9,
+   "pieces": 145,
+   "broken": true
+  }
+ },
+ {
+  "slug": "chinese-2",
+  "title": "Chinese Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 18,
+   "thin": 18,
+   "volume": 15046.6,
+   "pieces": 18,
+   "broken": true
+  },
+  "w25": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 17098.4,
+   "pieces": 4,
+   "broken": true
+  }
+ },
+ {
+  "slug": "chinese-3",
+  "title": "Chinese Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 21,
+   "thin": 21,
+   "volume": 11817,
+   "pieces": 21,
+   "broken": true
+  },
+  "w25": {
+   "parts": 73,
+   "thin": 73,
+   "volume": 12217.6,
+   "pieces": 73,
+   "broken": true
+  }
+ },
+ {
+  "slug": "chinese-4",
+  "title": "Chinese Pattern - 4",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 16019.3,
+   "pieces": 26,
+   "broken": true
+  },
+  "w25": {
+   "parts": 154,
+   "thin": 154,
+   "volume": 13117,
+   "pieces": 154,
+   "broken": true
+  }
+ },
+ {
+  "slug": "chinese-5",
+  "title": "Chinese Pattern - 5",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 4,
+  "w50": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 16552.8,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25": {
+   "parts": 66,
+   "thin": 66,
+   "volume": 14083,
+   "pieces": 70,
+   "broken": true
+  }
+ },
+ {
+  "slug": "chinese-6",
+  "title": "Chinese Pattern - 6",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 70,
+   "thin": 70,
+   "volume": 15659.1,
+   "pieces": 70,
+   "broken": true
+  },
+  "w25": {
+   "parts": 290,
+   "thin": 290,
+   "volume": 12339.4,
+   "pieces": 410,
+   "broken": true
+  }
+ },
+ {
+  "slug": "chinese-7",
+  "title": "Chinese Pattern - 7",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 13,
+   "thin": 22,
+   "volume": 16570.4,
+   "pieces": 13,
+   "broken": true
+  },
+  "w25": {
+   "parts": 122,
+   "thin": 122,
+   "volume": 14239.5,
+   "pieces": 130,
+   "broken": true
+  }
+ },
+ {
+  "slug": "chinese-8",
+  "title": "Chinese Pattern - 8",
+  "mode": "stroke-join",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 16913.7,
+   "pieces": 26,
+   "broken": true
+  },
+  "w25": {
+   "parts": 106,
+   "thin": 106,
+   "volume": 14985.1,
+   "pieces": 106,
+   "broken": true
+  }
+ },
+ {
+  "slug": "chinese-9",
+  "title": "Chinese Pattern - 9",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 81,
+   "thin": 81,
+   "volume": 9748.6,
+   "pieces": 81,
+   "broken": true
+  },
+  "w25": {
+   "parts": 25,
+   "thin": 58,
+   "volume": 10647.3,
+   "pieces": 121,
+   "broken": true
+  }
+ },
+ {
+  "slug": "new-1",
+  "title": "New Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14894.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15434.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "new-2",
+  "title": "New Pattern - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 18346.4,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 17241.7,
+   "pieces": 4,
+   "broken": true
+  }
+ },
+ {
+  "slug": "new-3",
+  "title": "New Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18121.1,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 37,
+   "volume": 18117.4,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "new-4",
+  "title": "New Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 4,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13111.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13399.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "new-5",
+  "title": "New Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12541.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12344.7,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "new-6",
+  "title": "New Pattern - 6",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18172.4,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 14,
+   "thin": 14,
+   "volume": 17135.5,
+   "pieces": 14,
+   "broken": true
+  }
+ },
+ {
+  "slug": "new-7",
+  "title": "New Pattern - 7",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15866.1,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14858.7,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "new-8",
+  "title": "New Pattern - 8",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 17356.3,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25": {
+   "parts": 33,
+   "thin": 38,
+   "volume": 15625.8,
+   "pieces": 33,
+   "broken": true
+  }
+ },
+ {
+  "slug": "new-9",
+  "title": "New Pattern - 9",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 18021.4,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25": {
+   "parts": 25,
+   "thin": 25,
+   "volume": 17002.4,
+   "pieces": 25,
+   "broken": true
+  }
+ },
+ {
+  "slug": "new-10",
+  "title": "New Pattern - 10",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 11349.9,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25": {
+   "parts": 17,
+   "thin": 17,
+   "volume": 11190.9,
+   "pieces": 17,
+   "broken": true
+  }
+ },
+ {
+  "slug": "new-11",
+  "title": "New Pattern - 11",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 6,
+   "thin": 14,
+   "volume": 11602.3,
+   "pieces": 6,
+   "broken": true
+  },
+  "w25": {
+   "parts": 54,
+   "thin": 58,
+   "volume": 11812.2,
+   "pieces": 54,
+   "broken": true
+  }
+ },
+ {
+  "slug": "new-12",
+  "title": "New Pattern - 12",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 10333.7,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 18,
+   "volume": 10273.5,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "new-13",
+  "title": "New Pattern - 13",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13200.4,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13345.4,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "new-14",
+  "title": "New Pattern - 14",
+  "mode": "fill",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 10,
+   "volume": 12217.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 66,
+   "volume": 12285.6,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "new-15",
+  "title": "New Pattern - 15",
+  "mode": "stroke",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 17871.8,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 10,
+   "thin": 14,
+   "volume": 17119.5,
+   "pieces": 10,
+   "broken": true
+  }
+ },
+ {
+  "slug": "new-16",
+  "title": "New Pattern - 16",
+  "mode": "stroke-join",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 9,
+   "thin": 22,
+   "volume": 16474.3,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25": {
+   "parts": 114,
+   "thin": 114,
+   "volume": 14142.9,
+   "pieces": 114,
+   "broken": true
+  }
+ },
+ {
+  "slug": "new-17",
+  "title": "New Pattern - 17",
+  "mode": "stroke",
+  "tags": [
+   "new pattern"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 17647.7,
+   "pieces": 6,
+   "broken": true
+  },
+  "w25": {
+   "parts": 26,
+   "thin": 38,
+   "volume": 16271.5,
+   "pieces": 26,
+   "broken": true
+  }
+ },
+ {
+  "slug": "double-bubble-1",
+  "title": "Double Bubble - 1",
+  "mode": "fill",
+  "tags": [
+   "double bubbles"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12989.7,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12890,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "double-bubble-2",
+  "title": "Double Bubble - 2",
+  "mode": "stroke",
+  "tags": [
+   "double bubbles"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 9,
+   "thin": 9,
+   "volume": 16764.7,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25": {
+   "parts": 41,
+   "thin": 41,
+   "volume": 14569.7,
+   "pieces": 41,
+   "broken": true
+  }
+ },
+ {
+  "slug": "stars-1",
+  "title": "Stars - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "stars"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 18480.4,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25": {
+   "parts": 17,
+   "thin": 17,
+   "volume": 18030.7,
+   "pieces": 17,
+   "broken": true
+  }
+ },
+ {
+  "slug": "stars-2",
+  "title": "Stars - 2",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18475.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18488.5,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "stars-3",
+  "title": "Stars - 3",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18075.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18089.7,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "stars-4",
+  "title": "Stars - 4",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18027.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18081.5,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "stars-5",
+  "title": "Stars - 5",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17652.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17722.1,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "stars-6",
+  "title": "Stars - 6",
+  "mode": "fill",
+  "tags": [
+   "stars"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 1,
+   "thin": 25,
+   "volume": 17870.8,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18786.6,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "semicircles-1",
+  "title": "Semicircles - 1",
+  "mode": "fill",
+  "tags": [
+   "semicircles"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 18,
+   "volume": 8142.7,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 98,
+   "volume": 8282.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "songket-1",
+  "title": "Songket Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "songket pattern",
+   "malaysia"
+  ],
+  "layers": 4,
+  "w50": {
+   "parts": 21,
+   "thin": 21,
+   "volume": 15123.1,
+   "pieces": 21,
+   "broken": true
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18202.5,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "christmas-tree-1",
+  "title": "Christmas Tree - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "tree",
+   "holidays"
+  ],
+  "layers": 4,
+  "w50": {
+   "parts": 17,
+   "thin": 17,
+   "volume": 15859,
+   "pieces": 41,
+   "broken": true
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16304.8,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "candy-cane-1",
+  "title": "Candy Cane - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "candy",
+   "cane",
+   "holidays",
+   "santaclaus"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16934.1,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17285,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "christmas-bells-1",
+  "title": "Christmas Bells - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "santaclaus"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16289.5,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16283.1,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "christmas-pattern-1",
+  "title": "Christmas Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15565.2,
+   "pieces": 29,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16506.8,
+   "pieces": 49,
+   "broken": false
+  }
+ },
+ {
+  "slug": "christmas-pattern-2",
+  "title": "Christmas Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15776.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16609.5,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "christmas-pattern-3",
+  "title": "Christmas Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 9,
+   "thin": 9,
+   "volume": 15881.2,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16470.8,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "snowflakes-1",
+  "title": "Snowflakes - 1",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "snowflakes",
+   "holidays",
+   "winter",
+   "santaclaus"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 5,
+   "volume": 16598.7,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18423,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "christmas-tree-balls",
+  "title": "Christmas Tree Balls",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "tree",
+   "holidays",
+   "santaclaus"
+  ],
+  "layers": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15231.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15351.5,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "santa-claus",
+  "title": "Santa Claus",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "holidays",
+   "winter",
+   "santaclaus"
+  ],
+  "layers": 4,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16946.9,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15828.1,
+   "pieces": 17,
+   "broken": false
+  }
+ },
+ {
+  "slug": "christmas-gift",
+  "title": "Christmas Gift",
+  "mode": "fill",
+  "tags": [
+   "christmas",
+   "jingle",
+   "bells",
+   "holidays",
+   "tree",
+   "gift",
+   "leaves",
+   "santaclaus"
+  ],
+  "layers": 3,
+  "w50": {
+   "parts": 29,
+   "thin": 29,
+   "volume": 13763.2,
+   "pieces": 29,
+   "broken": true
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14804.9,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "cubes-1",
+  "title": "Cubes - 1",
+  "mode": "stroke",
+  "tags": [
+   "cubes",
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 16030.5,
+   "pieces": 26,
+   "broken": true
+  },
+  "w25": {
+   "parts": 118,
+   "thin": 118,
+   "volume": 13089.3,
+   "pieces": 118,
+   "broken": true
+  }
+ },
+ {
+  "slug": "cubes-2",
+  "title": "Cubes - 2",
+  "mode": "stroke",
+  "tags": [
+   "cubes",
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "w50": {
+   "parts": 18,
+   "thin": 18,
+   "volume": 16592.1,
+   "pieces": 18,
+   "broken": true
+  },
+  "w25": {
+   "parts": 86,
+   "thin": 86,
+   "volume": 14394.9,
+   "pieces": 86,
+   "broken": true
+  }
+ }
+]

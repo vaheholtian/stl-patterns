@@ -52,15 +52,23 @@ export function strokePolyline(points: Pt[], closed: boolean, width: number): Pt
   if (n === 1) return [circle(pts[0], r)]
   // per-vertex offset direction: averaged edge normals with a miter limit
   const left: Pt[] = [], right: Pt[] = []
+  // A turn past about 151 degrees has no usable shared offset: at a
+  // full reversal the normals cancel, and the strips built on it twist into
+  // bowties whose reversed lobe erases the stroke and, under NonZero, whatever
+  // stroke it overlaps. Strips meeting at such a hairpin end square on their
+  // own segment instead, and the corner disc below fills the join.
+  const hairpin: boolean[] = []
   const edgeNormal = (a: Pt, b: Pt): Pt => { const l = segLen(a, b); return [-(b[1] - a[1]) / l, (b[0] - a[0]) / l] }
   for (let i = 0; i < n; i++) {
     const hasPrev = closed || i > 0, hasNext = closed || i < n - 1
     const nPrev = hasPrev ? edgeNormal(pts[(i - 1 + n) % n], pts[i]) : null
     const nNext = hasNext ? edgeNormal(pts[i], pts[(i + 1) % n]) : null
     let nx: number, ny: number
+    hairpin.push(false)
     if (nPrev && nNext) {
       nx = nPrev[0] + nNext[0]; ny = nPrev[1] + nNext[1]
       const l = Math.hypot(nx, ny)
+      if (l < 0.5) hairpin[i] = true
       if (l < 1e-6) { nx = nNext[0]; ny = nNext[1] } else {
         // miter length = 1/cos(theta/2) = 2/l ; clamp to 2 (round-ish joins are added below for sharp turns)
         const miter = Math.min(2 / l, 2)
@@ -79,7 +87,17 @@ export function strokePolyline(points: Pt[], closed: boolean, width: number): Pt
     return out
   }
   const loops: Pt[][] = []
-  if (!closed) {
+  if (hairpin.some(Boolean)) {
+    // strips, as for a closed path, but square-ended at hairpins; an open
+    // path's round caps become discs
+    for (let i = 0; i < (closed ? n : n - 1); i++) {
+      const j = (i + 1) % n
+      const [nx, ny] = edgeNormal(pts[i], pts[j])
+      const off = (k: number, s: number): Pt => [pts[k][0] + s * nx * r, pts[k][1] + s * ny * r]
+      loops.push([hairpin[i] ? off(i, 1) : left[i], hairpin[j] ? off(j, 1) : left[j], hairpin[j] ? off(j, -1) : right[j], hairpin[i] ? off(i, -1) : right[i]])
+    }
+    if (!closed) loops.push(circle(pts[0], r), circle(pts[n - 1], r))
+  } else if (!closed) {
     const loop: Pt[] = [...left]
     // end cap: from left to right around the last point
     const e = pts[n - 1], le = left[n - 1]

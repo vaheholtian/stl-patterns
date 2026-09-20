@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-arrowhead",
+  "title": "Sierpiński arrowhead",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "arrowhead"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 66,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16115.7,
+   "lost": 0.0043,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16638.2,
+   "lost": 0.0043,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 8257.4,
+   "lost": 0.0005,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8972.2,
+   "lost": 0.0005,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w25": {
+   "parts": 65,
+   "thin": 65,
+   "volume": 14778.9,
+   "lost": 0.0046,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25f": {
+   "parts": 39,
+   "thin": 39,
+   "volume": 15669,
+   "lost": 0.0046,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 9977.3,
+   "lost": 0.0349,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25if": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 10229.6,
+   "lost": 0.0349,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  }
+ }
+]

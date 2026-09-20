@@ -382,7 +382,7 @@ function Panels(props: PanelProps) {
      opposite answers. So the control is held at the measured orientation instead
      of sitting on whichever way its generator happened to be written, which for
      four of them was the side that shatters the box. It is a strong default, not
-     a prohibition: the measurement is one box at one scale, so it can be unlocked. */
+     a prohibition: the measurement is at default parameters on a plain ring of wall, so it can be unlocked. */
   const advice = cutAdviceFor(gen ?? undefined, resolved.params)
   const [unlockedInvert, setUnlockedInvert] = useState(false)
   // an unlock belongs to the pattern it was granted for, so drop it when the
@@ -464,7 +464,7 @@ function Panels(props: PanelProps) {
         </div>
         {advice && advice.good !== null && (
           <div className="muted">
-            {advice.good ? 'Inverted' : 'As drawn'} is the orientation that leaves a cut box in one printable piece; the other falls into {advice.good ? advice.plain : advice.inverted} loose pieces on a closed 50 mm box.{' '}
+            {advice.good ? 'Inverted' : 'As drawn'} is the orientation that leaves a cut box in one printable piece; the other falls into {advice.good ? advice.plain : advice.inverted} loose pieces on a box wall four repeats around.{' '}
             {invertLocked
               ? <button type="button" className="as-link" onClick={() => setUnlockedInvert(true)}>Unlock anyway</button>
               : 'Unlocked, so you can set it either way.'}

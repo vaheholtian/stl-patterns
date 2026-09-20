@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-gosper",
+  "title": "Gosper / flowsnake",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "gosper"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 66,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16158.6,
+   "lost": 0.0064,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16367.3,
+   "lost": 0.0064,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 8225.4,
+   "lost": 0.0012,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9258.9,
+   "lost": 0.0012,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 25,
+   "volume": 13630.3,
+   "lost": 0.0114,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 15,
+   "volume": 14512.8,
+   "lost": 0.0114,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 10899.4,
+   "lost": 0.0119,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25if": {
+   "parts": 7,
+   "thin": 7,
+   "volume": 11225.8,
+   "lost": 0.0119,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  }
+ }
+]

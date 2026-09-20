@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-koch",
+  "title": "Koch fractal",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "koch"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 18,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14361.1,
+   "lost": 0.0087,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15122.9,
+   "lost": 0.0087,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 10050,
+   "lost": 0.0011,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10518,
+   "lost": 0.0011,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13776.6,
+   "lost": 0.0101,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15002.2,
+   "lost": 0.0101,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 10642,
+   "lost": 0.0012,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 7,
+   "thin": 7,
+   "volume": 10650.9,
+   "lost": 0.0012,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

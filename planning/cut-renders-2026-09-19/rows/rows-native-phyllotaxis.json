@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-phyllotaxis",
+  "title": "Phyllotaxis spiral",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "phyllotaxis"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 2,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17921.5,
+   "lost": 0.0384,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18044.5,
+   "lost": 0.0384,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 42,
+   "thin": 42,
+   "volume": 6465,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 34,
+   "thin": 34,
+   "volume": 7579.8,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18012.2,
+   "lost": 0.0381,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18071.5,
+   "lost": 0.0381,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 18,
+   "thin": 18,
+   "volume": 6378.6,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 13,
+   "thin": 13,
+   "volume": 7548.6,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

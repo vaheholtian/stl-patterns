@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-terdragon",
+  "title": "Terdragon",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "terdragon"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 66,
+  "w50": {
+   "parts": 79,
+   "thin": 79,
+   "volume": 15716.9,
+   "lost": 0.0029,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50f": {
+   "parts": 39,
+   "thin": 39,
+   "volume": 17191.5,
+   "lost": 0.0029,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 8733.4,
+   "lost": 0.0096,
+   "broken": true,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8457,
+   "lost": 0.0096,
+   "broken": false,
+   "tile": "100.0 x 100.0 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13351.6,
+   "lost": 0.0093,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14558.8,
+   "lost": 0.0093,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 11103.2,
+   "lost": 0.0056,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25if": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 11125,
+   "lost": 0.0056,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  }
+ }
+]

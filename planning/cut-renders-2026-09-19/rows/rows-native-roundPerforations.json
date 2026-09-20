@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-roundPerforations",
+  "title": "Round perforations",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "roundPerforations"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 1282,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11279.7,
+   "lost": 0.0006,
+   "broken": false,
+   "tile": "53.2 x 52.7 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12015,
+   "lost": 0.0006,
+   "broken": false,
+   "tile": "53.2 x 52.7 mm"
+  },
+  "w50i": {
+   "parts": 158,
+   "thin": 170,
+   "volume": 13075.8,
+   "lost": 0,
+   "broken": true,
+   "tile": "53.2 x 52.7 mm"
+  },
+  "w50if": {
+   "parts": 119,
+   "thin": 119,
+   "volume": 13581.4,
+   "lost": 0,
+   "broken": true,
+   "tile": "53.2 x 52.7 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11286.4,
+   "lost": 0.0006,
+   "broken": false,
+   "tile": "22.8 x 26.3 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12015.1,
+   "lost": 0.0006,
+   "broken": false,
+   "tile": "22.8 x 26.3 mm"
+  },
+  "w25i": {
+   "parts": 158,
+   "thin": 158,
+   "volume": 13069.2,
+   "lost": 0,
+   "broken": true,
+   "tile": "22.8 x 26.3 mm"
+  },
+  "w25if": {
+   "parts": 119,
+   "thin": 119,
+   "volume": 13581.3,
+   "lost": 0,
+   "broken": true,
+   "tile": "22.8 x 26.3 mm"
+  }
+ }
+]

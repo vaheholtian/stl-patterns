@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-unicursalMaze",
+  "title": "Periodic maze",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "unicursalMaze"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 10,
+  "cutInv": 1,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15853.9,
+   "lost": 0.001,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16248.7,
+   "lost": 0.001,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8527,
+   "lost": 0.0022,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9367.7,
+   "lost": 0.0022,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 12815.9,
+   "lost": 0.0012,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13434,
+   "lost": 0.0012,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11596.6,
+   "lost": 0.0074,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12216.9,
+   "lost": 0.0074,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

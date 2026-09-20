@@ -1,0 +1,1442 @@
+{
+ "library": {
+  "waves-1": [
+   17,
+   18
+  ],
+  "waves-2": [
+   17,
+   18
+  ],
+  "waves-3": [
+   17,
+   18
+  ],
+  "waves-4": [
+   3,
+   4
+  ],
+  "waves-5": [
+   9,
+   10
+  ],
+  "waves-6": [
+   9,
+   10
+  ],
+  "waves-7": [
+   9,
+   9
+  ],
+  "chevron-1": [
+   17,
+   18
+  ],
+  "chevron-2": [
+   17,
+   18
+  ],
+  "chevron-3": [
+   17,
+   18
+  ],
+  "straight-lines": [
+   17,
+   18
+  ],
+  "cross-section": [
+   14,
+   1
+  ],
+  "brick-wall-1": [
+   30,
+   1
+  ],
+  "brick-wall-2": [
+   1,
+   58
+  ],
+  "herringbone-1": [
+   58,
+   1
+  ],
+  "herringbone-2": [
+   58,
+   1
+  ],
+  "herringbone-3": [
+   62,
+   62
+  ],
+  "herringbone-4": [
+   62,
+   62
+  ],
+  "herringbone-5": [
+   62,
+   62
+  ],
+  "herringbone-6": [
+   62,
+   62
+  ],
+  "herringbone-7": [
+   126,
+   1
+  ],
+  "herringbone-8": [
+   122,
+   1
+  ],
+  "flower-1": [
+   1,
+   30
+  ],
+  "flower-2": [
+   94,
+   1
+  ],
+  "flower-3": [
+   1,
+   274
+  ],
+  "flower-4": [
+   29,
+   286
+  ],
+  "flower-5": [
+   13,
+   158
+  ],
+  "flower-6": [
+   1,
+   122
+  ],
+  "flower-7": [
+   129,
+   202
+  ],
+  "plus-1": [
+   1,
+   18
+  ],
+  "plus-2": [
+   1,
+   30
+  ],
+  "plus-3": [
+   1,
+   122
+  ],
+  "plus-4": [
+   1,
+   122
+  ],
+  "circles-1": [
+   29,
+   30
+  ],
+  "circles-2": [
+   1,
+   30
+  ],
+  "circles-3": [
+   17,
+   18
+  ],
+  "circles-4": [
+   1,
+   18
+  ],
+  "circles-5": [
+   1,
+   58
+  ],
+  "circles-6": [
+   57,
+   58
+  ],
+  "circles-7": [
+   89,
+   30
+  ],
+  "concentric-circles-1": [
+   1,
+   122
+  ],
+  "concentric-circles-2": [
+   1,
+   242
+  ],
+  "concentric-circles-3": [
+   1,
+   362
+  ],
+  "adjointed-circles": [
+   94,
+   1
+  ],
+  "adjointed-diamonds": [
+   94,
+   1
+  ],
+  "diamonds-1": [
+   58,
+   1
+  ],
+  "diamonds-2": [
+   9,
+   10
+  ],
+  "diamonds-3": [
+   242,
+   1
+  ],
+  "hexagon-1": [
+   30,
+   1
+  ],
+  "hexagon-2": [
+   58,
+   29
+  ],
+  "hexagon-3": [
+   86,
+   57
+  ],
+  "hexagon-4": [
+   130,
+   58
+  ],
+  "hexagon-5": [
+   58,
+   1
+  ],
+  "hexagon-6": [
+   370,
+   1
+  ],
+  "hexagon-7": [
+   370,
+   1
+  ],
+  "hexagon-8": [
+   386,
+   1
+  ],
+  "overlapping-hexagons": [
+   242,
+   1
+  ],
+  "squares-and-squares-1": [
+   66,
+   66
+  ],
+  "squares-and-squares-2": [
+   162,
+   162
+  ],
+  "squares-and-diamonds": [
+   66,
+   66
+  ],
+  "squares-and-circles-1": [
+   66,
+   66
+  ],
+  "squares-and-circles-2": [
+   314,
+   314
+  ],
+  "squares-and-plus-1": [
+   66,
+   66
+  ],
+  "squares-and-plus-2": [
+   418,
+   418
+  ],
+  "squares-and-stars-1": [
+   66,
+   66
+  ],
+  "squares-and-stars-2": [
+   66,
+   34
+  ],
+  "stars-and-lines-1": [
+   34,
+   1
+  ],
+  "stars-and-lines-2": [
+   26,
+   9
+  ],
+  "triangles-1": [
+   66,
+   66
+  ],
+  "triangles-2": [
+   66,
+   66
+  ],
+  "triangles-3": [
+   66,
+   66
+  ],
+  "triangles-4": [
+   58,
+   1
+  ],
+  "triangles-5": [
+   129,
+   66
+  ],
+  "triangles-6": [
+   1,
+   130
+  ],
+  "triangles-7": [
+   30,
+   34
+  ],
+  "triangles-8": [
+   1,
+   34
+  ],
+  "triangles-9": [
+   69,
+   70
+  ],
+  "triangles-10": [
+   258,
+   1
+  ],
+  "inverted-triangles": [
+   65,
+   66
+  ],
+  "checkerboard": [
+   34,
+   34
+  ],
+  "japanese-pattern-1": [
+   186,
+   1
+  ],
+  "japanese-pattern-2": [
+   270,
+   1
+  ],
+  "japanese-pattern-3": [
+   94,
+   1
+  ],
+  "japanese-pattern-4": [
+   186,
+   1
+  ],
+  "japanese-pattern-5": [
+   5,
+   6
+  ],
+  "japanese-pattern-6": [
+   186,
+   93
+  ],
+  "eyes-1": [
+   58,
+   33
+  ],
+  "eyes-2": [
+   18,
+   21
+  ],
+  "eyes-3": [
+   37,
+   6
+  ],
+  "eyes-4": [
+   5,
+   6
+  ],
+  "jigsaw": [
+   58,
+   1
+  ],
+  "railroad": [
+   29,
+   1
+  ],
+  "octagons-1": [
+   29,
+   30
+  ],
+  "octagons-2": [
+   57,
+   58
+  ],
+  "lines-1": [
+   1,
+   58
+  ],
+  "lines-2": [
+   1,
+   122
+  ],
+  "scales-1": [
+   30,
+   1
+  ],
+  "scales-2": [
+   6,
+   5
+  ],
+  "scales-3": [
+   682,
+   1
+  ],
+  "scales-4": [
+   298,
+   1
+  ],
+  "leaves-1": [
+   1,
+   158
+  ],
+  "leaves-2": [
+   1,
+   130
+  ],
+  "leaves-3": [
+   129,
+   130
+  ],
+  "leaves-4": [
+   1,
+   206
+  ],
+  "leaves-5": [
+   1,
+   266
+  ],
+  "leaves-6": [
+   1,
+   274
+  ],
+  "leaves-7": [
+   1,
+   110
+  ],
+  "leaves-8": [
+   1,
+   62
+  ],
+  "pipes": [
+   13,
+   14
+  ],
+  "zebra": [
+   17,
+   1
+  ],
+  "memphis-1": [
+   1,
+   126
+  ],
+  "memphis-2": [
+   1,
+   130
+  ],
+  "memphis-3": [
+   1,
+   86
+  ],
+  "memphis-4": [
+   17,
+   142
+  ],
+  "memphis-5": [
+   13,
+   110
+  ],
+  "memphis-6": [
+   17,
+   110
+  ],
+  "greek-key": [
+   17,
+   18
+  ],
+  "chinese-1": [
+   210,
+   65
+  ],
+  "chinese-2": [
+   142,
+   1
+  ],
+  "chinese-3": [
+   85,
+   114
+  ],
+  "chinese-4": [
+   258,
+   1
+  ],
+  "chinese-5": [
+   94,
+   81
+  ],
+  "chinese-6": [
+   442,
+   1
+  ],
+  "chinese-7": [
+   186,
+   29
+  ],
+  "chinese-8": [
+   138,
+   17
+  ],
+  "chinese-9": [
+   438,
+   305
+  ],
+  "new-1": [
+   1,
+   58
+  ],
+  "new-2": [
+   10,
+   9
+  ],
+  "new-3": [
+   1,
+   498
+  ],
+  "new-4": [
+   1,
+   150
+  ],
+  "new-5": [
+   1,
+   378
+  ],
+  "new-6": [
+   30,
+   62
+  ],
+  "new-7": [
+   1,
+   18
+  ],
+  "new-8": [
+   41,
+   70
+  ],
+  "new-9": [
+   29,
+   94
+  ],
+  "new-10": [
+   17,
+   26
+  ],
+  "new-11": [
+   86,
+   1
+  ],
+  "new-12": [
+   34,
+   98
+  ],
+  "new-13": [
+   1,
+   134
+  ],
+  "new-14": [
+   90,
+   90
+  ],
+  "new-15": [
+   30,
+   1
+  ],
+  "new-16": [
+   78,
+   1
+  ],
+  "new-17": [
+   58,
+   1
+  ],
+  "double-bubble-1": [
+   1,
+   58
+  ],
+  "double-bubble-2": [
+   57,
+   58
+  ],
+  "stars-1": [
+   29,
+   30
+  ],
+  "stars-2": [
+   1,
+   30
+  ],
+  "stars-3": [
+   1,
+   122
+  ],
+  "stars-4": [
+   1,
+   250
+  ],
+  "stars-5": [
+   1,
+   242
+  ],
+  "stars-6": [
+   121,
+   122
+  ],
+  "semicircles-1": [
+   130,
+   1
+  ],
+  "songket-1": [
+   105,
+   310
+  ],
+  "christmas-tree-1": [
+   33,
+   62
+  ],
+  "candy-cane-1": [
+   1,
+   158
+  ],
+  "christmas-bells-1": [
+   1,
+   30
+  ],
+  "christmas-pattern-1": [
+   33,
+   378
+  ],
+  "christmas-pattern-2": [
+   1,
+   374
+  ],
+  "christmas-pattern-3": [
+   17,
+   154
+  ],
+  "snowflakes-1": [
+   29,
+   298
+  ],
+  "christmas-tree-balls": [
+   1,
+   130
+  ],
+  "santa-claus": [
+   33,
+   98
+  ],
+  "christmas-gift": [
+   33,
+   30
+  ],
+  "cubes-1": [
+   258,
+   1
+  ],
+  "cubes-2": [
+   194,
+   1
+  ],
+  "cubes-3": [
+   210,
+   1
+  ],
+  "stained-glass": [
+   82,
+   1
+  ],
+  "tiles-1": [
+   58,
+   1
+  ],
+  "rectangles-and-squares-1": [
+   162,
+   1
+  ],
+  "mexican-pattern-1": [
+   29,
+   222
+  ],
+  "mexican-pattern-2": [
+   86,
+   65
+  ],
+  "ethnic-pattern-1": [
+   33,
+   254
+  ],
+  "ethnic-pattern-2": [
+   17,
+   250
+  ],
+  "ethnic-pattern-3": [
+   65,
+   258
+  ],
+  "plaid-pattern-1": [
+   46,
+   126
+  ],
+  "plaid-pattern-2": [
+   1,
+   14
+  ],
+  "plaid-pattern-3": [
+   13,
+   153
+  ],
+  "plaid-pattern-4": [
+   134,
+   70
+  ],
+  "doodle-1": [
+   113,
+   282
+  ],
+  "doodle-2": [
+   0,
+   158
+  ],
+  "batik-1": [
+   178,
+   121
+  ],
+  "batik-2": [
+   17,
+   230
+  ],
+  "batik-3": [
+   1,
+   150
+  ],
+  "batik-4": [
+   141,
+   410
+  ],
+  "batik-5": [
+   1,
+   214
+  ],
+  "batik-6": [
+   1,
+   498
+  ],
+  "african-1": [
+   25,
+   57
+  ],
+  "african-2": [
+   37,
+   41
+  ],
+  "african-3": [
+   73,
+   134
+  ],
+  "african-4": [
+   61,
+   62
+  ],
+  "triangles-11": [
+   1,
+   62
+  ],
+  "hexagon-9": [
+   1,
+   62
+  ],
+  "tiles-2": [
+   30,
+   29
+  ],
+  "tiles-3": [
+   78,
+   58
+  ],
+  "tribal-1": [
+   177,
+   158
+  ],
+  "tribal-2": [
+   33,
+   30
+  ],
+  "waves-8": [
+   1,
+   182
+  ],
+  "leaves-9": [
+   1,
+   206
+  ],
+  "blobs": [
+   270,
+   17
+  ],
+  "african-5": [
+   1,
+   130
+  ],
+  "triangles-12": [
+   1,
+   770
+  ],
+  "squares-and-triangles-1": [
+   178,
+   162
+  ],
+  "tribal-3": [
+   1,
+   2
+  ],
+  "circles-8": [
+   1,
+   498
+  ],
+  "triangles-13": [
+   222,
+   222
+  ],
+  "triangles-14": [
+   5,
+   37
+  ],
+  "triangles-15": [
+   129,
+   386
+  ],
+  "triangles-16": [
+   1,
+   150
+  ],
+  "circles-9": [
+   150,
+   322
+  ],
+  "concentric-circles-4": [
+   110,
+   378
+  ],
+  "concentric-circles-5": [
+   226,
+   57
+  ],
+  "concentric-circles-6": [
+   57,
+   58
+  ],
+  "stripes-1": [
+   50,
+   34
+  ],
+  "stripes-2": [
+   22,
+   13
+  ],
+  "chevron-4": [
+   30,
+   10
+  ],
+  "chevron-5": [
+   5,
+   34
+  ],
+  "terrazzo-1": [
+   1,
+   830
+  ],
+  "geometric-1": [
+   1,
+   146
+  ],
+  "halloween-1": [
+   1,
+   322
+  ],
+  "halloween-2": [
+   1,
+   322
+  ],
+  "halloween-3": [
+   33,
+   122
+  ],
+  "halloween-4": [
+   1,
+   122
+  ],
+  "halloween-5": [
+   53,
+   98
+  ],
+  "halloween-6": [
+   49,
+   30
+  ],
+  "hexagon-10": [
+   1,
+   1
+  ],
+  "hexagon-11": [
+   1,
+   414
+  ],
+  "squares-1": [
+   554,
+   278
+  ],
+  "squares-2": [
+   46,
+   1
+  ],
+  "sprinkles-1": [
+   1,
+   174
+  ],
+  "cubes-4": [
+   62,
+   29
+  ],
+  "geometric-2": [
+   1,
+   1
+  ],
+  "geometric-3": [
+   22,
+   1
+  ],
+  "geometric-4": [
+   1,
+   2
+  ],
+  "circles-10": [
+   38,
+   22
+  ],
+  "circles-11": [
+   41,
+   42
+  ],
+  "circles-12": [
+   97,
+   210
+  ],
+  "triangles-17": [
+   90,
+   1
+  ],
+  "triangles-18": [
+   1,
+   66
+  ],
+  "geometric-5": [
+   134,
+   1
+  ],
+  "geometric-6": [
+   86,
+   193
+  ],
+  "squiggle-1": [
+   0,
+   2
+  ],
+  "moroccan-1": [
+   178,
+   306
+  ],
+  "moroccan-2": [
+   33,
+   82
+  ],
+  "japanese-pattern-7": [
+   26,
+   13
+  ],
+  "waves-9": [
+   26,
+   62
+  ],
+  "christmas-pattern-4": [
+   5,
+   98
+  ],
+  "christmas-pattern-5": [
+   9,
+   130
+  ],
+  "plaid-pattern-5": [
+   94,
+   94
+  ],
+  "plaid-pattern-6": [
+   5,
+   18
+  ],
+  "circles-13": [
+   122,
+   378
+  ],
+  "circles-14": [
+   57,
+   57
+  ],
+  "interlocked-hexagons-1": [
+   129,
+   2
+  ],
+  "interlocked-hexagons-2": [
+   1,
+   210
+  ],
+  "interlocked-hexagons-3": [
+   2,
+   0
+  ],
+  "lanterns-1": [
+   141,
+   58
+  ],
+  "leaves-10": [
+   58,
+   90
+  ],
+  "lines-3": [
+   170,
+   49
+  ],
+  "rope-1": [
+   334,
+   1
+  ],
+  "waves-10": [
+   28,
+   13
+  ],
+  "waves-11": [
+   4,
+   5
+  ],
+  "lines-4": [
+   242,
+   1
+  ],
+  "lines-5": [
+   242,
+   1
+  ],
+  "lines-6": [
+   86,
+   1
+  ],
+  "plus-5": [
+   1,
+   66
+  ],
+  "plus-6": [
+   70,
+   1
+  ],
+  "scales-5": [
+   1,
+   198
+  ],
+  "scales-6": [
+   290,
+   1
+  ],
+  "scales-7": [
+   126,
+   1
+  ],
+  "scales-8": [
+   1,
+   30
+  ],
+  "scales-9": [
+   62,
+   1
+  ],
+  "triangles-19": [
+   154,
+   1
+  ],
+  "triangles-20": [
+   26,
+   1
+  ],
+  "batik-7": [
+   29,
+   206
+  ],
+  "circles-15": [
+   214,
+   1
+  ],
+  "circles-16": [
+   370,
+   369
+  ],
+  "circles-17": [
+   1,
+   114
+  ],
+  "circles-and-diamonds": [
+   34,
+   58
+  ],
+  "diamonds-4": [
+   1,
+   50
+  ],
+  "diamonds-5": [
+   57,
+   178
+  ],
+  "diamonds-6": [
+   66,
+   1
+  ],
+  "geometric-7": [
+   1,
+   462
+  ],
+  "geometric-8": [
+   158,
+   14
+  ],
+  "geometric-9": [
+   170,
+   25
+  ],
+  "geometric-10": [
+   250,
+   18
+  ],
+  "waves-12": [
+   5,
+   6
+  ],
+  "waves-13": [
+   10,
+   9
+  ],
+  "waves-14": [
+   5,
+   6
+  ],
+  "waves-15": [
+   9,
+   10
+  ],
+  "double-bubble-3": [
+   1,
+   374
+  ],
+  "double-bubble-4": [
+   54,
+   1
+  ],
+  "patches": [
+   57,
+   58
+  ],
+  "squares-3": [
+   114,
+   1
+  ],
+  "squares-4": [
+   122,
+   1
+  ],
+  "squares-5": [
+   58,
+   1
+  ],
+  "squares-6": [
+   38,
+   25
+  ],
+  "triangles-21": [
+   82,
+   1
+  ],
+  "triangles-22": [
+   65,
+   30
+  ],
+  "triangles-23": [
+   1,
+   62
+  ],
+  "tribal-4": [
+   33,
+   514
+  ],
+  "tribal-5": [
+   1,
+   586
+  ],
+  "chinese-10": [
+   322,
+   1
+  ],
+  "chinese-11": [
+   222,
+   1
+  ],
+  "diamonds-7": [
+   26,
+   1
+  ],
+  "diamonds-8": [
+   178,
+   1
+  ],
+  "diamonds-9": [
+   334,
+   1
+  ],
+  "waves-16": [
+   13,
+   14
+  ],
+  "waves-17": [
+   32,
+   33
+  ],
+  "waves-18": [
+   250,
+   1
+  ],
+  "waves-19": [
+   17,
+   17
+  ],
+  "waves-20": [
+   122,
+   5
+  ],
+  "diamonds-10": [
+   158,
+   1
+  ],
+  "diamonds-11": [
+   122,
+   1
+  ],
+  "diamonds-12": [
+   62,
+   1
+  ],
+  "diamonds-13": [
+   122,
+   1
+  ],
+  "chinese-12": [
+   1,
+   30
+  ],
+  "chinese-13": [
+   150,
+   17
+  ],
+  "chinese-14": [
+   526,
+   1
+  ],
+  "egyptian-1": [
+   37,
+   98
+  ],
+  "egyptian-2": [
+   158,
+   222
+  ],
+  "egyptian-3": [
+   37,
+   198
+  ],
+  "circles-19": [
+   1,
+   49
+  ],
+  "circles-20": [
+   58,
+   26
+  ],
+  "egyptian-4": [
+   142,
+   330
+  ],
+  "egyptian-6": [
+   86,
+   17
+  ],
+  "waves-22": [
+   1,
+   26
+  ],
+  "squares-and-circles-3": [
+   46,
+   29
+  ],
+  "japanese-pattern-8": [
+   0,
+   2
+  ],
+  "circles-22": [
+   442,
+   1
+  ],
+  "diamonds-14": [
+   1,
+   66
+  ],
+  "diamonds-15": [
+   430,
+   5
+  ]
+ },
+ "native": {
+  "diamondLattice": [
+   1,
+   1514
+  ],
+  "squareGrid": [
+   1,
+   1026
+  ],
+  "roundPerforations": [
+   1,
+   1282
+  ],
+  "honeycomb": [
+   1,
+   1282
+  ],
+  "roundedSlots": [
+   1,
+   514
+  ],
+  "caneWeave": [
+   554,
+   1
+  ],
+  "lusona": [
+   762,
+   1
+  ],
+  "unicursalMaze": [
+   10,
+   1
+  ],
+  "ammannBeenker": [
+   1566,
+   1
+  ],
+  "hankin": [
+   362,
+   1
+  ],
+  "fermatSpirals": [
+   513,
+   66
+  ],
+  "gosper": [
+   1,
+   66
+  ],
+  "arrowhead": [
+   1,
+   66
+  ],
+  "terdragon": [
+   1,
+   66
+  ],
+  "greekKey": [
+   13,
+   14
+  ],
+  "voronoiTile": [
+   1,
+   450
+  ],
+  "delaunayTile": [
+   798,
+   1
+  ],
+  "truchet": [
+   45,
+   45
+  ],
+  "penroseApproximant": [
+   910,
+   1
+  ],
+  "hilbert": [
+   634,
+   6
+  ],
+  "moire": [
+   2,
+   1
+  ],
+  "guilloche": [
+   145,
+   34
+  ],
+  "sierpinski": [
+   1,
+   146
+  ],
+  "koch": [
+   1,
+   18
+  ],
+  "phyllotaxis": [
+   1,
+   2
+  ],
+  "hyperbolic": [
+   465,
+   18
+  ],
+  "apollonian": [
+   1,
+   194
+  ],
+  "penrose": [
+   2162,
+   1
+  ],
+  "julia": [
+   1,
+   194
+  ]
+ }
+}

@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-sierpinski",
+  "title": "Sierpinski fractal",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "sierpinski"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 146,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15412.2,
+   "lost": 0.0209,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15673.3,
+   "lost": 0.0209,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 214,
+   "thin": 214,
+   "volume": 9017,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 205,
+   "thin": 205,
+   "volume": 9993,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16174,
+   "lost": 0.017,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16601,
+   "lost": 0.017,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 122,
+   "thin": 122,
+   "volume": 8225.6,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 78,
+   "thin": 90,
+   "volume": 9034.5,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

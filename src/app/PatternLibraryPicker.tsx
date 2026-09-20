@@ -49,7 +49,7 @@ function flagsFor(p: LibraryPattern): { text: string; kind: 'warn' | 'info' }[] 
   if (p.ribBreak > 0.42) out.push({ text: 'ribs stop at the seam', kind: 'warn' })
   // which side is material decides whether a through-cut severs the box, and the
   // invert checkbox flips that, so say which way round rather than condemning it
-  if (!p.cutAs && !p.cutInv) out.push({ text: 'nothing to cut at 50 mm', kind: 'warn' })
+  if (!p.cutAs && !p.cutInv) out.push({ text: 'nothing to cut', kind: 'warn' })
   else if (p.cutAs !== 1 && p.cutInv !== 1) out.push({ text: `severs a cut box either way (${p.cutAs}/${p.cutInv} pieces)`, kind: 'warn' })
   else if (p.cutAs !== 1) out.push({ text: 'cut it inverted', kind: 'info' })
   if (p.mode !== 'fill') out.push({ text: 'rib width applies', kind: 'info' })

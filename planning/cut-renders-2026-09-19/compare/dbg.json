@@ -1,0 +1,1964 @@
+[
+ {
+  "slug": "waves-1",
+  "diff": 0.0211,
+  "ours": 90000,
+  "theirs": 88100
+ },
+ {
+  "slug": "waves-2",
+  "diff": 0.0171,
+  "ours": 78300,
+  "theirs": 76960
+ },
+ {
+  "slug": "waves-3",
+  "diff": 0.0242,
+  "ours": 86700,
+  "theirs": 84600
+ },
+ {
+  "slug": "waves-4",
+  "diff": 0.0398,
+  "ours": 170700,
+  "theirs": 163900
+ },
+ {
+  "slug": "waves-5",
+  "diff": 0.1041,
+  "ours": 73795,
+  "theirs": 66113
+ },
+ {
+  "slug": "waves-6",
+  "diff": 0.0997,
+  "ours": 79964,
+  "theirs": 71989
+ },
+ {
+  "slug": "waves-7",
+  "diff": 0.1012,
+  "ours": 111041,
+  "theirs": 99805
+ },
+ {
+  "slug": "chevron-1",
+  "diff": 1,
+  "ours": 132000,
+  "theirs": 0
+ },
+ {
+  "slug": "chevron-2",
+  "diff": 1,
+  "ours": 72000,
+  "theirs": 0
+ },
+ {
+  "slug": "chevron-3",
+  "diff": 1,
+  "ours": 132000,
+  "theirs": 0
+ },
+ {
+  "slug": "straight-lines",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "cross-section",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "brick-wall-1",
+  "diff": 0,
+  "ours": 197600,
+  "theirs": 197600
+ },
+ {
+  "slug": "brick-wall-2",
+  "diff": 0,
+  "ours": 208880,
+  "theirs": 208880
+ },
+ {
+  "slug": "herringbone-1",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "herringbone-2",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "herringbone-3",
+  "diff": 0,
+  "ours": 132000,
+  "theirs": 132000
+ },
+ {
+  "slug": "herringbone-4",
+  "diff": 0,
+  "ours": 132000,
+  "theirs": 132000
+ },
+ {
+  "slug": "herringbone-5",
+  "diff": 0,
+  "ours": 132000,
+  "theirs": 132000
+ },
+ {
+  "slug": "herringbone-6",
+  "diff": 0,
+  "ours": 132000,
+  "theirs": 132000
+ },
+ {
+  "slug": "herringbone-7",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "herringbone-8",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "flower-1",
+  "diff": 0.0804,
+  "ours": 129600,
+  "theirs": 128400
+ },
+ {
+  "slug": "flower-2",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "flower-3",
+  "diff": 0.1074,
+  "ours": 45696,
+  "theirs": 42240
+ },
+ {
+  "slug": "flower-4",
+  "diff": 0.0782,
+  "ours": 63552,
+  "theirs": 61536
+ },
+ {
+  "slug": "flower-5",
+  "diff": 0.0782,
+  "ours": 82752,
+  "theirs": 77760
+ },
+ {
+  "slug": "flower-6",
+  "diff": 0.0524,
+  "ours": 152800,
+  "theirs": 144800
+ },
+ {
+  "slug": "flower-7",
+  "diff": 0.1518,
+  "ours": 74016,
+  "theirs": 79104
+ },
+ {
+  "slug": "plus-1",
+  "diff": 1,
+  "ours": 175200,
+  "theirs": 0
+ },
+ {
+  "slug": "plus-2",
+  "diff": 1,
+  "ours": 153600,
+  "theirs": 0
+ },
+ {
+  "slug": "plus-3",
+  "diff": 1,
+  "ours": 138750,
+  "theirs": 0
+ },
+ {
+  "slug": "plus-4",
+  "diff": 1,
+  "ours": 134875,
+  "theirs": 0
+ },
+ {
+  "slug": "circles-1",
+  "diff": 0.025,
+  "ours": 156000,
+  "theirs": 152100
+ },
+ {
+  "slug": "circles-2",
+  "diff": 0,
+  "ours": 26400,
+  "theirs": 26400
+ },
+ {
+  "slug": "circles-3",
+  "diff": 0.0429,
+  "ours": 237600,
+  "theirs": 227400
+ },
+ {
+  "slug": "circles-4",
+  "diff": 0,
+  "ours": 13200,
+  "theirs": 13200
+ },
+ {
+  "slug": "circles-5",
+  "diff": 0.0338,
+  "ours": 91008,
+  "theirs": 87936
+ },
+ {
+  "slug": "circles-6",
+  "diff": 0,
+  "ours": 235008,
+  "theirs": 235008
+ },
+ {
+  "slug": "circles-7",
+  "diff": 0.0151,
+  "ours": 94620,
+  "theirs": 93190
+ },
+ {
+  "slug": "concentric-circles-1",
+  "diff": 1,
+  "ours": 125504,
+  "theirs": 0
+ },
+ {
+  "slug": "concentric-circles-2",
+  "diff": 1,
+  "ours": 236985,
+  "theirs": 0
+ },
+ {
+  "slug": "concentric-circles-3",
+  "diff": 1,
+  "ours": 237869,
+  "theirs": 0
+ },
+ {
+  "slug": "adjointed-circles",
+  "diff": 0,
+  "ours": 187200,
+  "theirs": 187200
+ },
+ {
+  "slug": "adjointed-diamonds",
+  "diff": 0,
+  "ours": 175200,
+  "theirs": 175200
+ },
+ {
+  "slug": "diamonds-1",
+  "diff": 0.0705,
+  "ours": 131712,
+  "theirs": 141696
+ },
+ {
+  "slug": "diamonds-2",
+  "diff": 0,
+  "ours": 129408,
+  "theirs": 129408
+ },
+ {
+  "slug": "diamonds-3",
+  "diff": 1,
+  "ours": 232500,
+  "theirs": 0
+ },
+ {
+  "slug": "hexagon-1",
+  "diff": 0.009,
+  "ours": 145904,
+  "theirs": 144584
+ },
+ {
+  "slug": "hexagon-2",
+  "diff": 1,
+  "ours": 195728,
+  "theirs": 0
+ },
+ {
+  "slug": "hexagon-3",
+  "diff": 1,
+  "ours": 236688,
+  "theirs": 0
+ },
+ {
+  "slug": "hexagon-4",
+  "diff": 0.0107,
+  "ours": 192321,
+  "theirs": 190254
+ },
+ {
+  "slug": "hexagon-5",
+  "diff": 1,
+  "ours": 206340,
+  "theirs": 0
+ },
+ {
+  "slug": "hexagon-6",
+  "diff": 1,
+  "ours": 240000,
+  "theirs": 0
+ },
+ {
+  "slug": "hexagon-7",
+  "diff": 1,
+  "ours": 239956,
+  "theirs": 0
+ },
+ {
+  "slug": "hexagon-8",
+  "diff": 0.0006,
+  "ours": 240000,
+  "theirs": 239845
+ },
+ {
+  "slug": "overlapping-hexagons",
+  "diff": 0.0043,
+  "ours": 202665,
+  "theirs": 201784
+ },
+ {
+  "slug": "squares-and-squares-1",
+  "diff": 0,
+  "ours": 120000,
+  "theirs": 120000
+ },
+ {
+  "slug": "squares-and-squares-2",
+  "diff": 0,
+  "ours": 120000,
+  "theirs": 120000
+ },
+ {
+  "slug": "squares-and-diamonds",
+  "diff": 0,
+  "ours": 126000,
+  "theirs": 126000
+ },
+ {
+  "slug": "squares-and-circles-1",
+  "diff": 0,
+  "ours": 126000,
+  "theirs": 126000
+ },
+ {
+  "slug": "squares-and-circles-2",
+  "diff": 0.0091,
+  "ours": 130800,
+  "theirs": 132000
+ },
+ {
+  "slug": "squares-and-plus-1",
+  "diff": 0.0377,
+  "ours": 127200,
+  "theirs": 122400
+ },
+ {
+  "slug": "squares-and-plus-2",
+  "diff": 0,
+  "ours": 142940,
+  "theirs": 142940
+ },
+ {
+  "slug": "squares-and-stars-1",
+  "diff": 0.0162,
+  "ours": 129300,
+  "theirs": 127200
+ },
+ {
+  "slug": "squares-and-stars-2",
+  "diff": 0.0107,
+  "ours": 112500,
+  "theirs": 111300
+ },
+ {
+  "slug": "stars-and-lines-1",
+  "diff": 0.0107,
+  "ours": 225000,
+  "theirs": 222600
+ },
+ {
+  "slug": "stars-and-lines-2",
+  "diff": 0.0087,
+  "ours": 165000,
+  "theirs": 163560
+ },
+ {
+  "slug": "triangles-1",
+  "diff": 0,
+  "ours": 126000,
+  "theirs": 126000
+ },
+ {
+  "slug": "triangles-2",
+  "diff": 0,
+  "ours": 126000,
+  "theirs": 126000
+ },
+ {
+  "slug": "triangles-3",
+  "diff": 0,
+  "ours": 132000,
+  "theirs": 132000
+ },
+ {
+  "slug": "triangles-4",
+  "diff": 0,
+  "ours": 230400,
+  "theirs": 230400
+ },
+ {
+  "slug": "triangles-5",
+  "diff": 1,
+  "ours": 215850,
+  "theirs": 0
+ },
+ {
+  "slug": "triangles-6",
+  "diff": 0.0264,
+  "ours": 85200,
+  "theirs": 83250
+ },
+ {
+  "slug": "triangles-7",
+  "diff": 0,
+  "ours": 111400,
+  "theirs": 111400
+ },
+ {
+  "slug": "triangles-8",
+  "diff": 0,
+  "ours": 66000,
+  "theirs": 66000
+ },
+ {
+  "slug": "triangles-9",
+  "diff": 0.0047,
+  "ours": 127800,
+  "theirs": 128400
+ },
+ {
+  "slug": "triangles-10",
+  "diff": 1,
+  "ours": 240000,
+  "theirs": 0
+ },
+ {
+  "slug": "inverted-triangles",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "checkerboard",
+  "diff": 0,
+  "ours": 120000,
+  "theirs": 120000
+ },
+ {
+  "slug": "japanese-pattern-1",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "japanese-pattern-2",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "japanese-pattern-3",
+  "diff": 0.0132,
+  "ours": 184000,
+  "theirs": 181580
+ },
+ {
+  "slug": "japanese-pattern-4",
+  "diff": 0.0127,
+  "ours": 220360,
+  "theirs": 217570
+ },
+ {
+  "slug": "japanese-pattern-5",
+  "diff": 0.0172,
+  "ours": 156339,
+  "theirs": 153657
+ },
+ {
+  "slug": "japanese-pattern-6",
+  "diff": 1,
+  "ours": 234840,
+  "theirs": 0
+ },
+ {
+  "slug": "eyes-1",
+  "diff": 0.0294,
+  "ours": 234900,
+  "theirs": 228000
+ },
+ {
+  "slug": "eyes-2",
+  "diff": 0.0139,
+  "ours": 129600,
+  "theirs": 127800
+ },
+ {
+  "slug": "eyes-3",
+  "diff": 0.0096,
+  "ours": 141000,
+  "theirs": 139650
+ },
+ {
+  "slug": "eyes-4",
+  "diff": 0.014,
+  "ours": 128400,
+  "theirs": 126600
+ },
+ {
+  "slug": "jigsaw",
+  "diff": 0.0187,
+  "ours": 76443,
+  "theirs": 75010
+ },
+ {
+  "slug": "railroad",
+  "diff": 1,
+  "ours": 223040,
+  "theirs": 0
+ },
+ {
+  "slug": "octagons-1",
+  "diff": 1,
+  "ours": 187200,
+  "theirs": 0
+ },
+ {
+  "slug": "octagons-2",
+  "diff": 1,
+  "ours": 210000,
+  "theirs": 0
+ },
+ {
+  "slug": "lines-1",
+  "diff": 1,
+  "ours": 206400,
+  "theirs": 0
+ },
+ {
+  "slug": "lines-2",
+  "diff": 1,
+  "ours": 232800,
+  "theirs": 0
+ },
+ {
+  "slug": "scales-1",
+  "diff": 0,
+  "ours": 194400,
+  "theirs": 194400
+ },
+ {
+  "slug": "scales-2",
+  "diff": 0.027,
+  "ours": 133200,
+  "theirs": 129600
+ },
+ {
+  "slug": "scales-3",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "scales-4",
+  "diff": 0.2492,
+  "ours": 209688,
+  "theirs": 157440
+ },
+ {
+  "slug": "leaves-1",
+  "diff": 0,
+  "ours": 69888,
+  "theirs": 69888
+ },
+ {
+  "slug": "leaves-2",
+  "diff": 0.1389,
+  "ours": 43200,
+  "theirs": 37200
+ },
+ {
+  "slug": "leaves-3",
+  "diff": 1,
+  "ours": 235200,
+  "theirs": 0
+ },
+ {
+  "slug": "leaves-4",
+  "diff": 0.0639,
+  "ours": 91680,
+  "theirs": 85824
+ },
+ {
+  "slug": "leaves-5",
+  "diff": 0.0526,
+  "ours": 192736,
+  "theirs": 183208
+ },
+ {
+  "slug": "leaves-6",
+  "diff": 0.0754,
+  "ours": 148683,
+  "theirs": 141235
+ },
+ {
+  "slug": "leaves-7",
+  "diff": 0.0171,
+  "ours": 128928,
+  "theirs": 126720
+ },
+ {
+  "slug": "leaves-8",
+  "diff": 0.024,
+  "ours": 115155,
+  "theirs": 113070
+ },
+ {
+  "slug": "pipes",
+  "diff": 1,
+  "ours": 141312,
+  "theirs": 0
+ },
+ {
+  "slug": "zebra",
+  "diff": 0.0204,
+  "ours": 157248,
+  "theirs": 154704
+ },
+ {
+  "slug": "memphis-1",
+  "diff": 1,
+  "ours": 104135,
+  "theirs": 0
+ },
+ {
+  "slug": "memphis-2",
+  "diff": 0.1279,
+  "ours": 23400,
+  "theirs": 23328
+ },
+ {
+  "slug": "memphis-3",
+  "diff": 0.316,
+  "ours": 24720,
+  "theirs": 34368
+ },
+ {
+  "slug": "memphis-4",
+  "diff": 0.1003,
+  "ours": 53184,
+  "theirs": 55920
+ },
+ {
+  "slug": "memphis-5",
+  "diff": 0.0737,
+  "ours": 38094,
+  "theirs": 35285
+ },
+ {
+  "slug": "memphis-6",
+  "diff": 0.256,
+  "ours": 62856,
+  "theirs": 79536
+ },
+ {
+  "slug": "greek-key",
+  "diff": 1,
+  "ours": 215601,
+  "theirs": 0
+ },
+ {
+  "slug": "chinese-1",
+  "diff": 0.0404,
+  "ours": 125312,
+  "theirs": 120944
+ },
+ {
+  "slug": "chinese-2",
+  "diff": 0.037,
+  "ours": 84808,
+  "theirs": 81672
+ },
+ {
+  "slug": "chinese-3",
+  "diff": 0.0152,
+  "ours": 140408,
+  "theirs": 138272
+ },
+ {
+  "slug": "chinese-4",
+  "diff": 1,
+  "ours": 239825,
+  "theirs": 0
+ },
+ {
+  "slug": "chinese-5",
+  "diff": 1,
+  "ours": 239616,
+  "theirs": 0
+ },
+ {
+  "slug": "chinese-6",
+  "diff": 1,
+  "ours": 194688,
+  "theirs": 0
+ },
+ {
+  "slug": "chinese-7",
+  "diff": 1,
+  "ours": 183534,
+  "theirs": 0
+ },
+ {
+  "slug": "chinese-8",
+  "diff": 1,
+  "ours": 224193,
+  "theirs": 0
+ },
+ {
+  "slug": "chinese-9",
+  "diff": 0.0479,
+  "ours": 198240,
+  "theirs": 188736
+ },
+ {
+  "slug": "new-1",
+  "diff": 0.0172,
+  "ours": 97375,
+  "theirs": 95700
+ },
+ {
+  "slug": "new-2",
+  "diff": 1,
+  "ours": 146400,
+  "theirs": 0
+ },
+ {
+  "slug": "new-3",
+  "diff": 0.3585,
+  "ours": 26496,
+  "theirs": 40320
+ },
+ {
+  "slug": "new-4",
+  "diff": 0.0609,
+  "ours": 122880,
+  "theirs": 115392
+ },
+ {
+  "slug": "new-5",
+  "diff": 0.0713,
+  "ours": 153408,
+  "theirs": 142464
+ },
+ {
+  "slug": "new-6",
+  "diff": 1,
+  "ours": 162816,
+  "theirs": 0
+ },
+ {
+  "slug": "new-7",
+  "diff": 0.0553,
+  "ours": 83328,
+  "theirs": 78720
+ },
+ {
+  "slug": "new-8",
+  "diff": 1,
+  "ours": 202752,
+  "theirs": 0
+ },
+ {
+  "slug": "new-9",
+  "diff": 1,
+  "ours": 204672,
+  "theirs": 0
+ },
+ {
+  "slug": "new-10",
+  "diff": 0.0218,
+  "ours": 149664,
+  "theirs": 146400
+ },
+ {
+  "slug": "new-11",
+  "diff": 0.0338,
+  "ours": 147744,
+  "theirs": 142752
+ },
+ {
+  "slug": "new-12",
+  "diff": 0,
+  "ours": 162000,
+  "theirs": 162000
+ },
+ {
+  "slug": "new-13",
+  "diff": 0.0371,
+  "ours": 111168,
+  "theirs": 107040
+ },
+ {
+  "slug": "new-14",
+  "diff": 0.0418,
+  "ours": 145536,
+  "theirs": 142464
+ },
+ {
+  "slug": "new-15",
+  "diff": 0.0203,
+  "ours": 162239,
+  "theirs": 158943
+ },
+ {
+  "slug": "new-16",
+  "diff": 1,
+  "ours": 221549,
+  "theirs": 0
+ },
+ {
+  "slug": "new-17",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "double-bubble-1",
+  "diff": 0.0173,
+  "ours": 125020,
+  "theirs": 122860
+ },
+ {
+  "slug": "double-bubble-2",
+  "diff": 0.0348,
+  "ours": 154670,
+  "theirs": 149280
+ },
+ {
+  "slug": "stars-1",
+  "diff": 1,
+  "ours": 97800,
+  "theirs": 0
+ },
+ {
+  "slug": "stars-2",
+  "diff": 0.0536,
+  "ours": 16800,
+  "theirs": 15900
+ },
+ {
+  "slug": "stars-3",
+  "diff": 0.0627,
+  "ours": 25275,
+  "theirs": 25725
+ },
+ {
+  "slug": "stars-4",
+  "diff": 0.0974,
+  "ours": 24225,
+  "theirs": 25575
+ },
+ {
+  "slug": "stars-5",
+  "diff": 0.2307,
+  "ours": 34776,
+  "theirs": 43824
+ },
+ {
+  "slug": "stars-6",
+  "diff": 0.2129,
+  "ours": 31680,
+  "theirs": 39840
+ },
+ {
+  "slug": "semicircles-1",
+  "diff": 0,
+  "ours": 199200,
+  "theirs": 199200
+ },
+ {
+  "slug": "songket-1",
+  "diff": 0.0863,
+  "ours": 106457,
+  "theirs": 97979
+ },
+ {
+  "slug": "christmas-tree-1",
+  "diff": 0.0696,
+  "ours": 65244,
+  "theirs": 68242
+ },
+ {
+  "slug": "candy-cane-1",
+  "diff": 0.0847,
+  "ours": 47200,
+  "theirs": 43200
+ },
+ {
+  "slug": "christmas-bells-1",
+  "diff": 0.0317,
+  "ours": 63552,
+  "theirs": 61536
+ },
+ {
+  "slug": "christmas-pattern-1",
+  "diff": 0.1996,
+  "ours": 73896,
+  "theirs": 89040
+ },
+ {
+  "slug": "christmas-pattern-2",
+  "diff": 0.2001,
+  "ours": 68028,
+  "theirs": 82240
+ },
+ {
+  "slug": "christmas-pattern-3",
+  "diff": 0.1132,
+  "ours": 69170,
+  "theirs": 74700
+ },
+ {
+  "slug": "snowflakes-1",
+  "diff": 0.0989,
+  "ours": 70340,
+  "theirs": 63380
+ },
+ {
+  "slug": "christmas-tree-balls",
+  "diff": 0.0473,
+  "ours": 69329,
+  "theirs": 69741
+ },
+ {
+  "slug": "santa-claus",
+  "diff": 0.0449,
+  "ours": 64971,
+  "theirs": 62127
+ },
+ {
+  "slug": "christmas-gift",
+  "diff": 0.0152,
+  "ours": 98550,
+  "theirs": 97050
+ },
+ {
+  "slug": "cubes-1",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "cubes-2",
+  "diff": 0,
+  "ours": 204880,
+  "theirs": 204880
+ },
+ {
+  "slug": "cubes-3",
+  "diff": 0,
+  "ours": 233000,
+  "theirs": 233000
+ },
+ {
+  "slug": "stained-glass",
+  "diff": 0,
+  "ours": 223360,
+  "theirs": 223360
+ },
+ {
+  "slug": "tiles-1",
+  "diff": 0.0208,
+  "ours": 191362,
+  "theirs": 187378
+ },
+ {
+  "slug": "rectangles-and-squares-1",
+  "diff": 0,
+  "ours": 240000,
+  "theirs": 240000
+ },
+ {
+  "slug": "mexican-pattern-1",
+  "diff": 0.0749,
+  "ours": 86784,
+  "theirs": 81024
+ },
+ {
+  "slug": "mexican-pattern-2",
+  "diff": 0.0299,
+  "ours": 154272,
+  "theirs": 149664
+ },
+ {
+  "slug": "ethnic-pattern-1",
+  "diff": 0.0569,
+  "ours": 96000,
+  "theirs": 90912
+ },
+ {
+  "slug": "ethnic-pattern-2",
+  "diff": 0.0386,
+  "ours": 109344,
+  "theirs": 105504
+ },
+ {
+  "slug": "ethnic-pattern-3",
+  "diff": 0.1496,
+  "ours": 74240,
+  "theirs": 83135
+ },
+ {
+  "slug": "plaid-pattern-1",
+  "diff": 0,
+  "ours": 147840,
+  "theirs": 147840
+ },
+ {
+  "slug": "plaid-pattern-2",
+  "diff": 0.6067,
+  "ours": 70800,
+  "theirs": 180000
+ },
+ {
+  "slug": "plaid-pattern-3",
+  "diff": 0.1025,
+  "ours": 175050,
+  "theirs": 177600
+ },
+ {
+  "slug": "plaid-pattern-4",
+  "diff": 0.075,
+  "ours": 150000,
+  "theirs": 138750
+ },
+ {
+  "slug": "doodle-1",
+  "diff": 0.0451,
+  "ours": 54312,
+  "theirs": 51912
+ },
+ {
+  "slug": "batik-1",
+  "diff": 1,
+  "ours": 160605,
+  "theirs": 0
+ },
+ {
+  "slug": "batik-2",
+  "diff": 0.0225,
+  "ours": 148660,
+  "theirs": 145310
+ },
+ {
+  "slug": "batik-3",
+  "diff": 0.0321,
+  "ours": 120500,
+  "theirs": 116770
+ },
+ {
+  "slug": "batik-4",
+  "diff": 0.0673,
+  "ours": 66150,
+  "theirs": 64015
+ },
+ {
+  "slug": "batik-5",
+  "diff": 0.0332,
+  "ours": 45310,
+  "theirs": 43805
+ },
+ {
+  "slug": "batik-6",
+  "diff": 0.157,
+  "ours": 31200,
+  "theirs": 35700
+ },
+ {
+  "slug": "african-1",
+  "diff": 0,
+  "ours": 142880,
+  "theirs": 142880
+ },
+ {
+  "slug": "african-2",
+  "diff": 0,
+  "ours": 147040,
+  "theirs": 147040
+ },
+ {
+  "slug": "african-3",
+  "diff": 0,
+  "ours": 106176,
+  "theirs": 106176
+ },
+ {
+  "slug": "african-4",
+  "diff": 0,
+  "ours": 107200,
+  "theirs": 107200
+ },
+ {
+  "slug": "triangles-11",
+  "diff": 0.009,
+  "ours": 123168,
+  "theirs": 122238
+ },
+ {
+  "slug": "hexagon-9",
+  "diff": 0.0144,
+  "ours": 195534,
+  "theirs": 193016
+ },
+ {
+  "slug": "tiles-2",
+  "diff": 0.038,
+  "ours": 161664,
+  "theirs": 155520
+ },
+ {
+  "slug": "tiles-3",
+  "diff": 0,
+  "ours": 148224,
+  "theirs": 148224
+ },
+ {
+  "slug": "tribal-1",
+  "diff": 0.0113,
+  "ours": 124455,
+  "theirs": 124385
+ },
+ {
+  "slug": "tribal-2",
+  "diff": 0.0066,
+  "ours": 93255,
+  "theirs": 93025
+ },
+ {
+  "slug": "waves-8",
+  "diff": 0.1219,
+  "ours": 143983,
+  "theirs": 140989
+ },
+ {
+  "slug": "leaves-9",
+  "diff": 0.024,
+  "ours": 170952,
+  "theirs": 169560
+ },
+ {
+  "slug": "blobs",
+  "diff": 0.0217,
+  "ours": 206592,
+  "theirs": 202104
+ },
+ {
+  "slug": "african-5",
+  "diff": 0.0234,
+  "ours": 123420,
+  "theirs": 120530
+ },
+ {
+  "slug": "triangles-12",
+  "diff": 0.0349,
+  "ours": 87672,
+  "theirs": 89424
+ },
+ {
+  "slug": "squares-and-triangles-1",
+  "diff": 0.0128,
+  "ours": 133440,
+  "theirs": 135168
+ },
+ {
+  "slug": "tribal-3",
+  "diff": 0.7737,
+  "ours": 31092,
+  "theirs": 134586
+ },
+ {
+  "slug": "circles-8",
+  "diff": 0.1414,
+  "ours": 60832,
+  "theirs": 66128
+ },
+ {
+  "slug": "triangles-13",
+  "diff": 0.0128,
+  "ours": 128736,
+  "theirs": 127872
+ },
+ {
+  "slug": "triangles-14",
+  "diff": 0.0199,
+  "ours": 183278,
+  "theirs": 179623
+ },
+ {
+  "slug": "triangles-15",
+  "diff": 0.0346,
+  "ours": 153656,
+  "theirs": 150133
+ },
+ {
+  "slug": "triangles-16",
+  "diff": 0.0358,
+  "ours": 115382,
+  "theirs": 112098
+ },
+ {
+  "slug": "circles-9",
+  "diff": 0.1164,
+  "ours": 155741,
+  "theirs": 137608
+ },
+ {
+  "slug": "concentric-circles-4",
+  "diff": 0.0893,
+  "ours": 190740,
+  "theirs": 174280
+ },
+ {
+  "slug": "concentric-circles-5",
+  "diff": 0.0365,
+  "ours": 160608,
+  "theirs": 154752
+ },
+ {
+  "slug": "concentric-circles-6",
+  "diff": 0.3366,
+  "ours": 128152,
+  "theirs": 189305
+ },
+ {
+  "slug": "stripes-1",
+  "diff": 0.2397,
+  "ours": 134400,
+  "theirs": 174000
+ },
+ {
+  "slug": "stripes-2",
+  "diff": 0.0665,
+  "ours": 202200,
+  "theirs": 216600
+ },
+ {
+  "slug": "chevron-4",
+  "diff": 0.0193,
+  "ours": 169536,
+  "theirs": 166272
+ },
+ {
+  "slug": "chevron-5",
+  "diff": 0.02,
+  "ours": 182326,
+  "theirs": 178679
+ },
+ {
+  "slug": "terrazzo-1",
+  "diff": 0.0752,
+  "ours": 79518,
+  "theirs": 80838
+ },
+ {
+  "slug": "geometric-1",
+  "diff": 0.4995,
+  "ours": 63042,
+  "theirs": 119660
+ },
+ {
+  "slug": "halloween-1",
+  "diff": 0.125,
+  "ours": 70476,
+  "theirs": 77756
+ },
+ {
+  "slug": "halloween-2",
+  "diff": 0.1042,
+  "ours": 110032,
+  "theirs": 117644
+ },
+ {
+  "slug": "halloween-3",
+  "diff": 0.0811,
+  "ours": 65448,
+  "theirs": 67968
+ },
+ {
+  "slug": "halloween-4",
+  "diff": 0.5415,
+  "ours": 23320,
+  "theirs": 48860
+ },
+ {
+  "slug": "halloween-5",
+  "diff": 0.0889,
+  "ours": 88736,
+  "theirs": 92224
+ },
+ {
+  "slug": "halloween-6",
+  "diff": 0.074,
+  "ours": 61400,
+  "theirs": 63500
+ },
+ {
+  "slug": "hexagon-10",
+  "diff": 0.0373,
+  "ours": 110842,
+  "theirs": 106717
+ },
+ {
+  "slug": "hexagon-11",
+  "diff": 0.0527,
+  "ours": 158124,
+  "theirs": 151390
+ },
+ {
+  "slug": "squares-1",
+  "diff": 0.0042,
+  "ours": 91392,
+  "theirs": 91776
+ },
+ {
+  "slug": "squares-2",
+  "diff": 0,
+  "ours": 192030,
+  "theirs": 192030
+ },
+ {
+  "slug": "sprinkles-1",
+  "diff": 0.0461,
+  "ours": 31616,
+  "theirs": 30160
+ },
+ {
+  "slug": "cubes-4",
+  "diff": 0.025,
+  "ours": 149080,
+  "theirs": 145360
+ },
+ {
+  "slug": "geometric-2",
+  "diff": 0.0284,
+  "ours": 137120,
+  "theirs": 135493
+ },
+ {
+  "slug": "geometric-3",
+  "diff": 0.0039,
+  "ours": 135779,
+  "theirs": 135243
+ },
+ {
+  "slug": "geometric-4",
+  "diff": 0.9411,
+  "ours": 5784,
+  "theirs": 96408
+ },
+ {
+  "slug": "circles-10",
+  "diff": 0.0133,
+  "ours": 129792,
+  "theirs": 128064
+ },
+ {
+  "slug": "circles-11",
+  "diff": 0.1119,
+  "ours": 171718,
+  "theirs": 190800
+ },
+ {
+  "slug": "circles-12",
+  "diff": 0.1474,
+  "ours": 37720,
+  "theirs": 38712
+ },
+ {
+  "slug": "triangles-17",
+  "diff": 0.1935,
+  "ours": 161436,
+  "theirs": 195316
+ },
+ {
+  "slug": "triangles-18",
+  "diff": 0.0507,
+  "ours": 20700,
+  "theirs": 19650
+ },
+ {
+  "slug": "geometric-5",
+  "diff": 0.0605,
+  "ours": 165513,
+  "theirs": 155550
+ },
+ {
+  "slug": "geometric-6",
+  "diff": 0.0493,
+  "ours": 117416,
+  "theirs": 111784
+ },
+ {
+  "slug": "moroccan-1",
+  "diff": 0.228,
+  "ours": 49080,
+  "theirs": 55584
+ },
+ {
+  "slug": "moroccan-2",
+  "diff": 0.2756,
+  "ours": 110496,
+  "theirs": 151392
+ },
+ {
+  "slug": "japanese-pattern-7",
+  "diff": 0.3261,
+  "ours": 160176,
+  "theirs": 227584
+ },
+ {
+  "slug": "waves-9",
+  "diff": 0.1835,
+  "ours": 141180,
+  "theirs": 167080
+ },
+ {
+  "slug": "christmas-pattern-4",
+  "diff": 0.0828,
+  "ours": 28441,
+  "theirs": 26087
+ },
+ {
+  "slug": "christmas-pattern-5",
+  "diff": 0.0699,
+  "ours": 82556,
+  "theirs": 78640
+ },
+ {
+  "slug": "plaid-pattern-5",
+  "diff": 0.0387,
+  "ours": 139080,
+  "theirs": 133696
+ },
+ {
+  "slug": "plaid-pattern-6",
+  "diff": 0.0563,
+  "ours": 137459,
+  "theirs": 137810
+ },
+ {
+  "slug": "circles-13",
+  "diff": 0.0307,
+  "ours": 104640,
+  "theirs": 104448
+ },
+ {
+  "slug": "circles-14",
+  "diff": 0.0123,
+  "ours": 54670,
+  "theirs": 54000
+ },
+ {
+  "slug": "interlocked-hexagons-1",
+  "diff": 0.4155,
+  "ours": 42852,
+  "theirs": 67308
+ },
+ {
+  "slug": "interlocked-hexagons-2",
+  "diff": 0.0365,
+  "ours": 138336,
+  "theirs": 135954
+ },
+ {
+  "slug": "interlocked-hexagons-3",
+  "diff": 0.0013,
+  "ours": 239688,
+  "theirs": 240000
+ },
+ {
+  "slug": "lanterns-1",
+  "diff": 0.0656,
+  "ours": 71600,
+  "theirs": 66904
+ },
+ {
+  "slug": "leaves-10",
+  "diff": 0.052,
+  "ours": 97824,
+  "theirs": 92736
+ },
+ {
+  "slug": "lines-3",
+  "diff": 0.0892,
+  "ours": 178272,
+  "theirs": 165120
+ },
+ {
+  "slug": "rope-1",
+  "diff": 0.0917,
+  "ours": 74960,
+  "theirs": 68179
+ },
+ {
+  "slug": "waves-10",
+  "diff": 0.3969,
+  "ours": 107629,
+  "theirs": 173657
+ },
+ {
+  "slug": "waves-11",
+  "diff": 0.0718,
+  "ours": 87088,
+  "theirs": 80832
+ },
+ {
+  "slug": "lines-4",
+  "diff": 0.0139,
+  "ours": 220174,
+  "theirs": 217105
+ },
+ {
+  "slug": "lines-5",
+  "diff": 0.0132,
+  "ours": 221307,
+  "theirs": 218394
+ },
+ {
+  "slug": "lines-6",
+  "diff": 1,
+  "ours": 225445,
+  "theirs": 0
+ },
+ {
+  "slug": "plus-5",
+  "diff": 0.0328,
+  "ours": 155700,
+  "theirs": 150600
+ },
+ {
+  "slug": "plus-6",
+  "diff": 0.0421,
+  "ours": 124202,
+  "theirs": 118969
+ },
+ {
+  "slug": "scales-5",
+  "diff": 0.2969,
+  "ours": 75480,
+  "theirs": 102360
+ },
+ {
+  "slug": "scales-6",
+  "diff": 0.0795,
+  "ours": 184830,
+  "theirs": 171520
+ },
+ {
+  "slug": "scales-7",
+  "diff": 0.0546,
+  "ours": 137960,
+  "theirs": 130432
+ },
+ {
+  "slug": "scales-8",
+  "diff": 0.0163,
+  "ours": 220800,
+  "theirs": 217200
+ },
+ {
+  "slug": "scales-9",
+  "diff": 0.099,
+  "ours": 101705,
+  "theirs": 93003
+ },
+ {
+  "slug": "triangles-19",
+  "diff": 0.0093,
+  "ours": 219622,
+  "theirs": 217582
+ },
+ {
+  "slug": "triangles-20",
+  "diff": 1,
+  "ours": 236292,
+  "theirs": 0
+ },
+ {
+  "slug": "batik-7",
+  "diff": 0.058,
+  "ours": 101180,
+  "theirs": 97100
+ },
+ {
+  "slug": "circles-15",
+  "diff": 0.0078,
+  "ours": 188573,
+  "theirs": 187097
+ },
+ {
+  "slug": "circles-16",
+  "diff": 0.0563,
+  "ours": 158232,
+  "theirs": 149328
+ },
+ {
+  "slug": "circles-17",
+  "diff": 0.0566,
+  "ours": 152961,
+  "theirs": 144298
+ },
+ {
+  "slug": "circles-and-diamonds",
+  "diff": 0.0153,
+  "ours": 174581,
+  "theirs": 171902
+ },
+ {
+  "slug": "diamonds-4",
+  "diff": 0.0813,
+  "ours": 207653,
+  "theirs": 226034
+ },
+ {
+  "slug": "diamonds-5",
+  "diff": 0.0681,
+  "ours": 142952,
+  "theirs": 133384
+ },
+ {
+  "slug": "diamonds-6",
+  "diff": 0.015,
+  "ours": 204288,
+  "theirs": 201216
+ },
+ {
+  "slug": "geometric-7",
+  "diff": 0.0019,
+  "ours": 124104,
+  "theirs": 124152
+ },
+ {
+  "slug": "geometric-8",
+  "diff": 0.0574,
+  "ours": 178884,
+  "theirs": 168612
+ },
+ {
+  "slug": "geometric-9",
+  "diff": 0.0497,
+  "ours": 169920,
+  "theirs": 161472
+ },
+ {
+  "slug": "geometric-10",
+  "diff": 0.0829,
+  "ours": 172464,
+  "theirs": 163176
+ },
+ {
+  "slug": "waves-12",
+  "diff": 0.0289,
+  "ours": 135040,
+  "theirs": 131140
+ },
+ {
+  "slug": "waves-13",
+  "diff": 0.0182,
+  "ours": 108229,
+  "theirs": 106260
+ },
+ {
+  "slug": "waves-14",
+  "diff": 0.0175,
+  "ours": 157055,
+  "theirs": 154311
+ },
+ {
+  "slug": "waves-15",
+  "diff": 0.0354,
+  "ours": 110494,
+  "theirs": 106580
+ },
+ {
+  "slug": "double-bubble-3",
+  "diff": 0.3435,
+  "ours": 75648,
+  "theirs": 109824
+ },
+ {
+  "slug": "double-bubble-4",
+  "diff": 0,
+  "ours": 222720,
+  "theirs": 222720
+ },
+ {
+  "slug": "patches",
+  "diff": 0.0132,
+  "ours": 116736,
+  "theirs": 115200
+ },
+ {
+  "slug": "squares-3",
+  "diff": 0,
+  "ours": 230100,
+  "theirs": 230100
+ },
+ {
+  "slug": "squares-4",
+  "diff": 0.0149,
+  "ours": 209411,
+  "theirs": 206293
+ },
+ {
+  "slug": "squares-5",
+  "diff": 0.004,
+  "ours": 208485,
+  "theirs": 207654
+ },
+ {
+  "slug": "squares-6",
+  "diff": 0.0075,
+  "ours": 239400,
+  "theirs": 237600
+ },
+ {
+  "slug": "triangles-21",
+  "diff": 0.009,
+  "ours": 225504,
+  "theirs": 223476
+ },
+ {
+  "slug": "triangles-22",
+  "diff": 1,
+  "ours": 119160,
+  "theirs": 0
+ },
+ {
+  "slug": "triangles-23",
+  "diff": 0.0224,
+  "ours": 36384,
+  "theirs": 35568
+ },
+ {
+  "slug": "tribal-4",
+  "diff": 0.3896,
+  "ours": 75765,
+  "theirs": 115616
+ },
+ {
+  "slug": "tribal-5",
+  "diff": 0.1208,
+  "ours": 99152,
+  "theirs": 103152
+ },
+ {
+  "slug": "chinese-10",
+  "diff": 0.0223,
+  "ours": 82400,
+  "theirs": 80560
+ },
+ {
+  "slug": "chinese-11",
+  "diff": 0.0211,
+  "ours": 72960,
+  "theirs": 71424
+ },
+ {
+  "slug": "diamonds-7",
+  "diff": 1,
+  "ours": 211680,
+  "theirs": 0
+ },
+ {
+  "slug": "diamonds-8",
+  "diff": 1,
+  "ours": 238788,
+  "theirs": 0
+ },
+ {
+  "slug": "diamonds-9",
+  "diff": 1,
+  "ours": 187304,
+  "theirs": 0
+ },
+ {
+  "slug": "waves-16",
+  "diff": 0.0442,
+  "ours": 110519,
+  "theirs": 105634
+ },
+ {
+  "slug": "waves-17",
+  "diff": 0.0449,
+  "ours": 135392,
+  "theirs": 129308
+ },
+ {
+  "slug": "waves-18",
+  "diff": 0.0133,
+  "ours": 193625,
+  "theirs": 191085
+ },
+ {
+  "slug": "waves-19",
+  "diff": 0.0658,
+  "ours": 125952,
+  "theirs": 118324
+ },
+ {
+  "slug": "waves-20",
+  "diff": 0.0595,
+  "ours": 133454,
+  "theirs": 125507
+ },
+ {
+  "slug": "diamonds-10",
+  "diff": 0.0057,
+  "ours": 193110,
+  "theirs": 192015
+ },
+ {
+  "slug": "diamonds-11",
+  "diff": 0.0021,
+  "ours": 188360,
+  "theirs": 187960
+ },
+ {
+  "slug": "diamonds-12",
+  "diff": 0.0018,
+  "ours": 215430,
+  "theirs": 215040
+ },
+ {
+  "slug": "diamonds-13",
+  "diff": 0.0079,
+  "ours": 196406,
+  "theirs": 194860
+ },
+ {
+  "slug": "chinese-12",
+  "diff": 0.7519,
+  "ours": 19931,
+  "theirs": 76888
+ },
+ {
+  "slug": "chinese-13",
+  "diff": 0.4005,
+  "ours": 64689,
+  "theirs": 90778
+ },
+ {
+  "slug": "chinese-14",
+  "diff": 0.0475,
+  "ours": 106220,
+  "theirs": 101170
+ },
+ {
+  "slug": "egyptian-1",
+  "diff": 0.1708,
+  "ours": 161700,
+  "theirs": 188400
+ },
+ {
+  "slug": "egyptian-2",
+  "diff": 0.2347,
+  "ours": 131820,
+  "theirs": 170960
+ },
+ {
+  "slug": "egyptian-3",
+  "diff": 0.0704,
+  "ours": 158400,
+  "theirs": 170400
+ },
+ {
+  "slug": "circles-19",
+  "diff": 0.0243,
+  "ours": 135000,
+  "theirs": 132900
+ },
+ {
+  "slug": "circles-20",
+  "diff": 0.0298,
+  "ours": 123600,
+  "theirs": 119911
+ },
+ {
+  "slug": "egyptian-4",
+  "diff": 0.1339,
+  "ours": 137440,
+  "theirs": 154200
+ },
+ {
+  "slug": "egyptian-6",
+  "diff": 0.0994,
+  "ours": 196200,
+  "theirs": 205200
+ },
+ {
+  "slug": "waves-22",
+  "diff": 0.0696,
+  "ours": 111200,
+  "theirs": 103460
+ },
+ {
+  "slug": "squares-and-circles-3",
+  "diff": 0.0339,
+  "ours": 83685,
+  "theirs": 80850
+ },
+ {
+  "slug": "circles-22",
+  "diff": 0,
+  "ours": 225750,
+  "theirs": 225750
+ },
+ {
+  "slug": "diamonds-14",
+  "diff": 1,
+  "ours": 221400,
+  "theirs": 0
+ },
+ {
+  "slug": "diamonds-15",
+  "diff": 1,
+  "ours": 204347,
+  "theirs": 0
+ }
+]

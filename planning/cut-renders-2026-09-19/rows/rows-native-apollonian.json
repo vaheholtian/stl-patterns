@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-apollonian",
+  "title": "Apollonian gasket",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "apollonian"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 194,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11740.3,
+   "lost": 0.0028,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13035.4,
+   "lost": 0.0028,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 22,
+   "thin": 22,
+   "volume": 12631.8,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 27,
+   "thin": 27,
+   "volume": 12575.6,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12916.3,
+   "lost": 0.0031,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14103.3,
+   "lost": 0.0031,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "parts": 70,
+   "thin": 70,
+   "volume": 11449.2,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25if": {
+   "parts": 57,
+   "thin": 57,
+   "volume": 11502.8,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  }
+ }
+]

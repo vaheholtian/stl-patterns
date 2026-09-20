@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-roundedSlots",
+  "title": "Rounded slots",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "roundedSlots"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 514,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10331,
+   "lost": 0.0003,
+   "broken": false,
+   "tile": "53.2 x 49.8 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10852.5,
+   "lost": 0.0003,
+   "broken": false,
+   "tile": "53.2 x 49.8 mm"
+  },
+  "w50i": {
+   "parts": 58,
+   "thin": 58,
+   "volume": 14020.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "53.2 x 49.8 mm"
+  },
+  "w50if": {
+   "parts": 28,
+   "thin": 28,
+   "volume": 14742.9,
+   "lost": 0,
+   "broken": true,
+   "tile": "53.2 x 49.8 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10357.5,
+   "lost": 0.0003,
+   "broken": false,
+   "tile": "22.8 x 33.2 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10852.4,
+   "lost": 0.0003,
+   "broken": false,
+   "tile": "22.8 x 33.2 mm"
+  },
+  "w25i": {
+   "parts": 54,
+   "thin": 54,
+   "volume": 13997.4,
+   "lost": 0,
+   "broken": true,
+   "tile": "22.8 x 33.2 mm"
+  },
+  "w25if": {
+   "parts": 28,
+   "thin": 28,
+   "volume": 14742.9,
+   "lost": 0,
+   "broken": true,
+   "tile": "22.8 x 33.2 mm"
+  }
+ }
+]

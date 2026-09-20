@@ -1,0 +1,1344 @@
+[
+ {
+  "slug": "circles-17",
+  "title": "Circles - 17",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 25,
+   "thin": 25,
+   "volume": 11990,
+   "pieces": 25,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 77,
+   "thin": 89,
+   "volume": 12421.9,
+   "pieces": 77,
+   "broken": true
+  }
+ },
+ {
+  "slug": "circles-and-diamonds",
+  "title": "Circles & Diamonds",
+  "mode": "fill",
+  "tags": [
+   "squares & diamonds"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 14695.1,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 27,
+   "thin": 27,
+   "volume": 14278.4,
+   "pieces": 27,
+   "broken": true
+  }
+ },
+ {
+  "slug": "diamonds-4",
+  "title": "Diamonds - 4",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 6163.5,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 7346.5,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-5",
+  "title": "Diamonds - 5",
+  "mode": "fill",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 23,
+   "thin": 30,
+   "volume": 11274.6,
+   "pieces": 35,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 18,
+   "volume": 14240.9,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-6",
+  "title": "Diamonds - 6",
+  "mode": "fill",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16267.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16288.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "geometric-7",
+  "title": "Geometric Pattern - 7",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 54,
+   "thin": 82,
+   "volume": 11471.9,
+   "pieces": 54,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 130,
+   "thin": 210,
+   "volume": 11719.8,
+   "pieces": 130,
+   "broken": true
+  }
+ },
+ {
+  "slug": "geometric-8",
+  "title": "Geometric Pattern - 8",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 3,
+   "thin": 5,
+   "volume": 12880.9,
+   "pieces": 3,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 13057.7,
+   "pieces": 5,
+   "broken": true
+  }
+ },
+ {
+  "slug": "geometric-9",
+  "title": "Geometric Pattern - 9",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 9,
+   "thin": 9,
+   "volume": 13040.2,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25i": {
+   "skipped": "the tile comes out empty at this size"
+  }
+ },
+ {
+  "slug": "geometric-10",
+  "title": "Geometric Pattern - 10",
+  "mode": "fill",
+  "tags": [
+   "geometric"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 13,
+   "thin": 13,
+   "volume": 12233.5,
+   "pieces": 21,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18945.6,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "waves-12",
+  "title": "Waves - 12",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 13128.8,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 11960.2,
+   "pieces": 4,
+   "broken": true
+  }
+ },
+ {
+  "slug": "waves-13",
+  "title": "Waves - 13",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 12912.2,
+   "pieces": 4,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 9429.2,
+   "pieces": 4,
+   "broken": true
+  }
+ },
+ {
+  "slug": "waves-14",
+  "title": "Waves - 14",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 13438.7,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 14532.3,
+   "pieces": 3,
+   "broken": true
+  }
+ },
+ {
+  "slug": "waves-15",
+  "title": "Waves - 15",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 11350,
+   "pieces": 3,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 10306.7,
+   "pieces": 8,
+   "broken": true
+  }
+ },
+ {
+  "slug": "double-bubble-3",
+  "title": "Double Bubble - 3",
+  "mode": "fill",
+  "tags": [
+   "double bubbles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 98,
+   "thin": 98,
+   "volume": 10594.2,
+   "pieces": 100,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 41,
+   "volume": 13511.3,
+   "pieces": 4,
+   "broken": false
+  }
+ },
+ {
+  "slug": "double-bubble-4",
+  "title": "Double Bubble - 4",
+  "mode": "stroke",
+  "tags": [
+   "double bubbles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6809.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8181,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "patches",
+  "title": "Patches",
+  "mode": "fill",
+  "tags": [
+   "patches"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 10526.6,
+   "pieces": 10,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 42,
+   "thin": 50,
+   "volume": 10644.8,
+   "pieces": 42,
+   "broken": true
+  }
+ },
+ {
+  "slug": "squares-3",
+  "title": "Squares - 3",
+  "mode": "stroke",
+  "tags": [
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7236.8,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9083.5,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "squares-4",
+  "title": "Squares - 4",
+  "mode": "stroke",
+  "tags": [
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7041.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8654.4,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "squares-5",
+  "title": "Squares - 5",
+  "mode": "stroke",
+  "tags": [
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6803,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8707.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "squares-6",
+  "title": "Squares - 6",
+  "mode": "stroke",
+  "tags": [
+   "squares",
+   "lines"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 9,
+   "thin": 9,
+   "volume": 7290.1,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 17,
+   "thin": 17,
+   "volume": 9144.6,
+   "pieces": 17,
+   "broken": true
+  }
+ },
+ {
+  "slug": "triangles-21",
+  "title": "Triangles - 21",
+  "mode": "stroke",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7560.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9570.4,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "triangles-22",
+  "title": "Triangles - 22",
+  "mode": "stroke-join",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 6448.2,
+   "pieces": 6,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 7657.1,
+   "pieces": 26,
+   "broken": true
+  }
+ },
+ {
+  "slug": "triangles-23",
+  "title": "Triangles - 23",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 6,
+   "thin": 14,
+   "volume": 6877.9,
+   "pieces": 6,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 26,
+   "thin": 58,
+   "volume": 7158.7,
+   "pieces": 26,
+   "broken": true
+  }
+ },
+ {
+  "slug": "tribal-4",
+  "title": "Tribal Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "tribal pattern",
+   "greek key",
+   "country"
+  ],
+  "layers": 4,
+  "w50i": {
+   "parts": 98,
+   "thin": 98,
+   "volume": 10161.3,
+   "pieces": 98,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 178,
+   "thin": 178,
+   "volume": 12703.9,
+   "pieces": 306,
+   "broken": true
+  }
+ },
+ {
+  "slug": "tribal-5",
+  "title": "Tribal Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "tribal pattern",
+   "greek key",
+   "country"
+  ],
+  "layers": 4,
+  "w50i": {
+   "parts": 82,
+   "thin": 82,
+   "volume": 10040.1,
+   "pieces": 82,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 110,
+   "thin": 110,
+   "volume": 11234.5,
+   "pieces": 222,
+   "broken": true
+  }
+ },
+ {
+  "slug": "chinese-10",
+  "title": "Chinese Pattern - 10",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8363.7,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 26,
+   "volume": 8418.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "chinese-11",
+  "title": "Chinese Pattern - 11",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares",
+   "circles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7923.7,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 7925,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-7",
+  "title": "Diamonds - 7",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6054.9,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6931.9,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-8",
+  "title": "Diamonds - 8",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7689.9,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9938.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-9",
+  "title": "Diamonds - 9",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9867.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15166,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "waves-16",
+  "title": "Waves - 16",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 10255.1,
+   "pieces": 4,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 7,
+   "thin": 7,
+   "volume": 10533.4,
+   "pieces": 10,
+   "broken": true
+  }
+ },
+ {
+  "slug": "waves-17",
+  "title": "Waves - 17",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 11772.3,
+   "pieces": 3,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 7,
+   "thin": 7,
+   "volume": 11768.9,
+   "pieces": 7,
+   "broken": true
+  }
+ },
+ {
+  "slug": "waves-18",
+  "title": "Waves - 18",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15381.4,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16133,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "waves-19",
+  "title": "Waves - 19",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 4,
+  "w50i": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 10584.8,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 8,
+   "thin": 8,
+   "volume": 10693.9,
+   "pieces": 8,
+   "broken": true
+  }
+ },
+ {
+  "slug": "waves-20",
+  "title": "Waves - 20",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 3,
+   "volume": 10484.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 26,
+   "volume": 10557.1,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-10",
+  "title": "Diamonds - 10",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6740.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8732.9,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-11",
+  "title": "Diamonds - 11",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7269.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7719.8,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-12",
+  "title": "Diamonds - 12",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6752.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7358.4,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-13",
+  "title": "Diamonds - 13",
+  "mode": "stroke",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "triangles",
+   "squares"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7659.8,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10006.8,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "chinese-12",
+  "title": "Chinese Pattern - 12",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 6,
+   "volume": 8710.1,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 8851.8,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "chinese-13",
+  "title": "Chinese Pattern - 13",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "squares",
+   "circles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9581.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 26,
+   "volume": 11108.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "chinese-14",
+  "title": "Chinese Pattern - 14",
+  "mode": "fill",
+  "tags": [
+   "chinese pattern",
+   "country",
+   "octagons"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10014,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 10189,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "egyptian-1",
+  "title": "Egyptian Pattern - 1",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "hexagons"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 7,
+   "thin": 18,
+   "volume": 13314,
+   "pieces": 7,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 28,
+   "thin": 74,
+   "volume": 13627,
+   "pieces": 28,
+   "broken": true
+  }
+ },
+ {
+  "slug": "egyptian-2",
+  "title": "Egyptian Pattern - 2",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "circles",
+   "diamonds"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 1,
+   "thin": 54,
+   "volume": 11252.4,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 154,
+   "volume": 11644.9,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "egyptian-3",
+  "title": "Egyptian Pattern - 3",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "hexagons"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 50,
+   "thin": 50,
+   "volume": 13153.6,
+   "pieces": 50,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 135,
+   "thin": 135,
+   "volume": 13867.8,
+   "pieces": 143,
+   "broken": true
+  }
+ },
+ {
+  "slug": "circles-19",
+  "title": "Circles - 19",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11275.8,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 41,
+   "thin": 41,
+   "volume": 11657.4,
+   "pieces": 41,
+   "broken": true
+  }
+ },
+ {
+  "slug": "circles-20",
+  "title": "Circles - 20",
+  "mode": "fill",
+  "tags": [
+   "circles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 11591.4,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 9,
+   "thin": 14,
+   "volume": 11775.6,
+   "pieces": 9,
+   "broken": true
+  }
+ },
+ {
+  "slug": "egyptian-4",
+  "title": "Egyptian Pattern - 4",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "hexagons",
+   "squares"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 19,
+   "thin": 78,
+   "volume": 11470.7,
+   "pieces": 19,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 2,
+   "thin": 52,
+   "volume": 12125.8,
+   "pieces": 2,
+   "broken": true
+  }
+ },
+ {
+  "slug": "egyptian-6",
+  "title": "Egyptian Pattern - 6",
+  "mode": "fill",
+  "tags": [
+   "egyptian pattern",
+   "ethnic",
+   "tribal",
+   "country",
+   "diamonds",
+   "rhombus",
+   "squares"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 15530.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 9,
+   "thin": 9,
+   "volume": 15689.6,
+   "pieces": 17,
+   "broken": true
+  }
+ },
+ {
+  "slug": "waves-22",
+  "title": "Waves - 22",
+  "mode": "fill",
+  "tags": [
+   "waves",
+   "curves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 9998.4,
+   "pieces": 26,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10309.8,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "squares-and-circles-3",
+  "title": "Squares & Circles - 3",
+  "mode": "fill",
+  "tags": [
+   "squares",
+   "circles"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 5,
+   "thin": 5,
+   "volume": 9693.8,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 25,
+   "thin": 25,
+   "volume": 9125.6,
+   "pieces": 25,
+   "broken": true
+  }
+ },
+ {
+  "slug": "japanese-pattern-8",
+  "title": "Japanese Pattern - 8",
+  "mode": "fill",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "sashiko"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 5669.5,
+   "pieces": 90,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 5682.3,
+   "pieces": 386,
+   "broken": true
+  }
+ },
+ {
+  "slug": "circles-22",
+  "title": "Circles - 22",
+  "mode": "stroke",
+  "tags": [
+   "circles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8855.1,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11739,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "diamonds-14",
+  "title": "Diamonds - 14",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus",
+   "squares"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 6218.9,
+   "pieces": 10,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 42,
+   "thin": 50,
+   "volume": 6867.1,
+   "pieces": 42,
+   "broken": true
+  }
+ },
+ {
+  "slug": "diamonds-15",
+  "title": "Diamonds - 15",
+  "mode": "stroke-join",
+  "tags": [
+   "diamonds",
+   "rhombus"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7244.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 10048.2,
+   "pieces": 2,
+   "broken": true
+  }
+ }
+]

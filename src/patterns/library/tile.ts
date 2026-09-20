@@ -25,16 +25,19 @@ export interface LibraryPattern {
   clipLossPct: number
   /** mm of box edge where a stroked rib stops instead of continuing into the next copy */
   ribBreak: number
-  /** Pieces the closed 50 mm box falls into when this is cut through all four walls
-   * at a 50 mm repeat, counting only connections thick enough to print. 1 means it
-   * survives a through-cut on a closed ring; more means it needs recess, emboss, or
-   * a bounded patch. 0 means the design produced nothing to cut with at that size.
+  /** Pieces a closed ring of wall falls into when this is cut right through it,
+   * counting only connections thick enough to print: see ringParts(). 1 means it
+   * survives a through-cut on a box; more means it needs recess, emboss, or a
+   * bounded patch. 0 means the design produced nothing to cut with.
    *
    * Both orientations are recorded because which side of the drawing is material
-   * decides the answer, and the app lets you flip that with a checkbox: a design
-   * can sever the box one way and hold as one piece the other. An earlier sweep
-   * measured only `cutAs` and reported it as the design's property, which was
-   * wrong for 74 of the 330. Measured by invert-sweep.ts on fixtures/box-50.stl. */
+   * decides the answer, and the app lets you flip that with a checkbox.
+   *
+   * These replace figures cut through fixtures/box-50.stl at a 50 mm repeat. That
+   * box's walls are only about 44 mm tall between margins, so a tall repeat never
+   * fitted whole and the margin held in what it would have cut loose: Greek Key
+   * read as whole and falls into 25 pieces at a 15 mm repeat. Measured by
+   * planning/pattern-library-2026-09-15/ring-sweep.ts. */
   cutAs: number
   /** the same cut with the pattern inverted; see cutAs */
   cutInv: number
@@ -56,8 +59,21 @@ const ORIGIN: Pt = [0, 0]
 
 /**
  * Which of the nine repeat positions a subpath has to be drawn at for the box to
- * end up correctly filled: its own, plus any neighbour whose copy would reach
- * inside the box. A shape well inside the box needs only its own.
+ * end up correctly filled: its own, plus any neighbour whose copy brings material
+ * the subpath does not already put inside the box.
+ *
+ * Reaching inside the box is not enough on its own. A design drawn well past its
+ * repeat usually overflows with a lead-in rather than with a true continuation,
+ * and then the copy does not land on the original: waves-1 drifts 0.6 mm over the
+ * overlap, a fifth of its rib, so the two union into a rib that steps wider and
+ * back twice per crest. That step is visible on the print, and it is what an
+ * unconditional copy costs.
+ *
+ * Whether a copy retraces the original is not a close call in this library: of the
+ * 292 copies the bounding box lets through, every one either covers nothing the
+ * original does not (62 designs) or covers only ground the original never reaches.
+ * Nothing sits in between, so the coverage grid below is read at a rib's
+ * resolution -- two ribs closer than one rib width are one rib anyway.
  */
 function neighbours(points: Pt[], width: number, height: number, grow: number): Pt[] {
   let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity
@@ -68,11 +84,47 @@ function neighbours(points: Pt[], width: number, height: number, grow: number): 
     if (y > maxY) maxY = y
   }
   const r = grow / 2
+  const cell = Math.max(grow, Math.min(width, height) / 64)
+  const nx = Math.max(1, Math.ceil(width / cell)), ny = Math.max(1, Math.ceil(height / cell))
+  const seen = new Uint8Array(nx * ny)
+  /** walk the copy at (dx, dy) through the box; marking, or counting what is new */
+  const walk = (dx: number, dy: number, mark: boolean) => {
+    let inside = 0, fresh = 0
+    for (let i = 0; i + 1 < points.length; i++) {
+      const ax = points[i][0] + dx, ay = points[i][1] + dy
+      const bx = points[i + 1][0] + dx, by = points[i + 1][1] + dy
+      // flattening spaces its points by curvature, so sample the segment too
+      const steps = Math.max(1, Math.ceil(Math.hypot(bx - ax, by - ay) / (cell / 2)))
+      for (let s = 0; s <= steps; s++) {
+        const x = ax + ((bx - ax) * s) / steps, y = ay + ((by - ay) * s) / steps
+        const ix = Math.floor(x / cell), iy = Math.floor(y / cell)
+        if (ix < 0 || iy < 0 || ix >= nx || iy >= ny) continue
+        inside++
+        if (!mark) { if (!seen[iy * nx + ix]) fresh++; continue }
+        // a cell of slack, so a copy running within a rib of the original reads as a retrace
+        for (let a = -1; a <= 1; a++) for (let b = -1; b <= 1; b++) {
+          const jx = ix + a, jy = iy + b
+          if (jx >= 0 && jy >= 0 && jx < nx && jy < ny) seen[jy * nx + jx] = 1
+        }
+      }
+    }
+    return inside ? fresh / inside : 0
+  }
+
+  const reaches = (dx: number, dy: number) =>
+    !(maxX + dx + r < 0 || minX + dx - r > width || maxY + dy + r < 0 || minY + dy - r > height)
+
   const out: Pt[] = []
+  // the subpath's own position first, so every copy is judged against it
+  if (reaches(0, 0)) { out.push(ORIGIN); walk(0, 0, true) }
   for (let j = -1; j <= 1; j++) for (let i = -1; i <= 1; i++) {
+    if (!i && !j) continue
     const dx = i * width, dy = j * height
-    if (maxX + dx + r < 0 || minX + dx - r > width || maxY + dy + r < 0 || minY + dy - r > height) continue
+    if (!reaches(dx, dy)) continue
+    if (walk(dx, dy, false) < 0.02) continue
     out.push([dx, dy])
+    // and against each other, so two copies of one overflow do not both land
+    walk(dx, dy, true)
   }
   return out
 }
@@ -148,6 +200,6 @@ export function libraryNotes(p: LibraryPattern): string[] | undefined {
   // through-cut" -- which is how four collapsed designs passed as safe.
   const pieces = (n: number) => (n === 0 ? 'nothing the printer can lay down' : `${n} loose piece${n === 1 ? '' : 's'}`)
   if (p.cutAs !== 1 && p.cutInv !== 1)
-    notes.push(`As drawn this leaves ${pieces(p.cutAs)}; inverted, ${pieces(p.cutInv)}. Neither orientation survives a through-cut on a closed box (measured on a 50 mm box at a 50 mm repeat): use recess or emboss, a bounded region, or turn on Connect material.`)
+    notes.push(`On a box wall four repeats around and four tall, a through-cut as drawn leaves ${pieces(p.cutAs)}; inverted, ${pieces(p.cutInv)}. Neither orientation survives a through-cut on a closed box: use recess or emboss, a bounded region, or turn on Connect material.`)
   return notes.length ? notes : undefined
 }

@@ -1,0 +1,1301 @@
+[
+ {
+  "slug": "hexagon-8",
+  "title": "Hexagon - 8",
+  "mode": "stroke",
+  "tags": [
+   "hexagon",
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8303.4,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11048.7,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "overlapping-hexagons",
+  "title": "Overlapping Hexagons",
+  "mode": "stroke",
+  "tags": [
+   "overlapping hexagons"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8224.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10778.7,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "squares-and-squares-1",
+  "title": "Squares & Squares - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & squares"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12211.6,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12218.4,
+   "pieces": 25,
+   "broken": true
+  }
+ },
+ {
+  "slug": "squares-and-squares-2",
+  "title": "Squares & Squares - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & squares"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 29,
+   "thin": 30,
+   "volume": 12201.8,
+   "pieces": 29,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 89,
+   "thin": 89,
+   "volume": 12255.6,
+   "pieces": 89,
+   "broken": true
+  }
+ },
+ {
+  "slug": "squares-and-diamonds",
+  "title": "Squares & Diamonds",
+  "mode": "fill",
+  "tags": [
+   "squares & diamonds"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12209.8,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12216.8,
+   "pieces": 25,
+   "broken": true
+  }
+ },
+ {
+  "slug": "squares-and-circles-1",
+  "title": "Squares & Circles - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & circles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12206,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12205.2,
+   "pieces": 25,
+   "broken": true
+  }
+ },
+ {
+  "slug": "squares-and-circles-2",
+  "title": "Squares & Circles - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & circles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 5,
+   "thin": 50,
+   "volume": 12215.1,
+   "pieces": 5,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 25,
+   "thin": 146,
+   "volume": 12392.7,
+   "pieces": 25,
+   "broken": true
+  }
+ },
+ {
+  "slug": "squares-and-plus-1",
+  "title": "Squares & Plus - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & plus",
+   "cross"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12208.4,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12212.8,
+   "pieces": 25,
+   "broken": true
+  }
+ },
+ {
+  "slug": "squares-and-plus-2",
+  "title": "Squares & Plus - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & plus",
+   "cross"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 1,
+   "thin": 62,
+   "volume": 12286.4,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 114,
+   "volume": 12469.2,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "squares-and-stars-1",
+  "title": "Squares & Stars - 1",
+  "mode": "fill",
+  "tags": [
+   "squares & stars"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 9,
+   "thin": 10,
+   "volume": 12222.1,
+   "pieces": 9,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 25,
+   "thin": 42,
+   "volume": 12269.2,
+   "pieces": 25,
+   "broken": true
+  }
+ },
+ {
+  "slug": "squares-and-stars-2",
+  "title": "Squares & Stars - 2",
+  "mode": "fill",
+  "tags": [
+   "squares & stars"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 11500.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 18,
+   "volume": 11473.4,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "stars-and-lines-1",
+  "title": "Stars & Lines - 1",
+  "mode": "fill",
+  "tags": [
+   "stars & lines",
+   "stripes"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17975.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17580.9,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "stars-and-lines-2",
+  "title": "Stars & Lines - 2",
+  "mode": "fill",
+  "tags": [
+   "stars & lines",
+   "stripes"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 15491.4,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 4,
+   "thin": 4,
+   "volume": 14346.3,
+   "pieces": 4,
+   "broken": true
+  }
+ },
+ {
+  "slug": "triangles-1",
+  "title": "Triangles - 1",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 12216.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 34,
+   "volume": 12242.8,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "triangles-2",
+  "title": "Triangles - 2",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 12672.5,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 26,
+   "volume": 12460.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "triangles-3",
+  "title": "Triangles - 3",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 11687.8,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 30,
+   "volume": 11871.2,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "triangles-4",
+  "title": "Triangles - 4",
+  "mode": "stroke",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6055.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7444.1,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "triangles-5",
+  "title": "Triangles - 5",
+  "mode": "stroke-join",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 7425.7,
+   "pieces": 10,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 30,
+   "thin": 50,
+   "volume": 9498.5,
+   "pieces": 30,
+   "broken": true
+  }
+ },
+ {
+  "slug": "triangles-6",
+  "title": "Triangles - 6",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 10,
+   "thin": 18,
+   "volume": 9460.4,
+   "pieces": 10,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 50,
+   "thin": 106,
+   "volume": 9452.6,
+   "pieces": 50,
+   "broken": true
+  }
+ },
+ {
+  "slug": "triangles-7",
+  "title": "Triangles - 7",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 11643.1,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 14,
+   "volume": 11575,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "triangles-8",
+  "title": "Triangles - 8",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 3,
+   "thin": 10,
+   "volume": 8379.6,
+   "pieces": 3,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 5,
+   "thin": 50,
+   "volume": 8720.1,
+   "pieces": 5,
+   "broken": true
+  }
+ },
+ {
+  "slug": "triangles-9",
+  "title": "Triangles - 9",
+  "mode": "fill",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 2,
+   "thin": 6,
+   "volume": 10075.1,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 2,
+   "thin": 26,
+   "volume": 12319.8,
+   "pieces": 2,
+   "broken": true
+  }
+ },
+ {
+  "slug": "triangles-10",
+  "title": "Triangles - 10",
+  "mode": "stroke-join",
+  "tags": [
+   "triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7627.7,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9728.1,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "inverted-triangles",
+  "title": "Inverted Triangles",
+  "mode": "stroke",
+  "tags": [
+   "inverted triangles"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 6557.7,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 7929.4,
+   "pieces": 26,
+   "broken": true
+  }
+ },
+ {
+  "slug": "checkerboard",
+  "title": "Checkerboard",
+  "mode": "fill",
+  "tags": [
+   "checkerboard",
+   "lines",
+   "squares"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 12206,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 18,
+   "volume": 12205.1,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "japanese-pattern-1",
+  "title": "Japanese Pattern - 1",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 8620.4,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11526.6,
+   "pieces": 2,
+   "broken": false
+  }
+ },
+ {
+  "slug": "japanese-pattern-2",
+  "title": "Japanese Pattern - 2",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7927.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10219,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "japanese-pattern-3",
+  "title": "Japanese Pattern - 3",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7643.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9624.3,
+   "pieces": 15,
+   "broken": false
+  }
+ },
+ {
+  "slug": "japanese-pattern-4",
+  "title": "Japanese Pattern - 4",
+  "mode": "stroke",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9429.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12839.1,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "japanese-pattern-5",
+  "title": "Japanese Pattern - 5",
+  "mode": "fill",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "waves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 11790.3,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 14588.7,
+   "pieces": 2,
+   "broken": true
+  }
+ },
+ {
+  "slug": "japanese-pattern-6",
+  "title": "Japanese Pattern - 6",
+  "mode": "stroke-join",
+  "tags": [
+   "japanese pattern",
+   "country",
+   "hexagon"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 13,
+   "thin": 25,
+   "volume": 9873,
+   "pieces": 13,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17522.6,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "eyes-1",
+  "title": "Eyes - 1",
+  "mode": "stroke",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 7,
+   "thin": 7,
+   "volume": 7860.9,
+   "pieces": 7,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 27,
+   "thin": 27,
+   "volume": 9217.1,
+   "pieces": 27,
+   "broken": true
+  }
+ },
+ {
+  "slug": "eyes-2",
+  "title": "Eyes - 2",
+  "mode": "fill",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 12517.2,
+   "pieces": 3,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 19,
+   "thin": 19,
+   "volume": 11773,
+   "pieces": 19,
+   "broken": true
+  }
+ },
+ {
+  "slug": "eyes-3",
+  "title": "Eyes - 3",
+  "mode": "stroke",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 6398.7,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 7408.5,
+   "pieces": 3,
+   "broken": true
+  }
+ },
+ {
+  "slug": "eyes-4",
+  "title": "Eyes - 4",
+  "mode": "fill",
+  "tags": [
+   "eyes",
+   "curves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 11399.6,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 3,
+   "thin": 3,
+   "volume": 12997.9,
+   "pieces": 3,
+   "broken": true
+  }
+ },
+ {
+  "slug": "jigsaw",
+  "title": "Jigsaw",
+  "mode": "stroke",
+  "tags": [
+   "jigsaw",
+   "puzzle"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7513.4,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9839.2,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "railroad",
+  "title": "Railroad",
+  "mode": "stroke-join",
+  "tags": [
+   "railroad",
+   "lines"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6624.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7845.8,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "octagons-1",
+  "title": "Octagons - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "octagons"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 6432.3,
+   "pieces": 6,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 7646.8,
+   "pieces": 26,
+   "broken": true
+  }
+ },
+ {
+  "slug": "octagons-2",
+  "title": "Octagons - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "octagons"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 6656.3,
+   "pieces": 10,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 50,
+   "thin": 50,
+   "volume": 8109.5,
+   "pieces": 50,
+   "broken": true
+  }
+ },
+ {
+  "slug": "lines-1",
+  "title": "Lines - 1",
+  "mode": "stroke-join",
+  "tags": [
+   "lines"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 5625.7,
+   "pieces": 10,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 46,
+   "thin": 46,
+   "volume": 5986,
+   "pieces": 50,
+   "broken": true
+  }
+ },
+ {
+  "slug": "lines-2",
+  "title": "Lines - 2",
+  "mode": "stroke-join",
+  "tags": [
+   "lines"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 22,
+   "thin": 22,
+   "volume": 5991.6,
+   "pieces": 22,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 94,
+   "thin": 94,
+   "volume": 6747,
+   "pieces": 94,
+   "broken": true
+  }
+ },
+ {
+  "slug": "scales-1",
+  "title": "Scales - 1",
+  "mode": "stroke",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6477.5,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7552.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "scales-2",
+  "title": "Scales - 2",
+  "mode": "fill",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 2,
+   "volume": 12474.1,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 3,
+   "volume": 11982.4,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "scales-3",
+  "title": "Scales - 3",
+  "mode": "stroke",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13466.2,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17335.2,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "scales-4",
+  "title": "Scales - 4",
+  "mode": "stroke",
+  "tags": [
+   "scales",
+   "clouds",
+   "fish"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 9819.3,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12874.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "leaves-1",
+  "title": "Leaves - 1",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 30,
+   "thin": 30,
+   "volume": 8818.5,
+   "pieces": 30,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 82,
+   "thin": 82,
+   "volume": 8712.9,
+   "pieces": 106,
+   "broken": true
+  }
+ },
+ {
+  "slug": "leaves-2",
+  "title": "Leaves - 2",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 22,
+   "thin": 22,
+   "volume": 6867,
+   "pieces": 22,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 114,
+   "thin": 114,
+   "volume": 6836.6,
+   "pieces": 114,
+   "broken": true
+  }
+ },
+ {
+  "slug": "leaves-3",
+  "title": "Leaves - 3",
+  "mode": "stroke-join",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 22,
+   "thin": 22,
+   "volume": 6580.6,
+   "pieces": 22,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 106,
+   "thin": 106,
+   "volume": 7825,
+   "pieces": 106,
+   "broken": true
+  }
+ },
+ {
+  "slug": "leaves-4",
+  "title": "Leaves - 4",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 42,
+   "thin": 42,
+   "volume": 9434.4,
+   "pieces": 42,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 162,
+   "thin": 170,
+   "volume": 9701.3,
+   "pieces": 162,
+   "broken": true
+  }
+ },
+ {
+  "slug": "leaves-5",
+  "title": "Leaves - 5",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 26,
+   "thin": 26,
+   "volume": 13811.1,
+   "pieces": 26,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 15365.6,
+   "pieces": 10,
+   "broken": true
+  }
+ },
+ {
+  "slug": "leaves-6",
+  "title": "Leaves - 6",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 14,
+   "thin": 26,
+   "volume": 11628.4,
+   "pieces": 14,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 34,
+   "thin": 66,
+   "volume": 12154.3,
+   "pieces": 34,
+   "broken": true
+  }
+ },
+ {
+  "slug": "leaves-7",
+  "title": "Leaves - 7",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 3,
+  "w50i": {
+   "parts": 22,
+   "thin": 22,
+   "volume": 11879.9,
+   "pieces": 22,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 86,
+   "thin": 86,
+   "volume": 12076.6,
+   "pieces": 90,
+   "broken": true
+  }
+ },
+ {
+  "slug": "leaves-8",
+  "title": "Leaves - 8",
+  "mode": "fill",
+  "tags": [
+   "leaves"
+  ],
+  "layers": 2,
+  "w50i": {
+   "parts": 2,
+   "thin": 6,
+   "volume": 11338.7,
+   "pieces": 2,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 26,
+   "volume": 11355.3,
+   "pieces": 1,
+   "broken": false
+  }
+ },
+ {
+  "slug": "pipes",
+  "title": "Pipes",
+  "mode": "stroke-join",
+  "tags": [
+   "pipes"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 6,
+   "thin": 6,
+   "volume": 6286.5,
+   "pieces": 6,
+   "broken": true
+  },
+  "w25i": {
+   "parts": 10,
+   "thin": 10,
+   "volume": 7055.2,
+   "pieces": 10,
+   "broken": true
+  }
+ },
+ {
+  "slug": "zebra",
+  "title": "Zebra",
+  "mode": "fill",
+  "tags": [
+   "zebra",
+   "animals"
+  ],
+  "layers": 1,
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13476.6,
+   "pieces": 1,
+   "broken": false
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13712.4,
+   "pieces": 1,
+   "broken": false
+  }
+ }
+]

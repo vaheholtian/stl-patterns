@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-squareGrid",
+  "title": "Square / rectangular grid",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "squareGrid"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 1026,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10650.8,
+   "lost": 0.009,
+   "broken": false,
+   "tile": "53.2 x 53.2 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13162.4,
+   "lost": 0.009,
+   "broken": false,
+   "tile": "53.2 x 53.2 mm"
+  },
+  "w50i": {
+   "parts": 138,
+   "thin": 142,
+   "volume": 13766.4,
+   "lost": 0,
+   "broken": true,
+   "tile": "53.2 x 53.2 mm"
+  },
+  "w50if": {
+   "parts": 82,
+   "thin": 87,
+   "volume": 14322.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "53.2 x 53.2 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 10657.5,
+   "lost": 0.009,
+   "broken": false,
+   "tile": "22.8 x 22.8 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11331.3,
+   "lost": 0.009,
+   "broken": false,
+   "tile": "22.8 x 22.8 mm"
+  },
+  "w25i": {
+   "parts": 132,
+   "thin": 132,
+   "volume": 13858,
+   "lost": 0,
+   "broken": true,
+   "tile": "22.8 x 22.8 mm"
+  },
+  "w25if": {
+   "parts": 87,
+   "thin": 87,
+   "volume": 14322.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "22.8 x 22.8 mm"
+  }
+ }
+]

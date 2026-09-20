@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-diamondLattice",
+  "title": "Diamond lattice",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "diamondLattice"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1,
+  "cutInv": 1514,
+  "w50": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11859.1,
+   "lost": 0.0143,
+   "broken": false,
+   "tile": "49.6 x 49.6 mm"
+  },
+  "w50f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12570.4,
+   "lost": 0.0143,
+   "broken": false,
+   "tile": "49.6 x 49.6 mm"
+  },
+  "w50i": {
+   "parts": 181,
+   "thin": 218,
+   "volume": 12582.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "49.6 x 49.6 mm"
+  },
+  "w50if": {
+   "parts": 180,
+   "thin": 180,
+   "volume": 13106.8,
+   "lost": 0,
+   "broken": true,
+   "tile": "49.6 x 49.6 mm"
+  },
+  "w25": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 11861,
+   "lost": 0.0146,
+   "broken": false,
+   "tile": "24.8 x 24.8 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 12571.9,
+   "lost": 0.0146,
+   "broken": false,
+   "tile": "24.8 x 24.8 mm"
+  },
+  "w25i": {
+   "parts": 181,
+   "thin": 218,
+   "volume": 12583.4,
+   "lost": 0,
+   "broken": true,
+   "tile": "24.8 x 24.8 mm"
+  },
+  "w25if": {
+   "parts": 180,
+   "thin": 180,
+   "volume": 13106.8,
+   "lost": 0,
+   "broken": true,
+   "tile": "24.8 x 24.8 mm"
+  }
+ }
+]

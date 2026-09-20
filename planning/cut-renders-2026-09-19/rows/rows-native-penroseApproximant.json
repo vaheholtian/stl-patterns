@@ -1,0 +1,79 @@
+[
+ {
+  "slug": "native-penroseApproximant",
+  "title": "Penrose tiling (seamless)",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "penroseApproximant"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 910,
+  "cutInv": 1,
+  "w50": {
+   "parts": 322,
+   "thin": 322,
+   "volume": 10869.9,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 42.5 mm"
+  },
+  "w50f": {
+   "parts": 288,
+   "thin": 288,
+   "volume": 11529.5,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 42.5 mm"
+  },
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 13720.2,
+   "lost": 0.0456,
+   "broken": false,
+   "tile": "50.0 x 42.5 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 14280.4,
+   "lost": 0.0456,
+   "broken": false,
+   "tile": "50.0 x 42.5 mm"
+  },
+  "w25": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 6649.3,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 21.3 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 7777.7,
+   "lost": 0,
+   "broken": false,
+   "tile": "25.0 x 21.3 mm"
+  },
+  "w25i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 17993.4,
+   "lost": 0.2288,
+   "broken": false,
+   "tile": "25.0 x 21.3 mm"
+  },
+  "w25if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 18078.8,
+   "lost": 0.2288,
+   "broken": false,
+   "tile": "25.0 x 21.3 mm"
+  }
+ }
+]

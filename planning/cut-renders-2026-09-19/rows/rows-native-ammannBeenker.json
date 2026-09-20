@@ -1,0 +1,69 @@
+[
+ {
+  "slug": "native-ammannBeenker",
+  "title": "Ammann–Beenker (Pell repeat)",
+  "mode": "native",
+  "tags": [
+   "this project",
+   "ammannBeenker"
+  ],
+  "layers": 1,
+  "native": true,
+  "cutAs": 1566,
+  "cutInv": 1,
+  "w50": {
+   "parts": 322,
+   "thin": 322,
+   "volume": 8319.2,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50f": {
+   "parts": 270,
+   "thin": 270,
+   "volume": 9275.7,
+   "lost": 0,
+   "broken": true,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50i": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16475.7,
+   "lost": 0.1554,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w50if": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 16721.9,
+   "lost": 0.1554,
+   "broken": false,
+   "tile": "50.0 x 50.0 mm"
+  },
+  "w25": {
+   "parts": 2,
+   "thin": 2,
+   "volume": 5426.6,
+   "lost": 0,
+   "broken": true,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25f": {
+   "parts": 1,
+   "thin": 1,
+   "volume": 6663.3,
+   "lost": 0,
+   "broken": false,
+   "tile": "25.0 x 25.0 mm"
+  },
+  "w25i": {
+   "skipped": "the tile comes out empty at this size"
+  },
+  "w25if": {
+   "skipped": "the tile comes out empty at this size"
+  }
+ }
+]
