@@ -143,7 +143,7 @@ export default function TilePanel({ region }: Props) {
           segments.push(polygonsToSurfaceSegments(res.param, res.polygons))
         }
         if (active.length > 1) {
-          notes.unshift(`${shapes} shapes over ${active.length} pieces; local size ranges ${(sMin * 100).toFixed(0)}% to ${(sMax * 100).toFixed(0)}% of true`)
+          notes.unshift(`${shapes} shapes over ${active.length} pieces; local size ranges ${(sMin * 100).toFixed(0)}% to ${(sMax * 100).toFixed(0)}% of the chosen size`)
           if (masked) notes.push(`left solid where the pattern would shrink below ${(tl.minScale * 100).toFixed(0)}% (${masked} pieces affected)`)
         }
         setLayout(results)

@@ -46,7 +46,7 @@ export interface LayoutSettings {
   marginPerSurface?: boolean
   /** stretch the tile so it repeats a whole number of times around a seam */
   fitSeam: boolean
-  /** leave the surface solid where the local tile size falls below this fraction of true size (0 = off) */
+  /** leave the surface solid where the local tile size falls below this fraction of the chosen size (settings.scale at the origin; 0 = off) */
   minScale: number
   /** place one copy centred on the origin instead of repeating (the caller sizes the tile to the region) */
   single?: boolean
@@ -266,13 +266,17 @@ function finish(
       regionCs = own(m.CrossSection.difference(regionCs, marginCs))
     }
   }
-  // mask out triangles where the pattern would come out too small to print
+  // mask out triangles where the pattern would come out too small to print. The local
+  // size is judged against the size the user asked for (settings.scale, which is the
+  // scale at the origin), not against 1: a tile placed at half size is at 100% of its
+  // intended size at the origin, not at 50% of it.
+  const intended = settings.scale > 0 ? settings.scale : 1
   let masked = 0
   if (settings.minScale > 0) {
     const small: Pt[][] = []
     const ix = param.sub.indices, uv = param.uv
     for (let t = 0; t < param.scale.length; t++) {
-      if (param.scale[t] >= settings.minScale) continue
+      if (param.scale[t] / intended >= settings.minScale) continue
       const a = ix[t * 3], b2 = ix[t * 3 + 1], c = ix[t * 3 + 2]
       small.push([[uv[a * 2], uv[a * 2 + 1]], [uv[b2 * 2], uv[b2 * 2 + 1]], [uv[c * 2], uv[c * 2 + 1]]])
     }
@@ -297,8 +301,8 @@ function finish(
     foldPolygons = crossSectionToPolygons(own(own(m.CrossSection.intersection(tiles, band)).simplify(0.01)))
   }
   let sMin = Infinity, sMax = 0
-  for (const s of param.scale) if (s > 0) { sMin = Math.min(sMin, s); sMax = Math.max(sMax, s) }
-  log.push(`${polygons.length} shapes laid out; local size ranges ${(sMin * 100).toFixed(0)}% to ${(sMax * 100).toFixed(0)}% of true`)
+  for (const s of param.scale) if (s > 0) { sMin = Math.min(sMin, s / intended); sMax = Math.max(sMax, s / intended) }
+  log.push(`${polygons.length} shapes laid out; local size ranges ${(sMin * 100).toFixed(0)}% to ${(sMax * 100).toFixed(0)}% of the chosen size`)
   if (!polygons.length && marginCs && regionCs.area() < 1e-6) log.push(`the ${settings.margin} mm margin covers this piece entirely (a narrow piece such as a rim): it is left solid`)
   if (masked) log.push(`left solid where the pattern would shrink below ${(settings.minScale * 100).toFixed(0)}% (${masked} triangles)`)
   return { param, polygons, foldPolygons, repeatsAround: repeats, stretch, stretchY, tileWidth: tw, tileHeight: th, scaleMin: sMin, scaleMax: sMax, log, closureJoined }
