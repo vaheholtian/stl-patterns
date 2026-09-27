@@ -1,0 +1,1846 @@
+{
+ "waves-1": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-2": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-3": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-4": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-5": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-6": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-7": {
+  "family": "lines",
+  "shapes": []
+ },
+ "chevron-1": {
+  "family": "lines",
+  "shapes": []
+ },
+ "chevron-2": {
+  "family": "lines",
+  "shapes": []
+ },
+ "chevron-3": {
+  "family": "lines",
+  "shapes": []
+ },
+ "straight-lines": {
+  "family": "lines",
+  "shapes": []
+ },
+ "cross-section": {
+  "family": "grids",
+  "shapes": []
+ },
+ "brick-wall-1": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "brick-wall-2": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "herringbone-1": {
+  "family": "lines",
+  "shapes": []
+ },
+ "herringbone-2": {
+  "family": "lines",
+  "shapes": []
+ },
+ "herringbone-3": {
+  "family": "lines",
+  "shapes": []
+ },
+ "herringbone-4": {
+  "family": "lines",
+  "shapes": []
+ },
+ "herringbone-5": {
+  "family": "lines",
+  "shapes": []
+ },
+ "herringbone-6": {
+  "family": "lines",
+  "shapes": []
+ },
+ "herringbone-7": {
+  "family": "lines",
+  "shapes": []
+ },
+ "herringbone-8": {
+  "family": "lines",
+  "shapes": []
+ },
+ "flower-1": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "flower-2": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "flower-3": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "flower-4": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "flower-5": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "flower-6": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "flower-7": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "plus-1": {
+  "family": "grids",
+  "shapes": [
+   "crosses"
+  ]
+ },
+ "plus-2": {
+  "family": "grids",
+  "shapes": [
+   "crosses"
+  ]
+ },
+ "plus-3": {
+  "family": "grids",
+  "shapes": [
+   "crosses"
+  ]
+ },
+ "plus-4": {
+  "family": "grids",
+  "shapes": [
+   "crosses"
+  ]
+ },
+ "circles-1": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-2": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-3": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-4": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-5": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-6": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-7": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "concentric-circles-1": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "concentric-circles-2": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "concentric-circles-3": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "adjointed-circles": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "adjointed-diamonds": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-1": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-2": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-3": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "hexagon-1": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "hexagon-2": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "hexagon-3": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "hexagon-4": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "hexagon-5": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "hexagon-6": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "hexagon-7": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "hexagon-8": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "overlapping-hexagons": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "squares-and-squares-1": {
+  "family": "tiles",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "squares-and-squares-2": {
+  "family": "tiles",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "squares-and-diamonds": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds",
+   "squares"
+  ]
+ },
+ "squares-and-circles-1": {
+  "family": "tiles",
+  "shapes": [
+   "circles",
+   "squares"
+  ]
+ },
+ "squares-and-circles-2": {
+  "family": "tiles",
+  "shapes": [
+   "circles",
+   "squares"
+  ]
+ },
+ "squares-and-plus-1": {
+  "family": "grids",
+  "shapes": [
+   "crosses",
+   "squares"
+  ]
+ },
+ "squares-and-plus-2": {
+  "family": "grids",
+  "shapes": [
+   "crosses",
+   "squares"
+  ]
+ },
+ "squares-and-stars-1": {
+  "family": "tiles",
+  "shapes": [
+   "stars",
+   "squares"
+  ]
+ },
+ "squares-and-stars-2": {
+  "family": "tiles",
+  "shapes": [
+   "stars",
+   "squares"
+  ]
+ },
+ "stars-and-lines-1": {
+  "family": "tiles",
+  "shapes": [
+   "stars"
+  ]
+ },
+ "stars-and-lines-2": {
+  "family": "tiles",
+  "shapes": [
+   "stars"
+  ]
+ },
+ "triangles-1": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-2": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-3": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-4": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-5": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-6": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-7": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-8": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-9": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-10": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "inverted-triangles": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "checkerboard": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "japanese-pattern-1": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "japanese-pattern-2": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "japanese-pattern-3": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "japanese-pattern-4": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "japanese-pattern-5": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "japanese-pattern-6": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "eyes-1": {
+  "family": "organic",
+  "shapes": []
+ },
+ "eyes-2": {
+  "family": "organic",
+  "shapes": []
+ },
+ "eyes-3": {
+  "family": "organic",
+  "shapes": []
+ },
+ "eyes-4": {
+  "family": "organic",
+  "shapes": []
+ },
+ "jigsaw": {
+  "family": "organic",
+  "shapes": []
+ },
+ "railroad": {
+  "family": "grids",
+  "shapes": []
+ },
+ "octagons-1": {
+  "family": "grids",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "octagons-2": {
+  "family": "grids",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "lines-1": {
+  "family": "lines",
+  "shapes": []
+ },
+ "lines-2": {
+  "family": "lines",
+  "shapes": []
+ },
+ "scales-1": {
+  "family": "organic",
+  "shapes": []
+ },
+ "scales-2": {
+  "family": "organic",
+  "shapes": []
+ },
+ "scales-3": {
+  "family": "organic",
+  "shapes": []
+ },
+ "scales-4": {
+  "family": "organic",
+  "shapes": []
+ },
+ "leaves-1": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "leaves-2": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "leaves-3": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "leaves-4": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "leaves-5": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "leaves-6": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "leaves-7": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "leaves-8": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "pipes": {
+  "family": "lines",
+  "shapes": []
+ },
+ "zebra": {
+  "family": "lines",
+  "shapes": []
+ },
+ "memphis-1": {
+  "family": "nature",
+  "shapes": [
+   "abstract"
+  ]
+ },
+ "memphis-2": {
+  "family": "nature",
+  "shapes": [
+   "abstract"
+  ]
+ },
+ "memphis-3": {
+  "family": "nature",
+  "shapes": [
+   "abstract"
+  ]
+ },
+ "memphis-4": {
+  "family": "nature",
+  "shapes": [
+   "abstract"
+  ]
+ },
+ "memphis-5": {
+  "family": "nature",
+  "shapes": [
+   "abstract"
+  ]
+ },
+ "memphis-6": {
+  "family": "nature",
+  "shapes": [
+   "abstract"
+  ]
+ },
+ "greek-key": {
+  "family": "weaves",
+  "shapes": []
+ },
+ "chinese-1": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-2": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-3": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-4": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-5": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-6": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-7": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-8": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-9": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "new-1": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-2": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-3": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-4": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-5": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-6": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-7": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-8": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-9": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-10": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-11": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-12": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-13": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-14": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-15": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-16": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "new-17": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "double-bubble-1": {
+  "family": "organic",
+  "shapes": []
+ },
+ "double-bubble-2": {
+  "family": "organic",
+  "shapes": []
+ },
+ "stars-1": {
+  "family": "tiles",
+  "shapes": [
+   "stars"
+  ]
+ },
+ "stars-2": {
+  "family": "tiles",
+  "shapes": [
+   "stars"
+  ]
+ },
+ "stars-3": {
+  "family": "tiles",
+  "shapes": [
+   "stars"
+  ]
+ },
+ "stars-4": {
+  "family": "tiles",
+  "shapes": [
+   "stars"
+  ]
+ },
+ "stars-5": {
+  "family": "tiles",
+  "shapes": [
+   "stars"
+  ]
+ },
+ "stars-6": {
+  "family": "tiles",
+  "shapes": [
+   "stars"
+  ]
+ },
+ "semicircles-1": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "songket-1": {
+  "family": "nature",
+  "shapes": [
+   "textile"
+  ]
+ },
+ "christmas-tree-1": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "candy-cane-1": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "christmas-bells-1": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "christmas-pattern-1": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "christmas-pattern-2": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "christmas-pattern-3": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "snowflakes-1": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "christmas-tree-balls": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "santa-claus": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "christmas-gift": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "cubes-1": {
+  "family": "tiles",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "cubes-2": {
+  "family": "tiles",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "cubes-3": {
+  "family": "tiles",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "stained-glass": {
+  "family": "tiles",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "tiles-1": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "rectangles-and-squares-1": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "mexican-pattern-1": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "mexican-pattern-2": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "ethnic-pattern-1": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "ethnic-pattern-2": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "ethnic-pattern-3": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "plaid-pattern-1": {
+  "family": "nature",
+  "shapes": [
+   "textile"
+  ]
+ },
+ "plaid-pattern-2": {
+  "family": "nature",
+  "shapes": [
+   "textile"
+  ]
+ },
+ "plaid-pattern-3": {
+  "family": "nature",
+  "shapes": [
+   "textile"
+  ]
+ },
+ "plaid-pattern-4": {
+  "family": "nature",
+  "shapes": [
+   "textile"
+  ]
+ },
+ "doodle-1": {
+  "family": "nature",
+  "shapes": [
+   "abstract"
+  ]
+ },
+ "doodle-2": {
+  "family": "nature",
+  "shapes": [
+   "abstract"
+  ]
+ },
+ "batik-1": {
+  "family": "nature",
+  "shapes": [
+   "textile"
+  ]
+ },
+ "batik-2": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "batik-3": {
+  "family": "nature",
+  "shapes": [
+   "textile"
+  ]
+ },
+ "batik-4": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "batik-5": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "batik-6": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "african-1": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "african-2": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "african-3": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "african-4": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "triangles-11": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "hexagon-9": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "tiles-2": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "tiles-3": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "tribal-1": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "tribal-2": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "waves-8": {
+  "family": "lines",
+  "shapes": []
+ },
+ "leaves-9": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "blobs": {
+  "family": "organic",
+  "shapes": []
+ },
+ "african-5": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "triangles-12": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "squares-and-triangles-1": {
+  "family": "tiles",
+  "shapes": [
+   "triangles",
+   "squares"
+  ]
+ },
+ "tribal-3": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "circles-8": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "triangles-13": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-14": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-15": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-16": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "circles-9": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "concentric-circles-4": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "concentric-circles-5": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "concentric-circles-6": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "stripes-1": {
+  "family": "lines",
+  "shapes": []
+ },
+ "stripes-2": {
+  "family": "lines",
+  "shapes": []
+ },
+ "chevron-4": {
+  "family": "lines",
+  "shapes": []
+ },
+ "chevron-5": {
+  "family": "lines",
+  "shapes": []
+ },
+ "terrazzo-1": {
+  "family": "organic",
+  "shapes": []
+ },
+ "geometric-1": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "halloween-1": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "halloween-2": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "halloween-3": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "halloween-4": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "halloween-5": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "halloween-6": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "hexagon-10": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "hexagon-11": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "squares-1": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "squares-2": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "sprinkles-1": {
+  "family": "organic",
+  "shapes": []
+ },
+ "cubes-4": {
+  "family": "tiles",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "geometric-2": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "geometric-3": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "geometric-4": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "circles-10": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-11": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-12": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "triangles-17": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-18": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "geometric-5": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "geometric-6": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "squiggle-1": {
+  "family": "lines",
+  "shapes": []
+ },
+ "moroccan-1": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "moroccan-2": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "japanese-pattern-7": {
+  "family": "weaves",
+  "shapes": []
+ },
+ "waves-9": {
+  "family": "lines",
+  "shapes": []
+ },
+ "christmas-pattern-4": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "christmas-pattern-5": {
+  "family": "nature",
+  "shapes": [
+   "holiday"
+  ]
+ },
+ "plaid-pattern-5": {
+  "family": "nature",
+  "shapes": [
+   "textile"
+  ]
+ },
+ "plaid-pattern-6": {
+  "family": "nature",
+  "shapes": [
+   "textile"
+  ]
+ },
+ "circles-13": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-14": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "interlocked-hexagons-1": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "interlocked-hexagons-2": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "interlocked-hexagons-3": {
+  "family": "grids",
+  "shapes": [
+   "hexagons"
+  ]
+ },
+ "lanterns-1": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "leaves-10": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "lines-3": {
+  "family": "lines",
+  "shapes": []
+ },
+ "rope-1": {
+  "family": "weaves",
+  "shapes": []
+ },
+ "waves-10": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-11": {
+  "family": "lines",
+  "shapes": []
+ },
+ "lines-4": {
+  "family": "lines",
+  "shapes": []
+ },
+ "lines-5": {
+  "family": "lines",
+  "shapes": []
+ },
+ "lines-6": {
+  "family": "lines",
+  "shapes": []
+ },
+ "plus-5": {
+  "family": "grids",
+  "shapes": [
+   "crosses"
+  ]
+ },
+ "plus-6": {
+  "family": "grids",
+  "shapes": [
+   "crosses"
+  ]
+ },
+ "scales-5": {
+  "family": "organic",
+  "shapes": []
+ },
+ "scales-6": {
+  "family": "organic",
+  "shapes": []
+ },
+ "scales-7": {
+  "family": "organic",
+  "shapes": []
+ },
+ "scales-8": {
+  "family": "organic",
+  "shapes": []
+ },
+ "scales-9": {
+  "family": "organic",
+  "shapes": []
+ },
+ "triangles-19": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-20": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "batik-7": {
+  "family": "nature",
+  "shapes": [
+   "floral"
+  ]
+ },
+ "circles-15": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-16": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-17": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-and-diamonds": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds",
+   "circles"
+  ]
+ },
+ "diamonds-4": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-5": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-6": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "geometric-7": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "geometric-8": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "geometric-9": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "geometric-10": {
+  "family": "tiles",
+  "shapes": [
+   "mixed"
+  ]
+ },
+ "waves-12": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-13": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-14": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-15": {
+  "family": "lines",
+  "shapes": []
+ },
+ "double-bubble-3": {
+  "family": "organic",
+  "shapes": []
+ },
+ "double-bubble-4": {
+  "family": "organic",
+  "shapes": []
+ },
+ "patches": {
+  "family": "organic",
+  "shapes": []
+ },
+ "squares-3": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "squares-4": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "squares-5": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "squares-6": {
+  "family": "grids",
+  "shapes": [
+   "squares"
+  ]
+ },
+ "triangles-21": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-22": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "triangles-23": {
+  "family": "tiles",
+  "shapes": [
+   "triangles"
+  ]
+ },
+ "tribal-4": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "tribal-5": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-10": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-11": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "diamonds-7": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-8": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-9": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "waves-16": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-17": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-18": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-19": {
+  "family": "lines",
+  "shapes": []
+ },
+ "waves-20": {
+  "family": "lines",
+  "shapes": []
+ },
+ "diamonds-10": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-11": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-12": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-13": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "chinese-12": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-13": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "chinese-14": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "egyptian-1": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "egyptian-2": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "egyptian-3": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "circles-19": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "circles-20": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "egyptian-4": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "egyptian-6": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "waves-22": {
+  "family": "lines",
+  "shapes": []
+ },
+ "squares-and-circles-3": {
+  "family": "tiles",
+  "shapes": [
+   "circles",
+   "squares"
+  ]
+ },
+ "japanese-pattern-8": {
+  "family": "nature",
+  "shapes": [
+   "cultural"
+  ]
+ },
+ "circles-22": {
+  "family": "tiles",
+  "shapes": [
+   "circles"
+  ]
+ },
+ "diamonds-14": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ },
+ "diamonds-15": {
+  "family": "tiles",
+  "shapes": [
+   "diamonds"
+  ]
+ }
+}

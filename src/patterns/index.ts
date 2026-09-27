@@ -1,4 +1,4 @@
-import type { Generator, ParamValue } from './types'
+import type { Generator, GeneratorParam, ParamValue } from './types'
 import { voronoiTileGenerator } from './voronoiTile'
 import { delaunayTileGenerator } from './delaunayTile'
 import { truchetGenerator } from './truchet'
@@ -14,6 +14,7 @@ import { hyperbolicGenerator } from './hyperbolic'
 import { apollonianGenerator } from './apollonian'
 import { juliaGenerator } from './julia'
 import { lusonaGenerator } from './mirrorCurves'
+import { celticGenerator } from './celtic'
 import { mazeGenerator } from './maze'
 import { ammannBeenkerGenerator } from './ammannBeenker'
 import { hankinGenerator } from './hankin'
@@ -22,6 +23,7 @@ import { singleStrokeFractalGenerators } from './singleStrokeFractals'
 import { greekKeyGenerator } from './greekKey'
 import { perforationGenerators } from './perforations'
 import { caneWeaveGenerator } from './caneWeave'
+import { stripesGenerator } from './stripes'
 import { libraryGenerator, libraryPattern } from './library'
 import { NATIVE_CUT_PARTS, cutAdvice, type CutAdvice } from './cutParts'
 
@@ -29,8 +31,10 @@ import { NATIVE_CUT_PARTS, cutAdvice, type CutAdvice } from './cutParts'
 export const generators: Generator[] = [
   libraryGenerator,
   ...perforationGenerators,
+  stripesGenerator,
   caneWeaveGenerator,
   lusonaGenerator,
+  celticGenerator,
   mazeGenerator,
   ammannBeenkerGenerator,
   hankinGenerator,
@@ -69,6 +73,17 @@ export function isSeamless(g: Generator | undefined, params?: Record<string, Par
 
 export function generatorById(id: string): Generator | undefined {
   return generators.find((g) => g.id === id)
+}
+
+/**
+ * The parameters worth a control for these values: the ones that can change the
+ * tile, with any bound that depends on the others applied. Rib width also sets
+ * the width of connecting bridges, so it stays while bridges are added.
+ */
+export function shownParams(g: Generator, params: Record<string, ParamValue>, bridges = false): GeneratorParam[] {
+  return g.params
+    .filter((p) => !p.relevant || p.relevant(params) || (bridges && p.key === 'ribWidth'))
+    .map((p) => (p.maxFor ? { ...p, max: p.maxFor(params) } : p))
 }
 
 export function defaultParams(g: Generator): Record<string, ParamValue> {

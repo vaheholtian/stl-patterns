@@ -3,6 +3,7 @@
 import type { TriMesh } from './manifold'
 import { extractSubMesh, boundaryLoops, type SubMesh } from './submesh'
 import { flattenLSCM } from './lscm'
+import { flattenLevel } from './levelParam'
 import { FaceAdjacency } from './segmentation'
 import { SurfaceIndex } from './bvh'
 import { triangleAreaNormal } from './sampling'
@@ -89,7 +90,7 @@ function nearestVertex(sub: SubMesh, x: number, y: number, z: number): number {
   return best
 }
 
-function nearestTriangle(sub: SubMesh, x: number, y: number, z: number): number {
+function nearestTriangle(sub: Pick<SubMesh, 'positions' | 'indices'>, x: number, y: number, z: number): number {
   const { positions: p, indices: ix } = sub
   let best = 0, bd = Infinity
   for (let t = 0; t < ix.length / 3; t++) {
@@ -180,13 +181,30 @@ function cutSeam(sub: SubMesh, path: number[]): { sub: SubMesh; pairs: [number, 
   }
 }
 
-export function flattenRegion(mesh: TriMesh, region: Uint32Array, origin: [number, number, number]): FlattenedRegion {
+/**
+ * Mean height of a loop and how much it spreads in height, for telling a wall
+ * band (rim above the floor) from a washer or a pipe lying on its side.
+ */
+function loopHeight(sub: SubMesh, loop: number[]): { mean: number; spread: number } {
+  let lo = Infinity, hi = -Infinity, sum = 0
+  for (const v of loop) { const z = sub.positions[v * 3 + 2]; lo = Math.min(lo, z); hi = Math.max(hi, z); sum += z }
+  return { mean: sum / (loop.length || 1), spread: hi - lo }
+}
+
+/**
+ * Flatten a region. With `levelRows`, a ring whose two ends lie one above the
+ * other (the walls of a bowl, a vase, a cup) is parameterized so the tile rows
+ * follow the rim all the way round instead of drifting off level as the
+ * conformal flattening of a non-developable wall makes them do.
+ */
+export function flattenRegion(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], levelRows = false): FlattenedRegion {
   const log: string[] = []
   let sub = extractSubMesh(mesh, region)
   let loops = boundaryLoops(sub)
   let removedCap = new Uint32Array(0)
   let topology: FlattenedRegion['topology'] = 'disk'
   let period: [number, number] | null = null
+  let level = false
 
   if (loops.length === 0) {
     // closed surface: remove a small cap at the point farthest from the origin
@@ -225,13 +243,35 @@ export function flattenRegion(mesh: TriMesh, region: Uint32Array, origin: [numbe
       const path: number[] = []
       for (let v = reached; v !== -1; v = prev[v]) path.push(v)
       path.reverse()
+      const uncut = sub
+      const hA = loopHeight(uncut, A), hB = loopHeight(uncut, B)
       const cut = cutSeam(sub, path)
       sub = cut.sub
       pairs = cut.pairs
       topology = 'seam'
       log.push(`ring-shaped region: cut a seam of ${path.length} vertices so the tile can wrap`)
+      if (levelRows) {
+        // only a band whose ends sit one above the other has a level to keep: a
+        // washer or a box rim (both loops at one height) and a pipe on its side
+        // (both loops spanning the same heights) keep the conformal flattening
+        if (Math.abs(hA.mean - hB.mean) > 0.5 * Math.max(hA.spread, hB.spread)) {
+          level = true
+        } else {
+          log.push('the ends of the ring are not one above the other, so the rows follow the surface instead of staying level')
+        }
+      }
     } else {
       log.push('could not find a seam between boundary loops; flattening as-is')
+    }
+  }
+
+  if (level) {
+    const lv = flattenLevel(sub, pairs)
+    log.push(`level rows: the pattern wraps ${lv.width.toFixed(0)} mm round the wall and ${lv.height.toFixed(0)} mm up it, every row level with the print bed (${lv.iterations} iterations)`)
+    const originTriangle = nearestTriangle(sub, origin[0], origin[1], origin[2])
+    return {
+      positions: sub.positions, indices: sub.indices, normals: sub.normals, uv: lv.uv, originTriangle,
+      period: lv.period, topology, loops: boundaryLoops(sub), seamVertices: pairs.flatMap(([a, b]) => [a, b]), log, removedCap,
     }
   }
 
@@ -761,7 +801,7 @@ function findBacking(mesh: TriMesh, parts: Uint32Array[], maxDist: number): ({ f
 }
 
 /** Flatten every smooth piece of a region. Pieces that cannot be flattened are skipped with a log line. */
-export function flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], maxAngleDeg: number, joinEdges = true): { pieces: FlattenedPiece[]; log: string[] } {
+export function flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [number, number, number], maxAngleDeg: number, joinEdges = true, levelRows = false): { pieces: FlattenedPiece[]; log: string[] } {
   const parts = splitSmoothPieces(mesh, region, maxAngleDeg)
   const log: string[] = []
   // the piece the origin lies on: the one holding the triangle nearest the origin
@@ -773,7 +813,7 @@ export function flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [numbe
   parts.forEach((part, i) => {
     const own = part.includes(originTri) ? origin : regionCentroid(mesh, part)
     try {
-      const flat = flattenRegion(mesh, part, own)
+      const flat = flattenRegion(mesh, part, own, levelRows)
       if (parts.length === 1) log.push(...flat.log)
       let area = 0
       const tmp = new Float64Array(3)
@@ -795,11 +835,36 @@ export function flattenPieces(mesh: TriMesh, region: Uint32Array, origin: [numbe
   for (const sheet of new Set(pieces.map((p) => p.sheet))) {
     const members = pieces.filter((p) => p.sheet === sheet)
     const lead = members.includes(pieces[rootIndex]) ? pieces[rootIndex] : members.reduce((a, b) => (b.area > a.area ? b : a))
-    const param = new Parameterization({ positions: lead.positions, indices: lead.indices, normals: lead.normals, sourceTriangles: new Uint32Array(0) }, new Float32Array(lead.uv))
-    const t = lead.originTriangle
-    const [u0, v0] = param.uvAt3D(t, lead.origin[0], lead.origin[1], lead.origin[2])
-    const frame = { u0, v0, scale: param.scale[t] || 1 }
-    for (const p of members) { p.frame = frame; p.origin = lead.origin }
+    setFrame(members, lead, lead.originTriangle, lead.origin)
   }
   return { pieces, log }
+}
+
+/** Give every piece of a sheet the frame of the point `origin` on triangle `t` of `lead`. */
+function setFrame(members: FlattenedPiece[], lead: FlattenedPiece, t: number, origin: [number, number, number]) {
+  const param = new Parameterization({ positions: lead.positions, indices: lead.indices, normals: lead.normals, sourceTriangles: new Uint32Array(0) }, new Float32Array(lead.uv))
+  const [u0, v0] = param.uvAt3D(t, origin[0], origin[1], origin[2])
+  const frame = { u0, v0, scale: param.scale[t] || 1 }
+  for (const p of members) { p.frame = frame; p.origin = origin }
+}
+
+/**
+ * Move the layout origin to a new point without flattening again: the sheet
+ * holding the piece nearest the point recentres on it, so the pattern slides
+ * over the surface with the origin. False when the pieces are empty.
+ */
+export function reframePieces(pieces: FlattenedPiece[], origin: [number, number, number]): boolean {
+  let best = -1, bestTri = 0, bd = Infinity
+  pieces.forEach((p, i) => {
+    const t = nearestTriangle(p, origin[0], origin[1], origin[2])
+    let cx = 0, cy = 0, cz = 0
+    for (let c = 0; c < 3; c++) { const v = p.indices[t * 3 + c] * 3; cx += p.positions[v]; cy += p.positions[v + 1]; cz += p.positions[v + 2] }
+    const d = (cx / 3 - origin[0]) ** 2 + (cy / 3 - origin[1]) ** 2 + (cz / 3 - origin[2]) ** 2
+    if (d < bd) { bd = d; best = i; bestTri = t }
+  })
+  if (best < 0) return false
+  const lead = pieces[best]
+  lead.originTriangle = bestTri
+  setFrame(pieces.filter((p) => p.sheet === lead.sheet), lead, bestTri, origin)
+  return true
 }

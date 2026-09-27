@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useStore, effectiveWallTilt } from '../../state/store'
 import { useTileStore } from '../../state/tileStore'
 import { useRecipes, type Recipe } from '../../state/recipes'
+import { recipeOp, supportsSurfaceMethod } from '../../state/voronoiMethod'
+import { catalogEntry, defForVariant } from '../../patterns/catalog'
 import { downloadBlob } from '../../io/download'
 import { triangleAreaNormal } from '../../geom/sampling'
 
@@ -31,10 +33,14 @@ export default function RecipePanel() {
   const st = useStore.getState
   const [name, setName] = useState('')
 
-  const save = (op: 'tile' | 'voronoi') => {
+  // one save: the record's kind follows the method in force, so a Voronoi tile
+  // generated on the surface keeps the surface routine's own record, as before
+  const save = () => {
     const s = st()
     const body = s.bodies.find((b) => b.id === s.activeBodyId)
     if (!body) return
+    const def = useTileStore.getState().def
+    const op = recipeOp(def, s.voronoiMethod, true)
     let point: [number, number, number] | null = null, normal: [number, number, number] | null = null
     if (s.selection) {
       // representative triangle: the first selected one nearest the layout origin if any, else the first
@@ -50,7 +56,7 @@ export default function RecipePanel() {
       }
     }
     useRecipes.getState().add({
-      name: name || `${op} on ${body.name}`,
+      name: name || `${op === 'voronoi' ? 'Voronoi on surface' : def.name || 'tile'} on ${body.name}`,
       op,
       region: { wholeBody: !s.selection, point, normal, segmentAngle: s.segmentAngle, wallTiltDeg: effectiveWallTilt(s) },
       tile: op === 'tile' ? useTileStore.getState().def : undefined,
@@ -83,7 +89,17 @@ export default function RecipePanel() {
     if (r.tile) useTileStore.getState().setDef(r.tile)
     if (r.layout) s.setTileLayout(r.layout)
     if (r.voronoi) s.setVoronoi(r.voronoi)
-    s.pushLog(`recipe "${r.name}" loaded: region selected and settings restored. Flatten and apply when ready.`)
+    if (r.op === 'voronoi') {
+      // a surface record carries no tile: put the Voronoi card in place so its method switch is on screen
+      if (!supportsSurfaceMethod(useTileStore.getState().def)) {
+        const e = catalogEntry('voronoi')
+        if (e) useTileStore.getState().setDef(defForVariant(e, e.variants[0]))
+      }
+      s.setVoronoiMethod('surface')
+    } else {
+      s.setVoronoiMethod('tile')
+    }
+    s.pushLog(`recipe "${r.name}" loaded: region selected and settings restored. ${r.op === 'voronoi' ? 'Apply' : 'Preview and apply'} when ready.`)
   }
 
   const exportAll = () => downloadBlob(new Blob([JSON.stringify(recipes, null, 1)], { type: 'application/json' }), 'stl-patterns-recipes.json')
@@ -99,8 +115,7 @@ export default function RecipePanel() {
         <input type="text" placeholder="recipe name" value={name} onChange={(e) => setName(e.target.value)} style={{ flex: 1 }} />
       </div>
       <div className="row wrap">
-        <button className="small" disabled={!activeBodyId} onClick={() => save('tile')}>Save tile setup</button>
-        <button className="small" disabled={!activeBodyId} onClick={() => save('voronoi')}>Save Voronoi setup</button>
+        <button className="small" disabled={!activeBodyId} onClick={save} title="Keeps the current pattern, its placement or surface settings, and the region">Save setup</button>
         <button className="small" disabled={!recipes.length} onClick={exportAll}>Export</button>
         <label className="small" style={{ color: 'var(--accent2)', cursor: 'pointer' }}>
           Import
@@ -111,7 +126,7 @@ export default function RecipePanel() {
         {recipes.map((r) => (
           <div key={r.id} className="body-row" onClick={() => load(r)} title={selection ? 'replaces the current selection' : ''}>
             <span className="name">{r.name}</span>
-            <span className="muted">{r.op}</span>
+            <span className="muted">{r.op === 'voronoi' ? 'Voronoi on surface' : r.tile?.name || 'tile'}</span>
             <button className="small" onClick={(e) => { e.stopPropagation(); useRecipes.getState().remove(r.id) }}>✕</button>
           </div>
         ))}

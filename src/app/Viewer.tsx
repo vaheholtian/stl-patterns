@@ -50,7 +50,7 @@ export default function Viewer({ onPick, onReady }: Props) {
   return (
     <div className="viewport">
       <canvas ref={canvasRef} />
-      <div className="hint">{pickMode === 'origin' ? 'click on the selected region to place the pattern origin' : 'drag: orbit · wheel: zoom · right-drag: pan · click: select region · shift: add · alt: remove'}</div>
+      <div className="hint">{pickMode === 'origin' ? 'click on the selected region to place the pattern origin' : pickMode === 'move' ? 'drag on the patterned surface to slide the pattern · drag elsewhere: orbit' : 'drag: orbit · wheel: zoom · right-drag: pan · click: select region · shift: add · alt: remove'}</div>
     </div>
   )
 }

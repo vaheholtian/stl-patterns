@@ -1,6 +1,8 @@
 import { create } from 'zustand'
 import type { ParamValue, Pt, Tile } from '../patterns/types'
 import type { TileDef } from '../patterns/definition'
+import type { DroppedReport } from '../patterns/generate'
+import type { PiecesResult } from '../worker/preview-protocol'
 export { resolveDef } from '../patterns/definition'
 export type { TileDef, ResolvedDef } from '../patterns/definition'
 
@@ -16,10 +18,15 @@ interface TileState {
   /** pipeline output: closed polygons in tile mm space, ready to cut */
   polygons: Pt[][]
   warnings: string[]
+  /** what Remove loose pieces did to the current polygons */
+  dropped: DroppedReport | undefined
+  /** live piece count for the current polygons; null while it is being measured */
+  pieces: PiecesResult | 'failed' | null
   saved: SavedTile[]
   setDef: (patch: Partial<TileDef>) => void
   setParam: (key: string, value: ParamValue) => void
-  setResult: (tile: Tile | null, polygons: Pt[][], warnings: string[]) => void
+  setResult: (tile: Tile | null, polygons: Pt[][], warnings: string[], dropped?: DroppedReport) => void
+  setPieces: (pieces: PiecesResult | 'failed' | null) => void
   save: () => void
   load: (id: string) => void
   remove: (id: string) => void
@@ -54,10 +61,13 @@ export const useTileStore = create<TileState>((set, get) => ({
   tile: null,
   polygons: [],
   warnings: [],
+  dropped: undefined,
+  pieces: null,
   saved: readSaved(),
   setDef: (patch) => set((s) => ({ def: { ...s.def, ...patch } })),
   setParam: (key, value) => set((s) => ({ def: { ...s.def, params: { ...s.def.params, [key]: value } } })),
-  setResult: (tile, polygons, warnings) => set({ tile, polygons, warnings }),
+  setResult: (tile, polygons, warnings, dropped) => set({ tile, polygons, warnings, dropped, pieces: null }),
+  setPieces: (pieces) => set({ pieces }),
   save: () => {
     const d = get().def
     const entry: SavedTile = { ...d, id: `${Date.now().toString(36)}`, savedAt: Date.now() }

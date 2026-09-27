@@ -96,6 +96,20 @@ input[type='range'] { width: 100%; }
 .muted { color: var(--muted); }
 .danger { color: var(--danger); }
 
+.placement-controls { border: 0; padding: 0; margin: 0; min-width: 0; }
+.placement-group { padding: 10px 0 4px; border-top: 1px solid var(--border); }
+.placement-group h4 { margin: 0 0 8px; font-size: 12px; color: var(--muted); }
+.placement-status { margin: 8px 0 12px; line-height: 1.5; }
+.placement-advanced { border-top: 1px solid var(--border); padding-top: 10px; }
+.placement-advanced summary { cursor: pointer; margin-bottom: 10px; }
+.placement-advanced summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.placement-summary { font-size: 11px; line-height: 1.6; margin-top: 6px; }
+.placement-controls:disabled { opacity: 0.65; }
+.method-picker { margin-bottom: 8px; }
+.method-picker .row { margin-bottom: 4px; }
+.method-picker label { flex: none; min-width: 52px; }
+.method-note { font-size: 11px; line-height: 1.5; }
+
 .bodies { display: flex; flex-direction: column; gap: 3px; }
 .body-row { display: flex; align-items: center; gap: 6px; padding: 4px 6px; border-radius: 6px; cursor: pointer; }
 .body-row:hover { background: rgba(255,255,255,0.04); }
@@ -113,6 +127,14 @@ input[type='range'] { width: 100%; }
 .pattern { display: grid; grid-template-columns: 320px 1fr; height: 100%; min-height: 0; }
 .pattern .canvas-wrap { display: flex; align-items: center; justify-content: center; background: #101216; }
 .pattern canvas { background: #fff; max-width: 100%; max-height: 100%; }
+.pattern-preview { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.pattern-preview > .canvas-wrap { flex: 1; }
+.repeat-status { justify-content: space-between; }
+.repeat-status strong { font-size: 12px; font-weight: 500; }
+.repeat-advanced { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border); }
+.repeat-advanced summary { cursor: pointer; margin-bottom: 8px; }
+.repeat-advanced summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.repeat-advanced button { margin-top: 8px; }
 
 /* The canvas is sized in JS to the square that fits its box, at device pixels.
    It is taken out of flow so its size can never grow the box that measures it. */
@@ -145,6 +167,10 @@ input[type='range'] { width: 100%; }
 }
 .preview-bar .spacer { flex: 1; }
 .preview-bar button { min-width: 34px; padding: 4px 6px; }
+.pattern-preview-bar { flex: none; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; }
+.preview-repeat { display: flex; align-items: center; gap: 4px; }
+.preview-repeat button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.app.mobile .preview-repeat button { padding: 6px; }
 
 .sheet {
   flex: 1; min-height: 0; display: flex; flex-direction: column;
@@ -195,34 +221,56 @@ input[type='range'] { width: 100%; }
 }
 
 /* Pattern library picker: a browsable grid, since a 330-entry select is not one */
-.lib-row { align-items: center; }
-.lib-current { display: flex; align-items: center; gap: 8px; min-width: 150px; text-align: left; padding: 4px 8px; }
-.lib-current .lib-swatch { width: 24px; height: 24px; border-radius: 4px; flex: none; }
-.lib-swatch { display: block; width: 100%; aspect-ratio: 1; color: var(--text); background: var(--bg); }
-.lib-backdrop { position: fixed; inset: 0; z-index: 60; background: #000a; display: grid; place-items: center; padding: 16px; }
-/* The height must come from the viewport: a percentage here resolves against the
-   backdrop's auto-sized grid track, which is the modal itself, so it never bounds
-   anything and the grid runs off a short window with its Close button. */
-.lib-modal { display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; gap: 10px; width: min(960px, 100%); max-height: min(720px, calc(100dvh - 32px)); padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--panel); box-shadow: 0 20px 60px #000a; }
-.lib-head { display: flex; gap: 8px; align-items: center; }
-.lib-head input[type="search"] { flex: 1; }
-.lib-toggle { display: flex; align-items: center; gap: 6px; color: var(--muted); white-space: nowrap; }
-.lib-tags { display: flex; flex-wrap: wrap; gap: 4px; max-height: min(76px, 22dvh); overflow-y: auto; }
-.lib-tags button { padding: 2px 8px; border-radius: 999px; font-size: 11px; color: var(--muted); }
-.lib-tags button.active { border-color: var(--accent); color: var(--accent); }
-.lib-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 10px; overflow-y: auto; min-height: 0; padding: 2px; }
-.lib-card { display: grid; gap: 4px; padding: 6px; text-align: left; background: var(--panel2); }
-.lib-card.selected { border-color: var(--accent); }
-.lib-title { font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.lib-flags { display: flex; flex-wrap: wrap; gap: 3px; }
-.lib-flags em { font-style: normal; font-size: 9px; padding: 1px 4px; border-radius: 3px; background: var(--bg); color: var(--muted); }
-.lib-flags em.warn { color: var(--accent); }
-.lib-foot { font-size: 11px; }
-@media (max-width: 640px) {
-  .lib-grid { grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); }
-  .lib-modal { max-height: calc(100dvh - 32px); }
+/* pattern browser: one dialog over every built-in pattern and the saved designs */
+.pb-current { display: flex; align-items: center; gap: 8px; min-width: 150px; }
+.pb-change { flex: 1; display: flex; align-items: center; gap: 8px; min-width: 0; text-align: left; padding: 4px 8px; }
+.pb-current-title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pb-mini { width: 28px; height: 28px; border-radius: 4px; flex: none; overflow: hidden; }
+.pb-thumb, .pb-mini { display: block; background: #fff; color: #000; }
+.pb-thumb { width: 100%; aspect-ratio: 1; border-radius: 6px; overflow: hidden; }
+.pb-thumb > svg, .pb-mini > svg { display: block; width: 100%; height: 100%; }
+/* thumbnails are pure black on white, so a colour inversion is exactly the swapped pattern */
+.pb-grid.inverted .pb-thumb:not(.pb-placeholder) { filter: invert(1); }
+.pb-placeholder { display: grid; place-items: center; background: var(--bg); color: var(--muted); font-size: 11px; }
+.pb-placeholder.failed { color: var(--danger); }
+.pb-backdrop { position: fixed; inset: 0; z-index: 60; background: #000a; display: grid; place-items: center; padding: 16px; }
+.pb-dialog { display: grid; grid-template-rows: auto auto auto auto auto minmax(0, 1fr) auto; gap: 8px; width: min(1040px, 100%); max-height: min(760px, calc(100dvh - 32px)); padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--panel); box-shadow: 0 20px 60px #000a; }
+.pb-head { display: flex; gap: 8px; align-items: center; }
+.pb-head input[type="search"] { flex: 1; }
+.pb-collections { display: flex; gap: 2px; border-bottom: 1px solid var(--border); }
+.pb-collections button { border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; color: var(--muted); padding: 4px 10px; }
+.pb-collections button.active { color: var(--text); border-bottom-color: var(--accent); }
+.pb-families, .pb-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.pb-families button, .pb-chips button { padding: 2px 9px; border-radius: 999px; font-size: 11px; color: var(--muted); }
+.pb-families button.active, .pb-chips button.active { border-color: var(--accent); color: var(--accent); }
+.pb-chips { padding-left: 8px; }
+.pb-filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.pb-toggle { display: flex; align-items: center; gap: 6px; color: var(--muted); white-space: nowrap; font-size: 12px; }
+.pb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(124px, 1fr)); gap: 10px; overflow-y: auto; min-height: min(240px, 40dvh); padding: 2px; align-content: start; }
+.pb-card { position: relative; display: grid; border: 1px solid var(--border); border-radius: 8px; background: var(--panel2); }
+.pb-card.selected { border-color: var(--accent); }
+.pb-pick { display: grid; gap: 4px; padding: 6px; text-align: left; border: 0; background: none; border-radius: 8px; width: 100%; }
+.pb-pick:hover:not(:disabled) { background: rgba(255,255,255,0.04); }
+.pb-pick:focus-visible { outline: 2px solid var(--accent2); outline-offset: -2px; }
+.pb-title { font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pb-meta { display: flex; flex-wrap: wrap; gap: 3px; min-height: 14px; }
+.pb-meta em, .pb-cut { font-style: normal; font-size: 9px; padding: 1px 4px; border-radius: 3px; background: var(--bg); color: var(--muted); white-space: nowrap; }
+.pb-cut.holds { color: #7ed491; }
+.pb-cut.loose { color: var(--accent); }
+.pb-cut.empty { color: var(--danger); }
+.pb-cut.unmeasured { color: var(--muted); opacity: .8; }
+.pb-fav { position: absolute; top: 6px; right: 6px; width: 24px; height: 24px; padding: 0; border-radius: 999px; font-size: 13px; line-height: 1; background: #0009; color: #fff; border-color: transparent; }
+.pb-fav.on { color: var(--accent); }
+.pb-empty { grid-column: 1 / -1; padding: 24px 8px; text-align: center; }
+.pb-foot { font-size: 11px; }
+@media (max-width: 760px) {
+  .pb-backdrop { padding: 0; }
+  .pb-dialog { width: 100%; max-height: 100dvh; height: 100dvh; border-radius: 0; border: 0; padding: 10px; }
+  .pb-grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); }
+  .pb-collections { overflow-x: auto; }
+  .pb-collections button { white-space: nowrap; }
+  .pb-toggle { font-size: 13px; }
 }
-
 
 /* a control held at a measured value, with its own escape hatch */
 .locked-tag { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; opacity: .65; }

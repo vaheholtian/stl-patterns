@@ -235,6 +235,13 @@ export class Parameterization {
     this.buildGrid()
   }
 
+  /** Shift the whole sheet by (dx, dy) in the current uv units: the pattern, laid out at the origin, moves by (-dx, -dy) over the surface. */
+  translate(dx: number, dy: number) {
+    if (!dx && !dy) return
+    for (let i = 0; i < this.uv.length; i += 2) { this.uv[i] += dx; this.uv[i + 1] += dy }
+    this.buildGrid()
+  }
+
   /** Apply the accumulated linear transform to a direction vector. */
   transformVector(v: [number, number]): [number, number] {
     const [a, b, c, d] = this.linear

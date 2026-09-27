@@ -52,7 +52,7 @@ export type Request =
   | { id: number; type: 'voronoi'; mesh: TriMesh; region: Uint32Array; params: VoronoiParams }
   | { id: number; type: 'tile'; mesh: TriMesh; params: TileParams }
   | { id: number; type: 'flatten'; mesh: TriMesh; region: Uint32Array; origin: [number, number, number] }
-  | { id: number; type: 'flattenPieces'; mesh: TriMesh; region: Uint32Array; origin: [number, number, number]; maxAngleDeg: number; joinEdges?: boolean }
+  | { id: number; type: 'flattenPieces'; mesh: TriMesh; region: Uint32Array; origin: [number, number, number]; maxAngleDeg: number; joinEdges?: boolean; levelRows?: boolean }
 
 export interface OpResult {
   mesh: TriMesh

@@ -21,6 +21,9 @@ export interface Tile {
   curves: TileCurve[]
   /** stroke width for curves, mm */
   ribWidth: number
+  /** mm added to the width of every filled shape, half on each side; negative thins
+   * them. Applied to `polygons` before invert, across the repeat's seams. */
+  thicken?: number
   /** informational messages from the generator (snapped sizes, self-check results) */
   notes?: string[]
 }
@@ -40,6 +43,14 @@ export interface GeneratorParam {
   hint?: string
   /** value this parameter is locked to while the tile's Seamless switch is on */
   seamlessValue?: ParamValue
+  /**
+   * Whether this parameter can change the tile for the others' current values
+   * (a style's gap, a band mode's limits). The panel hides it when false, so no
+   * control sits there doing nothing. Omitted means always.
+   */
+  relevant?: (params: Record<string, ParamValue>) => boolean
+  /** upper bound that depends on the other parameters, for the panel's control */
+  maxFor?: (params: Record<string, ParamValue>) => number
 }
 
 export interface GeneratorContext {
@@ -75,7 +86,7 @@ export const gradientParams: GeneratorParam[] = [
       { value: 'linear', label: 'Linear (dense at left)' },
     ],
   },
-  { key: 'gradientStrength', label: 'Gradient strength', type: 'number', default: 2, min: 1, max: 8, step: 0.5, hint: 'ratio between densest and sparsest areas' },
+  { key: 'gradientStrength', label: 'Gradient strength', type: 'number', default: 2, min: 1, max: 8, step: 0.5, hint: 'ratio between densest and sparsest areas', relevant: (p) => (p.gradient ?? 'none') !== 'none' },
 ]
 
 /**

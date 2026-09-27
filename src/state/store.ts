@@ -2,6 +2,7 @@ import { create } from 'zustand'
 import type { TriMesh } from '../geom/manifold'
 import { FaceAdjacency } from '../geom/segmentation'
 import type { VoronoiParams } from '../worker/protocol'
+import { readMethod, writeMethod, type VoronoiMethod } from './voronoiMethod'
 
 export interface BodyState {
   id: number
@@ -13,12 +14,14 @@ export interface BodyState {
 }
 
 export type Screen = 'pattern' | 'apply'
-export type PickMode = 'region' | 'origin'
+export type PickMode = 'region' | 'origin' | 'move'
 
 export interface VoronoiUi extends VoronoiParams {}
 
 export interface TileLayoutUi {
   origin: [number, number, number] | null
+  /** slide the pattern from the origin over the surface, mm: along the wall and up it */
+  offset: [number, number]
   rotationDeg: number
   scale: number
   margin: number
@@ -27,6 +30,8 @@ export interface TileLayoutUi {
   joinEdges: boolean
   /** keep the solid edge margin along those unfolded edges too, so a box's corners come out solid */
   marginPerSurface: boolean
+  /** on a ring of wall (a bowl, a vase) lay the rows level with the rim all the way round, instead of following the conformal flattening, which drifts off level on a wall that is not developable */
+  levelRows: boolean
   minScale: number
   detail: number
   /** 'repeat' tiles the pattern; 'single' generates it once at the region's size; 'auto' picks by whether the generator is seamless */
@@ -52,9 +57,12 @@ interface State {
   progress: number | null
   log: string[]
   voronoi: VoronoiUi
+  /** how a Voronoi tile goes onto the model: laid out as a repeating tile, or generated over the surface */
+  voronoiMethod: VoronoiMethod
   lineWidth: number
   pickMode: PickMode
   tileLayout: TileLayoutUi
+  setVoronoiMethod: (m: VoronoiMethod) => void
   setPickMode: (m: PickMode) => void
   setTileLayout: (patch: Partial<TileLayoutUi>) => void
   setScreen: (s: Screen) => void
@@ -103,23 +111,27 @@ export const useStore = create<State>((set, get) => ({
     feature: 'cells',
     edgeMargin: 3,
   },
+  voronoiMethod: readMethod(),
   pickMode: 'region',
   tileLayout: {
     origin: null,
+    offset: [0, 0],
     rotationDeg: 0,
     scale: 1,
     margin: 3,
     fitSeam: true,
     joinEdges: true,
     marginPerSurface: false,
+    levelRows: true,
     minScale: 0.5,
     detail: 2,
     fit: 'auto',
-    mode: 'emboss',
+    mode: 'cut',
     depth: 0.8,
     wallThickness: 5,
     minIslandVolume: 5,
   },
+  setVoronoiMethod: (voronoiMethod) => { writeMethod(voronoiMethod); set({ voronoiMethod }) },
   setPickMode: (pickMode) => set({ pickMode }),
   setTileLayout: (patch) => set((s) => ({ tileLayout: { ...s.tileLayout, ...patch } })),
   setScreen: (screen) => set({ screen }),

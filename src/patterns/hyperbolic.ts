@@ -188,10 +188,9 @@ export const hyperbolicGenerator: Generator = {
         { value: 'cells', label: 'Cells (inset polygons)' },
       ],
     },
-    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.2, min: 0.3, max: 4, step: 0.1, hint: 'used by the edges style' },
-    { key: 'gap', label: 'Cell gap', type: 'number', default: 0.8, min: 0.1, max: 4, step: 0.1, hint: 'used by the cells style' },
+    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.2, min: 0.3, max: 4, step: 0.1, hint: 'used by the edges style', relevant: (p) => p.style !== 'cells' },
+    { key: 'gap', label: 'Cell gap', type: 'number', default: 0.8, min: 0.1, max: 4, step: 0.1, hint: 'used by the cells style', relevant: (p) => p.style !== 'edges' },
     { key: 'minFeature', label: 'Min feature', type: 'number', default: 1, min: 0.2, max: 5, step: 0.1 },
-    { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1, hint: 'unused: the tiling is fully deterministic' },
   ],
   generate(params: Record<string, ParamValue>, _ctx: GeneratorContext) {
     const width = getNum(params, 'width', 40)

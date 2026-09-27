@@ -17,10 +17,10 @@ import Module from 'manifold-3d'
 import { intervals, mismatch } from './seam-helpers.ts'
 import { libraryPatterns, libraryGenerator, libraryPattern } from '../src/patterns/library/index.ts'
 import { buildLibraryTile, sourceHeight } from '../src/patterns/library/tile.ts'
-import { defaultParams, generatorById, isSeamless } from '../src/patterns/index.ts'
+import { defaultParams, generatorById, isSeamless, shownParams } from '../src/patterns/index.ts'
 import { tileToCrossSection, polygonsArea } from '../src/patterns/pipeline.ts'
 import { generateTile } from '../src/patterns/generate.ts'
-import { ringParts } from '../src/patterns/ringParts.ts'
+import { analyzePieces } from '../src/patterns/loosePieces.ts'
 import type { Pt } from '../src/patterns/types.ts'
 
 const m = await Module(); m.setup()
@@ -116,7 +116,7 @@ test('the measured warnings reach the tile', () => {
 
   // the cut result reaches the tile too: waves-1 cuts the wall into bands either way
   const waves = libraryPattern('waves-1')!
-  assert.equal(waves.cutAs, 17, 'measured by ring-sweep.ts with ringParts()')
+  assert.equal(waves.cutAs, 17, 'measured by ring-sweep.ts with analyzePieces()')
   assert.equal(waves.cutInv, 18, 'and it severs the wall inverted too, so it is warned about')
   assert.match((tileAt('waves-1', 50).notes ?? []).join(' '), /leaves 17 loose pieces; inverted, 18/)
   const holds = libraryPatterns.find(p => p.cutAs === 1)!
@@ -161,23 +161,22 @@ test('a design is judged on both orientations, not just the one it is drawn in',
   }
 })
 
-test('a design that produces nothing at 50 mm says so instead of passing as whole', () => {
+test('a design whose lines are thin gaps cuts them rather than passing as whole', () => {
   // merge-cuts.py defaulted a skipped design to one piece, so four designs whose
-  // tile came out empty were recorded as surviving a through-cut.
-  // A zero is recorded per orientation, not for the design as a whole: every
-  // one of these still draws something the other way round.
-  // straight-lines used to be a fifth. Its zero was the box again, not the
-  // drawing: an 80 mm-tall repeat laid nothing on a 44 mm wall. It cuts a wall
-  // into 17 bands, and is warned about for that instead.
-  const empty = libraryPatterns.filter(p => p.cutAs === 0 || p.cutInv === 0)
-  assert.equal(empty.length, 4, empty.map(p => p.slug).join(', '))
-  assert.ok(empty.every(p => p.cutAs !== 0 || p.cutInv !== 0), 'none is empty both ways')
-  for (const p of empty) {
-    // an empty side is never 1, so none of these can be mistaken for surviving
-    assert.notEqual(Math.min(p.cutAs, p.cutInv), 1, `${p.slug} must not read as whole`)
-    if (p.cutAs !== 1 && p.cutInv !== 1) {
-      assert.match((tileAt(p.slug, 50).notes ?? []).join(' '), /nothing the printer can lay down/, p.slug)
-    }
+  // tile came out empty were recorded as surviving a through-cut. They came out
+  // empty because every feature was held to two nozzle lines, as if it were
+  // printed plastic. In a through-cut the feature is a gap, kept down to
+  // GAP_FLOOR, so these now draw their lines, and cut the wall with them.
+  // each with the orientation that came out empty
+  const formerlyEmpty: [string, boolean][] = [['doodle-2', false], ['squiggle-1', false], ['japanese-pattern-8', false], ['interlocked-hexagons-3', true]]
+  assert.deepEqual(libraryPatterns.filter(p => p.cutAs === 0 || p.cutInv === 0).map(p => p.slug), [], 'no orientation is recorded empty')
+  for (const [slug, invert] of formerlyEmpty) {
+    const params = { ...base, pattern: slug, width: 50, ribWidth: 1.2, layers: libraryPattern(slug)!.layers.length }
+    const def = { name: slug, generatorId: 'library', invert, seamless: true, params } as never
+    assert.ok(generateTile(m, { def, lineWidth: 0.42, mode: 'cut' }).polygons.length > 0, `${slug} cuts its lines`)
+    const embossed = generateTile(m, { def, lineWidth: 0.42, mode: 'emboss' })
+    assert.equal(embossed.polygons.length, 0, `${slug} as printed ribs is still too thin`)
+    assert.ok(embossed.warnings.some(w => w.includes('two nozzle lines')), `${slug} says why it is empty`)
   }
 })
 
@@ -191,7 +190,7 @@ test('whole or in pieces is a property of the tiling, not of the box it was meas
     const p = libraryPattern(slug)!
     for (const invert of [false, true]) {
       const g = generateTile(m, { def: { name: slug, generatorId: 'library', invert, seamless: true, params: { ...base, pattern: slug, width: 50, ribWidth: 1.2, layers: p.layers.length } }, lineWidth: 0.42 })
-      assert.equal(ringParts(m, g.polygons, g.tile!.width, g.tile!.height), invert ? p.cutInv : p.cutAs,
+      assert.equal(analyzePieces(m, g.polygons, g.tile!.width, g.tile!.height).pieces, invert ? p.cutInv : p.cutAs,
         `${slug}${invert ? ' inverted' : ''}: the recorded count must be what the tiling gives today`)
     }
   }
@@ -237,4 +236,60 @@ test('a neighbouring copy of a rib is drawn only where it brings something new',
   const hex = libraryPattern('hexagon-1')!
   const hexTile = buildLibraryTile(hex, { ...opts, layers: hex.layers.length })
   assert.ok(hexTile.curves!.length > hex.layers.length, `hexagon-1 draws ${hexTile.curves!.length} ribs from ${hex.layers.length} paths`)
+})
+
+test('thickening a filled design widens its lines by what was asked, across the seams', () => {
+  // Thickening by t moves every edge of a line out by t/2. So a typical point on
+  // the new outline -- the median, since mitred corners reach further -- lies
+  // t/2 from the old one, and the side that reads as lines gained the area.
+  const run = (slug: string, thicken: number) => {
+    const def = { name: slug, generatorId: 'library', invert: false, seamless: true, params: { ...base, pattern: slug, width: 50, thicken } }
+    const g = generateTile(m, { def, lineWidth: 0.42 })
+    return { P: g.polygons as Pt[][], w: g.tile!.width, h: g.tile!.height, notes: g.warnings.join(' ') }
+  }
+  const outline = ({ P, w, h }: ReturnType<typeof run>) => {
+    const on = (a: number, b: number) => Math.abs(a - b) < 1e-6
+    const segs: [Pt, Pt][] = []
+    for (const poly of P) for (let i = 0; i < poly.length; i++) {
+      const a = poly[i], b = poly[(i + 1) % poly.length]
+      if (!((on(a[0], 0) && on(b[0], 0)) || (on(a[0], w) && on(b[0], w)) || (on(a[1], 0) && on(b[1], 0)) || (on(a[1], h) && on(b[1], h)))) segs.push([a, b])
+    }
+    return segs
+  }
+  const gap = (side: 'drawn' | 'gaps', as: ReturnType<typeof run>, thick: ReturnType<typeof run>) => {
+    // the old outline in the repeated neighbourhood, so a point near a seam finds its edge across it
+    const old: [Pt, Pt][] = []
+    for (const [a, b] of outline(as)) for (let y = -1; y <= 1; y++) for (let x = -1; x <= 1; x++) old.push([[a[0] + x * as.w, a[1] + y * as.h], [b[0] + x * as.w, b[1] + y * as.h]])
+    const dist = ([px, py]: Pt) => {
+      let best = Infinity
+      for (const [[ax, ay], [bx, by]] of old) {
+        const dx = bx - ax, dy = by - ay, l2 = dx * dx + dy * dy
+        const u = l2 ? Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / l2)) : 0
+        best = Math.min(best, Math.hypot(px - ax - u * dx, py - ay - u * dy))
+      }
+      return best
+    }
+    const d = outline(thick).filter(([a, b]) => Math.hypot(b[0] - a[0], b[1] - a[1]) > 0.2).map(([a, b]) => dist([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2])).sort((x, y) => x - y)
+    const drawnGrew = polygonsArea(thick.P) - polygonsArea(as.P)
+    return { median: d[Math.floor(d.length / 2)], linesGrew: side === 'drawn' ? drawnGrew : -drawnGrew }
+  }
+  // interlocked-hexagons-1 draws its lines; interlocked-hexagons-3 draws broad
+  // bands and its lines are the thin gaps between them
+  for (const [slug, side] of [['interlocked-hexagons-1', 'drawn'], ['interlocked-hexagons-3', 'gaps']] as const) {
+    const as = run(slug, 0)
+    for (const t of [0.6, -0.1]) {
+      const thick = run(slug, t)
+      const { median, linesGrew } = gap(side, as, thick)
+      assert.ok(Math.abs(median - Math.abs(t) / 2) < 0.02, `${slug} at ${t}: the outline moved ${median.toFixed(3)} mm, not ${Math.abs(t) / 2}`)
+      assert.ok(Math.sign(linesGrew) === Math.sign(t), `${slug} at ${t}: the lines ${linesGrew > 0 ? 'gained' : 'lost'} ${Math.abs(linesGrew).toFixed(1)} mm²`)
+      let seam = 0
+      for (const axis of [0, 1]) seam = Math.max(seam, mismatch(intervals(thick.P, axis, 0), intervals(thick.P, axis, axis ? thick.h : thick.w)).max)
+      assert.ok(seam < 1e-6, `${slug} at ${t}: opposite edges differ by ${seam} mm`)
+    }
+    assert.match(run(slug, 0.6).notes, /Lines thickened by 0\.60 mm/)
+  }
+  // the control stops where the spaces between lines would be gone
+  const control = (slug: string) => shownParams(libraryGenerator, { ...base, pattern: slug, width: 50 }).find((q) => q.key === 'thicken')!.max!
+  assert.equal(control('interlocked-hexagons-3'), 3.5)
+  assert.equal(control('interlocked-hexagons-1'), 6.4)
 })

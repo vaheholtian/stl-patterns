@@ -21,8 +21,11 @@ export const NATIVE_CUT_PARTS: Record<string, readonly [plain: number, inverted:
   roundPerforations: [1, 1282],
   honeycomb: [1, 1282],
   roundedSlots: [1, 514],
+  // Vertical at its defaults; horizontal bands part a ring into hoops, 29 either way.
+  stripes: [1, 1],
   caneWeave: [554, 1],
   lusona: [762, 1],
+  celtic: [938, 1],
   unicursalMaze: [10, 1],
   ammannBeenker: [1566, 1],
   hankin: [362, 1],
@@ -35,9 +38,13 @@ export const NATIVE_CUT_PARTS: Record<string, readonly [plain: number, inverted:
   delaunayTile: [798, 1],
   truchet: [45, 45],
   penroseApproximant: [910, 1],
-  hilbert: [634, 6],
+  // As drawn the raster read 634 at 10 px/mm: its channels are 0.9 mm, and only
+  // 0.06 mm survives once the strokes grow by a line each side, under a pixel.
+  // At 20 px/mm, and in vector form (loosePieces.ts), it is 5.
+  hilbert: [5, 6],
   moire: [2, 1],
-  guilloche: [145, 34],
+  // Inverted was 34 while gaps had to be two lines wide; at the 0.2 mm gap floor more of its fine openings survive and part it further.
+  guilloche: [145, 50],
   sierpinski: [1, 146],
   koch: [1, 18],
   phyllotaxis: [1, 2],

@@ -81,9 +81,9 @@ export const kochGenerator: Generator = {
     },
     { key: 'depth', label: 'Depth', type: 'int', default: 3, min: 0, max: 5, step: 1, hint: 'requested recursion depth; minFeature may stop earlier' },
     { key: 'minFeature', label: 'Min feature', type: 'number', default: 1.0, min: 0.1, max: 10, step: 0.1, hint: 'smallest detail; deeper recursion is skipped below this' },
-    { key: 'bandPitch', label: 'Band pitch', type: 'number', default: 12, min: 2, max: 100, step: 0.5, hint: 'vertical spacing between curve-band rows, mm' },
-    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1 },
-    { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1 },
+    { key: 'bandPitch', label: 'Band pitch', type: 'number', default: 12, min: 2, max: 100, step: 0.5, hint: 'vertical spacing between curve-band rows, mm', relevant: (p) => p.style === 'curve-band' },
+    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1, relevant: (p) => p.style === 'curve-band' },
+    { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1, relevant: (p) => p.style === 'curve-band' },
   ],
   generate(params: Record<string, ParamValue>, ctx: GeneratorContext) {
     const width = getNum(params, 'width', 40)

@@ -1,5 +1,20 @@
 import type { Pt, Tile, TileCurve } from '../types'
 import { flattenPath } from '../svg/pathFlatten'
+import lineTable from './lines.json' with { type: 'json' }
+
+/**
+ * Which side of a filled design reads as its lines, and how wide they are.
+ * Measured by planning/line-width-2026-09-27/measure.ts at a 50 mm repeat with
+ * every layer: `gaps` when the drawn shapes cover over 55% of the tile, so
+ * that the lines are the spaces between them (interlocked-hexagons-3 draws
+ * broad bands 0.25 mm apart); `line` the widest line and `space` the widest
+ * space between lines, in mm at that repeat.
+ */
+export interface LineSide { gaps: boolean; line: number; space: number }
+const lineSides = lineTable as Record<string, LineSide>
+export function lineSide(p: LibraryPattern): LineSide | undefined {
+  return p.mode === 'fill' ? lineSides[p.slug] : undefined
+}
 
 /** One pattern.monster design, as stored in data.json. */
 export interface LibraryPattern {
@@ -48,6 +63,9 @@ export interface LibraryTileOptions {
   widthMm: number
   /** stroke width in millimetres, for `stroke` sources */
   ribWidth: number
+  /** millimetres added to the width of a `fill` source's lines -- its shapes, or
+   * the gaps between them where those are the lines; negative thins them */
+  thicken?: number
   /** how many colour layers to draw, from the outermost */
   layers: number
   /** extra millimetres added to the box, with the artwork centred in it */
@@ -182,12 +200,13 @@ export function buildLibraryTile(p: LibraryPattern, opts: LibraryTileOptions): T
     polygons,
     curves,
     ribWidth: Math.max(0.01, opts.ribWidth),
-    notes: libraryNotes(p),
+    ...(p.mode === 'fill' && opts.thicken ? { thicken: lineSide(p)?.gaps ? -opts.thicken : opts.thicken } : {}),
+    notes: libraryNotes(p, p.mode === 'fill' ? opts.thicken ?? 0 : 0),
   }
 }
 
 /** What the measurements say about this design, in the app's own warning channel. */
-export function libraryNotes(p: LibraryPattern): string[] | undefined {
+export function libraryNotes(p: LibraryPattern, thicken = 0): string[] | undefined {
   const notes: string[] = []
   if (p.clipLossPct >= 1)
     notes.push(`${p.title} is drawn past its repeat box and ${p.clipLossPct.toFixed(0)}% of the design is cut away where the copies meet; it will not look like the original.`)
@@ -199,7 +218,10 @@ export function libraryNotes(p: LibraryPattern): string[] | undefined {
   // with at that size. An earlier merge recorded that case as 1 -- "survives a
   // through-cut" -- which is how four collapsed designs passed as safe.
   const pieces = (n: number) => (n === 0 ? 'nothing the printer can lay down' : `${n} loose piece${n === 1 ? '' : 's'}`)
-  if (p.cutAs !== 1 && p.cutInv !== 1)
+  if (p.cutAs !== 1 && p.cutInv !== 1 && !thicken)
     notes.push(`On a box wall four repeats around and four tall, a through-cut as drawn leaves ${pieces(p.cutAs)}; inverted, ${pieces(p.cutInv)}. Neither orientation survives a through-cut on a closed box: use recess or emboss, a bounded region, or turn on Connect material.`)
+  // Those counts were measured on the lines as drawn. Thickening can join pieces
+  // up and thinning can cut them loose, so point at the count that is live.
+  if (thicken) notes.push(`Lines ${thicken > 0 ? 'thickened' : 'thinned'} by ${Math.abs(thicken).toFixed(2)} mm; the measured through-cut advice is for the lines as drawn, so go by the live piece count.`)
   return notes.length ? notes : undefined
 }

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import Viewer from './Viewer'
 import { useStore, selectionToRegion, effectiveWallTilt } from '../state/store'
 import { loadMeshFile } from '../io/load'
@@ -10,6 +10,9 @@ import type { PickResult, SceneManager } from '../viewer/SceneManager'
 import VoronoiPanel from './panels/VoronoiPanel'
 import TilePanel from './panels/TilePanel'
 import RecipePanel from './panels/RecipePanel'
+import MethodPicker from './panels/MethodPicker'
+import { useTileStore } from '../state/tileStore'
+import { effectiveMethod, supportsSurfaceMethod } from '../state/voronoiMethod'
 import { setScene } from '../viewer/sceneRef'
 import { buildDemo } from '../io/demo'
 
@@ -75,6 +78,7 @@ export default function ApplyScreen() {
 
   const onPick = useCallback((hit: PickResult, ev: PointerEvent) => {
     const s = st()
+    if (s.pickMode === 'move') return // the drag handlers own the pointer; a plain click changes nothing
     if (s.pickMode === 'origin') {
       if (hit.bodyId !== s.activeBodyId) return
       s.setTileLayout({ origin: [hit.point.x, hit.point.y, hit.point.z] })
@@ -125,7 +129,17 @@ export default function ApplyScreen() {
     st().pushLog(`exported ${list.length} body(ies) as ${kind.toUpperCase()}`)
   }
 
-  const region = active ? selectionToRegion(selection, active.mesh.indices.length / 3) : null
+  const mesh = active?.mesh
+  const region = useMemo(() => mesh ? selectionToRegion(selection, mesh.indices.length / 3) : null, [mesh, selection])
+
+  // a Voronoi tile is the one pattern with a second way onto the model: cells generated over the surface itself
+  const tileDef = useTileStore((s) => s.def)
+  const chosenMethod = useStore((s) => s.voronoiMethod)
+  const surfaceOffered = useMemo(() => supportsSurfaceMethod(tileDef), [tileDef])
+  const method = effectiveMethod(tileDef, chosenMethod, !!active)
+  const methodPicker = surfaceOffered
+    ? <MethodPicker value={method} modelLoaded={!!active} onChange={(m) => st().setVoronoiMethod(m)} />
+    : null
 
   return (
     <div className="apply">
@@ -181,8 +195,9 @@ export default function ApplyScreen() {
           <div className="muted">Click a face to select its smooth region. Shift adds, Alt removes.</div>
         </div>
 
-        <TilePanel region={region} />
-        <VoronoiPanel region={region} />
+        {method === 'surface'
+          ? <VoronoiPanel region={region} methodPicker={methodPicker} />
+          : <TilePanel region={region} methodPicker={methodPicker} />}
         <RecipePanel />
 
         <div className="section">

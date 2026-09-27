@@ -183,10 +183,10 @@ export const apollonianGenerator: Generator = {
         { value: 'rings', label: 'Rings (outline)' },
       ],
     },
-    { key: 'gap', label: 'Disc gap', type: 'number', default: 0.6, min: 0, max: 3, step: 0.05, hint: 'used by the discs style' },
-    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1, min: 0.2, max: 4, step: 0.1, hint: 'used by the rings style' },
+    { key: 'gap', label: 'Disc gap', type: 'number', default: 0.6, min: 0, max: 3, step: 0.05, hint: 'used by the discs style', relevant: (p) => p.style !== 'rings' },
+    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1, min: 0.2, max: 4, step: 0.1, hint: 'used by the rings style', relevant: (p) => p.style !== 'discs' },
     { key: 'minFeature', label: 'Min feature', type: 'number', default: 1, min: 0.2, max: 5, step: 0.1 },
-    { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1, hint: 'only used by the random starting circles' },
+    { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1, hint: 'only used by the random starting circles', relevant: (p) => p.start === 'random' },
   ],
   generate(params: Record<string, ParamValue>, ctx: GeneratorContext) {
     const width = getNum(params, 'width', 40)

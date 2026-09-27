@@ -72,7 +72,7 @@ export const phyllotaxisGenerator: Generator = {
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1, hint: 'tile height, mm' },
     { key: 'count', label: 'Point count', type: 'int', default: 300, min: 1, max: 2000, step: 1 },
     { key: 'spacing', label: 'Spacing', type: 'number', default: 2.2, min: 0.5, max: 20, step: 0.1, hint: 'radial spacing constant c, mm' },
-    { key: 'dotSize', label: 'Dot size', type: 'number', default: 2.2, min: 0.6, max: 20, step: 0.1, hint: 'dot diameter, mm (dots style)' },
+    { key: 'dotSize', label: 'Dot size', type: 'number', default: 2.2, min: 0.6, max: 20, step: 0.1, hint: 'dot diameter, mm (dots style)', relevant: (p) => p.style !== 'cells' },
     {
       key: 'style', label: 'Style', type: 'select', default: 'dots',
       options: [
@@ -80,8 +80,8 @@ export const phyllotaxisGenerator: Generator = {
         { value: 'cells', label: 'Cells' },
       ],
     },
-    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.2, max: 6, step: 0.1, hint: 'rib width between cells, mm (cells style)' },
-    { key: 'grow', label: 'Grow', type: 'number', default: 1, min: 0, max: 4, step: 0.1, hint: 'dot diameter grows as (r/maxRadius)^grow; 0 = constant' },
+    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.2, max: 6, step: 0.1, hint: 'rib width between cells, mm (cells style)', relevant: (p) => p.style !== 'dots' },
+    { key: 'grow', label: 'Grow', type: 'number', default: 1, min: 0, max: 4, step: 0.1, hint: 'dot diameter grows as (r/maxRadius)^grow; 0 = constant', relevant: (p) => p.style !== 'cells' },
     { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1, hint: 'rotates the spiral start angle' },
   ],
   generate(params: Record<string, ParamValue>, ctx: GeneratorContext) {

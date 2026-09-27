@@ -104,7 +104,6 @@ export const hilbertGenerator: Generator = {
     { key: 'order', label: 'Order', type: 'int', default: 4, min: 1, max: 7, step: 1 },
     { key: 'rounded', label: 'Rounded corners', type: 'boolean', default: true },
     { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1 },
-    { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1 },
   ],
   generate(params: Record<string, ParamValue>, _ctx: GeneratorContext) {
     const width = getNum(params, 'width', 40)

@@ -1,0 +1,1563 @@
+[
+ {
+  "slug": "waves-5",
+  "cover": 0.185,
+  "drawnMax": 9.19,
+  "gapMax": 24.99,
+  "ms": 63
+ },
+ {
+  "slug": "waves-6",
+  "cover": 0.214,
+  "drawnMax": 8.63,
+  "gapMax": 24.99,
+  "ms": 24
+ },
+ {
+  "slug": "waves-7",
+  "cover": 0.28,
+  "drawnMax": 3.97,
+  "gapMax": 12.3,
+  "ms": 124
+ },
+ {
+  "slug": "brick-wall-2",
+  "cover": 0.808,
+  "drawnMax": 10.83,
+  "gapMax": 2.14,
+  "ms": 4
+ },
+ {
+  "slug": "herringbone-3",
+  "cover": 0.5,
+  "drawnMax": 11.17,
+  "gapMax": 11.18,
+  "ms": 4
+ },
+ {
+  "slug": "herringbone-4",
+  "cover": 0.5,
+  "drawnMax": 17.66,
+  "gapMax": 17.69,
+  "ms": 3
+ },
+ {
+  "slug": "herringbone-5",
+  "cover": 0.5,
+  "drawnMax": 5.9,
+  "gapMax": 5.9,
+  "ms": 5
+ },
+ {
+  "slug": "herringbone-6",
+  "cover": 0.499,
+  "drawnMax": 10.34,
+  "gapMax": 10.36,
+  "ms": 5
+ },
+ {
+  "slug": "flower-1",
+  "cover": 0.431,
+  "drawnMax": 20.73,
+  "gapMax": 14.61,
+  "ms": 34
+ },
+ {
+  "slug": "flower-3",
+  "cover": 0.137,
+  "drawnMax": 5.76,
+  "gapMax": 17.46,
+  "ms": 241
+ },
+ {
+  "slug": "flower-4",
+  "cover": 0.182,
+  "drawnMax": 2.66,
+  "gapMax": 17.99,
+  "ms": 492
+ },
+ {
+  "slug": "flower-5",
+  "cover": 0.255,
+  "drawnMax": 10.05,
+  "gapMax": 17.99,
+  "ms": 692
+ },
+ {
+  "slug": "flower-6",
+  "cover": 0.483,
+  "drawnMax": 8.07,
+  "gapMax": 10.66,
+  "ms": 109
+ },
+ {
+  "slug": "flower-7",
+  "cover": 0.241,
+  "drawnMax": 5.48,
+  "gapMax": 8.15,
+  "ms": 638
+ },
+ {
+  "slug": "circles-2",
+  "cover": 0.098,
+  "drawnMax": 12.48,
+  "gapMax": 24.99,
+  "ms": 37
+ },
+ {
+  "slug": "circles-4",
+  "cover": 0.049,
+  "drawnMax": 12.48,
+  "gapMax": 24.99,
+  "ms": 21
+ },
+ {
+  "slug": "circles-5",
+  "cover": 0.314,
+  "drawnMax": 19.98,
+  "gapMax": 16.46,
+  "ms": 356
+ },
+ {
+  "slug": "diamonds-2",
+  "cover": 0.5,
+  "drawnMax": 22.34,
+  "gapMax": 22.36,
+  "ms": 5
+ },
+ {
+  "slug": "hexagon-4",
+  "cover": 0.75,
+  "drawnMax": 24.99,
+  "gapMax": 8.33,
+  "ms": 7
+ },
+ {
+  "slug": "squares-and-squares-1",
+  "cover": 0.5,
+  "drawnMax": 12.49,
+  "gapMax": 12.49,
+  "ms": 9
+ },
+ {
+  "slug": "squares-and-squares-2",
+  "cover": 0.499,
+  "drawnMax": 4.99,
+  "gapMax": 4.99,
+  "ms": 19
+ },
+ {
+  "slug": "squares-and-diamonds",
+  "cover": 0.5,
+  "drawnMax": 10.97,
+  "gapMax": 10.99,
+  "ms": 7
+ },
+ {
+  "slug": "squares-and-circles-1",
+  "cover": 0.5,
+  "drawnMax": 12.48,
+  "gapMax": 12.48,
+  "ms": 84
+ },
+ {
+  "slug": "squares-and-circles-2",
+  "cover": 0.499,
+  "drawnMax": 8.83,
+  "gapMax": 8.83,
+  "ms": 39
+ },
+ {
+  "slug": "squares-and-plus-1",
+  "cover": 0.5,
+  "drawnMax": 10.74,
+  "gapMax": 10.75,
+  "ms": 202
+ },
+ {
+  "slug": "squares-and-plus-2",
+  "cover": 0.499,
+  "drawnMax": 8.84,
+  "gapMax": 8.87,
+  "ms": 42
+ },
+ {
+  "slug": "squares-and-stars-1",
+  "cover": 0.5,
+  "drawnMax": 10.99,
+  "gapMax": 11,
+  "ms": 14
+ },
+ {
+  "slug": "squares-and-stars-2",
+  "cover": 0.449,
+  "drawnMax": 10.99,
+  "gapMax": 24.99,
+  "ms": 7
+ },
+ {
+  "slug": "stars-and-lines-1",
+  "cover": 0.899,
+  "drawnMax": 24.99,
+  "gapMax": 12.13,
+  "ms": 3
+ },
+ {
+  "slug": "stars-and-lines-2",
+  "cover": 0.656,
+  "drawnMax": 24.99,
+  "gapMax": 12.5,
+  "ms": 2
+ },
+ {
+  "slug": "triangles-1",
+  "cover": 0.499,
+  "drawnMax": 14.64,
+  "gapMax": 14.65,
+  "ms": 5
+ },
+ {
+  "slug": "triangles-2",
+  "cover": 0.499,
+  "drawnMax": 14.64,
+  "gapMax": 14.65,
+  "ms": 5
+ },
+ {
+  "slug": "triangles-3",
+  "cover": 0.5,
+  "drawnMax": 15.44,
+  "gapMax": 15.45,
+  "ms": 5
+ },
+ {
+  "slug": "triangles-6",
+  "cover": 0.281,
+  "drawnMax": 7.75,
+  "gapMax": 13.65,
+  "ms": 8
+ },
+ {
+  "slug": "triangles-7",
+  "cover": 0.429,
+  "drawnMax": 12.94,
+  "gapMax": 24.3,
+  "ms": 5
+ },
+ {
+  "slug": "triangles-8",
+  "cover": 0.25,
+  "drawnMax": 10.35,
+  "gapMax": 12.49,
+  "ms": 3
+ },
+ {
+  "slug": "triangles-9",
+  "cover": 0.499,
+  "drawnMax": 20.07,
+  "gapMax": 20.09,
+  "ms": 9
+ },
+ {
+  "slug": "checkerboard",
+  "cover": 0.5,
+  "drawnMax": 24.99,
+  "gapMax": 24.99,
+  "ms": 3
+ },
+ {
+  "slug": "japanese-pattern-5",
+  "cover": 0.614,
+  "drawnMax": 24.99,
+  "gapMax": 17.64,
+  "ms": 68
+ },
+ {
+  "slug": "eyes-2",
+  "cover": 0.496,
+  "drawnMax": 16.81,
+  "gapMax": 17.21,
+  "ms": 82
+ },
+ {
+  "slug": "eyes-4",
+  "cover": 0.51,
+  "drawnMax": 24.99,
+  "gapMax": 24.99,
+  "ms": 16
+ },
+ {
+  "slug": "scales-2",
+  "cover": 0.5,
+  "drawnMax": 24.99,
+  "gapMax": 24.99,
+  "ms": 24
+ },
+ {
+  "slug": "leaves-1",
+  "cover": 0.234,
+  "drawnMax": 6.05,
+  "gapMax": 24.99,
+  "ms": 217
+ },
+ {
+  "slug": "leaves-2",
+  "cover": 0.115,
+  "drawnMax": 5.2,
+  "gapMax": 23.57,
+  "ms": 65
+ },
+ {
+  "slug": "leaves-4",
+  "cover": 0.314,
+  "drawnMax": 7.48,
+  "gapMax": 13.68,
+  "ms": 248
+ },
+ {
+  "slug": "leaves-5",
+  "cover": 0.622,
+  "drawnMax": 7.39,
+  "gapMax": 7.02,
+  "ms": 122
+ },
+ {
+  "slug": "leaves-6",
+  "cover": 0.459,
+  "drawnMax": 9.3,
+  "gapMax": 12.27,
+  "ms": 292
+ },
+ {
+  "slug": "leaves-7",
+  "cover": 0.478,
+  "drawnMax": 14.42,
+  "gapMax": 16.61,
+  "ms": 165
+ },
+ {
+  "slug": "leaves-8",
+  "cover": 0.438,
+  "drawnMax": 16.25,
+  "gapMax": 20.53,
+  "ms": 37
+ },
+ {
+  "slug": "zebra",
+  "cover": 0.587,
+  "drawnMax": 6.69,
+  "gapMax": 3.89,
+  "ms": 69
+ },
+ {
+  "slug": "memphis-2",
+  "cover": 0.072,
+  "drawnMax": 2.92,
+  "gapMax": 13.61,
+  "ms": 183
+ },
+ {
+  "slug": "memphis-3",
+  "cover": 0.117,
+  "drawnMax": 8.47,
+  "gapMax": 13.82,
+  "ms": 181
+ },
+ {
+  "slug": "memphis-4",
+  "cover": 0.208,
+  "drawnMax": 13.56,
+  "gapMax": 14.33,
+  "ms": 555
+ },
+ {
+  "slug": "memphis-5",
+  "cover": 0.112,
+  "drawnMax": 3.7,
+  "gapMax": 24.99,
+  "ms": 190
+ },
+ {
+  "slug": "memphis-6",
+  "cover": 0.248,
+  "drawnMax": 8.44,
+  "gapMax": 4.47,
+  "ms": 5950
+ },
+ {
+  "slug": "chinese-1",
+  "cover": 0.443,
+  "drawnMax": 6.43,
+  "gapMax": 9.06,
+  "ms": 860
+ },
+ {
+  "slug": "chinese-2",
+  "cover": 0.274,
+  "drawnMax": 3.86,
+  "gapMax": 9.06,
+  "ms": 122
+ },
+ {
+  "slug": "chinese-3",
+  "cover": 0.535,
+  "drawnMax": 10.38,
+  "gapMax": 10.68,
+  "ms": 1492
+ },
+ {
+  "slug": "chinese-9",
+  "cover": 0.658,
+  "drawnMax": 6.32,
+  "gapMax": 4.42,
+  "ms": 2020
+ },
+ {
+  "slug": "new-1",
+  "cover": 0.325,
+  "drawnMax": 10.4,
+  "gapMax": 11.3,
+  "ms": 884
+ },
+ {
+  "slug": "new-3",
+  "cover": 0.12,
+  "drawnMax": 2.49,
+  "gapMax": 14.1,
+  "ms": 327
+ },
+ {
+  "slug": "new-4",
+  "cover": 0.427,
+  "drawnMax": 10.16,
+  "gapMax": 7.24,
+  "ms": 18
+ },
+ {
+  "slug": "new-5",
+  "cover": 0.495,
+  "drawnMax": 15.98,
+  "gapMax": 7.34,
+  "ms": 68
+ },
+ {
+  "slug": "new-7",
+  "cover": 0.294,
+  "drawnMax": 20.76,
+  "gapMax": 24.99,
+  "ms": 2
+ },
+ {
+  "slug": "new-10",
+  "cover": 0.565,
+  "drawnMax": 13.72,
+  "gapMax": 11.23,
+  "ms": 292
+ },
+ {
+  "slug": "new-11",
+  "cover": 0.531,
+  "drawnMax": 7.71,
+  "gapMax": 9.88,
+  "ms": 121
+ },
+ {
+  "slug": "new-12",
+  "cover": 0.64,
+  "drawnMax": 24.99,
+  "gapMax": 10.35,
+  "ms": 8
+ },
+ {
+  "slug": "new-13",
+  "cover": 0.402,
+  "drawnMax": 11.07,
+  "gapMax": 11.01,
+  "ms": 169
+ },
+ {
+  "slug": "new-14",
+  "cover": 0.499,
+  "drawnMax": 12.5,
+  "gapMax": 12.5,
+  "ms": 38
+ },
+ {
+  "slug": "double-bubble-1",
+  "cover": 0.464,
+  "drawnMax": 12.46,
+  "gapMax": 12.98,
+  "ms": 196
+ },
+ {
+  "slug": "stars-2",
+  "cover": 0.051,
+  "drawnMax": 6.04,
+  "gapMax": 24.99,
+  "ms": 6
+ },
+ {
+  "slug": "stars-3",
+  "cover": 0.088,
+  "drawnMax": 6.04,
+  "gapMax": 16.58,
+  "ms": 24
+ },
+ {
+  "slug": "stars-4",
+  "cover": 0.087,
+  "drawnMax": 6.04,
+  "gapMax": 14.94,
+  "ms": 167
+ },
+ {
+  "slug": "stars-5",
+  "cover": 0.139,
+  "drawnMax": 4.37,
+  "gapMax": 7.28,
+  "ms": 442
+ },
+ {
+  "slug": "stars-6",
+  "cover": 0.115,
+  "drawnMax": 2.18,
+  "gapMax": 9.18,
+  "ms": 104
+ },
+ {
+  "slug": "semicircles-1",
+  "cover": 0.785,
+  "drawnMax": 12.49,
+  "gapMax": 6.25,
+  "ms": 115
+ },
+ {
+  "slug": "songket-1",
+  "cover": 0.288,
+  "drawnMax": 3.03,
+  "gapMax": 14.21,
+  "ms": 70
+ },
+ {
+  "slug": "christmas-tree-1",
+  "cover": 0.225,
+  "drawnMax": 5.78,
+  "gapMax": 18.86,
+  "ms": 353
+ },
+ {
+  "slug": "candy-cane-1",
+  "cover": 0.132,
+  "drawnMax": 6.23,
+  "gapMax": 24.99,
+  "ms": 89
+ },
+ {
+  "slug": "christmas-bells-1",
+  "cover": 0.218,
+  "drawnMax": 11.63,
+  "gapMax": 24.99,
+  "ms": 198
+ },
+ {
+  "slug": "christmas-pattern-1",
+  "cover": 0.304,
+  "drawnMax": 4.49,
+  "gapMax": 7.97,
+  "ms": 5108
+ },
+ {
+  "slug": "christmas-pattern-2",
+  "cover": 0.272,
+  "drawnMax": 4.96,
+  "gapMax": 9.39,
+  "ms": 2946
+ },
+ {
+  "slug": "christmas-pattern-3",
+  "cover": 0.243,
+  "drawnMax": 9.29,
+  "gapMax": 16.24,
+  "ms": 629
+ },
+ {
+  "slug": "snowflakes-1",
+  "cover": 0.179,
+  "drawnMax": 2.51,
+  "gapMax": 20.17,
+  "ms": 673
+ },
+ {
+  "slug": "christmas-tree-balls",
+  "cover": 0.261,
+  "drawnMax": 6.02,
+  "gapMax": 20.32,
+  "ms": 293
+ },
+ {
+  "slug": "santa-claus",
+  "cover": 0.208,
+  "drawnMax": 9.69,
+  "gapMax": 24.99,
+  "ms": 201
+ },
+ {
+  "slug": "christmas-gift",
+  "cover": 0.37,
+  "drawnMax": 5.29,
+  "gapMax": 11.92,
+  "ms": 140
+ },
+ {
+  "slug": "mexican-pattern-1",
+  "cover": 0.259,
+  "drawnMax": 4.17,
+  "gapMax": 16.31,
+  "ms": 1147
+ },
+ {
+  "slug": "mexican-pattern-2",
+  "cover": 0.568,
+  "drawnMax": 13.7,
+  "gapMax": 9.19,
+  "ms": 1174
+ },
+ {
+  "slug": "ethnic-pattern-1",
+  "cover": 0.306,
+  "drawnMax": 10.35,
+  "gapMax": 13.34,
+  "ms": 34
+ },
+ {
+  "slug": "ethnic-pattern-2",
+  "cover": 0.361,
+  "drawnMax": 9.5,
+  "gapMax": 13.09,
+  "ms": 51
+ },
+ {
+  "slug": "ethnic-pattern-3",
+  "cover": 0.252,
+  "drawnMax": 4.48,
+  "gapMax": 13.38,
+  "ms": 41
+ },
+ {
+  "slug": "plaid-pattern-1",
+  "cover": 0.443,
+  "drawnMax": 16.66,
+  "gapMax": 14.03,
+  "ms": 92
+ },
+ {
+  "slug": "plaid-pattern-2",
+  "cover": 0.474,
+  "drawnMax": 24.99,
+  "gapMax": 24.99,
+  "ms": 158
+ },
+ {
+  "slug": "plaid-pattern-3",
+  "cover": 0.424,
+  "drawnMax": 3.8,
+  "gapMax": 10.69,
+  "ms": 165
+ },
+ {
+  "slug": "plaid-pattern-4",
+  "cover": 0.344,
+  "drawnMax": 12.49,
+  "gapMax": 11.63,
+  "ms": 662
+ },
+ {
+  "slug": "doodle-1",
+  "cover": 0.179,
+  "drawnMax": 2.51,
+  "gapMax": 12.17,
+  "ms": 392
+ },
+ {
+  "slug": "doodle-2",
+  "cover": 0.079,
+  "drawnMax": 0.82,
+  "gapMax": 11.29,
+  "ms": 488
+ },
+ {
+  "slug": "batik-2",
+  "cover": 0.559,
+  "drawnMax": 11.07,
+  "gapMax": 5.93,
+  "ms": 555
+ },
+ {
+  "slug": "batik-3",
+  "cover": 0.472,
+  "drawnMax": 10.95,
+  "gapMax": 11.44,
+  "ms": 67
+ },
+ {
+  "slug": "batik-4",
+  "cover": 0.21,
+  "drawnMax": 6.15,
+  "gapMax": 9.64,
+  "ms": 211
+ },
+ {
+  "slug": "batik-5",
+  "cover": 0.16,
+  "drawnMax": 4.59,
+  "gapMax": 24.16,
+  "ms": 709
+ },
+ {
+  "slug": "batik-6",
+  "cover": 0.099,
+  "drawnMax": 2.05,
+  "gapMax": 9.72,
+  "ms": 644
+ },
+ {
+  "slug": "african-1",
+  "cover": 0.594,
+  "drawnMax": 5.18,
+  "gapMax": 4.16,
+  "ms": 210
+ },
+ {
+  "slug": "african-2",
+  "cover": 0.614,
+  "drawnMax": 13.81,
+  "gapMax": 8.87,
+  "ms": 40
+ },
+ {
+  "slug": "african-3",
+  "cover": 0.437,
+  "drawnMax": 8.33,
+  "gapMax": 13.22,
+  "ms": 35
+ },
+ {
+  "slug": "african-4",
+  "cover": 0.444,
+  "drawnMax": 8.33,
+  "gapMax": 8.86,
+  "ms": 40
+ },
+ {
+  "slug": "triangles-11",
+  "cover": 0.481,
+  "drawnMax": 13.77,
+  "gapMax": 10.09,
+  "ms": 5
+ },
+ {
+  "slug": "hexagon-9",
+  "cover": 0.77,
+  "drawnMax": 12.7,
+  "gapMax": 4.19,
+  "ms": 23
+ },
+ {
+  "slug": "tiles-2",
+  "cover": 0.634,
+  "drawnMax": 15.41,
+  "gapMax": 7.13,
+  "ms": 14
+ },
+ {
+  "slug": "tiles-3",
+  "cover": 0.55,
+  "drawnMax": 24.99,
+  "gapMax": 13.17,
+  "ms": 9
+ },
+ {
+  "slug": "tribal-1",
+  "cover": 0.438,
+  "drawnMax": 2.6,
+  "gapMax": 4.8,
+  "ms": 87
+ },
+ {
+  "slug": "tribal-2",
+  "cover": 0.33,
+  "drawnMax": 2.15,
+  "gapMax": 19.74,
+  "ms": 41
+ },
+ {
+  "slug": "waves-8",
+  "cover": 0.415,
+  "drawnMax": 2.48,
+  "gapMax": 4.48,
+  "ms": 460
+ },
+ {
+  "slug": "leaves-9",
+  "cover": 0.663,
+  "drawnMax": 11.93,
+  "gapMax": 6.19,
+  "ms": 713
+ },
+ {
+  "slug": "blobs",
+  "cover": 0.787,
+  "drawnMax": 11.28,
+  "gapMax": 3.53,
+  "ms": 1854
+ },
+ {
+  "slug": "african-5",
+  "cover": 0.462,
+  "drawnMax": 14.81,
+  "gapMax": 14.82,
+  "ms": 234
+ },
+ {
+  "slug": "triangles-12",
+  "cover": 0.332,
+  "drawnMax": 1.87,
+  "gapMax": 3.24,
+  "ms": 69
+ },
+ {
+  "slug": "squares-and-triangles-1",
+  "cover": 0.454,
+  "drawnMax": 6.68,
+  "gapMax": 7.36,
+  "ms": 132
+ },
+ {
+  "slug": "tribal-3",
+  "cover": 0.393,
+  "drawnMax": 1.89,
+  "gapMax": 1.68,
+  "ms": 160
+ },
+ {
+  "slug": "circles-8",
+  "cover": 0.235,
+  "drawnMax": 8.25,
+  "gapMax": 6.32,
+  "ms": 5422
+ },
+ {
+  "slug": "triangles-13",
+  "cover": 0.499,
+  "drawnMax": 11.61,
+  "gapMax": 11.62,
+  "ms": 15
+ },
+ {
+  "slug": "triangles-14",
+  "cover": 0.7,
+  "drawnMax": 13.98,
+  "gapMax": 11.58,
+  "ms": 9
+ },
+ {
+  "slug": "triangles-15",
+  "cover": 0.564,
+  "drawnMax": 7.13,
+  "gapMax": 7.14,
+  "ms": 43
+ },
+ {
+  "slug": "triangles-16",
+  "cover": 0.421,
+  "drawnMax": 9.64,
+  "gapMax": 8.36,
+  "ms": 17
+ },
+ {
+  "slug": "circles-9",
+  "cover": 0.535,
+  "drawnMax": 9.22,
+  "gapMax": 10.77,
+  "ms": 853
+ },
+ {
+  "slug": "concentric-circles-4",
+  "cover": 0.545,
+  "drawnMax": 1.06,
+  "gapMax": 2.69,
+  "ms": 4695
+ },
+ {
+  "slug": "concentric-circles-5",
+  "cover": 0.51,
+  "drawnMax": 2.04,
+  "gapMax": 7.98,
+  "ms": 814
+ },
+ {
+  "slug": "concentric-circles-6",
+  "cover": 0.485,
+  "drawnMax": 6.8,
+  "gapMax": 15.69,
+  "ms": 354
+ },
+ {
+  "slug": "stripes-1",
+  "cover": 0.599,
+  "drawnMax": 3.1,
+  "gapMax": 2.08,
+  "ms": 7
+ },
+ {
+  "slug": "stripes-2",
+  "cover": 0.849,
+  "drawnMax": 5.08,
+  "gapMax": 2.28,
+  "ms": 6
+ },
+ {
+  "slug": "chevron-4",
+  "cover": 0.667,
+  "drawnMax": 24.99,
+  "gapMax": 24.99,
+  "ms": 3
+ },
+ {
+  "slug": "chevron-5",
+  "cover": 0.701,
+  "drawnMax": 14.08,
+  "gapMax": 11.57,
+  "ms": 11
+ },
+ {
+  "slug": "terrazzo-1",
+  "cover": 0.298,
+  "drawnMax": 4.77,
+  "gapMax": 5.04,
+  "ms": 5456
+ },
+ {
+  "slug": "geometric-1",
+  "cover": 0.361,
+  "drawnMax": 6.22,
+  "gapMax": 5.05,
+  "ms": 56
+ },
+ {
+  "slug": "halloween-1",
+  "cover": 0.28,
+  "drawnMax": 4.72,
+  "gapMax": 6.46,
+  "ms": 3592
+ },
+ {
+  "slug": "halloween-2",
+  "cover": 0.409,
+  "drawnMax": 5.9,
+  "gapMax": 6.84,
+  "ms": 4639
+ },
+ {
+  "slug": "halloween-3",
+  "cover": 0.245,
+  "drawnMax": 7.17,
+  "gapMax": 14.17,
+  "ms": 254
+ },
+ {
+  "slug": "halloween-4",
+  "cover": 0.144,
+  "drawnMax": 1.61,
+  "gapMax": 8.59,
+  "ms": 5712
+ },
+ {
+  "slug": "halloween-5",
+  "cover": 0.322,
+  "drawnMax": 8.87,
+  "gapMax": 12.39,
+  "ms": 192
+ },
+ {
+  "slug": "halloween-6",
+  "cover": 0.226,
+  "drawnMax": 8.86,
+  "gapMax": 24.99,
+  "ms": 188
+ },
+ {
+  "slug": "hexagon-10",
+  "cover": 0.401,
+  "drawnMax": 16.87,
+  "gapMax": 16.87,
+  "ms": 8
+ },
+ {
+  "slug": "hexagon-11",
+  "cover": 0.517,
+  "drawnMax": 7.18,
+  "gapMax": 3.76,
+  "ms": 191
+ },
+ {
+  "slug": "squares-1",
+  "cover": 0.315,
+  "drawnMax": 1.9,
+  "gapMax": 8.34,
+  "ms": 32
+ },
+ {
+  "slug": "squares-2",
+  "cover": 0.681,
+  "drawnMax": 9.22,
+  "gapMax": 10.77,
+  "ms": 19
+ },
+ {
+  "slug": "sprinkles-1",
+  "cover": 0.103,
+  "drawnMax": 2.51,
+  "gapMax": 17.49,
+  "ms": 94
+ },
+ {
+  "slug": "cubes-4",
+  "cover": 0.568,
+  "drawnMax": 24.99,
+  "gapMax": 24.99,
+  "ms": 14
+ },
+ {
+  "slug": "geometric-2",
+  "cover": 0.499,
+  "drawnMax": 1.93,
+  "gapMax": 2.01,
+  "ms": 25
+ },
+ {
+  "slug": "geometric-3",
+  "cover": 0.509,
+  "drawnMax": 3.09,
+  "gapMax": 3.17,
+  "ms": 19
+ },
+ {
+  "slug": "geometric-4",
+  "cover": 0.278,
+  "drawnMax": 0.87,
+  "gapMax": 4.41,
+  "ms": 248
+ },
+ {
+  "slug": "circles-10",
+  "cover": 0.505,
+  "drawnMax": 24.99,
+  "gapMax": 24.99,
+  "ms": 124
+ },
+ {
+  "slug": "circles-11",
+  "cover": 0.654,
+  "drawnMax": 24.99,
+  "gapMax": 16.14,
+  "ms": 188
+ },
+ {
+  "slug": "circles-12",
+  "cover": 0.121,
+  "drawnMax": 4.99,
+  "gapMax": 12.67,
+  "ms": 929
+ },
+ {
+  "slug": "triangles-17",
+  "cover": 0.61,
+  "drawnMax": 4.12,
+  "gapMax": 7.9,
+  "ms": 192
+ },
+ {
+  "slug": "triangles-18",
+  "cover": 0.064,
+  "drawnMax": 5.65,
+  "gapMax": 24.99,
+  "ms": 28
+ },
+ {
+  "slug": "geometric-5",
+  "cover": 0.488,
+  "drawnMax": 2.22,
+  "gapMax": 1.71,
+  "ms": 322
+ },
+ {
+  "slug": "geometric-6",
+  "cover": 0.383,
+  "drawnMax": 2.19,
+  "gapMax": 10.53,
+  "ms": 368
+ },
+ {
+  "slug": "squiggle-1",
+  "cover": 0.105,
+  "drawnMax": 0.59,
+  "gapMax": 6.76,
+  "ms": 1337
+ },
+ {
+  "slug": "moroccan-1",
+  "cover": 0.16,
+  "drawnMax": 3.97,
+  "gapMax": 13.5,
+  "ms": 371
+ },
+ {
+  "slug": "moroccan-2",
+  "cover": 0.385,
+  "drawnMax": 9.61,
+  "gapMax": 17.61,
+  "ms": 21
+ },
+ {
+  "slug": "japanese-pattern-7",
+  "cover": 0.551,
+  "drawnMax": 4.17,
+  "gapMax": 4.85,
+  "ms": 30
+ },
+ {
+  "slug": "waves-9",
+  "cover": 0.508,
+  "drawnMax": 16.2,
+  "gapMax": 16.21,
+  "ms": 71
+ },
+ {
+  "slug": "christmas-pattern-4",
+  "cover": 0.09,
+  "drawnMax": 18.1,
+  "gapMax": 24.99,
+  "ms": 16
+ },
+ {
+  "slug": "christmas-pattern-5",
+  "cover": 0.238,
+  "drawnMax": 6.48,
+  "gapMax": 18.91,
+  "ms": 1609
+ },
+ {
+  "slug": "plaid-pattern-5",
+  "cover": 0.499,
+  "drawnMax": 18.84,
+  "gapMax": 19.04,
+  "ms": 142
+ },
+ {
+  "slug": "plaid-pattern-6",
+  "cover": 0.496,
+  "drawnMax": 21.85,
+  "gapMax": 22.13,
+  "ms": 41
+ },
+ {
+  "slug": "circles-13",
+  "cover": 0.321,
+  "drawnMax": 8.28,
+  "gapMax": 15.7,
+  "ms": 129
+ },
+ {
+  "slug": "circles-14",
+  "cover": 0.187,
+  "drawnMax": 7.03,
+  "gapMax": 18.93,
+  "ms": 562
+ },
+ {
+  "slug": "interlocked-hexagons-1",
+  "cover": 0.197,
+  "drawnMax": 1.29,
+  "gapMax": 6.4,
+  "ms": 38
+ },
+ {
+  "slug": "interlocked-hexagons-2",
+  "cover": 0.488,
+  "drawnMax": 3.09,
+  "gapMax": 2.82,
+  "ms": 163
+ },
+ {
+  "slug": "interlocked-hexagons-3",
+  "cover": 0.916,
+  "drawnMax": 3.5,
+  "gapMax": 0.56,
+  "ms": 59
+ },
+ {
+  "slug": "lanterns-1",
+  "cover": 0.206,
+  "drawnMax": 6.9,
+  "gapMax": 12.86,
+  "ms": 214
+ },
+ {
+  "slug": "leaves-10",
+  "cover": 0.327,
+  "drawnMax": 17.31,
+  "gapMax": 14.18,
+  "ms": 129
+ },
+ {
+  "slug": "lines-3",
+  "cover": 0.522,
+  "drawnMax": 4.75,
+  "gapMax": 2.84,
+  "ms": 155
+ },
+ {
+  "slug": "rope-1",
+  "cover": 0.205,
+  "drawnMax": 1.61,
+  "gapMax": 10.26,
+  "ms": 125
+ },
+ {
+  "slug": "waves-10",
+  "cover": 0.591,
+  "drawnMax": 2.16,
+  "gapMax": 1.44,
+  "ms": 733
+ },
+ {
+  "slug": "waves-11",
+  "cover": 0.274,
+  "drawnMax": 6.06,
+  "gapMax": 20.86,
+  "ms": 70
+ },
+ {
+  "slug": "plus-5",
+  "cover": 0.555,
+  "drawnMax": 12.27,
+  "gapMax": 11.01,
+  "ms": 10
+ },
+ {
+  "slug": "plus-6",
+  "cover": 0.406,
+  "drawnMax": 5.18,
+  "gapMax": 10.49,
+  "ms": 55
+ },
+ {
+  "slug": "scales-5",
+  "cover": 0.349,
+  "drawnMax": 5.58,
+  "gapMax": 5.57,
+  "ms": 1486
+ },
+ {
+  "slug": "scales-6",
+  "cover": 0.51,
+  "drawnMax": 1.27,
+  "gapMax": 1.18,
+  "ms": 714
+ },
+ {
+  "slug": "scales-7",
+  "cover": 0.461,
+  "drawnMax": 7.32,
+  "gapMax": 5.1,
+  "ms": 780
+ },
+ {
+  "slug": "scales-8",
+  "cover": 0.812,
+  "drawnMax": 24.99,
+  "gapMax": 5.19,
+  "ms": 46
+ },
+ {
+  "slug": "scales-9",
+  "cover": 0.288,
+  "drawnMax": 2.95,
+  "gapMax": 15.38,
+  "ms": 108
+ },
+ {
+  "slug": "batik-7",
+  "cover": 0.327,
+  "drawnMax": 5.94,
+  "gapMax": 10.23,
+  "ms": 53
+ },
+ {
+  "slug": "circles-16",
+  "cover": 0.509,
+  "drawnMax": 1.72,
+  "gapMax": 3.77,
+  "ms": 2274
+ },
+ {
+  "slug": "circles-17",
+  "cover": 0.497,
+  "drawnMax": 5.32,
+  "gapMax": 5.44,
+  "ms": 171
+ },
+ {
+  "slug": "circles-and-diamonds",
+  "cover": 0.659,
+  "drawnMax": 15.19,
+  "gapMax": 12.19,
+  "ms": 196
+ },
+ {
+  "slug": "diamonds-5",
+  "cover": 0.427,
+  "drawnMax": 4.28,
+  "gapMax": 6.82,
+  "ms": 115
+ },
+ {
+  "slug": "diamonds-6",
+  "cover": 0.816,
+  "drawnMax": 14.11,
+  "gapMax": 7.19,
+  "ms": 379
+ },
+ {
+  "slug": "geometric-7",
+  "cover": 0.444,
+  "drawnMax": 2.91,
+  "gapMax": 6.92,
+  "ms": 97
+ },
+ {
+  "slug": "geometric-8",
+  "cover": 0.559,
+  "drawnMax": 4.11,
+  "gapMax": 2.48,
+  "ms": 350
+ },
+ {
+  "slug": "geometric-9",
+  "cover": 0.558,
+  "drawnMax": 2,
+  "gapMax": 1.23,
+  "ms": 605
+ },
+ {
+  "slug": "geometric-10",
+  "cover": 0.495,
+  "drawnMax": 1.29,
+  "gapMax": 1.67,
+  "ms": 4625
+ },
+ {
+  "slug": "waves-12",
+  "cover": 0.502,
+  "drawnMax": 13.72,
+  "gapMax": 15.99,
+  "ms": 29
+ },
+ {
+  "slug": "waves-13",
+  "cover": 0.399,
+  "drawnMax": 8.01,
+  "gapMax": 24.99,
+  "ms": 63
+ },
+ {
+  "slug": "waves-14",
+  "cover": 0.627,
+  "drawnMax": 23.99,
+  "gapMax": 18.26,
+  "ms": 92
+ },
+ {
+  "slug": "waves-15",
+  "cover": 0.395,
+  "drawnMax": 6.38,
+  "gapMax": 17.98,
+  "ms": 54
+ },
+ {
+  "slug": "double-bubble-3",
+  "cover": 0.356,
+  "drawnMax": 3.19,
+  "gapMax": 2.93,
+  "ms": 4633
+ },
+ {
+  "slug": "patches",
+  "cover": 0.392,
+  "drawnMax": 4.87,
+  "gapMax": 11.01,
+  "ms": 45
+ },
+ {
+  "slug": "triangles-23",
+  "cover": 0.127,
+  "drawnMax": 7.65,
+  "gapMax": 23.99,
+  "ms": 8
+ },
+ {
+  "slug": "tribal-4",
+  "cover": 0.346,
+  "drawnMax": 3.36,
+  "gapMax": 4.7,
+  "ms": 578
+ },
+ {
+  "slug": "tribal-5",
+  "cover": 0.327,
+  "drawnMax": 3.05,
+  "gapMax": 5.48,
+  "ms": 1834
+ },
+ {
+  "slug": "chinese-10",
+  "cover": 0.23,
+  "drawnMax": 7.59,
+  "gapMax": 8.97,
+  "ms": 18
+ },
+ {
+  "slug": "chinese-11",
+  "cover": 0.186,
+  "drawnMax": 1.7,
+  "gapMax": 18.77,
+  "ms": 388
+ },
+ {
+  "slug": "waves-16",
+  "cover": 0.364,
+  "drawnMax": 9.6,
+  "gapMax": 15.94,
+  "ms": 90
+ },
+ {
+  "slug": "waves-17",
+  "cover": 0.465,
+  "drawnMax": 5.65,
+  "gapMax": 8.24,
+  "ms": 106
+ },
+ {
+  "slug": "waves-18",
+  "cover": 0.72,
+  "drawnMax": 3.8,
+  "gapMax": 2.45,
+  "ms": 253
+ },
+ {
+  "slug": "waves-19",
+  "cover": 0.389,
+  "drawnMax": 4.5,
+  "gapMax": 7.84,
+  "ms": 88
+ },
+ {
+  "slug": "waves-20",
+  "cover": 0.367,
+  "drawnMax": 2.3,
+  "gapMax": 3.78,
+  "ms": 176
+ },
+ {
+  "slug": "chinese-12",
+  "cover": 0.239,
+  "drawnMax": 3.49,
+  "gapMax": 4.88,
+  "ms": 56
+ },
+ {
+  "slug": "chinese-13",
+  "cover": 0.297,
+  "drawnMax": 3.19,
+  "gapMax": 9.81,
+  "ms": 470
+ },
+ {
+  "slug": "chinese-14",
+  "cover": 0.335,
+  "drawnMax": 2.06,
+  "gapMax": 6.84,
+  "ms": 67
+ },
+ {
+  "slug": "egyptian-1",
+  "cover": 0.596,
+  "drawnMax": 9.34,
+  "gapMax": 12.5,
+  "ms": 61
+ },
+ {
+  "slug": "egyptian-2",
+  "cover": 0.45,
+  "drawnMax": 6.24,
+  "gapMax": 12.5,
+  "ms": 243
+ },
+ {
+  "slug": "egyptian-3",
+  "cover": 0.584,
+  "drawnMax": 14.06,
+  "gapMax": 6.09,
+  "ms": 75
+ },
+ {
+  "slug": "circles-19",
+  "cover": 0.448,
+  "drawnMax": 10.66,
+  "gapMax": 20.69,
+  "ms": 77
+ },
+ {
+  "slug": "circles-20",
+  "cover": 0.437,
+  "drawnMax": 12.96,
+  "gapMax": 11.98,
+  "ms": 167
+ },
+ {
+  "slug": "egyptian-4",
+  "cover": 0.426,
+  "drawnMax": 3.38,
+  "gapMax": 6.25,
+  "ms": 56
+ },
+ {
+  "slug": "egyptian-6",
+  "cover": 0.742,
+  "drawnMax": 14.64,
+  "gapMax": 8.83,
+  "ms": 10
+ },
+ {
+  "slug": "waves-22",
+  "cover": 0.35,
+  "drawnMax": 3.33,
+  "gapMax": 7.95,
+  "ms": 65
+ },
+ {
+  "slug": "squares-and-circles-3",
+  "cover": 0.294,
+  "drawnMax": 18.41,
+  "gapMax": 14.9,
+  "ms": 274
+ },
+ {
+  "slug": "japanese-pattern-8",
+  "cover": 0.024,
+  "drawnMax": 0.8,
+  "gapMax": 16.66,
+  "ms": 30
+ }
+]

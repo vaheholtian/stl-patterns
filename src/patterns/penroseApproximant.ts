@@ -242,8 +242,8 @@ export const penroseApproximantGenerator: Generator = {
     },
     { key: 'edge', label: 'Rhombus edge (mm)', type: 'number', default: 5, min: 1, max: 60, step: 0.5, hint: 'adjusted slightly so a whole period fits the width' },
     { key: 'minOrder', label: 'Min order', type: 'int', default: 2, min: 1, max: 6, step: 1, hint: 'lowest Fibonacci order allowed; higher = closer to true Penrose but longer periods (smaller rhombi for a given width)' },
-    { key: 'gap', label: 'Gap', type: 'number', default: 1.0, min: 0, max: 5, step: 0.1, hint: 'inset applied to filled rhombi, mm' },
-    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1 },
+    { key: 'gap', label: 'Gap', type: 'number', default: 1.0, min: 0, max: 5, step: 0.1, hint: 'inset applied to filled rhombi, mm', relevant: (p) => p.style !== 'edges' },
+    { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1, relevant: (p) => p.style === 'edges' },
     { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1, hint: 'shifts the window: a different patch of the tiling' },
   ],
   generate(params: Record<string, ParamValue>, ctx: GeneratorContext) {

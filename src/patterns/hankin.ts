@@ -1,7 +1,7 @@
 // Hankin rays on the regular 4.8.8 (square/octagon) tiling.
 // Pair forward intersections greedily by total length (Kaplan 2005, §3).
 import type { Generator, Pt, TileCurve } from './types'
-import { baseTile, bounded, continuousParams } from './continuous'
+import { baseTile, bounded, widthLedParams } from './continuous'
 
 const cross = (a: Pt, b: Pt) => a[0] * b[1] - a[1] * b[0]
 export function hankinMotif(poly: Pt[], angle: number): TileCurve[] {
@@ -36,7 +36,7 @@ export function hankinMotif(poly: Pt[], angle: number): TileCurve[] {
 export const hankinGenerator: Generator = {
   id: 'hankin', name: 'Islamic star strapwork', cutoutDefault: true, seamless: () => true,
   description: 'Periodic eight-point star strapwork on squares and octagons. Contact angle changes the motif; crossings remain fused for cutouts.',
-  params: [...continuousParams,
+  params: [...widthLedParams,
     { key: 'columns', label: 'Columns', type: 'int', default: 2, min: 1, max: 8 },
     { key: 'rows', label: 'Rows', type: 'int', default: 2, min: 1, max: 8 },
     { key: 'angle', label: 'Contact angle (°)', type: 'number', default: 60, min: 25, max: 75, step: 1 }],

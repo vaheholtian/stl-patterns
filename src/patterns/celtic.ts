@@ -5,9 +5,9 @@ import { baseTile, bounded, continuousParams, roundPath, seedParam } from './con
  * neighbours, barrier choices and curve tangents all wrap modulo the grid.
  * Crossings are fused for cutouts. Opening a barrier only ADDS connectivity.
  *
- * Not in the picker any more -- "Celtic plait" was dropped. This stays because
- * Mirror curves / lusona is the same lattice under different defaults and is
- * built by spreading this generator; see mirrorCurves.ts.
+ * Mirror curves / lusona is the same lattice under denser barriers and is built
+ * by spreading this generator (see mirrorCurves.ts); the catalog shows the two
+ * as variants of one card.
  */
 export const celticGenerator: Generator = {
   id: 'celtic', name: 'Celtic plait', cutoutDefault: true, connectedRibs: true,

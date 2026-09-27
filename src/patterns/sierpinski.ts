@@ -105,7 +105,6 @@ export const sierpinskiGenerator: Generator = {
     },
     { key: 'depth', label: 'Depth', type: 'int', default: 3, min: 0, max: 6, step: 1, hint: 'requested recursion depth; minFeature may stop earlier' },
     { key: 'minFeature', label: 'Min feature', type: 'number', default: 1.0, min: 0.1, max: 10, step: 0.1, hint: 'smallest detail; deeper recursion is skipped below this' },
-    { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1 },
   ],
   generate(params: Record<string, ParamValue>, _ctx: GeneratorContext) {
     const width = getNum(params, 'width', 40)

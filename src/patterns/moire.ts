@@ -185,7 +185,7 @@ export const moireGenerator: Generator = {
     { key: 'height', label: 'Height', type: 'number', default: 40, min: 5, max: 300, step: 1 },
     { key: 'pitch', label: 'Pitch (set A)', type: 'number', default: 2.5, min: 0.3, max: 30, step: 0.1 },
     { key: 'angleA', label: 'Angle A', type: 'number', default: 0, min: -90, max: 90, step: 1, hint: 'degrees' },
-    { key: 'angleB', label: 'Angle B', type: 'number', default: 12, min: -90, max: 90, step: 1, hint: 'degrees' },
+    { key: 'angleB', label: 'Angle B', type: 'number', default: 12, min: -90, max: 90, step: 1, hint: 'degrees', relevant: (p) => p.mode !== 'radial' },
     { key: 'pitchRatio', label: 'Pitch ratio (set B)', type: 'number', default: 1.05, min: 0.5, max: 2, step: 0.01 },
     {
       key: 'mode', label: 'Mode', type: 'select', default: 'lines',
@@ -196,7 +196,6 @@ export const moireGenerator: Generator = {
     },
     { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1 },
     { key: 'seamless', label: 'Snap to box', type: 'boolean', default: true, seamlessValue: true, hint: 'snap angles and pitches so every line set repeats exactly on the box' },
-    { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1 },
   ],
   seamless: (params) => params.seamless !== false,
   generate(params: Record<string, ParamValue>, _ctx: GeneratorContext) {

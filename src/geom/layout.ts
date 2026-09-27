@@ -27,6 +27,8 @@ export const MAX_FOLD_REACH = 20
 
 export interface LayoutSettings {
   origin: [number, number, number]
+  /** slide the pattern over the surface from the origin, mm: along the wall (a ring's seam direction) and up it, before rotation */
+  offset?: [number, number]
   rotationDeg: number
   /** 1 = true size */
   scale: number
@@ -112,7 +114,14 @@ export function buildParameterization(flat: Flat, settings: LayoutSettings): { p
     const p0 = param.transformVector(flat.period)
     baseRotation = (-Math.atan2(p0[1], p0[0]) * 180) / Math.PI
   }
-  if (frame) param.recenterAt(0, 0, 1, baseRotation + settings.rotationDeg, settings.scale)
+  const [ox, oy] = settings.offset ?? [0, 0]
+  if (ox || oy) {
+    // slide the pattern over the surface: in the frame where a ring's seam runs along
+    // +x (along the wall, up the wall), before the user's rotation and scale
+    param.recenterAt(0, 0, 1, baseRotation, 1)
+    param.translate(-ox, -oy)
+    param.recenterAt(0, 0, 1, settings.rotationDeg, settings.scale)
+  } else if (frame) param.recenterAt(0, 0, 1, baseRotation + settings.rotationDeg, settings.scale)
   else param.recenter(t, x, y, z, baseRotation + settings.rotationDeg, settings.scale)
   if (flat.period) period = param.transformVector(flat.period)
   return { param, period, baseRotation }

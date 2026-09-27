@@ -42,6 +42,13 @@ export class SceneManager {
   private markers = new THREE.Group()
   onPick: ((hit: PickResult, ev: PointerEvent) => void) | null = null
   onHover: ((hit: PickResult | null) => void) | null = null
+  /**
+   * While set, a left-button press on a body starts a surface drag instead of an
+   * orbit when `start` accepts the hit; `move` then gets the hit under the pointer
+   * (null off the bodies) until `end`. Presses elsewhere orbit as usual.
+   */
+  dragHandlers: { start: (hit: PickResult) => boolean; move: (hit: PickResult | null) => void; end: () => void } | null = null
+  private dragging = false
   private canvas: HTMLCanvasElement
 
   constructor(canvas: HTMLCanvasElement) {
@@ -73,8 +80,27 @@ export class SceneManager {
   }
 
   private downPos: [number, number] | null = null
-  private onPointerDown = (ev: PointerEvent) => { this.downPos = [ev.clientX, ev.clientY] }
+  private onPointerDown = (ev: PointerEvent) => {
+    if (this.dragHandlers && ev.button === 0) {
+      const hit = this.pick(ev)
+      if (hit && this.dragHandlers.start(hit)) {
+        // the controls saw this press first: disabling them makes them ignore the moves
+        this.dragging = true
+        this.controls.enabled = false
+        try { this.canvas.setPointerCapture(ev.pointerId) } catch { /* not supported */ }
+        return
+      }
+    }
+    this.downPos = [ev.clientX, ev.clientY]
+  }
   private onPointerUp = (ev: PointerEvent) => {
+    if (this.dragging) {
+      this.dragging = false
+      this.controls.enabled = true
+      try { this.canvas.releasePointerCapture(ev.pointerId) } catch { /* not captured */ }
+      this.dragHandlers?.end()
+      return
+    }
     if (!this.downPos) return
     const moved = Math.hypot(ev.clientX - this.downPos[0], ev.clientY - this.downPos[1])
     this.downPos = null
@@ -83,6 +109,7 @@ export class SceneManager {
     if (hit && this.onPick) this.onPick(hit, ev)
   }
   private onPointerMove = (ev: PointerEvent) => {
+    if (this.dragging) { this.dragHandlers?.move(this.pick(ev)); return }
     if (!this.onHover) return
     const hit = this.pick(ev)
     this.onHover(hit)

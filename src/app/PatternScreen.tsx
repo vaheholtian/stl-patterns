@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react'
 import { useTileStore, resolveDef, type ResolvedDef, type TileDef, type SavedTile } from '../state/tileStore'
-import { generators, generatorById, defaultParams, repeatKind, cutAdviceFor } from '../patterns'
+import { generatorById, defaultParams, repeatKind, cutAdviceFor, shownParams } from '../patterns'
+import { entryForDef, defForVariant, type CatalogEntry, type CatalogVariant } from '../patterns/catalog'
 import type { Generator, GeneratorParam, ParamValue, Pt, Tile } from '../patterns/types'
 import { polygonsArea } from '../patterns/pipeline'
 import { importSvg } from '../patterns/svg/svgImport'
@@ -10,7 +11,11 @@ import { exportTileSvg } from '../patterns/svg/svgExport'
 import { downloadBlob } from '../io/download'
 import { useIsMobile } from './useIsMobile'
 import { usePwa } from './usePwa'
-import { PatternLibraryPicker } from './PatternLibraryPicker'
+import { PatternBrowser, CardThumb } from './PatternBrowser'
+import { LIVE_CUT_NOTE } from './browserShared'
+import { useStore } from '../state/store'
+import type { PiecesResult } from '../worker/preview-protocol'
+import type { DroppedReport } from '../patterns/generate'
 
 /** Number input that only reports a value once it is complete, so typing "0.5" does not pass through 0. */
 function NumberChip({ value, param, onChange, disabled }: { value: number; param: GeneratorParam; onChange: (v: number) => void; disabled?: boolean }) {
@@ -45,7 +50,7 @@ function NumberChip({ value, param, onChange, disabled }: { value: number; param
 }
 
 function ParamControl({ p, value, onChange, locked, touch }: { p: GeneratorParam; value: ParamValue; onChange: (v: ParamValue) => void; locked?: boolean; touch?: boolean }) {
-  const title = locked ? `${p.hint ? p.hint + '. ' : ''}Held by the Seamless switch` : p.hint
+  const title = locked ? `${p.hint ? p.hint + '. ' : ''}Held to match repeat edges; overrides are under Repeat → Advanced` : p.hint
   const label = locked ? `${p.label} (seamless)` : p.label
   if (p.type === 'boolean') {
     return (
@@ -101,8 +106,8 @@ function ParamControl({ p, value, onChange, locked, touch }: { p: GeneratorParam
   )
 }
 
-/** Draw polygons (even-odd) repeated in a grid on a canvas, in CSS pixels. */
-function drawPreview(canvas: HTMLCanvasElement, tile: Tile | null, polygons: Pt[][], repeat: number) {
+/** Draw polygons (even-odd) repeated in a grid on a canvas, in CSS pixels. Loose material is tinted. */
+function drawPreview(canvas: HTMLCanvasElement, tile: Tile | null, polygons: Pt[][], loose: Pt[][], repeat: number) {
   const ctx = canvas.getContext('2d')!
   const dpr = canvas.width / Math.max(1, canvas.clientWidth || canvas.width)
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
@@ -113,21 +118,33 @@ function drawPreview(canvas: HTMLCanvasElement, tile: Tile | null, polygons: Pt[
   const totalW = tile.width * repeat, totalH = tile.height * repeat
   const s = Math.min((W - 20) / totalW, (H - 20) / totalH)
   const ox = (W - totalW * s) / 2, oy = (H + totalH * s) / 2
-  const path = new Path2D()
-  for (let ry = 0; ry < repeat; ry++) {
-    for (let rx = 0; rx < repeat; rx++) {
-      const tx = rx * tile.width, ty = ry * tile.height
-      for (const poly of polygons) {
-        poly.forEach(([x, y], i) => {
-          const px = ox + (x + tx) * s, py = oy - (y + ty) * s
-          if (i === 0) path.moveTo(px, py); else path.lineTo(px, py)
-        })
-        path.closePath()
+  const repeated = (polys: Pt[][]) => {
+    const path = new Path2D()
+    for (let ry = 0; ry < repeat; ry++) {
+      for (let rx = 0; rx < repeat; rx++) {
+        const tx = rx * tile.width, ty = ry * tile.height
+        for (const poly of polys) {
+          poly.forEach(([x, y], i) => {
+            const px = ox + (x + tx) * s, py = oy - (y + ty) * s
+            if (i === 0) path.moveTo(px, py); else path.lineTo(px, py)
+          })
+          path.closePath()
+        }
       }
     }
+    return path
   }
   ctx.fillStyle = '#1a1a1a'
-  ctx.fill(path, 'evenodd')
+  ctx.fill(repeated(polygons), 'evenodd')
+  if (loose.length) {
+    // what a through-cut drops: drawn one nozzle line inside its outline, as measured
+    const path = repeated(loose)
+    ctx.fillStyle = 'rgba(224, 72, 72, 0.55)'
+    ctx.fill(path, 'evenodd')
+    ctx.strokeStyle = 'rgba(224, 72, 72, 0.9)'
+    ctx.lineWidth = 1
+    ctx.stroke(path)
+  }
   // repeat box outline
   ctx.strokeStyle = 'rgba(242,163,58,0.7)'
   ctx.lineWidth = 1
@@ -142,7 +159,7 @@ function drawPreview(canvas: HTMLCanvasElement, tile: Tile | null, polygons: Pt[
 }
 
 /** Canvas that keeps its backing store matched to its box and the pixel ratio. */
-function Preview({ tile, polygons, repeat }: { tile: Tile | null; polygons: Pt[][]; repeat: number }) {
+function Preview({ tile, polygons, loose, repeat }: { tile: Tile | null; polygons: Pt[][]; loose: Pt[][]; repeat: number }) {
   const wrapRef = useRef<HTMLDivElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [, resized] = useState(0)
@@ -163,18 +180,70 @@ function Preview({ tile, polygons, repeat }: { tile: Tile | null; polygons: Pt[]
     return () => ro.disconnect()
   }, [])
   useEffect(() => {
-    if (canvasRef.current) drawPreview(canvasRef.current, tile, polygons, repeat)
+    if (canvasRef.current) drawPreview(canvasRef.current, tile, polygons, loose, repeat)
   })
   return (
     <div className="canvas-wrap" ref={wrapRef}>
-      <canvas ref={canvasRef} />
+      <canvas ref={canvasRef} role="img" aria-label={`Pattern preview, ${repeat} by ${repeat} tiles`} />
+    </div>
+  )
+}
+
+/** Display-only repetition; never changes the saved design or its generated geometry. */
+function PreviewBar({ tile, repeat, setRepeat }: { tile: Tile | null; repeat: number; setRepeat: (n: number) => void }) {
+  return (
+    <div className="preview-bar pattern-preview-bar">
+      <span className="muted">{tile ? `${tile.width.toFixed(1)} × ${tile.height.toFixed(1)} mm` : 'No tile'}</span>
+      <div className="preview-repeat" role="group" aria-label="Preview repetition (display only)">
+        <span className="muted">Preview</span>
+        {[1, 2, 3, 4].map((n) => (
+          <button key={n} type="button" className={'small' + (repeat === n ? ' active' : '')} aria-label={`Show ${n} by ${n} tiles`} aria-pressed={repeat === n} title="Changes the preview only" onClick={() => setRepeat(n)}>{n}×{n}</button>
+        ))}
+      </div>
     </div>
   )
 }
 
 /** 0 is not zero pieces: it means the design produced nothing at this size. */
 function cutPieces(n: number): string {
-  return n === 0 ? 'nothing the printer can lay down' : `${n} loose piece${n === 1 ? '' : 's'}`
+  return n === 0 ? 'nothing to cut' : n === 1 ? 'holds together' : `${n} pieces`
+}
+
+const NO_LOOSE: Pt[][] = []
+
+/** The live piece count for the current tile, with the one-click ways out when it is loose. */
+function LiveCut({ pieces, mode, onSwap, onRecess }: {
+  pieces: PiecesResult | 'failed' | null
+  mode: 'cut' | 'recess' | 'emboss'
+  onSwap: () => void
+  onRecess: () => void
+}) {
+  const row = (badge: ReactNode) => <div className="row"><label title={LIVE_CUT_NOTE}>Cut through</label>{badge}</div>
+  if (pieces === null) return row(<em className="pb-cut unmeasured">Measuring…</em>)
+  if (pieces === 'failed') return row(<em className="pb-cut unmeasured">Not measured</em>)
+  const { current, other, strict } = pieces
+  const n = current.pieces
+  const state = n === 0 ? 'empty' : n === 1 ? 'holds' : 'loose'
+  const label = n === 0 ? 'Nothing to cut' : n === 1 ? 'Holds together' : `${n} pieces`
+  const plural = (k: number, word: string) => `${k} ${word}${k === 1 ? '' : 's'}`
+  const looseNote = n > 1
+    ? `On a ring of wall four repeats around this falls into ${n} pieces: ${plural(current.loosePieces, 'loose piece')} per repeat${current.crumbs ? ` and ${plural(current.crumbs, 'crumb')}` : ''}, tinted red in the preview.`
+    : current.crumbs ? `${plural(current.crumbs, 'crumb')} per repeat would fall out, tinted red in the preview.` : ''
+  const strictNote = n === 1 && strict > 1 ? 'It holds only through connections barely two nozzle lines wide; a slightly wider rib would be safer.' : ''
+  const fixable = n > 1 || current.crumbs > 0
+  return (
+    <>
+      {row(<em className={`pb-cut ${state}`} title={LIVE_CUT_NOTE}>{label}</em>)}
+      <div className="muted">{[looseNote, strictNote, `Swapped solid and openings: ${cutPieces(other.pieces)}.`].filter(Boolean).join(' ')}</div>
+      {fixable && (
+        <div className="row wrap">
+          {other.pieces >= 1 && other.pieces < n && <button type="button" className="small" onClick={onSwap}>Swap orientation</button>}
+          {mode === 'cut' && <button type="button" className="small" onClick={onRecess} title="A recess or emboss drops nothing; this changes the operation on the Apply screen">Use as recess</button>}
+          <span className="muted">or turn on Remove loose pieces or Add connecting bridges below.</span>
+        </div>
+      )}
+    </>
+  )
 }
 
 export default function PatternScreen() {
@@ -183,10 +252,14 @@ export default function PatternScreen() {
   const tile = useTileStore((s) => s.tile)
   const polygons = useTileStore((s) => s.polygons)
   const warnings = useTileStore((s) => s.warnings)
+  const pieces = useTileStore((s) => s.pieces)
+  const dropped = useTileStore((s) => s.dropped)
+  const loose = pieces && pieces !== 'failed' ? pieces.current.loose : NO_LOOSE
   const saved = useTileStore((s) => s.saved)
   const ts = useTileStore.getState
   const [repeat, setRepeat] = useState(3)
   const [error, setError] = useState<string | null>(null)
+  const [browserOpen, setBrowserOpen] = useState(false)
   const gen = def.generatorId === 'svg' ? null : generatorById(def.generatorId)
 
   const mobile = useIsMobile()
@@ -271,24 +344,38 @@ export default function PatternScreen() {
 
   const panels = (
     <Panels
-      def={def} resolved={resolved} gen={gen} tile={tile} polygons={polygons} warnings={warnings}
-      saved={saved} error={error} repeat={repeat} setRepeat={setRepeat} mobile={mobile}
+      def={def} resolved={resolved} gen={gen} tile={tile} polygons={polygons} warnings={warnings} pieces={pieces} dropped={dropped}
+      saved={saved} error={error} mobile={mobile}
       onSvgFile={onSvgFile} rescaleSvg={rescaleSvg} exportSvg={exportSvg} exportJson={exportJson}
-      importJson={importJson} share={share}
+      importJson={importJson} share={share} openBrowser={() => setBrowserOpen(true)}
+    />
+  )
+  const chooseVariant = (entry: CatalogEntry, variant: CatalogVariant) => ts().setDef(defForVariant(entry, variant))
+  const browser = (
+    <PatternBrowser
+      open={browserOpen} onClose={() => setBrowserOpen(false)} currentId={entryForDef(def)?.entry.id}
+      onChoose={chooseVariant} saved={saved} onLoadSaved={(id) => ts().load(id)} onRemoveSaved={(id) => ts().remove(id)}
     />
   )
 
   if (mobile) {
     return (
-      <MobilePattern preview={<Preview tile={tile} polygons={polygons} repeat={repeat} />} repeat={repeat} setRepeat={setRepeat} tile={tile}>
-        {panels}
-      </MobilePattern>
+      <>
+        <MobilePattern preview={<Preview tile={tile} polygons={polygons} loose={loose} repeat={repeat} />} repeat={repeat} setRepeat={setRepeat} tile={tile}>
+          {panels}
+        </MobilePattern>
+        {browser}
+      </>
     )
   }
   return (
     <div className="pattern">
       <div className="sidebar">{panels}</div>
-      <Preview tile={tile} polygons={polygons} repeat={repeat} />
+      <div className="pattern-preview">
+        <Preview tile={tile} polygons={polygons} loose={loose} repeat={repeat} />
+        <PreviewBar tile={tile} repeat={repeat} setRepeat={setRepeat} />
+      </div>
+      {browser}
     </div>
   )
 }
@@ -334,13 +421,7 @@ function MobilePattern({ preview, children, repeat, setRepeat, tile }: { preview
     <div className="pattern-mobile" ref={rootRef}>
       <div className="preview-pane" style={{ height: `${frac * 100}%` }}>
         {preview}
-        <div className="preview-bar">
-          <span className="muted">{tile ? `${tile.width.toFixed(1)} × ${tile.height.toFixed(1)} mm` : 'no tile'}</span>
-          <span className="spacer" />
-          {[1, 2, 3, 4].map((n) => (
-            <button key={n} className={'small' + (repeat === n ? ' active' : '')} onClick={() => setRepeat(n)}>{n}×</button>
-          ))}
-        </div>
+        <PreviewBar tile={tile} repeat={repeat} setRepeat={setRepeat} />
       </div>
       <div className="sheet">
         <div className="grabber" onPointerDown={startDrag}>
@@ -359,10 +440,10 @@ interface PanelProps {
   tile: Tile | null
   polygons: Pt[][]
   warnings: string[]
+  pieces: PiecesResult | 'failed' | null
+  dropped: DroppedReport | undefined
   saved: SavedTile[]
   error: string | null
-  repeat: number
-  setRepeat: (n: number) => void
   mobile: boolean
   onSvgFile: (f: File) => void
   rescaleSvg: (w: number) => void
@@ -370,12 +451,14 @@ interface PanelProps {
   exportJson: () => void
   importJson: (f: File) => void
   share: (kind: 'svg' | 'library') => void
+  openBrowser: () => void
 }
 
 function Panels(props: PanelProps) {
-  const { def, resolved, gen, tile, polygons, warnings, saved, error, repeat, setRepeat, mobile } = props
+  const { def, resolved, gen, tile, polygons, warnings, pieces, dropped, saved, error, mobile } = props
   const ts = useTileStore.getState
   const pwa = usePwa()
+  const mode = useStore((s) => s.tileLayout.mode)
 
   /* Invert decides which side of the drawing is material, and for most patterns
      only one side survives a through-cut -- the same wall drawn inside out gives
@@ -384,6 +467,8 @@ function Panels(props: PanelProps) {
      four of them was the side that shatters the box. It is a strong default, not
      a prohibition: the measurement is at default parameters on a plain ring of wall, so it can be unlocked. */
   const advice = cutAdviceFor(gen ?? undefined, resolved.params)
+  const found = entryForDef(def)
+  const automaticRepeat = def.seamless !== false && !def.mirror
   const [unlockedInvert, setUnlockedInvert] = useState(false)
   // an unlock belongs to the pattern it was granted for, so drop it when the
   // pattern changes -- adjusted during render rather than in an effect, so the
@@ -392,6 +477,9 @@ function Panels(props: PanelProps) {
   const [lastLockKey, setLastLockKey] = useState(lockKey)
   if (lastLockKey !== lockKey) { setLastLockKey(lockKey); setUnlockedInvert(false) }
   const invertLocked = advice?.good != null && !unlockedInvert
+  // a rib network that connects by construction takes no bridges
+  const bridgesBuiltIn = Boolean(gen?.connectedRibs && def.invert)
+  const bridges = !bridgesBuiltIn && Boolean(def.connectMaterial)
   useEffect(() => {
     if (invertLocked && advice && def.invert !== advice.good) ts().setDef({ invert: advice.good as boolean })
   }, [invertLocked, advice, def.invert, ts])
@@ -404,26 +492,33 @@ function Panels(props: PanelProps) {
           <input type="text" style={mobile ? undefined : { width: 150 }} value={def.name} onChange={(e) => ts().setDef({ name: e.target.value })} />
         </div>
         <div className={mobile ? 'field' : 'row'}>
-          <label>Generator</label>
-          <select
-            style={mobile ? undefined : { width: 150 }}
-            value={def.generatorId}
-            onChange={(e) => {
-              const g = generatorById(e.target.value)
-              // open on the orientation measured to survive a through-cut, falling
-              // back to the generator's own claim where nothing was measured
-              const nextInvert = cutAdviceFor(g, g ? defaultParams(g) : undefined)?.good ?? Boolean(g?.cutoutDefault)
-              ts().setDef({ generatorId: e.target.value, params: g ? defaultParams(g) : def.params, name: g ? g.name : def.name, svgTile: undefined, svgSubtract: undefined, svgSeamless: undefined,
-                invert: nextInvert, connectMaterial: Boolean(nextInvert && !g?.connectedRibs), seamless: true, mirror: false })
-            }}
-          >
-            {(['field', 'band', 'motif'] as const).map((kind) => <optgroup key={kind} label={kind === 'field' ? 'All-over surface patterns' : kind === 'band' ? 'Repeating bands' : 'Motifs / medallions (visible repeats)'}>
-              {generators.filter((g) => repeatKind(g) === kind).map((g) => <option key={g.id} value={g.id}>{g.name}</option>)}
-            </optgroup>)}
-            <option value="svg">Imported SVG</option>
-          </select>
+          <label>Pattern</label>
+          {/* the thumbnail sits beside the button so the focusable target is text only */}
+          <div className="pb-current">
+            {found ? <CardThumb entry={found.entry} variant={found.variant} className="pb-mini" /> : <span className="pb-mini pb-placeholder" />}
+            <button type="button" className="pb-change" onClick={props.openBrowser} title="Browse every pattern">
+              <span className="pb-current-title">{def.generatorId === 'svg' ? 'Imported SVG' : found ? found.entry.title : def.generatorId}</span>
+              <span className="muted">Change…</span>
+            </button>
+          </div>
         </div>
+        {found && found.entry.variants.length > 1 && (
+          <div className={mobile ? 'field' : 'row'}>
+            <label>Variant</label>
+            <select
+              style={mobile ? undefined : { width: 150 }}
+              value={found.variant.id}
+              onChange={(e) => {
+                const v = found.entry.variants.find((x) => x.id === e.target.value)
+                if (v) ts().setDef(defForVariant(found.entry, v))
+              }}
+            >
+              {found.entry.variants.map((v) => <option key={v.id} value={v.id}>{v.label}</option>)}
+            </select>
+          </div>
+        )}
         {gen && <div className="muted">{gen.description}</div>}
+        {found?.entry.surface && <div className="muted">On the Apply screen this pattern can also be generated directly over the selected surface, instead of laid out as a repeating tile.</div>}
         {gen && repeatKind(gen, resolved.params) === 'motif' && <div className="muted">Motif repeat: matching tile edges does not remove the motif outline or spacing. This is not an all-over surface pattern.</div>}
         {gen && repeatKind(gen, resolved.params) === 'band' && <div className="muted">Band repeat: continues horizontally; stacked rows remain visible bands.</div>}
         {def.generatorId === 'svg' && (
@@ -446,61 +541,54 @@ function Panels(props: PanelProps) {
       {gen && (
         <div className="section">
           <h3>Parameters</h3>
-          {gen.params.map((p) => (
-            // 330 designs do not browse as a dropdown: the library gets a thumbnail grid
-            gen.id === 'library' && p.key === 'pattern'
-              ? <PatternLibraryPicker key={p.key} value={String(resolved.params[p.key] ?? p.default)} onPick={(slug) => ts().setParam(p.key, slug)} />
-              : <ParamControl key={p.key} p={p} touch={mobile} value={resolved.params[p.key] ?? p.default} locked={resolved.lockedParams.has(p.key)} onChange={(v) => ts().setParam(p.key, v)} />
-          ))}
+          {/* only the controls that can change this tile: a style's unused gap or a one-layer design's layer count is left out */}
+          {shownParams(gen, resolved.params, bridges).map((p) => {
+            // the library's design is chosen in the pattern browser, not as a parameter
+            if (gen.id === 'library' && p.key === 'pattern') return null
+            const raw = resolved.params[p.key] ?? p.default
+            const value = typeof raw === 'number' && p.max !== undefined ? Math.min(raw, p.max) : raw
+            return <ParamControl key={p.key} p={p} touch={mobile} value={value} locked={resolved.lockedParams.has(p.key)} onChange={(v) => ts().setParam(p.key, v)} />
+          })}
         </div>
       )}
 
       <div className="section">
         <h3>Feature</h3>
         <div className="muted">Black is the feature: removed by through-cut or recess, added by emboss. White remains in a through-cut.</div>
+        <LiveCut
+          pieces={pieces} mode={mode}
+          onSwap={() => { setUnlockedInvert(true); ts().setDef({ invert: !def.invert }) }}
+          onRecess={() => useStore.getState().setTileLayout({ mode: 'recess' })}
+        />
         <div className="row">
-          <label htmlFor="invert-feature">Invert (feature ↔ material){invertLocked ? <span className="locked-tag" title="Held at the orientation that survives a through-cut"> locked</span> : null}</label>
+          <label htmlFor="invert-feature">Swap solid and openings{invertLocked ? <span className="locked-tag" title="Held at the orientation that survived the reference cut"> locked</span> : null}</label>
           <input id="invert-feature" type="checkbox" checked={def.invert} disabled={invertLocked} onChange={(e) => ts().setDef({ invert: e.target.checked })} />
         </div>
-        {advice && advice.good !== null && (
+        {advice && advice.good !== null && invertLocked && (
           <div className="muted">
-            {advice.good ? 'Inverted' : 'As drawn'} is the orientation that leaves a cut box in one printable piece; the other falls into {advice.good ? advice.plain : advice.inverted} loose pieces on a box wall four repeats around.{' '}
-            {invertLocked
-              ? <button type="button" className="as-link" onClick={() => setUnlockedInvert(true)}>Unlock anyway</button>
-              : 'Unlocked, so you can set it either way.'}
+            Held at the orientation that survived the reference cut at default settings; the other fell into {advice.good ? advice.plain : advice.inverted} pieces.{' '}
+            <button type="button" className="as-link" onClick={() => setUnlockedInvert(true)}>Unlock anyway</button>
           </div>
         )}
-        {advice && advice.good === null && advice.plain !== 1 && advice.inverted !== 1 && (
-          <div className="muted">
-            {`As drawn this leaves ${cutPieces(advice.plain)}; inverted, ${cutPieces(advice.inverted)}. Neither orientation survives a through-cut on a closed box, so use recess or emboss, a bounded region, or Connect material.`}
-          </div>
-        )}
-        <div className="row">
-          <label htmlFor="connect-material" title="Join the kept material with rib-width bridges and matched connections on opposite tile edges. Applies to existing patterns and SVGs too.">Connect material across repeats</label>
-          <input id="connect-material" type="checkbox" disabled={Boolean(gen?.connectedRibs && def.invert)} checked={!(gen?.connectedRibs && def.invert) && Boolean(def.connectMaterial)} onChange={(e) => ts().setDef({ connectMaterial: e.target.checked })} />
-        </div>
-        {gen?.connectedRibs && def.invert ? <div className="muted">The rib network connects across both repeat directions by construction. No additional joining bars are needed.</div> : def.connectMaterial && <div className="muted">Bridges join the ribs across both repeat directions, without a frame grid. Check the 3D result where the surface crops or scales the pattern.</div>}
-        <div className="row">
-          <label title="Match opposite tile edges. Mirroring a medallion does not turn it into an all-over pattern.">{gen && repeatKind(gen, resolved.params) === 'motif' ? 'Match repeat edges (motif)' : 'Seamless'}</label>
-          <input type="checkbox" checked={def.seamless !== false} onChange={(e) => ts().setDef({ seamless: e.target.checked })} />
-        </div>
-        <div className="row">
-          <label title={resolved.mirrorForced ? 'Required by the Seamless switch: this pattern is not seamless on its own' : 'Reflect the tile into a 2 x 2 kaleidoscope so any pattern repeats seamlessly (doubles the tile size)'}>
-            Mirror (kaleidoscope){resolved.mirrorForced ? ' · required for seamless' : ''}
-          </label>
-          <input type="checkbox" checked={resolved.mirror} disabled={resolved.mirrorForced} onChange={(e) => ts().setDef({ mirror: e.target.checked })} />
-        </div>
-        {!mobile && (
+        {!bridgesBuiltIn && (
           <div className="row">
-            <label>Preview repeat</label>
-            <select value={repeat} onChange={(e) => setRepeat(Number(e.target.value))}>
-              <option value={1}>1 × 1</option>
-              <option value={2}>2 × 2</option>
-              <option value={3}>3 × 3</option>
-              <option value={4}>4 × 4</option>
-            </select>
+            <label htmlFor="connect-material" title="Join the kept material with rib-width bridges and matched connections on opposite tile edges. Applies to existing patterns and SVGs too.">Add connecting bridges</label>
+            <input id="connect-material" type="checkbox" checked={bridges} onChange={(e) => ts().setDef({ connectMaterial: e.target.checked })} />
           </div>
         )}
+        {bridgesBuiltIn ? <div className="muted">The rib network connects across both repeat directions by construction. No additional joining bars are needed.</div> : def.connectMaterial && <div className="muted">Bridges join the ribs across both repeat directions, without a frame grid. Check the 3D result where the surface crops or scales the pattern.</div>}
+        <div className="row">
+          <label htmlFor="drop-loose" title="Cut away what a through-cut would leave loose: islands, bands and crumbs, with any neck too thin to print that held them on. Refused when they are most of the material.">Remove loose pieces</label>
+          <input id="drop-loose" type="checkbox" checked={Boolean(def.dropLoose)} onChange={(e) => ts().setDef({ dropLoose: e.target.checked })} />
+        </div>
+        {def.dropLoose && dropped && (
+          <div className="muted">
+            {dropped.refused
+              ? `Loose pieces are ${Math.round(100 * dropped.share)}% of the material, so nothing was removed: this orientation does not suit a through-cut.`
+              : `Removed ${dropped.pieces} loose piece${dropped.pieces === 1 ? '' : 's'}, ${Math.round(100 * dropped.share)}% of the material.`}
+          </div>
+        )}
+        {def.dropLoose && !dropped && tile && <div className="muted">Nothing loose to remove at these settings.</div>}
         <div className="muted">
           {tile ? `${tile.width.toFixed(1)} × ${tile.height.toFixed(1)} mm · ${polygons.length} shapes · feature ${(100 * polygonsArea(polygons) / (tile.width * tile.height)).toFixed(0)}% of tile` : 'no tile'}
         </div>
@@ -508,10 +596,39 @@ function Panels(props: PanelProps) {
         {error && <div className="danger">{error}</div>}
       </div>
 
+      <div className="section repeat-section">
+        <h3>Repeat</h3>
+        <div className="row repeat-status">
+          <span>Repeat behavior</span>
+          <strong>{automaticRepeat ? 'Automatic' : 'Custom'}</strong>
+        </div>
+        <div className="muted">
+          {resolved.mirrorForced ? 'Mirrored automatically to match opposite edges. Motifs keep their visible outlines.'
+            : resolved.mirror ? 'Mirrored into a kaleidoscope repeat.'
+            : def.seamless === false ? 'Edge matching is off; joins may be visible.'
+            : 'Uses the pattern’s native repeat, without mirroring.'}
+        </div>
+        <details className="repeat-advanced">
+          <summary>Advanced · manual overrides</summary>
+          <div className="row">
+            <label htmlFor="repeat-match">Match repeat edges</label>
+            <input id="repeat-match" type="checkbox" checked={def.seamless !== false} onChange={(e) => ts().setDef({ seamless: e.target.checked })} />
+          </div>
+          <div className="row">
+            <label htmlFor="repeat-mirror">Mirror into kaleidoscope</label>
+            <input id="repeat-mirror" type="checkbox" checked={resolved.mirror} disabled={resolved.mirrorForced} onChange={(e) => ts().setDef({ mirror: e.target.checked })} />
+          </div>
+          {resolved.mirrorForced && <div className="muted">Mirroring is required to match this pattern’s edges. Turn off Match repeat edges to override it.</div>}
+          {resolved.lockedParams.size > 0 && <div className="muted">Some parameters are held to matching values. Turn off Match repeat edges to edit them.</div>}
+          <div className="muted">Mirroring doubles the tile width and height. Preview repetition beside the canvas only changes the display.</div>
+          {!automaticRepeat && <button type="button" className="small" onClick={() => ts().setDef({ seamless: true, mirror: false })}>Restore automatic</button>}
+        </details>
+      </div>
+
       <div className="section">
-        <h3>Library</h3>
+        <h3>My designs</h3>
         <div className="row wrap">
-          <button className="small" onClick={() => ts().save()}>Save tile</button>
+          <button className="small" onClick={() => ts().save()}>Save design</button>
           {mobile ? (
             <>
               <button className="small" disabled={!tile} onClick={() => props.share('svg')}>Share SVG</button>
@@ -536,7 +653,7 @@ function Panels(props: PanelProps) {
               <button className="small" onClick={(e) => { e.stopPropagation(); ts().remove(s.id) }}>✕</button>
             </div>
           ))}
-          {!saved.length && <div className="muted">No saved tiles yet. The current tile is what the Apply screen uses.</div>}
+          {!saved.length && <div className="muted">No saved designs yet. The current tile is what the Apply screen uses; Save design keeps it, with its settings, for later.</div>}
         </div>
       </div>
 
@@ -545,7 +662,7 @@ function Panels(props: PanelProps) {
           <h3>On a phone</h3>
           <div className="muted">
             Wrapping a pattern onto a part needs the desktop app: it loads your 3MF and does the 3D work.
-            Save tiles here, then use <b>Send library</b> to get them across and <b>Import library</b> on the desktop.
+            Save designs here, then use <b>Send library</b> to get them across and <b>Import library</b> on the desktop.
           </div>
           {pwa.canInstall && <div className="row" style={{ marginTop: 8 }}><button className="small primary" onClick={pwa.install}>Add to home screen</button></div>}
           {pwa.iosHint && <div className="muted" style={{ marginTop: 8 }}>To install: tap the share button, then <b>Add to Home Screen</b>.</div>}

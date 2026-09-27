@@ -1,7 +1,12 @@
 // Every library design, and every native generator at its defaults, through
-// ringParts(): the pieces a closed ring of wall falls into, as drawn and inverted.
+// analyzePieces(): the pieces a closed ring of wall falls into, as drawn and inverted.
 // Replaces the fixtures/box-50.stl figures in invert-sweep.ts, which depended on
 // how the repeat size compared with that box's wall height.
+//
+// 2026-09-22: switched from the raster ringParts() to the vector analyzePieces(),
+// the method the editor now runs live, so cards and editor agree. The two differed
+// on 27 of 330 designs plus the Hilbert curve as drawn: all marginal, with necks
+// within 0.02 mm of two nozzle lines, where a 10 px/mm raster lands on either side.
 //
 //   node --import ./tests/register.mjs planning/pattern-library-2026-09-15/ring-sweep.ts
 import { writeFileSync } from 'node:fs'
@@ -9,7 +14,7 @@ import { m } from '../../tests/physical-fixtures.ts'
 import { generateTile } from '../../src/patterns/generate.ts'
 import { defaultParams, generators } from '../../src/patterns/index.ts'
 import { libraryGenerator, libraryPatterns } from '../../src/patterns/library/index.ts'
-import { ringParts } from '../../src/patterns/ringParts.ts'
+import { analyzePieces } from '../../src/patterns/loosePieces.ts'
 
 const one = (generatorId: string, params: Record<string, unknown>, invert: boolean) => {
   const g = generateTile(m, { def: { name: generatorId, generatorId, invert, seamless: true, params } as never, lineWidth: 0.42 })
@@ -17,7 +22,7 @@ const one = (generatorId: string, params: Record<string, unknown>, invert: boole
   let out = 0
   for (const poly of g.polygons) for (const [x, y] of poly) out = Math.max(out, -x, -y, x - g.tile.width, y - g.tile.height)
   if (out > 1e-3) console.error(`  ${generatorId} ${params.pattern ?? ''}: polygons reach ${out.toFixed(3)} past the tile`)
-  return ringParts(m, g.polygons, g.tile.width, g.tile.height)
+  return analyzePieces(m, g.polygons, g.tile.width, g.tile.height).pieces
 }
 const lib: Record<string, [number, number]> = {}
 for (const p of libraryPatterns) {

@@ -1,5 +1,5 @@
 import type { Generator, GeneratorParam, ParamValue } from '../types'
-import { buildLibraryTile, sourceHeight, type LibraryPattern } from './tile'
+import { buildLibraryTile, lineSide, sourceHeight, type LibraryPattern } from './tile'
 import raw from './data.json' with { type: 'json' }
 
 /**
@@ -28,14 +28,25 @@ const patternOptions = libraryPatterns
 const params: GeneratorParam[] = [
   { key: 'pattern', label: 'Design', type: 'select', default: bySlug.has(DEFAULT_SLUG) ? DEFAULT_SLUG : libraryPatterns[0].slug, options: patternOptions, hint: 'pattern.monster design; the picker shows them as thumbnails' },
   { key: 'width', label: 'Repeat width (mm)', type: 'number', default: 50, min: 5, max: 400, step: 1, hint: 'the height follows the design’s own proportions' },
-  { key: 'ribWidth', label: 'Rib width (mm)', type: 'number', default: 1.2, min: 0.2, max: 8, step: 0.1, hint: 'line thickness; only used by designs drawn as strokes' },
-  { key: 'layers', label: 'Colour layers drawn', type: 'int', default: 9, min: 1, max: 9, hint: 'fewer layers drops the shapes that only differed by colour' },
+  { key: 'ribWidth', label: 'Rib width (mm)', type: 'number', default: 1.2, min: 0.2, max: 8, step: 0.1, hint: 'line thickness of designs drawn as strokes', relevant: (p) => chosen(p).mode !== 'fill' },
+  { key: 'thicken', label: 'Thicken lines (mm)', type: 'number', default: 0, min: -3, max: 8, step: 0.1, hint: 'added to the width of every line, half on each side; below 0 thins them', relevant: (p) => chosen(p).mode === 'fill', maxFor: thickenMax },
+  { key: 'layers', label: 'Colour layers drawn', type: 'int', default: 9, min: 1, max: 9, hint: 'fewer layers drops the shapes that only differed by colour', relevant: (p) => chosen(p).layers.length > 1, maxFor: (p) => chosen(p).layers.length },
   { key: 'spacingX', label: 'Extra spacing across (mm)', type: 'number', default: 0, min: 0, max: 100, step: 1 },
   { key: 'spacingY', label: 'Extra spacing down (mm)', type: 'number', default: 0, min: 0, max: 100, step: 1 },
 ]
 
 function chosen(p: Record<string, ParamValue>): LibraryPattern {
   return bySlug.get(String(p.pattern)) ?? bySlug.get(DEFAULT_SLUG) ?? libraryPatterns[0]
+}
+
+/** Past the widest space between lines there is nothing left to thicken into. */
+function thickenMax(p: Record<string, ParamValue>): number {
+  const side = lineSide(chosen(p))
+  if (!side) return 8
+  let space = side.space * (Math.max(1, Number(p.width) || 50) / 50)
+  // extra spacing opens a band between repeats, and that band is space when the drawn shapes are the lines
+  if (!side.gaps) space = Math.max(space, Number(p.spacingX) || 0, Number(p.spacingY) || 0)
+  return Math.max(0.5, Math.ceil(space * 10) / 10)
 }
 
 export const libraryGenerator: Generator = {
@@ -51,6 +62,7 @@ export const libraryGenerator: Generator = {
     const tile = buildLibraryTile(pattern, {
       widthMm: width,
       ribWidth: Math.max(0.05, Number(p.ribWidth) || 1.2),
+      thicken: Number(p.thicken) || 0,
       layers,
       spacingX: Math.max(0, Number(p.spacingX) || 0),
       spacingY: Math.max(0, Number(p.spacingY) || 0),
@@ -60,7 +72,6 @@ export const libraryGenerator: Generator = {
     if (pattern.vHeight > 0 && layers < pattern.layers.length) {
       notes.push(`Dropping layers also shortens the repeat, to ${(sourceHeight(pattern, layers) * (width / pattern.w)).toFixed(1)} mm.`)
     }
-    if (pattern.mode === 'fill' && Number(p.ribWidth) !== 1.2) notes.push('This design is drawn as filled shapes, so rib width does nothing here.')
     tile.notes = notes.length ? notes : undefined
     return tile
   },

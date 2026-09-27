@@ -13,6 +13,8 @@ export interface PipelineOptions {
   clipToBox?: boolean
   /** minimum feature width in mm; thinner slivers are removed by open/close (0 = off) */
   minFeature?: number
+  /** what sets minFeature, for the note when it removes features */
+  minFeatureWhy?: string
   /** Connect the kept material, irrespective of which polarity is being cut. */
   connectMaterial?: boolean
   /** Filter on a repeated neighbourhood, so minimum-feature cleanup preserves seams. */
@@ -210,7 +212,23 @@ export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: Pipeli
   const own = (cs: CrossSection) => { owned.push(cs); return cs }
   try {
   const parts: CrossSection[] = []
-  if (tile.polygons.length) parts.push(own(new m.CrossSection(tile.polygons, 'EvenOdd')))
+  if (tile.polygons.length) {
+    let filled = own(new m.CrossSection(tile.polygons, 'EvenOdd'))
+    if (tile.thicken) {
+      // Grow the repeat, not the box: offsetting the clipped shapes alone would
+      // swell every line away from the edges and leave it pinched where it
+      // crosses one. Mitred joins keep a drawn corner a corner.
+      const w = tile.width, h = tile.height, d = tile.thicken / 2
+      const box = own(m.CrossSection.square([w, h], false))
+      const clipped = own(m.CrossSection.intersection(filled, box))
+      const halo = Math.abs(d) * 2 + .05
+      const near = own(own(m.CrossSection.square([w + 2 * halo, h + 2 * halo])).translate([-halo, -halo]))
+      const copies: CrossSection[] = []
+      for (let y = -1; y <= 1; y++) for (let x = -1; x <= 1; x++) copies.push(own(m.CrossSection.intersection(own(clipped.translate([x * w, y * h])), near)))
+      filled = own(m.CrossSection.intersection(own(own(m.CrossSection.union(copies)).offset(d, 'Miter', 2)), box))
+    }
+    parts.push(filled)
+  }
   if (tile.curves.length) {
     // Resolve overlapping stroke loops in bounded batches before their union.
     // A single arrangement of tens of thousands of strips can take minutes.
@@ -239,6 +257,9 @@ export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: Pipeli
     for (let y = -1; y <= 1; y++) for (let x = -1; x <= 1; x++) copies.push(own(m.CrossSection.intersection(own(cs.translate([x * tile.width, y * tile.height])), halo)))
     cs = own(m.CrossSection.union(copies))
   }
+  // area of the feature before the minimum-feature filter, to report what it removed
+  const boxArea = tile.width * tile.height
+  const before = opts.minFeature && opts.notes ? own(m.CrossSection.intersection(cs, box)).area() : 0
   if (opts.minFeature && opts.minFeature > 0) {
     // morphological opening removes slivers thinner than minFeature
     const r = opts.minFeature / 2
@@ -292,6 +313,11 @@ export function tileToCrossSection(m: ManifoldToplevel, tile: Tile, opts: Pipeli
   // differently on each side of a seam, so opposite-edge profiles drift apart.
   const lean = simplifyAnchored(cs.toPolygons() as Pt[][], tile.width, tile.height, 0.01)
   const simplified = own(lean.length ? new m.CrossSection(lean, 'EvenOdd') : m.CrossSection.square([0, 0]))
+  if (before > boxArea * .005) {
+    const lost = 1 - simplified.area() / before
+    // the filter trims corners and seams by a hair; say so only when features went
+    if (lost > .2) opts.notes!.push(`${Math.round(lost * 100)}% of the ${opts.invert ? 'swapped ' : ''}feature is narrower than ${opts.minFeature!.toFixed(2)} mm (${opts.minFeatureWhy ?? 'the minimum feature'}) and was dropped. Widen it to at least that.`)
+  }
   if (opts.connectMaterial) {
     return connectMaterial(m, simplified, tile.width, tile.height, Math.max(tile.ribWidth, opts.minFeature ?? 0), opts.notes)
   }

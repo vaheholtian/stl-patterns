@@ -6,6 +6,8 @@ export const continuousParams: GeneratorParam[] = [
   { key: 'height', label: 'Height (mm)', type: 'number', default: 60, min: 5, max: 300, step: 1 },
   { key: 'ribWidth', label: 'Rib width (mm)', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1 },
 ]
+/** the same, for generators that derive the height from the width to keep their motif regular */
+export const widthLedParams: GeneratorParam[] = continuousParams.map((p) => p.key === 'height' ? { ...p, relevant: () => false } : p)
 export const seedParam: GeneratorParam = { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999 }
 export function bounded(p: Record<string, ParamValue>, key: string, fallback: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, getNum(p, key, fallback)))

@@ -43,7 +43,7 @@ ctx.onmessage = async (ev: MessageEvent<Request>) => {
       post({ id: req.id, ok: true, type: 'flatten', result }, [result.positions.buffer, result.indices.buffer, result.normals.buffer, result.uv.buffer])
     } else if (req.type === 'flattenPieces') {
       progress('flattening region')
-      const { pieces, log } = flattenPieces(req.mesh, req.region, req.origin, req.maxAngleDeg, req.joinEdges ?? true)
+      const { pieces, log } = flattenPieces(req.mesh, req.region, req.origin, req.maxAngleDeg, req.joinEdges ?? true, req.levelRows ?? false)
       post({ id: req.id, ok: true, type: 'flattenPieces', pieces, log }, pieces.flatMap((p) => [p.positions.buffer, p.indices.buffer, p.normals.buffer, p.uv.buffer]))
     }
   } catch (e) {

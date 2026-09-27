@@ -59,13 +59,12 @@ export const guillocheGenerator: Generator = {
       ],
     },
     { key: 'count', label: 'Curve count', type: 'int', default: 6, min: 1, max: 24, step: 1 },
-    { key: 'radius', label: 'Radius (R0)', type: 'number', default: 15, min: 1, max: 150, step: 0.5 },
+    { key: 'radius', label: 'Radius (R0)', type: 'number', default: 15, min: 1, max: 150, step: 0.5, relevant: (p) => p.style !== 'band' },
     { key: 'amplitude', label: 'Amplitude (A)', type: 'number', default: 4, min: 0, max: 50, step: 0.25 },
     { key: 'lobes', label: 'Lobes (k)', type: 'int', default: 7, min: 1, max: 24, step: 1 },
     { key: 'twist', label: 'Twist', type: 'number', default: 0.15, min: -1, max: 1, step: 0.01, hint: 'radians of rigid rotation added per curve index' },
-    { key: 'innerRings', label: 'Inner rings', type: 'int', default: 2, min: 0, max: 6, step: 1 },
+    { key: 'innerRings', label: 'Inner rings', type: 'int', default: 2, min: 0, max: 6, step: 1, relevant: (p) => p.style !== 'band' },
     { key: 'ribWidth', label: 'Rib width', type: 'number', default: 1.6, min: 0.4, max: 6, step: 0.1 },
-    { key: 'seed', label: 'Seed', type: 'int', default: 1, min: 0, max: 999999, step: 1 },
   ],
   generate(params: Record<string, ParamValue>, _ctx: GeneratorContext) {
     const width = getNum(params, 'width', 40)

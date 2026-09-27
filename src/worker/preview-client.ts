@@ -1,5 +1,5 @@
 import type { TileGenerationInput, TileGenerationResult } from '../patterns/generate'
-import type { LayoutInput, PreviewLayoutResult, PreviewRequest, PreviewResponse } from './preview-protocol'
+import type { LayoutInput, PiecesInput, PiecesResult, PreviewLayoutResult, PreviewRequest, PreviewResponse } from './preview-protocol'
 
 /** One cancellable preview stream. It never shares a worker with mesh operations. */
 export class PreviewClient {
@@ -21,7 +21,7 @@ export class PreviewClient {
   }
   cancel() { if (this.pending) this.stop(new Error('cancelled')) }
   dispose() { this.stop(new Error('cancelled')) }
-  private request<T>(body: Omit<Extract<PreviewRequest, { type: 'generate' }>, 'id'> | Omit<Extract<PreviewRequest, { type: 'layout' }>, 'id'>): Promise<T> {
+  private request<T>(body: Omit<PreviewRequest, 'id'>): Promise<T> {
     this.cancel()
     return new Promise<T>((resolve, reject) => {
       const id = ++this.nextId
@@ -51,4 +51,5 @@ export class PreviewClient {
   }
   generate(input: TileGenerationInput) { return this.request<TileGenerationResult>({ type: 'generate', input }) }
   layout(input: LayoutInput) { return this.request<PreviewLayoutResult>({ type: 'layout', input }) }
+  pieces(input: PiecesInput) { return this.request<PiecesResult>({ type: 'pieces', input }) }
 }

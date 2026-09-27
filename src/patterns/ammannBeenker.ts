@@ -2,7 +2,7 @@
 // Pell convergents a/b -> sqrt(2) give periods (a,b,0,-b), (0,b,a,b).
 // Both the projection and the window are strained, as in the Penrose generator.
 import type { Generator, Pt } from './types'
-import { baseTile, bounded, continuousParams, seedParam } from './continuous'
+import { baseTile, bounded, widthLedParams, seedParam } from './continuous'
 
 const t = Math.SQRT1_2
 const E: Pt[] = [[1, 0], [t, t], [0, 1], [-t, t]]
@@ -17,7 +17,7 @@ function hull(points: Pt[]): Pt[] {
 export const ammannBeenkerGenerator: Generator = {
   id: 'ammannBeenker', name: 'Ammann–Beenker (Pell repeat)', cutoutDefault: true, seamless: () => true,
   description: 'Eightfold square-and-rhombus edge network, made periodic with a Pell-number projection. Higher order gives a denser, less strained repeat.',
-  params: [...continuousParams,
+  params: [...widthLedParams,
     { key: 'order', label: 'Pell order', type: 'int', default: 2, min: 1, max: 3 }, seedParam],
   generate(p, ctx) {
     const tile = baseTile(p), order = Math.round(bounded(p, 'order', 2, 1, 3))
