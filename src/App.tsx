@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useStore } from './state/store'
 import ApplyScreen from './app/ApplyScreen'
 import PatternScreen from './app/PatternScreen'
+import SeamScreen from './app/SeamScreen'
 import { useTileRegen } from './app/useTileRegen'
 import { useIsMobile } from './app/useIsMobile'
 import { usePwa } from './app/usePwa'
@@ -25,6 +26,7 @@ export default function App() {
           <div className="tabs">
             <button className={screen === 'pattern' ? 'active' : ''} onClick={() => setScreen('pattern')}>1 · Pattern</button>
             <button className={screen === 'apply' ? 'active' : ''} onClick={() => setScreen('apply')}>2 · Apply</button>
+            <button className={screen === 'seams' ? 'active' : ''} onClick={() => setScreen('seams')}>3 · Seams</button>
           </div>
         )}
         <span className="spacer" />
@@ -37,6 +39,7 @@ export default function App() {
         </div>
       )}
       {(mobile || screen === 'pattern') && <PatternScreen />}
+      {!mobile && screen === 'seams' && <SeamScreen />}
       <Notifications />
     </div>
   )

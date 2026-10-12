@@ -13,7 +13,7 @@ export interface BodyState {
   visible: boolean
 }
 
-export type Screen = 'pattern' | 'apply'
+export type Screen = 'pattern' | 'apply' | 'seams'
 export type PickMode = 'region' | 'origin' | 'move'
 
 export interface VoronoiUi extends VoronoiParams {}
